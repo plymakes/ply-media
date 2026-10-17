@@ -180,6 +180,58 @@
    "topic": "printer-on-its-way",
    "background": "cobalt",
    "status": "scheduled"
+  },
+  {
+   "number": "R1",
+   "type": "reel",
+   "date": "2026-10-20",
+   "time": "18:00",
+   "file": "reels/ply-reel-01-name-layer-by-layer.mp4",
+   "topic": "arabic name printed layer by layer",
+   "campaign": "First Layer",
+   "status": "scheduled"
+  },
+  {
+   "number": "R2",
+   "type": "reel",
+   "date": "2026-10-22",
+   "time": "18:00",
+   "file": "reels/ply-reel-02-light-on.mp4",
+   "topic": "lithophane light on",
+   "campaign": "First Layer",
+   "status": "scheduled"
+  },
+  {
+   "number": 27,
+   "type": "post",
+   "date": "2026-10-25",
+   "time": "10:00",
+   "file": "posts/ply-post-27-first-layer.png",
+   "topic": "join the First Layer list",
+   "background": "ink",
+   "campaign": "First Layer",
+   "status": "scheduled"
+  },
+  {
+   "number": "R3",
+   "type": "reel",
+   "date": "2026-10-29",
+   "time": "18:00",
+   "file": "reels/ply-reel-03-cedar-ornament.mp4",
+   "topic": "cedar ornament stacking",
+   "campaign": "First Layer",
+   "status": "scheduled"
   }
- ]
+ ],
+ "campaign": {
+  "name": "First Layer",
+  "dates": "2026-10-19 to 2026-11-09",
+  "offer": "DM FIRST or comment to join: first look, priority Christmas slots, order first. No prices.",
+  "checkpoints": {
+   "2026-10-26": "100 followers, 10 on list",
+   "2026-11-02": "180 followers, 25 on list",
+   "2026-11-09": "250 followers, 40 on list"
+  },
+  "ad": "optional ~$40 boost of best Reel 26 Oct-1 Nov, Beirut + Mount Lebanon, 20-45, set up by Geoffry"
+ }
 }
