@@ -1,5 +1,5 @@
 {
- "note": "Posts 1-6 (brand intro) were posted by hand on 15-17 Oct 2026; their colours were cobalt, paper, sun, coral, ink, cobalt. Rebranded to Atelier on 17 Oct 2026: all scheduled posts and reels were re-rendered as *-v2 files and swapped in Metricool; posts 1-6 and 28 stay in the old style. Same evening the headline serif changed from Instrument Serif to Fraunces: scheduled items re-rendered as *-v3.",
+ "note": "Posts 1-6 (brand intro) were posted by hand on 15-17 Oct 2026; their colours were cobalt, paper, sun, coral, ink, cobalt. Rebranded to Atelier on 17 Oct 2026: all scheduled posts and reels were re-rendered as *-v2 files and swapped in Metricool; posts 1-6 and 28 stay in the old style. Same evening the headline serif changed from Instrument Serif to Fraunces: scheduled items re-rendered as *-v3. 17 Oct evening: posts 1-6 and 28 recreated in the new style and republished via Metricool; Geoffry archives the old versions by hand. To keep October at 20 published items, posts 08, 12, 17 and 18 became Metricool drafts (reuse later).",
  "posts": [
   {
    "number": 7,
@@ -17,7 +17,7 @@
    "file": "posts/ply-post-08-how-long-v3.png",
    "topic": "how-long",
    "background": "sand",
-   "status": "scheduled"
+   "status": "draft (moved out of October to stay within 20/month)"
   },
   {
    "number": 9,
@@ -53,7 +53,7 @@
    "file": "posts/ply-post-12-myth-fact-v3.png",
    "topic": "myth-fact",
    "background": "bone",
-   "status": "scheduled"
+   "status": "draft (moved out of October to stay within 20/month)"
   },
   {
    "number": 13,
@@ -98,7 +98,7 @@
    "file": "posts/ply-post-17-desk-glow-up-v3.png",
    "topic": "desk-glow-up",
    "background": "bone",
-   "status": "scheduled"
+   "status": "draft (moved out of October to stay within 20/month)"
   },
   {
    "number": 18,
@@ -107,7 +107,7 @@
    "file": "posts/ply-post-18-plant-pots-v3.png",
    "topic": "plant-pots",
    "background": "sand",
-   "status": "scheduled"
+   "status": "draft (moved out of October to stay within 20/month)"
   },
   {
    "number": 19,
@@ -232,6 +232,76 @@
    "background": "coral",
    "status": "published",
    "url": "https://www.instagram.com/p/Del9dI_imiG/"
+  },
+  {
+   "number": "1-relaunch",
+   "type": "post",
+   "date": "2026-10-17",
+   "time": "18:45",
+   "file": "posts/ply-post-01-hello-lebanon-v3.png",
+   "topic": "relaunch of post 1 in the Atelier style",
+   "background": "charcoal",
+   "status": "scheduled"
+  },
+  {
+   "number": "2-relaunch",
+   "type": "post",
+   "date": "2026-10-17",
+   "time": "18:47",
+   "file": "posts/ply-post-02-what-we-make-v3.png",
+   "topic": "relaunch of post 2 in the Atelier style",
+   "background": "terracotta",
+   "status": "scheduled"
+  },
+  {
+   "number": "3-relaunch",
+   "type": "post",
+   "date": "2026-10-17",
+   "time": "18:49",
+   "file": "posts/ply-post-03-what-first-v3.png",
+   "topic": "relaunch of post 3 in the Atelier style",
+   "background": "bone",
+   "status": "scheduled"
+  },
+  {
+   "number": "4-relaunch",
+   "type": "post",
+   "date": "2026-10-17",
+   "time": "18:51",
+   "file": "posts/ply-post-04-layer-by-layer-v3.png",
+   "topic": "relaunch of post 4 in the Atelier style",
+   "background": "sand",
+   "status": "scheduled"
+  },
+  {
+   "number": "5-relaunch",
+   "type": "post",
+   "date": "2026-10-17",
+   "time": "18:53",
+   "file": "posts/ply-post-05-spare-parts-v3.png",
+   "topic": "relaunch of post 5 in the Atelier style",
+   "background": "clay",
+   "status": "scheduled"
+  },
+  {
+   "number": "6-relaunch",
+   "type": "post",
+   "date": "2026-10-17",
+   "time": "18:55",
+   "file": "posts/ply-post-06-coming-soon-v3.png",
+   "topic": "relaunch of post 6 in the Atelier style",
+   "background": "charcoal",
+   "status": "scheduled"
+  },
+  {
+   "number": "28-relaunch",
+   "type": "post",
+   "date": "2026-10-17",
+   "time": "18:57",
+   "file": "posts/ply-post-28-weekend-question-v3.png",
+   "topic": "relaunch of post 28 in the Atelier style",
+   "background": "terracotta",
+   "status": "scheduled"
   }
  ],
  "campaign": {
