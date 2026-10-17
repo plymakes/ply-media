@@ -1,51 +1,41 @@
-Ply makes 3D-printed things to order in Lebanon: name gifts, keychains, décor and spare parts. The brand is bright, friendly and made for one person at a time. The full name is **Ply Makes** (@plymakes, plymakes.com); the short name is **Ply**. The slogan is **“Ply makes it yours.”**
+Ply makes 3D-printed things to order in Lebanon: name gifts, keychains, décor and spare parts. Since 17 October 2026 the brand follows the **Atelier** direction: calm, warm and editorial, like a small design studio rather than a toy shop. The full name is **Ply Makes** (@plymakes); the slogan is **“Ply makes it yours.”**
 
 ## Voice
 
-- Write as Ply, in plain and warm English, and speak to the customer as “you”.
-- Build campaign lines on “Ply makes …”: “Ply makes Christmas personal.”, “Ply makes Mother’s Day.”, “Ply makes it fit. Spare parts, printed.”
-- Other approved lines: “You name it. Ply makes it.”, “Layers of play.”, “Your idea, layer by layer.”
-- Use sentence case and end slogans with a full stop. Write “Ply” with a capital in text; the lowercase “ply” lives only inside the logo.
-- End a post with one action, such as “Order on WhatsApp.” No runs of emoji or exclamation marks.
-- Arabic is Lebanese colloquial, set right to left in `arabic-display` or `arabic-body`, with Ply kept in Latin letters: “Ply بيعملها إلك”.
+- Write as Ply, in plain and warm English, and speak to the customer as “you”. Fewer, better words; one or two emojis at most.
+- Build campaign lines on “Ply makes …”: “Ply makes Christmas personal.”, “Ply makes it fit. Spare parts, printed.”
+- Use sentence case. Arabic is Lebanese colloquial, with Ply kept in Latin letters: “Ply بيعملها إلك”.
+- End a post with one action, such as “DM us FIRST” or “Order on WhatsApp.”
 
 ## Colour
 
-- Lead with `brand-cobalt`: the profile picture, the reverse logo ground, primary buttons and hero blocks. Put text on it in `on-cobalt`.
-- Use `brand-sun` and `brand-coral` as accent fills only, with text on them in `on-sun` and `on-coral`. Never set sun or coral as text or thin lines on a light `surface`.
-- Lay pages on `surface`, cards on `surface-raised`, copy in `text` and `text-muted`, links in `link`.
-- Use `line` for decorative hairlines and `line-strong` for input borders. Show keyboard focus as a solid 2px `focus` ring with a 2px offset.
-- Keep `paper` and `ink` for logos and print; they do not change with the theme.
-- Use at most three of cobalt, sun and coral in one layout, plus paper and ink. No gradients and no drop shadows.
+- Lead with `bone` and `charcoal`; they carry most of every layout.
+- Use `terracotta` as the single accent: the logo dot, one highlighted word, one key shape. Never set small text in terracotta on charcoal.
+- Use `sand` and `clay` as soft secondary grounds, `stone` for quiet text on bone.
+- Rotate feed backgrounds in this order so the grid stays calm: bone, sand, clay, charcoal, terracotta.
+- No gradients, no drop shadows, no bright primaries in brand graphics (product photos and filament colours are the exception).
 
 ## Type
 
-- Set everything Latin in Space Grotesk (`sans`) and everything Arabic in IBM Plex Sans Arabic (`arabic`). Both load from Google Fonts.
-- Use `display-xl` for one hero line, `display-l` for campaign lines and `heading` for section titles and product names.
-- Put the slogan in `slogan`, running text in `body`, notes and prices in `small`, and eyebrows in `label`, always uppercase.
+- Headlines in Instrument Serif (`serif`), regular weight, tight leading; use its italic for one emphasised word.
+- Labels, body and captions in Space Grotesk (`sans`): labels uppercase with wide tracking (0.22em), body at regular weight.
+- Arabic in Noto Naskh Arabic (`arabic`).
 
 ## Logo
 
-The mark is **the stack**: three touching pills, each stepped a little further right going up, sitting on the baseline of the lowercase wordmark. It reads as printed layers.
+- Main logo: the **Ply Makes signature**, serif “Ply”, then MAKES in tracked capitals, then a terracotta dot on the baseline (`ply-makes-lockup-*.svg`).
+- Short mark: “Ply.” with the terracotta dot (`ply-mark-*.svg`). Use it on posts (bottom right), the profile picture and small spaces.
+- On charcoal use the bone versions; on bone use the charcoal versions; one-colour black and white for print and engraving.
+- On a product (keychain, tag, engraving) use `ply-mark-print-bold.svg`: the serif hairlines and small capitals are too fine for a 0.4 mm nozzle.
+- Keep clear space of the cap height of “P” all round. Never recolour the dot outside terracotta (or the one-colour versions), never stretch, outline or add effects.
 
-- Use **Ply Makes** (`ply-makes-*.svg`) as the main logo and **Ply** (`ply-logo-*.svg`) where space is short. Use the stack alone (`ply-symbol-*.svg`) for small spaces and profile pictures.
-- On paper or white, use the colour version (`*-colour.svg`): pills `ink`, `brand-coral` and `brand-cobalt` from top to bottom, with the wordmark in `ink`.
-- On cobalt or dark grounds, use the reverse (`*-reverse.svg`, or `*-on-cobalt.svg` with its ground): pills `paper`, `brand-coral` and `brand-sun`, with the wordmark in `paper`.
-- For one-colour print and engraving, use `*-black.svg` or `*-white.svg`.
-- Put the slogan under the logo with `ply-makes-slogan-on-cobalt.svg`; do not retype it beside the mark.
-- Keep clear space of one pill height all round. Below 96px wide on screen or 25mm in print, use the stack alone.
-- Construction, at a 200px wordmark: pills 132 × 48 with fully round ends, each stepped 16px right of the one below; the stack’s bottom on the text baseline; a 30px gap to the wordmark; Space Grotesk Bold at −0.06em, “makes” in Regular. Scale it as one piece and always use the files; never rebuild it from live text.
-- Don’t recolour the pills outside these colourways, flip the step, space the pills apart, or add outlines, shadows or gradients. Don’t place the colour logo on cobalt or the reverse logo on paper.
+## Layout
 
-## Shape and layout
-
-- Pills are the brand’s shape. Put a campaign line in a `radius-pill` tag of cobalt, sun or coral.
-- Round buttons and inputs with `radius-sm`, and cards, product tiles and post panels with `radius-md`. Keep photos square-cornered inside rounded tiles.
-- Space with `space-1` to `space-16`: `space-4` between tiles, `space-6` inside cards and posts, `space-10` between sections, `space-16` for page and poster margins.
-- On the feed, rotate cobalt, sun, coral and photo tiles, with the logo small in a top corner in the matching colourway.
+- Generous margins (104 px on a 1080 px post), one idea per post, lots of empty space.
+- Top row: small tracked label left, @plymakes right. Bottom row: one body line left, the “Ply.” mark right.
+- Illustrations are simple flat shapes in the palette; never present an illustration as a real product photo.
 
 ## Iconography
 
-- The stack is the only mark. There is no icon set yet: label actions with words until one is chosen, and pick a rounded, 2px-stroke set to match the pills.
-- Use `ply-instagram-profile-1080.png` for Instagram and TikTok: a cobalt square that the apps crop to a circle, with the stack in the safe centre.
-- Use `ply-favicon.svg` with the 32, 180 and 512 PNGs for the website, and `ply-app-icon-1024.png` wherever a rounded-square app icon is needed.
+- No icon set: label actions with words. The “Ply.” mark is the only symbol.
+- Profile picture: `ply-instagram-profile-1080.png` (charcoal square, bone “Ply.”, terracotta dot).
