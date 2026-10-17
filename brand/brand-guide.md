@@ -17,13 +17,13 @@ Ply makes 3D-printed things to order in Lebanon: name gifts, keychains, décor a
 
 ## Type
 
-- Headlines in Instrument Serif (`serif`), regular weight, tight leading; use its italic for one emphasised word.
+- Headlines in Fraunces (`serif`) at weight 500, tight leading; use its italic for one emphasised word. Fraunces 700 for anything printed on plastic.
 - Labels, body and captions in Space Grotesk (`sans`): labels uppercase with wide tracking (0.22em), body at regular weight.
 - Arabic in Noto Naskh Arabic (`arabic`).
 
 ## Logo
 
-- Main logo: the **Ply Makes signature**, serif “Ply”, then MAKES in tracked capitals, then a terracotta dot on the baseline (`ply-makes-lockup-*.svg`).
+- Main logo: the **Ply Makes signature**, serif “Ply” (Fraunces), then MAKES in tracked capitals, then a terracotta dot on the baseline (`ply-makes-lockup-*.svg`).
 - Short mark: “Ply.” with the terracotta dot (`ply-mark-*.svg`). Use it on posts (bottom right), the profile picture and small spaces.
 - On charcoal use the bone versions; on bone use the charcoal versions; one-colour black and white for print and engraving.
 - On a product (keychain, tag, engraving) use `ply-mark-print-bold.svg`: the serif hairlines and small capitals are too fine for a 0.4 mm nozzle.

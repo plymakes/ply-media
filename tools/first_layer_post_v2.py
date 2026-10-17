@@ -14,5 +14,5 @@ f.write_text(f'<html><head><meta charset="utf-8"><style>{m["CSS"]}</style></head
 with sync_playwright() as p:
     b = p.chromium.launch(); pg = b.new_page(viewport={'width': 1080, 'height': 1350})
     pg.goto(f.as_uri()); pg.wait_for_timeout(300)
-    pg.screenshot(path=str(root / 'build' / 'ply-post-27-first-layer-v2.png')); b.close()
+    pg.screenshot(path=str(root / 'build' / 'ply-post-27-first-layer-v3.png')); b.close()
 print('ok')

@@ -19,14 +19,14 @@ C, SU, R, I, P = '#B4532A', '#CDBFA8', '#DDB8A2', '#1C1B19', '#EFEAE2'  # Atelie
 
 FACES = ''.join(f"@font-face{{font-family:SG;font-weight:{w};src:url('{(FS/f'space-grotesk/files/space-grotesk-latin-{w}-normal.woff2').as_uri()}')}}" for w in (400, 500, 700))
 FACES += f"@font-face{{font-family:PA;font-weight:600;src:url('{(FS/'noto-naskh-arabic/files/noto-naskh-arabic-arabic-600-normal.woff2').as_uri()}')}}"
-FACES += ''.join(f"@font-face{{font-family:IS;font-style:{st};font-weight:400;src:url('{(FS/f'instrument-serif/files/instrument-serif-latin-400-{st}.woff2').as_uri()}')}}" for st in ('normal', 'italic'))
+FACES += ''.join(f"@font-face{{font-family:IS;font-style:{st};font-weight:500;src:url('{(FS/f'fraunces/files/fraunces-latin-500-{st}.woff2').as_uri()}')}}" for st in ('normal', 'italic'))
 
 BASE_CSS = FACES + """
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1080px;height:1920px;overflow:hidden;font-family:SG,sans-serif}
 .abs{position:absolute}
 .label{font-size:26px;font-weight:500;letter-spacing:.22em;text-transform:uppercase}
-.h{font-family:IS,Georgia,serif;font-weight:400;letter-spacing:-.01em;line-height:.95}
+.h{font-family:IS,Georgia,serif;font-weight:500;letter-spacing:-.015em;line-height:1}
 .fade{transition:none}
 """
 
@@ -49,7 +49,7 @@ def end_card(bg_col, fg, line1, line2):
     dot = I if bg_col == C else C
     return f'''<div id="end" class="abs" style="inset:0;background:{bg_col};opacity:0">
 <div class="abs" style="left:0;right:0;top:560px;display:flex;justify-content:center;align-items:baseline;gap:28px">
-<span style="font-family:IS,Georgia,serif;font-size:250px;line-height:.8;color:{fg}">Ply</span>
+<span style="font-family:IS,Georgia,serif;font-size:220px;line-height:.8;color:{fg}">Ply</span>
 <span style="font-size:34px;font-weight:500;letter-spacing:.45em;color:{fg};opacity:.75">MAKES</span>
 <span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:{dot};margin-left:-22px"></span></div>
 <div id="e1" class="abs h" style="left:100px;right:100px;top:960px;text-align:center;font-size:120px;color:{fg}">{line1}</div>
@@ -62,7 +62,7 @@ LAYERS = 30
 reel1 = dict(name='ply-reel-01-name-layer-by-layer', dur=11.0, html=f'''
 <div class="abs" style="inset:0;background:{C}"></div>
 <div id="lab" class="abs label" style="left:100px;top:180px;color:{P}">Watch it print</div>
-<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:136px;color:{P}">Your name.<br>Layer by layer.</div>
+<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:116px;color:{P}">Your name.<br>Layer by layer.</div>
 <div class="abs" style="left:190px;width:700px;top:1290px;height:40px;border-radius:20px;background:{I}"></div>
 <div id="nameWrap" class="abs" style="left:0;right:0;top:820px;height:470px;clip-path:inset(100% 0 0 0)">
   <div dir="rtl" lang="ar" class="abs" style="left:0;right:0;top:0;text-align:center;font-family:PA;font-weight:600;font-size:400px;line-height:1.15;color:transparent;background:repeating-linear-gradient(0deg, #CDBFA8 0 3px, {P} 3px 15px);-webkit-background-clip:text;background-clip:text">ليلى</div>
@@ -91,8 +91,8 @@ window.setT=t=>{{
 reel2 = dict(name='ply-reel-02-light-on', dur=10.0, html=f'''
 <div id="bg" class="abs" style="inset:0;background:{I}"></div>
 <div id="lab" class="abs label" style="left:100px;top:180px;color:#A9ACB3">Lithophane</div>
-<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:140px;color:{P}">Lights off…</div>
-<div id="t1b" class="abs h" style="left:100px;right:100px;top:250px;font-size:140px;color:{SU};opacity:0">Lights on.</div>
+<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:120px;color:{P}">Lights off…</div>
+<div id="t1b" class="abs h" style="left:100px;right:100px;top:250px;font-size:120px;color:{SU};opacity:0">Lights on.</div>
 <div class="abs" style="left:240px;top:620px;width:600px;height:780px;border-radius:28px;overflow:hidden;background:#E6E1D5">
   <div class="abs" style="inset:0;background:repeating-linear-gradient(0deg, rgba(19,21,26,.05) 0 6px, transparent 6px 20px)"></div>
   <div id="glow" class="abs" style="inset:0;opacity:0;background:radial-gradient(circle at 50% 36%,#FFF6DC 0%,#FFD98A 42%,#E39A40 100%)">
@@ -127,7 +127,7 @@ trunk_top = y0 + len(tiers) * 52
 reel3 = dict(name='ply-reel-03-cedar-ornament', dur=11.0, html=f'''
 <div class="abs" style="inset:0;background:{C}"></div>
 <div id="lab" class="abs label" style="left:100px;top:180px;color:{P}">Christmas</div>
-<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:140px;color:{P}">A cedar for<br>your tree.</div>
+<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:120px;color:{P}">A cedar for<br>your tree.</div>
 <div id="orn" class="abs" style="left:0;top:0;width:1080px;height:1920px;transform-origin:540px 580px">
   <div id="loop" class="abs" style="left:510px;top:580px;width:60px;height:60px;border-radius:50%;border:10px solid {SU};opacity:0"></div>
   <div id="str" class="abs" style="left:536px;top:638px;width:8px;height:62px;background:{SU};opacity:0"></div>
@@ -169,9 +169,9 @@ def render(reel):
             pg.evaluate(f'window.setT({i / FPS})')
             pg.screenshot(path=str(td / f'f{i:04d}.png'))
         pg.evaluate(f'window.setT({reel["dur"] * 0.45})')
-        pg.screenshot(path=str(OUT / f'{reel["name"]}-v2-preview.png'))
+        pg.screenshot(path=str(OUT / f'{reel["name"]}-v3-preview.png'))
         b.close()
-        out = OUT / f'{reel["name"]}-v2.mp4'
+        out = OUT / f'{reel["name"]}-v3.mp4'
         subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-framerate', str(FPS), '-i', str(td / 'f%04d.png'),
                         '-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=44100',
                         '-shortest', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',

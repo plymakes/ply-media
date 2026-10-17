@@ -1,4 +1,4 @@
-"""Ply posts in the Atelier style (route A6, from 17 Oct 2026). Reference generator: copy it and change only the content.
+"""Ply posts in the Atelier style (route A6, from 17 Oct 2026; headline serif Fraunces 500 since 17 Oct evening; the CSS family name IS is kept). Reference generator: copy it and change only the content.
 Usage: python3 tools/atelier_posts.py [name-filter]  -> renders into build/ as ply-post-NN-name-v2.png"""
 import math
 import sys
@@ -12,7 +12,7 @@ OUT.mkdir(exist_ok=True)
 OUT.mkdir(parents=True, exist_ok=True)
 faces = ''.join(f"@font-face{{font-family:SG;font-weight:{w};src:url('{(FS/f'space-grotesk/files/space-grotesk-latin-{w}-normal.woff2').as_uri()}')}}" for w in (400, 500, 700))
 faces += f"@font-face{{font-family:PA;font-weight:600;src:url('{(FS/'noto-naskh-arabic/files/noto-naskh-arabic-arabic-600-normal.woff2').as_uri()}')}}"
-faces += ''.join(f"@font-face{{font-family:IS;font-style:{st};font-weight:400;src:url('{(FS/f'instrument-serif/files/instrument-serif-latin-400-{st}.woff2').as_uri()}')}}" for st in ('normal', 'italic'))
+faces += ''.join(f"@font-face{{font-family:IS;font-style:{st};font-weight:500;src:url('{(FS/f'fraunces/files/fraunces-latin-500-{st}.woff2').as_uri()}')}}" for st in ('normal', 'italic'))
 
 # Atelier palette. Names kept from the old generator: C=terracotta, SU=sand, R=clay, I=charcoal, P=bone
 C, SU, R, I, P = '#B4532A', '#CDBFA8', '#DDB8A2', '#1C1B19', '#EFEAE2'
@@ -28,7 +28,7 @@ CSS = faces + """
 body{width:1080px;height:1350px;font-family:SG,sans-serif;overflow:hidden}
 .p{width:1080px;height:1350px;padding:96px 104px 88px;display:flex;flex-direction:column}
 .label{font-size:21px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;display:flex;justify-content:space-between}
-.h{margin-top:30px;font-family:IS,Georgia,serif;font-weight:400;letter-spacing:-.01em;line-height:.95}
+.h{margin-top:30px;font-family:IS,Georgia,serif;font-weight:500;letter-spacing:-.015em;line-height:1}
 .h i{font-style:italic}
 .mid{flex:1;display:flex;align-items:center;justify-content:center;min-height:0;position:relative}
 .bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:48px}
@@ -46,7 +46,7 @@ def page(bg, label, headline, mid, body, hsize=104):
     fg, muted, sym = THEME[bg]
     return f"""<div class="p" style="background:{bg};color:{fg}">
 <div class="label" style="color:{muted if bg in (I,) else fg}"><span>{label}</span><span>@plymakes</span></div>
-<div class="h" style="font-size:{round(hsize*1.18)}px">{headline}</div>
+<div class="h" style="font-size:{round(hsize*0.98)}px">{headline}</div>
 <div class="mid">{mid}</div>
 <div class="bottom"><div class="body" style="color:{muted if bg in (P, I, SU) else fg}">{body}</div>{symbol(sym)}</div>
 </div>"""
@@ -263,6 +263,6 @@ with sync_playwright() as p:
         f.write_text(f'<html><head><meta charset="utf-8"><style>{CSS}</style></head><body>{h}</body></html>')
         pg.goto(f.as_uri())
         pg.wait_for_timeout(250)
-        pg.screenshot(path=str(OUT / f'{n}-v2.png'))
+        pg.screenshot(path=str(OUT / f'{n}-v3.png'))
     b.close()
 print(len(posts), 'posts')

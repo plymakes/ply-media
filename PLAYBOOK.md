@@ -8,7 +8,7 @@ This repository is the working folder for Ply's Instagram. Images in `posts/` ar
 - Name: Ply (full name Ply Makes). Instagram @plymakes. Slogan: "Ply makes it yours." Arabic: "Ply بيعملها إلك".
 - What Ply is: a 3D printing studio in Lebanon making personalised gifts, décor, custom prints and spare parts. The owner (Geoffry) lives in Cyprus; a helper in Lebanon runs the printer.
 - Rules, colours, type and logos: `brand/brand-guide.md`, `brand/tokens.json`, `brand/logos/`.
-- Brand direction since 17 Oct 2026: **Atelier** (logo route A6, the "Ply Makes" signature). Colours: Bone #EFEAE2, Charcoal #1C1B19, Terracotta #B4532A (single accent), Sand #CDBFA8, Clay #DDB8A2, Stone #8A857C. Fonts: Instrument Serif (headlines), Space Grotesk (labels, body), Noto Naskh Arabic (Arabic). The old cobalt/sun/coral "stack" brand is retired (archived in brand/archive-stack/).
+- Brand direction since 17 Oct 2026: **Atelier** (logo route A6, the "Ply Makes" signature). Colours: Bone #EFEAE2, Charcoal #1C1B19, Terracotta #B4532A (single accent), Sand #CDBFA8, Clay #DDB8A2, Stone #8A857C. Fonts: Fraunces 500 (headlines; Fraunces 700 for the print cut), Space Grotesk (labels, body), Noto Naskh Arabic (Arabic). The old cobalt/sun/coral "stack" brand is retired (archived in brand/archive-stack/).
 - Voice: plain, warm, calm English, speaking to "you"; "Ply makes …" campaign lines; one call to action per post; one or two emojis per caption; 2–4 hashtags; an Arabic line now and then.
 
 ## How posts are made
