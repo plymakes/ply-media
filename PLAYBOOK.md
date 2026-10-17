@@ -28,6 +28,9 @@ This repository is the working folder for Ply's Instagram. Images in `posts/` ar
 ## Scheduling
 
 - Metricool brand id (blogId) 7478818, Instagram only (TikTok not connected yet), timezone Asia/Nicosia.
-- One feed post a day, Monday to Saturday, at the best time from `getBestTimeToPostByNetwork` (10:00 so far). Keep the schedule filled about 14 days ahead.
+- Rhythm (chosen by Geoffry, 17 Oct 2026): 4-5 feed posts a week plus Stories, at the best time from `getBestTimeToPostByNetwork` (10:00 so far). Keep the schedule filled about 14 days ahead.
+- Budget: Metricool free plan publishes at most 20 items per calendar month (each network counts separately). Count feed posts and Stories together and never go over 20 in a month. Extra Stories go into a "story kit" Geoffry posts by hand (max 2 a week).
+- Highlights: About, Ideas, How it works, Christmas. Tools can't add Highlights, so each Story's log entry suggests one and the daily brief tells Geoffry.
+- Pre-launch goals until the printer arrives (about 10 Nov): 250 followers, 40 people on the first-access list (comments/DMs asking to be notified), 5%+ engagement on poll and quiz posts.
 - Posts that mention a price, discount, offer, giveaway or delivery promise: create them with `"draft": true` and list them in the weekly summary for Geoffry to approve. Everything else uses `"autoPublish": true`.
 - Record every scheduled post in `content-log.json`.
