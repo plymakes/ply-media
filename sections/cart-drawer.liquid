@@ -1,0 +1,115 @@
+{%- liquid
+  assign threshold = settings.free_shipping_threshold | times: 100
+  assign remaining = threshold | minus: cart.total_price
+  assign progress = 100
+  if threshold > 0 and remaining > 0
+    assign progress = cart.total_price | times: 100 | divided_by: threshold
+  endif
+  assign delivery_cents = settings.delivery_price | times: 100
+  if remaining <= 0
+    assign delivery_cents = 0
+  endif
+  assign estimated_total = cart.total_price | plus: delivery_cents
+  assign cart_product_ids = cart.items | map: 'product_id'
+-%}
+<cart-drawer>
+  <div class="drawer-overlay"></div>
+  <div class="drawer" role="dialog" aria-modal="true" aria-label="{{ 'cart.title' | t }}" aria-hidden="true">
+    <div data-drawer-inner data-drawer-count="{{ cart.item_count }}" style="display: contents;">
+      <div class="drawer__head">
+        <h2 class="h4" style="font-size: 26px;">{{ 'cart.title' | t }} ({{ cart.item_count }})</h2>
+        <button type="button" data-drawer-close>{{ 'general.close' | t }}</button>
+      </div>
+
+      {%- if cart.item_count > 0 -%}
+        <div class="free-bar">
+          {%- if remaining > 0 -%}
+            <p>{%- assign remaining_label = remaining | money_without_trailing_zeros -%}{{ 'cart.free_delivery_remaining' | t: amount: remaining_label }}</p>
+          {%- else -%}
+            <p>{{ 'cart.free_delivery_reached' | t }}</p>
+          {%- endif -%}
+          <div
+            class="free-bar__track"
+            role="progressbar"
+            aria-label="{{ 'cart.free_delivery_progress' | t }}"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="{{ progress }}"
+          >
+            <div class="free-bar__fill" style="width: {{ progress }}%;"></div>
+          </div>
+        </div>
+
+        <div class="drawer__body">
+          {%- for item in cart.items -%}
+            {% render 'cart-line', item: item, index: forloop.index %}
+          {%- endfor -%}
+
+          {%- liquid
+            assign upsell = nil
+            for p in settings.cart_upsell_products
+              unless cart_product_ids contains p.id
+                if p.available
+                  assign upsell = p
+                  break
+                endif
+              endunless
+            endfor
+          -%}
+          {%- if upsell -%}
+            {%- assign uv = upsell.selected_or_first_available_variant -%}
+            <div class="drawer-upsell">
+              <p class="label muted">{{ 'cart.complete_the_set' | t }}</p>
+              <product-form class="upsell-row">
+                <a class="upsell-row__media" href="{{ upsell.url }}" tabindex="-1" aria-hidden="true">
+                  {%- if upsell.featured_image -%}
+                    {{ upsell.featured_image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '', width: 64, height: 64 }}
+                  {%- endif -%}
+                </a>
+                <div class="upsell-row__body">
+                  <a href="{{ upsell.url }}" class="serif" style="color: var(--ink); text-decoration: none; font-size: 18px; line-height: 1.15;">{{ upsell.title }}</a>
+                  <span class="small muted">{% unless upsell.has_only_default_variant %}{{ uv.title }} · {% endunless %}{{ uv.price | money_without_trailing_zeros }}</span>
+                </div>
+                {%- form 'product', upsell, novalidate: 'novalidate' -%}
+                  <input type="hidden" name="id" value="{{ uv.id }}">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn--outline">{{ 'products.add' | t }}</button>
+                {%- endform -%}
+              </product-form>
+            </div>
+          {%- endif -%}
+        </div>
+
+        <div class="drawer__foot">
+          <div class="totals-row"><span>{{ 'cart.subtotal' | t }}</span><span>{{ cart.total_price | money_without_trailing_zeros }}</span></div>
+          <div class="totals-row">
+            <span>{{ 'cart.delivery' | t: min: settings.delivery_min_days, max: settings.delivery_max_days }}</span>
+            <span>{% if delivery_cents == 0 %}{{ 'cart.free' | t }}{% else %}{{ delivery_cents | money_without_trailing_zeros }}{% endif %}</span>
+          </div>
+          <div class="totals-row totals-row--strong"><span>{{ 'cart.total' | t }}</span><span>{{ estimated_total | money_without_trailing_zeros }}</span></div>
+          <form action="{{ routes.cart_url }}" method="post">
+            <button type="submit" name="checkout" class="btn btn--accent btn--block btn--lg" style="margin-block-start: 8px;">
+              {{- 'cart.checkout' | t }} · {{ estimated_total | money_without_trailing_zeros -}}
+            </button>
+          </form>
+          <p class="small muted" style="text-align: center;">{{ settings.payment_note }} · {{ 'cart.no_account' | t }}</p>
+        </div>
+      {%- else -%}
+        <div class="drawer__body">
+          <div class="empty-state">
+            <p class="h4">{{ 'cart.empty' | t }}</p>
+            <a class="btn btn--dark" href="{{ routes.root_url }}#shop">{{ 'cart.continue' | t }}</a>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</cart-drawer>
+
+{% schema %}
+{
+  "name": "Cart drawer",
+  "class": "section-cart-drawer",
+  "settings": []
+}
+{% endschema %}

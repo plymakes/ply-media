@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{% if request.locale.iso_code == 'ar' %}rtl{% else %}ltr{% endif %}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#EFEAE2">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 64, height: 64 }}">
+      <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180, height: 180 }}">
+    {%- else -%}
+      <link rel="icon" type="image/svg+xml" href="{{ 'ply-favicon.svg' | asset_url }}">
+    {%- endif -%}
+
+    <title>
+      {{ page_title }}
+      {%- if current_tags %} &ndash; {{ current_tags | join: ', ' }}{% endif -%}
+      {%- if current_page != 1 %} &ndash; {{ 'general.page' | t: page: current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} | {{ shop.name }}{% endunless -%}
+    </title>
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {% render 'meta-tags' %}
+
+    {%- if request.locale.iso_code == 'ar' -%}
+      {{ 'noto-naskh-arabic-arabic-400-normal.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }}
+    {%- else -%}
+      {{ 'space-grotesk-latin-400-normal.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }}
+    {%- endif -%}
+    {{ 'fraunces-latin-500-normal.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: 'anonymous' }}
+
+    <style>
+      @font-face { font-family: "Fraunces"; font-style: normal; font-weight: 500; font-display: swap; src: url("{{ 'fraunces-latin-500-normal.woff2' | asset_url }}") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-style: italic; font-weight: 500; font-display: swap; src: url("{{ 'fraunces-latin-500-italic.woff2' | asset_url }}") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-style: normal; font-weight: 700; font-display: swap; src: url("{{ 'fraunces-latin-700-normal.woff2' | asset_url }}") format("woff2"); }
+      @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 400; font-display: swap; src: url("{{ 'space-grotesk-latin-400-normal.woff2' | asset_url }}") format("woff2"); }
+      @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 500 700; font-display: swap; src: url("{{ 'space-grotesk-latin-500-normal.woff2' | asset_url }}") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-style: normal; font-weight: 400; font-display: swap; src: url("{{ 'noto-naskh-arabic-arabic-400-normal.woff2' | asset_url }}") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-style: normal; font-weight: 600 700; font-display: swap; src: url("{{ 'noto-naskh-arabic-arabic-600-normal.woff2' | asset_url }}") format("woff2"); }
+    </style>
+
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      window.Ply = {
+        routes: {
+          root: {{ routes.root_url | json }},
+          cartAdd: {{ routes.cart_add_url | json }},
+          cartChange: {{ routes.cart_change_url | json }},
+          cart: {{ routes.cart_url | json }}
+        },
+        moneyFormat: {{ shop.money_format | json }},
+        locale: {{ request.locale.iso_code | json }},
+        strings: {
+          addToCart: {{ 'products.add_to_cart' | t | json }},
+          soldOut: {{ 'products.sold_out' | t | json }},
+          unavailable: {{ 'products.unavailable' | t | json }},
+          added: {{ 'products.added' | t | json }},
+          error: {{ 'cart.error' | t | json }}
+        }
+      };
+    </script>
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
+    {{ content_for_header }}
+  </head>
+
+  <body class="template-{{ template.name | handle }}">
+    <a class="skip-link" href="#MainContent">{{ 'accessibility.skip_to_content' | t }}</a>
+
+    {% sections 'header-group' %}
+
+    <main id="MainContent" class="main" role="main" tabindex="-1">
+      {{ content_for_layout }}
+    </main>
+
+    {% sections 'footer-group' %}
+
+    {% section 'cart-drawer' %}
+
+    {%- if request.page_type == 'index' -%}
+      {% render 'schema-organization' %}
+    {%- endif -%}
+  </body>
+</html>

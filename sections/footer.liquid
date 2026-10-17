@@ -1,0 +1,138 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img
+          src="{{ 'ply-makes-lockup-bone.svg' | asset_url }}"
+          alt="{{ shop.name }}"
+          width="90"
+          height="36"
+          loading="lazy"
+        >
+        {%- if section.settings.tagline != blank -%}
+          <p class="small" style="color: var(--muted-on-dark); max-width: 26em;">{{ section.settings.tagline }}</p>
+        {%- endif -%}
+        {%- if section.settings.arabic_line != blank -%}
+          <p class="ar-line" lang="ar" dir="rtl" style="align-self: flex-start;">{{ section.settings.arabic_line }}</p>
+        {%- endif -%}
+        {%- form 'customer', id: 'FooterNewsletter', class: 'stack' -%}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <label class="label" for="FooterNewsletterEmail" style="color: var(--muted-on-dark);">
+            {{- section.settings.newsletter_heading -}}
+          </label>
+          <div class="newsletter">
+            <input
+              id="FooterNewsletterEmail"
+              type="email"
+              name="contact[email]"
+              required
+              autocomplete="email"
+              placeholder="{{ 'newsletter.placeholder' | t }}"
+            >
+            <button type="submit" class="btn btn--light">{{ 'newsletter.subscribe' | t }}</button>
+          </div>
+          {%- if form.posted_successfully? -%}
+            <p class="form-success" role="status">{{ 'newsletter.success' | t }}</p>
+          {%- endif -%}
+          {%- if form.errors -%}
+            <p class="form-error" role="alert" style="color: var(--accent-on-dark);">{{ form.errors | default_errors }}</p>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+
+      {%- if section.settings.shop_menu != blank -%}
+        <nav class="footer__col" aria-label="{{ section.settings.shop_heading | escape }}">
+          <span class="label" style="color: var(--muted-on-dark);">{{ section.settings.shop_heading }}</span>
+          <ul>
+            {%- for link in section.settings.shop_menu.links -%}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+      {%- endif -%}
+
+      {%- if section.settings.help_menu != blank -%}
+        <nav class="footer__col" aria-label="{{ section.settings.help_heading | escape }}">
+          <span class="label" style="color: var(--muted-on-dark);">{{ section.settings.help_heading }}</span>
+          <ul>
+            {%- for link in section.settings.help_menu.links -%}
+              <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+      {%- endif -%}
+
+      <div class="footer__col">
+        <span class="label" style="color: var(--muted-on-dark);">{{ 'footer.follow' | t }}</span>
+        <ul>
+          {%- if settings.instagram_url != blank -%}
+            <li><a href="{{ settings.instagram_url }}" rel="noopener" target="_blank">Instagram @plymakes</a></li>
+          {%- endif -%}
+          {%- if settings.tiktok_url != blank -%}
+            <li><a href="{{ settings.tiktok_url }}" rel="noopener" target="_blank">TikTok @plymakes</a></li>
+          {%- endif -%}
+          {%- if settings.whatsapp_number != blank -%}
+            {%- assign wa = settings.whatsapp_number | remove: '+' | remove: ' ' | remove: '-' -%}
+            <li><a href="https://wa.me/{{ wa }}" rel="noopener" target="_blank">WhatsApp</a></li>
+          {%- endif -%}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }} · {{ 'footer.prices_in' | t: currency: cart.currency.iso_code }}</span>
+      <span>{{ settings.payment_note }}</span>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "section-footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "3D-printed planters, vases and coasters, made in Lebanon."
+    },
+    {
+      "type": "text",
+      "id": "arabic_line",
+      "label": "Arabic line",
+      "default": "Ply بيعملها إلك"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_heading",
+      "label": "Newsletter heading",
+      "default": "New pieces, once a month"
+    },
+    {
+      "type": "text",
+      "id": "shop_heading",
+      "label": "First menu heading",
+      "default": "Shop"
+    },
+    {
+      "type": "link_list",
+      "id": "shop_menu",
+      "label": "First menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "text",
+      "id": "help_heading",
+      "label": "Second menu heading",
+      "default": "Help"
+    },
+    {
+      "type": "link_list",
+      "id": "help_menu",
+      "label": "Second menu",
+      "default": "footer"
+    }
+  ]
+}
+{% endschema %}

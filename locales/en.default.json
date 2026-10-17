@@ -1,0 +1,99 @@
+{
+  "general": {
+    "page": "Page {{ page }}",
+    "home": "Home",
+    "breadcrumb": "Breadcrumb",
+    "language": "Language",
+    "go": "Go",
+    "search": "Search",
+    "search_placeholder": "Planter, vase, coasters…",
+    "search_results": "{{ count }} results for “{{ terms }}”",
+    "menu": "Menu",
+    "close": "Close",
+    "order_on_whatsapp": "Order on WhatsApp",
+    "message_on_instagram": "Message us on Instagram",
+    "follow_instagram": "Follow @plymakes on Instagram",
+    "pagination": "Pages",
+    "previous": "Previous",
+    "next": "Next",
+    "collections": "Collections",
+    "not_found_title": "This page isn't here.",
+    "not_found_text": "The link may be old or mistyped. Our three pieces are one tap away.",
+    "password_enter": "Store owner? Enter with the password",
+    "password": "Password",
+    "password_submit": "Enter"
+  },
+  "accessibility": {
+    "skip_to_content": "Skip to content",
+    "main_menu": "Main menu",
+    "announcement": "Announcement",
+    "why_ply": "Why order from Ply"
+  },
+  "products": {
+    "add_to_cart": "Add to cart",
+    "add_the_set": "Add the set",
+    "add": "Add",
+    "added": "Added",
+    "sold_out": "Sold out",
+    "unavailable": "Unavailable",
+    "save": "Save {{ amount }}",
+    "empty": "New pieces are on the printer. Check back soon.",
+    "show_image": "Show image {{ number }}",
+    "quantity": "Quantity",
+    "quantity_decrease": "One less",
+    "quantity_increase": "One more",
+    "eta_prefix": "Order today, at your door",
+    "eta_template": "between {from} and {to}.",
+    "eta_fallback": "in {{ min }} to {{ max }} days.",
+    "delivery_note": "Delivery {{ price }} anywhere in Lebanon, free from {{ threshold }}.",
+    "order_on_whatsapp": "Or order on WhatsApp",
+    "details": "Details"
+  },
+  "cart": {
+    "title": "Your cart",
+    "title_short": "Cart",
+    "summary": "Order summary",
+    "error": "Something went wrong. Please try again, or order on WhatsApp.",
+    "decrease": "One less {{ title }}",
+    "increase": "One more {{ title }}",
+    "remove": "Remove",
+    "free_delivery_remaining": "You are {{ amount }} away from free delivery.",
+    "free_delivery_reached": "Your delivery is free.",
+    "free_delivery_progress": "Progress to free delivery",
+    "complete_the_set": "Complete the set",
+    "subtotal": "Subtotal",
+    "delivery": "Delivery in {{ min }} to {{ max }} days",
+    "free": "Free",
+    "total": "Total",
+    "checkout": "Check out",
+    "no_account": "No account needed",
+    "empty": "Your cart is empty.",
+    "continue": "See the collection",
+    "note": "A note for us (optional)"
+  },
+  "newsletter": {
+    "placeholder": "Your email",
+    "subscribe": "Sign up",
+    "notify": "Tell me",
+    "success": "Thank you. You're on the list."
+  },
+  "footer": {
+    "follow": "Follow",
+    "prices_in": "Prices in {{ currency }}"
+  },
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "success": "Thank you. We'll reply within a day."
+  },
+  "gift_card": {
+    "title": "Your Ply gift card",
+    "code": "Gift card code",
+    "expired": "This gift card has expired or is disabled.",
+    "add_to_wallet": "Add to Apple Wallet",
+    "shop": "Shop now"
+  }
+}

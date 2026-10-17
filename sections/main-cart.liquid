@@ -1,0 +1,81 @@
+{%- liquid
+  assign threshold = settings.free_shipping_threshold | times: 100
+  assign remaining = threshold | minus: cart.total_price
+  assign delivery_cents = settings.delivery_price | times: 100
+  if remaining <= 0
+    assign delivery_cents = 0
+  endif
+  assign estimated_total = cart.total_price | plus: delivery_cents
+-%}
+<section class="section--tight">
+  <div class="container">
+    <h1 class="h2" style="margin-block-end: 28px;">{{ 'cart.title' | t }}</h1>
+    {%- if cart.item_count > 0 -%}
+      <div class="cart-page">
+        <div class="cart-page__lines">
+          {%- for item in cart.items -%}
+            <div class="line">
+              <a class="line__media" href="{{ item.url }}" tabindex="-1" aria-hidden="true">
+                {%- if item.image -%}
+                  {{ item.image | image_url: width: 200 | image_tag: loading: 'lazy', alt: item.image.alt, width: 76, height: 76 }}
+                {%- endif -%}
+              </a>
+              <div class="line__body">
+                <div class="line__top">
+                  <a class="line__title" href="{{ item.url }}">{{ item.product.title }}</a>
+                  <span class="small">{{ item.final_line_price | money_without_trailing_zeros }}</span>
+                </div>
+                {%- unless item.product.has_only_default_variant -%}
+                  <span class="line__variant">{{ item.variant.title }}</span>
+                {%- endunless -%}
+                <div class="line__actions">
+                  <div class="qty">
+                    <a class="btn" style="min-height: 40px; padding: 0 14px; color: var(--ink);" href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity={{ item.quantity | minus: 1 }}" aria-label="{{ 'cart.decrease' | t: title: item.product.title }}">−</a>
+                    <span style="min-width: 26px; text-align: center;">{{ item.quantity }}</span>
+                    <a class="btn" style="min-height: 40px; padding: 0 14px; color: var(--ink);" href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity={{ item.quantity | plus: 1 }}" aria-label="{{ 'cart.increase' | t: title: item.product.title }}">+</a>
+                  </div>
+                  <a class="link-button" href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0">{{ 'cart.remove' | t }}</a>
+                </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+        <aside class="cart-page__summary" aria-label="{{ 'cart.summary' | t }}">
+          {%- if remaining > 0 -%}
+            <p class="small">{%- assign remaining_label = remaining | money_without_trailing_zeros -%}{{ 'cart.free_delivery_remaining' | t: amount: remaining_label }}</p>
+          {%- else -%}
+            <p class="small">{{ 'cart.free_delivery_reached' | t }}</p>
+          {%- endif -%}
+          <div class="totals-row"><span>{{ 'cart.subtotal' | t }}</span><span>{{ cart.total_price | money_without_trailing_zeros }}</span></div>
+          <div class="totals-row">
+            <span>{{ 'cart.delivery' | t: min: settings.delivery_min_days, max: settings.delivery_max_days }}</span>
+            <span>{% if delivery_cents == 0 %}{{ 'cart.free' | t }}{% else %}{{ delivery_cents | money_without_trailing_zeros }}{% endif %}</span>
+          </div>
+          <div class="totals-row totals-row--strong"><span>{{ 'cart.total' | t }}</span><span>{{ estimated_total | money_without_trailing_zeros }}</span></div>
+          <form action="{{ routes.cart_url }}" method="post" class="stack" style="--stack-gap: 10px;">
+            <label class="field" for="CartNote">
+              {{ 'cart.note' | t }}
+              <textarea id="CartNote" name="note" style="min-height: 80px;">{{ cart.note }}</textarea>
+            </label>
+            <button type="submit" name="checkout" class="btn btn--accent btn--block btn--lg">{{ 'cart.checkout' | t }}</button>
+          </form>
+          <p class="small muted">{{ settings.payment_note }} · {{ 'cart.no_account' | t }}</p>
+        </aside>
+      </div>
+    {%- else -%}
+      <div class="empty-state">
+        <p class="h4">{{ 'cart.empty' | t }}</p>
+        <a class="btn btn--dark" href="{{ routes.root_url }}#shop">{{ 'cart.continue' | t }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Cart",
+  "tag": "div",
+  "class": "section-main-cart",
+  "settings": []
+}
+{% endschema %}

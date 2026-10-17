@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "eyebrow": "In stock · leaves the same day",
+        "show_whatsapp": true,
+        "complementary_heading": "Complete the set",
+        "complementary": ["ribbed-planter", "fluted-bud-vase", "beirut-tile-coasters"]
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "settings": { "heading": "Good to know", "open_first": false, "structured_data": false },
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "When will it arrive?", "answer": "<p>It leaves the day you order and arrives in 2 to 4 days anywhere in Lebanon.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "How do I pay?", "answer": "<p>In cash to the courier when your order arrives. Delivery is $5, free from $35.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "Something arrived damaged?", "answer": "<p>Message us on WhatsApp or Instagram with your order number and a photo, and we will sort it out with you.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3"]
+    }
+  },
+  "order": ["main", "faq"]
+}

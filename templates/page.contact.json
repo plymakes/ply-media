@@ -1,0 +1,6 @@
+{
+  "sections": {
+    "main": { "type": "main-contact", "settings": { "text": "The quickest way to reach us is WhatsApp. You can also write to us here and we reply within a day." } }
+  },
+  "order": ["main"]
+}

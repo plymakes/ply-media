@@ -1,0 +1,41 @@
+{%- paginate collection.products by 24 -%}
+  <section class="section--tight">
+    <div class="container">
+      <div class="section-head">
+        <h1 class="h2">{{ collection.title }}</h1>
+        {%- if collection.description != blank -%}
+          <div class="rte">{{ collection.description }}</div>
+        {%- endif -%}
+      </div>
+      <div class="grid-cards">
+        {%- for product in collection.products -%}
+          {%- liquid
+            assign eager = false
+            if forloop.index <= 3
+              assign eager = true
+            endif
+          -%}
+          {% render 'product-card', product: product, section_id: section.id, heading_level: 2, eager: eager %}
+        {%- else -%}
+          <p class="muted">{{ 'products.empty' | t }}</p>
+        {%- endfor -%}
+      </div>
+      {%- if paginate.pages > 1 -%}
+        <nav class="pagination" aria-label="{{ 'general.pagination' | t }}">
+          {%- if paginate.previous -%}<a href="{{ paginate.previous.url }}">{{ 'general.previous' | t }}</a>{%- endif -%}
+          <span>{{ paginate.current_page }} / {{ paginate.pages }}</span>
+          {%- if paginate.next -%}<a href="{{ paginate.next.url }}">{{ 'general.next' | t }}</a>{%- endif -%}
+        </nav>
+      {%- endif -%}
+    </div>
+  </section>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "Collection",
+  "tag": "div",
+  "class": "section-main-collection",
+  "settings": []
+}
+{% endschema %}

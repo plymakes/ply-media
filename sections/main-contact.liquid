@@ -1,0 +1,58 @@
+{%- assign wa = settings.whatsapp_number | remove: '+' | remove: ' ' | remove: '-' -%}
+<section class="section--tight">
+  <div class="container split" style="align-items: flex-start;">
+    <div class="stack" style="--stack-gap: 18px;">
+      <h1 class="h2">{{ page.title }}</h1>
+      {%- if page.content != blank -%}
+        <div class="rte">{{ page.content }}</div>
+      {%- endif -%}
+      <p>{{ section.settings.text }}</p>
+      <div class="cluster">
+        {%- if wa != blank -%}
+          <a class="btn btn--dark" href="https://wa.me/{{ wa }}?text={{ settings.whatsapp_greeting | url_encode }}" rel="noopener" target="_blank">{{ 'general.order_on_whatsapp' | t }}</a>
+        {%- endif -%}
+        {%- if settings.instagram_url != blank -%}
+          <a class="btn btn--outline" href="{{ settings.instagram_url }}" rel="noopener" target="_blank">{{ 'general.message_on_instagram' | t }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+    <div>
+      {%- form 'contact', id: 'ContactForm', class: 'stack' -%}
+        {%- if form.posted_successfully? -%}
+          <p class="info-box" role="status">{{ 'contact.success' | t }}</p>
+        {%- endif -%}
+        {%- if form.errors -%}
+          <p class="form-error" role="alert">{{ form.errors | default_errors }}</p>
+        {%- endif -%}
+        <label class="field" for="ContactName">
+          {{- 'contact.name' | t -}}
+          <input id="ContactName" type="text" name="contact[name]" autocomplete="name" value="{{ form.name }}">
+        </label>
+        <label class="field" for="ContactEmail">
+          {{- 'contact.email' | t -}}
+          <input id="ContactEmail" type="email" name="contact[email]" autocomplete="email" required value="{{ form.email }}">
+        </label>
+        <label class="field" for="ContactPhone">
+          {{- 'contact.phone' | t -}}
+          <input id="ContactPhone" type="tel" name="contact[phone]" autocomplete="tel" value="{{ form.phone }}">
+        </label>
+        <label class="field" for="ContactBody">
+          {{- 'contact.message' | t -}}
+          <textarea id="ContactBody" name="contact[body]" required>{{ form.body }}</textarea>
+        </label>
+        <button type="submit" class="btn btn--accent">{{ 'contact.send' | t }}</button>
+      {%- endform -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact",
+  "tag": "div",
+  "class": "section-main-contact",
+  "settings": [
+    { "type": "textarea", "id": "text", "label": "Text", "default": "The quickest way to reach us is WhatsApp. You can also write to us here and we reply within a day." }
+  ]
+}
+{% endschema %}

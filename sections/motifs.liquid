@@ -1,0 +1,80 @@
+<section id="about" class="section">
+  <div class="container split" style="align-items: flex-start;">
+    <div class="stack" style="--stack-gap: 18px;">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="label muted">{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      <h2 class="h2">{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}
+        <div class="rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+      {%- if section.settings.link_label != blank and section.settings.link != blank -%}
+        <a href="{{ section.settings.link }}" style="font-weight: 500; align-self: flex-start;">{{ section.settings.link_label }}</a>
+      {%- endif -%}
+    </div>
+    <div class="grid-auto" style="gap: 16px;">
+      {%- for block in section.blocks -%}
+        <div class="motif motif--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+          {%- liquid
+            assign stroke = '#1C1B19'
+            assign fill = '#DDB8A2'
+            if block.settings.style == 'light'
+              assign fill = '#1C1B19'
+            else
+              assign stroke = '#EFEAE2'
+            endif
+          -%}
+          {%- case block.settings.drawing -%}
+            {%- when 'rib' -%}
+              <svg viewBox="0 0 240 120" aria-hidden="true" focusable="false">
+                <path d="M20 112V36c0-6 4-10 10-10s10 4 10 10v76M50 112V36c0-6 4-10 10-10s10 4 10 10v76M80 112V36c0-6 4-10 10-10s10 4 10 10v76M110 112V36c0-6 4-10 10-10s10 4 10 10v76M140 112V36c0-6 4-10 10-10s10 4 10 10v76M170 112V36c0-6 4-10 10-10s10 4 10 10v76M200 112V36c0-6 4-10 10-10s10 4 10 10v76" fill="none" stroke="{{ stroke }}" stroke-width="3"/>
+              </svg>
+            {%- when 'tile' -%}
+              <svg viewBox="0 0 240 120" aria-hidden="true" focusable="false">
+                <g fill="{{ fill }}">
+                  <path transform="translate(60 60)" d="M0 -40Q15 0 0 40Q-15 0 0 -40ZM-40 0Q0 15 40 0Q0 -15 -40 0Z"/>
+                  <path transform="translate(180 60)" d="M0 -40Q15 0 0 40Q-15 0 0 -40ZM-40 0Q0 15 40 0Q0 -15 -40 0Z"/>
+                  <circle cx="120" cy="20" r="8"/><circle cx="120" cy="100" r="8"/>
+                </g>
+              </svg>
+            {%- else -%}
+              <svg viewBox="0 0 240 120" aria-hidden="true" focusable="false">
+                <path d="M46 116V64a22 22 0 0 1 44 0v52zM98 116V40a22 22 0 0 1 44 0v76zM150 116V64a22 22 0 0 1 44 0v52z" fill="{{ fill }}"/>
+              </svg>
+          {%- endcase -%}
+          <h3 class="h4">{{ block.settings.title }}</h3>
+          <p class="small muted">{{ block.settings.text }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About and motifs",
+  "tag": "div",
+  "class": "section-motifs",
+  "max_blocks": 3,
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "About Ply" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "A small 3D-printing studio in Lebanon." },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>We draw every shape ourselves and print it layer by layer, 0.2 mm at a time, then finish and pack each piece by hand.</p>" },
+    { "type": "text", "id": "link_label", "label": "Link label", "default": "More about Ply" },
+    { "type": "url", "id": "link", "label": "Link" }
+  ],
+  "blocks": [
+    {
+      "type": "motif",
+      "name": "Motif",
+      "settings": [
+        { "type": "select", "id": "drawing", "label": "Drawing", "options": [ { "value": "rib", "label": "Fluted rib" }, { "value": "tile", "label": "Beirut tile" }, { "value": "arch", "label": "Triple arch" } ], "default": "rib" },
+        { "type": "select", "id": "style", "label": "Style", "options": [ { "value": "light", "label": "Light" }, { "value": "dark", "label": "Dark" } ], "default": "light" },
+        { "type": "text", "id": "title", "label": "Title", "default": "The fluted rib" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "On the planter and the bud vase. It catches the light and hides the print lines." }
+      ]
+    }
+  ],
+  "presets": [{ "name": "About and motifs", "blocks": [{ "type": "motif" }] }]
+}
+{% endschema %}

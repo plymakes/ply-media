@@ -1,0 +1,106 @@
+{%- liquid
+  assign menu = section.settings.menu
+  assign logo_height = section.settings.logo_height
+  assign logo_width = logo_height | times: 251 | divided_by: 100
+-%}
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-header__logo" href="{{ routes.root_url }}" style="--logo-height: {{ logo_height }}px">
+      {%- if settings.logo != blank -%}
+        {{ settings.logo | image_url: height: 120 | image_tag: alt: shop.name, height: logo_height }}
+      {%- else -%}
+        <img
+          src="{{ 'ply-makes-lockup-charcoal.svg' | asset_url }}"
+          alt="{{ shop.name }}"
+          width="{{ logo_width }}"
+          height="{{ logo_height }}"
+        >
+      {%- endif -%}
+    </a>
+
+    <nav class="site-nav" aria-label="{{ 'accessibility.main_menu' | t }}">
+      {%- for link in menu.links -%}
+        <a
+          href="{{ link.url }}"
+          {% if link.current %}
+            aria-current="page"
+          {% endif %}
+        >
+          {{- link.title -}}
+        </a>
+      {%- endfor -%}
+    </nav>
+
+    <div class="header-actions">
+      {%- if localization.available_languages.size > 1 -%}
+        {%- form 'localization', class: 'localization-form hide-mobile' -%}
+          <label class="visually-hidden" for="HeaderLanguage">{{ 'general.language' | t }}</label>
+          <select id="HeaderLanguage" name="locale_code" data-locale-select>
+            {%- for language in localization.available_languages -%}
+              <option
+                value="{{ language.iso_code }}"
+                lang="{{ language.iso_code }}"
+                {% if language.iso_code == localization.language.iso_code %}
+                  selected
+                {% endif %}
+              >
+                {{ language.endonym_name | capitalize }}
+              </option>
+            {%- endfor -%}
+          </select>
+          <noscript><button type="submit">{{ 'general.go' | t }}</button></noscript>
+        {%- endform -%}
+      {%- endif -%}
+      <a href="{{ routes.search_url }}" class="hide-mobile">{{ 'general.search' | t }}</a>
+      <a href="{{ routes.cart_url }}" data-open-cart>
+        {{- 'cart.title_short' | t }} (<span class="cart-link__count" data-cart-count>{{ cart.item_count }}</span>)
+      </a>
+      <details class="menu-toggle" data-mobile-menu>
+        <summary>{{ 'general.menu' | t }}</summary>
+        <nav class="mobile-nav" aria-label="{{ 'accessibility.main_menu' | t }}">
+          {%- for link in menu.links -%}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          {%- endfor -%}
+          <a href="{{ routes.search_url }}">{{ 'general.search' | t }}</a>
+          {%- if localization.available_languages.size > 1 -%}
+            {%- for language in localization.available_languages -%}
+              {%- unless language.iso_code == localization.language.iso_code -%}
+                {%- form 'localization' -%}
+                  <input type="hidden" name="locale_code" value="{{ language.iso_code }}">
+                  <button type="submit" class="link-button" lang="{{ language.iso_code }}">
+                    {{- language.endonym_name | capitalize -}}
+                  </button>
+                {%- endform -%}
+              {%- endunless -%}
+            {%- endfor -%}
+          {%- endif -%}
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "section-header",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "range",
+      "id": "logo_height",
+      "label": "Logo height",
+      "min": 24,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,257 @@
+{%- liquid
+  assign variant = product.selected_or_first_available_variant
+  assign form_id = 'product-form-' | append: section.id
+  assign featured = variant.featured_media | default: product.featured_media
+  assign wa = settings.whatsapp_number | remove: '+' | remove: ' ' | remove: '-'
+  assign threshold_cents = settings.free_shipping_threshold | times: 100
+  assign delivery_price_cents = settings.delivery_price | times: 100
+  assign product_url = request.origin | append: product.url
+  assign wa_base = settings.whatsapp_greeting | append: ': ' | append: product.title
+  assign wa_text = wa_base | append: ' ' | append: variant.title | append: ' ' | append: product_url | append: '?variant=' | append: variant.id
+  assign tagline = product.metafields.ply.tagline.value
+-%}
+
+<div class="container">
+  <nav class="breadcrumb" aria-label="{{ 'general.breadcrumb' | t }}">
+    <a href="{{ routes.root_url }}">{{ 'general.home' | t }}</a> /
+    <span aria-current="page">{{ product.title }}</span>
+  </nav>
+
+  <div class="product" data-product-scope>
+    <media-gallery class="product__media">
+      <div class="gallery__main">
+        {%- for media in product.media -%}
+          <div
+            data-media-id="{{ media.id }}"
+            {% unless media.id == featured.id %}
+              hidden
+            {% endunless %}
+          >
+            {%- liquid
+              assign loading = 'lazy'
+              if media.id == featured.id
+                assign loading = 'eager'
+              endif
+            -%}
+            {{
+              media.preview_image
+              | image_url: width: 1600
+              | image_tag:
+                loading: loading,
+                widths: '600, 900, 1200, 1600',
+                sizes: '(min-width: 990px) 55vw, 100vw',
+                alt: media.alt
+            }}
+          </div>
+        {%- else -%}
+          {{ 'product-1' | placeholder_svg_tag }}
+        {%- endfor -%}
+      </div>
+      {%- if product.media.size > 1 -%}
+        <div class="gallery__thumbs">
+          {%- for media in product.media -%}
+            <button
+              type="button"
+              data-media-thumb="{{ media.id }}"
+              aria-current="{% if media.id == featured.id %}true{% else %}false{% endif %}"
+              aria-label="{{ 'products.show_image' | t: number: forloop.index }}"
+            >
+              {{ media.preview_image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}
+            </button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </media-gallery>
+
+    <div class="product__info">
+      <div class="stack" style="--stack-gap: 12px;">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="label muted">{{ section.settings.eyebrow }}</p>
+        {%- endif -%}
+        <h1 class="h1">{{ product.title }}</h1>
+        <p class="price serif" style="font-size: 30px;">
+          <span data-price>{{ variant.price | money_without_trailing_zeros }}</span>
+          <s
+            class="price__compare"
+            data-compare-price
+            {% unless variant.compare_at_price > variant.price %}
+              hidden
+            {% endunless %}
+          >
+            {{- variant.compare_at_price | money_without_trailing_zeros -}}
+          </s>
+        </p>
+        {%- if tagline != blank -%}
+          <p class="muted">{{ tagline }}</p>
+        {%- endif -%}
+      </div>
+
+      <product-form>
+        {%- form 'product', product, id: form_id, class: 'stack', novalidate: 'novalidate' -%}
+          <input type="hidden" name="id" value="{{ variant.id }}" data-variant-input>
+          <div class="stack" style="--stack-gap: 22px;">
+            {% render 'variant-picker',
+              product: product,
+              form_id: form_id,
+              grid: true,
+              large: true,
+              gallery: true,
+              update_url: true
+            %}
+          </div>
+          <div class="buy-row">
+            <div class="qty">
+              <button type="button" data-qty-step="-1" aria-label="{{ 'products.quantity_decrease' | t }}">−</button>
+              <label class="visually-hidden" for="Quantity-{{ section.id }}">{{ 'products.quantity' | t }}</label>
+              <input id="Quantity-{{ section.id }}" type="number" name="quantity" value="1" min="1" max="99" inputmode="numeric">
+              <button type="button" data-qty-step="1" aria-label="{{ 'products.quantity_increase' | t }}">+</button>
+            </div>
+            <button
+              type="submit"
+              class="btn btn--accent btn--lg"
+              data-add-button
+              data-main-add
+              {% unless variant.available %}
+                disabled
+              {% endunless %}
+            >
+              <span data-add-label>
+                {%- if variant.available -%}{{ 'products.add_to_cart' | t }}{%- else -%}{{ 'products.sold_out' | t }}{%- endif -%}
+              </span>
+              <span aria-hidden="true">·</span>
+              <span data-price>{{ variant.price | money_without_trailing_zeros }}</span>
+            </button>
+          </div>
+          <p class="form-error" data-form-error role="alert" hidden></p>
+        {%- endform -%}
+      </product-form>
+
+      <div class="info-box">
+        <p>
+          <strong>
+            {{- 'products.eta_prefix' | t }}
+            <span
+              data-eta
+              data-min="{{ settings.delivery_min_days }}"
+              data-max="{{ settings.delivery_max_days }}"
+              data-template="{{ 'products.eta_template' | t }}"
+            >
+              {{- 'products.eta_fallback' | t: min: settings.delivery_min_days, max: settings.delivery_max_days -}}
+            </span>
+          </strong>
+        </p>
+        {%- liquid
+          assign delivery_price_label = delivery_price_cents | money_without_trailing_zeros
+          assign threshold_label = threshold_cents | money_without_trailing_zeros
+        -%}
+        <p>
+          {{ settings.payment_note }}.
+          {{ 'products.delivery_note' | t: price: delivery_price_label, threshold: threshold_label }}
+        </p>
+        {%- if section.settings.show_whatsapp and wa != blank -%}
+          <a
+            href="https://wa.me/{{ wa }}?text={{ wa_text | url_encode }}"
+            data-whatsapp-link
+            data-number="{{ wa }}"
+            data-base-text="{{ wa_base | escape }}"
+            rel="noopener"
+            target="_blank"
+            style="font-weight: 500; align-self: flex-start;"
+          >
+            {{- 'products.order_on_whatsapp' | t -}}
+          </a>
+        {%- endif -%}
+      </div>
+
+      {%- liquid
+        assign upsells = section.settings.complementary
+        assign upsell_count = 0
+        for p in upsells
+          unless p.id == product.id
+            assign upsell_count = upsell_count | plus: 1
+          endunless
+        endfor
+      -%}
+      {%- if upsell_count > 0 -%}
+        <div class="stack" style="--stack-gap: 12px; border-top: 1px solid var(--line); padding-top: 22px;">
+          <h2 class="label">{{ section.settings.complementary_heading }}</h2>
+          {%- for p in upsells -%}
+            {%- unless p.id == product.id -%}
+              {%- assign pv = p.selected_or_first_available_variant -%}
+              <product-form class="upsell-row" data-match-colour>
+                <a class="upsell-row__media" href="{{ p.url }}" tabindex="-1" aria-hidden="true">
+                  {%- if p.featured_image -%}
+                    {{ p.featured_image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '', width: 64, height: 64, class: 'js-upsell-image' }}
+                  {%- endif -%}
+                </a>
+                <div class="upsell-row__body">
+                  <a href="{{ p.url }}" style="color: var(--ink); text-decoration: none; font-weight: 500;">{{ p.title }}</a>
+                  <span class="small muted"><span data-upsell-variant>{{ pv.title }}</span> · <span data-upsell-price>{{ pv.price | money_without_trailing_zeros }}</span></span>
+                </div>
+                {%- form 'product', p, novalidate: 'novalidate' -%}
+                  <input type="hidden" name="id" value="{{ pv.id }}" data-upsell-input>
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn--outline">{{ 'products.add' | t }}</button>
+                {%- endform -%}
+                <script type="application/json" data-upsell-variants>
+                  {{ p.variants | json }}
+                </script>
+              </product-form>
+            {%- endunless -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      {%- if product.description != blank -%}
+        <div class="stack" style="--stack-gap: 12px; border-top: 1px solid var(--line); padding-top: 22px;">
+          <h2 class="label">{{ 'products.details' | t }}</h2>
+          <div class="rte">{{ product.description }}</div>
+        </div>
+      {%- endif -%}
+
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when '@app' -%}
+            {% render block %}
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="sticky-buy" data-sticky-buy aria-hidden="true">
+      <div class="sticky-buy__title">
+        <strong>{{ product.title }}</strong><br>
+        <span class="muted" data-variant-title>{{ variant.title }}</span>
+      </div>
+      <button
+        type="submit"
+        form="{{ form_id }}"
+        class="btn btn--accent"
+        data-add-button
+        {% unless variant.available %}
+          disabled
+        {% endunless %}
+      >
+        <span data-add-label>{{ 'products.add_to_cart' | t }}</span>
+        <span aria-hidden="true">·</span>
+        <span data-price>{{ variant.price | money_without_trailing_zeros }}</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+{% render 'schema-product', product: product %}
+
+{% schema %}
+{
+  "name": "Product",
+  "tag": "section",
+  "class": "section-main-product",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "In stock · leaves the same day" },
+    { "type": "checkbox", "id": "show_whatsapp", "label": "Show the WhatsApp order link", "default": true },
+    { "type": "text", "id": "complementary_heading", "label": "Cross-sell heading", "default": "Complete the set" },
+    { "type": "product_list", "id": "complementary", "label": "Cross-sell products", "info": "The product on the page is skipped. Colours follow the shopper's choice.", "limit": 4 }
+  ],
+  "blocks": [{ "type": "@app" }]
+}
+{% endschema %}

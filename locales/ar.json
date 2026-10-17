@@ -1,0 +1,99 @@
+{
+  "general": {
+    "page": "الصفحة {{ page }}",
+    "home": "الرئيسية",
+    "breadcrumb": "مسار التنقل",
+    "language": "اللغة",
+    "go": "انتقال",
+    "search": "بحث",
+    "search_placeholder": "أصيص، مزهرية، قواعد أكواب…",
+    "search_results": "{{ count }} نتيجة لـ «{{ terms }}»",
+    "menu": "القائمة",
+    "close": "إغلاق",
+    "order_on_whatsapp": "اطلب عبر واتساب",
+    "message_on_instagram": "راسلنا على إنستغرام",
+    "follow_instagram": "تابع ‎@plymakes على إنستغرام",
+    "pagination": "الصفحات",
+    "previous": "السابق",
+    "next": "التالي",
+    "collections": "المجموعات",
+    "not_found_title": "هذه الصفحة غير موجودة.",
+    "not_found_text": "قد يكون الرابط قديمًا أو فيه خطأ. قطعنا الثلاث على بُعد نقرة.",
+    "password_enter": "صاحب المتجر؟ ادخل بكلمة السر",
+    "password": "كلمة السر",
+    "password_submit": "دخول"
+  },
+  "accessibility": {
+    "skip_to_content": "انتقل إلى المحتوى",
+    "main_menu": "القائمة الرئيسية",
+    "announcement": "إعلان",
+    "why_ply": "لماذا تطلب من Ply"
+  },
+  "products": {
+    "add_to_cart": "أضف إلى السلة",
+    "add_the_set": "أضف المجموعة",
+    "add": "أضف",
+    "added": "تمت الإضافة",
+    "sold_out": "نفدت الكمية",
+    "unavailable": "غير متوفر",
+    "save": "وفّر {{ amount }}",
+    "empty": "قطع جديدة على الطابعة. عُد قريبًا.",
+    "show_image": "عرض الصورة {{ number }}",
+    "quantity": "الكمية",
+    "quantity_decrease": "أنقص واحدة",
+    "quantity_increase": "زد واحدة",
+    "eta_prefix": "اطلب اليوم، وتصلك",
+    "eta_template": "بين {from} و{to}.",
+    "eta_fallback": "خلال {{ min }} إلى {{ max }} أيام.",
+    "delivery_note": "التوصيل {{ price }} إلى كل لبنان، ومجاني ابتداءً من {{ threshold }}.",
+    "order_on_whatsapp": "أو اطلب عبر واتساب",
+    "details": "التفاصيل"
+  },
+  "cart": {
+    "title": "سلّتك",
+    "title_short": "السلة",
+    "summary": "ملخص الطلب",
+    "error": "حدث خطأ. حاول مجددًا أو اطلب عبر واتساب.",
+    "decrease": "أنقص {{ title }}",
+    "increase": "زد {{ title }}",
+    "remove": "إزالة",
+    "free_delivery_remaining": "يبقى {{ amount }} للتوصيل المجاني.",
+    "free_delivery_reached": "التوصيل مجاني.",
+    "free_delivery_progress": "التقدّم نحو التوصيل المجاني",
+    "complete_the_set": "أكمل المجموعة",
+    "subtotal": "المجموع الفرعي",
+    "delivery": "التوصيل خلال {{ min }} إلى {{ max }} أيام",
+    "free": "مجاني",
+    "total": "المجموع",
+    "checkout": "إتمام الطلب",
+    "no_account": "لا حاجة لحساب",
+    "empty": "سلّتك فارغة.",
+    "continue": "شاهد المجموعة",
+    "note": "ملاحظة لنا (اختياري)"
+  },
+  "newsletter": {
+    "placeholder": "بريدك الإلكتروني",
+    "subscribe": "اشترك",
+    "notify": "أعلمني",
+    "success": "شكرًا لك. أنت على القائمة."
+  },
+  "footer": {
+    "follow": "تابعنا",
+    "prices_in": "الأسعار بـ{{ currency }}"
+  },
+  "contact": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "message": "الرسالة",
+    "send": "إرسال",
+    "success": "شكرًا لك. سنرد خلال يوم."
+  },
+  "gift_card": {
+    "title": "بطاقة هدية من Ply",
+    "code": "رمز البطاقة",
+    "expired": "انتهت صلاحية هذه البطاقة أو أُوقفت.",
+    "add_to_wallet": "أضف إلى Apple Wallet",
+    "shop": "تسوّق الآن"
+  }
+}

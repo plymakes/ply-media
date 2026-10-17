@@ -1,0 +1,17 @@
+<section class="page-head">
+  <div class="container container--narrow stack" style="--stack-gap: 20px;">
+    <h1 class="h2">{{ page.title }}</h1>
+    {%- if page.content != blank -%}
+      <div class="rte">{{ page.content }}</div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Page",
+  "tag": "div",
+  "class": "section-main-page",
+  "settings": []
+}
+{% endschema %}

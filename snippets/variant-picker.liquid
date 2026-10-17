@@ -1,0 +1,82 @@
+{%- comment -%}
+  Option pickers: colour swatches for colour options, buttons for everything else.
+  Accepts: product, form_id, grid (size buttons in two columns with prices), large (bigger swatches),
+           gallery (switch gallery media), update_url (write ?variant= to the address bar)
+{%- endcomment -%}
+{%- unless product.has_only_default_variant -%}
+  <variant-picker
+    data-gallery="{% if gallery %}true{% else %}false{% endif %}"
+    data-update-url="{% if update_url %}true{% else %}false{% endif %}"
+  >
+    {%- for option in product.options_with_values -%}
+      {%- liquid
+        assign option_handle = option.name | handle
+        assign is_colour = false
+        if option_handle contains 'colour' or option_handle contains 'color'
+          assign is_colour = true
+        endif
+        assign option_index = option.position | minus: 1
+      -%}
+      <fieldset class="option">
+        <legend class="label">
+          {{- option.name -}}
+          {%- if is_colour %} · <span class="option__current" data-option-current>{{ option.selected_value }}</span>{% endif -%}
+        </legend>
+        <div class="option__values{% if is_colour %} swatch-row{% elsif grid %} option__values--grid{% endif %}">
+          {%- for value in option.values -%}
+            {%- assign input_id = form_id | append: '-' | append: option.position | append: '-' | append: forloop.index -%}
+            {%- if is_colour -%}
+              {%- capture swatch_hex -%}{% render 'swatch-color', name: value %}{%- endcapture -%}
+              <span class="swatch{% if large %} swatch--lg{% endif %}">
+                <input
+                  type="radio"
+                  id="{{ input_id }}"
+                  name="{{ form_id }}-option-{{ option.position }}"
+                  value="{{ value | escape }}"
+                  {% if option.selected_value == value %}
+                    checked
+                  {% endif %}
+                >
+                <label for="{{ input_id }}" style="--swatch: {{ swatch_hex | strip }}" title="{{ value | escape }}">
+                  <span class="visually-hidden">{{ value }}</span>
+                </label>
+              </span>
+            {%- else -%}
+              {%- liquid
+                assign value_price = nil
+                if grid
+                  for v in product.variants
+                    if v.options[option_index] == value
+                      assign value_price = v.price
+                      break
+                    endif
+                  endfor
+                endif
+              -%}
+              <span class="pill">
+                <input
+                  type="radio"
+                  id="{{ input_id }}"
+                  name="{{ form_id }}-option-{{ option.position }}"
+                  value="{{ value | escape }}"
+                  {% if option.selected_value == value %}
+                    checked
+                  {% endif %}
+                >
+                <label for="{{ input_id }}">
+                  <span>{{ value }}</span>
+                  {%- if grid and value_price -%}
+                    <span class="pill__note">{{ value_price | money_without_trailing_zeros }}</span>
+                  {%- endif -%}
+                </label>
+              </span>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </fieldset>
+    {%- endfor -%}
+    <script type="application/json">
+      {{ product.variants | json }}
+    </script>
+  </variant-picker>
+{%- endunless -%}

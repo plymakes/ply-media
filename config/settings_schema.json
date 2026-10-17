@@ -1,0 +1,42 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Ply",
+    "theme_version": "1.0.0",
+    "theme_author": "Ply Makes",
+    "theme_documentation_url": "https://www.instagram.com/plymakes/",
+    "theme_support_url": "https://www.instagram.com/plymakes/"
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      { "type": "image_picker", "id": "logo", "label": "Logo", "info": "Leave empty to use the Ply Makes signature." },
+      { "type": "image_picker", "id": "favicon", "label": "Favicon", "info": "Square, at least 64 × 64 px." }
+    ]
+  },
+  {
+    "name": "Selling",
+    "settings": [
+      { "type": "number", "id": "free_shipping_threshold", "label": "Free delivery from (dollars)", "info": "Match this to your shipping rates in Settings › Shipping and delivery.", "default": 35 },
+      { "type": "number", "id": "delivery_price", "label": "Delivery price (dollars)", "default": 5 },
+      { "type": "number", "id": "delivery_min_days", "label": "Fastest delivery (business days)", "default": 2 },
+      { "type": "number", "id": "delivery_max_days", "label": "Slowest delivery (business days)", "default": 4 },
+      { "type": "text", "id": "payment_note", "label": "How customers pay", "default": "Cash on delivery" },
+      { "type": "product_list", "id": "cart_upsell_products", "label": "Suggest in the cart", "info": "The first one that isn't in the cart is suggested.", "limit": 4 }
+    ]
+  },
+  {
+    "name": "WhatsApp",
+    "settings": [
+      { "type": "text", "id": "whatsapp_number", "label": "WhatsApp number", "info": "With country code, digits only, for example 96170123456." },
+      { "type": "text", "id": "whatsapp_greeting", "label": "First words of the message", "default": "Hello Ply, I'd like to order" }
+    ]
+  },
+  {
+    "name": "Social",
+    "settings": [
+      { "type": "url", "id": "instagram_url", "label": "Instagram" },
+      { "type": "url", "id": "tiktok_url", "label": "TikTok" }
+    ]
+  }
+]

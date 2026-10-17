@@ -1,0 +1,25 @@
+{
+  "current": {
+    "free_shipping_threshold": 35,
+    "delivery_price": 5,
+    "delivery_min_days": 2,
+    "delivery_max_days": 4,
+    "payment_note": "Cash on delivery",
+    "cart_upsell_products": ["beirut-tile-coasters", "fluted-bud-vase", "ribbed-planter"],
+    "whatsapp_number": "",
+    "whatsapp_greeting": "Hello Ply, I'd like to order",
+    "instagram_url": "https://www.instagram.com/plymakes/",
+    "tiktok_url": ""
+  },
+  "presets": {
+    "Default": {
+      "free_shipping_threshold": 35,
+      "delivery_price": 5,
+      "delivery_min_days": 2,
+      "delivery_max_days": 4,
+      "payment_note": "Cash on delivery",
+      "whatsapp_greeting": "Hello Ply, I'd like to order",
+      "instagram_url": "https://www.instagram.com/plymakes/"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<section class="section">
+  <div class="container container--narrow stack" style="--stack-gap: 20px;">
+    <p class="label muted">404</p>
+    <h1 class="h2">{{ 'general.not_found_title' | t }}</h1>
+    <p>{{ 'general.not_found_text' | t }}</p>
+    <a class="btn btn--dark" href="{{ routes.root_url }}#shop" style="align-self: flex-start;">{{ 'cart.continue' | t }}</a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Page not found",
+  "tag": "div",
+  "class": "section-main-404",
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,71 @@
+{%- comment -%}
+  Product card with quick add: pick options and add to cart without leaving the page.
+  Accepts: product, section_id, heading_level (2 or 3, default 3), eager (load the image first)
+{%- endcomment -%}
+{%- liquid
+  assign variant = product.selected_or_first_available_variant
+  assign image = variant.featured_image | default: product.featured_image
+  assign form_id = 'card-' | append: section_id | append: '-' | append: product.id
+  assign tagline = product.metafields.ply.tagline.value
+  assign heading_tag = 'h3'
+  if heading_level == 2
+    assign heading_tag = 'h2'
+  endif
+  assign loading = 'lazy'
+  if eager
+    assign loading = 'eager'
+  endif
+-%}
+<article class="card" data-product-scope>
+  <a class="card__media" href="{{ product.url }}" tabindex="-1" aria-hidden="true">
+    {%- if image -%}
+      {{
+        image
+        | image_url: width: 1200
+        | image_tag:
+          loading: loading,
+          widths: '500, 700, 900, 1200',
+          sizes: '(min-width: 990px) 33vw, (min-width: 600px) 50vw, 100vw',
+          alt: image.alt,
+          class: 'js-card-image'
+      }}
+    {%- endif -%}
+    {%- if variant.compare_at_price > variant.price -%}
+      {%- assign saving = variant.compare_at_price | minus: variant.price | money_without_trailing_zeros -%}
+      <span class="card__badge">{{ 'products.save' | t: amount: saving }}</span>
+    {%- endif -%}
+  </a>
+
+  <div>
+    <div class="card__head">
+      <{{ heading_tag }} class="card__title serif"><a href="{{ product.url }}">{{ product.title }}</a></{{ heading_tag }}>
+      <span class="card__price" data-price>{{ variant.price | money_without_trailing_zeros }}</span>
+    </div>
+    {%- if tagline != blank -%}
+      <p class="card__tagline">{{ tagline }}</p>
+    {%- endif -%}
+  </div>
+
+  <product-form>
+    {%- form 'product', product, id: form_id, class: 'product-form', novalidate: 'novalidate' -%}
+      <input type="hidden" name="id" value="{{ variant.id }}" data-variant-input>
+      <input type="hidden" name="quantity" value="1">
+      {% render 'variant-picker', product: product, form_id: form_id %}
+      <button
+        type="submit"
+        class="btn btn--dark btn--block"
+        data-add-button
+        {% unless variant.available %}
+          disabled
+        {% endunless %}
+      >
+        <span data-add-label>
+          {%- if variant.available -%}{{ 'products.add_to_cart' | t }}{%- else -%}{{ 'products.sold_out' | t }}{%- endif -%}
+        </span>
+        <span aria-hidden="true">·</span>
+        <span data-price>{{ variant.price | money_without_trailing_zeros }}</span>
+      </button>
+      <p class="form-error" data-form-error role="alert" hidden></p>
+    {%- endform -%}
+  </product-form>
+</article>

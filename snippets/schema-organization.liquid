@@ -1,0 +1,40 @@
+{%- comment -%} Organization and WebSite structured data for the home page. {%- endcomment -%}
+{%- liquid
+  assign same_as = ''
+  if settings.instagram_url != blank
+    assign same_as = same_as | append: settings.instagram_url | append: '|'
+  endif
+  if settings.tiktok_url != blank
+    assign same_as = same_as | append: settings.tiktok_url | append: '|'
+  endif
+  assign same_as_list = same_as | split: '|'
+  assign home_url = request.origin | append: routes.root_url
+-%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": {{ home_url | append: '#organization' | json }},
+        "name": {{ shop.name | json }},
+        "url": {{ home_url | json }},
+        "logo": {{ 'ply-makes-lockup-charcoal.svg' | asset_url | prepend: 'https:' | json }},
+        "areaServed": "LB",
+        "sameAs": {{ same_as_list | json }}
+      },
+      {
+        "@type": "WebSite",
+        "@id": {{ home_url | append: '#website' | json }},
+        "name": {{ shop.name | json }},
+        "url": {{ home_url | json }},
+        "inLanguage": {{ request.locale.iso_code | json }},
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {{ request.origin | append: routes.search_url | append: '?q={search_term_string}' | json }},
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+</script>

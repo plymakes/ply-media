@@ -1,0 +1,30 @@
+<section class="trust" aria-label="{{ 'accessibility.why_ply' | t }}">
+  <div class="container trust__grid">
+    {%- for block in section.blocks -%}
+      <div class="trust__item" {{ block.shopify_attributes }}>
+        <strong>{{ block.settings.title }}</strong>
+        <span class="small muted">{{ block.settings.text }}</span>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Trust bar",
+  "tag": "div",
+  "class": "section-trust",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Made in Lebanon" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Drawn and printed by Ply" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Trust bar", "blocks": [{ "type": "item" }, { "type": "item" }, { "type": "item" }, { "type": "item" }] }]
+}
+{% endschema %}

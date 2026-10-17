@@ -1,0 +1,23 @@
+<section class="section--tight">
+  <div class="container container--narrow stack" style="--stack-gap: 16px;">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="h2" style="font-size: clamp(30px, 3.4vw, 48px);">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    {%- if section.settings.text != blank -%}
+      <div class="rte">{{ section.settings.text }}</div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Rich text",
+  "tag": "div",
+  "class": "section-rich-text",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "A heading" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Tell your story here.</p>" }
+  ],
+  "presets": [{ "name": "Rich text" }]
+}
+{% endschema %}

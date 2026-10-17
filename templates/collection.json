@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": { "type": "main-collection", "settings": {} },
+    "trust": {
+      "type": "trust-bar",
+      "blocks": {
+        "trust-1": { "type": "item", "settings": { "title": "Made in Lebanon", "text": "Drawn and printed by Ply" } },
+        "trust-2": { "type": "item", "settings": { "title": "Leaves the same day", "text": "In stock, packed by hand" } },
+        "trust-3": { "type": "item", "settings": { "title": "Delivered in 2 to 4 days", "text": "Anywhere in Lebanon, free from $35" } },
+        "trust-4": { "type": "item", "settings": { "title": "Cash on delivery", "text": "Pay the courier when it arrives" } }
+      },
+      "block_order": ["trust-1", "trust-2", "trust-3", "trust-4"]
+    }
+  },
+  "order": ["main", "trust"]
+}

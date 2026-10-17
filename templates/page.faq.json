@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": { "type": "main-page", "settings": {} },
+    "faq": {
+      "type": "faq",
+      "settings": { "heading": "", "open_first": true, "structured_data": true },
+      "blocks": {
+        "q1": { "type": "question", "settings": { "question": "Do you deliver everywhere in Lebanon?", "answer": "<p>Yes. Delivery takes 2 to 4 days and costs $5, free on orders from $35.</p>" } },
+        "q2": { "type": "question", "settings": { "question": "How do I pay?", "answer": "<p>In cash when your order arrives, in US dollars. You don't need an account to order.</p>" } },
+        "q3": { "type": "question", "settings": { "question": "How fast do you send my order?", "answer": "<p>Pieces in stock leave the same day. We confirm your order by WhatsApp or phone first.</p>" } },
+        "q4": { "type": "question", "settings": { "question": "Is the planter good for real plants?", "answer": "<p>Yes. It has a drainage hole and its own drip tray, so you can water it as usual. Empty the tray after watering.</p>" } },
+        "q5": { "type": "question", "settings": { "question": "Can the bud vase hold water?", "answer": "<p>It is made for dried or faux stems, because a printed vase isn't reliably watertight.</p>" } },
+        "q6": { "type": "question", "settings": { "question": "Are the coasters fine with hot drinks?", "answer": "<p>They are printed in PETG, which is tougher than everyday PLA and fine for cups and glasses. Keep them away from hot pans and the dishwasher.</p>" } },
+        "q7": { "type": "question", "settings": { "question": "What is 3D printing, and is it safe at home?", "answer": "<p>Our printer builds each piece from thin layers of plastic, 0.2 mm at a time. The pieces are safe to use around the home. Keep them out of hot cars, where the plastic can soften.</p>" } },
+        "q8": { "type": "question", "settings": { "question": "Can I get another colour or my own design?", "answer": "<p>Not on the site yet. Message us on WhatsApp and we will tell you what we can make.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"]
+    },
+    "whatsapp": { "type": "whatsapp-band", "settings": { "heading": "Still have a question?", "text": "Ask us on WhatsApp. We usually reply within the hour." } }
+  },
+  "order": ["main", "faq", "whatsapp"]
+}
