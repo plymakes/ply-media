@@ -57,13 +57,41 @@
             endfor
           -%}
           {%- if upsell -%}
-            {%- assign uv = upsell.selected_or_first_available_variant -%}
+            {%- liquid
+              assign cart_colour = nil
+              for item in cart.items
+                for opt in item.options_with_values
+                  assign oname = opt.name | handle
+                  if oname contains 'colour' or oname contains 'color'
+                    assign cart_colour = opt.value
+                    break
+                  endif
+                endfor
+                if cart_colour
+                  break
+                endif
+              endfor
+              assign uv = upsell.selected_or_first_available_variant
+              if cart_colour
+                for v in upsell.variants
+                  if v.available and v.options contains cart_colour
+                    assign uv = v
+                    break
+                  endif
+                endfor
+              endif
+              assign upsell_image = uv.featured_image | default: upsell.featured_image
+              assign makes_free = false
+              if remaining > 0 and uv.price >= remaining
+                assign makes_free = true
+              endif
+            -%}
             <div class="drawer-upsell">
-              <p class="label muted">{{ 'cart.complete_the_set' | t }}</p>
+              <p class="label muted">{% if makes_free %}{{ 'cart.upsell_free' | t }}{% else %}{{ 'cart.complete_the_set' | t }}{% endif %}</p>
               <product-form class="upsell-row">
                 <a class="upsell-row__media" href="{{ upsell.url }}" tabindex="-1" aria-hidden="true">
-                  {%- if upsell.featured_image -%}
-                    {{ upsell.featured_image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '', width: 64, height: 64 }}
+                  {%- if upsell_image -%}
+                    {{ upsell_image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '', width: 64, height: 64 }}
                   {%- endif -%}
                 </a>
                 <div class="upsell-row__body">

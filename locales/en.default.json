@@ -69,7 +69,8 @@
     "no_account": "No account needed",
     "empty": "Your cart is empty.",
     "continue": "See the collection",
-    "note": "A note for us (optional)"
+    "note": "A note for us (optional)",
+    "upsell_free": "Add this and delivery is free"
   },
   "newsletter": {
     "placeholder": "Your email",
