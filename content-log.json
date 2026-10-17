@@ -1,0 +1,185 @@
+{
+ "note": "Posts 1-6 (brand intro) were posted by hand on 15-17 Oct 2026; their colours were cobalt, paper, sun, coral, ink, cobalt.",
+ "posts": [
+  {
+   "number": 7,
+   "date": "2026-10-19",
+   "time": "10:00",
+   "file": "posts/ply-post-07-you-can-print-that.png",
+   "topic": "you-can-print-that",
+   "background": "paper",
+   "status": "scheduled"
+  },
+  {
+   "number": 8,
+   "date": "2026-10-20",
+   "time": "10:00",
+   "file": "posts/ply-post-08-how-long.png",
+   "topic": "how-long",
+   "background": "sun",
+   "status": "scheduled"
+  },
+  {
+   "number": 9,
+   "date": "2026-10-21",
+   "time": "10:00",
+   "file": "posts/ply-post-09-flexi-dragon.png",
+   "topic": "flexi-dragon",
+   "background": "coral",
+   "status": "scheduled"
+  },
+  {
+   "number": 10,
+   "date": "2026-10-22",
+   "time": "10:00",
+   "file": "posts/ply-post-10-lithophane.png",
+   "topic": "lithophane",
+   "background": "ink",
+   "status": "scheduled"
+  },
+  {
+   "number": 11,
+   "date": "2026-10-23",
+   "time": "10:00",
+   "file": "posts/ply-post-11-arabic-name.png",
+   "topic": "arabic-name",
+   "background": "cobalt",
+   "status": "scheduled"
+  },
+  {
+   "number": 12,
+   "date": "2026-10-24",
+   "time": "10:00",
+   "file": "posts/ply-post-12-myth-fact.png",
+   "topic": "myth-fact",
+   "background": "paper",
+   "status": "scheduled"
+  },
+  {
+   "number": 13,
+   "date": "2026-10-26",
+   "time": "10:00",
+   "file": "posts/ply-post-13-kids-drawing.png",
+   "topic": "kids-drawing",
+   "background": "sun",
+   "status": "scheduled"
+  },
+  {
+   "number": 14,
+   "date": "2026-10-27",
+   "time": "10:00",
+   "file": "posts/ply-post-14-matte-or-silk.png",
+   "topic": "matte-or-silk",
+   "background": "coral",
+   "status": "scheduled"
+  },
+  {
+   "number": 15,
+   "date": "2026-10-28",
+   "time": "10:00",
+   "file": "posts/ply-post-15-battery-cover.png",
+   "topic": "battery-cover",
+   "background": "ink",
+   "status": "scheduled"
+  },
+  {
+   "number": 16,
+   "date": "2026-10-29",
+   "time": "10:00",
+   "file": "posts/ply-post-16-cedar-ornament.png",
+   "topic": "cedar-ornament",
+   "background": "cobalt",
+   "status": "scheduled"
+  },
+  {
+   "number": 17,
+   "date": "2026-10-30",
+   "time": "10:00",
+   "file": "posts/ply-post-17-desk-glow-up.png",
+   "topic": "desk-glow-up",
+   "background": "paper",
+   "status": "scheduled"
+  },
+  {
+   "number": 18,
+   "date": "2026-10-31",
+   "time": "10:00",
+   "file": "posts/ply-post-18-plant-pots.png",
+   "topic": "plant-pots",
+   "background": "sun",
+   "status": "scheduled"
+  },
+  {
+   "number": 19,
+   "date": "2026-11-02",
+   "time": "10:00",
+   "file": "posts/ply-post-19-pet-tag.png",
+   "topic": "pet-tag",
+   "background": "coral",
+   "status": "scheduled"
+  },
+  {
+   "number": 20,
+   "date": "2026-11-03",
+   "time": "10:00",
+   "file": "posts/ply-post-20-guess-the-object.png",
+   "topic": "guess-the-object",
+   "background": "ink",
+   "status": "scheduled"
+  },
+  {
+   "number": 21,
+   "date": "2026-11-04",
+   "time": "10:00",
+   "file": "posts/ply-post-21-pla-from-plants.png",
+   "topic": "pla-from-plants",
+   "background": "cobalt",
+   "status": "scheduled"
+  },
+  {
+   "number": 22,
+   "date": "2026-11-05",
+   "time": "10:00",
+   "file": "posts/ply-post-22-board-games.png",
+   "topic": "board-games",
+   "background": "paper",
+   "status": "scheduled"
+  },
+  {
+   "number": 23,
+   "date": "2026-11-06",
+   "time": "10:00",
+   "file": "posts/ply-post-23-wedding-favours.png",
+   "topic": "wedding-favours",
+   "background": "sun",
+   "status": "scheduled"
+  },
+  {
+   "number": 24,
+   "date": "2026-11-07",
+   "time": "10:00",
+   "file": "posts/ply-post-24-for-business.png",
+   "topic": "for-business",
+   "background": "coral",
+   "status": "scheduled"
+  },
+  {
+   "number": 25,
+   "date": "2026-11-08",
+   "time": "10:00",
+   "file": "posts/ply-post-25-pick-your-colours.png",
+   "topic": "pick-your-colours",
+   "background": "ink",
+   "status": "scheduled"
+  },
+  {
+   "number": 26,
+   "date": "2026-11-09",
+   "time": "10:00",
+   "file": "posts/ply-post-26-printer-on-its-way.png",
+   "topic": "printer-on-its-way",
+   "background": "cobalt",
+   "status": "scheduled"
+  }
+ ]
+}
