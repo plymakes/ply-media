@@ -221,6 +221,17 @@
    "topic": "cedar ornament stacking",
    "campaign": "First Layer",
    "status": "scheduled"
+  },
+  {
+   "number": 28,
+   "type": "post",
+   "date": "2026-10-17",
+   "time": "14:05",
+   "file": "posts/ply-post-28-weekend-question.png",
+   "topic": "weekend question (flow test)",
+   "background": "coral",
+   "status": "published",
+   "url": "https://www.instagram.com/p/Del9dI_imiG/"
   }
  ],
  "campaign": {
