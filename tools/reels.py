@@ -12,20 +12,21 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 FS = Path(__file__).resolve().parent / 'fonts'
-OUT = ROOT / 'reels'
+OUT = ROOT / 'build'
 OUT.mkdir(exist_ok=True)
 FPS = 30
-C, SU, R, I, P = '#2B55F5', '#FFC23A', '#FF6B57', '#13151A', '#F3F0E8'
+C, SU, R, I, P = '#B4532A', '#CDBFA8', '#DDB8A2', '#1C1B19', '#EFEAE2'  # Atelier: terracotta, sand, clay, charcoal, bone
 
 FACES = ''.join(f"@font-face{{font-family:SG;font-weight:{w};src:url('{(FS/f'space-grotesk/files/space-grotesk-latin-{w}-normal.woff2').as_uri()}')}}" for w in (400, 500, 700))
-FACES += f"@font-face{{font-family:PA;font-weight:600;src:url('{(FS/'ibm-plex-sans-arabic/files/ibm-plex-sans-arabic-arabic-600-normal.woff2').as_uri()}')}}"
+FACES += f"@font-face{{font-family:PA;font-weight:600;src:url('{(FS/'noto-naskh-arabic/files/noto-naskh-arabic-arabic-600-normal.woff2').as_uri()}')}}"
+FACES += ''.join(f"@font-face{{font-family:IS;font-style:{st};font-weight:400;src:url('{(FS/f'instrument-serif/files/instrument-serif-latin-400-{st}.woff2').as_uri()}')}}" for st in ('normal', 'italic'))
 
 BASE_CSS = FACES + """
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1080px;height:1920px;overflow:hidden;font-family:SG,sans-serif}
 .abs{position:absolute}
-.label{font-size:30px;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
-.h{font-weight:700;letter-spacing:-.05em;line-height:.98}
+.label{font-size:26px;font-weight:500;letter-spacing:.22em;text-transform:uppercase}
+.h{font-family:IS,Georgia,serif;font-weight:400;letter-spacing:-.01em;line-height:.95}
 .fade{transition:none}
 """
 
@@ -44,12 +45,16 @@ def stack(cols, h, left, top, idp):
 
 
 def end_card(bg_col, fg, line1, line2):
-    """Shared end card markup: big stack, wordmark text, two CTA lines. Hidden until shown via JS (ids e*)."""
+    """End card: the Ply MAKES lockup, a serif line and the call to action. Hidden until shown via JS (ids e*)."""
+    dot = I if bg_col == C else C
     return f'''<div id="end" class="abs" style="inset:0;background:{bg_col};opacity:0">
-{stack((P, R, SU) if bg_col in (C, I) else (I, R, C), 120, 330, 560, 'es')}
-<div id="e1" class="abs h" style="left:100px;right:100px;top:1040px;text-align:center;font-size:96px;color:{fg}">{line1}</div>
-<div id="e2" class="abs" style="left:100px;right:100px;top:1300px;text-align:center;font-size:44px;font-weight:500;color:{fg}">{line2}</div>
-<div class="abs" style="left:0;right:0;bottom:150px;text-align:center;font-size:36px;font-weight:700;color:{fg}">@plymakes</div></div>'''
+<div class="abs" style="left:0;right:0;top:560px;display:flex;justify-content:center;align-items:baseline;gap:28px">
+<span style="font-family:IS,Georgia,serif;font-size:250px;line-height:.8;color:{fg}">Ply</span>
+<span style="font-size:34px;font-weight:500;letter-spacing:.45em;color:{fg};opacity:.75">MAKES</span>
+<span style="display:inline-block;width:26px;height:26px;border-radius:50%;background:{dot};margin-left:-22px"></span></div>
+<div id="e1" class="abs h" style="left:100px;right:100px;top:960px;text-align:center;font-size:120px;color:{fg}">{line1}</div>
+<div id="e2" class="abs" style="left:100px;right:100px;top:1280px;text-align:center;font-size:42px;font-weight:400;line-height:1.35;color:{fg};opacity:.85">{line2}</div>
+<div class="abs" style="left:0;right:0;bottom:150px;text-align:center;font-size:28px;font-weight:500;letter-spacing:.22em;color:{fg};opacity:.7">@PLYMAKES</div></div>'''
 
 
 # ---------- Reel 1: Arabic name printed layer by layer ----------
@@ -57,10 +62,10 @@ LAYERS = 30
 reel1 = dict(name='ply-reel-01-name-layer-by-layer', dur=11.0, html=f'''
 <div class="abs" style="inset:0;background:{C}"></div>
 <div id="lab" class="abs label" style="left:100px;top:180px;color:{P}">Watch it print</div>
-<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:108px;color:{P}">Your name.<br>Layer by layer.</div>
+<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:136px;color:{P}">Your name.<br>Layer by layer.</div>
 <div class="abs" style="left:190px;width:700px;top:1290px;height:40px;border-radius:20px;background:{I}"></div>
 <div id="nameWrap" class="abs" style="left:0;right:0;top:820px;height:470px;clip-path:inset(100% 0 0 0)">
-  <div dir="rtl" lang="ar" class="abs" style="left:0;right:0;top:0;text-align:center;font-family:PA;font-weight:600;font-size:340px;line-height:1.3;color:transparent;background:repeating-linear-gradient(0deg, #E0A520 0 3px, {SU} 3px 15px);-webkit-background-clip:text;background-clip:text">ليلى</div>
+  <div dir="rtl" lang="ar" class="abs" style="left:0;right:0;top:0;text-align:center;font-family:PA;font-weight:600;font-size:400px;line-height:1.15;color:transparent;background:repeating-linear-gradient(0deg, #CDBFA8 0 3px, {P} 3px 15px);-webkit-background-clip:text;background-clip:text">ليلى</div>
 </div>
 <div id="noz" class="abs" style="width:150px;height:46px;border-radius:23px;background:{P};top:800px;left:300px"></div>
 <div id="noztip" class="abs" style="width:26px;height:26px;border-radius:13px;background:{R};top:836px;left:362px"></div>
@@ -86,8 +91,8 @@ window.setT=t=>{{
 reel2 = dict(name='ply-reel-02-light-on', dur=10.0, html=f'''
 <div id="bg" class="abs" style="inset:0;background:{I}"></div>
 <div id="lab" class="abs label" style="left:100px;top:180px;color:#A9ACB3">Lithophane</div>
-<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:112px;color:{P}">Lights off…</div>
-<div id="t1b" class="abs h" style="left:100px;right:100px;top:250px;font-size:112px;color:{SU};opacity:0">Lights on.</div>
+<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:140px;color:{P}">Lights off…</div>
+<div id="t1b" class="abs h" style="left:100px;right:100px;top:250px;font-size:140px;color:{SU};opacity:0">Lights on.</div>
 <div class="abs" style="left:240px;top:620px;width:600px;height:780px;border-radius:28px;overflow:hidden;background:#E6E1D5">
   <div class="abs" style="inset:0;background:repeating-linear-gradient(0deg, rgba(19,21,26,.05) 0 6px, transparent 6px 20px)"></div>
   <div id="glow" class="abs" style="inset:0;opacity:0;background:radial-gradient(circle at 50% 36%,#FFF6DC 0%,#FFD98A 42%,#E39A40 100%)">
@@ -115,20 +120,20 @@ window.setT=t=>{
 # ---------- Reel 3: cedar ornament stacking up ----------
 tiers = [(150, 0), (250, 1), (340, 0), (220, 1), (330, 0), (430, 1), (300, 0), (420, 0), (520, 1)]
 tier_html = ''
-y0 = 640
+y0 = 700
 for i, (w, alt) in enumerate(tiers):
-    tier_html += f'<div id="tier{i}" class="abs" style="left:{540 - w/2:.0f}px;top:{y0 + i*52}px;width:{w}px;height:42px;border-radius:21px;background:{P if not alt else "#DCE3FF"};opacity:0"></div>'
+    tier_html += f'<div id="tier{i}" class="abs" style="left:{540 - w/2:.0f}px;top:{y0 + i*52}px;width:{w}px;height:42px;border-radius:21px;background:{P if not alt else "#E3D9C9"};opacity:0"></div>'
 trunk_top = y0 + len(tiers) * 52
 reel3 = dict(name='ply-reel-03-cedar-ornament', dur=11.0, html=f'''
 <div class="abs" style="inset:0;background:{C}"></div>
 <div id="lab" class="abs label" style="left:100px;top:180px;color:{P}">Christmas</div>
-<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:112px;color:{P}">A cedar for<br>your tree.</div>
-<div id="orn" class="abs" style="left:0;top:0;width:1080px;height:1920px;transform-origin:540px 520px">
-  <div id="loop" class="abs" style="left:510px;top:520px;width:60px;height:60px;border-radius:50%;border:10px solid {SU};opacity:0"></div>
-  <div id="str" class="abs" style="left:536px;top:578px;width:8px;height:62px;background:{SU};opacity:0"></div>
+<div id="t1" class="abs h" style="left:100px;right:100px;top:250px;font-size:140px;color:{P}">A cedar for<br>your tree.</div>
+<div id="orn" class="abs" style="left:0;top:0;width:1080px;height:1920px;transform-origin:540px 580px">
+  <div id="loop" class="abs" style="left:510px;top:580px;width:60px;height:60px;border-radius:50%;border:10px solid {SU};opacity:0"></div>
+  <div id="str" class="abs" style="left:536px;top:638px;width:8px;height:62px;background:{SU};opacity:0"></div>
   {tier_html}
   <div id="trunk" class="abs" style="left:495px;top:{trunk_top}px;width:90px;height:76px;border-radius:0 0 22px 22px;background:{R};opacity:0"></div>
-  <div id="tag" class="abs" style="left:0;right:0;top:{trunk_top + 110}px;text-align:center;font-size:64px;font-weight:700;color:{SU};opacity:0">Maya · 2026</div>
+  <div id="tag" class="abs" style="left:0;right:0;top:{trunk_top + 110}px;text-align:center;font-size:72px;font-family:IS,Georgia,serif;color:{P};opacity:0">Maya · 2026</div>
 </div>
 <div id="t2" class="abs" style="left:100px;right:100px;top:1560px;font-size:46px;font-weight:500;color:{P};opacity:0">Lebanese cedar ornaments with a name or a year.<br>Coming this Christmas.</div>
 {end_card(I, P, 'Christmas slots<br>are limited', 'DM “FIRST” to join the First Layer<br>and get priority')}
@@ -164,9 +169,9 @@ def render(reel):
             pg.evaluate(f'window.setT({i / FPS})')
             pg.screenshot(path=str(td / f'f{i:04d}.png'))
         pg.evaluate(f'window.setT({reel["dur"] * 0.45})')
-        pg.screenshot(path=str(OUT / f'{reel["name"]}-preview.png'))
+        pg.screenshot(path=str(OUT / f'{reel["name"]}-v2-preview.png'))
         b.close()
-        out = OUT / f'{reel["name"]}.mp4'
+        out = OUT / f'{reel["name"]}-v2.mp4'
         subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-framerate', str(FPS), '-i', str(td / 'f%04d.png'),
                         '-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=44100',
                         '-shortest', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p',
