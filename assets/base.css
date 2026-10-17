@@ -312,3 +312,4 @@ variant-picker { display: flex; flex-direction: column; gap: 18px; }
 .card .product-form [data-add-button] { margin-block-start: auto; }
 .footer__brand img { align-self: flex-start; }
 @media (max-width: 700px) { .hero__media { aspect-ratio: 4 / 3; } }
+@media (max-width: 700px) { .card__media { aspect-ratio: 1 / 1; } .announcement p { letter-spacing: 0.12em; } }
