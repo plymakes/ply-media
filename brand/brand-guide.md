@@ -1,10 +1,10 @@
-Ply makes 3D-printed things to order in Lebanon: name gifts, keychains, décor and spare parts. Since 17 October 2026 the brand follows the **Atelier** direction: calm, warm and editorial, like a small design studio rather than a toy shop. The full name is **Ply Makes** (@plymakes); the slogan is **“Ply makes it yours.”**
+Ply designs and 3D-prints calm, useful homeware in Lebanon, starting with three stock pieces (no customisation at launch). Since 17 October 2026 the brand follows the **Atelier** direction: calm, warm and editorial, like a small design studio rather than a toy shop. The full name is **Ply Makes** (@plymakes); the slogan is **“Made in layers. Made in Lebanon.”** (Arabic: “طبقة فوق طبقة، من لبنان”). It explains the name (ply = layer) and the origin. The first slogan, “Ply makes it yours.”, was retired on 17 Oct 2026 because it promised personalisation.
 
 ## Voice
 
 - Write as Ply, in plain and warm English, and speak to the customer as “you”. Fewer, better words; one or two emojis at most.
-- Build campaign lines on “Ply makes …”: “Ply makes Christmas personal.”, “Ply makes it fit. Spare parts, printed.”
-- Use sentence case. Arabic is Lebanese colloquial, with Ply kept in Latin letters: “Ply بيعملها إلك”.
+- Write campaign lines short and calm: “Fewer things. Made well.”, “Designed here. Printed here.”, “Christmas, made here.” Never promise names or custom work.
+- Use sentence case. Arabic is Lebanese colloquial; the Arabic slogan is “طبقة فوق طبقة، من لبنان”.
 - End a post with one action, such as “DM us FIRST” or “Order on WhatsApp.”
 
 ## Colour

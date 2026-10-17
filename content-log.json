@@ -1,15 +1,6 @@
 {
- "note": "Posts 1-6 (brand intro) were posted by hand on 15-17 Oct 2026; their colours were cobalt, paper, sun, coral, ink, cobalt. Rebranded to Atelier on 17 Oct 2026: all scheduled posts and reels were re-rendered as *-v2 files and swapped in Metricool; posts 1-6 and 28 stay in the old style. Same evening the headline serif changed from Instrument Serif to Fraunces: scheduled items re-rendered as *-v3. 17 Oct evening: posts 1-6 and 28 recreated in the new style and republished via Metricool; Geoffry archives the old versions by hand. To keep October at 20 published items, posts 08, 12, 17 and 18 became Metricool drafts (reuse later).",
+ "note": "Posts 1-6 (brand intro) were posted by hand on 15-17 Oct 2026; their colours were cobalt, paper, sun, coral, ink, cobalt. Rebranded to Atelier on 17 Oct 2026: all scheduled posts and reels were re-rendered as *-v2 files and swapped in Metricool; posts 1-6 and 28 stay in the old style. Same evening the headline serif changed from Instrument Serif to Fraunces: scheduled items re-rendered as *-v3. 17 Oct evening: posts 1-6 and 28 recreated in the new style and republished via Metricool; Geoffry archives the old versions by hand. To keep October at 20 published items, posts 08, 12, 17 and 18 became Metricool drafts (reuse later). 17 Oct 22:40: pivot to three stock pieces (planter, bud vase, coasters), no customisation, slogan 'Made in layers. Made in Lebanon.'. All 20 scheduled items (19 Oct-9 Nov) replaced with product-free posts and Reels (brand_posts_launch.py, reels_brand.py); media pinned to commit d14beac. Drafts 08, 12, 17, 18 are retired (they promise custom work): do not reuse.",
  "posts": [
-  {
-   "number": 7,
-   "date": "2026-10-19",
-   "time": "10:00",
-   "file": "posts/ply-post-07-you-can-print-that-v3.png",
-   "topic": "you-can-print-that",
-   "background": "bone",
-   "status": "scheduled"
-  },
   {
    "number": 8,
    "date": "2026-10-20",
@@ -17,34 +8,7 @@
    "file": "posts/ply-post-08-how-long-v3.png",
    "topic": "how-long",
    "background": "sand",
-   "status": "draft (moved out of October to stay within 20/month)"
-  },
-  {
-   "number": 9,
-   "date": "2026-10-21",
-   "time": "10:00",
-   "file": "posts/ply-post-09-flexi-dragon-v3.png",
-   "topic": "flexi-dragon",
-   "background": "clay",
-   "status": "scheduled"
-  },
-  {
-   "number": 10,
-   "date": "2026-10-22",
-   "time": "10:00",
-   "file": "posts/ply-post-10-lithophane-v3.png",
-   "topic": "lithophane",
-   "background": "charcoal",
-   "status": "scheduled"
-  },
-  {
-   "number": 11,
-   "date": "2026-10-23",
-   "time": "10:00",
-   "file": "posts/ply-post-11-arabic-name-v3.png",
-   "topic": "arabic-name",
-   "background": "terracotta",
-   "status": "scheduled"
+   "status": "draft, retired 17 Oct (promises custom work)"
   },
   {
    "number": 12,
@@ -53,43 +17,7 @@
    "file": "posts/ply-post-12-myth-fact-v3.png",
    "topic": "myth-fact",
    "background": "bone",
-   "status": "draft (moved out of October to stay within 20/month)"
-  },
-  {
-   "number": 13,
-   "date": "2026-10-26",
-   "time": "10:00",
-   "file": "posts/ply-post-13-kids-drawing-v3.png",
-   "topic": "kids-drawing",
-   "background": "sand",
-   "status": "scheduled"
-  },
-  {
-   "number": 14,
-   "date": "2026-10-27",
-   "time": "10:00",
-   "file": "posts/ply-post-14-matte-or-silk-v3.png",
-   "topic": "matte-or-silk",
-   "background": "clay",
-   "status": "scheduled"
-  },
-  {
-   "number": 15,
-   "date": "2026-10-28",
-   "time": "10:00",
-   "file": "posts/ply-post-15-battery-cover-v3.png",
-   "topic": "battery-cover",
-   "background": "charcoal",
-   "status": "scheduled"
-  },
-  {
-   "number": 16,
-   "date": "2026-10-29",
-   "time": "10:00",
-   "file": "posts/ply-post-16-cedar-ornament-v3.png",
-   "topic": "cedar-ornament",
-   "background": "terracotta",
-   "status": "scheduled"
+   "status": "draft, retired 17 Oct (promises custom work)"
   },
   {
    "number": 17,
@@ -98,7 +26,7 @@
    "file": "posts/ply-post-17-desk-glow-up-v3.png",
    "topic": "desk-glow-up",
    "background": "bone",
-   "status": "draft (moved out of October to stay within 20/month)"
+   "status": "draft, retired 17 Oct (promises custom work)"
   },
   {
    "number": 18,
@@ -107,120 +35,7 @@
    "file": "posts/ply-post-18-plant-pots-v3.png",
    "topic": "plant-pots",
    "background": "sand",
-   "status": "draft (moved out of October to stay within 20/month)"
-  },
-  {
-   "number": 19,
-   "date": "2026-11-02",
-   "time": "10:00",
-   "file": "posts/ply-post-19-pet-tag-v3.png",
-   "topic": "pet-tag",
-   "background": "clay",
-   "status": "scheduled"
-  },
-  {
-   "number": 20,
-   "date": "2026-11-03",
-   "time": "10:00",
-   "file": "posts/ply-post-20-guess-the-object-v3.png",
-   "topic": "guess-the-object",
-   "background": "charcoal",
-   "status": "scheduled"
-  },
-  {
-   "number": 21,
-   "date": "2026-11-04",
-   "time": "10:00",
-   "file": "posts/ply-post-21-pla-from-plants-v3.png",
-   "topic": "pla-from-plants",
-   "background": "terracotta",
-   "status": "scheduled"
-  },
-  {
-   "number": 22,
-   "date": "2026-11-05",
-   "time": "10:00",
-   "file": "posts/ply-post-22-board-games-v3.png",
-   "topic": "board-games",
-   "background": "bone",
-   "status": "scheduled"
-  },
-  {
-   "number": 23,
-   "date": "2026-11-06",
-   "time": "10:00",
-   "file": "posts/ply-post-23-wedding-favours-v3.png",
-   "topic": "wedding-favours",
-   "background": "sand",
-   "status": "scheduled"
-  },
-  {
-   "number": 24,
-   "date": "2026-11-07",
-   "time": "10:00",
-   "file": "posts/ply-post-24-for-business-v3.png",
-   "topic": "for-business",
-   "background": "clay",
-   "status": "scheduled"
-  },
-  {
-   "number": 25,
-   "date": "2026-11-08",
-   "time": "10:00",
-   "file": "posts/ply-post-25-pick-your-colours-v3.png",
-   "topic": "pick-your-colours",
-   "background": "charcoal",
-   "status": "scheduled"
-  },
-  {
-   "number": 26,
-   "date": "2026-11-09",
-   "time": "10:00",
-   "file": "posts/ply-post-26-printer-on-its-way-v3.png",
-   "topic": "printer-on-its-way",
-   "background": "terracotta",
-   "status": "scheduled"
-  },
-  {
-   "number": "R1",
-   "type": "reel",
-   "date": "2026-10-20",
-   "time": "18:00",
-   "file": "reels/ply-reel-01-name-layer-by-layer-v3.mp4",
-   "topic": "arabic name printed layer by layer",
-   "campaign": "First Layer",
-   "status": "scheduled"
-  },
-  {
-   "number": "R2",
-   "type": "reel",
-   "date": "2026-10-22",
-   "time": "18:00",
-   "file": "reels/ply-reel-02-light-on-v3.mp4",
-   "topic": "lithophane light on",
-   "campaign": "First Layer",
-   "status": "scheduled"
-  },
-  {
-   "number": 27,
-   "type": "post",
-   "date": "2026-10-25",
-   "time": "10:00",
-   "file": "posts/ply-post-27-first-layer-v3.png",
-   "topic": "join the First Layer list",
-   "background": "charcoal",
-   "campaign": "First Layer",
-   "status": "scheduled"
-  },
-  {
-   "number": "R3",
-   "type": "reel",
-   "date": "2026-10-29",
-   "time": "18:00",
-   "file": "reels/ply-reel-03-cedar-ornament-v3.mp4",
-   "topic": "cedar ornament stacking",
-   "campaign": "First Layer",
-   "status": "scheduled"
+   "status": "draft, retired 17 Oct (promises custom work)"
   },
   {
    "number": 28,
@@ -302,12 +117,192 @@
    "topic": "relaunch of post 28 in the Atelier style",
    "background": "terracotta",
    "status": "scheduled"
+  },
+  {
+   "date": "2026-10-19",
+   "time": "10:00",
+   "file": "posts/ply-post-43-made-in-layers-v3.png",
+   "topic": "made-in-layers",
+   "background": "charcoal",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-20",
+   "time": "18:00",
+   "file": "reels/ply-reel-07-ply-layer-by-layer-v3.mp4",
+   "topic": "reel-ply-layer-by-layer",
+   "background": "terracotta",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "10:00",
+   "file": "posts/ply-post-44-ply-means-layer-v3.png",
+   "topic": "ply-means-layer",
+   "background": "bone",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "10:00",
+   "file": "posts/ply-post-47-sketch-to-shelf-v3.png",
+   "topic": "sketch-to-shelf",
+   "background": "bone",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "18:00",
+   "file": "reels/ply-reel-08-three-pieces-v3.mp4",
+   "topic": "reel-three-pieces",
+   "background": "charcoal",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-23",
+   "time": "10:00",
+   "file": "posts/ply-post-51-made-here-v3.png",
+   "topic": "made-here",
+   "background": "charcoal",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-25",
+   "time": "10:00",
+   "file": "posts/ply-post-27b-first-layer-launch-v3.png",
+   "topic": "first-layer",
+   "background": "charcoal",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-26",
+   "time": "10:00",
+   "file": "posts/ply-post-49-plants-or-flowers-v3.png",
+   "topic": "plants-or-flowers",
+   "background": "sand",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-27",
+   "time": "10:00",
+   "file": "posts/ply-post-21-pla-from-plants-v3.png",
+   "topic": "pla-from-plants",
+   "background": "terracotta",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "10:00",
+   "file": "posts/ply-post-50-fewer-better-v3.png",
+   "topic": "fewer-better",
+   "background": "terracotta",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "10:00",
+   "file": "posts/ply-post-42-three-colours-v3.png",
+   "topic": "three-colours",
+   "background": "charcoal",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "18:00",
+   "file": "reels/ply-reel-09-hundreds-of-layers-v3.mp4",
+   "topic": "reel-hundreds-of-layers",
+   "background": "bone",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "10:00",
+   "file": "posts/ply-post-48-myth-fact-v3.png",
+   "topic": "myth-fact",
+   "background": "clay",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-11-03",
+   "time": "10:00",
+   "file": "posts/ply-post-46-guess-the-three-v3.png",
+   "topic": "guess-the-three",
+   "background": "clay",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-11-04",
+   "time": "10:00",
+   "file": "posts/ply-post-45-how-thin-v3.png",
+   "topic": "how-thin",
+   "background": "sand",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "10:00",
+   "file": "posts/ply-post-54-ask-us-v3.png",
+   "topic": "ask-us",
+   "background": "clay",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-11-06",
+   "time": "10:00",
+   "file": "posts/ply-post-52-christmas-made-here-v3.png",
+   "topic": "christmas-made-here",
+   "background": "bone",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "10:00",
+   "file": "posts/ply-post-53-favourite-corner-v3.png",
+   "topic": "favourite-corner",
+   "background": "sand",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "10:00",
+   "file": "posts/ply-post-55-whats-next-v3.png",
+   "topic": "whats-next-poll",
+   "background": "bone",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
+  },
+  {
+   "date": "2026-11-09",
+   "time": "10:00",
+   "file": "posts/ply-post-26-printer-on-its-way-v3.png",
+   "topic": "printer-on-its-way",
+   "background": "terracotta",
+   "status": "scheduled",
+   "batch": "pivot-2026-10-17"
   }
  ],
  "campaign": {
   "name": "First Layer",
   "dates": "2026-10-19 to 2026-11-09",
-  "offer": "DM FIRST or comment to join: first look, priority Christmas slots, order first. No prices.",
+  "offer": "DM FIRST or comment to join: first look at every piece, first pick of the small first batch, order before everyone else. No prices.",
   "checkpoints": {
    "2026-10-26": "100 followers, 10 on list",
    "2026-11-02": "180 followers, 25 on list",
