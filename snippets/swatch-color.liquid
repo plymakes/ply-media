@@ -1,6 +1,9 @@
 {%- comment -%} Outputs the brand colour for a colour option value. Accepts: name {%- endcomment -%}
 {%- assign key = name | downcase | strip -%}
 {%- case key -%}
+  {%- when 'ivory white' or 'ivory' -%}#E7E2D7
+  {%- when 'dark green' or 'green' -%}#36493B
+  {%- when 'desert tan' or 'tan' -%}#C6B69C
   {%- when 'bone' -%}#EFEAE2
   {%- when 'charcoal' -%}#1C1B19
   {%- when 'terracotta' -%}#B4532A
