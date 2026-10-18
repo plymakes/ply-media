@@ -61,6 +61,10 @@
           {%- endfor -%}
         </div>
       {%- endif -%}
+      {%- assign media_note = product.metafields.ply.media_note.value -%}
+      {%- if media_note != blank -%}
+        <p class="gallery__note small muted">{{ media_note }}</p>
+      {%- endif -%}
     </media-gallery>
 
     <div class="product__info">
@@ -126,6 +130,23 @@
         {%- endform -%}
       </product-form>
 
+      {%- liquid
+        assign callout_title = product.metafields.ply.callout_title.value
+        assign callout_steps = product.metafields.ply.callout_steps.value
+      -%}
+      {%- if callout_steps != blank -%}
+        <div class="callout">
+          {%- if callout_title != blank -%}
+            <h2 class="callout__title">{{ callout_title }}</h2>
+          {%- endif -%}
+          <ol class="callout__steps">
+            {%- for step in callout_steps -%}
+              <li>{{ step }}</li>
+            {%- endfor -%}
+          </ol>
+        </div>
+      {%- endif -%}
+
       <div class="info-box">
         <p>
           <strong>
@@ -148,6 +169,9 @@
           {{ settings.payment_note }}.
           {{ 'products.delivery_note' | t: price: delivery_price_label, threshold: threshold_label }}
         </p>
+        {%- if section.settings.promise != blank -%}
+          <p>{{ section.settings.promise }}</p>
+        {%- endif -%}
         {%- if section.settings.show_whatsapp and wa != blank -%}
           <a
             href="https://wa.me/{{ wa }}?text={{ wa_text | url_encode }}"
@@ -165,6 +189,10 @@
 
       {%- liquid
         assign upsells = section.settings.complementary
+        assign own_upsells = product.metafields.ply.complete_the_set.value
+        if own_upsells != blank
+          assign upsells = own_upsells
+        endif
         assign upsell_count = 0
         for p in upsells
           unless p.id == product.id
@@ -209,6 +237,25 @@
         </div>
       {%- endif -%}
 
+      {%- assign specs = product.metafields.ply.specs.value -%}
+      {%- if specs != blank -%}
+        <div class="stack" style="--stack-gap: 12px; border-top: 1px solid var(--line); padding-top: 22px;">
+          <h2 class="label">{{ 'products.size_and_details' | t }}</h2>
+          <dl class="specs">
+            {%- for line in specs -%}
+              {%- assign parts = line | split: ': ' -%}
+              {%- if parts.size > 1 -%}
+                {%- assign spec_label = parts | first -%}
+                {%- assign spec_value = line | remove_first: spec_label | remove_first: ': ' -%}
+                <div class="specs__row"><dt>{{ spec_label }}</dt><dd>{{ spec_value }}</dd></div>
+              {%- else -%}
+                <div class="specs__row"><dd>{{ line }}</dd></div>
+              {%- endif -%}
+            {%- endfor -%}
+          </dl>
+        </div>
+      {%- endif -%}
+
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when '@app' -%}
@@ -249,8 +296,9 @@
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "In stock · leaves the same day" },
     { "type": "checkbox", "id": "show_whatsapp", "label": "Show the WhatsApp order link", "default": true },
+    { "type": "text", "id": "promise", "label": "Promise line", "info": "Shown in the delivery box, e.g. the free reprint if something arrives damaged.", "default": "Arrived cracked? Send us a photo on WhatsApp within 48 hours and we print you a new one, free." },
     { "type": "text", "id": "complementary_heading", "label": "Cross-sell heading", "default": "Complete the set" },
-    { "type": "product_list", "id": "complementary", "label": "Cross-sell products", "info": "The product on the page is skipped. Colours follow the shopper's choice.", "limit": 4 }
+    { "type": "product_list", "id": "complementary", "label": "Cross-sell products", "info": "Used when a product has no Complete the set metafield. The product on the page is skipped. Colours follow the shopper's choice.", "limit": 4 }
   ],
   "blocks": [{ "type": "@app" }]
 }

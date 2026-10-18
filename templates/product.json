@@ -6,19 +6,69 @@
         "eyebrow": "In stock · leaves the same day",
         "show_whatsapp": true,
         "complementary_heading": "Complete the set",
-        "complementary": ["ribbed-planter", "fluted-bud-vase", "beirut-tile-coasters"]
+        "complementary": [
+          "quilt-vase",
+          "tile-vase",
+          "planter-vase-set"
+        ],
+        "promise": "Arrived cracked? Send us a photo on WhatsApp within 48 hours and we print you a new one, free."
       }
     },
     "faq": {
       "type": "faq",
-      "settings": { "heading": "Good to know", "open_first": false, "structured_data": false },
-      "blocks": {
-        "q1": { "type": "question", "settings": { "question": "When will it arrive?", "answer": "<p>It leaves the day you order and arrives in 2 to 4 days anywhere in Lebanon.</p>" } },
-        "q2": { "type": "question", "settings": { "question": "How do I pay?", "answer": "<p>In cash to the courier when your order arrives. Delivery is $5, free from $35.</p>" } },
-        "q3": { "type": "question", "settings": { "question": "Something arrived damaged?", "answer": "<p>Message us on WhatsApp or Instagram with your order number and a photo, and we will sort it out with you.</p>" } }
+      "settings": {
+        "heading": "Good to know",
+        "open_first": false,
+        "structured_data": false
       },
-      "block_order": ["q1", "q2", "q3"]
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "When will it arrive?",
+            "answer": "<p>It leaves the day you order and arrives in 2 to 4 days anywhere in Lebanon.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "How do I pay?",
+            "answer": "<p>In cash to the courier when your order arrives. Delivery is $5, free from $35.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Something arrived damaged?",
+            "answer": "<p>Send us a photo on WhatsApp within 48 hours of delivery and we print you a new one, free. No need to send the broken piece back.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "Indoors or outdoors?",
+            "answer": "<p>Indoors, or outdoors in the shade. The matte PLA can soften in strong summer sun or a hot car, so keep it off sunny balcony ledges in July and August.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "Are these photos?",
+            "answer": "<p>Not yet. The images are 3D renders of the final designs. We will replace them with photos of the first prints as soon as they come off the printer.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ]
     }
   },
-  "order": ["main", "faq"]
+  "order": [
+    "main",
+    "faq"
+  ]
 }

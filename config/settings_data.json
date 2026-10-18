@@ -5,7 +5,7 @@
     "delivery_min_days": 2,
     "delivery_max_days": 4,
     "payment_note": "Cash on delivery",
-    "cart_upsell_products": ["beirut-tile-coasters", "fluted-bud-vase", "ribbed-planter"],
+    "cart_upsell_products": ["quilt-vase", "tile-vase", "quilt-planter"],
     "whatsapp_number": "",
     "whatsapp_greeting": "Hello Ply, I'd like to order",
     "instagram_url": "https://www.instagram.com/plymakes/",

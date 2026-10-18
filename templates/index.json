@@ -4,44 +4,121 @@
       "type": "hero",
       "settings": {
         "eyebrow": "Ply Makes · 3D-printed in Lebanon",
-        "heading": "Planters, vases and coasters, <em>printed</em> in Lebanon.",
-        "text": "Three small pieces for your home, drawn by Ply and printed in small batches. In bone, charcoal or terracotta, from $10.",
-        "button_label": "Shop the collection",
-        "button_link": "#shop",
+        "heading": "Textured planters with a hidden drip tray, <em>printed</em> in Lebanon.",
+        "text": "Quilt and Tile planters with matching vases, in four calm colours. Seven drainage holes, no saucer on show. From $14.",
+        "button_label": "Shop planters",
+        "button_link": "shopify://collections/planters",
         "show_whatsapp": true,
         "note": "Cash on delivery · Free delivery from $35",
-        "arabic_line": "Ply بيعملها إلك",
-        "image_product": "set-of-three"
+        "arabic_line": "طبقة فوق طبقة، من لبنان",
+        "image": "shopify://shop_images/ply-hero-quilt-set-green.jpg",
+        "image_product": "planter-vase-set"
       }
     },
     "trust": {
       "type": "trust-bar",
       "blocks": {
-        "trust-1": { "type": "item", "settings": { "title": "Made in Lebanon", "text": "Drawn and printed by Ply" } },
-        "trust-2": { "type": "item", "settings": { "title": "Leaves the same day", "text": "In stock, packed by hand" } },
-        "trust-3": { "type": "item", "settings": { "title": "Delivered in 2 to 4 days", "text": "Anywhere in Lebanon, free from $35" } },
-        "trust-4": { "type": "item", "settings": { "title": "Cash on delivery", "text": "Pay the courier when it arrives" } }
+        "trust-1": {
+          "type": "item",
+          "settings": {
+            "title": "Made in Lebanon",
+            "text": "Drawn and printed by Ply"
+          }
+        },
+        "trust-2": {
+          "type": "item",
+          "settings": {
+            "title": "Hidden drip tray",
+            "text": "Seven drainage holes, no saucer"
+          }
+        },
+        "trust-3": {
+          "type": "item",
+          "settings": {
+            "title": "Delivered in 2 to 4 days",
+            "text": "Anywhere in Lebanon, free from $35"
+          }
+        },
+        "trust-4": {
+          "type": "item",
+          "settings": {
+            "title": "Cash on delivery",
+            "text": "Pay the courier when it arrives"
+          }
+        }
       },
-      "block_order": ["trust-1", "trust-2", "trust-3", "trust-4"]
+      "block_order": [
+        "trust-1",
+        "trust-2",
+        "trust-3",
+        "trust-4"
+      ]
     },
     "products": {
       "type": "featured-products",
       "settings": {
         "eyebrow": "The first collection",
-        "heading": "Three pieces, three colours.",
-        "text": "Pick a colour and add it straight to your cart, or take all three as a set.",
-        "products": ["ribbed-planter", "fluted-bud-vase", "beirut-tile-coasters"],
-        "limit": 3
+        "heading": "Two textures, four colours.",
+        "text": "Quilt or Tile, in Ivory White, Charcoal, Dark Green or Desert Tan. Pick a colour and add it straight to your cart.",
+        "products": [
+          "quilt-planter",
+          "tile-planter",
+          "quilt-vase",
+          "tile-vase"
+        ],
+        "limit": 4
       }
+    },
+    "drainage": {
+      "type": "image-points",
+      "settings": {
+        "image": "shopify://shop_images/ply-drainage-markers.jpg",
+        "eyebrow": "Inside every planter",
+        "heading": "How the water drains.",
+        "text": "Most decorative pots have no hole, so roots sit in water. Ours drain properly and still look clean on a shelf.",
+        "note": "Shown cut in half. Images are 3D renders; photos of the first prints are coming soon.",
+        "button_label": "Shop planters",
+        "button_link": "shopify://collections/planters",
+        "band": "raised",
+        "anchor": "drainage"
+      },
+      "blocks": {
+        "p1": {
+          "type": "point",
+          "settings": {
+            "title": "Seven drainage holes",
+            "text": "A raised floor with seven holes lets extra water run straight through, so roots never sit wet."
+          }
+        },
+        "p2": {
+          "type": "point",
+          "settings": {
+            "title": "A hidden drip tray",
+            "text": "The water lands in a tray tucked under the skirt: about 70 ml on the medium pot, 45 ml on the small one."
+          }
+        },
+        "p3": {
+          "type": "point",
+          "settings": {
+            "title": "Twist off, empty, click back",
+            "text": "Twist the tray off to empty it after watering, then click it back on. No saucer, no puddles."
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ]
     },
     "bundle": {
       "type": "bundle",
       "settings": {
-        "product": "set-of-three",
-        "eyebrow": "The set of three",
-        "heading": "Planter, vase and coasters in one colour.",
-        "text": "A small planter, the bud vase and the coaster set, packed together. An easy housewarming gift.",
-        "price_note": "Save $3 · free delivery"
+        "product": "planter-vase-set",
+        "eyebrow": "The planter and vase set",
+        "heading": "A medium planter and its matching vase.",
+        "text": "Pick a texture and a colour and we pack the two together. An easy housewarming gift.",
+        "price_note": "Save $2 · free delivery"
       }
     },
     "motifs": {
@@ -49,42 +126,146 @@
       "settings": {
         "eyebrow": "About Ply",
         "heading": "A small 3D-printing studio in Lebanon.",
-        "text": "<p>We draw every shape ourselves and print it layer by layer, 0.2 mm at a time, then finish and pack each piece by hand. The planter and the vase share one fluted rib. The coasters carry a pattern drawn from the cement tiles of old Lebanese homes.</p>",
+        "text": "<p>We draw every shape ourselves and print it layer by layer, 0.2 mm at a time, then check and pack each piece by hand. The fine lines are part of the texture.</p>",
         "link_label": "More about Ply",
         "link": "shopify://pages/about"
       },
       "blocks": {
-        "motif-rib": { "type": "motif", "settings": { "drawing": "rib", "style": "light", "title": "The fluted rib", "text": "On the planter and the bud vase. It catches the light and hides the print lines." } },
-        "motif-tile": { "type": "motif", "settings": { "drawing": "tile", "style": "dark", "title": "The Beirut tile", "text": "Raised on each coaster, so you can feel the pattern under your cup." } }
+        "motif-quilt": {
+          "type": "motif",
+          "settings": {
+            "drawing": "quilt",
+            "style": "light",
+            "title": "Quilt",
+            "text": "Soft diamond pillows that catch the light. Our most elegant texture."
+          }
+        },
+        "motif-tile": {
+          "type": "motif",
+          "settings": {
+            "drawing": "grid",
+            "style": "dark",
+            "title": "Tile",
+            "text": "A grid of soft squares, a nod to the cement-tile floors of old Beirut homes."
+          }
+        }
       },
-      "block_order": ["motif-rib", "motif-tile"]
+      "block_order": [
+        "motif-quilt",
+        "motif-tile"
+      ]
     },
     "steps": {
       "type": "steps",
-      "settings": { "heading": "From our printer to your door." },
-      "blocks": {
-        "step-1": { "type": "step", "settings": { "title": "Order here or on WhatsApp", "text": "No account needed. Just your name, phone and address." } },
-        "step-2": { "type": "step", "settings": { "title": "We pack it the same day", "text": "Every piece is checked and wrapped by hand in Lebanon." } },
-        "step-3": { "type": "step", "settings": { "title": "At your door in 2 to 4 days", "text": "Pay the courier in cash when it arrives. Delivery is $5, free from $35." } }
+      "settings": {
+        "heading": "From our printer to your door."
       },
-      "block_order": ["step-1", "step-2", "step-3"]
+      "blocks": {
+        "step-1": {
+          "type": "step",
+          "settings": {
+            "title": "Order here or on WhatsApp",
+            "text": "No account needed. Just your name, phone and address."
+          }
+        },
+        "step-2": {
+          "type": "step",
+          "settings": {
+            "title": "We pack it the same day",
+            "text": "Every piece is checked and wrapped by hand in Lebanon."
+          }
+        },
+        "step-3": {
+          "type": "step",
+          "settings": {
+            "title": "At your door in 2 to 4 days",
+            "text": "Pay the courier in cash when it arrives. Delivery is $5, free from $35."
+          }
+        }
+      },
+      "block_order": [
+        "step-1",
+        "step-2",
+        "step-3"
+      ]
     },
     "faq": {
       "type": "faq",
-      "settings": { "heading": "Questions", "open_first": true, "structured_data": false },
-      "blocks": {
-        "q1": { "type": "question", "settings": { "question": "Do you deliver everywhere in Lebanon?", "answer": "<p>Yes. Delivery takes 2 to 4 days and costs $5, free on orders from $35.</p>" } },
-        "q2": { "type": "question", "settings": { "question": "How do I pay?", "answer": "<p>In cash when your order arrives. You don't need an account to order.</p>" } },
-        "q3": { "type": "question", "settings": { "question": "Is the planter good for real plants?", "answer": "<p>Yes. It has a drainage hole and its own drip tray, so you can water it as usual.</p>" } },
-        "q4": { "type": "question", "settings": { "question": "Can the bud vase hold water?", "answer": "<p>It is made for dried or faux stems, because a printed vase isn't reliably watertight.</p>" } },
-        "q5": { "type": "question", "settings": { "question": "Can I get another colour or my own design?", "answer": "<p>Not on the site yet. Message us on WhatsApp and we will tell you what we can make.</p>" } }
+      "settings": {
+        "heading": "Questions",
+        "open_first": true,
+        "structured_data": false
       },
-      "block_order": ["q1", "q2", "q3", "q4", "q5"]
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "question": "Do you deliver everywhere in Lebanon?",
+            "answer": "<p>Yes. Delivery takes 2 to 4 days and costs $5, free on orders from $35.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "question": "How do I pay?",
+            "answer": "<p>In cash when your order arrives. You don't need an account to order.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "question": "Is the planter good for real plants?",
+            "answer": "<p>Yes. Seven holes in a raised floor drain into a drip tray hidden under the pot. Twist the tray off to empty it after watering.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "question": "Will my plant fit?",
+            "answer": "<p>The small planter takes a nursery pot up to about 8 cm, the medium one up to about 10.5 cm. You can also plant straight in.</p>"
+          }
+        },
+        "q5": {
+          "type": "question",
+          "settings": {
+            "question": "Can the vase hold water?",
+            "answer": "<p>It is made for dried or faux stems, because a printed vase isn't reliably watertight.</p>"
+          }
+        },
+        "q6": {
+          "type": "question",
+          "settings": {
+            "question": "What if something arrives damaged?",
+            "answer": "<p>Send us a photo on WhatsApp within 48 hours of delivery and we print you a new one, free. No need to send the broken piece back.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ]
     },
     "whatsapp": {
       "type": "whatsapp-band",
-      "settings": { "heading": "Rather order by message?", "text": "Send us the piece and colour on WhatsApp and we take it from there." }
+      "settings": {
+        "heading": "Rather order by message?",
+        "text": "Send us the piece, size and colour on WhatsApp and we take it from there."
+      }
     }
   },
-  "order": ["hero", "trust", "products", "bundle", "motifs", "steps", "faq", "whatsapp"]
+  "order": [
+    "hero",
+    "trust",
+    "products",
+    "drainage",
+    "bundle",
+    "motifs",
+    "steps",
+    "faq",
+    "whatsapp"
+  ]
 }

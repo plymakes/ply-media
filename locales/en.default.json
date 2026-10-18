@@ -6,7 +6,7 @@
     "language": "Language",
     "go": "Go",
     "search": "Search",
-    "search_placeholder": "Planter, vase, coasters…",
+    "search_placeholder": "Planter, vase…",
     "search_results": "{{ count }} results for “{{ terms }}”",
     "menu": "Menu",
     "close": "Close",
@@ -47,7 +47,8 @@
     "eta_fallback": "in {{ min }} to {{ max }} days.",
     "delivery_note": "Delivery {{ price }} anywhere in Lebanon, free from {{ threshold }}.",
     "order_on_whatsapp": "Or order on WhatsApp",
-    "details": "Details"
+    "details": "Details",
+    "size_and_details": "Size and details"
   },
   "cart": {
     "title": "Your cart",

@@ -6,7 +6,7 @@
     "language": "اللغة",
     "go": "انتقال",
     "search": "بحث",
-    "search_placeholder": "أصيص، مزهرية، قواعد أكواب…",
+    "search_placeholder": "أصيص، مزهرية…",
     "search_results": "{{ count }} نتيجة لـ «{{ terms }}»",
     "menu": "القائمة",
     "close": "إغلاق",
@@ -47,7 +47,8 @@
     "eta_fallback": "خلال {{ min }} إلى {{ max }} أيام.",
     "delivery_note": "التوصيل {{ price }} إلى كل لبنان، ومجاني ابتداءً من {{ threshold }}.",
     "order_on_whatsapp": "أو اطلب عبر واتساب",
-    "details": "التفاصيل"
+    "details": "التفاصيل",
+    "size_and_details": "المقاسات والتفاصيل"
   },
   "cart": {
     "title": "سلّتك",
