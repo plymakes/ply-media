@@ -5,6 +5,8 @@ Images for the Shopify store (plymakes.com). Shopify and the stock sheet read th
 
 - `products/` – one image per product, type and colour: `<texture>-<type>-<colour>.jpg`
   (for example `quilt-planter-small-ivory.jpg`, `tile-vase-green.jpg`, `quilt-set-tan.jpg`).
+- `theme-builds/` – zipped builds of the Shopify theme (source lives on the `shopify-theme` branch).
+  `ply-theme-v2.zip` (18 Oct 2026) is the Quilt and Tile version.
 - `banners/` – collection banners and the "How the water drains" cutaway: `drainage-explained.jpg` (wide, with text),
   `drainage-square.jpg` (square with a legend, for product galleries), `drainage-markers.jpg` (numbers only, for the home page).
 
