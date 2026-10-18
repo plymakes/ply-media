@@ -48,7 +48,8 @@
     "delivery_note": "التوصيل {{ price }} إلى كل لبنان، ومجاني ابتداءً من {{ threshold }}.",
     "order_on_whatsapp": "أو اطلب عبر واتساب",
     "details": "التفاصيل",
-    "size_and_details": "المقاسات والتفاصيل"
+    "size_and_details": "المقاسات والتفاصيل",
+    "render_tag": "تصميم ثلاثي الأبعاد"
   },
   "cart": {
     "title": "سلّتك",

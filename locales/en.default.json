@@ -48,7 +48,8 @@
     "delivery_note": "Delivery {{ price }} anywhere in Lebanon, free from {{ threshold }}.",
     "order_on_whatsapp": "Or order on WhatsApp",
     "details": "Details",
-    "size_and_details": "Size and details"
+    "size_and_details": "Size and details",
+    "render_tag": "3D render"
   },
   "cart": {
     "title": "Your cart",

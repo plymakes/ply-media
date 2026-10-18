@@ -30,6 +30,9 @@
           class: 'js-card-image'
       }}
     {%- endif -%}
+    {%- if product.metafields.ply.media_note.value != blank -%}
+      <span class="media-tag">{{ 'products.render_tag' | t }}</span>
+    {%- endif -%}
     {%- if variant.compare_at_price > variant.price -%}
       {%- assign saving = variant.compare_at_price | minus: variant.price | money_without_trailing_zeros -%}
       <span class="card__badge">{{ 'products.save' | t: amount: saving }}</span>

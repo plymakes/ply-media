@@ -336,3 +336,7 @@ variant-picker { display: flex; flex-direction: column; gap: 18px; }
 .points__num { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: var(--on-accent); font-family: var(--font-serif); font-size: 20px; display: grid; place-items: center; }
 .points__list .h4 { margin: 4px 0 4px; }
 .points__list p { margin: 0; }
+
+/* Small tag on images that are renders, not photos */
+.hero__media, .bundle__media { position: relative; }
+.media-tag { position: absolute; inset-block-end: 10px; inset-inline-start: 10px; background: rgba(239, 234, 226, 0.92); color: var(--ink); border-radius: 999px; padding: 3px 10px; font-size: 12px; line-height: 18px; font-weight: 500; pointer-events: none; }
