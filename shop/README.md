@@ -5,7 +5,8 @@ Images for the Shopify store (plymakes.com). Shopify and the stock sheet read th
 
 - `products/` – one image per product, type and colour: `<texture>-<type>-<colour>.jpg`
   (for example `quilt-planter-small-ivory.jpg`, `tile-vase-green.jpg`, `quilt-set-tan.jpg`).
-- `banners/` – collection banners and the "How the water drains" cutaway.
+- `banners/` – collection banners and the "How the water drains" cutaway: `drainage-explained.jpg` (wide, with text),
+  `drainage-square.jpg` (square with a legend, for product galleries), `drainage-markers.jpg` (numbers only, for the home page).
 
 **These are studio renders made in Blender (18 Oct 2026), not photos.** The store labels them as
 renders. Replace them with photos of the real prints once the printer is running (around 10 Nov
