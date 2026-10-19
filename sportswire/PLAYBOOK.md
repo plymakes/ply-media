@@ -1,0 +1,172 @@
+# SportsWire newsroom playbook
+
+This repository is the newsroom for two faceless, English-language Instagram sports news pages run by Geoffry:
+
+| Page | Instagram | Covers |
+|---|---|---|
+| SportsWire LB | @sportswire.lb | Lebanese sport, and Lebanese athletes anywhere in the world |
+| SportsWire CY | @sportswire.cy | Cypriot sport, and Cypriot athletes anywhere in the world |
+
+Scheduled runs find the news, verify it, design the card, publish through Metricool and log everything here. This newsroom lives in the `sportswire/` folder of the public `plymakes/ply-media` repo (Geoffry's decision, 19 Oct 2026); the rest of that repo is Ply's and is never touched. Images in `posts/` and `stories/` are public on purpose: Metricool reads them from commit-pinned raw URLs.
+
+Read these before every run, in this order: `config.json`, this file, `brand/brand-guide.md`, `sources/lebanon.md` and `sources/cyprus.md`, `sources/handles.json`, the last 7 days of `content-log.json`, and `corrections.md`.
+
+---
+
+## 1. The one rule
+
+**Being late is fine. Being wrong is not.** These pages publish news about real, named people. A story that cannot be verified to the standard below is not posted, however big it looks. Missing a story costs nothing; a wrong name, score or claim costs the page its credibility and can hurt a real person.
+
+When in doubt: do not post, and mention it in the brief.
+
+---
+
+## 2. What we cover
+
+Coverage first, not trophy-chasing (Geoffry, 26 Aug 2026). These are coverage pages that follow the whole scene.
+
+- Anything involving a named Lebanese or Cypriot athlete, at home or abroad, whatever the result: wins, losses, draws, debuts, call-ups, personal bests, records, brave exits, farewells.
+- Local clubs and national teams: results (including defeats), signings that are officially announced, milestones, previews, squad lists.
+- Young players breaking through; a Lebanese or Cypriot name appearing in a bigger foreign league or competition.
+- Quiet days: who plays today, who travels, fixtures and standings.
+- Global sport only if it is enormous or has a direct local thread.
+
+Priorities. Lebanon: basketball first, then football, then everything else (rugby league, athletics, swimming, skiing, combat sports, weightlifting, tennis/padel, motorsport, futsal, volleyball). Cyprus: football first (league, cup, national team, European ties), then athletics, sailing, shooting, basketball, volleyball, tennis, swimming, cycling, motorsport.
+
+Each page posts only its own country. A story with both a Lebanese and a Cypriot angle can run on both pages, written separately.
+
+---
+
+## 3. Sources
+
+Full source maps: `sources/lebanon.md`, `sources/cyprus.md`.
+
+- **Tier 1, primary:** the federation, league or competition official site or verified official account (FIBA, AFC, UEFA, FIFA, CFA, FLBB, LFA, World Athletics, official results platforms), and the club's or athlete's own verified account for news about themselves (signings, injuries they announce, retirements).
+- **Tier 2, established media:** named news outlets with editorial standards (e.g. Cyprus Mail, in-cyprus/Philenews, CNA, L'Orient Today, Annahar, Arab News, NNA, Reuters, AP, AFP). Data services (Flashscore, Sofascore, Soccerway, Asia-Basket) count as tier 2 for scores and statistics only.
+- **Tier 3, never enough alone:** fan pages, aggregator Instagram/X/Facebook accounts, forums, blogs, "reports say", transfer-rumour sites, Transfermarkt for transfer completion, AI-generated summaries, Wikipedia. Use them only as tips to go and find a tier 1 or 2 source.
+
+Two sources are **independent** only if neither one is citing or copying the other. Two outlets repeating the same club statement are one source (the statement), which is fine because a club statement about itself is tier 1.
+
+---
+
+## 4. Verification standard (every post, no exceptions)
+
+### 4.1 Break the story into atomic facts
+Every name, club, competition, score, date, time, venue, number, record, ranking, age and quote that appears on the card or in the caption is a separate fact.
+
+### 4.2 Each fact must be confirmed by
+- one tier 1 source, **or**
+- two independent tier 2 sources that agree exactly.
+
+Write the source URL against every fact in the spec file (`specs/…json`, see section 7). A fact without a URL is removed from the post.
+
+### 4.3 Specific checks
+- **Scores and results:** only once the match is officially over (full time, after extra time/penalties). Never post live or half-time scores as results. Check the score against the official competition page or the club's official account plus one data service.
+- **Names:** spell every person and club exactly as the governing body does (FIBA, AFC, UEFA, World Athletics, the federation). Use `sources/spelling.md`; add new names there with the source of the spelling. Never guess a transliteration.
+- **Dates and times:** convert to the page's local time (Lebanon: Asia/Beirut, Cyprus: Asia/Nicosia) and say "local time" when it matters.
+- **Records and "firsts":** only if the governing body or two tier 2 outlets explicitly call it a record or a first. Never infer one.
+- **Transfers and signings:** only when officially announced by the buying club, the selling club or the league. "Agreed", "close", "in talks", "set to" never run.
+- **Coach changes:** only on official club announcement.
+- **Quotes:** only verbatim, from a primary source (official channel, video, press conference transcript) or a tier 2 outlet quoting directly. Translate faithfully and say so ("translated from Greek/Arabic"). Never paraphrase into quote marks.
+- **Tables and rounds:** before saying "after N rounds", "top after…" or "game in hand", open the official fixture list and confirm the round is complete and which games are still to come (a round often spans Friday to Monday). "Game in hand" only for a match that was postponed, never for one still scheduled in the same round. Re-open the table right before scheduling: a later game may already have changed it.
+- **Ages and numbers:** recompute from the source; do not copy derived numbers from tier 3.
+- **Freshness:** the event happened in the last 36 hours, or is upcoming. Older stories only as features clearly framed as such. Check the log so the same story is not posted twice.
+
+### 4.4 Independent fact-check (separate agent)
+After the card text and caption are written, start a **separate agent that has not seen your sources**. Give it only the final card text and caption, and ask it to verify every factual claim from scratch with web search against tier 1/2 sources, and to answer per claim: CONFIRMED (with URL), WRONG (with the correct fact and URL) or UNVERIFIED. Then:
+- all CONFIRMED → continue;
+- any WRONG → fix the fact, re-render, and run the check again;
+- any UNVERIFIED → drop that claim from the post, or kill the story.
+Record the result in the spec file (`factcheck`).
+
+### 4.5 Visual check
+Open every rendered PNG and read it back word by word against the spec: names, scores, dates, crest-free layout, no text clipped or overflowing, nothing overlapping. A post is never scheduled without this check.
+
+---
+
+## 5. Traffic light: what auto-publishes and what waits for Geoffry
+
+`config.json` has `"mode"`. In `"auto"` mode green stories publish automatically. In `"review"` mode every post is created as a Metricool draft.
+
+- **GREEN, auto-publish** (passes section 4 completely): final results, fixtures, standings, squad lists, officially announced signings and appointments, call-ups, personal bests and records confirmed by the governing body, previews, schedules, milestones.
+- **AMBER, Metricool draft for Geoffry** (`"draft": true`, listed in the brief): deaths and obituaries; injuries and health; arrests, court cases, doping, bans, disciplinary decisions, allegations; crowd trouble, violence, racism incidents; anything that criticises a named person beyond describing a sporting result; anything touching politics, religion, war, sectarian or communal tension, or the Cyprus problem / clubs from the north; stories about athletes under 18 beyond a plain result published by their federation; any quote; any story with only one tier 1 source that is a social-media post rather than an official site.
+- **RED, never post:** rumours and "reportedly" stories; unconfirmed transfers; betting odds, tips or gambling promotion; private life (relationships, family, money); anything sourced only from tier 3; graphic images; anything that would need a photo we do not have the rights to; anything satirical.
+
+Metricool's approval workflow is not on the Starter plan, so AMBER items are created with `"draft": true` and Geoffry publishes them from the Metricool planner.
+
+---
+
+## 6. Rhythm
+
+- **Morning desk (daily, about 09:00):** sweep the last 24 hours plus the day ahead for both pages. Schedule today's posts spread across the day (default slots 10:30, 13:30, 17:00, 19:30, adjust with `getBestTimeToPostByNetwork` once the brand has data). On days with local fixtures, one "Today" fixtures card as a feed post or Story.
+- **Evening desk (daily, about 22:15):** final results from today's matches and events, posted from 22:30 onwards, at least 20 minutes apart per page. Late games (European nights, games abroad) that are not final yet are left to the next morning desk.
+- **Weekly desk (Sunday, about 10:00):** analytics review for both pages, week-ahead preview card per page (posted Monday), refresh sources and handles, update the learnings at the bottom of this file, and send Geoffry the weekly summary.
+
+Volume per page: aim for 2–4 feed posts a day, at most 6, at least 1 when there is anything verifiable. Never two posts on the same page within 60 minutes (30 minutes for evening results). Group several results of one competition into one `roundup` card instead of flooding the feed. Quality beats volume every time: an empty slot is better than a weak or unverified post.
+
+The step-by-step for each run is in `RUNBOOK.md`.
+
+---
+
+## 7. Making a post
+
+1. **Spec.** Write `specs/YYYY-MM-DD/<page>-<slug>.json` (format in `tools/README.md`): page, template, card text fields, caption, facts with source URLs, traffic light, reshare target, fact-check result.
+2. **Render.** `python3 tools/render.py specs/YYYY-MM-DD/<file>.json` writes `posts/<page>/YYYY-MM/<date>-<slug>.png` (feed, 1080×1350) or `stories/<page>/…` (1080×1920). Only the templates in `tools/render.py` are used, so every post matches the brand. Do not hand-write HTML or invent new layouts; if a story needs a layout that does not exist, use the closest template and mention it in the brief.
+3. **Look** at the PNG (section 4.5).
+4. **Commit and push** to `main`.
+5. **Schedule** in Metricool with the commit-pinned URL `https://raw.githubusercontent.com/plymakes/ply-media/<commit-sha>/sportswire/<path>` (printed by `tools/publish.py`) (never `/main/`, so a later change can't swap the image). Check the URL returns the image before scheduling.
+6. **Log** in `content-log.json` and push again.
+
+### Captions
+House voice (see `brand/brand-guide.md` and the captions in `brand/reference/`): warm, confident, short sentences, facts first.
+- Line 1: the hook, with the key fact (score, name, number). No clickbait, no ALL CAPS, no "BREAKING" unless it truly is.
+- Then two or three short paragraphs: what happened, the numbers, what's next (with local time).
+- One flag emoji as the sign-off (🇱🇧 / 🇨🇾); at most one or two other emojis; none on sad news.
+- A source line: `Source: <official body or outlet>` (gate checks for it).
+- Mention the club or athlete with their confirmed handle from `sources/handles.json` (only confirmed handles; never guess a handle).
+- 3–5 hashtags at the end, page-specific and keyword-rich (e.g. `#SportsWireLB #LebaneseBasketball #Lebanon`, `#SportsWireCY #CyprusFootball #Cyprus`).
+- Partisan for the country ("we" for the national team), neutral between local clubs (never "we" for a club). Report defeats plainly and kindly. No opinions about referees, officials or players.
+- Language: English; a word of Lebanese Arabic or Greek only for warmth, never for facts. Names in their official English spelling.
+
+### Reshare targets
+For every post, identify the athlete, club or federation most likely to reshare it, with a handle confirmed in `sources/handles.json`. Mention them in the caption. For positive spotlight posts about one athlete or club, also add them as an Instagram collaborator (`instagramData.collaborators`); at most one collaborator per post, never on AMBER posts or defeats.
+
+### Images and rights
+SportsWire cards are typographic and use the brand's own graphics plus club crests from `brand/crests/` (editorial use, as on the published cards). Never use photos from clubs, agencies, Getty, federations or social media in an automated run; photos only from `brand/photos/` where Geoffry noted permission. No AI-generated pictures of real people, ever. Set `instagramData.isAiGenerated` to false (the cards are designed graphics, not generated imagery) and write alt text for every image.
+
+### What performs (from the LB insights export, 19 Aug – 7 Sep 2026)
+Athlete and community features reached 30–100 times more people than result cards: "rugby league did you know" 8,218 views, "Aziza Sbaity" 6,051, "meet Lindzi" 4,618, "run clubs" 3,916, "Lynn El Hajj" 3,833, almost all (93–99%) from non-followers, helped by the athletes resharing. Plain result cards sat at 60–110 views. So every page runs **at least three spotlights or explainers a week** (an athlete, a club, a sport nobody covers, a "did you know"), each built on official sources and aimed at a confirmed reshare target, alongside the results. Results keep the page credible; spotlights grow it.
+
+---
+
+## 8. Corrections
+
+If a published post turns out to be wrong:
+1. Tell Geoffry immediately (push notification and top of the brief) with the post link, what was wrong and the correct fact with its source.
+2. Prepare a correction post as a Metricool **draft** and log it in `corrections.md`.
+3. Geoffry decides whether to delete or edit the original (tools can't edit a published Instagram caption).
+4. Add the lesson to section 10 so it doesn't happen again.
+
+Each run also re-checks the previous day's posts against the latest official sources (scores amended, results overturned, name corrections) and flags anything that changed.
+
+---
+
+## 9. Briefs to Geoffry
+
+Every run ends with a short brief (push notification and final message):
+- Published / scheduled today per page: time, one-line topic.
+- Drafts waiting for his approval, with why each is AMBER and the Metricool planner link.
+- Stories killed for failing verification (one line each), so he can check them himself if he wants.
+- Corrections or anything that changed since posting.
+Keep it under 150 words. If nothing was verifiable, say so in one line.
+
+---
+
+## 10. Learnings
+
+(The weekly desk adds dated, one-line lessons here: what performed, what to avoid, naming decisions.)
+
+- 2026-10-19: Planning documents are not sources. `strategy.md` (Aug 2026) said Lebanon qualified for the 2027 AFC Asian Cup; they did not (Yemen 2-0 Lebanon, 4 Jun 2026, per L'Orient Today). Verify every "known" fact like any other.
+- 2026-10-19: Official pages can contradict themselves (FIBA's article and head-to-head table gave different China–Lebanon scores). When two tier-1 pages disagree, use the box score / match sheet, and if that's not available, don't post the number.
+- 2026-10-19: Aggregators can count matches still in progress (Sofascore's Cyprus table on 19 Oct). Tables come from the CFA page, not aggregators.
+- 2026-10-19: The first dry run (CY table after the 17–18 Oct games) was killed by the independent fact-check: every number matched the CFA, but "after six rounds" and "game in hand" were wrong because two round-6 games were played on the Monday. Rule added to 4.3 (tables and rounds). This is the gate working as designed.

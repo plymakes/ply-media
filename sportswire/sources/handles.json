@@ -1,0 +1,396 @@
+{
+  "help": "Instagram handles the newsroom may @mention or invite as collaborator. Only confirmed: true may be used. confidence high = linked from the organisation's own website, our own account, or chosen by Geoffry on a published post; medium = third-party directory only. @mentions may use high or medium; collaborator invites only high. Add how and when each handle was confirmed.",
+  "handles": {
+    "sportswire.lb": {
+      "who": "SportsWire Lebanon (own page)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "own account",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "sportswire.cy": {
+      "who": "SportsWire Cyprus (own page)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "own account",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "flb_official": {
+      "who": "Lebanese Basketball Federation (FLBB)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from lebanon.basketball; used as collaborator on published posts Aug 2026",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "thelfadotcom": {
+      "who": "Lebanese Football Association (also national team)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the-lfa.com.lb",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "alriyadiclub": {
+      "who": "Al Riyadi Club (basketball)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from riyadi.com",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "lebanonrl": {
+      "who": "Lebanon Rugby League (the Cedars)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from lebanonrl.com",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "lebanesecedars": {
+      "who": "Lebanon national basketball team page",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "collaborator on published post 28 Aug 2026 (chosen by Geoffry)",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "lebolympiccommittee": {
+      "who": "Lebanese Olympic Committee",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "collaborator on published post 28 Aug 2026 (chosen by Geoffry)",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "atclmotorsports": {
+      "who": "ATCL Motorsports (Lebanon motorsport committee)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "collaborator on published post 7 Sep 2026 (chosen by Geoffry)",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "roger_feghali": {
+      "who": "Roger Feghali, rally driver",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "tagged on published post 7 Sep 2026 (chosen by Geoffry)",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "hoopsclubofficial": {
+      "who": "Hoops Club (basketball)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "shown on published card 26 Aug 2026 (chosen by Geoffry)",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "sagesseclubofcl": {
+      "who": "Sagesse SC",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "beirutclub": {
+      "who": "Beirut Club (basketball)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "nejmeh_sc": {
+      "who": "Nejmeh SC",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "alahedfc": {
+      "who": "Al Ahed FC",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "mtvlebsports": {
+      "who": "MTV Lebanon sports (broadcaster)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "waelarakji": {
+      "who": "Wael Arakji",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "youssefkhayat": {
+      "who": "Youssef Khayat",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "karimzeinoun7": {
+      "who": "Karim Zeinoun",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "alimansour_10": {
+      "who": "Ali Mansour",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "sergioeld3": {
+      "who": "Sergio El Darwich",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "likehayk24": {
+      "who": "Hayk Gyokchyan",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "amir5saoud": {
+      "who": "Amir Saoud",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "ahmadfarran": {
+      "who": "Ahmad Farran (coach)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "fadielkhatib15": {
+      "who": "Fadi El Khatib (retired)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    },
+    "asiacup": {
+      "who": "FIBA Asia Cup",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "bclasia": {
+      "who": "Basketball Champions League Asia",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "cyprusfa_official": {
+      "who": "Cyprus Football Association (also national team)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "omonoiafootball": {
+      "who": "Omonia (football)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "apoelfcofficial": {
+      "who": "APOEL",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "pafosfc": {
+      "who": "Pafos FC",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "aeklarnacafc": {
+      "who": "AEK Larnaca",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "ael_fc_official": {
+      "who": "AEL Limassol",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "apollonfc": {
+      "who": "Apollon Limassol",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "arislimassolfc": {
+      "who": "Aris Limassol",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "olympiakosnicosiafc": {
+      "who": "Olympiakos Nicosia",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "omonoiaaradippou_media": {
+      "who": "Omonia Aradippou",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "basketcyprus": {
+      "who": "Cyprus Basketball Federation",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "cyprus.volleyball.federation": {
+      "who": "Cyprus Volleyball Federation",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "koeas": {
+      "who": "KOEAS (Cyprus athletics federation)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "cyprusolympic": {
+      "who": "Cyprus Olympic Committee",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "cyprus_sailing_federation": {
+      "who": "Cyprus Sailing Federation",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from the organisation's own official website",
+      "kind": "org",
+      "checked": "2026-10-19"
+    },
+    "kaliaantoniou": {
+      "who": "Kalia Antoniou, swimmer",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "collaborator on published post 26 Aug 2026 (chosen by Geoffry)",
+      "kind": "athlete",
+      "checked": "2026-10-19"
+    }
+  },
+  "unconfirmed_or_do_not_use": {
+    "anorthosisfc.official / anorthosisfc_official": "Anorthosis: club site links two different handles; check which is live",
+    "homenetmenbeirut": "This is the Homenetmen scouting/community organisation, NOT the basketball team; do not tag as the team"
+  }
+}

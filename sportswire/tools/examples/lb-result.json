@@ -1,0 +1,53 @@
+{
+  "page": "lb",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-08-28",
+  "slug": "sample-korea-win",
+  "template": "result",
+  "card": {
+    "eyebrow": [
+      "World Cup 2027 Qualifiers",
+      "Second round"
+    ],
+    "headline": "korea led for half the night. then *we took the place over*",
+    "home": {
+      "name": "Lebanon",
+      "score": 93
+    },
+    "away": {
+      "name": "Korea",
+      "score": 74
+    },
+    "ours": "home",
+    "periods": {
+      "title": "By quarter",
+      "labels": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th"
+      ],
+      "home": [
+        18,
+        20,
+        25,
+        30
+      ],
+      "away": [
+        24,
+        17,
+        19,
+        14
+      ]
+    },
+    "highlight": {
+      "big": "55-33",
+      "text": "The second half. Lebanon won the third quarter, then buried the fourth."
+    },
+    "footnote": "5,121 inside the Nouhad Nawfal Sports Complex.\nLebanon shot 39 per cent from three. Korea shot 23."
+  },
+  "images": [
+    "posts/lb/2026-08/2026-08-28-sample-korea-win.png"
+  ]
+}

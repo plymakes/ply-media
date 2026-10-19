@@ -1,0 +1,48 @@
+{
+  "mode": "auto",
+  "mode_help": "auto = GREEN stories publish automatically, AMBER ones become Metricool drafts. review = every post becomes a Metricool draft for Geoffry.",
+  "repo": "plymakes/ply-media",
+  "repo_subdir": "sportswire",
+  "repo_help": "SportsWire lives in the sportswire/ folder of the ply-media repo (decided by Geoffry, 19 Oct 2026). Never touch anything outside sportswire/.",
+  "owner": "Geoffry",
+  "pages": {
+    "lb": {
+      "instagram": "sportswire.lb",
+      "metricool_blog_id": null,
+      "timezone": "Asia/Beirut",
+      "time_label": "Beirut",
+      "hashtags": [
+        "#SportsWireLB",
+        "#Lebanon"
+      ],
+      "flag": "🇱🇧"
+    },
+    "cy": {
+      "instagram": "sportswire.cy",
+      "metricool_blog_id": null,
+      "timezone": "Asia/Nicosia",
+      "time_label": "Cyprus",
+      "hashtags": [
+        "#SportsWireCY",
+        "#Cyprus"
+      ],
+      "flag": "🇨🇾"
+    }
+  },
+  "rhythm": {
+    "feed_posts_per_page_per_day": {
+      "target_min": 2,
+      "target_max": 4,
+      "hard_max": 6
+    },
+    "min_minutes_between_posts": 60,
+    "morning_slots": [
+      "10:30",
+      "13:30",
+      "17:00",
+      "19:30"
+    ],
+    "evening_results_from": "22:30",
+    "spotlights_per_page_per_week": 3
+  }
+}

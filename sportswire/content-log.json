@@ -1,0 +1,4 @@
+{
+  "help": "One entry per story the newsroom handled, newest last. status: scheduled | draft | published | killed | corrected. Killed entries keep the reason so the same dead end is not chased twice.",
+  "posts": []
+}

@@ -1,0 +1,21 @@
+{
+  "page": "cy",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-10-19",
+  "slug": "sample-quote",
+  "template": "quote",
+  "card": {
+    "eyebrow": [
+      "Press conference"
+    ],
+    "quote": "This is a sample quote to test the layout. Real quotes must be *verbatim* from a primary source.",
+    "speaker": "Coach Name",
+    "role": "Head coach, Sample FC",
+    "translated_from": "Greek",
+    "footer": "Sample card, not a real quote."
+  },
+  "images": [
+    "posts/cy/2026-10/2026-10-19-sample-quote.png"
+  ]
+}

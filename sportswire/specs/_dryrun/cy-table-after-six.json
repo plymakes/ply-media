@@ -1,0 +1,174 @@
+{
+  "page": "cy",
+  "format": "post",
+  "theme": "light",
+  "date": "2026-10-19",
+  "event_date": "2026-10-18",
+  "slug": "dryrun-table-after-six",
+  "story_key": "cy-league-table-2026-10-18",
+  "light": "green",
+  "template": "standings",
+  "card": {
+    "eyebrow": [
+      "Cyprus League",
+      "After six rounds"
+    ],
+    "headline": "*ael* on top after six.",
+    "deck": "Five wins from six for the Limassol side. Omonia, Pafos and APOEL have a game in hand.",
+    "columns": [
+      "P",
+      "W",
+      "D",
+      "PTS"
+    ],
+    "rows": [
+      {
+        "team": "AEL Limassol",
+        "values": [
+          6,
+          5,
+          0,
+          15
+        ],
+        "highlight": true
+      },
+      {
+        "team": "AEK Larnaca",
+        "values": [
+          6,
+          4,
+          1,
+          13
+        ]
+      },
+      {
+        "team": "Apollon Limassol",
+        "values": [
+          6,
+          3,
+          3,
+          12
+        ]
+      },
+      {
+        "team": "Omonia",
+        "values": [
+          5,
+          3,
+          2,
+          11
+        ]
+      },
+      {
+        "team": "Pafos FC",
+        "values": [
+          5,
+          3,
+          1,
+          10
+        ]
+      },
+      {
+        "team": "Aris Limassol",
+        "values": [
+          6,
+          2,
+          3,
+          9
+        ]
+      },
+      {
+        "team": "Omonia 29M",
+        "values": [
+          6,
+          2,
+          2,
+          8
+        ]
+      },
+      {
+        "team": "APOEL",
+        "values": [
+          5,
+          2,
+          1,
+          7
+        ]
+      }
+    ],
+    "footnote": "Table after the games of 17 and 18 October."
+  },
+  "caption": "AEL Limassol are top of the Cyprus League after six rounds: five wins, one defeat, 15 points.\n\nAEK Larnaca sit two behind on 13. Apollon Limassol are third on 12 and still unbeaten. Omonia (11), Pafos (10) and APOEL (7) have all played a game fewer than the leaders.\n\nTable after the games of 17 and 18 October. 🇨🇾\n\nSource: Cyprus Football Association\n@ael_fc_official @cyprusfa_official\n#SportsWireCY #CyprusFootball #Cyprus",
+  "alt": "League table card: AEL Limassol top of the Cyprus League on 15 points after six games, ahead of AEK Larnaca 13, Apollon Limassol 12, Omonia 11, Pafos FC 10, Aris Limassol 9, Omonia 29M 8 and APOEL 7.",
+  "facts": [
+    {
+      "claim": "Cyprus League by Stoiximan 2026/27 table after the matches of 17 and 18 October 2026: 1 AEL Limassol P6 W5 D0 L1 Pts 15; 2 AEK Larnaca P6 W4 D1 L1 Pts 13; 3 Apollon Limassol P6 W3 D3 L0 Pts 12; 4 Omonia P5 W3 D2 L0 Pts 11; 5 Pafos FC P5 W3 D1 L1 Pts 10; 6 Aris Limassol P6 W2 D3 L1 Pts 9; 7 Omonia 29M P6 W2 D2 L2 Pts 8; 8 APOEL P5 W2 D1 L2 Pts 7",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/Gr/competitions/68124755",
+          "tier": 1,
+          "outlet": "Cyprus Football Association",
+          "seen": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "claim": "Latest round results listed by the CFA are dated 17 October 2026 and 18 October 2026 (six rounds for AEL Limassol, six games)",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/Gr/competitions/68124755",
+          "tier": 1,
+          "outlet": "Cyprus Football Association",
+          "seen": "2026-10-19"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "ael_fc_official",
+      "cyprusfa_official"
+    ],
+    "collaborators": []
+  },
+  "images": [
+    "posts/cy/2026-10/2026-10-19-dryrun-table-after-six.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "factcheck": {
+    "status": "fail",
+    "checked_at": "2026-10-19T21:18+03:00",
+    "claims": [
+      {
+        "claim": "Eyebrow: after six rounds",
+        "verdict": "WRONG",
+        "note": "Round 6 was not complete on 17-18 Oct: Pafos-APOEL and Omonia-Olympiakos were round-6 fixtures played on Mon 19 Oct",
+        "url": "https://www.cfa.com.cy/Gr/news/53760"
+      },
+      {
+        "claim": "Omonia, Pafos and APOEL have a game in hand",
+        "verdict": "WRONG",
+        "note": "Not games in hand: same-round fixtures scheduled for 19 Oct, now played",
+        "url": "https://www.cfa.com.cy/Gr/news/53760"
+      },
+      {
+        "claim": "Table values P/W/D/Pts for 17-18 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/competitions/68124755"
+      },
+      {
+        "claim": "Apollon third on 12",
+        "verdict": "UNVERIFIED",
+        "note": "Omonia now also on 12 after 2-2 v Olympiakos; CFA order not yet updated"
+      }
+    ]
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "dry run"
+  },
+  "note": "DRY RUN 19 Oct 2026, never scheduled. Killed by the independent fact-check: the table was right but the framing (after six rounds, games in hand) was wrong because two round-6 games were played on the Monday. Kept as a worked example of the gate doing its job."
+}

@@ -1,0 +1,32 @@
+{
+  "page": "cy",
+  "format": "story",
+  "theme": "dark",
+  "date": "2026-08-26",
+  "slug": "sample-correction",
+  "template": "correction",
+  "card": {
+    "label": "Quick correction",
+    "before": "morias races",
+    "wrong": "today",
+    "right": "tomorrow",
+    "rows": [
+      {
+        "label": "Heats",
+        "value": "11:00"
+      },
+      {
+        "label": "Finals",
+        "value": "From 19:00"
+      },
+      {
+        "label": "All times",
+        "value": "Cyprus"
+      }
+    ],
+    "text": "The official schedule has both of his events on Thursday. We said today, the timing board says otherwise, and the timing board wins."
+  },
+  "images": [
+    "stories/cy/2026-08/2026-08-26-sample-correction.png"
+  ]
+}
