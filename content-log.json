@@ -178,8 +178,9 @@
       "file": "posts/ply-post-27b-first-layer-launch-v3.png",
       "topic": "first-layer",
       "background": "charcoal",
-      "status": "scheduled; caption now says one printer, two designs, four colours (19 Oct)",
-      "batch": "pivot-2026-10-17"
+      "status": "scheduled; caption reworded 21 Oct: one printer, a few pieces, four colours (Metricool id now 401621407)",
+      "batch": "pivot-2026-10-17",
+      "metricool_id": 401621407
     },
     {
       "date": "2026-10-26",
