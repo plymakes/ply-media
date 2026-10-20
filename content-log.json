@@ -1,892 +1,991 @@
 {
- "note": "Posts 1-6 (brand intro) were posted by hand on 15-17 Oct 2026; their colours were cobalt, paper, sun, coral, ink, cobalt. Rebranded to Atelier on 17 Oct 2026: all scheduled posts and reels were re-rendered as *-v2 files and swapped in Metricool; posts 1-6 and 28 stay in the old style. Same evening the headline serif changed from Instrument Serif to Fraunces: scheduled items re-rendered as *-v3. 17 Oct evening: posts 1-6 and 28 recreated in the new style and republished via Metricool; Geoffry archives the old versions by hand. To keep October at 20 published items, posts 08, 12, 17 and 18 became Metricool drafts (reuse later). 17 Oct 22:40: pivot to three stock pieces (planter, bud vase, coasters), no customisation, slogan 'Made in layers. Made in Lebanon.'. All 20 scheduled items (19 Oct-9 Nov) replaced with product-free posts and Reels (brand_posts_launch.py, reels_brand.py); media pinned to commit d14beac. Drafts 08, 12, 17, 18 are retired (they promise custom work): do not reuse. 18 Oct weekly plan: October is at 20/20 Metricool items (8 published 17 Oct + 12 scheduled 19-29 Oct), so October Stories go to the hand-posted story kit (ply-story-01..04). November: 8 feed items scheduled 2-9 Nov (post 52 moved to draft on 18 Oct: delivery promise) + 2 Stories (1 Nov, 5 Nov) = 10/20 if 52 is approved, leaving 10 for launch content with real photos after ~10 Nov. The 7 relaunch posts published 17 Oct 18:45-18:57 went out with the OLD captions (names, spare parts, 'Ply makes it yours'): Geoffry should archive them (or edit the captions) by hand. 19 Oct 2026 (Geoffry): renders allowed on Instagram (labelled 3D render), Metricool upgraded to Starter (no monthly cap), rhythm raised to a daily feed post, 2-3 Reels a week and 1-2 Stories a day; old-line-up posts replaced (see status fields); launch tentatively 1 Dec with countdown drafts. Entries with batch rework-2026-10-19 were scheduled that evening.",
- "posts": [
-  {
-   "number": 8,
-   "date": "2026-10-20",
-   "time": "10:00",
-   "file": "posts/ply-post-08-how-long-v3.png",
-   "topic": "how-long",
-   "background": "sand",
-   "status": "replaced 19 Oct by meet-the-quilt carousel (renders)"
-  },
-  {
-   "number": 12,
-   "date": "2026-10-24",
-   "time": "10:00",
-   "file": "posts/ply-post-12-myth-fact-v3.png",
-   "topic": "myth-fact",
-   "background": "bone",
-   "status": "replaced 19 Oct by no-saucer drainage carousel (renders)"
-  },
-  {
-   "number": 17,
-   "date": "2026-10-30",
-   "time": "10:00",
-   "file": "posts/ply-post-17-desk-glow-up-v3.png",
-   "topic": "desk-glow-up",
-   "background": "bone",
-   "status": "replaced 19 Oct by small-or-medium carousel (renders)"
-  },
-  {
-   "number": 18,
-   "date": "2026-10-31",
-   "time": "10:00",
-   "file": "posts/ply-post-18-plant-pots-v3.png",
-   "topic": "plant-pots",
-   "background": "sand",
-   "status": "replaced 19 Oct by vase-stems carousel (renders)"
-  },
-  {
-   "number": 28,
-   "type": "post",
-   "date": "2026-10-17",
-   "time": "14:05",
-   "file": "posts/ply-post-28-weekend-question.png",
-   "topic": "weekend question (flow test)",
-   "background": "coral",
-   "status": "published",
-   "url": "https://www.instagram.com/p/Del9dI_imiG/"
-  },
-  {
-   "number": "1-relaunch",
-   "type": "post",
-   "date": "2026-10-17",
-   "time": "18:45",
-   "file": "posts/ply-post-01-hello-lebanon-v3.png",
-   "topic": "relaunch of post 1 in the Atelier style",
-   "background": "charcoal",
-   "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
-  },
-  {
-   "number": "2-relaunch",
-   "type": "post",
-   "date": "2026-10-17",
-   "time": "18:47",
-   "file": "posts/ply-post-02-what-we-make-v3.png",
-   "topic": "relaunch of post 2 in the Atelier style",
-   "background": "terracotta",
-   "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
-  },
-  {
-   "number": "3-relaunch",
-   "type": "post",
-   "date": "2026-10-17",
-   "time": "18:49",
-   "file": "posts/ply-post-03-what-first-v3.png",
-   "topic": "relaunch of post 3 in the Atelier style",
-   "background": "bone",
-   "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
-  },
-  {
-   "number": "4-relaunch",
-   "type": "post",
-   "date": "2026-10-17",
-   "time": "18:51",
-   "file": "posts/ply-post-04-layer-by-layer-v3.png",
-   "topic": "relaunch of post 4 in the Atelier style",
-   "background": "sand",
-   "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
-  },
-  {
-   "number": "5-relaunch",
-   "type": "post",
-   "date": "2026-10-17",
-   "time": "18:53",
-   "file": "posts/ply-post-05-spare-parts-v3.png",
-   "topic": "relaunch of post 5 in the Atelier style",
-   "background": "clay",
-   "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
-  },
-  {
-   "number": "6-relaunch",
-   "type": "post",
-   "date": "2026-10-17",
-   "time": "18:55",
-   "file": "posts/ply-post-06-coming-soon-v3.png",
-   "topic": "relaunch of post 6 in the Atelier style",
-   "background": "charcoal",
-   "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
-  },
-  {
-   "number": "28-relaunch",
-   "type": "post",
-   "date": "2026-10-17",
-   "time": "18:57",
-   "file": "posts/ply-post-28-weekend-question-v3.png",
-   "topic": "relaunch of post 28 in the Atelier style",
-   "background": "terracotta",
-   "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
-  },
-  {
-   "date": "2026-10-19",
-   "time": "10:00",
-   "file": "posts/ply-post-43-made-in-layers-v3.png",
-   "topic": "made-in-layers",
-   "background": "charcoal",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-20",
-   "time": "18:00",
-   "file": "reels/ply-reel-07-ply-layer-by-layer-v3.mp4",
-   "topic": "reel-ply-layer-by-layer",
-   "background": "terracotta",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-21",
-   "time": "10:00",
-   "file": "posts/ply-post-44-ply-means-layer-v3.png",
-   "topic": "ply-means-layer",
-   "background": "bone",
-   "status": "replaced 19 Oct by meet-the-tile carousel (renders)",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-22",
-   "time": "10:00",
-   "file": "posts/ply-post-47-sketch-to-shelf-v3.png",
-   "topic": "sketch-to-shelf",
-   "background": "bone",
-   "status": "scheduled; caption now says two designs: the Quilt and the Tile (19 Oct)",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-22",
-   "time": "18:00",
-   "file": "reels/ply-reel-08-three-pieces-v3.mp4",
-   "topic": "reel-three-pieces",
-   "background": "charcoal",
-   "status": "replaced 19 Oct by reel 10 quilt-or-tile",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-23",
-   "time": "10:00",
-   "file": "posts/ply-post-51-made-here-v3.png",
-   "topic": "made-here",
-   "background": "charcoal",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-25",
-   "time": "10:00",
-   "file": "posts/ply-post-27b-first-layer-launch-v3.png",
-   "topic": "first-layer",
-   "background": "charcoal",
-   "status": "scheduled; caption now says one printer, two designs, four colours (19 Oct)",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-26",
-   "time": "10:00",
-   "file": "posts/ply-post-49-plants-or-flowers-v3.png",
-   "topic": "plants-or-flowers",
-   "background": "sand",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-27",
-   "time": "10:00",
-   "file": "posts/ply-post-21-pla-from-plants-v3.png",
-   "topic": "pla-from-plants",
-   "background": "terracotta",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-28",
-   "time": "10:00",
-   "file": "posts/ply-post-50-fewer-better-v3.png",
-   "topic": "fewer-better",
-   "background": "terracotta",
-   "status": "scheduled; caption now says two designs (19 Oct)",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-29",
-   "time": "10:00",
-   "file": "posts/ply-post-42-three-colours-v3.png",
-   "topic": "three-colours",
-   "background": "charcoal",
-   "status": "replaced 19 Oct by four-colours carousel (renders)",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-10-29",
-   "time": "18:00",
-   "file": "reels/ply-reel-09-hundreds-of-layers-v3.mp4",
-   "topic": "reel-hundreds-of-layers",
-   "background": "bone",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-11-02",
-   "time": "10:00",
-   "file": "posts/ply-post-48-myth-fact-v3.png",
-   "topic": "myth-fact",
-   "background": "clay",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-11-03",
-   "time": "10:00",
-   "file": "posts/ply-post-46-guess-the-three-v3.png",
-   "topic": "guess-the-three",
-   "background": "clay",
-   "status": "replaced 19 Oct by why-tiles carousel (renders)",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-11-04",
-   "time": "10:00",
-   "file": "posts/ply-post-45-how-thin-v3.png",
-   "topic": "how-thin",
-   "background": "sand",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-11-05",
-   "time": "10:00",
-   "file": "posts/ply-post-54-ask-us-v3.png",
-   "topic": "ask-us",
-   "background": "clay",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-11-06",
-   "time": "10:00",
-   "file": "posts/ply-post-52-christmas-made-here-v3.png",
-   "topic": "christmas-made-here",
-   "background": "bone",
-   "status": "replaced 19 Oct by housewarming-gift carousel (renders), live",
-   "batch": "pivot-2026-10-17",
-   "metricool_id": 398938805
-  },
-  {
-   "date": "2026-11-07",
-   "time": "10:00",
-   "file": "posts/ply-post-53-favourite-corner-v3.png",
-   "topic": "favourite-corner",
-   "background": "sand",
-   "status": "scheduled",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-11-08",
-   "time": "10:00",
-   "file": "posts/ply-post-55-whats-next-v3.png",
-   "topic": "whats-next-poll",
-   "background": "bone",
-   "status": "scheduled; caption now \"Help us choose what we design next\" (19 Oct)",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "date": "2026-11-09",
-   "time": "10:00",
-   "file": "posts/ply-post-26-printer-on-its-way-v3.png",
-   "topic": "printer-on-its-way",
-   "background": "terracotta",
-   "status": "scheduled; caption names the Quilt and the Tile; no \"last call\" (19 Oct)",
-   "batch": "pivot-2026-10-17"
-  },
-  {
-   "type": "story-kit",
-   "date": "2026-10-21",
-   "time": "by hand",
-   "file": "posts/ply-story-01-what-does-ply-mean.png",
-   "topic": "quiz: what does ply mean",
-   "background": "bone",
-   "status": "story kit (October budget full): Geoffry posts by hand",
-   "sticker": "Quiz: A layer (correct) / A type of wood / A Lebanese word",
-   "highlight": "About",
-   "batch": "weekly-2026-10-18"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-24",
-   "time": "12:00",
-   "file": "posts/ply-story-02-be-first.png",
-   "topic": "First Layer reminder",
-   "background": "sand",
-   "status": "scheduled (no sticker needed), 19 Oct",
-   "sticker": "none (or a \"DM FIRST\" text)",
-   "highlight": "About",
-   "batch": "weekly-2026-10-18",
-   "metricool_id": 400356117
-  },
-  {
-   "type": "story-kit",
-   "date": "2026-10-26",
-   "time": "by hand",
-   "file": "posts/ply-story-03-plants-or-flowers.png",
-   "topic": "poll: plants or dried flowers",
-   "background": "clay",
-   "status": "story kit (week 26 Oct-1 Nov): Geoffry posts by hand",
-   "sticker": "Poll: Plants / Dried flowers",
-   "highlight": "Ideas",
-   "batch": "weekly-2026-10-18"
-  },
-  {
-   "type": "story-kit",
-   "date": "2026-10-29",
-   "time": "by hand",
-   "file": "posts/ply-story-04-your-colour.png",
-   "topic": "poll: which colour is yours",
-   "background": "charcoal",
-   "status": "story kit: Geoffry posts by hand (redone 19 Oct with the four product colours)",
-   "sticker": "Poll with 4 options: Ivory White / Charcoal / Dark Green / Desert Tan",
-   "highlight": "Ideas",
-   "batch": "weekly-2026-10-18"
-  },
-  {
-   "type": "story",
-   "date": "2026-11-01",
-   "time": "10:00",
-   "file": "posts/ply-story-05-november.png",
-   "topic": "printer lands this month + DM FIRST",
-   "background": "terracotta",
-   "status": "replaced 19 Oct by a plain render Story (Quilt set, Dark Green), Metricool id 400194322",
-   "metricool_id": 398938765,
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/3eb5b8a3ff65cf672f13b6582ddba74d536c4557/posts/ply-story-05-november.png",
-   "highlight": "About",
-   "batch": "weekly-2026-10-18"
-  },
-  {
-   "type": "story",
-   "date": "2026-11-05",
-   "time": "18:00",
-   "file": "posts/ply-story-06-quiz-answer.png",
-   "topic": "answer to 4 Nov quiz: 600 layers",
-   "background": "bone",
-   "status": "scheduled",
-   "metricool_id": 398938779,
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/3eb5b8a3ff65cf672f13b6582ddba74d536c4557/posts/ply-story-06-quiz-answer.png",
-   "highlight": "How it works",
-   "batch": "weekly-2026-10-18"
-  },
-  {
-   "type": "post",
-   "date": "2026-10-20",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): quilt planter S/M, quilt vase, quilt set (Ivory White)",
-   "topic": "meet-the-quilt",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400194951
-  },
-  {
-   "type": "post",
-   "date": "2026-10-21",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): tile planter S/M, tile vase, tile set (Ivory White)",
-   "topic": "meet-the-tile",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400193508
-  },
-  {
-   "type": "reel",
-   "date": "2026-10-22",
-   "time": "18:00",
-   "file": "reels/ply-reel-10-quilt-or-tile-v3.mp4",
-   "topic": "reel: quilt or tile vote (renders)",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400366548
-  },
-  {
-   "type": "post",
-   "date": "2026-10-24",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): drainage-square, tile planter small Charcoal",
-   "topic": "no-saucer drainage",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400195015
-  },
-  {
-   "type": "reel",
-   "date": "2026-10-25",
-   "time": "18:00",
-   "file": "reels/ply-reel-13-why-tiles-v3.mp4",
-   "topic": "reel: Beirut floors, a new shape (renders)",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400366630
-  },
-  {
-   "type": "reel",
-   "date": "2026-10-27",
-   "time": "18:00",
-   "file": "reels/ply-reel-12-hidden-tray-v3.mp4",
-   "topic": "reel: seven holes, hidden tray (render)",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400366692
-  },
-  {
-   "type": "post",
-   "date": "2026-10-29",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): quilt planter small in the four colours",
-   "topic": "four-colours",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400194258
-  },
-  {
-   "type": "post",
-   "date": "2026-10-30",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): tile planter S/M Dark Green",
-   "topic": "small-or-medium",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400195086
-  },
-  {
-   "type": "post",
-   "date": "2026-10-31",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): vases Desert Tan, Dark Green, Charcoal",
-   "topic": "what-goes-in-the-vase",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400195169
-  },
-  {
-   "type": "reel",
-   "date": "2026-10-31",
-   "time": "18:00",
-   "file": "reels/ply-reel-11-four-colours-v3.mp4",
-   "topic": "reel: pick yours, four colours (renders)",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400366736
-  },
-  {
-   "type": "post",
-   "date": "2026-11-03",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): tile planter M, tile vase, tile set (Desert Tan)",
-   "topic": "why-tiles",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400194386
-  },
-  {
-   "type": "post",
-   "date": "2026-11-06",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): quilt set Charcoal, tile set Dark Green, quilt set Ivory",
-   "topic": "housewarming-gift",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400194451
-  },
-  {
-   "type": "post",
-   "date": "2026-11-10",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): mixed",
-   "topic": "prices",
-   "status": "draft, awaiting Geoffry (prices + free delivery)",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400315702
-  },
-  {
-   "type": "post",
-   "date": "2026-11-11",
-   "time": "10:00",
-   "file": "placeholder render",
-   "topic": "printer unboxing",
-   "status": "draft: needs a real photo/video",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196164
-  },
-  {
-   "type": "post",
-   "date": "2026-11-12",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): Dark Green pieces",
-   "topic": "colour spotlight: Dark Green",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196241
-  },
-  {
-   "type": "post",
-   "date": "2026-11-13",
-   "time": "10:00",
-   "file": "placeholder render",
-   "topic": "first test print (make it a Reel)",
-   "status": "draft: needs a timelapse video",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196294
-  },
-  {
-   "type": "post",
-   "date": "2026-11-14",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): quilt planter small Tan, tile planter small Charcoal",
-   "topic": "what to plant",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196381
-  },
-  {
-   "type": "post",
-   "date": "2026-11-16",
-   "time": "10:00",
-   "file": "placeholder render",
-   "topic": "render to real",
-   "status": "draft: needs real photos",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196429
-  },
-  {
-   "type": "post",
-   "date": "2026-11-17",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): Desert Tan pieces",
-   "topic": "colour spotlight: Desert Tan",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196580
-  },
-  {
-   "type": "post",
-   "date": "2026-11-18",
-   "time": "10:00",
-   "file": "placeholder render",
-   "topic": "Wakilni test parcel",
-   "status": "draft: needs a real photo",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196651
-  },
-  {
-   "type": "post",
-   "date": "2026-11-19",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): tile set Ivory",
-   "topic": "how ordering will work",
-   "status": "draft: check payment and delivery details",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196713
-  },
-  {
-   "type": "post",
-   "date": "2026-11-20",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): quilt set Charcoal",
-   "topic": "launch date announcement",
-   "status": "draft: confirm the date",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196769
-  },
-  {
-   "type": "post",
-   "date": "2026-11-21",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): Charcoal pieces",
-   "topic": "colour spotlight: Charcoal",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196858
-  },
-  {
-   "type": "post",
-   "date": "2026-11-23",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): quilt set Dark Green",
-   "topic": "one week to go",
-   "status": "draft: confirm the date",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400196919
-  },
-  {
-   "type": "post",
-   "date": "2026-11-25",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): mixed",
-   "topic": "gift guide",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400197030
-  },
-  {
-   "type": "post",
-   "date": "2026-11-26",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): medium planters, four colours",
-   "topic": "which one is yours (demand check)",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400197224
-  },
-  {
-   "type": "post",
-   "date": "2026-11-28",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): quilt planter small Dark Green",
-   "topic": "3 days to go",
-   "status": "draft: confirm the date",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400197272
-  },
-  {
-   "type": "post",
-   "date": "2026-11-30",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): quilt set Desert Tan",
-   "topic": "First Layer early access",
-   "status": "draft: DM the password first",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400197318
-  },
-  {
-   "type": "post",
-   "date": "2026-12-01",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): four sets + drainage",
-   "topic": "launch day",
-   "status": "draft: swap in real photos, confirm",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400197409
-  },
-  {
-   "type": "post",
-   "date": "2026-12-03",
-   "time": "10:00",
-   "file": "renders (Shopify CDN): tile set Dark Green",
-   "topic": "Christmas order cut-off",
-   "status": "draft: fill in the date",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400197484
-  },
-  {
-   "type": "post",
-   "date": "2026-12-05",
-   "time": "10:00",
-   "file": "placeholder render",
-   "topic": "thank you, first orders",
-   "status": "draft: needs a real photo",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400197534
-  },
-  {
-   "type": "story",
-   "date": "2026-10-20",
-   "time": "12:00",
-   "file": "posts/ply-story-07-meet-the-quilt.png",
-   "topic": "meet the Quilt",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400355890,
-   "highlight": "About",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-07-meet-the-quilt.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-21",
-   "time": "20:00",
-   "file": "posts/ply-story-08-meet-the-tile.png",
-   "topic": "meet the Tile",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400355947,
-   "highlight": "About",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-08-meet-the-tile.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-22",
-   "time": "12:00",
-   "file": "posts/ply-story-09-up-close.png",
-   "topic": "quilt texture close-up",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400355997,
-   "highlight": "Ideas",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-09-up-close.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-23",
-   "time": "12:00",
-   "file": "posts/ply-story-10-designed-here.png",
-   "topic": "designed here, printed here",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400356073,
-   "highlight": "About",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-10-designed-here.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-24",
-   "time": "20:00",
-   "file": "posts/ply-story-11-seven-holes.png",
-   "topic": "seven holes, one hidden tray",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400356153,
-   "highlight": "How it works",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-11-seven-holes.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-26",
-   "time": "12:00",
-   "file": "posts/ply-story-13-dark-green.png",
-   "topic": "colour: Dark Green",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400356253,
-   "highlight": "Ideas",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-13-dark-green.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-27",
-   "time": "20:00",
-   "file": "posts/ply-story-15-dried-stems.png",
-   "topic": "dried stems, all year",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400356292,
-   "highlight": "Ideas",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-15-dried-stems.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-28",
-   "time": "12:00",
-   "file": "posts/ply-story-16-small-or-medium.png",
-   "topic": "small or medium",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400356331,
-   "highlight": "Ideas",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-16-small-or-medium.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-29",
-   "time": "20:00",
-   "file": "posts/ply-story-12-join-first-layer.png",
-   "topic": "how to join the First Layer",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400356368,
-   "highlight": "About",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-12-join-first-layer.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-30",
-   "time": "12:00",
-   "file": "posts/ply-story-14-pla-from-plants.png",
-   "topic": "PLA comes from plants",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400356408,
-   "highlight": "How it works",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-14-pla-from-plants.png"
-  },
-  {
-   "type": "story",
-   "date": "2026-10-31",
-   "time": "12:00",
-   "file": "posts/ply-story-17-housewarming.png",
-   "topic": "a gift for a new home",
-   "status": "scheduled",
-   "batch": "rework-2026-10-19",
-   "metricool_id": 400356451,
-   "highlight": "Christmas",
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-17-housewarming.png"
-  },
-  {
-   "type": "post",
-   "date": "2026-10-26",
-   "time": "15:00",
-   "file": "posts/ply-post-56-meet-loom.png",
-   "topic": "Meet Loom (soap rest, 3D render)",
-   "status": "scheduled",
-   "batch": "loom-pleat-2026-10-20",
-   "metricool_id": 400993396,
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-56-meet-loom.png"
-  },
-  {
-   "type": "post",
-   "date": "2026-10-28",
-   "time": "15:00",
-   "file": "posts/ply-post-57-why-slats.png",
-   "topic": "Why slats? Loom keeps soap dry (3D render)",
-   "status": "scheduled",
-   "batch": "loom-pleat-2026-10-20",
-   "metricool_id": 400993437,
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-57-why-slats.png"
-  },
-  {
-   "type": "post",
-   "date": "2026-11-01",
-   "time": "10:00",
-   "file": "posts/ply-post-58-meet-pleat.png",
-   "topic": "Meet Pleat (pot with dish lid, 3D render)",
-   "status": "scheduled",
-   "batch": "loom-pleat-2026-10-20",
-   "metricool_id": 400993489,
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-58-meet-pleat.png"
-  },
-  {
-   "type": "post",
-   "date": "2026-11-04",
-   "time": "15:00",
-   "file": "posts/ply-post-59-lid-is-a-dish.png",
-   "topic": "The lid is a dish: Pleat with rings (3D render)",
-   "status": "scheduled",
-   "batch": "loom-pleat-2026-10-20",
-   "metricool_id": 400993555,
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-59-lid-is-a-dish.png"
-  },
-  {
-   "type": "post",
-   "date": "2026-11-07",
-   "time": "15:00",
-   "file": "posts/ply-post-60-four-colours-new-pieces.png",
-   "topic": "Four colours, one family: Loom + Pleat (3D renders)",
-   "status": "scheduled",
-   "batch": "loom-pleat-2026-10-20",
-   "metricool_id": 400993604,
-   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-60-four-colours-new-pieces.png"
-  },
-  {
-   "type": "edit",
-   "date": "2026-10-20",
-   "topic": "Captions of 22 Oct (sketch to shelf, now id 400994287) and 28 Oct (fewer things, now id 400994369) reworded: no more \"two designs\", since Loom and Pleat join the line",
-   "status": "done"
+  "note": "Posts 1-6 (brand intro) were posted by hand on 15-17 Oct 2026; their colours were cobalt, paper, sun, coral, ink, cobalt. Rebranded to Atelier on 17 Oct 2026: all scheduled posts and reels were re-rendered as *-v2 files and swapped in Metricool; posts 1-6 and 28 stay in the old style. Same evening the headline serif changed from Instrument Serif to Fraunces: scheduled items re-rendered as *-v3. 17 Oct evening: posts 1-6 and 28 recreated in the new style and republished via Metricool; Geoffry archives the old versions by hand. To keep October at 20 published items, posts 08, 12, 17 and 18 became Metricool drafts (reuse later). 17 Oct 22:40: pivot to three stock pieces (planter, bud vase, coasters), no customisation, slogan 'Made in layers. Made in Lebanon.'. All 20 scheduled items (19 Oct-9 Nov) replaced with product-free posts and Reels (brand_posts_launch.py, reels_brand.py); media pinned to commit d14beac. Drafts 08, 12, 17, 18 are retired (they promise custom work): do not reuse. 18 Oct weekly plan: October is at 20/20 Metricool items (8 published 17 Oct + 12 scheduled 19-29 Oct), so October Stories go to the hand-posted story kit (ply-story-01..04). November: 8 feed items scheduled 2-9 Nov (post 52 moved to draft on 18 Oct: delivery promise) + 2 Stories (1 Nov, 5 Nov) = 10/20 if 52 is approved, leaving 10 for launch content with real photos after ~10 Nov. The 7 relaunch posts published 17 Oct 18:45-18:57 went out with the OLD captions (names, spare parts, 'Ply makes it yours'): Geoffry should archive them (or edit the captions) by hand. 19 Oct 2026 (Geoffry): renders allowed on Instagram (labelled 3D render), Metricool upgraded to Starter (no monthly cap), rhythm raised to a daily feed post, 2-3 Reels a week and 1-2 Stories a day; old-line-up posts replaced (see status fields); launch tentatively 1 Dec with countdown drafts. Entries with batch rework-2026-10-19 were scheduled that evening.",
+  "posts": [
+    {
+      "number": 8,
+      "date": "2026-10-20",
+      "time": "10:00",
+      "file": "posts/ply-post-08-how-long-v3.png",
+      "topic": "how-long",
+      "background": "sand",
+      "status": "replaced 19 Oct by meet-the-quilt carousel (renders)"
+    },
+    {
+      "number": 12,
+      "date": "2026-10-24",
+      "time": "10:00",
+      "file": "posts/ply-post-12-myth-fact-v3.png",
+      "topic": "myth-fact",
+      "background": "bone",
+      "status": "replaced 19 Oct by no-saucer drainage carousel (renders)"
+    },
+    {
+      "number": 17,
+      "date": "2026-10-30",
+      "time": "10:00",
+      "file": "posts/ply-post-17-desk-glow-up-v3.png",
+      "topic": "desk-glow-up",
+      "background": "bone",
+      "status": "replaced 19 Oct by small-or-medium carousel (renders)"
+    },
+    {
+      "number": 18,
+      "date": "2026-10-31",
+      "time": "10:00",
+      "file": "posts/ply-post-18-plant-pots-v3.png",
+      "topic": "plant-pots",
+      "background": "sand",
+      "status": "replaced 19 Oct by vase-stems carousel (renders)"
+    },
+    {
+      "number": 28,
+      "type": "post",
+      "date": "2026-10-17",
+      "time": "14:05",
+      "file": "posts/ply-post-28-weekend-question.png",
+      "topic": "weekend question (flow test)",
+      "background": "coral",
+      "status": "published",
+      "url": "https://www.instagram.com/p/Del9dI_imiG/"
+    },
+    {
+      "number": "1-relaunch",
+      "type": "post",
+      "date": "2026-10-17",
+      "time": "18:45",
+      "file": "posts/ply-post-01-hello-lebanon-v3.png",
+      "topic": "relaunch of post 1 in the Atelier style",
+      "background": "charcoal",
+      "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
+    },
+    {
+      "number": "2-relaunch",
+      "type": "post",
+      "date": "2026-10-17",
+      "time": "18:47",
+      "file": "posts/ply-post-02-what-we-make-v3.png",
+      "topic": "relaunch of post 2 in the Atelier style",
+      "background": "terracotta",
+      "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
+    },
+    {
+      "number": "3-relaunch",
+      "type": "post",
+      "date": "2026-10-17",
+      "time": "18:49",
+      "file": "posts/ply-post-03-what-first-v3.png",
+      "topic": "relaunch of post 3 in the Atelier style",
+      "background": "bone",
+      "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
+    },
+    {
+      "number": "4-relaunch",
+      "type": "post",
+      "date": "2026-10-17",
+      "time": "18:51",
+      "file": "posts/ply-post-04-layer-by-layer-v3.png",
+      "topic": "relaunch of post 4 in the Atelier style",
+      "background": "sand",
+      "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
+    },
+    {
+      "number": "5-relaunch",
+      "type": "post",
+      "date": "2026-10-17",
+      "time": "18:53",
+      "file": "posts/ply-post-05-spare-parts-v3.png",
+      "topic": "relaunch of post 5 in the Atelier style",
+      "background": "clay",
+      "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
+    },
+    {
+      "number": "6-relaunch",
+      "type": "post",
+      "date": "2026-10-17",
+      "time": "18:55",
+      "file": "posts/ply-post-06-coming-soon-v3.png",
+      "topic": "relaunch of post 6 in the Atelier style",
+      "background": "charcoal",
+      "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
+    },
+    {
+      "number": "28-relaunch",
+      "type": "post",
+      "date": "2026-10-17",
+      "time": "18:57",
+      "file": "posts/ply-post-28-weekend-question-v3.png",
+      "topic": "relaunch of post 28 in the Atelier style",
+      "background": "terracotta",
+      "status": "published (caption still has retired custom-work wording; Geoffry to archive or edit)"
+    },
+    {
+      "date": "2026-10-19",
+      "time": "10:00",
+      "file": "posts/ply-post-43-made-in-layers-v3.png",
+      "topic": "made-in-layers",
+      "background": "charcoal",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-20",
+      "time": "18:00",
+      "file": "reels/ply-reel-07-ply-layer-by-layer-v3.mp4",
+      "topic": "reel-ply-layer-by-layer",
+      "background": "terracotta",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "10:00",
+      "file": "posts/ply-post-44-ply-means-layer-v3.png",
+      "topic": "ply-means-layer",
+      "background": "bone",
+      "status": "replaced 19 Oct by meet-the-tile carousel (renders)",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-22",
+      "time": "10:00",
+      "file": "posts/ply-post-47-sketch-to-shelf-v3.png",
+      "topic": "sketch-to-shelf",
+      "background": "bone",
+      "status": "scheduled; caption now says two designs: the Quilt and the Tile (19 Oct)",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-22",
+      "time": "18:00",
+      "file": "reels/ply-reel-08-three-pieces-v3.mp4",
+      "topic": "reel-three-pieces",
+      "background": "charcoal",
+      "status": "replaced 19 Oct by reel 10 quilt-or-tile",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-23",
+      "time": "10:00",
+      "file": "posts/ply-post-51-made-here-v3.png",
+      "topic": "made-here",
+      "background": "charcoal",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-25",
+      "time": "10:00",
+      "file": "posts/ply-post-27b-first-layer-launch-v3.png",
+      "topic": "first-layer",
+      "background": "charcoal",
+      "status": "scheduled; caption now says one printer, two designs, four colours (19 Oct)",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "10:00",
+      "file": "posts/ply-post-49-plants-or-flowers-v3.png",
+      "topic": "plants-or-flowers",
+      "background": "sand",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-27",
+      "time": "10:00",
+      "file": "posts/ply-post-21-pla-from-plants-v3.png",
+      "topic": "pla-from-plants",
+      "background": "terracotta",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-28",
+      "time": "10:00",
+      "file": "posts/ply-post-50-fewer-better-v3.png",
+      "topic": "fewer-better",
+      "background": "terracotta",
+      "status": "scheduled; caption now says two designs (19 Oct)",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "10:00",
+      "file": "posts/ply-post-42-three-colours-v3.png",
+      "topic": "three-colours",
+      "background": "charcoal",
+      "status": "replaced 19 Oct by four-colours carousel (renders)",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "18:00",
+      "file": "reels/ply-reel-09-hundreds-of-layers-v3.mp4",
+      "topic": "reel-hundreds-of-layers",
+      "background": "bone",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-11-02",
+      "time": "10:00",
+      "file": "posts/ply-post-48-myth-fact-v3.png",
+      "topic": "myth-fact",
+      "background": "clay",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-11-03",
+      "time": "10:00",
+      "file": "posts/ply-post-46-guess-the-three-v3.png",
+      "topic": "guess-the-three",
+      "background": "clay",
+      "status": "replaced 19 Oct by why-tiles carousel (renders)",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "10:00",
+      "file": "posts/ply-post-45-how-thin-v3.png",
+      "topic": "how-thin",
+      "background": "sand",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "10:00",
+      "file": "posts/ply-post-54-ask-us-v3.png",
+      "topic": "ask-us",
+      "background": "clay",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-11-06",
+      "time": "10:00",
+      "file": "posts/ply-post-52-christmas-made-here-v3.png",
+      "topic": "christmas-made-here",
+      "background": "bone",
+      "status": "replaced 19 Oct by housewarming-gift carousel (renders), live",
+      "batch": "pivot-2026-10-17",
+      "metricool_id": 398938805
+    },
+    {
+      "date": "2026-11-07",
+      "time": "10:00",
+      "file": "posts/ply-post-53-favourite-corner-v3.png",
+      "topic": "favourite-corner",
+      "background": "sand",
+      "status": "scheduled",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-11-08",
+      "time": "10:00",
+      "file": "posts/ply-post-55-whats-next-v3.png",
+      "topic": "whats-next-poll",
+      "background": "bone",
+      "status": "scheduled; caption now \"Help us choose what we design next\" (19 Oct)",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "date": "2026-11-09",
+      "time": "10:00",
+      "file": "posts/ply-post-26-printer-on-its-way-v3.png",
+      "topic": "printer-on-its-way",
+      "background": "terracotta",
+      "status": "scheduled; caption names the Quilt and the Tile; no \"last call\" (19 Oct)",
+      "batch": "pivot-2026-10-17"
+    },
+    {
+      "type": "story-kit",
+      "date": "2026-10-21",
+      "time": "by hand",
+      "file": "posts/ply-story-01-what-does-ply-mean.png",
+      "topic": "quiz: what does ply mean",
+      "background": "bone",
+      "status": "story kit (October budget full): Geoffry posts by hand",
+      "sticker": "Quiz: A layer (correct) / A type of wood / A Lebanese word",
+      "highlight": "About",
+      "batch": "weekly-2026-10-18"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-24",
+      "time": "12:00",
+      "file": "posts/ply-story-02-be-first.png",
+      "topic": "First Layer reminder",
+      "background": "sand",
+      "status": "scheduled (no sticker needed), 19 Oct",
+      "sticker": "none (or a \"DM FIRST\" text)",
+      "highlight": "About",
+      "batch": "weekly-2026-10-18",
+      "metricool_id": 400356117
+    },
+    {
+      "type": "story-kit",
+      "date": "2026-10-26",
+      "time": "by hand",
+      "file": "posts/ply-story-03-plants-or-flowers.png",
+      "topic": "poll: plants or dried flowers",
+      "background": "clay",
+      "status": "story kit (week 26 Oct-1 Nov): Geoffry posts by hand",
+      "sticker": "Poll: Plants / Dried flowers",
+      "highlight": "Ideas",
+      "batch": "weekly-2026-10-18"
+    },
+    {
+      "type": "story-kit",
+      "date": "2026-10-29",
+      "time": "by hand",
+      "file": "posts/ply-story-04-your-colour.png",
+      "topic": "poll: which colour is yours",
+      "background": "charcoal",
+      "status": "story kit: Geoffry posts by hand (redone 19 Oct with the four product colours)",
+      "sticker": "Poll with 4 options: Ivory White / Charcoal / Dark Green / Desert Tan",
+      "highlight": "Ideas",
+      "batch": "weekly-2026-10-18"
+    },
+    {
+      "type": "story",
+      "date": "2026-11-01",
+      "time": "10:00",
+      "file": "posts/ply-story-05-november.png",
+      "topic": "printer lands this month + DM FIRST",
+      "background": "terracotta",
+      "status": "replaced 19 Oct by a plain render Story (Quilt set, Dark Green), Metricool id 400194322",
+      "metricool_id": 398938765,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3eb5b8a3ff65cf672f13b6582ddba74d536c4557/posts/ply-story-05-november.png",
+      "highlight": "About",
+      "batch": "weekly-2026-10-18"
+    },
+    {
+      "type": "story",
+      "date": "2026-11-05",
+      "time": "18:00",
+      "file": "posts/ply-story-06-quiz-answer.png",
+      "topic": "answer to 4 Nov quiz: 600 layers",
+      "background": "bone",
+      "status": "scheduled",
+      "metricool_id": 398938779,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3eb5b8a3ff65cf672f13b6582ddba74d536c4557/posts/ply-story-06-quiz-answer.png",
+      "highlight": "How it works",
+      "batch": "weekly-2026-10-18"
+    },
+    {
+      "type": "post",
+      "date": "2026-10-20",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): quilt planter S/M, quilt vase, quilt set (Ivory White)",
+      "topic": "meet-the-quilt",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400194951
+    },
+    {
+      "type": "post",
+      "date": "2026-10-21",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): tile planter S/M, tile vase, tile set (Ivory White)",
+      "topic": "meet-the-tile",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400193508
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-22",
+      "time": "18:00",
+      "file": "reels/ply-reel-10-quilt-or-tile-v3.mp4",
+      "topic": "reel: quilt or tile vote (renders)",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400366548
+    },
+    {
+      "type": "post",
+      "date": "2026-10-24",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): drainage-square, tile planter small Charcoal",
+      "topic": "no-saucer drainage",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400195015
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-25",
+      "time": "18:00",
+      "file": "reels/ply-reel-13-why-tiles-v3.mp4",
+      "topic": "reel: Beirut floors, a new shape (renders)",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400366630
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-27",
+      "time": "18:00",
+      "file": "reels/ply-reel-12-hidden-tray-v3.mp4",
+      "topic": "reel: seven holes, hidden tray (render)",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400366692
+    },
+    {
+      "type": "post",
+      "date": "2026-10-29",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): quilt planter small in the four colours",
+      "topic": "four-colours",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400194258
+    },
+    {
+      "type": "post",
+      "date": "2026-10-30",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): tile planter S/M Dark Green",
+      "topic": "small-or-medium",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400195086
+    },
+    {
+      "type": "post",
+      "date": "2026-10-31",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): vases Desert Tan, Dark Green, Charcoal",
+      "topic": "what-goes-in-the-vase",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400195169
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-31",
+      "time": "18:00",
+      "file": "reels/ply-reel-11-four-colours-v3.mp4",
+      "topic": "reel: pick yours, four colours (renders)",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400366736
+    },
+    {
+      "type": "post",
+      "date": "2026-11-03",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): tile planter M, tile vase, tile set (Desert Tan)",
+      "topic": "why-tiles",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400194386
+    },
+    {
+      "type": "post",
+      "date": "2026-11-06",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): quilt set Charcoal, tile set Dark Green, quilt set Ivory",
+      "topic": "housewarming-gift",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400194451
+    },
+    {
+      "type": "post",
+      "date": "2026-11-10",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): mixed",
+      "topic": "prices",
+      "status": "draft, awaiting Geoffry (prices + free delivery)",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400315702
+    },
+    {
+      "type": "post",
+      "date": "2026-11-11",
+      "time": "10:00",
+      "file": "placeholder render",
+      "topic": "printer unboxing",
+      "status": "draft: needs a real photo/video",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196164
+    },
+    {
+      "type": "post",
+      "date": "2026-11-12",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): Dark Green pieces",
+      "topic": "colour spotlight: Dark Green",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196241
+    },
+    {
+      "type": "post",
+      "date": "2026-11-13",
+      "time": "10:00",
+      "file": "placeholder render",
+      "topic": "first test print (make it a Reel)",
+      "status": "draft: needs a timelapse video",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196294
+    },
+    {
+      "type": "post",
+      "date": "2026-11-14",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): quilt planter small Tan, tile planter small Charcoal",
+      "topic": "what to plant",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196381
+    },
+    {
+      "type": "post",
+      "date": "2026-11-16",
+      "time": "10:00",
+      "file": "placeholder render",
+      "topic": "render to real",
+      "status": "draft: needs real photos",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196429
+    },
+    {
+      "type": "post",
+      "date": "2026-11-17",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): Desert Tan pieces",
+      "topic": "colour spotlight: Desert Tan",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196580
+    },
+    {
+      "type": "post",
+      "date": "2026-11-18",
+      "time": "10:00",
+      "file": "placeholder render",
+      "topic": "Wakilni test parcel",
+      "status": "draft: needs a real photo",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196651
+    },
+    {
+      "type": "post",
+      "date": "2026-11-19",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): tile set Ivory",
+      "topic": "how ordering will work",
+      "status": "draft: check payment and delivery details",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196713
+    },
+    {
+      "type": "post",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): quilt set Charcoal",
+      "topic": "launch date announcement",
+      "status": "draft: confirm the date",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196769
+    },
+    {
+      "type": "post",
+      "date": "2026-11-21",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): Charcoal pieces",
+      "topic": "colour spotlight: Charcoal",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196858
+    },
+    {
+      "type": "post",
+      "date": "2026-11-23",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): quilt set Dark Green",
+      "topic": "one week to go",
+      "status": "draft: confirm the date",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400196919
+    },
+    {
+      "type": "post",
+      "date": "2026-11-25",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): mixed",
+      "topic": "gift guide",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400197030
+    },
+    {
+      "type": "post",
+      "date": "2026-11-26",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): medium planters, four colours",
+      "topic": "which one is yours (demand check)",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400197224
+    },
+    {
+      "type": "post",
+      "date": "2026-11-28",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): quilt planter small Dark Green",
+      "topic": "3 days to go",
+      "status": "draft: confirm the date",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400197272
+    },
+    {
+      "type": "post",
+      "date": "2026-11-30",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): quilt set Desert Tan",
+      "topic": "First Layer early access",
+      "status": "draft: DM the password first",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400197318
+    },
+    {
+      "type": "post",
+      "date": "2026-12-01",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): four sets + drainage",
+      "topic": "launch day",
+      "status": "draft: swap in real photos, confirm",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400197409
+    },
+    {
+      "type": "post",
+      "date": "2026-12-03",
+      "time": "10:00",
+      "file": "renders (Shopify CDN): tile set Dark Green",
+      "topic": "Christmas order cut-off",
+      "status": "draft: fill in the date",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400197484
+    },
+    {
+      "type": "post",
+      "date": "2026-12-05",
+      "time": "10:00",
+      "file": "placeholder render",
+      "topic": "thank you, first orders",
+      "status": "draft: needs a real photo",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400197534
+    },
+    {
+      "type": "story",
+      "date": "2026-10-20",
+      "time": "12:00",
+      "file": "posts/ply-story-07-meet-the-quilt.png",
+      "topic": "meet the Quilt",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400355890,
+      "highlight": "About",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-07-meet-the-quilt.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-21",
+      "time": "20:00",
+      "file": "posts/ply-story-08-meet-the-tile.png",
+      "topic": "meet the Tile",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400355947,
+      "highlight": "About",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-08-meet-the-tile.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-22",
+      "time": "12:00",
+      "file": "posts/ply-story-09-up-close.png",
+      "topic": "quilt texture close-up",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400355997,
+      "highlight": "Ideas",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-09-up-close.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-23",
+      "time": "12:00",
+      "file": "posts/ply-story-10-designed-here.png",
+      "topic": "designed here, printed here",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400356073,
+      "highlight": "About",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-10-designed-here.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-24",
+      "time": "20:00",
+      "file": "posts/ply-story-11-seven-holes.png",
+      "topic": "seven holes, one hidden tray",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400356153,
+      "highlight": "How it works",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-11-seven-holes.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-26",
+      "time": "12:00",
+      "file": "posts/ply-story-13-dark-green.png",
+      "topic": "colour: Dark Green",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400356253,
+      "highlight": "Ideas",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-13-dark-green.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-27",
+      "time": "20:00",
+      "file": "posts/ply-story-15-dried-stems.png",
+      "topic": "dried stems, all year",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400356292,
+      "highlight": "Ideas",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-15-dried-stems.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-28",
+      "time": "12:00",
+      "file": "posts/ply-story-16-small-or-medium.png",
+      "topic": "small or medium",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400356331,
+      "highlight": "Ideas",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-16-small-or-medium.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-29",
+      "time": "20:00",
+      "file": "posts/ply-story-12-join-first-layer.png",
+      "topic": "how to join the First Layer",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400356368,
+      "highlight": "About",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-12-join-first-layer.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-30",
+      "time": "12:00",
+      "file": "posts/ply-story-14-pla-from-plants.png",
+      "topic": "PLA comes from plants",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400356408,
+      "highlight": "How it works",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-14-pla-from-plants.png"
+    },
+    {
+      "type": "story",
+      "date": "2026-10-31",
+      "time": "12:00",
+      "file": "posts/ply-story-17-housewarming.png",
+      "topic": "a gift for a new home",
+      "status": "scheduled",
+      "batch": "rework-2026-10-19",
+      "metricool_id": 400356451,
+      "highlight": "Christmas",
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-17-housewarming.png"
+    },
+    {
+      "type": "post",
+      "date": "2026-10-26",
+      "time": "15:00",
+      "file": "posts/ply-post-56-meet-loom.png",
+      "topic": "Meet Loom (soap rest, 3D render)",
+      "status": "scheduled",
+      "batch": "loom-pleat-2026-10-20",
+      "metricool_id": 400993396,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-56-meet-loom.png"
+    },
+    {
+      "type": "post",
+      "date": "2026-10-28",
+      "time": "15:00",
+      "file": "posts/ply-post-57-why-slats.png",
+      "topic": "Why slats? Loom keeps soap dry (3D render)",
+      "status": "scheduled",
+      "batch": "loom-pleat-2026-10-20",
+      "metricool_id": 400993437,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-57-why-slats.png"
+    },
+    {
+      "type": "post",
+      "date": "2026-11-01",
+      "time": "10:00",
+      "file": "posts/ply-post-58-meet-pleat.png",
+      "topic": "Meet Pleat (pot with dish lid, 3D render)",
+      "status": "scheduled",
+      "batch": "loom-pleat-2026-10-20",
+      "metricool_id": 400993489,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-58-meet-pleat.png"
+    },
+    {
+      "type": "post",
+      "date": "2026-11-04",
+      "time": "15:00",
+      "file": "posts/ply-post-59-lid-is-a-dish.png",
+      "topic": "The lid is a dish: Pleat with rings (3D render)",
+      "status": "scheduled",
+      "batch": "loom-pleat-2026-10-20",
+      "metricool_id": 400993555,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-59-lid-is-a-dish.png"
+    },
+    {
+      "type": "post",
+      "date": "2026-11-07",
+      "time": "15:00",
+      "file": "posts/ply-post-60-four-colours-new-pieces.png",
+      "topic": "Four colours, one family: Loom + Pleat (3D renders)",
+      "status": "scheduled",
+      "batch": "loom-pleat-2026-10-20",
+      "metricool_id": 400993604,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-60-four-colours-new-pieces.png"
+    },
+    {
+      "type": "edit",
+      "date": "2026-10-20",
+      "topic": "Captions of 22 Oct (sketch to shelf, now id 400994287) and 28 Oct (fewer things, now id 400994369) reworded: no more \"two designs\", since Loom and Pleat join the line",
+      "status": "done"
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-21",
+      "time": "18:00",
+      "file": "reels/ply-reel-14-building-ply-ep1.mp4",
+      "topic": "Building Ply ep 1: two people, one printer (follow CTA)",
+      "status": "scheduled",
+      "batch": "growth-reels-2026-10-21",
+      "metricool_id": 401619489,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-14-building-ply-ep1.mp4"
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-23",
+      "time": "18:00",
+      "file": "reels/ply-reel-15-zoom-quilt.mp4",
+      "topic": "Zoom out: guess the Quilt planter (3D render)",
+      "status": "scheduled",
+      "batch": "growth-reels-2026-10-21",
+      "metricool_id": 401619504,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-15-zoom-quilt.mp4"
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-24",
+      "time": "18:00",
+      "file": "reels/ply-reel-16-ply-in-10-seconds.mp4",
+      "topic": "Ply in 10 seconds: all four pieces + colours (pin this)",
+      "status": "scheduled",
+      "batch": "growth-reels-2026-10-21",
+      "metricool_id": 401619523,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-16-ply-in-10-seconds.mp4"
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-26",
+      "time": "18:00",
+      "file": "reels/ply-reel-17-three-things.mp4",
+      "topic": "3 things you didn't know about our pots",
+      "status": "scheduled",
+      "batch": "growth-reels-2026-10-21",
+      "metricool_id": 401619577,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-17-three-things.mp4"
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-28",
+      "time": "18:00",
+      "file": "reels/ply-reel-18-building-ply-ep2.mp4",
+      "topic": "Building Ply ep 2: why only four colours",
+      "status": "scheduled",
+      "batch": "growth-reels-2026-10-21",
+      "metricool_id": 401619613,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-18-building-ply-ep2.mp4"
+    },
+    {
+      "type": "reel",
+      "date": "2026-10-30",
+      "time": "18:00",
+      "file": "reels/ply-reel-19-loom-puddle.mp4",
+      "topic": "Loom: is your soap sitting in a puddle? (3D render)",
+      "status": "scheduled",
+      "batch": "growth-reels-2026-10-21",
+      "metricool_id": 401619636,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-19-loom-puddle.mp4"
+    },
+    {
+      "type": "reel",
+      "date": "2026-11-01",
+      "time": "18:00",
+      "file": "reels/ply-reel-20-pleat-rings.mp4",
+      "topic": "Pleat: where do your rings go at night? (3D render)",
+      "status": "scheduled",
+      "batch": "growth-reels-2026-10-21",
+      "metricool_id": 401619656,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-20-pleat-rings.mp4"
+    },
+    {
+      "type": "reel",
+      "date": "2026-11-02",
+      "time": "18:00",
+      "file": "reels/ply-reel-21-zoom-tile.mp4",
+      "topic": "Zoom out: guess again, Tile planter (3D render)",
+      "status": "scheduled",
+      "batch": "growth-reels-2026-10-21",
+      "metricool_id": 401619680,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-21-zoom-tile.mp4"
+    },
+    {
+      "type": "reel",
+      "date": "2026-11-03",
+      "time": "18:00",
+      "file": "reels/ply-reel-22-building-ply-ep3.mp4",
+      "topic": "Building Ply ep 3: printer should land next week",
+      "status": "scheduled",
+      "batch": "growth-reels-2026-10-21",
+      "metricool_id": 401619703,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-22-building-ply-ep3.mp4"
+    }
+  ],
+  "campaign": {
+    "name": "First Layer",
+    "dates": "2026-10-19 to 2026-11-09",
+    "offer": "DM FIRST or comment to join: first look at every piece, first pick of the small first batch, order before everyone else. No prices.",
+    "checkpoints": {
+      "2026-10-26": "100 followers, 10 on list",
+      "2026-11-02": "180 followers, 25 on list",
+      "2026-11-09": "250 followers, 40 on list"
+    },
+    "ad": "optional ~$40 boost of best Reel 26 Oct-1 Nov, Beirut + Mount Lebanon, 20-45, set up by Geoffry"
   }
- ],
- "campaign": {
-  "name": "First Layer",
-  "dates": "2026-10-19 to 2026-11-09",
-  "offer": "DM FIRST or comment to join: first look at every piece, first pick of the small first batch, order before everyone else. No prices.",
-  "checkpoints": {
-   "2026-10-26": "100 followers, 10 on list",
-   "2026-11-02": "180 followers, 25 on list",
-   "2026-11-09": "250 followers, 40 on list"
-  },
-  "ad": "optional ~$40 boost of best Reel 26 Oct-1 Nov, Beirut + Mount Lebanon, 20-45, set up by Geoffry"
- }
 }
