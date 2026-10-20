@@ -815,6 +815,67 @@
    "metricool_id": 400356451,
    "highlight": "Christmas",
    "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-17-housewarming.png"
+  },
+  {
+   "type": "post",
+   "date": "2026-10-26",
+   "time": "15:00",
+   "file": "posts/ply-post-56-meet-loom.png",
+   "topic": "Meet Loom (soap rest, 3D render)",
+   "status": "scheduled",
+   "batch": "loom-pleat-2026-10-20",
+   "metricool_id": 400993396,
+   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-56-meet-loom.png"
+  },
+  {
+   "type": "post",
+   "date": "2026-10-28",
+   "time": "15:00",
+   "file": "posts/ply-post-57-why-slats.png",
+   "topic": "Why slats? Loom keeps soap dry (3D render)",
+   "status": "scheduled",
+   "batch": "loom-pleat-2026-10-20",
+   "metricool_id": 400993437,
+   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-57-why-slats.png"
+  },
+  {
+   "type": "post",
+   "date": "2026-11-01",
+   "time": "10:00",
+   "file": "posts/ply-post-58-meet-pleat.png",
+   "topic": "Meet Pleat (pot with dish lid, 3D render)",
+   "status": "scheduled",
+   "batch": "loom-pleat-2026-10-20",
+   "metricool_id": 400993489,
+   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-58-meet-pleat.png"
+  },
+  {
+   "type": "post",
+   "date": "2026-11-04",
+   "time": "15:00",
+   "file": "posts/ply-post-59-lid-is-a-dish.png",
+   "topic": "The lid is a dish: Pleat with rings (3D render)",
+   "status": "scheduled",
+   "batch": "loom-pleat-2026-10-20",
+   "metricool_id": 400993555,
+   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-59-lid-is-a-dish.png"
+  },
+  {
+   "type": "post",
+   "date": "2026-11-07",
+   "time": "15:00",
+   "file": "posts/ply-post-60-four-colours-new-pieces.png",
+   "topic": "Four colours, one family: Loom + Pleat (3D renders)",
+   "status": "scheduled",
+   "batch": "loom-pleat-2026-10-20",
+   "metricool_id": 400993604,
+   "media": "https://raw.githubusercontent.com/plymakes/ply-media/6a7b533d23f9cefbd800aee1b27ef1781f4719f5/posts/ply-post-60-four-colours-new-pieces.png"
+  },
+  {
+   "type": "edit",
+   "date": "2026-10-20",
+   "topic": "Captions of 22 Oct (sketch to shelf, now id 400994287) and 28 Oct (fewer things, now id 400994369) reworded: no more \"two designs\", since Loom and Pleat join the line",
+   "status": "done"
   }
  ],
  "campaign": {
