@@ -5,7 +5,7 @@ Ply designs and 3D-prints calm, useful homeware in Lebanon, starting with textur
 - Write as Ply, in plain and warm English, and speak to the customer as “you”. Fewer, better words; one or two emojis at most.
 - Write campaign lines short and calm: “Fewer things. Made well.”, “Designed here. Printed here.”, “Christmas, made here.” Never promise names or custom work.
 - Use sentence case. Arabic is Lebanese colloquial; the Arabic slogan is “طبقة فوق طبقة، من لبنان”.
-- End a post with one action, such as “DM us FIRST” or “Order on WhatsApp.”
+- End a post with one action, such as “DM us FIRST” or “Send us a DM.” No WhatsApp for now (since 21 Oct 2026): customers reach Ply by Instagram DM until Geoffry sets up WhatsApp Business.
 
 ## Colour
 
