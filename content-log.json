@@ -221,11 +221,14 @@
     {
       "date": "2026-10-29",
       "time": "18:00",
-      "file": "reels/ply-reel-09-hundreds-of-layers-v3.mp4",
+      "file": "reels/ply-reel-09-hundreds-of-layers-sound.mp4",
       "topic": "reel-hundreds-of-layers",
       "background": "bone",
       "status": "scheduled",
-      "batch": "pivot-2026-10-17"
+      "batch": "pivot-2026-10-17",
+      "metricool_id": 401632778,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-09-hundreds-of-layers-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "date": "2026-11-02",
@@ -399,11 +402,13 @@
       "type": "reel",
       "date": "2026-10-22",
       "time": "18:00",
-      "file": "reels/ply-reel-10-quilt-or-tile-v3.mp4",
+      "file": "reels/ply-reel-10-quilt-or-tile-sound.mp4",
       "topic": "reel: quilt or tile vote (renders)",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400366548
+      "metricool_id": 401632561,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-10-quilt-or-tile-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "post",
@@ -419,21 +424,25 @@
       "type": "reel",
       "date": "2026-10-25",
       "time": "18:00",
-      "file": "reels/ply-reel-13-why-tiles-v3.mp4",
+      "file": "reels/ply-reel-13-why-tiles-sound.mp4",
       "topic": "reel: Beirut floors, a new shape (renders)",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400366630
+      "metricool_id": 401632650,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-13-why-tiles-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "reel",
       "date": "2026-10-27",
       "time": "18:00",
-      "file": "reels/ply-reel-12-hidden-tray-v3.mp4",
+      "file": "reels/ply-reel-12-hidden-tray-sound.mp4",
       "topic": "reel: seven holes, hidden tray (render)",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400366692
+      "metricool_id": 401632694,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-12-hidden-tray-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "post",
@@ -469,11 +478,13 @@
       "type": "reel",
       "date": "2026-10-31",
       "time": "18:00",
-      "file": "reels/ply-reel-11-four-colours-v3.mp4",
+      "file": "reels/ply-reel-11-four-colours-sound.mp4",
       "topic": "reel: pick yours, four colours (renders)",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400366736
+      "metricool_id": 401632838,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-11-four-colours-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "post",
@@ -882,100 +893,109 @@
       "type": "reel",
       "date": "2026-10-21",
       "time": "18:00",
-      "file": "reels/ply-reel-14-building-ply-ep1.mp4",
+      "file": "reels/ply-reel-14-building-ply-ep1-sound.mp4",
       "topic": "Building Ply ep 1: two people, one printer (follow CTA)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401619489,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-14-building-ply-ep1.mp4"
+      "metricool_id": 401632540,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-14-building-ply-ep1-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "reel",
       "date": "2026-10-23",
       "time": "18:00",
-      "file": "reels/ply-reel-15-zoom-quilt.mp4",
+      "file": "reels/ply-reel-15-zoom-quilt-sound.mp4",
       "topic": "Zoom out: guess the Quilt planter (3D render)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401619504,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-15-zoom-quilt.mp4"
+      "metricool_id": 401632586,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-15-zoom-quilt-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "reel",
       "date": "2026-10-24",
       "time": "18:00",
-      "file": "reels/ply-reel-16-ply-in-10-seconds.mp4",
+      "file": "reels/ply-reel-16-ply-in-10-seconds-sound.mp4",
       "topic": "Ply in 10 seconds: all four pieces + colours (pin this)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401619523,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-16-ply-in-10-seconds.mp4"
+      "metricool_id": 401632608,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-16-ply-in-10-seconds-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "reel",
       "date": "2026-10-26",
       "time": "18:00",
-      "file": "reels/ply-reel-17-three-things.mp4",
+      "file": "reels/ply-reel-17-three-things-sound.mp4",
       "topic": "3 things you didn't know about our pots",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401619577,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-17-three-things.mp4"
+      "metricool_id": 401632675,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-17-three-things-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "reel",
       "date": "2026-10-28",
       "time": "18:00",
-      "file": "reels/ply-reel-18-building-ply-ep2.mp4",
+      "file": "reels/ply-reel-18-building-ply-ep2-sound.mp4",
       "topic": "Building Ply ep 2: why only four colours",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401619613,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-18-building-ply-ep2.mp4"
+      "metricool_id": 401632752,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-18-building-ply-ep2-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "reel",
       "date": "2026-10-30",
       "time": "18:00",
-      "file": "reels/ply-reel-19-loom-puddle.mp4",
+      "file": "reels/ply-reel-19-loom-puddle-sound.mp4",
       "topic": "Loom: is your soap sitting in a puddle? (3D render)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401619636,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-19-loom-puddle.mp4"
+      "metricool_id": 401632814,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-19-loom-puddle-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "reel",
       "date": "2026-11-01",
       "time": "18:00",
-      "file": "reels/ply-reel-20-pleat-rings.mp4",
+      "file": "reels/ply-reel-20-pleat-rings-sound.mp4",
       "topic": "Pleat: where do your rings go at night? (3D render)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401619656,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-20-pleat-rings.mp4"
+      "metricool_id": 401632859,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-20-pleat-rings-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "reel",
       "date": "2026-11-02",
       "time": "18:00",
-      "file": "reels/ply-reel-21-zoom-tile.mp4",
+      "file": "reels/ply-reel-21-zoom-tile-sound.mp4",
       "topic": "Zoom out: guess again, Tile planter (3D render)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401619680,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-21-zoom-tile.mp4"
+      "metricool_id": 401632884,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-21-zoom-tile-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     },
     {
       "type": "reel",
       "date": "2026-11-03",
       "time": "18:00",
-      "file": "reels/ply-reel-22-building-ply-ep3.mp4",
+      "file": "reels/ply-reel-22-building-ply-ep3-sound.mp4",
       "topic": "Building Ply ep 3: printer should land next week",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401619703,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/f2c4eaa038b8a5a2c127c4fb30c1b96b61e76be8/reels/ply-reel-22-building-ply-ep3.mp4"
+      "metricool_id": 401632909,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-22-building-ply-ep3-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
     }
   ],
   "campaign": {
