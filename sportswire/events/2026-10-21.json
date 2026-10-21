@@ -63,6 +63,32 @@
         "spec": null,
         "metricool_id": null
       }
+    },
+    {
+      "id": "cy-fiba-europe-cup",
+      "page": "cy",
+      "priority": "B",
+      "sport": "basketball",
+      "title": "FIBA Europe Cup: Petrolina AEK v Tartu (Larnaca), Keravnos v King Szczecin (Nicosia)",
+      "start_local": "2026-10-21T19:00+03:00",
+      "start_confirmed": true,
+      "expected_end_local": "2026-10-21T21:05+03:00",
+      "result_sources": [
+        "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games"
+      ],
+      "preview": {
+        "status": "none"
+      },
+      "result_desk": {
+        "trigger_ids": [],
+        "note": "picked up by the evening desk"
+      },
+      "result": {
+        "status": "posted",
+        "spec": "specs/2026-10-21/cy-fiba-europe-cup-aek-keravnos.json",
+        "metricool_id": 402486293,
+        "when": "2026-10-21T22:30+03:00"
+      }
     }
   ]
 }

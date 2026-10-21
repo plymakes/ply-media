@@ -134,6 +134,34 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/fddcf0b58c0d5a3b3b42c8f317db7a1a99d28157/sportswire/posts/cy/2026-10/2026-10-21-thursday-in-europe-omonia-pafos-03.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/fddcf0b58c0d5a3b3b42c8f317db7a1a99d28157/sportswire/posts/cy/2026-10/2026-10-21-thursday-in-europe-omonia-pafos-04.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-21",
+      "slug": "fiba-europe-cup-aek-keravnos",
+      "story_key": "cy-fiba-europe-cup-2026-10-21",
+      "light": "green",
+      "template": "roundup",
+      "headline": "a win for *aek*, a first loss for keravnos.",
+      "caption_first_line": "A win and a defeat for the two Cypriot clubs in the FIBA Europe Cup on Wednesday night. 🏀",
+      "sources": [
+        "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games",
+        "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135761-KERAV-KING",
+        "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135791-AEK-TARTU"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-21/cy-fiba-europe-cup-aek-keravnos.json",
+      "logged_at": "2026-10-21T19:25:16+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-21T22:30:00+03:00",
+      "metricool_id": "402486293",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=8553682104902371521",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/738d1c5a7ffd59ee3ccd3bf445faf54a9fa9afdb/sportswire/posts/cy/2026-10/2026-10-21-fiba-europe-cup-aek-keravnos.png"
+      ]
     }
   ]
 }
