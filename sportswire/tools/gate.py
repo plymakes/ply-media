@@ -46,7 +46,7 @@ def numbers(text: str) -> set[str]:
 
 def card_text(spec: dict) -> str:
     skip = {'labels', 'columns', 'eyebrow_style', 'crest', 'home_crest', 'away_crest', 'headline_size', 'headline_lines',
-            'tone', 'theme', 'template', 'align', 'section', 'footer_rule', '_theme', 'dur'}
+            'tone', 'theme', 'template', 'align', 'section', 'footer_rule', '_theme', 'dur', 'photo'}
     parts: list[str] = []
 
     def walk(x, key=None):
@@ -131,8 +131,47 @@ def check(path: str) -> list[str]:
     if not (spec.get('visual_check') or {}).get('done'):
         probs.append('visual check not recorded (visual_check.done must be true after looking at every PNG)')
 
-    # 6. caption
+    # 5b. photos and crests (PLAYBOOK, Images and rights)
     cap = spec['caption']
+    cards = [spec['card']] if 'card' in spec else [s.get('card', {}) for s in spec.get('slides', [])]
+    crest_idx = json.loads((ROOT / 'brand/crests/index.json').read_text()) if (ROOT / 'brand/crests/index.json').exists() else {}
+    crest_names: set[str] = set()
+
+    def crests_in(x):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if k in ('crest', 'home_crest', 'away_crest') and v:
+                    crest_names.add(str(v))
+                else:
+                    crests_in(v)
+        elif isinstance(x, list):
+            for v in x:
+                crests_in(v)
+    photo_check = None
+    for c in cards:
+        crests_in(c)
+        ph = c.get('photo')
+        if not ph:
+            continue
+        if photo_check is None:
+            import runpy
+            photo_check = runpy.run_path(str(ROOT / 'tools/photos.py'), run_name='photos')['check']
+        f = ROOT / ph.get('file', '')
+        for pr in photo_check(f):
+            probs.append(f'photo {ph.get("file")}: {pr}')
+        side = json.loads(f.with_suffix('.json').read_text()) if f.with_suffix('.json').exists() else {}
+        credit = ph.get('credit') or side.get('credit') or ''
+        if credit and credit.lower() not in cap.lower():
+            probs.append(f'caption must credit the photo ("📸 {credit}")')
+        if spec.get('light') == 'green' and re.search(r'injur|stretcher|blood|fight|brawl|tears', side.get('shows', ''), re.I):
+            probs.append('photo looks sensitive (injury, fight, distress): drop it or make the post AMBER')
+    for name in sorted(crest_names):
+        if not (ROOT / 'brand/crests' / f'{name}.png').exists():
+            probs.append(f'crest "{name}" is not in brand/crests (add it with tools/crests.py, or remove it)')
+        elif name in crest_idx and not crest_idx[name].get('checked'):
+            probs.append(f'crest "{name}" has not been visually checked (tools/crests.py sheet {name}, look, then tools/crests.py ok {name})')
+
+    # 6. caption
     if len(cap) > 2200:
         probs.append(f'caption is {len(cap)} characters (max 2200)')
     tags = re.findall(r'#\w+', cap)

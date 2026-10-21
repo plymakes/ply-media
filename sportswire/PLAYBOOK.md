@@ -80,7 +80,7 @@ After the card text and caption are written, start a **separate agent that has n
 Record the result in the spec file (`factcheck`).
 
 ### 4.5 Visual check
-Open every rendered PNG and read it back word by word against the spec: names, scores, dates, crest-free layout, no text clipped or overflowing, nothing overlapping. A post is never scheduled without this check.
+Open every rendered PNG and read it back word by word against the spec: names, scores, dates, the right crest on the right club, a photo that shows what its source says (and nothing awkward), no text clipped or overflowing, nothing overlapping. A post is never scheduled without this check.
 
 ---
 
@@ -146,7 +146,17 @@ House voice (see `brand/brand-guide.md` and the captions in `brand/reference/`):
 For every post, identify the athlete, club or federation most likely to reshare it, with a handle confirmed in `sources/handles.json`. Mention them in the caption. For positive spotlight posts about one athlete or club, also add them as an Instagram collaborator (`instagramData.collaborators`); at most one collaborator per post, never on AMBER posts or defeats.
 
 ### Images and rights
-SportsWire cards are typographic and use the brand's own graphics plus club crests from `brand/crests/` (editorial use, as on the published cards). Never use photos from clubs, agencies, Getty, federations or social media in an automated run; photos only from `brand/photos/` where Geoffry noted permission. No AI-generated pictures of real people, ever. Set `instagramData.isAiGenerated` to false (the cards are designed graphics, not generated imagery) and write alt text for every image.
+Posts and Reels carry **club crests** and, where a compliant one exists, an **official event photo** (Geoffry, 21 Oct 2026: "they look more professional"). Runs find, choose and place them on their own.
+
+- **Crests** (`brand/crests/`, origin in `brand/crests/index.json`): on every score panel, result row and entity where a club or national team appears. Source: the club's own website first, its Wikipedia infobox logo second (`tools/crests.py`). A new crest is used only after it has been looked at on the contact sheet and marked checked (the gate enforces this). Editorial identification only: never altered, recoloured or used as decoration.
+- **Photos: official club, federation, league or competition media only, always credited** (Geoffry's choice, 21 Oct 2026). That means the club's or federation's own website, press release or official gallery. Credit on the card ("PHOTO: AL RIYADI", automatic) and in the caption ("📸 Al Riyadi"; the gate checks).
+- **Never:** agency or wire photos (Getty, AFP, Reuters, AP, EPA, Imago, Shutterstock, Alamy, Sportsfile…; also when they appear on a club or UEFA page with that credit), watermarked or text-burned images, fan pages, aggregators, other news sites' photos, screenshots of TV, AI-generated or edited images of real people.
+- **Right photo, right event:** use a photo only when the source page itself says what it shows (the match, the date, the people). Never guess who is in a photo, never use a photo from another game or season, never crop someone out to change what happened. Results: the clubs' own post-game report or gallery, after the final whistle. Previews: crests, plus an official photo only if it plainly fits (the team, this season).
+- **Choosing:** look at every candidate (`tools/photos.py scan` makes a numbered sheet): sharp, well lit, action or celebration over posed shots, the faces of our story's people visible, nothing embarrassing (falls, injuries, arguments). Set `focus` on the action so the crop keeps it.
+- **Quality:** the renderer refuses any photo it would have to enlarge more than 1.25× for its layout; then pick a bigger one or go typographic.
+- **Sensitive:** no photos on injury, death, legal or disciplinary stories, and none of minors unless their federation names them in the release. If anyone (club, athlete, photographer) asks us to remove a photo, Geoffry is told at once and the post is replaced or deleted.
+- No compliant photo → the typographic card, as before. That's fine.
+- Set `instagramData.isAiGenerated` to false (designed graphics and real photos, nothing generated) and write alt text for every image.
 
 ### Reels
 **Every Reel has sound** (Geoffry, 21 Oct 2026). `tools/render.py` builds an original soundtrack into every Reel (`tools/sound.py`: drums, bass, chords, whooshes and hits timed to the slide changes; tempo and key vary per Reel). Pick the mood with `"sound": {"mood": "drive"}` (results, big nights), `"bright"` (wins, spotlights) or `"calm"` (explainers, tables). The gate rejects any Reel without an audible soundtrack. No copyrighted music, ever; don't add Instagram catalog audio on top. Reels are typographic motion graphics only: no match footage or reposted video.

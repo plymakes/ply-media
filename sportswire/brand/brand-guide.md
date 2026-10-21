@@ -39,5 +39,8 @@ Alternate dark and light cards so the grid doesn't stack the same colour: result
 - Captions: a hook line, two or three short paragraphs of facts, one line on what's next, a source line, then @mentions and 3–5 hashtags. One flag emoji at the end is the house sign-off. Arabic (Lebanese dialect) or Greek words only where they add warmth, never for facts.
 
 ## Images
-- Typographic cards are the default. Club crests from `brand/crests/` are fine in score panels, rows and draws.
-- Photos only if Geoffry has added them to `brand/photos/` with the permission noted. Never pull photos from clubs, agencies or social media in an automated run. Never AI-generated images of real people.
+- Club crests (`brand/crests/`) on score panels, rows, fixtures and entity blocks, always on their white tile.
+- Official event photos (PLAYBOOK, Images and rights) sit in a **hero band** across the top of the card that fades into ink; the eyebrow becomes a solid accent pill and the headline overlaps the foot of the photo. Photo cards are always dark. The credit runs small, top right, in mono caps ("PHOTO: SAGESSE SC").
+- In Reels the photo band is taller and slowly pushes in while the text builds underneath; the first frame is the photo alone, which makes a strong hook.
+- One photo per card; on carousels, the hook slide and at most one more. Never collage, filter, recolour or put stickers on a photo.
+- Never AI-generated images of real people.

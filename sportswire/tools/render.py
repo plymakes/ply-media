@@ -94,6 +94,44 @@ def kv_rows(rows) -> str:
         for r in rows) + '</div>'
 
 
+# ----------------------------------------------------------------- photos
+# A card can carry an official event photo (PLAYBOOK, Images and rights): "photo": {"file": "media/photos/…jpg",
+# "focus": [x%, y%], "credit": "Sagesse SC"}. Credit and focus default to the photo's sidecar JSON.
+# Posts and Stories: a hero band across the top that fades into ink, the headline overlapping its foot.
+# Reels: a taller band with a slow push-in while the text builds underneath.
+PHOTO_BOX = {'post': 640, 'story': 960, 'reel': 1060}
+PHOTO_MIN = {'post': 540, 'story': 760, 'reel': 760}
+MAX_UPSCALE = 1.25
+
+
+def photo_parts(ph: dict, fmt: str, W: int, pad_t: int, pad_r: int) -> tuple[str, str, list[str]]:
+    """-> (html placed first inside .cv, spacer html after the header, problems)"""
+    probs = []
+    f = ROOT / ph['file']
+    side = {}
+    if f.with_suffix('.json').exists():
+        side = json.loads(f.with_suffix('.json').read_text())
+    if not f.exists():
+        return '', '', [f'photo file missing: {ph["file"]}']
+    from PIL import Image
+    iw, ih = Image.open(f).size
+    # the band shrinks to what the photo can fill sharply (never below the minimum that still looks deliberate)
+    box = int(ph.get('height', min(PHOTO_BOX[fmt], int(ih * MAX_UPSCALE))))
+    box = max(box, PHOTO_MIN[fmt])
+    scale = max(W / iw, box / ih)
+    if scale > MAX_UPSCALE:
+        probs.append(f'photo is too small for this layout ({iw}x{ih} would be enlarged {scale:.2f}x): pick a bigger one or drop it')
+    fx, fy = ph.get('focus') or side.get('focus') or [50, 40]
+    credit = ph.get('credit') or side.get('credit') or ''
+    if not credit:
+        probs.append('photo has no credit')
+    html_ = (f'<div class="pho" style="height:{box}px"><div class="phi" style="background-image:url({f.as_uri()});'
+             f'background-position:{fx}% {fy}%;transform-origin:{fx}% {fy}%"></div><div class="phg"></div></div>'
+             f'<div class="phc" style="top:{pad_t + 66}px;right:{pad_r}px">PHOTO: {esc(credit).upper()}</div>')
+    spacer = {'post': box - 395, 'story': box - 470, 'reel': 0}[fmt]
+    return html_, (f'<div class="phs" style="height:{max(0, spacer)}px"></div>' if spacer > 0 else ''), probs
+
+
 # ----------------------------------------------------------------- templates
 # Each returns (body_html, options). Options: align ('start'|'end'|'center'), hl (headline px), centered (bool)
 
@@ -397,6 +435,15 @@ body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-web
 .corr-hl s{{color:{th['faint']};text-decoration:none;position:relative;display:inline-block}}
 .corr-hl s::after{{content:'';position:absolute;left:-4%;right:-4%;top:52%;height:9px;border-radius:5px;background:{acc};transform:rotate(-2deg)}}
 .center .kv{{width:640px}}
+/* photo hero */
+.pho{{position:absolute;left:0;top:0;width:100%;overflow:hidden;background:#000}}
+.phi{{position:absolute;inset:0;background-size:cover;background-repeat:no-repeat;will-change:transform}}
+.phg{{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(22,23,27,.78) 0%,rgba(22,23,27,.25) 20%,rgba(22,23,27,0) 34%,rgba(22,23,27,.5) 55%,rgba(22,23,27,.9) 78%,#16171B 96%)}}
+.phc{{position:absolute;font:600 17px 'JetBrains Mono';letter-spacing:.16em;color:rgba(250,250,248,.78);text-shadow:0 1px 8px rgba(0,0,0,.65)}}
+.phs{{flex:none}}
+.cv.photo .hd .brand{{color:rgba(250,250,248,.92);text-shadow:0 1px 8px rgba(0,0,0,.5)}}
+.cv.photo .hl,.cv.photo .eb{{text-shadow:0 2px 18px rgba(0,0,0,.35)}}
+.cv.reel.photo{{justify-content:flex-end}}
 /* reels: header pinned top, content centred in the safe area and a touch larger */
 .cv.reel{{justify-content:center}}
 .cv.reel .hd{{position:absolute;top:{pad_t}px;left:72px;right:{pad_r}px}}
@@ -437,11 +484,17 @@ FIT_JS = r"""
 """
 
 
+LAST_PROBLEMS: list[str] = []  # problems found while building the last slide (e.g. photo too small)
+
+
 def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]:
     page = PAGES[spec['page']]
     fmt = spec.get('format', 'post')
     W, H = SIZES[fmt]
     th_name = slide.get('theme', spec.get('theme', 'dark'))
+    ph = (slide.get('card') or {}).get('photo')
+    if ph:
+        th_name = 'dark'  # photos always sit on ink
     th = THEMES[th_name]
     acc = page['accent'][th_name]
     glow = page['glow'] if th_name == 'dark' else 'none'
@@ -458,7 +511,7 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
 
     eb = ''
     if c.get('eyebrow'):
-        cls = {'pill': ' pill', 'outline': ' pillo'}.get(c.get('eyebrow_style', ''), '')
+        cls = {'pill': ' pill', 'outline': ' pillo'}.get(c.get('eyebrow_style', 'pill' if ph else ''), '')  # solid pill stays legible on any photo
         eb = f'<div class="eb{cls}">{eyebrow(c["eyebrow"])}</div>'
 
     base = {'post': 104, 'story': 116, 'reel': 120}[fmt]
@@ -504,8 +557,17 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
     center = ' center' if opt.get('correction') else ''
     if fmt == 'reel':
         center += ' reel'
+    photo_html, spacer, photo_probs = '', '', []
+    if ph:
+        pad_t = (60 if fmt == 'post' else 170 if fmt == 'story' else 200)
+        pad_r = 150 if fmt == 'reel' else 72
+        photo_html, spacer, photo_probs = photo_parts(ph, fmt, W, pad_t, pad_r)
+        if photo_html:
+            center += ' photo'
+            glow = 'none'
+    LAST_PROBLEMS[:] = photo_probs
     doc = (f'<!doctype html><html><head><meta charset="utf-8"><style>{css(W, H, fmt, th, acc, glow)}</style></head>'
-           f'<body><div class="cv{center}"><div class="glow"></div>{hd}{top}{main}{ft}</div></body></html>')
+           f'<body><div class="cv{center}">{photo_html}<div class="glow"></div>{hd}{spacer}{top}{main}{ft}</div></body></html>')
     return doc, W, H
 
 
@@ -544,6 +606,8 @@ ANIM_JS = r"""
   window.__set = (t, dur) => {
     els.forEach(e => { const p = ease((t - parseFloat(e.dataset.at)) / 0.42); e.style.opacity = p; e.style.transform = `translateY(${(1 - p) * 46}px)`; });
     counters.forEach(e => { const host = e.closest('[data-at]'); const at = host ? parseFloat(host.dataset.at) : 0; const v = Math.round(parseInt(e.dataset.target) * ease((t - at) / 0.9)); e.childNodes[0].nodeValue = String(v); });
+    const phi = document.querySelector('.phi');
+    if (phi) phi.style.transform = `scale(${(1 + 0.08 * Math.min(1, t / dur)).toFixed(4)})`;  // slow push-in on photo slides
     const out = Math.max(0, Math.min(1, (dur - t) / 0.18));
     document.querySelector('.cv').style.opacity = out;
   };
@@ -576,7 +640,7 @@ def render_reel(spec: dict, sp: str, browser) -> tuple[list[str], list[str]]:
         pg.evaluate('document.fonts.ready')
         pg.wait_for_timeout(250)
         res = pg.evaluate(FIT_JS)
-        problems.extend(f'slide {i}: {pr}' for pr in res['problems'])
+        problems.extend(f'slide {i}: {pr}' for pr in list(LAST_PROBLEMS) + res['problems'])
         pg.evaluate(ANIM_JS)
         n = int(round(dur * fps))
         for k in range(n):
@@ -662,6 +726,7 @@ def render(spec_paths: list[str]) -> int:
                 pg.evaluate('document.fonts.ready')
                 pg.wait_for_timeout(250)
                 res = pg.evaluate(FIT_JS)
+                res['problems'] = list(LAST_PROBLEMS) + res['problems']
                 out = out_path(spec, i, len(slides))
                 out.parent.mkdir(parents=True, exist_ok=True)
                 pg.screenshot(path=str(out))

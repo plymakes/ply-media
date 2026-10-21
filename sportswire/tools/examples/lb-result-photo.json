@@ -1,0 +1,50 @@
+{
+  "page": "lb",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-10-21",
+  "slug": "sample-result-photo",
+  "story_key": "sample",
+  "light": "green",
+  "template": "result",
+  "card": {
+    "photo": {
+      "file": "media/photos/2026-10/2026-10-21-sample-riyadi-semi.jpg"
+    },
+    "eyebrow": [
+      "Dubai International Championship",
+      "Semi-final"
+    ],
+    "headline": "riyadi into the *final*.",
+    "home": {
+      "name": "Al Riyadi",
+      "score": 98,
+      "crest": "riyadi",
+      "label": "Beirut"
+    },
+    "away": {
+      "name": "Shabab Al Ahli",
+      "score": 69,
+      "label": "Dubai"
+    },
+    "ours": null,
+    "status": [
+      "Full time"
+    ],
+    "highlight": {
+      "big": "+29",
+      "text": "The winning margin. Antonine wait in the final."
+    },
+    "footnote": "Sample layout: photo from Al Riyadi's own report."
+  },
+  "caption": "sample",
+  "facts": [],
+  "images": [
+    "brand/template-previews/result-photo-dark.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "_note": "SAMPLE ONLY: never schedule. Photo: Al Riyadi official report (riyadi.com, 21 Oct 2026)."
+}
