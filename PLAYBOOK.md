@@ -14,6 +14,7 @@ This repository is the working folder for Ply's Instagram. Images in `posts/` ar
 - Fixed 19 Oct: reel 08 "three pieces", post 42 "three colours", post 46 "guess the three" and post 55 "what's next" were replaced or re-captioned for Quilt and Tile; story kit 04 was redone with the four product colours.
 - Website launch (tentative, Geoffry to confirm): Tuesday 1 December 2026 at plymakes.com; First Layer early access Monday 30 November (the Shopify password page is on; the password is the early-access key). Countdown and launch posts exist as drafts until the date is confirmed. Prices (Shopify): planter $14, vase $16, Loom $12, Pleat $14 (medium planter and set dropped 21 Oct). Delivery $5, free from $35. Delivery in Lebanon by Wakilni.
 - First Layer list: DM "FIRST" or comment 🧡 for first look, first pick of the (small) first batch and ordering before everyone else. Prices only in posts Geoffry has approved (drafts).
+- **First Layer offer (Geoffry, 21 Oct 2026):** 10% off the first order, code **FIRSTLAYER**, one use per customer, **ends 31 Dec 2026, 23:59**. Same offer for the email signup on plymakes.com and for people who DM "FIRST". It is the only offer: no stacking, no other codes. Never extend the end date. Posts that mention it are drafts for Geoffry to approve. Details: project doc `claude/first-layer-offer.md`.
 - Rules, colours, type and logos: `brand/brand-guide.md`, `brand/tokens.json`, `brand/logos/`.
 - Brand direction since 17 Oct 2026: **Atelier** (logo route A6, the "Ply Makes" signature). Colours: Bone #EFEAE2, Charcoal #1C1B19, Terracotta #B4532A (single accent), Sand #CDBFA8, Clay #DDB8A2, Stone #8A857C. Fonts: Fraunces 500 (headlines; Fraunces 700 for the print cut), Space Grotesk (labels, body), Noto Naskh Arabic (Arabic). The old cobalt/sun/coral "stack" brand is retired (archived in brand/archive-stack/).
 - No WhatsApp for now (Geoffry, 21 Oct 2026): never mention WhatsApp in captions, CTAs, ads or Reels. Calls to action are Instagram DMs ("DM us FIRST", "Send us a DM"); paid ads are Instagram DM ads. WhatsApp comes back only when Geoffry says so.
@@ -36,6 +37,7 @@ This repository is the working folder for Ply's Instagram. Images in `posts/` ar
 - Until the printer is running (expected around 10 November 2026), every product mention says "coming soon" or similar.
 - After that, real photos and videos from the helper come first; illustrations are for tips, polls and ideas.
 - Customer names or photos only with their consent.
+- **Pricing honesty (Geoffry, 21 Oct 2026): no fake discounts.** Never show a crossed-out "was" price unless Ply really sold at that price (Shopify compare-at prices stay empty). No countdowns that reset, no "only X left" unless the stock count is true, no "sale ends tonight" that comes back. Offers have a code, a start and an end date set in Shopify, and an announced end date is never extended. Honest scarcity is fine when true (check `claude/stock.csv` before quoting a number). Prices in posts and ads include what the customer really pays: say delivery is $5 unless the order qualifies for free delivery.
 
 ## Scheduling
 
