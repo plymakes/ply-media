@@ -286,5 +286,107 @@
   "render": {
     "ok": true,
     "problems": []
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-21T09:40+03:00",
+    "by": "independent agent, card text and caption only",
+    "claims": [
+      {
+        "claim": "Sagesse Arab champions for a third time",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Final at Ghazir",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Opponent Ahli Aleppo, Syria",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Final score 84-75",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Q1 26-16",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Half-time 45-35",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Q3 67-55",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Tuesday night 20 Oct 2026",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750242"
+      },
+      {
+        "claim": "About 4,000 fans",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Unbeaten, no defeats",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "8 wins from 8 games",
+        "verdict": "CONFIRMED",
+        "url": "https://www.asia-basket.com/Arab-Club-Championships/basketball.aspx"
+      },
+      {
+        "claim": "27 years since last title",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Previous titles 1998 and 1999",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Tournament MVP Ali Mezher",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Washington top scorer of final with 23",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1750251"
+      },
+      {
+        "claim": "Spelling Deshawndre Washington",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news/washington-khayat-star-as-sagesse-tame-al-ula"
+      },
+      {
+        "claim": "Coach Joe Ghattas",
+        "verdict": "CONFIRMED",
+        "url": "https://safiralchamal.com/2026/10/20/734575/"
+      },
+      {
+        "claim": "Sources Annahar and MTV Lebanon report the final",
+        "verdict": "CONFIRMED",
+        "url": "https://www.annahar.com/sports/358828/"
+      }
+    ]
+  },
+  "visual_check": {
+    "done": true,
+    "frames_checked": true,
+    "notes": "Cover and slides 2-4 read word by word against the facts; score label shortened to 'Score'; soundtrack mean -13.6 dB"
   }
 }
