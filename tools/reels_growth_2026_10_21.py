@@ -55,7 +55,7 @@ def slide_card(id_, a, dx=0, dy=60):
 
 REELS = []
 
-# ---------- 14: Building Ply, ep 1: two people, one printer (21 Oct) ----------
+# ---------- 14: Building Ply, ep 1: one family, one printer (21 Oct; Geoffry: say 'family', not 'father and son') ----------
 grid = [('quilt-planter-small-ivory.jpg', 'Quilt'), ('tile-planter-small-green.jpg', 'Tile'),
         ('loom-soap-rest-ivory.jpg', 'Loom'), ('pleat-pot-ivory.jpg', 'Pleat')]
 cards = ''.join(
@@ -66,7 +66,7 @@ cards = ''.join(
 REELS.append(dict(name='ply-reel-14-building-ply-ep1', dur=11.0, html=f'''
 <div class="abs" style="inset:0;background:{I}"></div>
 {label('Building Ply · ep 1', SU)}
-{hook('Two people.<br>One printer.', P)}
+{hook('One family.<br>One printer.', P)}
 {line('l1', 'A small homeware studio,<br>made in Lebanon.', P, 560)}
 {cards}
 {line('l2', 'Our first pieces. 3D renders for now:<br>the printer lands in November.', P, 1310, 40)}
@@ -76,11 +76,11 @@ REELS.append(dict(name='ply-reel-14-building-ply-ep1', dur=11.0, html=f'''
   <div style="font-size:28px;font-weight:500;letter-spacing:.22em;color:{SU};margin-top:60px">@PLYMAKES</div></div>
 ''', js='''
 window.setT=t=>{ ''' + HOOK_JS + '''
-  show('l1',prog(t,1.4,2.0),30);
+  show('l1',Math.min(prog(t,1.4,2.0),1-prog(t,8.0,8.4)),30);
   for(let k=0;k<4;k++){ const p=prog(t,3.0+k*.45,3.6+k*.45); const e=document.getElementById('g'+k); const out=prog(t,8.0,8.4);
     e.style.opacity=Math.min(p,1-out); e.style.transform=`translateY(${(1-p)*50}px)`; }
   show('l2',Math.min(prog(t,5.2,5.8),1-prog(t,8.0,8.4)),30);
-  const o=prog(t,8.0,8.4); ['hk','lab','l1'].forEach(i=>document.getElementById(i).style.opacity=1-o);
+  const o=prog(t,8.0,8.4); ['hk','lab'].forEach(i=>document.getElementById(i).style.opacity=1-o);
   show('cta',prog(t,8.4,9.0),40);
 };'''))
 
@@ -173,12 +173,12 @@ REELS.append(dict(name='ply-reel-18-building-ply-ep2', dur=11.0, html=f'''
   <div style="font-size:44px;font-weight:500;color:{ACC_L};margin-top:34px">Tell us in the comments.</div></div>
 ''', js='''
 window.setT=t=>{ ''' + HOOK_JS + '''
-  show('l1',prog(t,1.6,2.2),30);
+  show('l1',Math.min(prog(t,1.6,2.2),1-prog(t,8.0,8.4)),30);
   ''' + slide_card('c1', 2.8) + '''
   const sw=prog(t,5.4,5.9); document.getElementById('c1').style.opacity=Math.min(prog(t,2.8,3.4),1-sw);
   document.getElementById('c2').style.opacity=Math.min(sw,1-prog(t,8.0,8.4));
   show('l2',Math.min(prog(t,3.6,4.2),1-prog(t,8.0,8.4)),30);
-  const o=prog(t,8.0,8.4); ['hk','lab','l1'].forEach(i=>document.getElementById(i).style.opacity=1-o);
+  const o=prog(t,8.0,8.4); ['hk','lab'].forEach(i=>document.getElementById(i).style.opacity=1-o);
   show('cta',prog(t,8.4,9.0),40);
 };'''))
 
