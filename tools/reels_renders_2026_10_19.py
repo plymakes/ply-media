@@ -43,8 +43,8 @@ END_JS = "const e=prog(t,{a},{a}+.5); document.getElementById('end').style.opaci
 reel10 = dict(name='ply-reel-10-quilt-or-tile', dur=10.5, html=f'''
 <div class="abs" style="inset:0;background:{I}"></div>
 {head('Quilt or Tile?', 'Two textures.<br><i style="color:{ACC_D}">Which one?</i>', P, SU)}
-{card('cq', img('quilt-planter-medium-charcoal.jpg'), 90, 640, 430, 560)}
-{card('ct', img('tile-planter-medium-charcoal.jpg'), 560, 640, 430, 560)}
+{card('cq', img('quilt-planter-small-charcoal.jpg'), 90, 640, 430, 560)}
+{card('ct', img('tile-planter-small-charcoal.jpg'), 560, 640, 430, 560)}
 <div id="lq" class="abs" style="left:90px;width:430px;top:1230px;text-align:center;color:{P};opacity:0"><div class="h" style="font-size:120px">Q</div><div style="font-size:36px;font-weight:500;letter-spacing:.22em;margin-top:6px">QUILT</div></div>
 <div id="lt" class="abs" style="left:560px;width:430px;top:1230px;text-align:center;color:{P};opacity:0"><div class="h" style="font-size:120px">T</div><div style="font-size:36px;font-weight:500;letter-spacing:.22em;margin-top:6px">TILE</div></div>
 <div id="t2" class="abs" style="left:100px;right:100px;top:1470px;font-size:46px;font-weight:500;color:{P};opacity:0">Same planter, two textures.<br>Comment Q or T.</div>
@@ -121,7 +121,7 @@ reel13 = dict(name='ply-reel-13-why-tiles', dur=11.5, html=f'''
 <div class="abs" style="inset:0;background:{C}"></div>
 {head('Why tiles?', 'Beirut floors.<br><i style="color:{P}">A new shape.</i>', P, P)}
 <div id="grid">{tiles}</div>
-{card('cp', img('tile-planter-medium-tan.jpg'), 170, 660, 740, 740)}
+{card('cp', img('tile-planter-small-tan.jpg'), 170, 660, 740, 740)}
 <div id="t2" class="abs" style="left:100px;right:100px;top:1450px;font-size:44px;font-weight:500;color:{P};opacity:0">The Tile planter borrows the grid of<br>the cement tiles in old Lebanese homes.</div>
 {endc(I, P, 'First prints in November.<br>DM “FIRST” to join the First Layer')}
 ''', js='''

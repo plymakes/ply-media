@@ -43,11 +43,11 @@ def top(html, space=520):
 stories = {}
 
 # Scheduled · Tue 20 Oct 12:00 · bone · About
-stories['ply-story-07-meet-the-quilt'] = page(P, 'New', f'Meet the {it("Quilt.", P)}', rcard('quilt-planter-medium-ivory.jpg'),
+stories['ply-story-07-meet-the-quilt'] = page(P, 'New', f'Meet the {it("Quilt.", P)}', rcard('quilt-planter-small-ivory.jpg'),
     'A soft diamond quilt, in a calm matte finish. First prints in November.', hsize=128)
 
 # Scheduled · Wed 21 Oct 20:00 · charcoal · About
-stories['ply-story-08-meet-the-tile'] = page(I, 'New', f'Meet the {it("Tile.", I)}', rcard('tile-planter-medium-charcoal.jpg'),
+stories['ply-story-08-meet-the-tile'] = page(I, 'New', f'Meet the {it("Tile.", I)}', rcard('tile-planter-small-charcoal.jpg'),
     'A grid of soft squares, a nod to the cement-tile floors of old Beirut homes.', hsize=128)
 
 # Scheduled · Thu 22 Oct 12:00 · sand · Ideas · close-up of the texture
@@ -55,7 +55,7 @@ stories['ply-story-09-up-close'] = page(SU, 'Up close', f'Feel the {it("quilt.",
     'Each diamond is a soft little pillow, built from hundreds of thin layers.', hsize=128)
 
 # Scheduled · Fri 23 Oct 12:00 · terracotta · About
-stories['ply-story-10-designed-here'] = page(C, 'Made in Lebanon', f'Designed here.<br>{it("Printed here.", C)}', rcard('tile-set-tan.jpg', 760, 720),
+stories['ply-story-10-designed-here'] = page(C, 'Made in Lebanon', f'Designed here.<br>{it("Printed here.", C)}', rcard('tile-planter-small-tan.jpg', 760, 720),
     'Every piece is printed in Lebanon, one at a time, on our own printer.', hsize=120)
 
 # Scheduled · Sat 24 Oct 20:00 · clay · How it works
@@ -81,13 +81,13 @@ stories['ply-story-14-pla-from-plants'] = page(SU, 'Did you know?', f'Made from 
 stories['ply-story-15-dried-stems'] = page(R, 'Styling', f'Dried stems,<br>{it("all year.", R)}', rcard('tile-vase-tan.jpg', 760, 780),
     'Our vases hold dried or faux stems: bunny tails, pampas, wheat. They last for months.', hsize=120)
 
-# Scheduled · Fri 30 Oct 12:00 · bone · Ideas
-stories['ply-story-16-small-or-medium'] = page(P, 'Sizes', f'Small or {it("medium?", P)}', pair('tile-planter-small-green.jpg', 'tile-planter-medium-green.jpg'),
-    'Small for a succulent on the desk. Medium for a fuller herb or a small houseplant.', hsize=128)
+# Scheduled · Wed 28 Oct 12:00 · bone · Ideas (21 Oct: medium planter dropped, one size now)
+stories['ply-story-16-one-size'] = page(P, 'Size', f'Made for the {it("windowsill.", P)}', pair('tile-planter-small-green.jpg', 'quilt-planter-small-green.jpg'),
+    'About 10 × 10 cm. Fits a nursery pot up to 8 cm: succulents, small cacti, herbs.', hsize=120)
 
 # Scheduled · Sat 31 Oct 12:00 · terracotta · Christmas
-stories['ply-story-17-housewarming'] = page(C, 'Gifting', f'A gift for a<br>{it("new home.", C)}', rcard('quilt-set-charcoal.jpg', 760, 760),
-    'A planter and its matching vase, packed together. First pieces arrive before Christmas.', hsize=112)
+stories['ply-story-17-housewarming'] = page(C, 'Gifting', f'A gift for a<br>{it("new home.", C)}', rcard('quilt-planter-small-charcoal.jpg', 760, 760),
+    'A planter or a vase in a calm matte colour. First pieces arrive before Christmas.', hsize=112)
 
 # Kit 4 (redone) · Thu 29 Oct · charcoal · Poll sticker with four options · Ideas
 sw = '<div style="display:grid;grid-template-columns:repeat(4,190px);gap:28px">' + ''.join(

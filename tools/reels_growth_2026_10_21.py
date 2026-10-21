@@ -56,7 +56,7 @@ def slide_card(id_, a, dx=0, dy=60):
 REELS = []
 
 # ---------- 14: Building Ply, ep 1: two people, one printer (21 Oct) ----------
-grid = [('quilt-planter-small-ivory.jpg', 'Quilt'), ('tile-planter-medium-green.jpg', 'Tile'),
+grid = [('quilt-planter-small-ivory.jpg', 'Quilt'), ('tile-planter-small-green.jpg', 'Tile'),
         ('loom-soap-rest-ivory.jpg', 'Loom'), ('pleat-pot-ivory.jpg', 'Pleat')]
 cards = ''.join(
     f'<div id="g{k}" class="abs" style="left:{100 + (k % 2) * 450}px;top:{690 + (k // 2) * 305}px;width:430px;height:290px;border-radius:24px;overflow:hidden;opacity:0">'
@@ -107,10 +107,10 @@ window.setT=t=>{{ {HOOK_JS}
 
 
 REELS.append(zoom_reel('ply-reel-15-zoom-quilt', 'quilt-planter-small-ivory.jpg', 'Guess what<br>this is.', 'The Quilt<br><i style="color:{}">planter</i>'.format(ACC_L), 47, 76, hook_col=I, shade=False))
-REELS.append(zoom_reel('ply-reel-21-zoom-tile', 'tile-planter-medium-green.jpg', 'Guess<br>again.', 'The Tile<br><i style="color:{}">planter</i>'.format(ACC_L), 46, 76))
+REELS.append(zoom_reel('ply-reel-21-zoom-tile', 'tile-planter-small-green.jpg', 'Guess<br>again.', 'The Tile<br><i style="color:{}">planter</i>'.format(ACC_L), 46, 76))
 
 # ---------- 16: Ply in 10 seconds (24 Oct, to pin) ----------
-pieces = [('quilt-planter-medium-charcoal.jpg', 'Quilt', 'planter and vase'), ('tile-planter-small-tan.jpg', 'Tile', 'planter and vase'),
+pieces = [('quilt-planter-small-charcoal.jpg', 'Quilt', 'planter and vase'), ('tile-planter-small-tan.jpg', 'Tile', 'planter and vase'),
           ('loom-soap-rest-in-use-ivory.jpg', 'Loom', 'soap rest'), ('pleat-pot-rings-ivory.jpg', 'Pleat', 'pot with a dish lid')]
 pc = ''.join(card(f'p{k}', img(f), 140, 560, 800, 730) +
              f'<div id="pn{k}" class="abs" style="left:140px;top:1315px;opacity:0"><span class="h" style="font-size:72px;color:{I}">{n}</span>'
