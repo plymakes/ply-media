@@ -18,7 +18,7 @@ One spelling per name, everywhere (cards, captions, alt text). Basketball: FIBA'
 
 ## Cyprus
 
-**Football clubs (UEFA):** Omonia (club itself writes "Omonoia"; handle @omonoiafootball) · APOEL · Pafos FC (never "Paphos FC") · AEK Larnaca · Apollon Limassol · Aris Limassol · AEL Limassol · Anorthosis Famagusta · Omonia Aradippou · Omonia 29M · Olympiakos Nicosia · Karmiotissa · Krasava · Nea Salamis Famagusta (CFA writes "Nea Salamina")
+**Football clubs (UEFA):** Omonia (club itself writes "Omonoia"; handle @omonoiafootball) · APOEL · Pafos FC (never "Paphos FC") · AEK Larnaca · Apollon Limassol · Aris Limassol · AEL Limassol · Anorthosis Famagusta · Omonia Aradippou · Omonia 29 M (CFA: ΑΛΣ ΟΜΟΝΟΙΑ 29 Μ; UEFA: ALS Omonia 29is Maiou; not "29M", 21 Oct) · Olympiakos Nicosia · Karmiotissa · Krasava · Nea Salamis Famagusta (CFA writes "Nea Salamina")
 
 **League:** Cyprus League by Stoiximan (the First Division; no longer "Cyta Championship"). Basketball: ECOMMBX Basket League.
 
