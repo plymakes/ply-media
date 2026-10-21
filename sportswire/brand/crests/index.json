@@ -8,6 +8,19 @@
     "checked": "2026-10-19",
     "use": "editorial identification only"
   },
+  "aek-basketball": {
+    "name": "Petrolina AEK",
+    "source_page": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27",
+    "image_url": "https://assets.fiba.basketball/image/upload/d_.logoflag--light--organisation_551.webp/w_512/f_png/.logoflag--light--organisation_551--competition_209129",
+    "original_px": [
+      402,
+      480
+    ],
+    "via": "official site",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
   "ael": {
     "name": "AEL Limassol",
     "source_page": "https://en.wikipedia.org/wiki/AEL_Limassol",
@@ -234,6 +247,32 @@
     "checked": "2026-10-21",
     "use": "editorial identification only"
   },
+  "keravnos": {
+    "name": "Keravnos BC",
+    "source_page": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27",
+    "image_url": "https://assets.fiba.basketball/image/upload/d_.logoflag--light--organisation_729.webp/w_512/f_png/.logoflag--light--organisation_729--competition_209129",
+    "original_px": [
+      512,
+      573
+    ],
+    "via": "official site",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
+  "king-szczecin": {
+    "name": "King Szczecin",
+    "source_page": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27",
+    "image_url": "https://assets.fiba.basketball/image/upload/d_.logoflag--light--organisation_66528.webp/w_512/f_png/.logoflag--light--organisation_66528--competition_209129",
+    "original_px": [
+      512,
+      489
+    ],
+    "via": "official site",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
   "krasava": {
     "name": "Krasava",
     "source_page": "https://en.wikipedia.org/wiki/Krasava_ENY_Ypsonas_FC",
@@ -377,6 +416,19 @@
       200
     ],
     "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
+  "tartu-ulikool": {
+    "name": "Tartu Ulikool",
+    "source_page": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27",
+    "image_url": "https://assets.fiba.basketball/image/upload/d_.logoflag--light--organisation_2710.webp/w_512/f_png/.logoflag--light--organisation_2710--competition_209129",
+    "original_px": [
+      337,
+      478
+    ],
+    "via": "official site",
     "fetched": "2026-10-21",
     "checked": "2026-10-21",
     "use": "editorial identification only"
