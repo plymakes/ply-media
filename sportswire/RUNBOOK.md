@@ -97,4 +97,11 @@ A result desk is a one-off scheduled task created by the morning or afternoon de
 - Push fails → stop before scheduling anything; the brief says GitHub access needs fixing, with the error.
 - Metricool error → don't retry blindly; leave the spec and image committed, log it as `killed` with the error, and brief.
 - A source site blocks fetching → use another tier-1/2 source; never route around a block.
+
+## Fetching pages (so runs never stall)
+- Scheduled runs are set to approve their own actions automatically; nothing waits for Geoffry. Web pages are read with WebSearch and WebFetch.
+- **Search first, then fetch.** Find the page with WebSearch and fetch the URL from the results. A URL typed from memory or edited by hand may be refused.
+- **Long URLs** (Arabic slugs are percent-encoded and can exceed the fetch limit): use the short form many sites accept (e.g. `https://www.annahar.com/sports/358828/` without the slug), a different link to the same article from search results, or another outlet reporting the same facts.
+- **Sites that refuse automated fetching** (seen so far: philenews.com / in-cyprus, the961.com, lorientlejour.com sport, Transfermarkt, Kathimerini Cyprus, some Arabic portals): these are refused by the network for everyone; never use another tool, a cache, a mirror or a proxy to get around it. Search snippets can point you to the story; confirm the facts on a site that opens.
+- Instagram itself can't be fetched: confirm handles through the organisation's own website or `sources/handles.json`.
 - Nothing verifiable → schedule nothing and say so. That's a good outcome, not a failure.
