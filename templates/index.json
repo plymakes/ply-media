@@ -6,8 +6,8 @@
         "eyebrow": "Ply Makes · 3D-printed in Lebanon",
         "heading": "Textured planters with a hidden drip tray, <em>printed</em> in Lebanon.",
         "text": "Quilt and Tile planters with matching vases, in four calm colours. Seven drainage holes, no saucer on show. From $14.",
-        "button_label": "Shop planters",
-        "button_link": "shopify://collections/planters",
+        "button_label": "Shop the pieces",
+        "button_link": "/#shop",
         "show_whatsapp": true,
         "note": "Cash on delivery · Free delivery from $35",
         "arabic_line": "",
@@ -59,15 +59,17 @@
       "type": "featured-products",
       "settings": {
         "eyebrow": "The first collection",
-        "heading": "Two textures, four colours.",
-        "text": "Quilt or Tile, in Ivory White, Charcoal, Dark Green or Desert Tan. Pick a colour and add it straight to your cart.",
+        "heading": "Our first pieces.",
+        "text": "Quilt and Tile planters and vases, plus the Loom soap rest and the Pleat pot, in Ivory White, Charcoal, Dark Green or Desert Tan. Pick a colour and add it straight to your cart.",
         "products": [
           "quilt-planter",
           "tile-planter",
           "quilt-vase",
-          "tile-vase"
+          "tile-vase",
+          "loom-soap-rest",
+          "pleat-pot"
         ],
-        "limit": 4
+        "limit": 6
       }
     },
     "drainage": {
@@ -79,7 +81,7 @@
         "text": "Most decorative pots have no hole, so roots sit in water. Ours drain properly and still look clean on a shelf.",
         "note": "Shown cut in half. Images are 3D renders; photos of the first prints are coming soon.",
         "button_label": "Shop planters",
-        "button_link": "shopify://collections/planters",
+        "button_link": "/#shop",
         "band": "raised",
         "anchor": "drainage"
       },
