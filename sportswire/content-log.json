@@ -70,6 +70,35 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/c0b69b7/sportswire/posts/lb/2026-10/2026-10-21-dubai-final-preview.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-21",
+      "slug": "cyprus-league-table-round-6",
+      "story_key": "cy-league-table-2026-round-6",
+      "light": "green",
+      "template": "standings",
+      "headline": "*ael* on top after six.",
+      "caption_first_line": "AEL Limassol lead the Cyprus League after six rounds: five wins from six and 15 points.",
+      "sources": [
+        "https://www.cfa.com.cy/Gr/competitions/68124755"
+      ],
+      "reshare": {
+        "mention": [
+          "ael_fc_official",
+          "cyprusfa_official"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-21/cy-cyprus-league-table-round-6.json",
+      "logged_at": "2026-10-21T09:19:37+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-21T12:30:00+03:00",
+      "metricool_id": "401928785",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=4978905209561828233",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/3c27d2e90b25a1f54b86f82809056c8202c4c1ce/sportswire/posts/cy/2026-10/2026-10-21-cyprus-league-table-round-6.png"
+      ]
     }
   ]
 }
