@@ -392,11 +392,12 @@
       "type": "post",
       "date": "2026-10-21",
       "time": "10:00",
-      "file": "renders (Shopify CDN): tile planter S/M, tile vase, tile set (Ivory White)",
+      "file": "renders (GitHub shop/products): tile planter small, tile vase (Ivory White)",
       "topic": "meet-the-tile",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400193508
+      "metricool_id": 401640339,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "reel",
@@ -406,9 +407,10 @@
       "topic": "reel: quilt or tile vote (renders)",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 401632561,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-10-quilt-or-tile-sound.mp4",
-      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
+      "metricool_id": 401640468,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/bfa90a6182cc299860eed302a65164f86abeb72d/reels/ply-reel-10-quilt-or-tile-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct",
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
@@ -428,9 +430,10 @@
       "topic": "reel: Beirut floors, a new shape (renders)",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 401632650,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-13-why-tiles-sound.mp4",
-      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
+      "metricool_id": 401640518,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/bfa90a6182cc299860eed302a65164f86abeb72d/reels/ply-reel-13-why-tiles-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct",
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "reel",
@@ -458,11 +461,12 @@
       "type": "post",
       "date": "2026-10-30",
       "time": "10:00",
-      "file": "renders (Shopify CDN): tile planter S/M Dark Green",
-      "topic": "small-or-medium",
+      "file": "renders: tile + quilt planter small Dark Green",
+      "topic": "one size, made for the windowsill (was small-or-medium)",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400195086
+      "metricool_id": 401640668,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
@@ -490,31 +494,34 @@
       "type": "post",
       "date": "2026-11-03",
       "time": "10:00",
-      "file": "renders (Shopify CDN): tile planter M, tile vase, tile set (Desert Tan)",
+      "file": "renders: tile planter small, tile vase (Desert Tan)",
       "topic": "why-tiles",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400194386
+      "metricool_id": 401640688,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
       "date": "2026-11-06",
       "time": "10:00",
-      "file": "renders (Shopify CDN): quilt set Charcoal, tile set Dark Green, quilt set Ivory",
+      "file": "renders: quilt planter + vase Charcoal, tile planter + vase Dark Green",
       "topic": "housewarming-gift",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400194451
+      "metricool_id": 401640949,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
       "date": "2026-11-10",
       "time": "10:00",
-      "file": "renders (Shopify CDN): mixed",
+      "file": "renders: quilt planter Charcoal, tile planter Dark Green, quilt vase Tan, Loom, Pleat",
       "topic": "prices",
       "status": "draft, awaiting Geoffry (prices + free delivery)",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400315702
+      "metricool_id": 401640988,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
@@ -530,11 +537,12 @@
       "type": "post",
       "date": "2026-11-12",
       "time": "10:00",
-      "file": "renders (Shopify CDN): Dark Green pieces",
+      "file": "renders: quilt vase, tile planter, quilt planter (Dark Green)",
       "topic": "colour spotlight: Dark Green",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400196241
+      "metricool_id": 401641003,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
@@ -570,11 +578,12 @@
       "type": "post",
       "date": "2026-11-17",
       "time": "10:00",
-      "file": "renders (Shopify CDN): Desert Tan pieces",
+      "file": "renders: tile vase, quilt planter (Desert Tan)",
       "topic": "colour spotlight: Desert Tan",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400196580
+      "metricool_id": 401641040,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
@@ -590,61 +599,67 @@
       "type": "post",
       "date": "2026-11-19",
       "time": "10:00",
-      "file": "renders (Shopify CDN): tile set Ivory",
+      "file": "render: tile planter Ivory",
       "topic": "how ordering will work",
       "status": "draft: check payment and delivery details",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400196713
+      "metricool_id": 401641067,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
       "date": "2026-11-20",
       "time": "10:00",
-      "file": "renders (Shopify CDN): quilt set Charcoal",
+      "file": "render: quilt planter Charcoal",
       "topic": "launch date announcement",
       "status": "draft: confirm the date",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400196769
+      "metricool_id": 401641092,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
       "date": "2026-11-21",
       "time": "10:00",
-      "file": "renders (Shopify CDN): Charcoal pieces",
+      "file": "renders: quilt planter, tile vase, tile planter (Charcoal)",
       "topic": "colour spotlight: Charcoal",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400196858
+      "metricool_id": 401641124,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
       "date": "2026-11-23",
       "time": "10:00",
-      "file": "renders (Shopify CDN): quilt set Dark Green",
+      "file": "render: quilt vase Dark Green",
       "topic": "one week to go",
       "status": "draft: confirm the date",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400196919
+      "metricool_id": 401641155,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
       "date": "2026-11-25",
       "time": "10:00",
-      "file": "renders (Shopify CDN): mixed",
+      "file": "renders: planters, Loom, Pleat, vase",
       "topic": "gift guide",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400197030
+      "metricool_id": 401641194,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
       "date": "2026-11-26",
       "time": "10:00",
-      "file": "renders (Shopify CDN): medium planters, four colours",
+      "file": "renders: small planters, four colours",
       "topic": "which one is yours (demand check)",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400197224
+      "metricool_id": 401641236,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
@@ -660,31 +675,34 @@
       "type": "post",
       "date": "2026-11-30",
       "time": "10:00",
-      "file": "renders (Shopify CDN): quilt set Desert Tan",
+      "file": "render: quilt planter Desert Tan",
       "topic": "First Layer early access",
       "status": "draft: DM the password first",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400197318
+      "metricool_id": 401641264,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
       "date": "2026-12-01",
       "time": "10:00",
-      "file": "renders (Shopify CDN): four sets + drainage",
+      "file": "renders: planters, vases, drainage",
       "topic": "launch day",
       "status": "draft: swap in real photos, confirm",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400197409
+      "metricool_id": 401641311,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
       "date": "2026-12-03",
       "time": "10:00",
-      "file": "renders (Shopify CDN): tile set Dark Green",
+      "file": "render: tile vase Dark Green",
       "topic": "Christmas order cut-off",
       "status": "draft: fill in the date",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400197484
+      "metricool_id": 401641340,
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
@@ -716,9 +734,10 @@
       "topic": "meet the Tile",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400355947,
+      "metricool_id": 401640373,
       "highlight": "About",
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-08-meet-the-tile.png"
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-08-meet-the-tile.png",
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "story",
@@ -740,9 +759,10 @@
       "topic": "designed here, printed here",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400356073,
+      "metricool_id": 401640569,
       "highlight": "About",
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-10-designed-here.png"
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-10-designed-here.png",
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "story",
@@ -784,13 +804,14 @@
       "type": "story",
       "date": "2026-10-28",
       "time": "12:00",
-      "file": "posts/ply-story-16-small-or-medium.png",
-      "topic": "small or medium",
+      "file": "posts/ply-story-16-one-size.png",
+      "topic": "made for the windowsill (was small or medium)",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400356331,
+      "metricool_id": 401640600,
       "highlight": "Ideas",
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-16-small-or-medium.png"
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-16-small-or-medium.png",
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "story",
@@ -824,9 +845,10 @@
       "topic": "a gift for a new home",
       "status": "scheduled",
       "batch": "rework-2026-10-19",
-      "metricool_id": 400356451,
+      "metricool_id": 401640621,
       "highlight": "Christmas",
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-17-housewarming.png"
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/538bcf8c447d88a7ad8f3f4b7f8ec5a3458de2dc/posts/ply-story-17-housewarming.png",
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "post",
@@ -897,9 +919,10 @@
       "topic": "Building Ply ep 1: two people, one printer (follow CTA)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401632540,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-14-building-ply-ep1-sound.mp4",
-      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
+      "metricool_id": 401640356,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/bfa90a6182cc299860eed302a65164f86abeb72d/reels/ply-reel-14-building-ply-ep1-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct",
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "reel",
@@ -921,9 +944,10 @@
       "topic": "Ply in 10 seconds: all four pieces + colours (pin this)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401632608,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-16-ply-in-10-seconds-sound.mp4",
-      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
+      "metricool_id": 401640501,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/bfa90a6182cc299860eed302a65164f86abeb72d/reels/ply-reel-16-ply-in-10-seconds-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct",
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "reel",
@@ -981,9 +1005,10 @@
       "topic": "Zoom out: guess again, Tile planter (3D render)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401632884,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-21-zoom-tile-sound.mp4",
-      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
+      "metricool_id": 401640547,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/bfa90a6182cc299860eed302a65164f86abeb72d/reels/ply-reel-21-zoom-tile-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct",
+      "note": "21 Oct: medium planter and set removed (Geoffry)."
     },
     {
       "type": "reel",
@@ -996,6 +1021,23 @@
       "metricool_id": 401632909,
       "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-22-building-ply-ep3-sound.mp4",
       "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "03:30",
+      "type": "change",
+      "topic": "Medium planter and planter-and-vase set dropped (Geoffry, 21 Oct). All scheduled posts, drafts, Reels and Stories now show small planters and vases only.",
+      "status": "done"
+    },
+    {
+      "type": "story",
+      "date": "2026-11-01",
+      "time": "10:00",
+      "file": "render: quilt planter small Dark Green (was quilt set Dark Green)",
+      "topic": "Dark Green planter",
+      "status": "scheduled",
+      "metricool_id": 401640648,
+      "note": "21 Oct: set image replaced (set dropped)."
     }
   ],
   "campaign": {
