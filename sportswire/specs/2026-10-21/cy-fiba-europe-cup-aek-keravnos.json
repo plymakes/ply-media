@@ -129,5 +129,92 @@
   "render": {
     "ok": true,
     "problems": []
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-21T19:24:52+00:00",
+    "by": "independent agent (card text and caption only)",
+    "notes": "26 claims CONFIRMED against FIBA game pages, box scores and standings; ERR (Estonia) also reports 99:93.",
+    "claims": [
+      {
+        "claim": "FIBA Europe Cup regular season",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135791-AEK-TARTU"
+      },
+      {
+        "claim": "Both games Wed 21 Oct, final",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135791-AEK-TARTU"
+      },
+      {
+        "claim": "Petrolina AEK 99-93 Tartu",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135791-AEK-TARTU"
+      },
+      {
+        "claim": "Kition Athletic Center, Larnaca",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135791-AEK-TARTU"
+      },
+      {
+        "claim": "Myles Tate 26 points, AEK's top scorer (box score; 33 is efficiency)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135791-AEK-TARTU"
+      },
+      {
+        "claim": "AEK 2-1 in Group E",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/standings"
+      },
+      {
+        "claim": "Keravnos 65-78 King Szczecin",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135761-KERAV-KING"
+      },
+      {
+        "claim": "Costas Papaellinas Arena, Nicosia",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135761-KERAV-KING"
+      },
+      {
+        "claim": "Keravnos's first defeat after two wins",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games"
+      },
+      {
+        "claim": "Jaye Crockett 20 points (box score)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135761-KERAV-KING"
+      },
+      {
+        "claim": "Keravnos 2-1 in Group D",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/standings"
+      },
+      {
+        "claim": "AEK at MZT Skopje, Tue 27 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games/135793-MZT-AEK"
+      },
+      {
+        "claim": "Keravnos at BC Vienna, Tue 27 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games"
+      },
+      {
+        "claim": "Both clubs Cypriot",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/news/fiba-europe-cup-draw-results-revealed-for-2026-27-season"
+      },
+      {
+        "claim": "Names: Petrolina AEK, Tartu Ülikool Maks & Moorits, Keravnos, King Szczecin, Myles Tate, Jaye Crockett, MZT Skopje, BC Vienna, venues",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games"
+      }
+    ]
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Both rows, scores, notes, crests (FIBA official logos) and footnote read back; nothing clipped."
   }
 }
