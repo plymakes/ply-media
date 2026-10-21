@@ -521,6 +521,8 @@ def out_path(spec: dict, idx: int, total: int) -> pathlib.Path:
 # A Reel is a list of slides (any template above, plus 'end'), each shown for `dur` seconds.
 # Every slide builds in: its blocks rise and fade in one after another, big numbers count up,
 # then it cuts to the next. Typographic only: no footage, no third-party video.
+# EVERY REEL HAS SOUND: an original soundtrack from tools/sound.py, with a whoosh and a hit on
+# each slide change. Set "sound": {"mood": "drive" | "bright" | "calm"} in the spec (default drive).
 
 ANIM_JS = r"""
 () => {
@@ -590,10 +592,18 @@ def render_reel(spec: dict, sp: str, browser) -> tuple[list[str], list[str]]:
     out = ROOT / 'reels' / spec['page'] / date[:7] / f'{date}-{spec["slug"]}.mp4'
     cover = out.with_name(out.stem + '-cover.png')
     out.parent.mkdir(parents=True, exist_ok=True)
+    # every Reel has sound (Geoffry, 21 Oct 2026): original soundtrack timed to the slide changes
+    import runpy
+    snd = runpy.run_path(str(ROOT / 'tools/sound.py'), run_name='sound')
+    cuts, acc_t = [], 0.0
+    for sl in slides[:-1]:
+        acc_t += float(sl.get('dur', 3.0)); cuts.append(round(acc_t, 3))
+    wav = tmpdir / 'sound.wav'
+    sound_info = snd['make'](str(wav), frame / fps, cuts, spec['slug'], spec.get('sound', {}).get('mood', 'drive'))
     cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-framerate', str(fps), '-i', str(tmpdir / '%05d.jpg'),
-           '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo', '-shortest',
+           '-i', str(wav), '-shortest',
            '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', '18', '-preset', 'medium',
-           '-r', str(fps), '-c:a', 'aac', '-b:a', '96k', '-movflags', '+faststart', str(out)]
+           '-r', str(fps), '-c:a', 'aac', '-b:a', '192k', '-ar', '44100', '-movflags', '+faststart', str(out)]
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode:
         problems.append('ffmpeg failed: ' + r.stderr[-300:])
@@ -612,7 +622,13 @@ def render_reel(spec: dict, sp: str, browser) -> tuple[list[str], list[str]]:
         sheet.parent.mkdir(parents=True, exist_ok=True)
         canvas.save(build_dir := (ROOT / 'build' / sheet.name))
     shutil.rmtree(tmpdir, ignore_errors=True)
-    spec['reel_meta'] = {'seconds': round(frame / fps, 2), 'fps': fps, 'cover_ms': cover_ms or 0,
+    vol = subprocess.run(['ffmpeg', '-hide_banner', '-i', str(out), '-map', '0:a', '-af', 'volumedetect', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    import re as _re
+    mv = _re.search(r'mean_volume: (-?[\d.]+) dB', vol)
+    mean_db = float(mv.group(1)) if mv else -99.0
+    if mean_db < -30:
+        problems.append(f'soundtrack is too quiet or missing (mean {mean_db} dB): every Reel needs sound')
+    spec['reel_meta'] = {'seconds': round(frame / fps, 2), 'fps': fps, 'cover_ms': cover_ms or 0, 'sound': {**sound_info, 'mean_db': mean_db},
                          'cover': str(cover.relative_to(ROOT)), 'frames_sheet': f'build/{sheet.name}'}
     return [str(out.relative_to(ROOT)), str(cover.relative_to(ROOT))], problems
 

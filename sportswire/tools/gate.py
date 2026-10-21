@@ -119,6 +119,9 @@ def check(path: str) -> list[str]:
         meta = spec.get('reel_meta') or {}
         if not any(str(im).endswith('.mp4') for im in spec.get('images', [])):
             probs.append('reel has no rendered .mp4')
+        snd = meta.get('sound') or {}
+        if snd.get('mean_db', -99) < -30:
+            probs.append('reel has no soundtrack or it is too quiet: every Reel must have sound (re-render with tools/render.py)')
         if meta.get('seconds', 0) > 45:
             probs.append(f'reel is {meta.get("seconds")}s (news Reels under 20s, explainers under 45s)')
         if not (spec.get('visual_check') or {}).get('frames_checked'):

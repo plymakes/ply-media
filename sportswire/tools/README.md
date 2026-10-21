@@ -68,6 +68,7 @@ Use `"slides": [{"template": …, "card": {…}, "theme"?: …}, …]` instead o
 - *Spotlight*: `preview` or `news` hook (name + the one fact) → `stats`/`spotlight` (3 s each, max 3) → `end`.
 - *Explainer*: question hook → 3–5 `news`/`stats` slides answering it → `end` (max ~30 s).
 - *Weekend in 60 seconds*: hook ("the weekend in 60 seconds") → one `result` or `roundup` per competition → `end`.
-Output: `reels/<page>/<YYYY-MM>/<date>-<slug>.mp4` (1080×1920, 30 fps, silent AAC track), `…-cover.png`, and a 6-frame sheet in `build/` for the visual check. `reel_meta.cover_ms` goes into Metricool's `videoCoverMilliseconds`. Example: `tools/examples/lb-reel-result.json`; preview: `brand/template-previews/reel-result-sample-*`.
+**Sound: every Reel has sound.** The renderer generates an original soundtrack with `tools/sound.py` (whoosh and hit on every slide change) and muxes it in; choose `"sound": {"mood": "drive" | "bright" | "calm"}`. The gate rejects a Reel whose soundtrack is missing or too quiet.
+Output: `reels/<page>/<YYYY-MM>/<date>-<slug>.mp4` (1080×1920, 30 fps, AAC stereo soundtrack), `…-cover.png`, and a 6-frame sheet in `build/` for the visual check. `reel_meta.cover_ms` goes into Metricool's `videoCoverMilliseconds`. Example: `tools/examples/lb-reel-result.json`; preview: `brand/template-previews/reel-result-sample-*`.
 
 Crests: `brand/crests/<name>.png`. Only use files that exist there; add new club crests only from the club's own official site, as a PNG with transparent background, and note the source in `brand/crests/SOURCES.md`.

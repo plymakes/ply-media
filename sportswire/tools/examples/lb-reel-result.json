@@ -87,5 +87,8 @@
         "deck": "Follow @sportswire.lb"
       }
     }
-  ]
+  ],
+  "sound": {
+    "mood": "drive"
+  }
 }

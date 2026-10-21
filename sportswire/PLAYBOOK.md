@@ -137,6 +137,9 @@ For every post, identify the athlete, club or federation most likely to reshare 
 ### Images and rights
 SportsWire cards are typographic and use the brand's own graphics plus club crests from `brand/crests/` (editorial use, as on the published cards). Never use photos from clubs, agencies, Getty, federations or social media in an automated run; photos only from `brand/photos/` where Geoffry noted permission. No AI-generated pictures of real people, ever. Set `instagramData.isAiGenerated` to false (the cards are designed graphics, not generated imagery) and write alt text for every image.
 
+### Reels
+**Every Reel has sound** (Geoffry, 21 Oct 2026). `tools/render.py` builds an original soundtrack into every Reel (`tools/sound.py`: drums, bass, chords, whooshes and hits timed to the slide changes; tempo and key vary per Reel). Pick the mood with `"sound": {"mood": "drive"}` (results, big nights), `"bright"` (wins, spotlights) or `"calm"` (explainers, tables). The gate rejects any Reel without an audible soundtrack. No copyrighted music, ever; don't add Instagram catalog audio on top. Reels are typographic motion graphics only: no match footage or reposted video.
+
 ### What performs (from the LB insights export, 19 Aug – 7 Sep 2026)
 Athlete and community features reached 30–100 times more people than result cards: "rugby league did you know" 8,218 views, "Aziza Sbaity" 6,051, "meet Lindzi" 4,618, "run clubs" 3,916, "Lynn El Hajj" 3,833, almost all (93–99%) from non-followers, helped by the athletes resharing. Plain result cards sat at 60–110 views. So every page runs **at least three spotlights or explainers a week** (an athlete, a club, a sport nobody covers, a "did you know"), each built on official sources and aimed at a confirmed reshare target, alongside the results. Results keep the page credible; spotlights grow it.
 

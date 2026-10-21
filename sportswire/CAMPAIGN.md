@@ -53,6 +53,8 @@ All built from `tools/render.py` templates; Reels with `"format": "reel"` (see `
 | **Table** | `standings` | After each full round (PLAYBOOK 4.3: round must be complete) |
 | **Correction** | `correction` | Only if needed; always AMBER |
 
+**Every Reel has sound**: the renderer builds an original soundtrack into each one, and the gate blocks silent Reels (PLAYBOOK 7, Reels).
+
 Every carousel and Reel ends with an `end` slide ("every lebanese result, first." / "cypriot sport, in english."). Reels get a cover at the end of the hook slide (`reel_meta.cover_ms`).
 
 ## 5. The weekly grid (per page)
