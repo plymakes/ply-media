@@ -19,7 +19,8 @@
       "preview": {
         "status": "scheduled",
         "spec": "specs/2026-10-21/cy-thursday-in-europe-omonia-pafos.json",
-        "when": "2026-10-21T18:00+03:00"
+        "when": "2026-10-21T18:00+03:00",
+        "metricool_id": 401930534
       },
       "result_desk": {
         "trigger_ids": []
@@ -47,7 +48,8 @@
       "preview": {
         "status": "scheduled",
         "spec": "specs/2026-10-21/cy-thursday-in-europe-omonia-pafos.json",
-        "when": "2026-10-21T18:00+03:00"
+        "when": "2026-10-21T18:00+03:00",
+        "metricool_id": 401930534
       },
       "result_desk": {
         "trigger_ids": []

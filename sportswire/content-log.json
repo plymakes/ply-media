@@ -99,6 +99,41 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/3c27d2e90b25a1f54b86f82809056c8202c4c1ce/sportswire/posts/cy/2026-10/2026-10-21-cyprus-league-table-round-6.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-21",
+      "slug": "thursday-in-europe-omonia-pafos",
+      "story_key": "cy-europe-2026-10-22-preview",
+      "light": "green",
+      "template": "fixtures,news,news,end",
+      "headline": "two clubs. one *thursday* in europe.",
+      "caption_first_line": "Two Cypriot clubs in Europe on Thursday night. ⚽",
+      "sources": [
+        "https://www.flashscore.pt/noticias/futebol-liga-europa-omonia-benfica-onde-ver-o-jogo-antevisao-onzes-provaveis-e-odds/vH2lRFg5/",
+        "https://www.uefa.com/uefaconferenceleague/clubs/2607924--riga/matches",
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/",
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      ],
+      "reshare": {
+        "mention": [
+          "pafosfc",
+          "omonoiafootball"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-21/cy-thursday-in-europe-omonia-pafos.json",
+      "logged_at": "2026-10-21T09:21:57+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-21T18:00:00+03:00",
+      "metricool_id": "401930534",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-7343654040141149335",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/fddcf0b58c0d5a3b3b42c8f317db7a1a99d28157/sportswire/posts/cy/2026-10/2026-10-21-thursday-in-europe-omonia-pafos-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/fddcf0b58c0d5a3b3b42c8f317db7a1a99d28157/sportswire/posts/cy/2026-10/2026-10-21-thursday-in-europe-omonia-pafos-02.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/fddcf0b58c0d5a3b3b42c8f317db7a1a99d28157/sportswire/posts/cy/2026-10/2026-10-21-thursday-in-europe-omonia-pafos-03.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/fddcf0b58c0d5a3b3b42c8f317db7a1a99d28157/sportswire/posts/cy/2026-10/2026-10-21-thursday-in-europe-omonia-pafos-04.png"
+      ]
     }
   ]
 }
