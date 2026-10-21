@@ -916,13 +916,13 @@
       "date": "2026-10-21",
       "time": "18:00",
       "file": "reels/ply-reel-14-building-ply-ep1-sound.mp4",
-      "topic": "Building Ply ep 1: two people, one printer (follow CTA)",
+      "topic": "Building Ply ep 1: one family, one printer (follow CTA)",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401640356,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/bfa90a6182cc299860eed302a65164f86abeb72d/reels/ply-reel-14-building-ply-ep1-sound.mp4",
+      "metricool_id": 401797230,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/184c128fb539d87d001ef953c329da9d6adc90e1/reels/ply-reel-14-building-ply-ep1-sound.mp4",
       "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct",
-      "note": "21 Oct: medium planter and set removed (Geoffry)."
+      "note": "21 Oct: medium planter and set removed (Geoffry). 21 Oct 08:40: 'Two people' -> 'One family' (Geoffry), caption + #FamilyBusiness; line 2 timing fixed."
     },
     {
       "type": "reel",
@@ -969,9 +969,10 @@
       "topic": "Building Ply ep 2: why only four colours",
       "status": "scheduled",
       "batch": "growth-reels-2026-10-21",
-      "metricool_id": 401632752,
-      "media": "https://raw.githubusercontent.com/plymakes/ply-media/3d317c898eaaa91345f21837a3baa09d28f735f8/reels/ply-reel-18-building-ply-ep2-sound.mp4",
-      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct"
+      "metricool_id": 401797249,
+      "media": "https://raw.githubusercontent.com/plymakes/ply-media/184c128fb539d87d001ef953c329da9d6adc90e1/reels/ply-reel-18-building-ply-ep2-sound.mp4",
+      "sound": "original music + SFX (tools/ply_sound.py), added 21 Oct",
+      "note": "21 Oct 08:40: line 1 no longer shows before its cue."
     },
     {
       "type": "reel",
