@@ -46,8 +46,10 @@
         "WAM (Emirates News Agency) via search"
       ],
       "preview": {
-        "status": "pending-factcheck",
-        "spec": "specs/2026-10-21/lb-dubai-final-preview.json"
+        "status": "scheduled",
+        "spec": "specs/2026-10-21/lb-dubai-final-preview.json",
+        "metricool_id": 401830628,
+        "when": "2026-10-21T11:15+03:00"
       },
       "result_desk": {
         "trigger_ids": [
