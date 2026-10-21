@@ -71,6 +71,8 @@ The weekly desk turns this into a concrete plan for the coming week in `plans/<y
 | Sat | Today Story + news | — | Result Reel if a big one | Results / roundups |
 | Sun | Today Story + news | — | Table after the round | Results / roundups |
 
+**Timing beats the grid.** On event days the grid gives way to the event: a preview that morning (or the evening before for early starts), and the result straight after the final whistle through a result desk (PLAYBOOK 6, Timing).
+
 Target per page: about 2 feed items a day, never more than 4, never two within 90 minutes (30 minutes on results nights). A quiet news day is filled by the planned campaign item, never by padding.
 
 ## 6. Tentpoles, 21 Oct – 6 Dec 2026

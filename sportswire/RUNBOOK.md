@@ -18,6 +18,9 @@ What each scheduled run does, step by step. The scheduled task's own instruction
 3. **Pick.** Today's list per page = today's items from this week's plan (CAMPAIGN.md grid) + the best verified news. Rank news by: named local athlete or club > reachable confirmed reshare target > freshness > not already covered (`story_key`). About 2 feed items per page (max 4), plus Stories. A planned item whose facts can't be verified today is swapped for another campaign format (a spotlight, an explainer, a numbers card) or dropped, and the plan file is updated. Drop anything RED.
    - Reel days: at least 3 Reels per page per week (Mon "weekend in 60 seconds", a spotlight Reel, a result Reel on big nights). Build them with `"format": "reel"` (tools/README.md): hook slide first (the key fact in the first second), 8–15 s for news, up to 30 s for explainers, `end` slide last, and a `sound.mood`. Every Reel has sound; the gate checks it.
    - Carousels: `slides` with 4–7 cards, `end` slide last, for explainers, week-ahead and spotlights.
+3b. **Event calendar** (PLAYBOOK 6, Timing). Write or update `events/<today>.json` (format in section 5) with every A and B event for both pages today, plus tomorrow's events that start before about 14:00. For each event, confirm the date and start time on the official source (competition, federation or club page; convert to Beirut/Cyprus time). If the start time can't be confirmed, keep `start_confirmed: false` and never print a time on a card.
+   - **Previews:** A/B events today get a preview in today's 10:00 or 12:30 slot (or inside the "Today" fixtures card/Story for B). Events tomorrow before about 14:00 get their preview tonight at 18:00. Never schedule a preview inside the 3 hours before the start.
+   - **Result desks:** for every A/B event today, create a one-off scheduled task with `create_trigger` (`run_once_at` = expected end + 35 minutes, in UTC; `initiation: "human_schedule"`; `notifications: {"push": true}`; name `SportsWire result: <date> <short event name>`; prompt = the "Result desk prompt" in section 4 with the event id filled in). Expected end: football start + 1 h 55 min, basketball start + 2 h 05 min, other sports from the official schedule. If the start time is unknown, use 22:00 Beirut/Cyprus. Group events of one competition that end within 45 minutes of each other into one desk (one roundup). At most 6 result desks a day across both pages. Write each `trigger_id` into the event.
 4. **Build each story** (subagents may build stories in parallel, one story each, but the fact-check in step 5 is always a different agent):
    - Gather sources; write every atomic fact with its URL(s) and tier into the spec (`specs/<date>/<page>-<slug>.json`, format in `tools/README.md`).
    - Choose the template and theme (alternate dark/light against the page's last post), write card text and caption in the house voice, alt text in `"alt"`.
@@ -37,9 +40,13 @@ What each scheduled run does, step by step. The scheduled task's own instruction
 10. **Log**: `python3 tools/log.py add <spec> --status scheduled|draft --when <ISO> --metricool-id <id> --planner-url <url> --urls <u1,u2>`, then `python3 tools/publish.py "log <date>" content-log.json`.
 11. **Brief** (PLAYBOOK section 9): `PushNotification` with the one-line version, and the full brief as the final message.
 
+## 1b. Afternoon desk (about 15:50)
+
+A shorter morning desk for timeliness: sweep breaking news since the morning desk (signings, call-ups, appointments, announcements), check `events/<today>.json` for new or changed events (moved kick-offs, added games) and fix them, create result desks for events that don't have one, and schedule previews for tomorrow's early events at 18:00. Same verification, gate and publish steps. At most 2 new feed posts per page.
+
 ## 2. Evening desk (about 22:15)
 
-Same as the morning desk, but only for results that are **final** today (and anything big that broke this afternoon), for both pages:
+Same as the morning desk, but only for results that are **final** today and **not already handled by a result desk** (check `events/<today>.json`: skip events whose result is `posted`, or whose result desk is still due to run), for both pages:
 - Group results of one competition into one `roundup` card; national-team games and big nights get their own `result` card.
 - Schedule from 22:30, 30 minutes apart per page, max 3 per page.
 - Games still in progress or finishing after 23:00 are left for the morning desk. Never post a live score as a result.
@@ -55,6 +62,36 @@ Same as the morning desk, but only for results that are **final** today (and any
 6. Refresh `sources/handles.json`: confirm any handle the week needed, mark dead ones. When a page passes 1,000 followers, note in config that Trial Reels are on.
 7. Check the connections still work (a push succeeded this week, both Metricool brands present with Instagram connected). Anything failing goes at the top of the brief.
 8. **Weekly brief** to Geoffry: per page followers (and change), top post, progress against the CAMPAIGN.md targets, lessons, next week's highlights, drafts waiting, any corrections.
+
+## 4. Result desk (one-off, per event)
+
+A result desk is a one-off scheduled task created by the morning or afternoon desk. Its job: post the result of one event (or one group of events) as soon as it is final and verified.
+
+1. Setup as in section 0 (steps 1–5), but read only `config.json`, `PLAYBOOK.md`, `sources/spelling.md`, `sources/handles.json` and `events/<date>.json`.
+2. Find the event by id. If its result is already `posted`, stop.
+3. Check the official source for a **final** result (full time, after extra time/penalties). Live or half-time scores never count. If it's not final yet: create **one** follow-up result desk 40 minutes later (same prompt, attempt number + 1; at most 2 follow-ups), write its id into the event, and stop. After the last attempt, set the result to `handover` so the evening or next morning desk takes it.
+4. Build the result post exactly as in section 1 steps 4–8: facts with sources, `result` card (or `roundup`), plus a result Reel for an A event we won or a historic one (every Reel has sound), independent fact-check, gate READY, publish.
+5. Schedule it in Metricool for **now + 3 minutes** (never in the past), `autoPublish: true` (or `draft: true` if AMBER or in review mode).
+6. Set the event's result to `posted` (with the spec path and Metricool id), log it in `content-log.json`, push. PushNotification: "Posted: <result> on <page>".
+
+**Result desk prompt** (the morning/afternoon desk fills in DATE, EVENT_ID, ATTEMPT):
+> You are a SportsWire result desk. Everything you need is in the `sportswire/` folder of the public repo https://github.com/plymakes/ply-media (the rest of the repo is Ply's; never touch it). First call add_repo (owner plymakes, repo ply-media, access push), clone, and follow sportswire/RUNBOOK.md section 4 for event EVENT_ID in sportswire/events/DATE.json, attempt ATTEMPT. Being late is fine, being wrong is not: post only a final result verified to PLAYBOOK section 4, after the independent fact-check and `python3 tools/gate.py` printing READY. Every Reel has sound. Finish with a one-line PushNotification and a one-line final message.
+
+## 5. Event calendar format
+
+`events/<YYYY-MM-DD>.json`:
+```json
+{"date": "2026-10-21", "events": [{
+  "id": "lb-dubai-final", "page": "lb", "priority": "A", "sport": "basketball",
+  "title": "Al Riyadi v Antonine, Shabab Al Ahli Dubai tournament final",
+  "start_local": null, "start_confirmed": false, "expected_end_local": "2026-10-21T21:45+03:00",
+  "venue": "Sheikh Saeed bin Maktoum Hall, Dubai",
+  "result_sources": ["https://www.riyadi.com/", "https://www.annahar.com/sports/basketball"],
+  "preview": {"status": "posted|scheduled|none", "spec": "specs/...json", "metricool_id": 0, "when": "..."},
+  "result_desk": {"trigger_ids": ["trig_..."], "next_run": "..."},
+  "result": {"status": "pending|posted|handover|cancelled", "spec": null, "metricool_id": null}
+}]}
+```
 
 ## If something breaks
 - Push fails → stop before scheduling anything; the brief says GitHub access needs fixing, with the error.

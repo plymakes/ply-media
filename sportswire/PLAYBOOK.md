@@ -101,10 +101,21 @@ Metricool's approval workflow is not on the Starter plan, so AMBER items are cre
 The current growth campaign, its formats, weekly grid, tentpoles and targets are in **`CAMPAIGN.md`**; this week's concrete plan is in `plans/<year>-W<week>.md`. In short:
 
 - **Morning desk (daily, about 09:00):** re-check recent posts, sweep the news, then build today's news posts **and** today's planned campaign items for both pages, scheduled into the slots in `config.json` (10:00, 12:30, 18:00).
-- **Evening desk (daily, about 22:15):** final results from today, from 22:30, at least 30 minutes apart per page.
+- **Afternoon desk (daily, about 15:50):** breaking news since the morning, new or changed events, previews for tomorrow-morning events, result desks for anything new.
+- **Result desks (one-off, per A/B event):** run about 30–40 minutes after each event's expected end and post the result straight away.
+- **Evening desk (daily, about 22:15):** the catch-all for final results not covered by a result desk, from 22:30, at least 30 minutes apart per page.
 - **Weekly desk (Sunday, about 11:50):** analytics into `growth-log.json`, lessons into section 10, next week's plan, week-ahead content.
 
 Volume per page: about 2 feed items a day (at most 4), at least 3 Reels and 2 carousels a week, Stories daily on matchdays. Never two feed posts on one page within 90 minutes (30 on results nights). Group several results of one competition into one `roundup` card. Quality beats volume every time: an empty slot is better than a weak or unverified post.
+
+### Timing: before and after every event (Geoffry, 21 Oct 2026)
+We are a news page, so timing is part of being right.
+- **Before:** every A or B event (below) gets a preview **on the morning of the event day** (10:00 or 12:30 slot), or **the evening before** (18:00) when it starts before about 14:00. Never in the last 3 hours before tip-off or kick-off.
+- **After, always:** the result goes out **as soon as it is final and verified**, normally within 30–60 minutes of the final whistle, through a dedicated result desk scheduled for that event (RUNBOOK section 4). Late games are still posted that night; nothing waits for the next morning unless the result can't be verified.
+- **Priority A:** national teams, finals, derbies, European nights, medals, a Lebanese or Cypriot athlete in a major final. Preview + result card, and a result Reel when we win or it's historic.
+- **Priority B:** top-flight league games of the big clubs, other Lebanese/Cypriot teams in international tournaments. Preview inside the day's fixtures card or Story; result card or roundup.
+- **Priority C:** everything else; covered by roundups in the evening desk.
+- Every day's events and their before/after posts are tracked in `events/<date>.json`.
 
 The step-by-step for each run is in `RUNBOOK.md`.
 
