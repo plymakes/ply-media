@@ -3,27 +3,63 @@
   "events": [
     {
       "id": "lb-arab-club-final",
-      "page": "lb", "priority": "A", "sport": "basketball",
+      "page": "lb",
+      "priority": "A",
+      "sport": "basketball",
       "title": "Sagesse v Ahli Aleppo, Arab Club Basketball Championship final (played 20 Oct)",
-      "start_local": null, "start_confirmed": false, "expected_end_local": null,
+      "start_local": null,
+      "start_confirmed": false,
+      "expected_end_local": null,
       "venue": "Antoine Choueiri hall, Ghazir",
-      "result_sources": ["https://www.annahar.com/sports/358828/", "https://www.mtv.com.lb/news/1750251"],
-      "preview": {"status": "none"},
-      "result_desk": {"trigger_ids": []},
-      "result": {"status": "posted", "spec": "specs/2026-10-21/lb-sagesse-arab-champions.json", "metricool_id": 401822608, "url": "https://www.instagram.com/reel/DevyTmSlRcl/"}
+      "result_sources": [
+        "https://www.annahar.com/sports/358828/",
+        "https://www.mtv.com.lb/news/1750251"
+      ],
+      "preview": {
+        "status": "none"
+      },
+      "result_desk": {
+        "trigger_ids": []
+      },
+      "result": {
+        "status": "posted",
+        "spec": "specs/2026-10-21/lb-sagesse-arab-champions.json",
+        "metricool_id": 401822608,
+        "url": "https://www.instagram.com/reel/DevyTmSlRcl/"
+      }
     },
     {
       "id": "lb-dubai-final",
-      "page": "lb", "priority": "A", "sport": "basketball",
+      "page": "lb",
+      "priority": "A",
+      "sport": "basketball",
       "title": "Al Riyadi v Antonine, Shabab Al Ahli Dubai International Basketball Championship final",
-      "start_local": null, "start_confirmed": false,
-      "start_note": "riyadi.com shows 8:30 pm without a timezone, and its other event times don't match its own reports; treat the time as unknown and never print it.",
-      "expected_end_local": "2026-10-21T22:30+03:00",
+      "start_local": null,
+      "start_confirmed": false,
+      "start_note": "Lovin Dubai's 14 Oct schedule lists 9:15 pm UAE (8:15 pm Beirut); not repeated since, so still unconfirmed: don't print a time.",
+      "expected_end_local": "2026-10-21T22:20+03:00",
       "venue": "Sheikh Saeed bin Maktoum Hall, Al Mamzar, Dubai",
-      "result_sources": ["https://www.riyadi.com/", "https://www.annahar.com/sports/basketball", "https://www.grandlb.com/category/sports-reports/", "WAM (Emirates News Agency) via search"],
-      "preview": {"status": "pending-factcheck", "spec": "specs/2026-10-21/lb-dubai-final-preview.json"},
-      "result_desk": {"trigger_ids": ["trig_01MRafqTcDgfxKwYU3PFcJNb"], "next_run": "2026-10-21T22:00+03:00"},
-      "result": {"status": "pending", "spec": null, "metricool_id": null}
+      "result_sources": [
+        "https://www.riyadi.com/",
+        "https://www.annahar.com/sports/basketball",
+        "https://www.grandlb.com/category/sports-reports/",
+        "WAM (Emirates News Agency) via search"
+      ],
+      "preview": {
+        "status": "pending-factcheck",
+        "spec": "specs/2026-10-21/lb-dubai-final-preview.json"
+      },
+      "result_desk": {
+        "trigger_ids": [
+          "trig_01MRafqTcDgfxKwYU3PFcJNb"
+        ],
+        "next_run": "2026-10-21T22:35+03:00"
+      },
+      "result": {
+        "status": "pending",
+        "spec": null,
+        "metricool_id": null
+      }
     }
   ]
 }

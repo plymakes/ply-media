@@ -123,5 +123,61 @@
   "render": {
     "ok": true,
     "problems": []
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-21T09:50+03:00",
+    "by": "independent agent, card text and caption only",
+    "claims": [
+      {
+        "claim": "Final tonight, 21 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cairo24.com/2514525"
+      },
+      {
+        "claim": "Event name Shabab Al Ahli Dubai International Basketball Championship",
+        "verdict": "CONFIRMED",
+        "url": "https://lovin.co/dubai/en/news/beirut-cairo-and-manila-come-to-dubai-shabab-al-ahli-international-basketball-championship-streams-exclusively-on-smashi/"
+      },
+      {
+        "claim": "All-Lebanese final",
+        "verdict": "CONFIRMED",
+        "url": "https://www.grandlb.com/sports-reports/162919/"
+      },
+      {
+        "claim": "Al Riyadi v Antonine meet tonight",
+        "verdict": "CONFIRMED",
+        "url": "https://www.riyadi.com/"
+      },
+      {
+        "claim": "Al Riyadi 98-69 Shabab Al Ahli (semi)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.grandlb.com/sports-reports/162919/"
+      },
+      {
+        "claim": "Antonine 85-74 Al Ahly (semi)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cairo24.com/2515272"
+      },
+      {
+        "claim": "Venue Sheikh Saeed bin Maktoum Hall",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cairo24.com/2514525"
+      },
+      {
+        "claim": "Shabab Al Ahli are the hosts",
+        "verdict": "CONFIRMED",
+        "url": "https://www.albayan.ae/sports/basketball/1558159"
+      },
+      {
+        "claim": "Al Ahly are Egyptian",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cairo24.com/2515272"
+      }
+    ]
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Read every row and the headline against the facts; no time printed (tip-off unconfirmed)."
   }
 }

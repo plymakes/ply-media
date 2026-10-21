@@ -39,7 +39,7 @@ def numbers(text: str) -> set[str]:
     text = re.sub(r'https?://\S+', ' ', text)
     text = re.sub(r'[@#][\w.]+', ' ', text)
     out = set()
-    for m in re.findall(r'\d+(?:[.,:]\d+)*', text):
+    for m in re.findall(r'(?<![A-Za-z0-9])\d+(?:[.,:]\d+)*', text):  # digits inside names (Cairo24) don't count
         out.add(m.replace(',', ''))
     return out
 
