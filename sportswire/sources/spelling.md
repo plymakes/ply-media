@@ -4,7 +4,7 @@ One spelling per name, everywhere (cards, captions, alt text). Basketball: FIBA'
 
 ## Lebanon
 
-**Basketball clubs:** Al Riyadi (FIBA: "Al Riyadi Beirut Club") · Sagesse SC (never "Hekmeh"/"Al Hikma" in English copy) · Beirut Club (check current FLBB name; also styled "Beirut First") · Homenetmen · Antranik · Central Club · Hoops Club · NSA · Antonine · Champville · Chabab Batroun · Tadamon Hrajel
+**Basketball clubs:** Al Riyadi (FIBA: "Al Riyadi Beirut Club") · Sagesse SC (never "Hekmeh"/"Al Hikma" in English copy) · Beirut Club (check current FLBB name; also styled "Beirut First") · Homenetmen · Antranik · Central Club · Hoops Club · NSA · Antonin (FLBB fixtures page and the club, "Club Antonin Sportif"; not "Antonine", 21 Oct) · Champville · Chabab Batroun · Tadamon Hrajel
 
 **Football clubs:** Al Ansar FC · Nejmeh SC · Al Ahed FC · Safa SC · Shabab Al Sahel · Tadamon Sour · Jwaya SC · Sagesse SC · Riyadi Abbasiyah · Akhaa Ahli Aley · Tripoli SC · Mabarra (all but Ansar and Nejmeh: confirm on an AFC/LFA sheet before first use)
 
