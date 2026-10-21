@@ -8,41 +8,53 @@
   "pages": {
     "lb": {
       "instagram": "sportswire.lb",
-      "metricool_blog_id": null,
-      "timezone": "Asia/Beirut",
+      "metricool_blog_id": 7526383,
+      "timezone": "Asia/Nicosia",
       "time_label": "Beirut",
       "hashtags": [
-        "#SportsWireLB",
-        "#Lebanon"
+        "#SportsWireLB"
       ],
-      "flag": "🇱🇧"
+      "flag": "🇱🇧",
+      "timezone_note": "Metricool brand timezone is Asia/Nicosia (same clock as Beirut); card text says \"Beirut time\" for Lebanese kick-offs."
     },
     "cy": {
       "instagram": "sportswire.cy",
-      "metricool_blog_id": null,
+      "metricool_blog_id": 7556882,
       "timezone": "Asia/Nicosia",
       "time_label": "Cyprus",
       "hashtags": [
-        "#SportsWireCY",
-        "#Cyprus"
+        "#SportsWireCY"
       ],
       "flag": "🇨🇾"
     }
   },
   "rhythm": {
-    "feed_posts_per_page_per_day": {
-      "target_min": 2,
-      "target_max": 4,
-      "hard_max": 6
+    "feed_items_per_page_per_day": {
+      "target": 2,
+      "max": 4
     },
-    "min_minutes_between_posts": 60,
-    "morning_slots": [
-      "10:30",
-      "13:30",
-      "17:00",
-      "19:30"
-    ],
-    "evening_results_from": "22:30",
-    "spotlights_per_page_per_week": 3
+    "per_page_per_week": {
+      "reels_min": 3,
+      "carousels_min": 2,
+      "spotlights_min": 3,
+      "stories_per_day": "1-3"
+    },
+    "slots": {
+      "morning": "10:00",
+      "midday": "12:30",
+      "evening": "18:00",
+      "results_from": "21:00",
+      "results_latest": "23:15"
+    },
+    "slots_note": "From Metricool best-time data on 21 Oct 2026: weekday peak 10:00-12:00 and a second peak at 18:00; weekends about half the volume with peaks at 10:00 and 18:00-19:00. The weekly desk re-checks getBestTimeToPostByNetwork once each page has two weeks of its own data.",
+    "min_minutes_between_feed_posts": 90,
+    "min_minutes_between_feed_posts_results_night": 30,
+    "trial_reels": "off until the page has 1,000 followers (Instagram requirement); then 2 a week to test hooks"
+  },
+  "campaign": {
+    "file": "CAMPAIGN.md",
+    "name": "Season Kickoff",
+    "start": "2026-10-21",
+    "end": "2026-12-06"
   }
 }

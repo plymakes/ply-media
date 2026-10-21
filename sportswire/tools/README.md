@@ -9,7 +9,7 @@
 
 Setup in a fresh session: `pip install playwright --break-system-packages` is only needed if `import playwright` fails (Chromium is preinstalled at `/opt/pw-browsers`). Fonts ship in `tools/fonts/`, nothing to download.
 
-Template previews (what each layout looks like): `brand/template-previews/`. Example specs: `tools/examples/`.
+Template previews (what each layout looks like): `brand/template-previews/`. Example specs: `tools/examples/` (never schedule them; they hold sample data).
 
 ## Spec format
 
@@ -57,5 +57,17 @@ Common card fields: `eyebrow` (string or list, joined with ·), `eyebrow_style` 
 - **preview**: countdown / next up. `big` (outlined number), `rows`: `[{label, value}]`.
 - **quote**: always AMBER. `quote` (verbatim), `speaker`, `role`, `translated_from?`.
 - **correction**: `label`, `before`, `wrong`, `right`, `rows`, `text`.
+- **end**: closing slide for carousels and Reels: the page lockup, `headline` (e.g. "every lebanese result, *first*"), optional `deck` ("Follow @sportswire.lb").
+
+### Carousels
+Use `"slides": [{"template": …, "card": {…}, "theme"?: …}, …]` instead of `template`/`card`. 4–7 slides, the hook on slide 1, `end` last. Output: `posts/<page>/<YYYY-MM>/<date>-<slug>-01.png` … in order; schedule all URLs in `media`.
+
+### Reels
+`"format": "reel"` plus `slides`, each with a `dur` in seconds. Every slide builds in (blocks rise and fade in one after another, big numbers count up) and cuts to the next. Typographic only: no footage. Recipes:
+- *Result in 10 seconds*: `preview` hook (big score number + one-line headline, 2–2.5 s) → `result` (3–4 s) → `stats` (2.5–3 s) → `end` (2 s).
+- *Spotlight*: `preview` or `news` hook (name + the one fact) → `stats`/`spotlight` (3 s each, max 3) → `end`.
+- *Explainer*: question hook → 3–5 `news`/`stats` slides answering it → `end` (max ~30 s).
+- *Weekend in 60 seconds*: hook ("the weekend in 60 seconds") → one `result` or `roundup` per competition → `end`.
+Output: `reels/<page>/<YYYY-MM>/<date>-<slug>.mp4` (1080×1920, 30 fps, silent AAC track), `…-cover.png`, and a 6-frame sheet in `build/` for the visual check. `reel_meta.cover_ms` goes into Metricool's `videoCoverMilliseconds`. Example: `tools/examples/lb-reel-result.json`; preview: `brand/template-previews/reel-result-sample-*`.
 
 Crests: `brand/crests/<name>.png`. Only use files that exist there; add new club crests only from the club's own official site, as a PNG with transparent background, and note the source in `brand/crests/SOURCES.md`.

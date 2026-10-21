@@ -96,13 +96,15 @@ Metricool's approval workflow is not on the Starter plan, so AMBER items are cre
 
 ---
 
-## 6. Rhythm
+## 6. Rhythm and campaign
 
-- **Morning desk (daily, about 09:00):** sweep the last 24 hours plus the day ahead for both pages. Schedule today's posts spread across the day (default slots 10:30, 13:30, 17:00, 19:30, adjust with `getBestTimeToPostByNetwork` once the brand has data). On days with local fixtures, one "Today" fixtures card as a feed post or Story.
-- **Evening desk (daily, about 22:15):** final results from today's matches and events, posted from 22:30 onwards, at least 20 minutes apart per page. Late games (European nights, games abroad) that are not final yet are left to the next morning desk.
-- **Weekly desk (Sunday, about 10:00):** analytics review for both pages, week-ahead preview card per page (posted Monday), refresh sources and handles, update the learnings at the bottom of this file, and send Geoffry the weekly summary.
+The current growth campaign, its formats, weekly grid, tentpoles and targets are in **`CAMPAIGN.md`**; this week's concrete plan is in `plans/<year>-W<week>.md`. In short:
 
-Volume per page: aim for 2–4 feed posts a day, at most 6, at least 1 when there is anything verifiable. Never two posts on the same page within 60 minutes (30 minutes for evening results). Group several results of one competition into one `roundup` card instead of flooding the feed. Quality beats volume every time: an empty slot is better than a weak or unverified post.
+- **Morning desk (daily, about 09:00):** re-check recent posts, sweep the news, then build today's news posts **and** today's planned campaign items for both pages, scheduled into the slots in `config.json` (10:00, 12:30, 18:00).
+- **Evening desk (daily, about 22:15):** final results from today, from 22:30, at least 30 minutes apart per page.
+- **Weekly desk (Sunday, about 11:50):** analytics into `growth-log.json`, lessons into section 10, next week's plan, week-ahead content.
+
+Volume per page: about 2 feed items a day (at most 4), at least 3 Reels and 2 carousels a week, Stories daily on matchdays. Never two feed posts on one page within 90 minutes (30 on results nights). Group several results of one competition into one `roundup` card. Quality beats volume every time: an empty slot is better than a weak or unverified post.
 
 The step-by-step for each run is in `RUNBOOK.md`.
 
@@ -111,8 +113,8 @@ The step-by-step for each run is in `RUNBOOK.md`.
 ## 7. Making a post
 
 1. **Spec.** Write `specs/YYYY-MM-DD/<page>-<slug>.json` (format in `tools/README.md`): page, template, card text fields, caption, facts with source URLs, traffic light, reshare target, fact-check result.
-2. **Render.** `python3 tools/render.py specs/YYYY-MM-DD/<file>.json` writes `posts/<page>/YYYY-MM/<date>-<slug>.png` (feed, 1080×1350) or `stories/<page>/…` (1080×1920). Only the templates in `tools/render.py` are used, so every post matches the brand. Do not hand-write HTML or invent new layouts; if a story needs a layout that does not exist, use the closest template and mention it in the brief.
-3. **Look** at the PNG (section 4.5).
+2. **Render.** `python3 tools/render.py specs/YYYY-MM-DD/<file>.json` writes `posts/<page>/YYYY-MM/<date>-<slug>.png` (feed, 1080×1350; carousels get `-01`, `-02`…), `stories/<page>/…` (1080×1920) or, for `"format": "reel"`, `reels/<page>/…/<slug>.mp4` plus a cover PNG and a frames sheet in `build/`. Only the templates in `tools/render.py` are used, so every post matches the brand. Do not hand-write HTML or invent new layouts; if a story needs a layout that does not exist, use the closest template and mention it in the brief.
+3. **Look** at every PNG, and for Reels the frames sheet and the cover (section 4.5).
 4. **Commit and push** to `main`.
 5. **Schedule** in Metricool with the commit-pinned URL `https://raw.githubusercontent.com/plymakes/ply-media/<commit-sha>/sportswire/<path>` (printed by `tools/publish.py`) (never `/main/`, so a later change can't swap the image). Check the URL returns the image before scheduling.
 6. **Log** in `content-log.json` and push again.
@@ -124,7 +126,8 @@ House voice (see `brand/brand-guide.md` and the captions in `brand/reference/`):
 - One flag emoji as the sign-off (🇱🇧 / 🇨🇾); at most one or two other emojis; none on sad news.
 - A source line: `Source: <official body or outlet>` (gate checks for it).
 - Mention the club or athlete with their confirmed handle from `sources/handles.json` (only confirmed handles; never guess a handle).
-- 3–5 hashtags at the end, page-specific and keyword-rich (e.g. `#SportsWireLB #LebaneseBasketball #Lebanon`, `#SportsWireCY #CyprusFootball #Cyprus`).
+- Write the words people search into the caption itself ("Lebanese basketball", "Cyprus League", full club and athlete names). Then at most 3 hashtags (the page tag plus one or two topic tags, e.g. `#SportsWireLB #LebaneseBasketball`); hashtags no longer add reach.
+- End most captions with one genuine, good-natured question ("who was your player of the night?"). Never engagement bait ("comment YES", "tag 3 friends") and never on sad news.
 - Partisan for the country ("we" for the national team), neutral between local clubs (never "we" for a club). Report defeats plainly and kindly. No opinions about referees, officials or players.
 - Language: English; a word of Lebanese Arabic or Greek only for warmth, never for facts. Names in their official English spelling.
 

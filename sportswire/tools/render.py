@@ -41,7 +41,7 @@ TONES = {  # medal / badge colours per theme
     'silver': {'dark': '#C9CBD1', 'light': '#8A8D96'},
     'bronze': {'dark': '#C08552', 'light': '#A86B3C'},
 }
-SIZES = {'post': (1080, 1350), 'story': (1080, 1920)}
+SIZES = {'post': (1080, 1350), 'story': (1080, 1920), 'reel': (1080, 1920)}
 
 
 # ----------------------------------------------------------------- text helpers
@@ -246,19 +246,24 @@ def t_correction(c, th, acc):
     return '', {'correction': True}
 
 
-TEMPLATES = dict(result=t_result, roundup=t_roundup, news=t_news, fixtures=t_fixtures, spotlight=t_spotlight,
+def t_end(c, th, acc):
+    return '', {'end': True}
+
+
+TEMPLATES = dict(end=t_end, result=t_result, roundup=t_roundup, news=t_news, fixtures=t_fixtures, spotlight=t_spotlight,
                  stats=t_stats, standings=t_standings, preview=t_preview, quote=t_quote, correction=t_correction)
 
 
 # ----------------------------------------------------------------- page
 
 def css(W, H, fmt, th, acc, glow):
-    pad_t, pad_b = (60, 62) if fmt == 'post' else (170, 190)
+    pad_t, pad_b = (60, 62) if fmt == 'post' else (170, 190) if fmt == 'story' else (200, 330)
+    pad_r = 150 if fmt == 'reel' else 72  # keep clear of the Reel's like/comment/share buttons
     return f"""{FONTS_CSS}
 *{{box-sizing:border-box;margin:0;padding:0}}
 html,body{{width:{W}px;height:{H}px;overflow:hidden}}
 body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}}
-.cv{{position:relative;width:{W}px;height:{H}px;padding:{pad_t}px 72px {pad_b}px;display:flex;flex-direction:column}}
+.cv{{position:relative;width:{W}px;height:{H}px;padding:{pad_t}px {pad_r}px {pad_b}px 72px;display:flex;flex-direction:column}}
 .glow{{position:absolute;inset:0;pointer-events:none;background:{glow}}}
 .ac{{color:{acc}}}
 .nw{{white-space:nowrap;overflow:hidden;display:block}}
@@ -392,6 +397,12 @@ body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-web
 .corr-hl s{{color:{th['faint']};text-decoration:none;position:relative;display:inline-block}}
 .corr-hl s::after{{content:'';position:absolute;left:-4%;right:-4%;top:52%;height:9px;border-radius:5px;background:{acc};transform:rotate(-2deg)}}
 .center .kv{{width:640px}}
+/* reels: header pinned top, content centred in the safe area and a touch larger */
+.cv.reel{{justify-content:center}}
+.cv.reel .hd{{position:absolute;top:{pad_t}px;left:72px;right:{pad_r}px}}
+.cv.reel .bd{{flex:0 0 auto}}
+.cv.reel .ft{{position:absolute;left:72px;right:{pad_r}px;bottom:{pad_b - 90}px}}
+.cv.reel > .eb, .cv.reel > .hl, .cv.reel > .dk, .cv.reel > .bd, .cv.reel > .bignum{{zoom:1.12}}
 """
 
 
@@ -441,7 +452,7 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
 
     mark = (ROOT / 'brand/logos' / f'mark-{spec["page"]}-on-{th_name}.svg').as_uri()
     right = c.get('section', '')
-    if total > 1:
+    if total > 1 and fmt != 'reel':
         right = f'{idx:02d} / {total:02d}'
     hd = f'<div class="hd"><div class="brand"><img src="{mark}">{page["name"]}</div><div class="sec">{esc(right).upper()}</div></div>'
 
@@ -450,7 +461,7 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
         cls = {'pill': ' pill', 'outline': ' pillo'}.get(c.get('eyebrow_style', ''), '')
         eb = f'<div class="eb{cls}">{eyebrow(c["eyebrow"])}</div>'
 
-    base = {'post': 104, 'story': 116}[fmt]
+    base = {'post': 104, 'story': 116, 'reel': 120}[fmt]
     hsize = c.get('headline_size', opt.get('hl', base))
     lines = c.get('headline_lines', 4 if fmt == 'post' else 5)
     hl = ''
@@ -461,7 +472,13 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
         hl = f'<div class="hl" data-size="{hsize}" data-min="60" data-lines="{lines}">{headline(c["headline"])}</div>'
     dk = f'<div class="dk">{rich(c["deck"])}</div>' if c.get('deck') else ''
 
-    if opt.get('pre_headline'):  # preview: big number sits between eyebrow and headline
+    if opt.get('end'):  # closing frame of a Reel or carousel: lockup, one line, follow prompt
+        lock = (ROOT / 'brand/logos' / f'lockup-horizontal-{spec["page"]}-{th_name}.svg').as_uri()
+        top = ''
+        main = (f'<div class="bd mid" style="align-items:flex-start;gap:44px"><img src="{lock}" style="width:640px;max-width:100%">'
+                f'<div class="hl" data-size="{c.get("headline_size", 96)}" data-min="60" data-lines="4">{headline(c.get("headline", "follow for every result."))}</div>'
+                + (f'<div class="dk">{rich(c["deck"])}</div>' if c.get('deck') else '') + '</div>')
+    elif opt.get('pre_headline'):  # preview: big number sits between eyebrow and headline
         top = eb + body + hl + dk
         rows = kv_rows(opt['rows_after']) if opt.get('rows_after') else ''
         main = f'<div class="bd end">{rows}</div>'
@@ -485,6 +502,8 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
     ft = f'<div class="ft{" rule" if c.get("footer_rule") else ""}">{left}<div class="hn">{page["handle"]}</div></div>'
 
     center = ' center' if opt.get('correction') else ''
+    if fmt == 'reel':
+        center += ' reel'
     doc = (f'<!doctype html><html><head><meta charset="utf-8"><style>{css(W, H, fmt, th, acc, glow)}</style></head>'
            f'<body><div class="cv{center}"><div class="glow"></div>{hd}{top}{main}{ft}</div></body></html>')
     return doc, W, H
@@ -492,10 +511,110 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
 
 def out_path(spec: dict, idx: int, total: int) -> pathlib.Path:
     date = spec['date']
-    kind = 'posts' if spec.get('format', 'post') == 'post' else 'stories'
+    kind = {'post': 'posts', 'story': 'stories', 'reel': 'reels'}[spec.get('format', 'post')]
     suffix = f'-{idx:02d}' if total > 1 else ''
     return ROOT / kind / spec['page'] / date[:7] / f'{date}-{spec["slug"]}{suffix}.png'
 
+
+
+# ----------------------------------------------------------------- reels
+# A Reel is a list of slides (any template above, plus 'end'), each shown for `dur` seconds.
+# Every slide builds in: its blocks rise and fade in one after another, big numbers count up,
+# then it cuts to the next. Typographic only: no footage, no third-party video.
+
+ANIM_JS = r"""
+() => {
+  const rowSel = '.str,.kvr,.fxg,.rr,.sp,.ti,.ent,.score,.periods,.hb,.tally,.nxt,.quote';
+  const els = [];
+  const push = e => { if (e && !els.includes(e)) els.push(e); };
+  ['.hd','.eb','.bignum','.hl','.dk'].forEach(s => document.querySelectorAll(s).forEach(push));
+  const bd = document.querySelector('.bd');
+  if (bd) [...bd.children].forEach(ch => {
+    const rows = ch.matches(rowSel) ? [] : [...ch.querySelectorAll(rowSel)].filter(r => !r.parentElement.closest(rowSel) || r.parentElement === ch);
+    if (rows.length) rows.forEach(push); else push(ch);
+  });
+  document.querySelectorAll('.ft').forEach(push);
+  els.sort((a, b) => (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING) ? -1 : 1);
+  els.forEach((e, i) => { e.dataset.at = (0.05 + i * 0.11).toFixed(2); e.style.willChange = 'opacity, transform'; });
+  const counters = [...document.querySelectorAll('.num,.tval,.bignum')].filter(e => /^\d{1,4}$/.test(e.childNodes[0] && e.childNodes[0].nodeType === 3 ? e.childNodes[0].nodeValue.trim() : ''));
+  counters.forEach(e => { e.dataset.target = e.childNodes[0].nodeValue.trim(); });
+  const ease = x => 1 - Math.pow(1 - Math.max(0, Math.min(1, x)), 3);
+  window.__set = (t, dur) => {
+    els.forEach(e => { const p = ease((t - parseFloat(e.dataset.at)) / 0.42); e.style.opacity = p; e.style.transform = `translateY(${(1 - p) * 46}px)`; });
+    counters.forEach(e => { const host = e.closest('[data-at]'); const at = host ? parseFloat(host.dataset.at) : 0; const v = Math.round(parseInt(e.dataset.target) * ease((t - at) / 0.9)); e.childNodes[0].nodeValue = String(v); });
+    const out = Math.max(0, Math.min(1, (dur - t) / 0.18));
+    document.querySelector('.cv').style.opacity = out;
+  };
+  return {blocks: els.length, counters: counters.length};
+}
+"""
+
+
+def render_reel(spec: dict, sp: str, browser) -> tuple[list[str], list[str]]:
+    import shutil
+    import subprocess
+    import tempfile
+    fps = 30
+    slides = spec['slides']
+    tmpdir = pathlib.Path(tempfile.mkdtemp(prefix='reel-'))
+    problems: list[str] = []
+    frame = 0
+    cover_ms = None
+    total_dur = sum(float(s.get('dur', 3)) for s in slides)
+    if total_dur > 60:
+        problems.append(f'Reel is {total_dur:.0f}s: keep news Reels under 20s and explainers under 45s')
+    for i, slide in enumerate(slides, 1):
+        dur = float(slide.get('dur', 3.0))
+        doc, W, H = build(slide, spec, i, len(slides))
+        pg = browser.new_page(viewport={'width': W, 'height': H})
+        tmp = ROOT / 'build' / f'{spec["page"]}-{spec["slug"]}-reel-{i}.html'
+        tmp.parent.mkdir(exist_ok=True)
+        tmp.write_text(doc)
+        pg.goto(tmp.as_uri())
+        pg.evaluate('document.fonts.ready')
+        pg.wait_for_timeout(250)
+        res = pg.evaluate(FIT_JS)
+        problems.extend(f'slide {i}: {pr}' for pr in res['problems'])
+        pg.evaluate(ANIM_JS)
+        n = int(round(dur * fps))
+        for k in range(n):
+            t = k / fps
+            pg.evaluate(f'window.__set({t}, {dur})')
+            pg.screenshot(path=str(tmpdir / f'{frame:05d}.jpg'), type='jpeg', quality=92)
+            if i == 1 and cover_ms is None and t >= min(dur - 0.3, 1.6):
+                cover_ms = int(frame / fps * 1000)
+                pg.screenshot(path=str(tmpdir / 'cover.png'))
+            frame += 1
+        pg.close()
+    date = spec['date']
+    out = ROOT / 'reels' / spec['page'] / date[:7] / f'{date}-{spec["slug"]}.mp4'
+    cover = out.with_name(out.stem + '-cover.png')
+    out.parent.mkdir(parents=True, exist_ok=True)
+    cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-framerate', str(fps), '-i', str(tmpdir / '%05d.jpg'),
+           '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo', '-shortest',
+           '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', '18', '-preset', 'medium',
+           '-r', str(fps), '-c:a', 'aac', '-b:a', '96k', '-movflags', '+faststart', str(out)]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode:
+        problems.append('ffmpeg failed: ' + r.stderr[-300:])
+    if (tmpdir / 'cover.png').exists():
+        shutil.copy(tmpdir / 'cover.png', cover)
+    # contact sheet of 6 frames for the visual check
+    sheet = out.with_name(out.stem + '-frames.jpg')
+    picks = sorted(tmpdir.glob('[0-9]*.jpg'))
+    if picks:
+        idxs = [int(j * (len(picks) - 1) / 5) for j in range(6)]
+        from PIL import Image
+        thumbs = [Image.open(picks[j]).convert('RGB').resize((270, 480)) for j in idxs]
+        canvas = Image.new('RGB', (270 * 6 + 5 * 8, 480), '#888888')
+        for j, im in enumerate(thumbs):
+            canvas.paste(im, (j * 278, 0))
+        sheet.parent.mkdir(parents=True, exist_ok=True)
+        canvas.save(build_dir := (ROOT / 'build' / sheet.name))
+    shutil.rmtree(tmpdir, ignore_errors=True)
+    spec['reel_meta'] = {'seconds': round(frame / fps, 2), 'fps': fps, 'cover_ms': cover_ms or 0,
+                         'cover': str(cover.relative_to(ROOT)), 'frames_sheet': f'build/{sheet.name}'}
+    return [str(out.relative_to(ROOT)), str(cover.relative_to(ROOT))], problems
 
 def render(spec_paths: list[str]) -> int:
     from playwright.sync_api import sync_playwright
@@ -504,6 +623,17 @@ def render(spec_paths: list[str]) -> int:
         b = p.chromium.launch()
         for sp in spec_paths:
             spec = json.loads(pathlib.Path(sp).read_text())
+            if spec.get('format') == 'reel':
+                outputs, problems = render_reel(spec, sp, b)
+                worst = 2 if problems else worst
+                print(('FAIL ' if problems else 'ok   ') + outputs[0] + f"  ({spec['reel_meta']['seconds']}s, cover at {spec['reel_meta']['cover_ms']} ms, frames: {spec['reel_meta']['frames_sheet']})")
+                for pr in problems:
+                    print(f'     - {pr}')
+                spec['images'] = outputs
+                spec['render'] = {'ok': not problems, 'problems': problems}
+                spec.pop('visual_check', None)
+                pathlib.Path(sp).write_text(json.dumps(spec, ensure_ascii=False, indent=2) + '\n')
+                continue
             slides = spec.get('slides') or [{'template': spec['template'], 'card': spec['card'], **({'theme': spec['theme']} if 'theme' in spec else {})}]
             outputs, problems = [], []
             for i, slide in enumerate(slides, 1):

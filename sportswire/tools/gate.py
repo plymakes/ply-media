@@ -46,7 +46,7 @@ def numbers(text: str) -> set[str]:
 
 def card_text(spec: dict) -> str:
     skip = {'labels', 'columns', 'eyebrow_style', 'crest', 'home_crest', 'away_crest', 'headline_size', 'headline_lines',
-            'tone', 'theme', 'template', 'align', 'section', 'footer_rule', '_theme'}
+            'tone', 'theme', 'template', 'align', 'section', 'footer_rule', '_theme', 'dur'}
     parts: list[str] = []
 
     def walk(x, key=None):
@@ -115,6 +115,14 @@ def check(path: str) -> list[str]:
         for im in spec['images']:
             if not (ROOT / im).exists():
                 probs.append(f'image missing on disk: {im}')
+    if spec.get('format') == 'reel':
+        meta = spec.get('reel_meta') or {}
+        if not any(str(im).endswith('.mp4') for im in spec.get('images', [])):
+            probs.append('reel has no rendered .mp4')
+        if meta.get('seconds', 0) > 45:
+            probs.append(f'reel is {meta.get("seconds")}s (news Reels under 20s, explainers under 45s)')
+        if not (spec.get('visual_check') or {}).get('frames_checked'):
+            probs.append('look at the frames sheet and the cover, then set visual_check.frames_checked true')
     if r.get('problems'):
         probs.append('render reported layout problems: ' + '; '.join(r['problems']))
     if not (spec.get('visual_check') or {}).get('done'):
@@ -125,8 +133,8 @@ def check(path: str) -> list[str]:
     if len(cap) > 2200:
         probs.append(f'caption is {len(cap)} characters (max 2200)')
     tags = re.findall(r'#\w+', cap)
-    if len(tags) > 5:
-        probs.append(f'{len(tags)} hashtags (max 5)')
+    if len(tags) > 3:
+        probs.append(f'{len(tags)} hashtags (max 3: keyword-rich captions do the discovery work now)')
     if not re.search(r'^Source[s]?:', cap, re.M):
         probs.append('caption needs a "Source: ..." line')
     handles = json.loads((ROOT / 'sources/handles.json').read_text()).get('handles', {})

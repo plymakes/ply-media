@@ -1,0 +1,4 @@
+{
+  "help": "One entry per page per week, written by the weekly desk from Metricool analytics (brand ids in config.json). Baseline = first entry. Used for the campaign targets in CAMPAIGN.md section 2 and, later, the media kit.",
+  "weeks": []
+}
