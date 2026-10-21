@@ -41,8 +41,8 @@ Each page posts only its own country. A story with both a Lebanese and a Cypriot
 
 Full source maps: `sources/lebanon.md`, `sources/cyprus.md`.
 
-- **Tier 1, primary:** the federation, league or competition official site or verified official account (FIBA, AFC, UEFA, FIFA, CFA, FLBB, LFA, World Athletics, official results platforms), and the club's or athlete's own verified account for news about themselves (signings, injuries they announce, retirements).
-- **Tier 2, established media:** named news outlets with editorial standards (e.g. Cyprus Mail, in-cyprus/Philenews, CNA, L'Orient Today, Annahar, Arab News, NNA, Reuters, AP, AFP). Data services (Flashscore, Sofascore, Soccerway, Asia-Basket) count as tier 2 for scores and statistics only.
+- **Tier 1, primary:** the federation, league or competition official site or verified official account (FIBA, AFC, UEFA, FIFA, CFA, FLBB, LFA, World Athletics, official results platforms), and the club's or athlete's own verified account for news about themselves (signings, injuries they announce, retirements, **and the final score of their own match**). "Account" means any of the club's verified channels: Instagram, X, Facebook, Threads, YouTube or website. Official live-stats pages (FIBA LiveStats, Genius Sports, the organiser's live centre) are tier 1 for a score once they show the game as final.
+- **Tier 2, established media:** named news outlets with editorial standards (e.g. Cyprus Mail, in-cyprus/Philenews, CNA, L'Orient Today, Annahar, elsport, MTV Lebanon sport, Arab News, NNA, Reuters, AP, AFP). Data services (Flashscore, Sofascore, Soccerway, Asia-Basket) count as tier 2 for scores and statistics only.
 - **Tier 3, never enough alone:** fan pages, aggregator Instagram/X/Facebook accounts, forums, blogs, "reports say", transfer-rumour sites, Transfermarkt for transfer completion, AI-generated summaries, Wikipedia. Use them only as tips to go and find a tier 1 or 2 source.
 
 Two sources are **independent** only if neither one is citing or copying the other. Two outlets repeating the same club statement are one source (the statement), which is fine because a club statement about itself is tier 1.
@@ -61,7 +61,12 @@ Every name, club, competition, score, date, time, venue, number, record, ranking
 Write the source URL against every fact in the spec file (`specs/…json`, see section 7). A fact without a URL is removed from the post.
 
 ### 4.3 Specific checks
-- **Scores and results:** only once the match is officially over (full time, after extra time/penalties). Never post live or half-time scores as results. Check the score against the official competition page or the club's official account plus one data service.
+- **Scores and results:** only once the match is officially over (full time, after extra time/penalties). Never post live or half-time scores as results. Official websites are often hours behind, so don't wait for a write-up (Geoffry, 21 Oct 2026). A final score is confirmed by **any one** of:
+  - a full-time post from either club's verified account (any channel) or from the organiser/competition, or an official live-stats page showing it as final;
+  - a data service (Sofascore, Flashscore, Asia-Basket) showing the game as finished, plus one tier 2 outlet with the same score;
+  - two independent tier 2 outlets with the same score.
+  If any source you have seen gives a different score, wait for a second official source or the box score (the Lebanon24 "97-69" flash for a 98-69 semi-final, 20 Oct 2026). The winner and score only: scorers, stats and records still need their own sources. A link Geoffry sends in chat to an official post counts as that post.
+  Instagram blocks automated fetching: find club posts through X, Threads or Facebook (search results often show them), or read Instagram in the built-in browser on Geoffry's Mac when it is available.
 - **Names:** spell every person and club exactly as the governing body does (FIBA, AFC, UEFA, World Athletics, the federation). Use `sources/spelling.md`; add new names there with the source of the spelling. Never guess a transliteration.
 - **Dates and times:** convert to the page's local time (Lebanon: Asia/Beirut, Cyprus: Asia/Nicosia) and say "local time" when it matters.
 - **Records and "firsts":** only if the governing body or two tier 2 outlets explicitly call it a record or a first. Never infer one.
