@@ -184,6 +184,11 @@
           >
             {{- 'products.order_on_whatsapp' | t -}}
           </a>
+        {%- elsif section.settings.dm_label != blank -%}
+          {%- assign dm = settings.instagram_dm_url | default: settings.instagram_url -%}
+          {%- if dm != blank -%}
+            <a href="{{ dm }}" rel="noopener" target="_blank" style="font-weight: 500; align-self: flex-start;">{{ section.settings.dm_label }}</a>
+          {%- endif -%}
         {%- endif -%}
       </div>
 
@@ -295,8 +300,9 @@
   "class": "section-main-product",
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "In stock · leaves the same day" },
-    { "type": "checkbox", "id": "show_whatsapp", "label": "Show the WhatsApp order link", "default": true },
-    { "type": "text", "id": "promise", "label": "Promise line", "info": "Shown in the delivery box, e.g. the free reprint if something arrives damaged.", "default": "Arrived cracked? Send us a photo on WhatsApp within 48 hours and we print you a new one, free." },
+    { "type": "checkbox", "id": "show_whatsapp", "label": "Show the WhatsApp order link", "info": "Only shows when a WhatsApp number is set in Theme settings.", "default": true },
+    { "type": "text", "id": "dm_label", "label": "Instagram DM link text", "info": "Shown in the delivery box when there's no WhatsApp number.", "default": "Questions? Send us a DM on Instagram" },
+    { "type": "text", "id": "promise", "label": "Promise line", "info": "Shown in the delivery box, e.g. the free reprint if something arrives damaged.", "default": "Arrived cracked? Send us a photo by Instagram DM within 48 hours and we print you a new one, free." },
     { "type": "text", "id": "complementary_heading", "label": "Cross-sell heading", "default": "Complete the set" },
     { "type": "product_list", "id": "complementary", "label": "Cross-sell products", "info": "Used when a product has no Complete the set metafield. The product on the page is skipped. Colours follow the shopper's choice.", "limit": 4 }
   ],

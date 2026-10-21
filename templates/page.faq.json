@@ -30,7 +30,7 @@
           "type": "question",
           "settings": {
             "question": "How fast do you send my order?",
-            "answer": "<p>Pieces in stock leave the same day. We confirm your order by WhatsApp or phone first.</p>"
+            "answer": "<p>Pieces in stock leave the same day. We get in touch to confirm your order first.</p>"
           }
         },
         "q4": {
@@ -65,14 +65,14 @@
           "type": "question",
           "settings": {
             "question": "Can I get another colour or my own design?",
-            "answer": "<p>Not on the site yet. Message us on WhatsApp and we will tell you what we can make.</p>"
+            "answer": "<p>Not on the site yet. Send us a DM on Instagram and we'll tell you what we can make.</p>"
           }
         },
         "q9": {
           "type": "question",
           "settings": {
             "question": "What if something arrives damaged?",
-            "answer": "<p>Send us a photo on WhatsApp within 48 hours of delivery and we print you a new one, free. No need to send the broken piece back.</p>"
+            "answer": "<p>Send us a photo by Instagram DM within 48 hours of delivery and we print you a new one, free. No need to send the broken piece back.</p>"
           }
         }
       },
@@ -92,7 +92,8 @@
       "type": "whatsapp-band",
       "settings": {
         "heading": "Still have a question?",
-        "text": "Ask us on WhatsApp. We usually reply within the hour."
+        "text": "Send us a DM on Instagram. We usually reply the same day.",
+        "button": "Send us a DM"
       }
     }
   },

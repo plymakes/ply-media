@@ -55,7 +55,7 @@
     "title": "Your cart",
     "title_short": "Cart",
     "summary": "Order summary",
-    "error": "Something went wrong. Please try again, or order on WhatsApp.",
+    "error": "Something went wrong. Please try again, or send us a DM on Instagram.",
     "decrease": "One less {{ title }}",
     "increase": "One more {{ title }}",
     "remove": "Remove",

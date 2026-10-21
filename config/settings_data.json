@@ -20,7 +20,8 @@
     "offer_end_date": "2026-12-31",
     "offer_end_label": "Ends 31 Dec",
     "offer_terms": "One use per customer. Ends 31 Dec 2026. Unsubscribe anytime.",
-    "offer_in_announcement": true
+    "offer_in_announcement": true,
+    "instagram_dm_url": "https://ig.me/m/plymakes"
   },
   "presets": {
     "Default": {

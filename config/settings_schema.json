@@ -128,7 +128,7 @@
         "type": "text",
         "id": "whatsapp_number",
         "label": "WhatsApp number",
-        "info": "With country code, digits only, for example 96170123456."
+        "info": "With country code, digits only, for example 96170123456. Leave empty while WhatsApp is paused (since 21 Oct 2026): when empty, nothing on the site mentions WhatsApp and every button sends people to an Instagram DM."
       },
       {
         "type": "text",
@@ -150,6 +150,13 @@
         "type": "url",
         "id": "tiktok_url",
         "label": "TikTok"
+      },
+      {
+        "type": "text",
+        "id": "instagram_dm_url",
+        "label": "Instagram DM link",
+        "info": "Opens a DM to @plymakes in the Instagram app (Meta's official ig.me link). Used by every 'Send us a DM' button.",
+        "default": "https://ig.me/m/plymakes"
       }
     ]
   }

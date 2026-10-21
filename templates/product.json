@@ -10,7 +10,8 @@
           "quilt-vase",
           "tile-vase"
         ],
-        "promise": "Arrived cracked? Send us a photo on WhatsApp within 48 hours and we print you a new one, free."
+        "promise": "Arrived cracked? Send us a photo by Instagram DM within 48 hours and we print you a new one, free.",
+        "dm_label": "Questions? Send us a DM on Instagram"
       }
     },
     "faq": {
@@ -39,7 +40,7 @@
           "type": "question",
           "settings": {
             "question": "Something arrived damaged?",
-            "answer": "<p>Send us a photo on WhatsApp within 48 hours of delivery and we print you a new one, free. No need to send the broken piece back.</p>"
+            "answer": "<p>Send us a photo by Instagram DM within 48 hours of delivery and we print you a new one, free. No need to send the broken piece back.</p>"
           }
         },
         "q4": {

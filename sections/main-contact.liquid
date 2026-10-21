@@ -8,11 +8,12 @@
       {%- endif -%}
       <p>{{ section.settings.text }}</p>
       <div class="cluster">
-        {%- if wa != blank -%}
-          <a class="btn btn--dark" href="https://wa.me/{{ wa }}?text={{ settings.whatsapp_greeting | url_encode }}" rel="noopener" target="_blank">{{ 'general.order_on_whatsapp' | t }}</a>
+        {%- assign dm = settings.instagram_dm_url | default: settings.instagram_url -%}
+        {%- if dm != blank -%}
+          <a class="btn btn--dark" href="{{ dm }}" rel="noopener" target="_blank">{{ 'general.message_on_instagram' | t }}</a>
         {%- endif -%}
-        {%- if settings.instagram_url != blank -%}
-          <a class="btn btn--outline" href="{{ settings.instagram_url }}" rel="noopener" target="_blank">{{ 'general.message_on_instagram' | t }}</a>
+        {%- if wa != blank -%}
+          <a class="btn btn--outline" href="https://wa.me/{{ wa }}?text={{ settings.whatsapp_greeting | url_encode }}" rel="noopener" target="_blank">{{ 'general.order_on_whatsapp' | t }}</a>
         {%- endif -%}
       </div>
     </div>
@@ -52,7 +53,7 @@
   "tag": "div",
   "class": "section-main-contact",
   "settings": [
-    { "type": "textarea", "id": "text", "label": "Text", "default": "The quickest way to reach us is WhatsApp. You can also write to us here and we reply within a day." }
+    { "type": "textarea", "id": "text", "label": "Text", "default": "The quickest way to reach us is a DM on Instagram @plymakes. You can also write to us here and we reply within a day." }
   ]
 }
 {% endschema %}
