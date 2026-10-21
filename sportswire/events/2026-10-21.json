@@ -36,7 +36,7 @@
       "title": "Al Riyadi v Antonine, Shabab Al Ahli Dubai International Basketball Championship final",
       "start_local": null,
       "start_confirmed": false,
-      "start_note": "Lovin Dubai's 14 Oct schedule lists 9:15 pm UAE (8:15 pm Beirut); not repeated since, so still unconfirmed: don't print a time.",
+      "start_note": "Lovin Dubai's 14 Oct schedule lists 9:15 pm UAE (8:15 pm Beirut); not repeated since, so still unconfirmed: don't print a time. Al Riyadi's event page: 21 Oct, 8:30 pm (timezone not stated).",
       "expected_end_local": "2026-10-21T22:20+03:00",
       "venue": "Sheikh Saeed bin Maktoum Hall, Al Mamzar, Dubai",
       "result_sources": [
@@ -53,16 +53,25 @@
       },
       "result_desk": {
         "trigger_ids": [
-          "trig_015zvt2ADsFt2NuH6ziH2XvC"
+          "trig_015zvt2ADsFt2NuH6ziH2XvC",
+          "trig_01NF7E5EbqDc8LD2UkTu8hi7"
         ],
-        "next_run": "2026-10-21T22:35+03:00",
-        "how": "send_later into the SportsWire session"
+        "next_run": "2026-10-21T23:20+03:00",
+        "how": "send_later into the SportsWire session",
+        "attempts": [
+          {
+            "n": 1,
+            "at": "2026-10-21T22:37+03:00",
+            "outcome": "no final score published yet; follow-up queued"
+          }
+        ]
       },
       "result": {
         "status": "pending",
         "spec": null,
         "metricool_id": null
-      }
+      },
+      "semi_final_check": "Semi score 98-69 confirmed by riyadi.com, WAM syndication, Elsport, Al Jadeed, Beirut24; Lebanon24 flash said 97-69 (outlier). Preview stands."
     },
     {
       "id": "cy-fiba-europe-cup",
