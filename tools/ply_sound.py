@@ -8,7 +8,8 @@ soft brushes) gives Ply a recognisable sound; small effects land on the cuts (a 
 a soft swoosh on transitions, a chime on the end card, drips for Loom, a ting for Pleat, layer ticks for printing).
 
 Needs: apt-get install fluidsynth fluid-soundfont-gm ; pip install pretty_midi
-Usage:  python3 tools/ply_sound.py <reel-name> [...]   (names from REELS below, or "all")
+Usage:  python3 tools/ply_sound.py <reel-name> [...] [--keep-natural]   (names from REELS below, or "all";
+        --keep-natural mixes the clip's own sound, e.g. the printer or the tray click, over the music: use it for real footage)
         -> reels/<file>-sound.mp4 next to the silent original, then run tools/ply_check_reel.py on it.
 To add a new Reel: add an entry to REELS with its file, preset and cue times (seconds, from its animation code).
 """
@@ -133,7 +134,7 @@ def synth_fx(n_samples, events):
     return out
 
 
-def render(name):
+def render(name, keep_natural=False):
     src, _, _, _, _ = REELS[name]
     midi, fx, dur, loop = compose(name)
     with tempfile.TemporaryDirectory() as td:
@@ -156,14 +157,19 @@ def render(name):
         af = (f'highpass=f=45,lowpass=f=11500,aecho=0.8:0.6:60:0.18,acompressor=threshold=-20dB:ratio=2.5:attack=15:release=250,'
               f'loudnorm=I=-15:TP=-1.5:LRA=7,afade=t=in:d=0.04,afade=t=out:st={dur - fade_out:.2f}:d={fade_out}')
         out = ROOT / src.replace('.mp4', '-sound.mp4').replace('-v3-sound', '-sound')
-        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(ROOT / src), '-i', str(mix), '-map', '0:v:0', '-map', '1:a:0',
-                        '-c:v', 'copy', '-af', af, '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-t', f'{dur:.2f}',
+        if keep_natural:  # real clips: their own sound (printer hum, tray click) stays on top, music sits under it
+            fc = f'[1:a]volume=0.55[m];[0:a]aresample=48000,volume=1.0[n];[m][n]amix=inputs=2:duration=first:normalize=0,{af}[a]'
+            amap = ['-filter_complex', fc, '-map', '0:v:0', '-map', '[a]']
+        else:
+            amap = ['-map', '0:v:0', '-map', '1:a:0', '-af', af]
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(ROOT / src), '-i', str(mix), *amap,
+                        '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-t', f'{dur:.2f}',
                         '-movflags', '+faststart', '-map_metadata', '-1', str(out)], check=True)
         print(out.relative_to(ROOT))
         return out
 
 
 if __name__ == '__main__':
-    names = list(REELS) if sys.argv[1:] in ([], ['all']) else sys.argv[1:]
-    for nm in names:
-        render(nm)
+    args = [x for x in sys.argv[1:] if not x.startswith('--')]; keep = '--keep-natural' in sys.argv
+    for nm in (list(REELS) if args in ([], ['all']) else args):
+        render(nm, keep)
