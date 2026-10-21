@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-23",
+  "note": "Pre-filled on 21 Oct by the late morning desk from the Lebanon sweep. Leads only: the desk that builds a post re-verifies times on official sources.",
+  "events": [
+    {
+      "id": "lb-rlwc-tonga-lebanon",
+      "page": "lb",
+      "priority": "A",
+      "sport": "rugby league",
+      "title": "Tonga v Lebanon, Rugby League World Cup 2026, Pool B round 2",
+      "start_local": "2026-10-23T12:05+03:00",
+      "start_confirmed": false,
+      "start_note": "8:05pm AEDT per CommBank Stadium's event page (official venue) and Zero Tackle (09:05 UTC); confirm on the RLWC/NRL page before printing a time. Starts before 14:00 Beirut, so the preview goes out the evening before (Thu 22 Oct, 18:00).",
+      "expected_end_local": "2026-10-23T13:55+03:00",
+      "venue": "CommBank Stadium, Parramatta (Sydney)",
+      "result_sources": ["https://www.nrl.com/", "https://www.commbankstadium.com.au/events/rugby_league_world_cup_2026__tonga_v_lebanon", "https://www.zerotackle.com/tonga-lebanon-round-2-2026-mc10398218-238749/"],
+      "context": "Lebanon lost 42-18 to Papua New Guinea on 17 Oct in Port Moresby (NRL.com). Coach Michael Cheika; 23-man squad named 7 Oct (Zero Tackle, AAP).",
+      "preview": {"status": "none", "due": "2026-10-22T18:00+03:00"},
+      "result_desk": {"trigger_ids": []},
+      "result": {"status": "pending", "spec": null, "metricool_id": null}
+    },
+    {
+      "id": "lb-afccl-md3",
+      "page": "lb",
+      "priority": "B",
+      "sport": "football",
+      "title": "AFC Challenge League group stage, matchday 3: Al Arabi v Nejmeh (Group B, Tajikistan) and Ahal FK v Al Ansar (Group A, Bhutan)",
+      "start_local": null,
+      "start_confirmed": false,
+      "start_note": "Aggregator lists 14:00 (Nejmeh) and 15:00 Beirut (Ansar): unconfirmed. Matchday 2 results (20 Oct) were not yet confirmed by a tier-1/2 source at 12:00 on 21 Oct; confirm on the-afc.com before any roundup.",
+      "expected_end_local": "2026-10-23T17:00+03:00",
+      "result_sources": ["https://www.the-afc.com/", "https://www.annahar.com/sports/football"],
+      "preview": {"status": "none"},
+      "result_desk": {"trigger_ids": []},
+      "result": {"status": "pending", "spec": null, "metricool_id": null}
+    }
+  ]
+}
