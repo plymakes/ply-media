@@ -162,6 +162,42 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/738d1c5a7ffd59ee3ccd3bf445faf54a9fa9afdb/sportswire/posts/cy/2026-10/2026-10-21-fiba-europe-cup-aek-keravnos.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-21",
+      "slug": "riyadi-dubai-champions",
+      "story_key": "dubai-shabab-al-ahli-2026-final",
+      "light": "green",
+      "template": "result",
+      "headline": "al riyadi lift the *dubai* title.",
+      "caption_first_line": "Al Riyadi are champions of the Shabab Al Ahli International Basketball Championship in Dubai. 🏆",
+      "sources": [
+        "https://elsport.com/basketball/844208/",
+        "https://lebanon.basketball/calendar/fixtures-results/",
+        "https://www.fiba.basketball/en/news/meet-the-team-asia-represented-by-all-time-record-holders-al-riyadi-beirut",
+        "https://www.grandlb.com/sports-reports/162919/",
+        "https://www.grandlb.com/sports-reports/162996/",
+        "https://www.imlebanon.org/2026/10/21/riyadi-champions/",
+        "https://www.khalijiuwn24.com/1538247",
+        "https://www.riyadi.com/"
+      ],
+      "reshare": {
+        "mention": [
+          "alriyadiclub",
+          "flb_official"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-21/lb-riyadi-dubai-champions.json",
+      "logged_at": "2026-10-21T20:36:25+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-21T23:40:00+03:00",
+      "metricool_id": "402540472",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-8463660833011908054",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/fd2a1931a1e83db11fd7ebd973a443266ea583b9/sportswire/posts/lb/2026-10/2026-10-21-riyadi-dubai-champions.png"
+      ]
     }
   ]
 }

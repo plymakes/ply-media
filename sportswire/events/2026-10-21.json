@@ -63,13 +63,20 @@
             "n": 1,
             "at": "2026-10-21T22:37+03:00",
             "outcome": "no final score published yet; follow-up queued"
+          },
+          {
+            "n": 2,
+            "at": "2026-10-21T23:21+03:00",
+            "outcome": "final found (Grand Lebanon, IMLebanon, WAM via aggregator); two fact-check passes; scheduled 23:40"
           }
         ]
       },
       "result": {
-        "status": "pending",
-        "spec": null,
-        "metricool_id": null
+        "status": "posted",
+        "spec": "specs/2026-10-21/lb-riyadi-dubai-champions.json",
+        "metricool_id": 402540472,
+        "when": "2026-10-21T23:40+03:00",
+        "score": "Al Riyadi 95-76 Antonin"
       },
       "semi_final_check": "Semi score 98-69 confirmed by riyadi.com, WAM syndication, Elsport, Al Jadeed, Beirut24; Lebanon24 flash said 97-69 (outlier). Preview stands."
     },
