@@ -8,6 +8,33 @@
     "checked": "2026-10-19",
     "use": "editorial identification only"
   },
+  "ael": {
+    "name": "AEL Limassol",
+    "source_page": "https://en.wikipedia.org/wiki/AEL_Limassol",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/AEL_Limassol_logo.svg/1280px-AEL_Limassol_logo.svg.png",
+    "original_px": [
+      1280,
+      1280
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
+  "al-ahed": {
+    "name": "Al Ahed FC",
+    "source_page": "https://en.wikipedia.org/wiki/Al_Ahed_FC",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Al_Ahed_FC_logo_%282023%29.svg/1280px-Al_Ahed_FC_logo_%282023%29.svg.png",
+    "original_px": [
+      1280,
+      1666
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": false,
+    "use": "editorial identification only",
+    "note": "Commons file shows a black monogram; not confirmed as the club's current crest. Check against Al Ahed's own site/accounts before marking ok."
+  },
   "antranik": {
     "name": "Antranik",
     "source_page": "https://en.wikipedia.org/wiki/Antranik_Youth_Association",
@@ -18,7 +45,20 @@
     ],
     "via": "wikipedia infobox",
     "fetched": "2026-10-21",
-    "checked": false,
+    "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
+  "apoel": {
+    "name": "APOEL",
+    "source_page": "https://en.wikipedia.org/wiki/APOEL_FC",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/APOEL_%28logo_with_stars%29.svg/1280px-APOEL_%28logo_with_stars%29.svg.png",
+    "original_px": [
+      1133,
+      1536
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
     "use": "editorial identification only"
   },
   "barcelona": {
@@ -130,7 +170,7 @@
     ],
     "via": "wikipedia infobox",
     "fetched": "2026-10-21",
-    "checked": false,
+    "checked": "2026-10-21",
     "use": "editorial identification only"
   },
   "juventus": {
@@ -140,6 +180,19 @@
     "via": "Geoffry's brand kit (manual period, Aug–Sep 2026)",
     "fetched": "2026-10-19",
     "checked": "2026-10-19",
+    "use": "editorial identification only"
+  },
+  "kairat": {
+    "name": "Kairat",
+    "source_page": "https://en.wikipedia.org/wiki/FC_Kairat",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/en/thumb/0/0d/FC_Kairat_logo.svg/1280px-FC_Kairat_logo.svg.png",
+    "original_px": [
+      1280,
+      2353
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
     "use": "editorial identification only"
   },
   "lask": {
@@ -185,6 +238,19 @@
     "via": "Geoffry's brand kit (manual period, Aug–Sep 2026)",
     "fetched": "2026-10-19",
     "checked": "2026-10-19",
+    "use": "editorial identification only"
+  },
+  "nejmeh": {
+    "name": "Nejmeh SC",
+    "source_page": "https://en.wikipedia.org/wiki/Nejmeh_SC",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Nejmeh_Club_Beirut.png",
+    "original_px": [
+      498,
+      501
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
     "use": "editorial identification only"
   },
   "omonia": {

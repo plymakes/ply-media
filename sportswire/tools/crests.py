@@ -135,6 +135,27 @@ def wiki_logo(titles: list[str]) -> dict:
     return out
 
 
+def infobox_logo(title: str) -> str | None:
+    """First image in the article's infobox (club logos are usually non-free files, so not a 'page image')."""
+    import re
+    time.sleep(3)
+    d = json.loads(http(API.replace('/w/api.php', '/w/api.php') + '?' + urllib.parse.urlencode(
+        {'action': 'parse', 'format': 'json', 'formatversion': '2', 'page': title, 'prop': 'text', 'section': '0', 'redirects': '1'})))
+    html_ = (d.get('parse') or {}).get('text', '')
+    box = re.search(r'<table[^>]*class="[^"]*infobox.*?</table>', html_, re.S)
+    if not box:
+        return None
+    m = re.search(r'<img[^>]+src="(//upload\.wikimedia\.org/[^"]+)"', box.group(0))
+    if not m:
+        return None
+    src = 'https:' + m.group(1)
+    # thumb URL -> original file (non-free logos are stored small, so the original is the best we can get)
+    o = re.match(r'(https://upload\.wikimedia\.org/wikipedia/[^/]+)/thumb/(.+?)/[^/]+$', src)
+    if o and not o.group(2).lower().endswith('.svg'):
+        return f'{o.group(1)}/{o.group(2)}'
+    return src
+
+
 def svg_to_png(data: bytes) -> bytes:
     from playwright.sync_api import sync_playwright
     tmp = ROOT / 'build' / 'crest-tmp.svg'
@@ -181,6 +202,10 @@ def add(slug: str, name: str, *, wiki: str | None = None, url: str | None = None
     idx = load_index()
     if wiki and not info:
         info = wiki_logo([wiki]).get(wiki)
+    if wiki and info and not info.get('missing') and not info.get('image_url'):
+        img = infobox_logo(info.get('title') or wiki)  # non-free logos aren't page images; read the infobox
+        if img:
+            info = {**info, 'image_url': img}
     if wiki:
         if not info or info.get('missing') or not info.get('image_url'):
             print(f'  ✗ {slug}: no logo found on Wikipedia "{wiki}"')
