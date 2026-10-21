@@ -1,15 +1,16 @@
 # SportsWire runbook
 
-What each scheduled run does, step by step. The scheduled task's own instructions only say which desk to run; everything else lives here so it can be improved without touching the schedule.
+What each scheduled run does, step by step. The scheduled message only says which desk to run; everything else lives here so it can be improved without touching the schedule. Runs happen inside Geoffry's SportsWire session, queued with `send_later` (how and why: `schedule/README.md`).
 
 ## 0. Setup (every run)
 
-1. Call the `add_repo` tool (owner `plymakes`, repo `ply-media`, access `push`), then `git clone --depth 50 https://github.com/plymakes/ply-media && cd ply-media/sportswire`. SportsWire lives only in this `sportswire/` folder; everything outside it belongs to Ply and is never read, changed or committed by a SportsWire run. Run every command from inside `sportswire/`. If the clone or a push is refused, stop before scheduling anything and say so at the top of the brief.
-2. `python3 -c "import playwright"` (install with `pip install playwright --break-system-packages` only if that fails; Chromium is already in the image, never run `playwright install`).
+1. **Repo.** If `/home/claude/ply-media/sportswire` exists: `cd /home/claude/ply-media && git status --short` (commit or stash nothing outside `sportswire/`), then `git pull --rebase origin main && cd sportswire`. Otherwise call `add_repo` (owner `plymakes`, repo `ply-media`, access `push`; "already attached" is fine), then `git clone --depth 50 https://github.com/plymakes/ply-media /home/claude/ply-media && cd /home/claude/ply-media/sportswire`. SportsWire lives only in this `sportswire/` folder; everything outside it belongs to Ply and is never read, changed or committed by a SportsWire run. Run every command from inside `sportswire/`. If the clone or a push is refused, stop before scheduling anything and say so at the top of the brief.
+2. `python3 -c "import playwright, numpy, scipy" && ffmpeg -version | head -1` (install what's missing with `pip install playwright numpy scipy --break-system-packages`; Chromium is already in the image, never run `playwright install`).
 3. Read `config.json`, `PLAYBOOK.md`, `CAMPAIGN.md`, this week's `plans/<year>-W<week>.md` (ISO week), `brand/brand-guide.md`, `sources/lebanon.md`, `sources/cyprus.md`, `sources/spelling.md`, `corrections.md`, and `python3 tools/log.py recent --days 7`.
 4. Metricool: `getBrandSettings`, find each page's brand by `networksData.instagramData` (`sportswire.lb`, `sportswire.cy`). Write the ids into `config.json` if they are missing. A page whose brand or Instagram isn't connected is skipped, and the brief says so in one line.
 5. `getScheduledPosts` for both brands, today and tomorrow (each brand's own timezone), so nothing collides with what is already queued.
 6. `TaskCreate` a short task list for the run.
+7. **Top up the schedule** (`schedule/README.md`). `list_triggers`, then make sure every desk in the next 48 hours (morning 08:51, afternoon 15:50, evening 22:15, Beirut/Cyprus time) and the next Sunday weekly desk (11:52) has an enabled one-off task named as in that file. Create each missing one with `send_later` (`at` in UTC, converted with `Asia/Nicosia`; `initiation: "human_schedule"`; message = the matching `schedule/<desk>.txt`, verbatim). Never create duplicates; never use `create_trigger`. Do this first, before the desk's own work, so a run that fails later can't break the chain.
 
 ## 1. Morning desk (about 09:00)
 
@@ -20,7 +21,7 @@ What each scheduled run does, step by step. The scheduled task's own instruction
    - Carousels: `slides` with 4–7 cards, `end` slide last, for explainers, week-ahead and spotlights.
 3b. **Event calendar** (PLAYBOOK 6, Timing). Write or update `events/<today>.json` (format in section 5) with every A and B event for both pages today, plus tomorrow's events that start before about 14:00. For each event, confirm the date and start time on the official source (competition, federation or club page; convert to Beirut/Cyprus time). If the start time can't be confirmed, keep `start_confirmed: false` and never print a time on a card.
    - **Previews:** A/B events today get a preview in today's 10:00 or 12:30 slot (or inside the "Today" fixtures card/Story for B). Events tomorrow before about 14:00 get their preview tonight at 18:00. Never schedule a preview inside the 3 hours before the start.
-   - **Result desks:** for every A/B event today, create a one-off scheduled task with `create_trigger` (`run_once_at` = expected end + 35 minutes, in UTC; `initiation: "human_schedule"`; `notifications: {"push": true}`; name `SportsWire result: <date> <short event name>`; prompt = the "Result desk prompt" in section 4 with the event id filled in). Expected end: football start + 1 h 55 min, basketball start + 2 h 05 min, other sports from the official schedule. If the start time is unknown, use 22:00 Beirut/Cyprus. Group events of one competition that end within 45 minutes of each other into one desk (one roundup). At most 6 result desks a day across both pages. Write each `trigger_id` into the event.
+   - **Result desks:** for every A/B event today, queue a one-off result desk with `send_later` (`at` = expected end + 35 minutes, in UTC; `initiation: "human_schedule"`; `name`: `SportsWire result · <date> <short event name>`; message = `schedule/result.txt` with DATE, EVENT_ID and ATTEMPT filled in). Expected end: football start + 1 h 55 min, basketball start + 2 h 05 min, other sports from the official schedule. If the start time is unknown, use 22:00 Beirut/Cyprus. Group events of one competition that end within 45 minutes of each other into one desk (one roundup). At most 6 result desks a day across both pages. Write each returned `trigger_id` into the event. Result desks run in this session one after another, so if an evening desk is still running the result desk starts right after it.
 4. **Build each story** (subagents may build stories in parallel, one story each, but the fact-check in step 5 is always a different agent):
    - Gather sources; write every atomic fact with its URL(s) and tier into the spec (`specs/<date>/<page>-<slug>.json`, format in `tools/README.md`).
    - Choose the template and theme (alternate dark/light against the page's last post), write card text and caption in the house voice, alt text in `"alt"`.
@@ -65,17 +66,16 @@ Same as the morning desk, but only for results that are **final** today and **no
 
 ## 4. Result desk (one-off, per event)
 
-A result desk is a one-off scheduled task created by the morning or afternoon desk. Its job: post the result of one event (or one group of events) as soon as it is final and verified.
+A result desk is a one-off message into this session, queued with `send_later` by the morning or afternoon desk (never `create_trigger`). Its job: post the result of one event (or one group of events) as soon as it is final and verified.
 
 1. Setup as in section 0 (steps 1–5), but read only `config.json`, `PLAYBOOK.md`, `sources/spelling.md`, `sources/handles.json` and `events/<date>.json`.
 2. Find the event by id. If its result is already `posted`, stop.
-3. Check the official source for a **final** result (full time, after extra time/penalties). Live or half-time scores never count. If it's not final yet: create **one** follow-up result desk 40 minutes later (same prompt, attempt number + 1; at most 2 follow-ups), write its id into the event, and stop. After the last attempt, set the result to `handover` so the evening or next morning desk takes it.
+3. Check the official source for a **final** result (full time, after extra time/penalties). Live or half-time scores never count. If it's not final yet: queue **one** follow-up result desk 40 minutes later with `send_later` (same message, attempt number + 1; at most 2 follow-ups), write its id into the event, and stop. After the last attempt, set the result to `handover` so the evening or next morning desk takes it.
 4. Build the result post exactly as in section 1 steps 4–8: facts with sources, `result` card (or `roundup`), plus a result Reel for an A event we won or a historic one (every Reel has sound), independent fact-check, gate READY, publish.
 5. Schedule it in Metricool for **now + 3 minutes** (never in the past), `autoPublish: true` (or `draft: true` if AMBER or in review mode).
 6. Set the event's result to `posted` (with the spec path and Metricool id), log it in `content-log.json`, push. PushNotification: "Posted: <result> on <page>".
 
-**Result desk prompt** (the morning/afternoon desk fills in DATE, EVENT_ID, ATTEMPT):
-> You are a SportsWire result desk. Everything you need is in the `sportswire/` folder of the public repo https://github.com/plymakes/ply-media (the rest of the repo is Ply's; never touch it). First call add_repo (owner plymakes, repo ply-media, access push), clone, and follow sportswire/RUNBOOK.md section 4 for event EVENT_ID in sportswire/events/DATE.json, attempt ATTEMPT. Being late is fine, being wrong is not: post only a final result verified to PLAYBOOK section 4, after the independent fact-check and `python3 tools/gate.py` printing READY. Every Reel has sound. Finish with a one-line PushNotification and a one-line final message.
+**Result desk message:** `schedule/result.txt`, with DATE, EVENT_ID and ATTEMPT filled in.
 
 ## 5. Event calendar format
 

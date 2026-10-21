@@ -53,9 +53,10 @@
       },
       "result_desk": {
         "trigger_ids": [
-          "trig_01MRafqTcDgfxKwYU3PFcJNb"
+          "trig_015zvt2ADsFt2NuH6ziH2XvC"
         ],
-        "next_run": "2026-10-21T22:35+03:00"
+        "next_run": "2026-10-21T22:35+03:00",
+        "how": "send_later into the SportsWire session"
       },
       "result": {
         "status": "pending",
