@@ -11,8 +11,8 @@
         "show_whatsapp": true,
         "note": "Cash on delivery · Free delivery from $35",
         "arabic_line": "",
-        "image": "shopify://shop_images/ply-hero-quilt-set-green.jpg",
-        "image_product": "planter-vase-set",
+        "image": "shopify://shop_images/quilt-planter-small-green.jpg",
+        "image_product": "quilt-planter",
         "image_caption": "3D render · photos coming soon"
       }
     },
@@ -95,7 +95,7 @@
           "type": "point",
           "settings": {
             "title": "A hidden drip tray",
-            "text": "The water lands in a tray tucked under the skirt: about 70 ml on the medium pot, 45 ml on the small one."
+            "text": "The water lands in a tray tucked under the skirt that holds about 45 ml."
           }
         },
         "p3": {
@@ -111,16 +111,6 @@
         "p2",
         "p3"
       ]
-    },
-    "bundle": {
-      "type": "bundle",
-      "settings": {
-        "product": "planter-vase-set",
-        "eyebrow": "The planter and vase set",
-        "heading": "A medium planter and its matching vase.",
-        "text": "Pick a texture and a colour and we pack the two together. An easy housewarming gift.",
-        "price_note": "Save $2 · free delivery"
-      }
     },
     "motifs": {
       "type": "motifs",
@@ -223,7 +213,7 @@
           "type": "question",
           "settings": {
             "question": "Will my plant fit?",
-            "answer": "<p>The small planter takes a nursery pot up to about 8 cm, the medium one up to about 10.5 cm. You can also plant straight in.</p>"
+            "answer": "<p>The planter takes a nursery pot up to about 8 cm: succulents, small cacti and herbs fit well. You can also plant straight in.</p>"
           }
         },
         "q5": {
@@ -263,7 +253,6 @@
     "trust",
     "products",
     "drainage",
-    "bundle",
     "motifs",
     "steps",
     "faq",

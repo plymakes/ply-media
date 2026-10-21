@@ -5,11 +5,10 @@
       "settings": {
         "eyebrow": "In stock · leaves the same day",
         "show_whatsapp": true,
-        "complementary_heading": "Complete the set",
+        "complementary_heading": "Goes well with",
         "complementary": [
           "quilt-vase",
-          "tile-vase",
-          "planter-vase-set"
+          "tile-vase"
         ],
         "promise": "Arrived cracked? Send us a photo on WhatsApp within 48 hours and we print you a new one, free."
       }
