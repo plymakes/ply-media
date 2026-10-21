@@ -293,6 +293,19 @@
     "checked": "2026-10-21",
     "use": "editorial identification only"
   },
+  "sagesse": {
+    "name": "Sagesse SC",
+    "source_page": "https://en.wikipedia.org/wiki/Sagesse_SC",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Sagesse_SC_New_Logo.png",
+    "original_px": [
+      680,
+      244
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": false,
+    "use": "editorial identification only"
+  },
   "sint-truiden": {
     "name": "Sint Truiden",
     "source_page": null,
