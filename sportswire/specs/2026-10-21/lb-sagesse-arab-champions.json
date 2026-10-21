@@ -1,0 +1,290 @@
+{
+  "page": "lb",
+  "format": "reel",
+  "theme": "dark",
+  "date": "2026-10-21",
+  "event_date": "2026-10-20",
+  "slug": "sagesse-arab-champions",
+  "story_key": "arab-club-basketball-2026-final",
+  "light": "green",
+  "sound": {
+    "mood": "bright"
+  },
+  "slides": [
+    {
+      "template": "preview",
+      "dur": 2.4,
+      "card": {
+        "eyebrow": [
+          "Arab Club Championship",
+          "Final"
+        ],
+        "eyebrow_style": "outline",
+        "big": "3",
+        "headline": "sagesse are arab champions *for a third time*"
+      }
+    },
+    {
+      "template": "result",
+      "dur": 3.6,
+      "card": {
+        "eyebrow": [
+          "The final",
+          "Ghazir"
+        ],
+        "headline": "*84-75* over ahli aleppo",
+        "home": {
+          "name": "Sagesse",
+          "score": 84,
+          "label": "Lebanon"
+        },
+        "away": {
+          "name": "Ahli Aleppo",
+          "score": 75,
+          "label": "Syria"
+        },
+        "ours": "home",
+        "periods": {
+          "title": "Score",
+          "labels": [
+            "Q1",
+            "Half",
+            "Q3",
+            "Final"
+          ],
+          "home": [
+            26,
+            45,
+            67,
+            84
+          ],
+          "away": [
+            16,
+            35,
+            55,
+            75
+          ]
+        }
+      }
+    },
+    {
+      "template": "stats",
+      "dur": 3.0,
+      "card": {
+        "eyebrow": "The numbers",
+        "headline": "unbeaten. *8 from 8*",
+        "tiles": [
+          {
+            "value": "8",
+            "label": "wins from 8 games",
+            "sub": "no defeats all tournament"
+          },
+          {
+            "value": "27",
+            "label": "years since the last Arab title",
+            "sub": "after 1998 and 1999"
+          }
+        ]
+      }
+    },
+    {
+      "template": "news",
+      "dur": 3.0,
+      "card": {
+        "eyebrow": "The men who did it",
+        "headline": "mvp, top scorer, *coach*",
+        "align": "start",
+        "rows": [
+          {
+            "label": "Tournament MVP",
+            "value": "Ali Mezher"
+          },
+          {
+            "label": "Final top scorer",
+            "value": "Washington, 23"
+          },
+          {
+            "label": "Coach",
+            "value": "Joe Ghattas"
+          }
+        ]
+      }
+    },
+    {
+      "template": "end",
+      "dur": 2.0,
+      "card": {
+        "headline": "every lebanese result, *first*",
+        "deck": "Follow @sportswire.lb"
+      }
+    }
+  ],
+  "caption": "Sagesse are Arab champions for the third time, and the first time in 27 years. 🏆\n\n84-75 over Ahli Aleppo in Tuesday night's final at Ghazir, in front of about 4,000 fans. Sagesse led 45-35 at half-time and won all 8 of their games in the tournament.\n\nDeshawndre Washington led the scoring in the final with 23. Ali Mezher was named the tournament's MVP. Their previous Arab titles came in 1998 and 1999.\n\nWho was your player of the tournament? 🇱🇧\n\nSource: Annahar, MTV Lebanon\n@sagesseclubofcl @flb_official\n#SportsWireLB #LebaneseBasketball",
+  "alt": "Animated result video: Sagesse beat Ahli Aleppo 84-75 to win the Arab Club Basketball Championship for the third time, unbeaten in 8 games; Ali Mezher tournament MVP, Deshawndre Washington 23 points in the final, coach Joe Ghattas.",
+  "facts": [
+    {
+      "claim": "Sagesse beat Ahli Aleppo (Syria) 84-75 in the final of the 38th Arab Club Basketball Championship on Tuesday 20 October 2026 at Ghazir (Antoine Choueiri arena)",
+      "sources": [
+        {
+          "url": "https://www.annahar.com/sports/358828/الحكمة-اللبناني-يتوج-بلقب-البطولة-العربية-لكرة-السلة-بعد-فوزه-على-أهلي-حلب-السوري-في-النهائي",
+          "tier": 2,
+          "outlet": "Annahar"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1750251",
+          "tier": 2,
+          "outlet": "MTV Lebanon"
+        },
+        {
+          "url": "https://safiralchamal.com/2026/10/20/734575/",
+          "tier": 2,
+          "outlet": "Safir al-Chamal"
+        }
+      ]
+    },
+    {
+      "claim": "Running score Sagesse-Ahli Aleppo: 26-16 after Q1, 45-35 at half-time, 67-55 after Q3, 84-75 final",
+      "sources": [
+        {
+          "url": "https://www.annahar.com/sports/358828/",
+          "tier": 2,
+          "outlet": "Annahar"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1750251",
+          "tier": 2,
+          "outlet": "MTV Lebanon"
+        }
+      ]
+    },
+    {
+      "claim": "It is Sagesse's 3 rd (third) Arab club title; previous titles in 1998 and 1999; 27 years since the last one",
+      "sources": [
+        {
+          "url": "https://www.annahar.com/sports/358828/",
+          "tier": 2,
+          "outlet": "Annahar"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1750251",
+          "tier": 2,
+          "outlet": "MTV Lebanon"
+        }
+      ]
+    },
+    {
+      "claim": "Sagesse won all 8 of their 8 games in the tournament, no defeats (unbeaten)",
+      "sources": [
+        {
+          "url": "https://www.beirut24.org/2026/10/20/",
+          "tier": 2,
+          "outlet": "Beirut 24"
+        },
+        {
+          "url": "https://www.asia-basket.com/Arab-Club-Championships/basketball.aspx",
+          "tier": 2,
+          "outlet": "Asia-Basket (before the final: unbeaten, seeking an eighth straight win)"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1750251",
+          "tier": 2,
+          "outlet": "MTV Lebanon (first unbeaten run)"
+        }
+      ]
+    },
+    {
+      "claim": "Deshawndre Washington scored 23 points, top scorer in the final (spelling per FIBA)",
+      "sources": [
+        {
+          "url": "https://www.annahar.com/sports/358828/",
+          "tier": 2,
+          "outlet": "Annahar"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1750251",
+          "tier": 2,
+          "outlet": "MTV Lebanon"
+        },
+        {
+          "url": "https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news/group-b-preview-group-of-death",
+          "tier": 1,
+          "outlet": "FIBA (spelling)"
+        }
+      ]
+    },
+    {
+      "claim": "Ali Mezher was named the tournament MVP",
+      "sources": [
+        {
+          "url": "https://www.annahar.com/sports/358828/",
+          "tier": 2,
+          "outlet": "Annahar"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1750251",
+          "tier": 2,
+          "outlet": "MTV Lebanon"
+        }
+      ]
+    },
+    {
+      "claim": "Sagesse's coach is Joe Ghattas",
+      "sources": [
+        {
+          "url": "https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news/group-b-preview-group-of-death",
+          "tier": 1,
+          "outlet": "FIBA"
+        }
+      ]
+    },
+    {
+      "claim": "About 4,000 (4000) spectators attended the final",
+      "sources": [
+        {
+          "url": "https://www.annahar.com/sports/358828/",
+          "tier": 2,
+          "outlet": "Annahar"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1750251",
+          "tier": 2,
+          "outlet": "MTV Lebanon"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "sagesseclubofcl",
+      "flb_official"
+    ],
+    "collaborators": []
+  },
+  "reel_meta": {
+    "seconds": 14.0,
+    "fps": 30,
+    "cover_ms": 1600,
+    "sound": {
+      "bpm": 124.0,
+      "root_hz": 43.65,
+      "progression": [
+        0,
+        7,
+        9,
+        5
+      ],
+      "mood": "bright",
+      "mean_db": -13.6
+    },
+    "cover": "reels/lb/2026-10/2026-10-21-sagesse-arab-champions-cover.png",
+    "frames_sheet": "build/2026-10-21-sagesse-arab-champions-frames.jpg"
+  },
+  "images": [
+    "reels/lb/2026-10/2026-10-21-sagesse-arab-champions.mp4",
+    "reels/lb/2026-10/2026-10-21-sagesse-arab-champions-cover.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  }
+}
