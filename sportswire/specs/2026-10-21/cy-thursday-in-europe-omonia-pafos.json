@@ -217,5 +217,112 @@
   "render": {
     "ok": true,
     "problems": []
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-21T09:21:26+00:00",
+    "by": "independent agent (card text and caption only)",
+    "notes": "27 claims checked, all CONFIRMED against UEFA pages; UEFA's Pafos stats box shows 0 goals, a known inconsistency; the fixtures article and two papers give 3-1.",
+    "claims": [
+      {
+        "claim": "Thursday is 22 October 2026",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      },
+      {
+        "claim": "Pafos v Riga is a Conference League match, matchday 2",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+      },
+      {
+        "claim": "Pafos FC are at home",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/clubs/2609532--pafos/matches"
+      },
+      {
+        "claim": "Pafos v Riga kicks off 18:45 CET (summer time) = 19:45 Cyprus",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+      },
+      {
+        "claim": "Omonia v Benfica is Europa League matchday 3, Omonia at home",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      },
+      {
+        "claim": "Omonia v Benfica kicks off at the 21:00 CET default = 22:00 Cyprus",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      },
+      {
+        "claim": "Pafos open the night (earlier kick-off)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+      },
+      {
+        "claim": "Two Cypriot clubs in Europe on Thursday (no Cypriot club in Champions League MD3, played 20-21 Oct)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/"
+      },
+      {
+        "claim": "Matchday 1: Omonia 1-0 Celta",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      },
+      {
+        "claim": "Matchday 2: Celje 0-3 Omonia",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      },
+      {
+        "claim": "Two wins from two",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      },
+      {
+        "claim": "No goals conceded (4 scored, 0 conceded)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/clubs/50077--omonia/statistics/"
+      },
+      {
+        "claim": "6 points from 6",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      },
+      {
+        "claim": "Next: N.E.C. Nijmegen v Omonia, 5 Nov",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/clubs/52330--n-e-c/matches/"
+      },
+      {
+        "claim": "Matchday 1: Atalanta 3-1 Pafos FC (away)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+      },
+      {
+        "claim": "First home game of the league phase for Pafos",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/clubs/2609532--pafos/matches"
+      },
+      {
+        "claim": "Riga FC 1-1 Kairat Almaty (matchday 1)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+      },
+      {
+        "claim": "Next: Twente v Pafos FC, 5 Nov",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+      },
+      {
+        "claim": "Spellings: Pafos FC, Riga FC, Omonia, Benfica, Celta, Celje, N.E.C. Nijmegen, Atalanta, Kairat Almaty, Twente",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+      }
+    ]
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "All four slides read back against the spec: teams, matchdays, scores, times (19:45, 22:00), dates (5 Nov), deck text; nothing clipped."
   }
 }
