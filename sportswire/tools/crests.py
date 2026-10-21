@@ -145,10 +145,16 @@ def infobox_logo(title: str) -> str | None:
     box = re.search(r'<table[^>]*class="[^"]*infobox.*?</table>', html_, re.S)
     if not box:
         return None
-    m = re.search(r'<img[^>]+src="(//upload\.wikimedia\.org/[^"]+)"', box.group(0))
-    if not m:
+    src = None
+    for tag in re.findall(r'<img[^>]+>', box.group(0)):  # skip kit pieces, flags and icons: the logo is a real-sized image
+        s = re.search(r'src="(//upload\.wikimedia\.org/[^"]+)"', tag)
+        w = re.search(r'width="(\d+)"', tag)
+        if not s or (w and int(w.group(1)) < 80) or re.search(r'kit_|_kit|flag_of|icon|edit', s.group(1), re.I):
+            continue
+        src = 'https:' + s.group(1)
+        break
+    if not src:
         return None
-    src = 'https:' + m.group(1)
     # thumb URL -> original file (non-free logos are stored small, so the original is the best we can get)
     o = re.match(r'(https://upload\.wikimedia\.org/wikipedia/[^/]+)/thumb/(.+?)/[^/]+$', src)
     if o and not o.group(2).lower().endswith('.svg'):

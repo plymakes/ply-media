@@ -35,6 +35,19 @@
     "use": "editorial identification only",
     "note": "Commons file shows a black monogram; not confirmed as the club's current crest. Check against Al Ahed's own site/accounts before marking ok."
   },
+  "al-ansar": {
+    "name": "Al Ansar FC",
+    "source_page": "https://en.wikipedia.org/wiki/Al_Ansar_FC",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/f/fc/Alansar_logo.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled",
+    "original_px": [
+      160,
+      200
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
   "antranik": {
     "name": "Antranik",
     "source_page": "https://en.wikipedia.org/wiki/Antranik_Youth_Association",
@@ -133,6 +146,19 @@
     "checked": "2026-10-19",
     "use": "editorial identification only"
   },
+  "champville": {
+    "name": "Champville",
+    "source_page": "https://en.wikipedia.org/wiki/CS_Maristes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/a/a5/Champvillelogo.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled",
+    "original_px": [
+      130,
+      157
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
   "dinamo-city": {
     "name": "Dinamo City",
     "source_page": null,
@@ -158,6 +184,19 @@
     "via": "Geoffry's brand kit (manual period, Aug–Sep 2026)",
     "fetched": "2026-10-19",
     "checked": "2026-10-19",
+    "use": "editorial identification only"
+  },
+  "flbb": {
+    "name": "Lebanon (FLBB)",
+    "source_page": "https://en.wikipedia.org/wiki/Lebanon_men%27s_national_basketball_team",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/3/37/F%C3%A9d%C3%A9ration_Libanaise_de_Basketball_%28logo%29.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled",
+    "original_px": [
+      188,
+      186
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
     "use": "editorial identification only"
   },
   "homenetmen-beirut": {
@@ -189,6 +228,19 @@
     "original_px": [
       1280,
       2353
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
+  "krasava": {
+    "name": "Krasava",
+    "source_page": "https://en.wikipedia.org/wiki/Krasava_ENY_Ypsonas_FC",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/c/ca/Logo_of_Krasava_ENY_Ypsonas_FC.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled",
+    "original_px": [
+      139,
+      177
     ],
     "via": "wikipedia infobox",
     "fetched": "2026-10-21",
@@ -304,7 +356,8 @@
     "via": "wikipedia infobox",
     "fetched": "2026-10-21",
     "checked": false,
-    "use": "editorial identification only"
+    "use": "editorial identification only",
+    "note": "Wide wordmark from Wikipedia ('Sagesse Sports Club 1943'); too small to read in a crest tile. Replace with the square chevron mark from Sagesse's own channels, then mark ok."
   },
   "sint-truiden": {
     "name": "Sint Truiden",
@@ -313,6 +366,19 @@
     "via": "Geoffry's brand kit (manual period, Aug–Sep 2026)",
     "fetched": "2026-10-19",
     "checked": "2026-10-19",
+    "use": "editorial identification only"
+  },
+  "tadamon-sour": {
+    "name": "Tadamon Sour",
+    "source_page": "https://en.wikipedia.org/wiki/Tadamon_SC_Sour",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c6/Tadamon_Sour_logo.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled",
+    "original_px": [
+      158,
+      200
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": "2026-10-21",
     "use": "editorial identification only"
   },
   "viking": {
