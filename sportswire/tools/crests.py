@@ -95,6 +95,8 @@ def http(url: str, tries: int = 5) -> bytes:
         except urllib.error.HTTPError as e:
             if e.code in (429, 503) and i < tries - 1:
                 wait = int(e.headers.get('Retry-After') or 10) + 2 + i * 5
+                if wait > 150:  # a long block: skip this one now, a later run fills the gap
+                    raise RuntimeError(f'{urllib.parse.urlparse(url).netloc} asks us to wait {wait}s; skipped for now') from e
                 print(f'  rate-limited by {urllib.parse.urlparse(url).netloc}, waiting {wait}s', file=sys.stderr)
                 time.sleep(wait)
                 continue

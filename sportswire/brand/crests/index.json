@@ -8,6 +8,19 @@
     "checked": "2026-10-19",
     "use": "editorial identification only"
   },
+  "antranik": {
+    "name": "Antranik",
+    "source_page": "https://en.wikipedia.org/wiki/Antranik_Youth_Association",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/4/42/Antranik_logo.png",
+    "original_px": [
+      145,
+      197
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": false,
+    "use": "editorial identification only"
+  },
   "barcelona": {
     "name": "Barcelona",
     "source_page": null,
@@ -105,6 +118,19 @@
     "via": "Geoffry's brand kit (manual period, Aug–Sep 2026)",
     "fetched": "2026-10-19",
     "checked": "2026-10-19",
+    "use": "editorial identification only"
+  },
+  "homenetmen-beirut": {
+    "name": "Homenetmen",
+    "source_page": "https://en.wikipedia.org/wiki/Homenetmen_Beirut_(basketball)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Hmemlogo2019.png",
+    "original_px": [
+      447,
+      543
+    ],
+    "via": "wikipedia infobox",
+    "fetched": "2026-10-21",
+    "checked": false,
     "use": "editorial identification only"
   },
   "juventus": {
