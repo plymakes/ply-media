@@ -1,4 +1,75 @@
 {
   "help": "One entry per story the newsroom handled, newest last. status: scheduled | draft | published | killed | corrected. Killed entries keep the reason so the same dead end is not chased twice.",
-  "posts": []
+  "posts": [
+    {
+      "page": "lb",
+      "date": "2026-10-21",
+      "slug": "sagesse-arab-champions",
+      "story_key": "arab-club-basketball-2026-final",
+      "light": "green",
+      "template": "preview,result,stats,news,end",
+      "headline": "sagesse are arab champions *for a third time*",
+      "caption_first_line": "Sagesse are Arab champions for the third time, and the first time in 27 years. 🏆",
+      "sources": [
+        "https://safiralchamal.com/2026/10/20/734575/",
+        "https://www.annahar.com/sports/358828/",
+        "https://www.annahar.com/sports/358828/الحكمة-اللبناني-يتوج-بلقب-البطولة-العربية-لكرة-السلة-بعد-فوزه-على-أهلي-حلب-السوري-في-النهائي",
+        "https://www.asia-basket.com/Arab-Club-Championships/basketball.aspx",
+        "https://www.beirut24.org/2026/10/20/",
+        "https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news/group-b-preview-group-of-death",
+        "https://www.mtv.com.lb/news/1750251"
+      ],
+      "reshare": {
+        "mention": [
+          "sagesseclubofcl",
+          "flb_official"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-21/lb-sagesse-arab-champions.json",
+      "logged_at": "2026-10-21T08:09:33+00:00",
+      "status": "published",
+      "scheduled_for": "2026-10-21T09:40:00+03:00",
+      "metricool_id": "401822608",
+      "planner_url": null,
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/231c3ea/sportswire/reels/lb/2026-10/2026-10-21-sagesse-arab-champions.mp4"
+      ],
+      "notes": [
+        "2026-10-21T08:09:33+00:00 https://www.instagram.com/reel/DevyTmSlRcl/ (test post Geoffry asked for, 21 Oct)"
+      ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-21",
+      "slug": "dubai-final-preview",
+      "story_key": "dubai-shabab-al-ahli-2026-final-preview",
+      "light": "green",
+      "template": "news",
+      "headline": "an all-lebanese final in *dubai*",
+      "caption_first_line": "An all-Lebanese final in Dubai tonight: Al Riyadi v Antonine. 🏀",
+      "sources": [
+        "https://www.cairo24.com/2514525",
+        "https://www.grandlb.com/sports-reports/162919/",
+        "https://www.riyadi.com/event/al-riyadi-vs-antoine/",
+        "https://www.riyadi.com/event/shabab-al-ahli-vs-al-riyadi-3/",
+        "https://www.urdupoint.com/arabic/story/2273467.html"
+      ],
+      "reshare": {
+        "mention": [
+          "alriyadiclub"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-21/lb-dubai-final-preview.json",
+      "logged_at": "2026-10-21T08:09:33+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-21T11:15:00+03:00",
+      "metricool_id": "401830628",
+      "planner_url": null,
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/c0b69b7/sportswire/posts/lb/2026-10/2026-10-21-dubai-final-preview.png"
+      ]
+    }
+  ]
 }
