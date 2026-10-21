@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-22",
+  "note": "Pre-filled on 21 Oct by the late morning desk. The preview for both games went out on 21 Oct at 18:00 (carousel), so Thursday's desks only need result desks (and a Today Story if wanted).",
+  "events": [
+    {
+      "id": "cy-pafos-riga",
+      "page": "cy",
+      "priority": "A",
+      "sport": "football",
+      "title": "Pafos FC v Riga FC, UEFA Conference League league phase, matchday 2",
+      "start_local": "2026-10-22T19:45+03:00",
+      "start_confirmed": true,
+      "start_note": "UEFA fixtures page: 18:45 CET (central European summer time) = 19:45 Cyprus.",
+      "expected_end_local": "2026-10-22T21:40+03:00",
+      "venue": null,
+      "result_sources": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+      ],
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-21/cy-thursday-in-europe-omonia-pafos.json",
+        "when": "2026-10-21T18:00+03:00"
+      },
+      "result_desk": {
+        "trigger_ids": []
+      },
+      "result": {
+        "status": "pending",
+        "spec": null,
+        "metricool_id": null
+      }
+    },
+    {
+      "id": "cy-omonia-benfica",
+      "page": "cy",
+      "priority": "A",
+      "sport": "football",
+      "title": "Omonia v Benfica, UEFA Europa League league phase, matchday 3",
+      "start_local": "2026-10-22T22:00+03:00",
+      "start_confirmed": true,
+      "start_note": "UEFA page lists no time; its rule is 21:00 CET unless stated = 22:00 Cyprus (Flashscore: 20:00 Portugal, same).",
+      "expected_end_local": "2026-10-22T23:55+03:00",
+      "venue": null,
+      "result_sources": [
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      ],
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-21/cy-thursday-in-europe-omonia-pafos.json",
+        "when": "2026-10-21T18:00+03:00"
+      },
+      "result_desk": {
+        "trigger_ids": []
+      },
+      "result": {
+        "status": "pending",
+        "spec": null,
+        "metricool_id": null
+      }
+    }
+  ]
+}

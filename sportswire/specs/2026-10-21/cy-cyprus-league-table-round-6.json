@@ -1,0 +1,165 @@
+{
+  "page": "cy",
+  "format": "post",
+  "theme": "light",
+  "date": "2026-10-21",
+  "event_date": "2026-10-19",
+  "slug": "cyprus-league-table-round-6",
+  "story_key": "cy-league-table-2026-round-6",
+  "light": "green",
+  "template": "standings",
+  "card": {
+    "eyebrow": [
+      "Cyprus League",
+      "Table after six rounds"
+    ],
+    "headline": "*ael* on top after six.",
+    "deck": "Five wins from six for AEL Limassol. Omonia and Apollon are the only unbeaten sides.",
+    "columns": [
+      "W",
+      "D",
+      "L",
+      "PTS"
+    ],
+    "rows": [
+      {
+        "team": "AEL Limassol",
+        "values": [
+          5,
+          0,
+          1,
+          15
+        ],
+        "highlight": true
+      },
+      {
+        "team": "AEK Larnaca",
+        "values": [
+          4,
+          1,
+          1,
+          13
+        ]
+      },
+      {
+        "team": "Omonia",
+        "values": [
+          3,
+          3,
+          0,
+          12
+        ]
+      },
+      {
+        "team": "Apollon Limassol",
+        "values": [
+          3,
+          3,
+          0,
+          12
+        ]
+      },
+      {
+        "team": "Pafos FC",
+        "values": [
+          3,
+          2,
+          1,
+          11
+        ]
+      },
+      {
+        "team": "Aris Limassol",
+        "values": [
+          2,
+          3,
+          1,
+          9
+        ]
+      },
+      {
+        "team": "APOEL",
+        "values": [
+          2,
+          2,
+          2,
+          8
+        ]
+      },
+      {
+        "team": "Omonia 29M",
+        "values": [
+          2,
+          2,
+          2,
+          8
+        ]
+      }
+    ],
+    "footnote": "Top eight of 14. Every club has played six games."
+  },
+  "caption": "AEL Limassol lead the Cyprus League after six rounds: five wins from six and 15 points.\n\nAEK Larnaca are second on 13. Omonia and Apollon Limassol have 12 each and are the only unbeaten sides in the league. Pafos FC are fifth on 11, and APOEL seventh on 8.\n\nWho do you think finishes the year on top? 🇨🇾\n\nSource: Cyprus Football Association\n@ael_fc_official @cyprusfa_official\n#SportsWireCY #CyprusLeague",
+  "alt": "Cyprus League table after six rounds: 1 AEL Limassol 15 points (5 wins, 1 defeat), 2 AEK Larnaca 13, 3 Omonia 12 (unbeaten), 4 Apollon Limassol 12 (unbeaten), 5 Pafos FC 11, 6 Aris Limassol 9, 7 APOEL 8, 8 Omonia 29M 8.",
+  "facts": [
+    {
+      "claim": "Cyprus League by Stoiximan 2026/27 table (CFA): 1 AEL Limassol P6 W5 D0 L1 Pts15; 2 AEK Larnaca P6 W4 D1 L1 Pts13; 3 Omonia P6 W3 D3 L0 Pts12; 4 Apollon Limassol P6 W3 D3 L0 Pts12; 5 Pafos FC P6 W3 D2 L1 Pts11; 6 Aris Limassol P6 W2 D3 L1 Pts9; 7 APOEL P6 W2 D2 L2 Pts8; 8 Omonia 29M P6 W2 D2 L2 Pts8",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/Gr/competitions/68124755",
+          "tier": 1,
+          "outlet": "Cyprus Football Association",
+          "seen": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "claim": "All 14 clubs have played six games, so round 6 is complete (latest results 19 Oct: Omonia 2-2 Olympiakos, Pafos FC 0-0 APOEL)",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/Gr/competitions/68124755",
+          "tier": 1,
+          "outlet": "Cyprus Football Association",
+          "seen": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "claim": "Omonia and Apollon Limassol are the only clubs with no defeats (L=0); every other club has at least one",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/Gr/competitions/68124755",
+          "tier": 1,
+          "outlet": "Cyprus Football Association",
+          "seen": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "claim": "The league has 14 clubs",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/Gr/competitions/68124755",
+          "tier": 1,
+          "outlet": "Cyprus Football Association",
+          "seen": "2026-10-21"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "ael_fc_official",
+      "cyprusfa_official"
+    ],
+    "collaborators": []
+  },
+  "feature": false,
+  "sensitive_override": null,
+  "images": [
+    "posts/cy/2026-10/2026-10-21-cyprus-league-table-round-6.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  }
+}
