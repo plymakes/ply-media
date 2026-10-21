@@ -340,3 +340,36 @@ variant-picker { display: flex; flex-direction: column; gap: 18px; }
 /* Small tag on images that are renders, not photos */
 .hero__media, .bundle__media { position: relative; }
 .media-tag { position: absolute; inset-block-end: 10px; inset-inline-start: 10px; background: rgba(239, 234, 226, 0.92); color: var(--ink); border-radius: 999px; padding: 3px 10px; font-size: 12px; line-height: 18px; font-weight: 500; pointer-events: none; }
+
+/* Signup + First Layer offer (v2.3, 21 Oct 2026) */
+.signup { width: 100%; }
+.signup__offer { margin: 0; font-family: var(--font-serif); font-size: 22px; line-height: 1.25; font-weight: 500; }
+.signup__offer-end { font-family: var(--font-sans); font-size: 14px; font-weight: 500; color: var(--accent-text); white-space: nowrap; }
+.signup--dark .signup__offer { color: var(--bone); }
+.signup--dark .signup__offer-end { color: var(--accent-on-dark); }
+.signup__label { color: var(--muted); }
+.signup--dark .signup__label { color: var(--muted-on-dark); }
+.signup__terms { margin: 0; font-size: 12px; line-height: 1.45; color: var(--muted); }
+.signup--dark .signup__terms { color: var(--muted-on-dark); }
+.signup--light .newsletter input { background: var(--raised); color: var(--ink); border-color: var(--line-strong); }
+.signup--light .newsletter input::placeholder { color: var(--muted); }
+.signup--light .newsletter input:focus { border-color: var(--ink); outline: none; }
+.signup--dark .newsletter input:focus { border-color: var(--bone); outline: none; }
+.newsletter .btn { flex: 0 0 auto; min-height: 48px; }
+.signup__done-title { margin: 0; font-weight: 500; }
+.signup__note { margin: 0; color: var(--muted); }
+.signup--dark .signup__note { color: var(--muted-on-dark); }
+.offer-code { display: inline-flex; align-items: stretch; align-self: flex-start; border: 1.5px dashed var(--accent); border-radius: var(--radius-sm); background: var(--raised); overflow: hidden; }
+.offer-code__value { padding: 10px 16px; font-family: var(--font-sans); font-size: 20px; font-weight: 700; letter-spacing: 0.14em; color: var(--ink); user-select: all; }
+.offer-code__copy { border: 0; border-inline-start: 1px solid var(--line); background: transparent; padding: 0 16px; min-height: 48px; min-width: 76px; font-size: 14px; font-weight: 500; color: var(--accent-text); cursor: pointer; }
+.offer-code__copy:hover { background: var(--bone); color: var(--ink); }
+.signup--dark .offer-code { background: var(--ink-2); border-color: var(--accent-on-dark); }
+.signup--dark .offer-code__value { color: var(--bone); }
+.signup--dark .offer-code__copy { color: var(--accent-on-dark); border-inline-start-color: var(--ink-line); }
+.signup--dark .offer-code__copy:hover { background: var(--ink); color: var(--bone); }
+.signup__apply { align-self: flex-start; }
+.join-band__inner { align-items: center; }
+.join-band .label.muted { color: #7A3519; } /* deep terracotta: 4.9:1 on clay and sand */
+.band-clay .signup__offer-end, .band-sand .signup__offer-end { color: #7A3519; }
+.band-clay .signup__label, .band-clay .signup__terms, .band-clay .signup__note { color: #4F4A43; }
+.band-sand .signup__label, .band-sand .signup__terms, .band-sand .signup__note { color: #4F4A43; }

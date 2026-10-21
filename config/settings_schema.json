@@ -10,33 +10,147 @@
   {
     "name": "Brand",
     "settings": [
-      { "type": "image_picker", "id": "logo", "label": "Logo", "info": "Leave empty to use the Ply Makes signature." },
-      { "type": "image_picker", "id": "favicon", "label": "Favicon", "info": "Square, at least 64 × 64 px." }
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo",
+        "info": "Leave empty to use the Ply Makes signature."
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon",
+        "info": "Square, at least 64 × 64 px."
+      }
     ]
   },
   {
     "name": "Selling",
     "settings": [
-      { "type": "number", "id": "free_shipping_threshold", "label": "Free delivery from (dollars)", "info": "Match this to your shipping rates in Settings › Shipping and delivery.", "default": 35 },
-      { "type": "number", "id": "delivery_price", "label": "Delivery price (dollars)", "default": 5 },
-      { "type": "number", "id": "delivery_min_days", "label": "Fastest delivery (business days)", "default": 2 },
-      { "type": "number", "id": "delivery_max_days", "label": "Slowest delivery (business days)", "default": 4 },
-      { "type": "text", "id": "payment_note", "label": "How customers pay", "default": "Cash on delivery" },
-      { "type": "product_list", "id": "cart_upsell_products", "label": "Suggest in the cart", "info": "The first one that isn't in the cart is suggested.", "limit": 4 }
+      {
+        "type": "number",
+        "id": "free_shipping_threshold",
+        "label": "Free delivery from (dollars)",
+        "info": "Match this to your shipping rates in Settings › Shipping and delivery.",
+        "default": 35
+      },
+      {
+        "type": "number",
+        "id": "delivery_price",
+        "label": "Delivery price (dollars)",
+        "default": 5
+      },
+      {
+        "type": "number",
+        "id": "delivery_min_days",
+        "label": "Fastest delivery (business days)",
+        "default": 2
+      },
+      {
+        "type": "number",
+        "id": "delivery_max_days",
+        "label": "Slowest delivery (business days)",
+        "default": 4
+      },
+      {
+        "type": "text",
+        "id": "payment_note",
+        "label": "How customers pay",
+        "default": "Cash on delivery"
+      },
+      {
+        "type": "product_list",
+        "id": "cart_upsell_products",
+        "label": "Suggest in the cart",
+        "info": "The first one that isn't in the cart is suggested.",
+        "limit": 4
+      }
+    ]
+  },
+  {
+    "name": "Launch offer",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "The First Layer offer shown on the signup forms (password page, homepage band, footer) and the announcement bar. The code must match a discount you created in Discounts. After the end date the offer hides itself and the forms go back to a plain signup."
+      },
+      {
+        "type": "checkbox",
+        "id": "offer_enabled",
+        "label": "Show the offer",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "offer_title",
+        "label": "Offer",
+        "default": "10% off your first order"
+      },
+      {
+        "type": "text",
+        "id": "offer_code",
+        "label": "Discount code",
+        "info": "Exactly as created in Discounts.",
+        "default": "FIRSTLAYER"
+      },
+      {
+        "type": "text",
+        "id": "offer_end_date",
+        "label": "Last day (YYYY-MM-DD)",
+        "info": "Same as the discount's end date. Leave empty for no end date (then don't print one either).",
+        "default": "2026-12-31"
+      },
+      {
+        "type": "text",
+        "id": "offer_end_label",
+        "label": "End date as customers read it",
+        "default": "Ends 31 Dec"
+      },
+      {
+        "type": "text",
+        "id": "offer_terms",
+        "label": "Small print",
+        "default": "One use per customer. Ends 31 Dec 2026. Unsubscribe anytime."
+      },
+      {
+        "type": "checkbox",
+        "id": "offer_in_announcement",
+        "label": "Show the offer in the announcement bar",
+        "info": "Replaces the bar's text while the offer runs. Cash on delivery and free delivery still show in the trust bar and on product pages.",
+        "default": true
+      }
     ]
   },
   {
     "name": "WhatsApp",
     "settings": [
-      { "type": "text", "id": "whatsapp_number", "label": "WhatsApp number", "info": "With country code, digits only, for example 96170123456." },
-      { "type": "text", "id": "whatsapp_greeting", "label": "First words of the message", "default": "Hello Ply, I'd like to order" }
+      {
+        "type": "text",
+        "id": "whatsapp_number",
+        "label": "WhatsApp number",
+        "info": "With country code, digits only, for example 96170123456."
+      },
+      {
+        "type": "text",
+        "id": "whatsapp_greeting",
+        "label": "First words of the message",
+        "default": "Hello Ply, I'd like to order"
+      }
     ]
   },
   {
     "name": "Social",
     "settings": [
-      { "type": "url", "id": "instagram_url", "label": "Instagram" },
-      { "type": "url", "id": "tiktok_url", "label": "TikTok" }
+      {
+        "type": "url",
+        "id": "instagram_url",
+        "label": "Instagram"
+      },
+      {
+        "type": "url",
+        "id": "tiktok_url",
+        "label": "TikTok"
+      }
     ]
   }
 ]

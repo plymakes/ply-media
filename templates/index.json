@@ -246,6 +246,19 @@
         "heading": "Rather order by message?",
         "text": "Send us the piece, size and colour on WhatsApp and we take it from there."
       }
+    },
+    "join": {
+      "type": "join-list",
+      "settings": {
+        "background": "clay",
+        "kicker": "The First Layer",
+        "heading_offer": "10% off your first order.",
+        "text_offer": "Join the list for new pieces and restocks before everyone else, plus 10% off your first order. One email a month, no spam.",
+        "heading": "New pieces, first.",
+        "text": "Join the list for new pieces and restocks before everyone else. One email a month, no spam.",
+        "label": "Your email",
+        "button": "Join the list"
+      }
     }
   },
   "order": [
@@ -255,6 +268,7 @@
     "drainage",
     "motifs",
     "steps",
+    "join",
     "faq",
     "whatsapp"
   ]

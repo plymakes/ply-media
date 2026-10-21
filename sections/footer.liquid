@@ -15,29 +15,15 @@
         {%- if section.settings.arabic_line != blank -%}
           <p class="ar-line" lang="ar" dir="rtl" style="align-self: flex-start;">{{ section.settings.arabic_line }}</p>
         {%- endif -%}
-        {%- form 'customer', id: 'FooterNewsletter', class: 'stack' -%}
-          <input type="hidden" name="contact[tags]" value="newsletter">
-          <label class="label" for="FooterNewsletterEmail" style="color: var(--muted-on-dark);">
-            {{- section.settings.newsletter_heading -}}
-          </label>
-          <div class="newsletter">
-            <input
-              id="FooterNewsletterEmail"
-              type="email"
-              name="contact[email]"
-              required
-              autocomplete="email"
-              placeholder="{{ 'newsletter.placeholder' | t }}"
-            >
-            <button type="submit" class="btn btn--light">{{ 'newsletter.subscribe' | t }}</button>
-          </div>
-          {%- if form.posted_successfully? -%}
-            <p class="form-success" role="status">{{ 'newsletter.success' | t }}</p>
-          {%- endif -%}
-          {%- if form.errors -%}
-            <p class="form-error" role="alert" style="color: var(--accent-on-dark);">{{ form.errors | default_errors }}</p>
-          {%- endif -%}
-        {%- endform -%}
+        {%- render 'signup-form',
+          form_id: 'FooterNewsletter',
+          tone: 'dark',
+          tags: 'newsletter, footer',
+          label: section.settings.newsletter_heading,
+          button: section.settings.newsletter_button,
+          after_note: 'Use it at checkout.',
+          show_apply: true
+        -%}
       </div>
 
       {%- if section.settings.shop_menu != blank -%}
@@ -107,6 +93,12 @@
       "id": "newsletter_heading",
       "label": "Newsletter heading",
       "default": "New pieces, once a month"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_button",
+      "label": "Newsletter button",
+      "default": "Join"
     },
     {
       "type": "text",

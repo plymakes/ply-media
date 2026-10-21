@@ -1,0 +1,61 @@
+{%- comment -%} Homepage "Join the list" band with the First Layer offer (v2.3, 21 Oct 2026). {%- endcomment -%}
+{%- liquid
+  assign offer_on = false
+  if settings.offer_enabled and settings.offer_code != blank
+    assign today_num = 'now' | date: '%Y%m%d' | plus: 0
+    assign end_num = settings.offer_end_date | remove: '-' | strip | plus: 0
+    if end_num == 0 or today_num <= end_num
+      assign offer_on = true
+    endif
+  endif
+-%}
+<section class="join-band band-{{ section.settings.background }} section--tight" id="join">
+  <div class="container split join-band__inner">
+    <div class="stack" style="--stack-gap: 14px;">
+      <span class="label muted">{{ section.settings.kicker }}</span>
+      <h2 class="h2" style="font-size: clamp(32px, 4vw, 56px);">
+        {%- if offer_on -%}{{ section.settings.heading_offer }}{%- else -%}{{ section.settings.heading }}{%- endif -%}
+      </h2>
+      {%- if offer_on -%}
+        {%- if section.settings.text_offer != blank -%}<p class="lead" style="max-width: 32em;">{{ section.settings.text_offer }}</p>{%- endif -%}
+      {%- else -%}
+        {%- if section.settings.text != blank -%}<p class="lead" style="max-width: 32em;">{{ section.settings.text }}</p>{%- endif -%}
+      {%- endif -%}
+    </div>
+    <div>
+      {%- render 'signup-form',
+        form_id: 'JoinListNewsletter',
+        tone: 'light',
+        tags: 'newsletter, homepage',
+        label: section.settings.label,
+        button: section.settings.button,
+        after_note: 'Use it at checkout.',
+        show_apply: true
+      -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Join the list",
+  "tag": "div",
+  "class": "section-join-list",
+  "settings": [
+    { "type": "paragraph", "content": "The offer itself (text, code, end date) lives in Theme settings › Launch offer." },
+    { "type": "select", "id": "background", "label": "Background", "options": [
+      { "value": "clay", "label": "Clay" },
+      { "value": "sand", "label": "Sand" },
+      { "value": "raised", "label": "Light" }
+    ], "default": "clay" },
+    { "type": "text", "id": "kicker", "label": "Small label", "default": "The First Layer" },
+    { "type": "text", "id": "heading_offer", "label": "Heading while the offer runs", "default": "10% off your first order." },
+    { "type": "text", "id": "text_offer", "label": "Text while the offer runs", "default": "Join the list for new pieces and restocks before everyone else, plus 10% off your first order. One email a month, no spam." },
+    { "type": "text", "id": "heading", "label": "Heading after the offer ends", "default": "New pieces, first." },
+    { "type": "text", "id": "text", "label": "Text after the offer ends", "default": "Join the list for new pieces and restocks before everyone else. One email a month, no spam." },
+    { "type": "text", "id": "label", "label": "Email label after the offer ends", "default": "Your email" },
+    { "type": "text", "id": "button", "label": "Button", "default": "Join the list" }
+  ],
+  "presets": [{ "name": "Join the list" }]
+}
+{% endschema %}

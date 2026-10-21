@@ -1,10 +1,26 @@
-{%- if section.settings.text != blank -%}
+{%- liquid
+  assign bar_text = section.settings.text
+  assign bar_link = section.settings.link
+  if settings.offer_enabled and settings.offer_in_announcement and settings.offer_code != blank
+    assign today_num = 'now' | date: '%Y%m%d' | plus: 0
+    assign end_num = settings.offer_end_date | remove: '-' | strip | plus: 0
+    if end_num == 0 or today_num <= end_num
+      assign bar_text = settings.offer_title | append: ' · Join the list'
+      if template.name == 'index'
+        assign bar_link = '#JoinListNewsletter'
+      else
+        assign bar_link = '#FooterNewsletter'
+      endif
+    endif
+  endif
+-%}
+{%- if bar_text != blank -%}
   <div class="announcement" role="region" aria-label="{{ 'accessibility.announcement' | t }}">
     <p>
-      {%- if section.settings.link != blank -%}
-        <a href="{{ section.settings.link }}">{{ section.settings.text }}</a>
+      {%- if bar_link != blank -%}
+        <a href="{{ bar_link }}">{{ bar_text }}</a>
       {%- else -%}
-        {{ section.settings.text }}
+        {{ bar_text }}
       {%- endif -%}
     </p>
   </div>
@@ -19,6 +35,7 @@
       "type": "text",
       "id": "text",
       "label": "Text",
+      "info": "While the launch offer runs (Theme settings › Launch offer), the bar shows the offer instead.",
       "default": "Cash on delivery · Free delivery from $35"
     },
     {

@@ -1,0 +1,118 @@
+{%- comment -%}
+  Email signup with the First Layer offer (v2.3, 21 Oct 2026).
+  Used by the password page, the homepage "Join the list" band and the footer.
+
+  Params:
+    form_id      (required) unique id, also the anchor Shopify returns to after a signup
+    tone         'light' (bone background) or 'dark' (charcoal footer). Default 'light'
+    tags         customer tags, e.g. 'newsletter, prelaunch'
+    label        label text when no offer runs
+    button       button text
+    after_note   line under the code after a signup, e.g. "Use it at checkout."
+    show_apply   true to show the "Shop with 10% off" button after a signup (not on the password page)
+
+  The offer runs while: Theme settings › Launch offer › Show the offer is on, a code is set,
+  and today (store time zone) is on or before the last day. Otherwise this is a plain signup.
+{%- endcomment -%}
+{%- liquid
+  assign tone = tone | default: 'light'
+  assign offer_on = false
+  if settings.offer_enabled and settings.offer_code != blank
+    assign today_num = 'now' | date: '%Y%m%d' | plus: 0
+    assign end_num = settings.offer_end_date | remove: '-' | strip | plus: 0
+    if end_num == 0 or today_num <= end_num
+      assign offer_on = true
+    endif
+  endif
+  assign code = settings.offer_code | strip | upcase
+  assign all_tags = tags
+  if offer_on
+    assign all_tags = tags | append: ', first-layer'
+  endif
+-%}
+<div class="signup signup--{{ tone }}" data-signup>
+  {%- form 'customer', id: form_id, class: 'stack signup__form' -%}
+    <input type="hidden" name="contact[tags]" value="{{ all_tags }}">
+    {%- if form.posted_successfully? -%}
+      <div class="signup__done stack" style="--stack-gap: 12px;" role="status" data-signup-done>
+        {%- if offer_on -%}
+          <p class="signup__done-title">You're on the list. Here's your code:</p>
+          <div class="offer-code">
+            <span class="offer-code__value" data-code-value>{{ code }}</span>
+            <button type="button" class="offer-code__copy" data-copy-code="{{ code }}" aria-label="Copy the code {{ code }}">Copy</button>
+          </div>
+          <p class="small signup__note">{{ settings.offer_title }}. {% if after_note != blank %}{{ after_note }} {% endif %}{{ settings.offer_terms }}</p>
+          {%- if show_apply -%}
+            <a class="btn {% if tone == 'dark' %}btn--light{% else %}btn--accent{% endif %} signup__apply" href="{{ routes.root_url | append: '/discount/' | replace: '//', '/' }}{{ code | url_encode }}?redirect={{ routes.all_products_collection_url | url_encode }}">Shop with the code applied</a>
+          {%- endif -%}
+        {%- else -%}
+          <p class="signup__done-title">{{ 'newsletter.success' | t }}</p>
+        {%- endif -%}
+      </div>
+    {%- else -%}
+      {%- if offer_on -%}
+        <p class="signup__offer">
+          <span class="signup__offer-title">{{ settings.offer_title }}</span>
+          {%- if settings.offer_end_label != blank -%}<span class="signup__offer-end"> · {{ settings.offer_end_label }}</span>{%- endif -%}
+        </p>
+        <label class="small signup__label" for="{{ form_id }}-email">Join the list and we'll show you the code right away.</label>
+      {%- else -%}
+        <label class="label signup__label" for="{{ form_id }}-email">{{ label }}</label>
+      {%- endif -%}
+      <div class="newsletter">
+        <input
+          id="{{ form_id }}-email"
+          type="email"
+          name="contact[email]"
+          required
+          autocomplete="email"
+          inputmode="email"
+          spellcheck="false"
+          placeholder="{{ 'newsletter.placeholder' | t }}"
+          {% if form.errors %}aria-invalid="true" aria-describedby="{{ form_id }}-error"{% endif %}
+        >
+        <button type="submit" class="btn {% if tone == 'dark' %}btn--light{% else %}btn--dark{% endif %}">{{ button }}</button>
+      </div>
+      {%- if form.errors -%}
+        <p class="form-error" id="{{ form_id }}-error" role="alert">{{ form.errors | default_errors }}</p>
+      {%- endif -%}
+      {%- if offer_on and settings.offer_terms != blank -%}
+        <p class="signup__terms">{{ settings.offer_terms }}</p>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endform -%}
+</div>
+
+{%- comment -%} One small script per page: copy button, and only the submitted form shows the "done" state. {%- endcomment -%}
+<script>
+  (function () {
+    if (window.__plySignup) return;
+    window.__plySignup = true;
+    function ready(fn) { if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn); else fn(); }
+    ready(function () {
+      var hash = (location.hash || '').replace('#', '');
+      var done = document.querySelectorAll('[data-signup-done]');
+      if (hash && done.length > 1) {
+        done.forEach(function (el) {
+          var form = el.closest('form');
+          if (form && form.id !== hash) {
+            var wrap = el.closest('[data-signup]');
+            if (wrap) wrap.setAttribute('hidden', '');
+          }
+        });
+      }
+      document.addEventListener('click', function (e) {
+        var btn = e.target.closest('[data-copy-code]');
+        if (!btn) return;
+        var code = btn.getAttribute('data-copy-code');
+        function done() { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 2000); }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(code).then(done, function () {});
+        } else {
+          var r = document.createRange(); var v = btn.parentNode.querySelector('[data-code-value]');
+          if (v) { r.selectNodeContents(v); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }
+        }
+      });
+    });
+  })();
+</script>
