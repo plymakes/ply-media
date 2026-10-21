@@ -9,7 +9,8 @@
     label        label text when no offer runs
     button       button text
     after_note   line under the code after a signup, e.g. "Use it at checkout."
-    show_apply   true to show the "Shop with 10% off" button after a signup (not on the password page)
+    show_apply   true to show the "Shop with the code applied" button after a signup (not on the password page)
+    hide_offer_line  true when the surrounding section already names the offer in its heading (homepage band)
 
   The offer runs while: Theme settings › Launch offer › Show the offer is on, a code is set,
   and today (store time zone) is on or before the last day. Otherwise this is a plain signup.
@@ -51,10 +52,12 @@
       </div>
     {%- else -%}
       {%- if offer_on -%}
+        {%- unless hide_offer_line -%}
         <p class="signup__offer">
           <span class="signup__offer-title">{{ settings.offer_title }}</span>
           {%- if settings.offer_end_label != blank -%}<span class="signup__offer-end"> · {{ settings.offer_end_label }}</span>{%- endif -%}
         </p>
+        {%- endunless -%}
         <label class="small signup__label" for="{{ form_id }}-email">Join the list and we'll show you the code right away.</label>
       {%- else -%}
         <label class="label signup__label" for="{{ form_id }}-email">{{ label }}</label>

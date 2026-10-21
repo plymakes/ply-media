@@ -373,3 +373,7 @@ variant-picker { display: flex; flex-direction: column; gap: 18px; }
 .band-clay .signup__offer-end, .band-sand .signup__offer-end { color: #7A3519; }
 .band-clay .signup__label, .band-clay .signup__terms, .band-clay .signup__note { color: #4F4A43; }
 .band-sand .signup__label, .band-sand .signup__terms, .band-sand .signup__note { color: #4F4A43; }
+/* v2.3 fixes after preview: footer button text, full-width button on phones */
+.site-footer .signup--dark a.btn--light, .site-footer .signup--dark a.btn--light:hover { color: var(--ink); text-decoration: none; }
+.signup a.btn--accent, .signup a.btn--accent:hover { color: var(--on-accent); text-decoration: none; }
+@media (max-width: 520px) { .signup .newsletter .btn { flex: 1 1 100%; } .signup--dark .newsletter .btn { flex: 0 0 auto; } }
