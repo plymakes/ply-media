@@ -67,9 +67,13 @@
         "how": "send_later into the SportsWire session"
       },
       "result": {
-        "status": "pending",
-        "spec": null,
-        "metricool_id": null
+        "status": "posted",
+        "score": "Omonia 1-4 Benfica",
+        "spec": "specs/2026-10-22/cy-omonia-benfica-result.json",
+        "metricool_id": 403595381,
+        "when": "2026-10-23T00:39+03:00",
+        "attempts": 1,
+        "note": "Defeat, so a result card, no Reel."
       }
     }
   ]

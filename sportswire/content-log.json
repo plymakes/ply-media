@@ -357,6 +357,36 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/79f4635cd2e9d636890886adeb7d8f8f9f0cb9b4/sportswire/posts/cy/2026-10/2026-10-22-pafos-riga-result.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-22",
+      "slug": "omonia-benfica-result",
+      "story_key": "cy-uel-2026-md3-omonia-benfica",
+      "light": "green",
+      "template": "result",
+      "headline": "benfica end omonia's *perfect start*.",
+      "caption_first_line": "Benfica beat Omonia 4-1 at GSP in the Europa League, Omonia's first defeat of the league phase. ⚽",
+      "sources": [
+        "https://match.uefa.com/v5/matches?matchId=2050105",
+        "https://www.uefa.com/uefaeuropaleague/match/2050105--omonia-vs-benfica/",
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      ],
+      "reshare": {
+        "mention": [
+          "omonoiafootball"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-22/cy-omonia-benfica-result.json",
+      "logged_at": "2026-10-22T21:34:26+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-23T00:39+03:00",
+      "metricool_id": "403595381",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-7731180667433300516",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/a694fe34d386302b9e69c4f99a94be72224b91a7/sportswire/posts/cy/2026-10/2026-10-22-omonia-benfica-result.png"
+      ]
     }
   ]
 }

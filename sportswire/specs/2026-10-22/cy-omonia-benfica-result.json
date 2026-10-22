@@ -140,5 +140,11 @@
       }
     ],
     "notes": "All 16 claims CONFIRMED."
+  },
+  "metricool": {
+    "id": 403595381,
+    "when": "2026-10-23T00:39:00+03:00",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-7731180667433300516",
+    "image": "https://raw.githubusercontent.com/plymakes/ply-media/a694fe34d386302b9e69c4f99a94be72224b91a7/sportswire/posts/cy/2026-10/2026-10-22-omonia-benfica-result.png"
   }
 }
