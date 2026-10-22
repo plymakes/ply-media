@@ -256,6 +256,42 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/11bd90522078aef5d1b2924a88eeaf5342bff6c1/sportswire/posts/lb/2026-10/2026-10-22-rlwc-tonga-lebanon-preview.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-22",
+      "slug": "tziortzis-euronascar-season",
+      "story_key": "cy-tziortzis-euronascar-2026-season",
+      "light": "green",
+      "template": "spotlight",
+      "headline": "*tziortzis* ends fifth in euronascar open.",
+      "caption_first_line": "Vladimiros Tziortzis has finished fifth in the 2026 EuroNASCAR OPEN standings. 🏁",
+      "sources": [
+        "https://cyprus-mail.com/2026/09/21/tziortzis-eyes-title-after-nascar-european-championship-semi-finals",
+        "https://cyprus-mail.com/2026/10/20/impressive-tziortzis-finishes-third-in-european-nascar-championship",
+        "https://speedwaydigest.com/index.php/news/racing-news/894270-thomas-toffel-crowned-2026-nascar-euro-series-open-champion-at-circuit-zolder/",
+        "https://worldofeuronascar.com/2026/04/06/vladimiros-tziortzis-announces-2026-euronascar-double-duty-campaign/",
+        "https://worldofeuronascar.com/2026/09/22/nascar-gp-italy-raphael-lessard-wins-caution-interrupted-open-race/",
+        "https://www.en.politis.com.cy/news/sports/1007833/tziortzis-secures-podium-and-valuable-points-in-france",
+        "https://www.nascar.eu/2026/10/14/welcome-to-the-finals-at-circuit-zolder-its-time-to-crown-the-nascar-euro-series-champions/"
+      ],
+      "reshare": {
+        "mention": [
+          "vladimirostziortzis"
+        ],
+        "collaborators": [
+          "vladimirostziortzis"
+        ]
+      },
+      "spec": "specs/2026-10-22/cy-tziortzis-euronascar-season.json",
+      "logged_at": "2026-10-22T06:25:48+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-22T10:00:00+03:00",
+      "metricool_id": "402831643",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-3021844943786455238",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/4f4aaeb5aa0706225455e04a4abbbff68ea3dfa3/sportswire/posts/cy/2026-10/2026-10-22-tziortzis-euronascar-season.png"
+      ]
     }
   ]
 }
