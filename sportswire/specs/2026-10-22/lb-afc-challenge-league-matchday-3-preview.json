@@ -1,0 +1,118 @@
+{
+  "page": "lb",
+  "format": "post",
+  "theme": "light",
+  "date": "2026-10-22",
+  "event_date": "2026-10-23",
+  "slug": "afc-challenge-league-matchday-3-preview",
+  "story_key": "lb-afccl-2026-matchday-3-preview",
+  "light": "green",
+  "template": "fixtures",
+  "card": {
+    "eyebrow": [
+      "AFC Challenge League",
+      "Group stage, matchday 3"
+    ],
+    "headline": "*al ansar* and nejmeh go again on friday.",
+    "deck": "Al Ansar have won both games in Group A. Nejmeh beat Istiklol, then lost 2-1 to Homs Al Fidaa in Group B.",
+    "groups": [
+      {
+        "label": "Group B · Hisor, Tajikistan",
+        "items": [
+          {
+            "home": "Al Arabi",
+            "away": "Nejmeh",
+            "time": "14:00",
+            "note": "Nejmeh: 3 points, 2nd in the group"
+          }
+        ]
+      },
+      {
+        "label": "Group A · Thimphu, Bhutan",
+        "items": [
+          {
+            "home": "Ahal FK",
+            "away": "Al Ansar",
+            "time": "15:00",
+            "note": "Al Ansar: 6 points, top of the group"
+          }
+        ]
+      }
+    ],
+    "footnote": "Friday 23 October · Beirut time"
+  },
+  "caption": "Two Lebanese clubs, one more group game each in the AFC Challenge League on Friday. ⚽\n\nAl Ansar have won both of their Group A games in Bhutan: 2-0 against Al Ittihad Ahli of Aleppo and 2-1 against Paro, with El Hadji Malick Tall scoring twice. They face Ahal FK at 15:00.\n\nNejmeh opened Group B in Tajikistan with a 1-0 win over Istiklol, then lost 2-1 to Homs Al Fidaa. They play Al Arabi at 14:00.\n\nBoth kick-offs are Beirut time. Who's your pick to score on Friday? 🇱🇧\n\nSource: AFC\n@nejmeh_sc\n#SportsWireLB #LebaneseFootball",
+  "alt": "AFC Challenge League matchday 3, Friday 23 October, Beirut time: Al Arabi v Nejmeh at 14:00 in Hisor, Tajikistan (Nejmeh 3 points, 2nd in Group B); Ahal FK v Al Ansar at 15:00 in Thimphu, Bhutan (Al Ansar 6 points, top of Group A).",
+  "facts": [
+    {
+      "claim": "Group A (Changlimithang Stadium, Thimphu, Bhutan): Al Ansar 2-0 Al Ittihad Ahli of Aleppo (Sat 17 Oct; Khalil Bader, Nader Matar) and Paro 1-2 Al Ansar (Tue 20 Oct; El Hadji Malick Tall 2 goals); Al Ansar 6 points, top of Group A",
+      "sources": [
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-al-ansar-fc-lbn-2-0-al-ittihad-ahli-of-aleppo-sc-syr",
+          "tier": 1,
+          "outlet": "AFC"
+        },
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-paro-fc-bhu-1-2-al-ansar-fc-lbn",
+          "tier": 1,
+          "outlet": "AFC"
+        },
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league/fixtures__standings.html",
+          "tier": 1,
+          "outlet": "AFC standings"
+        }
+      ]
+    },
+    {
+      "claim": "Group B (Hisor Central Stadium, Hisor, Tajikistan): Nejmeh 1-0 FC Istiklol (Sat 17 Oct) and Homs Al Fidaa 2-1 Nejmeh (Tue 20 Oct); Nejmeh 3 points, 2nd in Group B (ahead of Istiklol on head-to-head)",
+      "sources": [
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-nejmeh-sc-lbn-1-0-fc-istiklol-tjk",
+          "tier": 1,
+          "outlet": "AFC"
+        },
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-homs-al-fidaa-sc-syr-x-x-nejmeh-sc-1",
+          "tier": 1,
+          "outlet": "AFC"
+        },
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league/fixtures__standings.html",
+          "tier": 1,
+          "outlet": "AFC standings"
+        }
+      ]
+    },
+    {
+      "claim": "Matchday 3, Friday 23 October 2026: Al Arabi v Nejmeh at 14:00 Beirut (16:00 local, Hisor) and Ahal FK v Al Ansar at 15:00 Beirut (18:00 local, Thimphu)",
+      "sources": [
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league/fixtures__standings.html",
+          "tier": 1,
+          "outlet": "AFC fixtures (UTC times)"
+        },
+        {
+          "url": "https://www.annahar.com/sports/358345/الموعد-والقنوات-الناقلة-لمباراة-حمص-الفدا-والنجمة-في-التحدي-السيوي",
+          "tier": 2,
+          "outlet": "Annahar (time check)"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "nejmeh_sc"
+    ],
+    "collaborators": []
+  },
+  "feature": false,
+  "sensitive_override": null,
+  "images": [
+    "posts/lb/2026-10/2026-10-22-afc-challenge-league-matchday-3-preview.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  }
+}
