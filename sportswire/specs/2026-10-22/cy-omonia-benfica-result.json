@@ -1,0 +1,106 @@
+{
+  "page": "cy",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-10-22",
+  "event_date": "2026-10-22",
+  "slug": "omonia-benfica-result",
+  "story_key": "cy-uel-2026-md3-omonia-benfica",
+  "light": "green",
+  "template": "result",
+  "card": {
+    "eyebrow": [
+      "Europa League",
+      "League phase, matchday 3"
+    ],
+    "headline": "benfica end omonia's *perfect start*.",
+    "home": {
+      "name": "Omonia",
+      "score": 1,
+      "crest": "omonia"
+    },
+    "away": {
+      "name": "Benfica",
+      "score": 4,
+      "crest": "benfica"
+    },
+    "ours": "home",
+    "status": [
+      "Full time",
+      "GSP, Nicosia"
+    ],
+    "highlight": {
+      "big": "42'",
+      "text": "Andronikos Kakoullis levelled before half-time. Benfica scored 3 more after the break."
+    },
+    "footnote": "Omonia: 6 points from 3 games.\nNext: N.E.C. Nijmegen v Omonia, Thursday 5 November."
+  },
+  "caption": "Benfica beat Omonia 4-1 at GSP in the Europa League, Omonia's first defeat of the league phase. ⚽\n\nBenfica went ahead through an own goal on 14 minutes, and Andronikos Kakoullis equalised on 42. After the break, Vangelis Pavlidis, Fredrik Aursnes and Gianluca Prestianni scored for the visitors.\n\nOmonia still have 6 points from 3 games, after wins over Celta and Celje. Next up: N.E.C. Nijmegen away on Thursday 5 November.\n\nWhat did you make of it? 🇨🇾\n\nSource: UEFA\n@omonoiafootball\n#SportsWireCY #EuropaLeague",
+  "alt": "Result card: UEFA Europa League league phase, matchday 3, at GSP in Nicosia. Omonia 1, Benfica 4, full time. Andronikos Kakoullis equalised for Omonia on 42 minutes before Benfica scored 3 more after half-time. Omonia have 6 points from 3 games; next is N.E.C. Nijmegen v Omonia on Thursday 5 November.",
+  "facts": [
+    {
+      "claim": "Omonia 1-4 Benfica, UEFA Europa League league phase, Matchday 3, Thursday 22 October 2026, at GSP, Nicosia; status FINISHED (full time 20:54 UTC); Omonia at home",
+      "sources": [
+        {
+          "url": "https://match.uefa.com/v5/matches?matchId=2050105",
+          "tier": 1,
+          "outlet": "UEFA match data"
+        },
+        {
+          "url": "https://www.uefa.com/uefaeuropaleague/match/2050105--omonia-vs-benfica/",
+          "tier": 1,
+          "outlet": "UEFA match page"
+        }
+      ]
+    },
+    {
+      "claim": "Goals: Loïc Négo own goal 14 minutes (for Benfica); Andronikos Kakoullis (Omonia) 42 minutes, so 1-1 at half-time; Vangelis Pavlidis 49, Fredrik Aursnes 76, Gianluca Prestianni 85 for Benfica = 3 goals after the break",
+      "sources": [
+        {
+          "url": "https://match.uefa.com/v5/matches?matchId=2050105",
+          "tier": 1,
+          "outlet": "UEFA match data"
+        }
+      ]
+    },
+    {
+      "claim": "Omonia's earlier results: matchday 1 Omonia 1-0 Celta, matchday 2 Celje 0-3 Omonia; so 2 wins and 6 points before tonight, 6 points from 3 games after, and tonight is their first league-phase defeat",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "tier": 1,
+          "outlet": "UEFA fixtures and results"
+        }
+      ]
+    },
+    {
+      "claim": "Omonia's matchday 4: N.E.C. Nijmegen v Omonia, Thursday 5 November 2026 (away)",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "tier": 1,
+          "outlet": "UEFA fixtures and results"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "omonoiafootball"
+    ],
+    "collaborators": []
+  },
+  "feature": false,
+  "sensitive_override": null,
+  "images": [
+    "posts/cy/2026-10/2026-10-22-omonia-benfica-result.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Omonia 1 (shamrock crest) v Benfica 4 (eagle crest), correct sides; 42' highlight; footnote readable; nothing clipped."
+  }
+}
