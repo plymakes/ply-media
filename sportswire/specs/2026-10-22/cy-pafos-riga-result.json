@@ -117,5 +117,43 @@
   "visual_check": {
     "done": true,
     "notes": "Score 1-1, Pafos FC crest on Pafos, Riga FC lion crest (UEFA logo) on Riga; 76' highlight, names spelled per UEFA; footnote readable; nothing clipped."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-22T22:25+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "Conference League league phase, matchday 2",
+        "verdict": "CONFIRMED",
+        "url": "https://match.uefa.com/v5/matches?matchId=2050332"
+      },
+      {
+        "claim": "Pafos FC 1-1 Riga FC, Pafos at home, FINISHED, Thu 22 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://match.uefa.com/v5/matches?matchId=2050332"
+      },
+      {
+        "claim": "Caio Ferreira 67', Biel 76' (9 minutes apart), UEFA spellings",
+        "verdict": "CONFIRMED",
+        "url": "https://match.uefa.com/v5/matches?matchId=2050332"
+      },
+      {
+        "claim": "Matchday 1: Atalanta 3-1 Pafos FC (first point of the league phase)",
+        "verdict": "CONFIRMED",
+        "url": "https://match.uefa.com/v5/matches?matchId=2050309"
+      },
+      {
+        "claim": "Next: Twente v Pafos FC, Thursday 5 November",
+        "verdict": "CONFIRMED",
+        "url": "https://match.uefa.com/v5/matches?matchId=2050354"
+      },
+      {
+        "claim": "Cross-check of score, scorers and minutes",
+        "verdict": "CONFIRMED",
+        "url": "https://www.t-online.de/sport/live-ticker/fussball/uefa-conference-league/sdc_fm-62595/paphos-riga-fc-uefa-conference-league-im-liveticker.html"
+      }
+    ],
+    "notes": "All 12 claims CONFIRMED. Venue left off (UEFA: Limassol Stadium, Limassol)."
   }
 }
