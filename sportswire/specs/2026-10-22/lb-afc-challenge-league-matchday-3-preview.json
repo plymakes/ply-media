@@ -41,7 +41,7 @@
     ],
     "footnote": "Friday 23 October · Beirut time"
   },
-  "caption": "Two Lebanese clubs, one more group game each in the AFC Challenge League on Friday. ⚽\n\nAl Ansar have won both of their Group A games in Bhutan: 2-0 against Al Ittihad Ahli of Aleppo and 2-1 against Paro, with El Hadji Malick Tall scoring twice. They face Ahal FC at 15:00.\n\nNejmeh opened Group B in Tajikistan with a 1-0 win over Istiklol, then lost 2-1 to Homs Al Fidaa. They play Al Arabi at 14:00.\n\nBoth kick-offs are Beirut time. Who's your pick to score on Friday? 🇱🇧\n\nSource: AFC\n@nejmeh_sc\n#SportsWireLB #LebaneseFootball",
+  "caption": "Two Lebanese clubs, one more group game each in the AFC Challenge League on Friday. ⚽\n\nAl Ansar have won both of their Group A games in Bhutan: 2-0 against Al Ittihad Ahli of Aleppo, then 2-1 against Paro, with El Hadji Malick Tall scoring twice in that one. They face Ahal FC at 15:00.\n\nNejmeh opened Group B in Tajikistan with a 1-0 win over Istiklol, then lost 2-1 to Homs Al Fidaa. They play Al Arabi at 14:00.\n\nBoth kick-offs are Beirut time. Who's your pick to score on Friday? 🇱🇧\n\nSource: AFC\n@nejmeh_sc\n#SportsWireLB #LebaneseFootball",
   "alt": "AFC Challenge League matchday 3, Friday 23 October, Beirut time: Al Arabi v Nejmeh at 14:00 in Hisor, Tajikistan (Nejmeh 3 points, 2nd in Group B); Ahal FC v Al Ansar at 15:00 in Thimphu, Bhutan (Al Ansar 6 points, top of Group A).",
   "facts": [
     {
@@ -125,5 +125,73 @@
   "visual_check": {
     "done": true,
     "notes": "Ahal FC spelling on card; headline fits, no overflow; fixtures, times and footnote readable."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-22T09:40+03:00",
+    "by": "independent agent (pass 2, after 'Ahal FK' fix)",
+    "claims": [
+      {
+        "claim": "Matchday 3 of the group stage (games on 17, 20, 23 Oct; all teams P2)",
+        "verdict": "CONFIRMED",
+        "url": "https://api.the-afc.com/sportdb-connector/api/v1/fixtures?competitionCodes=afc-challenge-league&season=20262027&locale=en"
+      },
+      {
+        "claim": "Both Lebanese clubs play on Friday 23 October 2026",
+        "verdict": "CONFIRMED",
+        "url": "https://api.the-afc.com/sportdb-connector/api/v1/fixtures?competitionCodes=afc-challenge-league&season=20262027&locale=en"
+      },
+      {
+        "claim": "Al Ansar won both Group A games, 6 points, rank 1",
+        "verdict": "CONFIRMED",
+        "url": "https://api.the-afc.com/sportdb-connector/api/v1/standings?competitionCode=afc-challenge-league&season=20262027&locale=en"
+      },
+      {
+        "claim": "Nejmeh 1-0 Istiklol, 17 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-nejmeh-sc-lbn-1-0-fc-istiklol-tjk"
+      },
+      {
+        "claim": "Homs Al Fidaa 2-1 Nejmeh, 20 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-homs-al-fidaa-sc-syr-x-x-nejmeh-sc-1"
+      },
+      {
+        "claim": "Group B in Hisor, Tajikistan (Hisor Central Stadium)",
+        "verdict": "CONFIRMED",
+        "url": "https://api.the-afc.com/sportdb-connector/api/v1/fixtures?competitionCodes=afc-challenge-league&season=20262027&locale=en"
+      },
+      {
+        "claim": "Al Arabi v Nejmeh 11:00 UTC = 14:00 Beirut",
+        "verdict": "CONFIRMED",
+        "url": "https://api.the-afc.com/sportdb-connector/api/v1/fixtures?competitionCodes=afc-challenge-league&season=20262027&locale=en"
+      },
+      {
+        "claim": "Nejmeh 3 points, 2nd in Group B",
+        "verdict": "CONFIRMED",
+        "url": "https://api.the-afc.com/sportdb-connector/api/v1/standings?competitionCode=afc-challenge-league&season=20262027&locale=en"
+      },
+      {
+        "claim": "Group A in Thimphu, Bhutan (Changlimithang Stadium)",
+        "verdict": "CONFIRMED",
+        "url": "https://api.the-afc.com/sportdb-connector/api/v1/fixtures?competitionCodes=afc-challenge-league&season=20262027&locale=en"
+      },
+      {
+        "claim": "Ahal FC v Al Ansar 12:00 UTC = 15:00 Beirut",
+        "verdict": "CONFIRMED",
+        "url": "https://api.the-afc.com/sportdb-connector/api/v1/fixtures?competitionCodes=afc-challenge-league&season=20262027&locale=en"
+      },
+      {
+        "claim": "Al Ansar 2-0 Al Ittihad Ahli of Aleppo, 17 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-al-ansar-fc-lbn-2-0-al-ittihad-ahli-of-aleppo-sc-syr"
+      },
+      {
+        "claim": "Paro 1-2 Al Ansar, 20 Oct; El Hadji Malick Tall 19' and 42'",
+        "verdict": "CONFIRMED",
+        "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-paro-fc-bhu-1-2-al-ansar-fc-lbn"
+      }
+    ],
+    "notes": "Pass 1 FAIL only on 'Ahal FK'. Pass 2: all 18 claims CONFIRMED. Applied the checker's optional wording fix so Tall's 2 goals are clearly in the Paro game."
   }
 }
