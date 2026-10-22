@@ -102,5 +102,43 @@
   "visual_check": {
     "done": true,
     "notes": "Omonia 1 (shamrock crest) v Benfica 4 (eagle crest), correct sides; 42' highlight; footnote readable; nothing clipped."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T00:45+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "Europa League league phase, matchday 3",
+        "verdict": "CONFIRMED",
+        "url": "https://match.uefa.com/v5/matches?matchId=2050105"
+      },
+      {
+        "claim": "Omonia 1-4 Benfica at GSP, Nicosia, FINISHED, Omonia at home",
+        "verdict": "CONFIRMED",
+        "url": "https://match.uefa.com/v5/matches?matchId=2050105"
+      },
+      {
+        "claim": "Own goal 14', Kakoullis 42' (1-1 at half-time), Pavlidis 49', Aursnes 76', Prestianni 85'; UEFA spellings",
+        "verdict": "CONFIRMED",
+        "url": "https://match.uefa.com/v5/matches?matchId=2050105"
+      },
+      {
+        "claim": "Cross-check of goal minutes",
+        "verdict": "CONFIRMED",
+        "url": "https://www.rtp.pt/noticias/desporto/omonia-benfica_e1773574"
+      },
+      {
+        "claim": "Earlier wins 1-0 Celta, 3-0 at Celje; first league-phase defeat; 6 points from 3 games",
+        "verdict": "CONFIRMED",
+        "url": "https://standings.uefa.com/v1/standings?competitionId=14&seasonYear=2027&phase=TOURNAMENT"
+      },
+      {
+        "claim": "Next: N.E.C. Nijmegen v Omonia, Thursday 5 November",
+        "verdict": "CONFIRMED",
+        "url": "https://match.uefa.com/v5/matches?competitionId=14&seasonYear=2027&fromDate=2026-08-25&toDate=2026-11-10"
+      }
+    ],
+    "notes": "All 16 claims CONFIRMED."
   }
 }
