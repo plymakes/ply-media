@@ -198,6 +198,33 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/fd2a1931a1e83db11fd7ebd973a443266ea583b9/sportswire/posts/lb/2026-10/2026-10-21-riyadi-dubai-champions.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-22",
+      "slug": "tonight-in-europe-story",
+      "story_key": "cy-europe-2026-10-22-today-story",
+      "light": "green",
+      "template": "fixtures",
+      "headline": "two cypriot clubs in *europe* tonight.",
+      "caption_first_line": "(Story: no caption)",
+      "sources": [
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/",
+        "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-22/cy-tonight-in-europe-story.json",
+      "logged_at": "2026-10-22T05:56:38+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-22T12:30:00+03:00",
+      "metricool_id": "402815809",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=8673789413820811305",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/b2af527da322c313ad8b2416bda87ab89e50e83b/sportswire/stories/cy/2026-10/2026-10-22-tonight-in-europe-story.png"
+      ]
     }
   ]
 }
