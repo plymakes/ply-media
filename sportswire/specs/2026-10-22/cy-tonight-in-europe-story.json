@@ -1,0 +1,79 @@
+{
+  "page": "cy",
+  "format": "story",
+  "theme": "dark",
+  "date": "2026-10-22",
+  "event_date": "2026-10-22",
+  "slug": "tonight-in-europe-story",
+  "story_key": "cy-europe-2026-10-22-today-story",
+  "light": "green",
+  "template": "fixtures",
+  "card": {
+    "eyebrow": [
+      "Tonight",
+      "Thursday 22 October"
+    ],
+    "eyebrow_style": "pill",
+    "headline": "two cypriot clubs in *europe* tonight.",
+    "groups": [
+      {
+        "label": "Conference League · Matchday 2",
+        "items": [
+          {
+            "home": "Pafos FC",
+            "away": "Riga FC",
+            "time": "19:45"
+          }
+        ]
+      },
+      {
+        "label": "Europa League · Matchday 3",
+        "items": [
+          {
+            "home": "Omonia",
+            "away": "Benfica",
+            "time": "22:00"
+          }
+        ]
+      }
+    ],
+    "footnote": "All times Cyprus. Results here tonight."
+  },
+  "caption": "(Story: no caption)\n\nSource: UEFA",
+  "alt": "Story card: two Cypriot clubs in Europe tonight, Thursday 22 October. Pafos FC v Riga FC in the Conference League at 19:45 and Omonia v Benfica in the Europa League at 22:00, Cyprus time.",
+  "facts": [
+    {
+      "claim": "Thursday 22 October 2026: Pafos v Riga, UEFA Conference League league phase matchday 2, 18:45 CET (summer time) = 19:45 Cyprus, Pafos at home",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/",
+          "tier": 1,
+          "outlet": "UEFA"
+        }
+      ]
+    },
+    {
+      "claim": "Thursday 22 October 2026: Omonia v Benfica, UEFA Europa League league phase matchday 3, default 21:00 CET = 22:00 Cyprus, Omonia at home",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/",
+          "tier": 1,
+          "outlet": "UEFA"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": []
+  },
+  "feature": false,
+  "sensitive_override": null,
+  "images": [
+    "stories/cy/2026-10/2026-10-22-tonight-in-europe-story.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  }
+}
