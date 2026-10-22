@@ -1,0 +1,136 @@
+{
+  "page": "cy",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-10-22",
+  "event_date": "2026-10-18",
+  "slug": "tziortzis-euronascar-season",
+  "story_key": "cy-tziortzis-euronascar-2026-season",
+  "light": "green",
+  "feature": true,
+  "template": "spotlight",
+  "card": {
+    "eyebrow": [
+      "NASCAR Euro Series",
+      "2026 season"
+    ],
+    "headline": "a top-five season for *tziortzis*.",
+    "deck": "The Cypriot driver finished fifth in EuroNASCAR OPEN, and his Ford Mustang was third in the Endurance Teams standings.",
+    "people": [
+      {
+        "name": "Vladimiros Tziortzis",
+        "meta": "EuroNASCAR OPEN · Ford Mustang",
+        "text": "Podiums at Paul Ricard in May and Vallelunga in September. The season ended at Zolder in Belgium.",
+        "badge": {
+          "top": "OPEN",
+          "main": "5th",
+          "tone": "accent"
+        }
+      }
+    ],
+    "tally": {
+      "label": "His 2026",
+      "items": [
+        {
+          "value": "5th",
+          "label": "OPEN",
+          "tone": "accent"
+        },
+        {
+          "value": "3rd",
+          "label": "Teams"
+        },
+        {
+          "value": "2",
+          "label": "Podiums"
+        }
+      ]
+    },
+    "footnote": "Endurance Teams: points per car across both divisions."
+  },
+  "caption": "Vladimiros Tziortzis has wrapped up his 2026 NASCAR Euro Series season in the top five. 🏁\n\nThe Cypriot driver finished fifth in the EuroNASCAR OPEN standings, and his Ford Mustang, which he raced in both divisions, ended the year third in the Endurance Teams standings.\n\nHis podiums came at Paul Ricard in May and Vallelunga in September, and the season closed at Zolder in Belgium last weekend.\n\nWhat should he aim for next year? 🇨🇾\n\nSource: World of EuroNASCAR, Cyprus Mail, Politis\n@vladimirostziortzis\n#SportsWireCY #Motorsport",
+  "alt": "Spotlight card: Vladimiros Tziortzis, Cypriot NASCAR Euro Series driver, finished fifth in EuroNASCAR OPEN in 2026; his Ford Mustang was third in the Endurance Teams standings; two podiums, at Paul Ricard and Vallelunga; the season ended at Zolder in Belgium.",
+  "facts": [
+    {
+      "claim": "Vladimiros Tziortzis (Cyprus) finished 5th in the 2026 EuroNASCAR OPEN final standings",
+      "sources": [
+        {
+          "url": "https://worldofeuronascar.com/2026/10/20/euronascar-finals-claudio-remigio-cappelli-delivers-wet-race-masterclass/",
+          "tier": 2,
+          "outlet": "World of EuroNASCAR"
+        },
+        {
+          "url": "https://cyprus-mail.com/2026/10/20/impressive-tziortzis-finishes-third-in-european-nascar-championship",
+          "tier": 2,
+          "outlet": "Cyprus Mail"
+        }
+      ]
+    },
+    {
+      "claim": "His car (raced in both divisions; Capital.com Ford Mustang) finished 3rd in the 2026 Endurance Teams standings (points per car across both divisions)",
+      "sources": [
+        {
+          "url": "https://worldofeuronascar.com/2026/10/20/euronascar-finals-claudio-remigio-cappelli-delivers-wet-race-masterclass/",
+          "tier": 2,
+          "outlet": "World of EuroNASCAR"
+        },
+        {
+          "url": "https://cyprus-mail.com/2026/10/20/impressive-tziortzis-finishes-third-in-european-nascar-championship",
+          "tier": 2,
+          "outlet": "Cyprus Mail"
+        }
+      ]
+    },
+    {
+      "claim": "Two podiums in 2026: 3rd in OPEN at Paul Ricard (May) and 3rd in OPEN Race 1 at Vallelunga (September)",
+      "sources": [
+        {
+          "url": "https://www.en.politis.com.cy/news/sports/1007833/tziortzis-secures-podium-and-valuable-points-in-france",
+          "tier": 2,
+          "outlet": "Politis"
+        },
+        {
+          "url": "https://worldofeuronascar.com/2026/09/22/nascar-gp-italy-raphael-lessard-wins-caution-interrupted-open-race/",
+          "tier": 2,
+          "outlet": "World of EuroNASCAR"
+        },
+        {
+          "url": "https://cyprus-mail.com/2026/09/21/tziortzis-eyes-title-after-nascar-european-championship-semi-finals",
+          "tier": 2,
+          "outlet": "Cyprus Mail"
+        }
+      ]
+    },
+    {
+      "claim": "The season's final round was at Circuit Zolder, Belgium, on 17-18 October 2026 (last weekend relative to 22 Oct)",
+      "sources": [
+        {
+          "url": "https://worldofeuronascar.com/2026/10/19/euronascar-finals-damp-qualifying-resulted-in-a-mixed-v8gp-grid/",
+          "tier": 2,
+          "outlet": "World of EuroNASCAR"
+        },
+        {
+          "url": "https://cyprus-mail.com/2026/10/20/impressive-tziortzis-finishes-third-in-european-nascar-championship",
+          "tier": 2,
+          "outlet": "Cyprus Mail"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "vladimirostziortzis"
+    ],
+    "collaborators": [
+      "vladimirostziortzis"
+    ]
+  },
+  "sensitive_override": null,
+  "images": [
+    "posts/cy/2026-10/2026-10-22-tziortzis-euronascar-season.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  }
+}

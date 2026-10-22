@@ -387,6 +387,15 @@
       "how": "collaborator on published post 26 Aug 2026 (chosen by Geoffry)",
       "kind": "athlete",
       "checked": "2026-10-19"
+    },
+    "vladimirostziortzis": {
+      "who": "Vladimiros Tziortzis (racing driver)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from his own official site vladimirostziortzis.info",
+      "kind": "athlete",
+      "checked": "2026-10-22"
     }
   },
   "unconfirmed_or_do_not_use": {
