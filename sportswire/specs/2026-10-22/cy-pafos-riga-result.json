@@ -155,5 +155,11 @@
       }
     ],
     "notes": "All 12 claims CONFIRMED. Venue left off (UEFA: Limassol Stadium, Limassol)."
+  },
+  "metricool": {
+    "id": 403491680,
+    "when": "2026-10-22T22:25:00+03:00",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-1500360532113144226",
+    "image": "https://raw.githubusercontent.com/plymakes/ply-media/79f4635cd2e9d636890886adeb7d8f8f9f0cb9b4/sportswire/posts/cy/2026-10/2026-10-22-pafos-riga-result.png"
   }
 }

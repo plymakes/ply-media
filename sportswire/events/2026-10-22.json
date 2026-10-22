@@ -12,7 +12,7 @@
       "start_confirmed": true,
       "start_note": "UEFA fixtures page: 18:45 CET (central European summer time) = 19:45 Cyprus.",
       "expected_end_local": "2026-10-22T21:40+03:00",
-      "venue": null,
+      "venue": "Limassol Stadium, Limassol (UEFA name)",
       "result_sources": [
         "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
       ],
@@ -30,9 +30,13 @@
         "how": "send_later into the SportsWire session"
       },
       "result": {
-        "status": "pending",
-        "spec": null,
-        "metricool_id": null
+        "status": "posted",
+        "score": "Pafos FC 1-1 Riga FC",
+        "spec": "specs/2026-10-22/cy-pafos-riga-result.json",
+        "metricool_id": 403491680,
+        "when": "2026-10-22T22:25+03:00",
+        "attempts": 1,
+        "note": "Draw, so a result card, no Reel (RUNBOOK 4: Reel for a win or a historic result)."
       }
     },
     {

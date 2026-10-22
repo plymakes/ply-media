@@ -325,6 +325,38 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/427578fe2f564813973cc7e3135e609f66f54973/sportswire/posts/lb/2026-10/2026-10-22-afc-challenge-league-matchday-3-preview.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-22",
+      "slug": "pafos-riga-result",
+      "story_key": "cy-uecl-2026-md2-pafos-riga",
+      "light": "green",
+      "template": "result",
+      "headline": "pafos hit back for a *first point*.",
+      "caption_first_line": "Pafos FC came from behind to draw 1-1 with Riga FC in the Conference League. ⚽",
+      "sources": [
+        "https://match.uefa.com/v5/matches?matchId=2050332",
+        "https://protathlima.cyprustimes.com/podosfairo-kyprou/a-katigoria/pafos/pafos-1-1-riga-toulachiston-den-echase/",
+        "https://www.kerkida.net/eyropaikoi-agones/pafos-fc/argise-na-parei-mpros-symbibastike-me-ton-bathmo",
+        "https://www.uefa.com/uefaconferenceleague/match/2050332--pafos-vs-riga/",
+        "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/"
+      ],
+      "reshare": {
+        "mention": [
+          "pafosfc"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-22/cy-pafos-riga-result.json",
+      "logged_at": "2026-10-22T19:19:13+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-22T22:25+03:00",
+      "metricool_id": "403491680",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-1500360532113144226",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/79f4635cd2e9d636890886adeb7d8f8f9f0cb9b4/sportswire/posts/cy/2026-10/2026-10-22-pafos-riga-result.png"
+      ]
     }
   ]
 }
