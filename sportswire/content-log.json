@@ -225,6 +225,37 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/b2af527da322c313ad8b2416bda87ab89e50e83b/sportswire/stories/cy/2026-10/2026-10-22-tonight-in-europe-story.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-22",
+      "slug": "rlwc-tonga-lebanon-preview",
+      "story_key": "lb-rlwc-2026-tonga-lebanon-preview",
+      "light": "green",
+      "template": "preview",
+      "headline": "we take on *tonga* tomorrow.",
+      "caption_first_line": "Lebanon play Tonga at the Rugby League World Cup tomorrow. 🏉",
+      "sources": [
+        "https://www.commbankstadium.com.au/events/rugby_league_world_cup_2026__tonga_v_lebanon",
+        "https://www.nrl.com/news/2026/10/17/kumuls-take-care-of-cedars-to-launch-cup-campaign/",
+        "https://www.rlwc2026.com/draw",
+        "https://www.rlwc2026.com/draw/mens/2026/round-2/tonga-v-lebanon"
+      ],
+      "reshare": {
+        "mention": [
+          "lebanonrl"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-22/lb-rlwc-tonga-lebanon-preview.json",
+      "logged_at": "2026-10-22T06:18:25+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-22T18:00:00+03:00",
+      "metricool_id": "402827924",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-6457099123517536745",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/11bd90522078aef5d1b2924a88eeaf5342bff6c1/sportswire/posts/lb/2026-10/2026-10-22-rlwc-tonga-lebanon-preview.png"
+      ]
     }
   ]
 }

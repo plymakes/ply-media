@@ -15,7 +15,7 @@
       "2026 season"
     ],
     "headline": "*tziortzis* ends fifth in euronascar open.",
-    "deck": "The Cypriot driver raced his Ford Mustang in both NASCAR Euro Series divisions and finished fifth in the OPEN standings.",
+    "deck": "The Cypriot driver raced his Ford Mustang in two NASCAR Euro Series divisions, OPEN and V8GP, and finished fifth in OPEN.",
     "people": [
       {
         "name": "Vladimiros Tziortzis",
@@ -48,8 +48,8 @@
     },
     "footnote": "Final round: Circuit Zolder, 17-18 October."
   },
-  "caption": "Vladimiros Tziortzis has finished fifth in the 2026 EuroNASCAR OPEN standings. 🏁\n\nThe Cypriot driver raced his Ford Mustang in both NASCAR Euro Series divisions this year, OPEN and V8GP.\n\nHis podiums came at Paul Ricard in May and Vallelunga in September, and the season closed at Zolder in Belgium last weekend.\n\nWhat should he aim for next year? 🇨🇾\n\nSource: NASCAR Euro Series, Cyprus Mail, Politis\n@vladimirostziortzis\n#SportsWireCY #Motorsport",
-  "alt": "Spotlight card: Vladimiros Tziortzis, Cypriot NASCAR Euro Series driver, finished fifth in EuroNASCAR OPEN in 2026, racing his Ford Mustang in both divisions; two podiums, at Paul Ricard and Vallelunga; the final round was at Circuit Zolder, Belgium, on 17-18 October.",
+  "caption": "Vladimiros Tziortzis has finished fifth in the 2026 EuroNASCAR OPEN standings. 🏁\n\nThe Cypriot driver raced his Ford Mustang in two NASCAR Euro Series divisions this year, OPEN and V8GP.\n\nHis podiums came at Paul Ricard in May and Vallelunga in September, and the season closed at Zolder in Belgium last weekend.\n\nWhat should he aim for next year? 🇨🇾\n\nSource: NASCAR Euro Series, Cyprus Mail, Politis\n@vladimirostziortzis\n#SportsWireCY #Motorsport",
+  "alt": "Spotlight card: Vladimiros Tziortzis, Cypriot NASCAR Euro Series driver, finished fifth in EuroNASCAR OPEN in 2026, racing his Ford Mustang in two divisions, OPEN and V8GP; two podiums, at Paul Ricard and Vallelunga; the final round was at Circuit Zolder, Belgium, on 17-18 October.",
   "facts": [
     {
       "claim": "Vladimiros Tziortzis (Cyprus) finished 5th in the 2026 EuroNASCAR OPEN final standings",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "claim": "He raced the same car, a Ford Mustang (No. 6), in both divisions (OPEN and V8GP) in 2026: 2 divisions",
+      "claim": "He raced the same car, a Ford Mustang (No. 6), in two of the series' divisions (OPEN and V8GP) in 2026",
       "sources": [
         {
           "url": "https://worldofeuronascar.com/2026/04/06/vladimiros-tziortzis-announces-2026-euronascar-double-duty-campaign/",
@@ -138,6 +138,11 @@
       "pass": 1,
       "result": "FAIL",
       "notes": "'3rd in Endurance Teams' only from the driver's own release (UNVERIFIED); 'top-five season' wrong as worded (top five only in OPEN). Both removed."
+    },
+    {
+      "pass": 2,
+      "result": "FAIL",
+      "notes": "'both divisions' wrong: the series has three (V8GP, OPEN, Rookie Challenge); now 'two divisions, OPEN and V8GP'."
     }
   ]
 }
