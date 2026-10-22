@@ -67,7 +67,7 @@
       ]
     },
     {
-      "claim": "He raced the same car, a Ford Mustang (No. 6), in two of the series' divisions (OPEN and V8GP) in 2026",
+      "claim": "He raced the same car, a Ford Mustang (No. 6), in two of the series' divisions (OPEN and V8GP) in 2026 = 2 divisions",
       "sources": [
         {
           "url": "https://worldofeuronascar.com/2026/04/06/vladimiros-tziortzis-announces-2026-euronascar-double-duty-campaign/",
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "claim": "Two podiums in 2026: 3rd in OPEN at Paul Ricard (May) and 3rd in OPEN Race 1 at Vallelunga (September)",
+      "claim": "2 podiums in 2026: 3rd in OPEN at Paul Ricard (May) and 3rd in OPEN Race 1 at Vallelunga (September)",
       "sources": [
         {
           "url": "https://www.en.politis.com.cy/news/sports/1007833/tziortzis-secures-podium-and-valuable-points-in-france",
@@ -144,5 +144,57 @@
       "result": "FAIL",
       "notes": "'both divisions' wrong: the series has three (V8GP, OPEN, Rookie Challenge); now 'two divisions, OPEN and V8GP'."
     }
-  ]
+  ],
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-22T06:25:20+00:00",
+    "by": "independent agents (three passes)",
+    "notes": "Pass 3: all confirmed.",
+    "claims": [
+      {
+        "claim": "5th in 2026 EuroNASCAR OPEN standings",
+        "verdict": "CONFIRMED",
+        "url": "https://speedwaydigest.com/index.php/news/racing-news/894270-thomas-toffel-crowned-2026-nascar-euro-series-open-champion-at-circuit-zolder/"
+      },
+      {
+        "claim": "Cypriot driver",
+        "verdict": "CONFIRMED",
+        "url": "https://speedwaydigest.com/?p=881624"
+      },
+      {
+        "claim": "Ford Mustang",
+        "verdict": "CONFIRMED",
+        "url": "https://speedwaydigest.com/?p=881624"
+      },
+      {
+        "claim": "Raced two divisions, OPEN and V8GP",
+        "verdict": "CONFIRMED",
+        "url": "https://worldofeuronascar.com/2026/04/06/vladimiros-tziortzis-announces-2026-euronascar-double-duty-campaign/"
+      },
+      {
+        "claim": "Podium at Paul Ricard in May",
+        "verdict": "CONFIRMED",
+        "url": "https://www.en.politis.com.cy/news/sports/1007833/tziortzis-secures-podium-and-valuable-points-in-france"
+      },
+      {
+        "claim": "Podium at Vallelunga in September",
+        "verdict": "CONFIRMED",
+        "url": "https://cyprus-mail.com/2026/09/21/tziortzis-eyes-title-after-nascar-european-championship-semi-finals"
+      },
+      {
+        "claim": "Two podiums in 2026 (race-by-race check)",
+        "verdict": "CONFIRMED",
+        "url": "https://speedwaydigest.com/?p=891993"
+      },
+      {
+        "claim": "Season ended at Circuit Zolder, Belgium, 17-18 October (last weekend)",
+        "verdict": "CONFIRMED",
+        "url": "https://speedwaydigest.com/index.php/news/racing-news/894270-thomas-toffel-crowned-2026-nascar-euro-series-open-champion-at-circuit-zolder/"
+      }
+    ]
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Revised deck ('two divisions, OPEN and V8GP'), badge 5th, tally 5th/2/2, footnote; nothing clipped."
+  }
 }
