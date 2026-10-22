@@ -9,8 +9,8 @@
       "sport": "rugby league",
       "title": "Tonga v Lebanon, Rugby League World Cup 2026, Pool B round 2",
       "start_local": "2026-10-23T12:05+03:00",
-      "start_confirmed": false,
-      "start_note": "8:05pm AEDT per CommBank Stadium's event page (official venue) and Zero Tackle (09:05 UTC); confirm on the RLWC/NRL page before printing a time. Starts before 14:00 Beirut, so the preview goes out the evening before (Thu 22 Oct, 18:00).",
+      "start_confirmed": true,
+      "start_note": "8:05pm AEDT per CommBank Stadium's event page (official venue) and Zero Tackle (09:05 UTC); confirm on the RLWC/NRL page before printing a time. Starts before 14:00 Beirut, so the preview goes out the evening before (Thu 22 Oct, 18:00). Confirmed for the preview (fact-checked 22 Oct): 12:05 Beirut, 8:05pm Sydney, CommBank Stadium.",
       "expected_end_local": "2026-10-23T13:55+03:00",
       "venue": "CommBank Stadium, Parramatta (Sydney)",
       "result_sources": [
@@ -20,11 +20,17 @@
       ],
       "context": "Lebanon lost 42-18 to Papua New Guinea on 17 Oct in Port Moresby (NRL.com). Coach Michael Cheika; 23-man squad named 7 Oct (Zero Tackle, AAP).",
       "preview": {
-        "status": "none",
-        "due": "2026-10-22T18:00+03:00"
+        "status": "scheduled",
+        "spec": "specs/2026-10-22/lb-rlwc-tonga-lebanon-preview.json",
+        "metricool_id": 402827924,
+        "when": "2026-10-22T18:00+03:00"
       },
       "result_desk": {
-        "trigger_ids": []
+        "trigger_ids": [
+          "trig_01SFofvreb4pvniZPD6fzr5k"
+        ],
+        "next_run": "2026-10-23T14:25+03:00",
+        "created_by": "afternoon desk 22 Oct"
       },
       "result": {
         "status": "pending",
@@ -53,8 +59,12 @@
         "when": "2026-10-22T12:30+03:00"
       },
       "result_desk": {
-        "trigger_ids": [],
-        "note": "Friday's morning desk creates one result desk for both games (end ~17:00 Beirut, +35 min)."
+        "trigger_ids": [
+          "trig_01VK21xzpXsW8gctFY2xqvqh"
+        ],
+        "next_run": "2026-10-23T17:30+03:00",
+        "created_by": "afternoon desk 22 Oct",
+        "note": "One desk for both games (Al Arabi v Nejmeh 14:00, Ahal FC v Al Ansar 15:00); a roundup card if both are final."
       },
       "result": {
         "status": "pending",
