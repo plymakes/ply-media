@@ -23,7 +23,11 @@
         "metricool_id": 401930534
       },
       "result_desk": {
-        "trigger_ids": []
+        "trigger_ids": [
+          "trig_01KU62Uh1MbPzQn6vma4c7HQ"
+        ],
+        "next_run": "2026-10-22T22:12+03:00",
+        "how": "send_later into the SportsWire session"
       },
       "result": {
         "status": "pending",
@@ -52,7 +56,11 @@
         "metricool_id": 401930534
       },
       "result_desk": {
-        "trigger_ids": []
+        "trigger_ids": [
+          "trig_01X5jq222tvMsXzNXRDaKbuJ"
+        ],
+        "next_run": "2026-10-23T00:30+03:00",
+        "how": "send_later into the SportsWire session"
       },
       "result": {
         "status": "pending",
