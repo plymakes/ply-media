@@ -193,5 +193,11 @@
       }
     ],
     "notes": "Pass 1 FAIL only on 'Ahal FK'. Pass 2: all 18 claims CONFIRMED. Applied the checker's optional wording fix so Tall's 2 goals are clearly in the Paro game."
+  },
+  "metricool": {
+    "id": 402834355,
+    "when": "2026-10-22T12:30:00+03:00",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-6297162874567308848",
+    "image": "https://raw.githubusercontent.com/plymakes/ply-media/427578fe2f564813973cc7e3135e609f66f54973/sportswire/posts/lb/2026-10/2026-10-22-afc-challenge-league-matchday-3-preview.png"
   }
 }

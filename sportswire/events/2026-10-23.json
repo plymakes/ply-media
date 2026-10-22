@@ -13,26 +13,54 @@
       "start_note": "8:05pm AEDT per CommBank Stadium's event page (official venue) and Zero Tackle (09:05 UTC); confirm on the RLWC/NRL page before printing a time. Starts before 14:00 Beirut, so the preview goes out the evening before (Thu 22 Oct, 18:00).",
       "expected_end_local": "2026-10-23T13:55+03:00",
       "venue": "CommBank Stadium, Parramatta (Sydney)",
-      "result_sources": ["https://www.nrl.com/", "https://www.commbankstadium.com.au/events/rugby_league_world_cup_2026__tonga_v_lebanon", "https://www.zerotackle.com/tonga-lebanon-round-2-2026-mc10398218-238749/"],
+      "result_sources": [
+        "https://www.nrl.com/",
+        "https://www.commbankstadium.com.au/events/rugby_league_world_cup_2026__tonga_v_lebanon",
+        "https://www.zerotackle.com/tonga-lebanon-round-2-2026-mc10398218-238749/"
+      ],
       "context": "Lebanon lost 42-18 to Papua New Guinea on 17 Oct in Port Moresby (NRL.com). Coach Michael Cheika; 23-man squad named 7 Oct (Zero Tackle, AAP).",
-      "preview": {"status": "none", "due": "2026-10-22T18:00+03:00"},
-      "result_desk": {"trigger_ids": []},
-      "result": {"status": "pending", "spec": null, "metricool_id": null}
+      "preview": {
+        "status": "none",
+        "due": "2026-10-22T18:00+03:00"
+      },
+      "result_desk": {
+        "trigger_ids": []
+      },
+      "result": {
+        "status": "pending",
+        "spec": null,
+        "metricool_id": null
+      }
     },
     {
       "id": "lb-afccl-md3",
       "page": "lb",
       "priority": "B",
       "sport": "football",
-      "title": "AFC Challenge League group stage, matchday 3: Al Arabi v Nejmeh (Group B, Tajikistan) and Ahal FK v Al Ansar (Group A, Bhutan)",
-      "start_local": null,
-      "start_confirmed": false,
-      "start_note": "Aggregator lists 14:00 (Nejmeh) and 15:00 Beirut (Ansar): unconfirmed. Matchday 2 results (20 Oct) were not yet confirmed by a tier-1/2 source at 12:00 on 21 Oct; confirm on the-afc.com before any roundup.",
-      "expected_end_local": "2026-10-23T17:00+03:00",
-      "result_sources": ["https://www.the-afc.com/", "https://www.annahar.com/sports/football"],
-      "preview": {"status": "none"},
-      "result_desk": {"trigger_ids": []},
-      "result": {"status": "pending", "spec": null, "metricool_id": null}
+      "title": "AFC Challenge League group stage, matchday 3: Al Arabi v Nejmeh (Group B, Hisor, Tajikistan) and Ahal FC v Al Ansar (Group A, Thimphu, Bhutan)",
+      "start_local": "2026-10-23T14:00+03:00",
+      "start_confirmed": true,
+      "start_note": "AFC fixtures API (UTC): Al Arabi v Nejmeh 11:00 UTC = 14:00 Beirut; Ahal FC v Al Ansar 12:00 UTC = 15:00 Beirut. Confirmed 22 Oct.",
+      "expected_end_local": "2026-10-23T16:55+03:00",
+      "result_sources": [
+        "https://api.the-afc.com/sportdb-connector/api/v1/fixtures?competitionCodes=afc-challenge-league&season=20262027&locale=en",
+        "https://www.the-afc.com/en/club/afc_challenge_league/fixtures__standings.html"
+      ],
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-22/lb-afc-challenge-league-matchday-3-preview.json",
+        "metricool_id": 402834355,
+        "when": "2026-10-22T12:30+03:00"
+      },
+      "result_desk": {
+        "trigger_ids": [],
+        "note": "Friday's morning desk creates one result desk for both games (end ~17:00 Beirut, +35 min)."
+      },
+      "result": {
+        "status": "pending",
+        "spec": null,
+        "metricool_id": null
+      }
     }
   ]
 }
