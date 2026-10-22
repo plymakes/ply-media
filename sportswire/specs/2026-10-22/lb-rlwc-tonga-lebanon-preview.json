@@ -103,5 +103,62 @@
   "render": {
     "ok": true,
     "problems": []
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-22T06:18:00+00:00",
+    "by": "independent agent",
+    "notes": "16 claims CONFIRMED. France kick-off time differs between sources (5:40 vs 5:50pm): not on this card; check before a France preview.",
+    "claims": [
+      {
+        "claim": "Round 2 of the RLWC, Lebanon's second game",
+        "verdict": "CONFIRMED",
+        "url": "https://www.rlwc2026.com/draw/mens/2026/round-2/tonga-v-lebanon"
+      },
+      {
+        "claim": "Friday 23 October 2026",
+        "verdict": "CONFIRMED",
+        "url": "https://www.rlwc2026.com/draw/mens/2026/round-2/tonga-v-lebanon"
+      },
+      {
+        "claim": "8:05pm AEDT = 09:05 UTC = 12:05 Beirut",
+        "verdict": "CONFIRMED",
+        "url": "https://www.zerotackle.com/tonga-lebanon-round-2-2026-mc10398218-238749/"
+      },
+      {
+        "claim": "CommBank Stadium, Sydney",
+        "verdict": "CONFIRMED",
+        "url": "https://www.rlwc2026.com/draw/mens/2026/round-2/tonga-v-lebanon"
+      },
+      {
+        "claim": "'The Cedars' nickname",
+        "verdict": "CONFIRMED",
+        "url": "https://www.rlwc2026.com/draw/mens/2026/round-2/tonga-v-lebanon"
+      },
+      {
+        "claim": "Round 1: Papua New Guinea 42-18 Lebanon, Port Moresby, Sat 17 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://www.nrl.com/news/2026/10/17/kumuls-take-care-of-cedars-to-launch-cup-campaign/"
+      },
+      {
+        "claim": "Abbas Miski 2 tries, Tony Sukkar 1",
+        "verdict": "CONFIRMED",
+        "url": "https://www.nrl.com/news/2026/10/17/kumuls-take-care-of-cedars-to-launch-cup-campaign/"
+      },
+      {
+        "claim": "Coach Michael Cheika",
+        "verdict": "CONFIRMED",
+        "url": "https://www.zerotackle.com/lebanon-confirm-rugby-league-world-cup-squad-238829/"
+      },
+      {
+        "claim": "Next: v France, Sunday 1 November",
+        "verdict": "CONFIRMED",
+        "url": "https://www.rlwc2026.com/draws-and-pools"
+      }
+    ]
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "12:05 outline numeral, headline, deck, four rows read back; nothing clipped."
   }
 }
