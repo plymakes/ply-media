@@ -1,0 +1,121 @@
+{
+  "page": "cy",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-10-22",
+  "event_date": "2026-10-22",
+  "slug": "pafos-riga-result",
+  "story_key": "cy-uecl-2026-md2-pafos-riga",
+  "light": "green",
+  "template": "result",
+  "card": {
+    "eyebrow": [
+      "Conference League",
+      "League phase, matchday 2"
+    ],
+    "headline": "pafos hit back for a *first point*.",
+    "home": {
+      "name": "Pafos FC",
+      "score": 1,
+      "crest": "pafos"
+    },
+    "away": {
+      "name": "Riga FC",
+      "score": 1,
+      "crest": "riga"
+    },
+    "ours": "home",
+    "status": [
+      "Full time",
+      "Thursday 22 October"
+    ],
+    "highlight": {
+      "big": "76'",
+      "text": "Biel equalised, nine minutes after Caio Ferreira put Riga ahead."
+    },
+    "footnote": "Matchday 1: Atalanta 3-1 Pafos FC.\nNext: Twente v Pafos FC, Thursday 5 November."
+  },
+  "caption": "Pafos FC came from behind to draw 1-1 with Riga FC in the Conference League. ⚽\n\nCaio Ferreira put Riga ahead on 67 minutes, and Biel equalised on 76.\n\nIt's Pafos's first point of the league phase, after a 3-1 defeat at Atalanta on matchday 1. Next up: Twente away on Thursday 5 November.\n\nFair result? 🇨🇾\n\nSource: UEFA\n@pafosfc\n#SportsWireCY #ConferenceLeague",
+  "alt": "Result card: UEFA Conference League league phase, matchday 2, Thursday 22 October. Pafos FC 1, Riga FC 1, full time. Caio Ferreira scored for Riga on 67 minutes and Biel equalised for Pafos on 76. Matchday 1: Atalanta 3-1 Pafos FC. Next: Twente v Pafos FC on Thursday 5 November.",
+  "facts": [
+    {
+      "claim": "Pafos FC 1-1 Riga FC, UEFA Conference League league phase, Matchday 2, Thursday 22 October 2026; status FINISHED (full time 18:39 UTC); Pafos at home",
+      "sources": [
+        {
+          "url": "https://match.uefa.com/v5/matches?matchId=2050332",
+          "tier": 1,
+          "outlet": "UEFA match data"
+        },
+        {
+          "url": "https://www.uefa.com/uefaconferenceleague/match/2050332--pafos-vs-riga/",
+          "tier": 1,
+          "outlet": "UEFA match page"
+        },
+        {
+          "url": "https://www.kerkida.net/eyropaikoi-agones/pafos-fc/argise-na-parei-mpros-symbibastike-me-ton-bathmo",
+          "tier": 2,
+          "outlet": "Kerkida"
+        },
+        {
+          "url": "https://protathlima.cyprustimes.com/podosfairo-kyprou/a-katigoria/pafos/pafos-1-1-riga-toulachiston-den-echase/",
+          "tier": 2,
+          "outlet": "Cyprus Times"
+        }
+      ]
+    },
+    {
+      "claim": "Goals: Caio Ferreira (Riga FC) 67 minutes, Biel (Pafos FC) 76 minutes; 76 - 67 = 9 minutes; UEFA spellings 'Caio Ferreira' and 'Biel'",
+      "sources": [
+        {
+          "url": "https://match.uefa.com/v5/matches?matchId=2050332",
+          "tier": 1,
+          "outlet": "UEFA match data"
+        },
+        {
+          "url": "https://www.kerkida.net/eyropaikoi-agones/pafos-fc/argise-na-parei-mpros-symbibastike-me-ton-bathmo",
+          "tier": 2,
+          "outlet": "Kerkida"
+        }
+      ]
+    },
+    {
+      "claim": "Matchday 1 (15 Oct 2026): Atalanta 3-1 Pafos FC, so 1 point is Pafos's first of the league phase (0 after matchday 1, 1 after matchday 2)",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/",
+          "tier": 1,
+          "outlet": "UEFA fixtures and results"
+        }
+      ]
+    },
+    {
+      "claim": "Pafos's matchday 3: Twente v Pafos FC, Thursday 5 November 2026 (away)",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures/",
+          "tier": 1,
+          "outlet": "UEFA fixtures and results"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "pafosfc"
+    ],
+    "collaborators": []
+  },
+  "feature": false,
+  "sensitive_override": null,
+  "images": [
+    "posts/cy/2026-10/2026-10-22-pafos-riga-result.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Score 1-1, Pafos FC crest on Pafos, Riga FC lion crest (UEFA logo) on Riga; 76' highlight, names spelled per UEFA; footnote readable; nothing clipped."
+  }
+}

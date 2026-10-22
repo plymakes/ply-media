@@ -371,6 +371,19 @@
     "checked": "2026-10-19",
     "use": "editorial identification only"
   },
+  "riga": {
+    "name": "Riga FC",
+    "source_page": "https://www.uefa.com/uefaconferenceleague/clubs/2607924--riga/",
+    "image_url": "https://img.uefa.com/imgml/TP/teams/logos/240x240/2607924.png",
+    "original_px": [
+      238,
+      238
+    ],
+    "via": "official site",
+    "fetched": "2026-10-22",
+    "checked": "2026-10-22",
+    "use": "editorial identification only"
+  },
   "riyadi": {
     "name": "Al Riyadi",
     "source_page": "https://www.riyadi.com/",
