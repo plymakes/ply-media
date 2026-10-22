@@ -75,5 +75,51 @@
   "render": {
     "ok": true,
     "problems": []
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-22T05:56:21+00:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "Thursday 22 October 2026",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02aa-21d752908682-ff3294f4d833-1000--conference-league-matchday-2-briefing-ajax-atalanta-brig/"
+      },
+      {
+        "claim": "Two Cypriot clubs in Europe tonight (Pafos, Omonia)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02aa-21d759c80859-b16e8acf0870-1000--europa-league-matchday-3-briefing-tough-tasks-for-besikta/"
+      },
+      {
+        "claim": "Pafos v Riga, Conference League matchday 2, Pafos at home",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02aa-21d752908682-ff3294f4d833-1000--conference-league-matchday-2-briefing-ajax-atalanta-brig/"
+      },
+      {
+        "claim": "Pafos v Riga 18:45 CET = 19:45 Cyprus",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/news/02aa-21d752908682-ff3294f4d833-1000--conference-league-matchday-2-briefing-ajax-atalanta-brig/"
+      },
+      {
+        "claim": "Omonia v Benfica, Europa League matchday 3, Omonia at home",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02aa-21d759c80859-b16e8acf0870-1000--europa-league-matchday-3-briefing-tough-tasks-for-besikta/"
+      },
+      {
+        "claim": "Omonia v Benfica 21:00 CET = 22:00 Cyprus",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaeuropaleague/news/02aa-21d759c80859-b16e8acf0870-1000--europa-league-matchday-3-briefing-tough-tasks-for-besikta/"
+      },
+      {
+        "claim": "Spellings Pafos FC, Riga FC, Omonia, Benfica",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefaconferenceleague/clubs/2609532--pafos/matches/"
+      }
+    ]
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Story: both fixtures, times 19:45 / 22:00, eyebrow pill; nothing clipped; empty middle is the template's Story spacing."
   }
 }
