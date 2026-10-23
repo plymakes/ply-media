@@ -1,0 +1,181 @@
+{
+  "page": "lb",
+  "format": "post",
+  "series": "archive",
+  "archive": {
+    "issue": 1
+  },
+  "theme": "light",
+  "date": "2026-10-23",
+  "event_date": "1952-07-23",
+  "slug": "archive-lebanon-first-olympic-medals",
+  "story_key": "lb-archive-1952-first-olympic-medals",
+  "light": "green",
+  "slides": [
+    {
+      "template": "cover",
+      "card": {
+        "kicker": "From the archive · Helsinki 1952",
+        "year": "1952",
+        "headline": "Lebanon's first *Olympic medals*",
+        "deck": "Zakaria Chihab won silver and Khalil Taha bronze.",
+        "stamp": "74 years ago",
+        "photo": {
+          "file": "media/archive/2026-10/2026-10-23-archive-lebanon-first-olympic-medals.jpg",
+          "note": "Helsinki, 20 July 1952"
+        },
+        "photo_height": 560
+      }
+    },
+    {
+      "template": "story",
+      "card": {
+        "title": "The *story*",
+        "text": "Lebanon first went to the Olympics in 1948. Four years later in Helsinki, two Greco-Roman wrestlers won medals on the same day: Zakaria Chihab took silver in the bantamweight class (57 kg), and Khalil Taha took bronze at welterweight (73 kg). They were Lebanon's first Olympic medals.",
+        "pull": {
+          "big": "2",
+          "label": "medals, *on the same day*"
+        }
+      }
+    },
+    {
+      "template": "ledger",
+      "card": {
+        "title": "Lebanon's Olympic *medals*",
+        "rows": [
+          {
+            "label": "Zakaria Chihab, wrestling, Helsinki 1952",
+            "value": "Silver"
+          },
+          {
+            "label": "Khalil Taha, wrestling, Helsinki 1952",
+            "value": "Bronze"
+          },
+          {
+            "label": "Mohamed Kheir Tarabulsi, weightlifting, Munich 1972",
+            "value": "Silver"
+          },
+          {
+            "label": "Hassan Bchara, wrestling, Moscow 1980",
+            "value": "Bronze"
+          }
+        ],
+        "note": "4 OLYMPIC MEDALS IN ALL. SOURCES: OLYMPICS.COM, OLYMPEDIA"
+      }
+    },
+    {
+      "template": "thennow",
+      "card": {
+        "title": "Then and *now*",
+        "then": {
+          "label": "1952",
+          "text": "Two medals on one day in Helsinki: Lebanon's first."
+        },
+        "now": {
+          "label": "1980",
+          "text": "Hassan Bchara's bronze in Moscow is still Lebanon's most recent Olympic medal."
+        }
+      }
+    },
+    {
+      "template": "end",
+      "card": {}
+    }
+  ],
+  "caption": "From the archive: Helsinki, 1952. 🤼\n\nLebanon's first Olympic medals came on the wrestling mat. At the Helsinki Games, Zakaria Chihab won silver and Khalil Taha bronze in Greco-Roman wrestling, both on the same day.\n\nLebanon has won four Olympic medals in all, the most recent in 1980.\n\nSpot the \"LIBAN\" tracksuits in the crowd. 🇱🇧\n\n📸 Hugo Sundström / Wikimedia Commons, CC BY 4.0 (wrestling at Helsinki, 20 July 1952)\nSource: Olympics.com, Olympedia\n#SportsWireLB #FromTheArchive #Olympics",
+  "alt": [
+    "Archive cover, Helsinki 1952: Lebanon's first Olympic medals. Two wrestlers, two medals: Zakaria Chihab won silver and Khalil Taha bronze. 74 years ago. Sepia photo of wrestling at the Helsinki Games on 20 July 1952, with spectators in LIBAN tracksuits in the foreground.",
+    "The story: Lebanon first went to the Olympics in 1948. In Helsinki in 1952, two Greco-Roman wrestlers won medals on the same day: Zakaria Chihab silver at bantamweight (57 kg) and Khalil Taha bronze at welterweight (73 kg), Lebanon's first Olympic medals.",
+    "Lebanon's Olympic medals: Zakaria Chihab, wrestling, Helsinki 1952, silver; Khalil Taha, wrestling, Helsinki 1952, bronze; Mohamed Kheir Tarabulsi, weightlifting, Munich 1972, silver; Hassan Bchara, wrestling, Moscow 1980, bronze. 4 Olympic medals in all.",
+    "Then and now: 1952, two medals on one day in Helsinki, Lebanon's first; 1980, Hassan Bchara's bronze in Moscow is still Lebanon's most recent Olympic medal.",
+    "End card: more from the archive every Tuesday and Thursday."
+  ],
+  "facts": [
+    {
+      "claim": "Lebanon's first Olympic Games were London 1948 (the NOC's first)",
+      "sources": [
+        {
+          "url": "https://stacy.olympics.com/tokyo-2020/olympic-games/en/results/all-sports/noc-profile-lebanon.htm",
+          "tier": 1,
+          "outlet": "Olympics.com NOC profile"
+        },
+        {
+          "url": "https://www.olympedia.org/countries/LBN",
+          "tier": 2,
+          "outlet": "Olympedia"
+        }
+      ]
+    },
+    {
+      "claim": "Helsinki 1952: Zakaria Chihab silver, Greco-Roman bantamweight (57 kg); Khalil Taha bronze, Greco-Roman welterweight (73 kg); both won on the same day; 2 medals; Lebanon's first Olympic medals (Taha 'Lebanon's second Olympic medalist'); 2026 - 1952 = 74 years",
+      "sources": [
+        {
+          "url": "https://stacy.olympics.com/tokyo-2020/olympic-games/en/results/all-sports/noc-profile-lebanon.htm",
+          "tier": 1,
+          "outlet": "Olympics.com NOC profile"
+        },
+        {
+          "url": "https://www.olympedia.org/countries/LBN/editions/13",
+          "tier": 2,
+          "outlet": "Olympedia (1952 results)"
+        },
+        {
+          "url": "https://www.olympedia.org/athletes/59269",
+          "tier": 2,
+          "outlet": "Olympedia (Taha)"
+        },
+        {
+          "url": "https://www.olympedia.org/athletes/59257",
+          "tier": 2,
+          "outlet": "Olympedia (Chihab)"
+        }
+      ]
+    },
+    {
+      "claim": "Lebanon's 4 Olympic medals: Chihab silver 1952, Taha bronze 1952, Mohamed Kheir Tarabulsi silver in weightlifting (men's 75 kg) at Munich 1972, Hassan Bchara bronze in Greco-Roman wrestling (+100 kg) at Moscow 1980; 1980 is the most recent",
+      "sources": [
+        {
+          "url": "https://stacy.olympics.com/tokyo-2020/olympic-games/en/results/all-sports/noc-profile-lebanon.htm",
+          "tier": 1,
+          "outlet": "Olympics.com NOC profile"
+        },
+        {
+          "url": "https://www.olympedia.org/countries/LBN",
+          "tier": 2,
+          "outlet": "Olympedia country page (no later Olympic medal)"
+        }
+      ]
+    },
+    {
+      "claim": "Photo: wrestling at the small Expo hall (Messuhalli), Helsinki Olympics, 20 July 1952, by Hugo Sundström, CC BY 4.0; spectators in 'LIBAN' tracksuits visible in the photo",
+      "sources": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Helsinki_Olympic_Games_1952_(Numeroimaton;_JOKAHBL3D_C01-223).tif",
+          "tier": 1,
+          "outlet": "Wikimedia Commons file page (Finnish Heritage Agency)"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": []
+  },
+  "feature": true,
+  "sensitive_override": null,
+  "images": [
+    "posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-01.png",
+    "posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-02.png",
+    "posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-03.png",
+    "posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-04.png",
+    "posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-05.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Cover: 1952 / 74 years ago / headline; sepia print of the Helsinki wrestling hall with LIBAN tracksuits visible, note + credit on one line; story, medal ledger (Silver/Bronze/Silver/Bronze), then/now 1952/1980, end. Nothing clipped."
+  }
+}

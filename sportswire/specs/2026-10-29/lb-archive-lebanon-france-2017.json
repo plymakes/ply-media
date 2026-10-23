@@ -225,8 +225,9 @@
     "notes": "All 15 claims CONFIRMED. Photo credit checked internally (Commons file page)."
   },
   "metricool": {
-    "id": 403929563,
-    "when": "2026-10-29T19:30:00+02:00"
+    "id": 403941741,
+    "when": "2026-10-29T19:30:00+02:00",
+    "note": "updated 23 Oct to renumber the issue"
   },
   "visual_check": {
     "done": true,
