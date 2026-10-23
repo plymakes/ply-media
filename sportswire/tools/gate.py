@@ -122,6 +122,82 @@ def case_problems(text: str) -> list[str]:
     return sorted(bad)
 
 
+MAX_COLLABORATORS = 3       # Instagram's own limit is higher; three keeps invites meaningful
+MAX_INVITES_PER_WEEK = 2    # per account, across both pages: nobody gets spammed with invites
+MAX_MENTIONS = 6
+
+
+def tag_problems(spec: dict, cap: str, handles: dict, cards: list, high: set) -> list[str]:
+    probs = []
+    rs = spec.get('reshare') or {}
+    cols = [c.lower() for c in rs.get('collaborators', [])]
+    mentioned = {h.lower().rstrip('.') for h in re.findall(r'@([\w.]+)', cap)}
+    # every account whose crest or national team is on the card is tagged in the caption
+    logos: set[str] = set()
+
+    def walk(x):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if k in ('crest', 'home_crest', 'away_crest') and v:
+                    logos.add(str(v))
+                else:
+                    walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    for c in cards:
+        walk(c)
+    sport = spec.get('sport')
+    need = set()
+    for h, v in handles.items():
+        if not v.get('confirmed') or v.get('page') not in (spec['page'], None):
+            continue
+        if v.get('crest') and v['crest'] in logos:
+            need.add(h.lower())
+        nt = v.get('national_team') or {}
+        if nt and f'flag:{nt.get("flag")}' in logos and nt.get('sport') == sport:
+            need.add(h.lower())
+    for h in sorted(need - mentioned):
+        probs.append(f'tag @{h} in the caption: its logo is on the card (always tag the people in the story)')
+    if not mentioned and not rs.get('no_tag_reason'):
+        probs.append('no @mention in the caption: tag every club, athlete or federation in the story that has a confirmed handle (or set reshare.no_tag_reason)')
+    if len(mentioned) > MAX_MENTIONS:
+        probs.append(f'{len(mentioned)} @mentions: max {MAX_MENTIONS}, only accounts that are part of the story (no tagging for reach alone)')
+    # collaborators: where applicable, within limits
+    if len(cols) > MAX_COLLABORATORS:
+        probs.append(f'{len(cols)} collaborators: max {MAX_COLLABORATORS}')
+    for c in cols:
+        if c not in mentioned:
+            probs.append(f'collaborator @{c} should also be @mentioned in the caption')
+    tpl = spec.get('template') or ''
+    if tpl == 'result' or any(sl.get('template') == 'result' for sl in spec.get('slides', [])):
+        for c in cards:
+            if c.get('home') and c.get('away'):
+                try:
+                    hs, as_ = float(c['home']['score']), float(c['away']['score'])
+                except (TypeError, ValueError, KeyError):
+                    continue
+                loser = c['home'] if hs < as_ else c['away'] if as_ < hs else None
+                if loser and loser.get('crest'):
+                    for h, v in handles.items():
+                        if v.get('crest') == loser['crest'] and h.lower() in cols:
+                            probs.append(f'@{h} lost this game: mention them, but no collaborator invite on their defeat')
+    if spec['light'] == 'green' and not cols and not rs.get('no_collab_reason'):
+        if any(h in high for h in mentioned - {'sportswire.lb', 'sportswire.cy'}):
+            probs.append('invite the story\'s main subject as a collaborator (high-confidence handle, max 3), or set reshare.no_collab_reason (e.g. "defeat", "invited twice this week", "neutral local derby")')
+    try:
+        log = json.loads((ROOT / 'content-log.json').read_text()).get('posts', [])
+        since = (dt.date.fromisoformat(spec['date']) - dt.timedelta(days=6)).isoformat()
+        for c in cols:
+            n = sum(1 for e in log if e.get('date', '') >= since and e.get('status') in ('scheduled', 'published')
+                    and e.get('slug') != spec['slug'] and c in [x.lower() for x in ((e.get('reshare') or {}).get('collaborators') or [])])
+            if n >= MAX_INVITES_PER_WEEK:
+                probs.append(f'@{c} has already been invited {n} times in the last 7 days: mention only this time (no spamming)')
+    except Exception:
+        pass
+    return probs
+
+
 def card_text(spec: dict) -> str:
     skip = {'labels', 'columns', 'eyebrow_style', 'crest', 'home_crest', 'away_crest', 'headline_size', 'headline_lines',
             'tone', 'theme', 'template', 'align', 'section', 'footer_rule', '_theme', 'dur', 'photo',
@@ -323,6 +399,11 @@ def check(path: str) -> list[str]:
             probs.append(f'collaborator @{col} needs a high-confidence handle (linked from its own official site or approved by Geoffry)')
         if spec['light'] != 'green':
             probs.append('no collaborator invites on AMBER posts')
+
+    # 6b. tags (Geoffry, 23 Oct 2026: "always tag the people affected, mention and invite collaborators where applicable…
+    #     tag as much as possible to increase reach without spamming people")
+    if spec['date'] >= '2026-10-23':
+        probs += tag_problems(spec, cap, handles, cards, high)
 
     # 7. traffic light
     alltext = (card_text(spec) + '\n' + cap).lower()

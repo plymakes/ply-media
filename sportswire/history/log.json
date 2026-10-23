@@ -25,7 +25,7 @@
       "sport": "football",
       "title": "When Asia came to Beirut: Lebanon host the 2000 Asian Cup",
       "spec": "specs/2026-10-27/lb-archive-asian-cup-2000.json",
-      "metricool_id": 404209514
+      "metricool_id": 404255309
     },
     {
       "key": "cy-archive-2009-baghdatis-stockholm",
@@ -49,7 +49,7 @@
       "sport": "rugby league",
       "title": "The night the Cedars won: Lebanon 29-18 France, first RLWC win",
       "spec": "specs/2026-10-29/lb-archive-lebanon-france-2017.json",
-      "metricool_id": 404209540
+      "metricool_id": 404255463
     },
     {
       "key": "cy-archive-2011-apoel-porto",
@@ -61,7 +61,7 @@
       "sport": "football",
       "title": "APOEL's 90th-minute night: APOEL 2-1 Porto",
       "spec": "specs/2026-10-29/cy-archive-apoel-porto-2011.json",
-      "metricool_id": 404209621
+      "metricool_id": 404255583
     },
     {
       "key": "lb-archive-1952-first-olympic-medals",

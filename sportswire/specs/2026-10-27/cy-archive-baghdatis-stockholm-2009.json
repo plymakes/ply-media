@@ -174,7 +174,8 @@
   ],
   "reshare": {
     "mention": [],
-    "collaborators": []
+    "collaborators": [],
+    "no_tag_reason": "No confirmed handle yet for Marcos Baghdatis or the Cyprus Tennis Federation (listed for Geoffry to confirm)."
   },
   "feature": true,
   "sensitive_override": null,

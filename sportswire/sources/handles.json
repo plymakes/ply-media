@@ -1,5 +1,5 @@
 {
-  "help": "Instagram handles the newsroom may @mention or invite as collaborator. Only confirmed: true may be used. confidence high = linked from the organisation's own website, our own account, or chosen by Geoffry on a published post; medium = third-party directory only. @mentions may use high or medium; collaborator invites only high. Add how and when each handle was confirmed.",
+  "help": "Instagram handles the newsroom may @mention or invite as collaborator. Only confirmed: true may be used. confidence high = linked from the organisation's own website, our own account, or chosen by Geoffry on a published post; medium = third-party directory only. @mentions may use high or medium; collaborator invites only high. Add how and when each handle was confirmed. Optional \"crest\" (a brand/crests slug) and \"national_team\" ({flag, sport}) link a handle to the logos on a card: the gate then requires the caption to @mention every account whose crest or national team appears (Geoffry, 23 Oct 2026: always tag the people affected).",
   "handles": {
     "sportswire.lb": {
       "who": "SportsWire Lebanon (own page)",
@@ -26,7 +26,12 @@
       "confidence": "high",
       "how": "linked from lebanon.basketball; used as collaborator on published posts Aug 2026",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "flbb",
+      "national_team": {
+        "flag": "lb",
+        "sport": "basketball"
+      }
     },
     "thelfadotcom": {
       "who": "Lebanese Football Association (also national team)",
@@ -35,7 +40,11 @@
       "confidence": "high",
       "how": "linked from the-lfa.com.lb",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "national_team": {
+        "flag": "lb",
+        "sport": "football"
+      }
     },
     "alriyadiclub": {
       "who": "Al Riyadi Club (basketball)",
@@ -44,7 +53,8 @@
       "confidence": "high",
       "how": "linked from riyadi.com",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "riyadi"
     },
     "lebanonrl": {
       "who": "Lebanon Rugby League (the Cedars)",
@@ -53,7 +63,11 @@
       "confidence": "high",
       "how": "linked from lebanonrl.com",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "national_team": {
+        "flag": "lb",
+        "sport": "rugby-league"
+      }
     },
     "lebanesecedars": {
       "who": "Lebanon national basketball team page",
@@ -98,7 +112,8 @@
       "confidence": "high",
       "how": "shown on published card 26 Aug 2026 (chosen by Geoffry)",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "hoops"
     },
     "sagesseclubofcl": {
       "who": "Sagesse SC",
@@ -107,7 +122,8 @@
       "confidence": "medium",
       "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "sagesse"
     },
     "beirutclub": {
       "who": "Beirut Club (basketball)",
@@ -116,7 +132,8 @@
       "confidence": "medium",
       "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "beirut-club"
     },
     "nejmeh_sc": {
       "who": "Nejmeh SC",
@@ -125,7 +142,8 @@
       "confidence": "medium",
       "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "nejmeh"
     },
     "alahedfc": {
       "who": "Al Ahed FC",
@@ -134,7 +152,8 @@
       "confidence": "medium",
       "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "al-ahed"
     },
     "mtvlebsports": {
       "who": "MTV Lebanon sports (broadcaster)",
@@ -251,7 +270,11 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "national_team": {
+        "flag": "cy",
+        "sport": "football"
+      }
     },
     "omonoiafootball": {
       "who": "Omonia (football)",
@@ -260,7 +283,8 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "omonia"
     },
     "apoelfcofficial": {
       "who": "APOEL",
@@ -269,7 +293,8 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "apoel"
     },
     "pafosfc": {
       "who": "Pafos FC",
@@ -278,7 +303,8 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "pafos"
     },
     "aeklarnacafc": {
       "who": "AEK Larnaca",
@@ -287,7 +313,8 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "aek-larnaca"
     },
     "ael_fc_official": {
       "who": "AEL Limassol",
@@ -296,7 +323,8 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "ael"
     },
     "apollonfc": {
       "who": "Apollon Limassol",
@@ -305,7 +333,8 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "apollon"
     },
     "arislimassolfc": {
       "who": "Aris Limassol",
@@ -314,7 +343,8 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "crest": "aris"
     },
     "olympiakosnicosiafc": {
       "who": "Olympiakos Nicosia",
@@ -341,7 +371,11 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "national_team": {
+        "flag": "cy",
+        "sport": "basketball"
+      }
     },
     "cyprus.volleyball.federation": {
       "who": "Cyprus Volleyball Federation",
@@ -350,7 +384,11 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "national_team": {
+        "flag": "cy",
+        "sport": "volleyball"
+      }
     },
     "koeas": {
       "who": "KOEAS (Cyprus athletics federation)",
@@ -359,7 +397,11 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "national_team": {
+        "flag": "cy",
+        "sport": "athletics"
+      }
     },
     "cyprusolympic": {
       "who": "Cyprus Olympic Committee",
@@ -377,7 +419,11 @@
       "confidence": "high",
       "how": "linked from the organisation's own official website",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "national_team": {
+        "flag": "cy",
+        "sport": "sailing"
+      }
     },
     "kaliaantoniou": {
       "who": "Kalia Antoniou, swimmer",
@@ -405,6 +451,78 @@
       "how": "linked in the footer of beirutmarathon.org (research, 23 Oct 2026)",
       "kind": "org",
       "checked": "2026-10-23"
+    },
+    "keravnosbc": {
+      "who": "Keravnos BC (basketball)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from keravnosbc.com (research, 23 Oct 2026)",
+      "kind": "org",
+      "checked": "2026-10-23",
+      "crest": "keravnos"
+    },
+    "aek_larnaca_petrolina_bc": {
+      "who": "Petrolina AEK Larnaca (basketball)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "listed on the FIBA Basketball Champions League team page (organiser listing), not on aek.com.cy",
+      "kind": "org",
+      "checked": "2026-10-23",
+      "crest": "aek-basketball"
+    },
+    "cyprushandballfederation": {
+      "who": "Cyprus Handball Federation",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from chf.com.cy (research, 23 Oct 2026)",
+      "kind": "org",
+      "checked": "2026-10-23",
+      "national_team": {
+        "flag": "cy",
+        "sport": "handball"
+      }
+    },
+    "koekfed": {
+      "who": "Cyprus Swimming Federation (KOEK, also water polo)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from koek.org.cy (research, 23 Oct 2026)",
+      "kind": "org",
+      "checked": "2026-10-23",
+      "national_team": {
+        "flag": "cy",
+        "sport": "swimming"
+      }
+    },
+    "cyprus_rugby": {
+      "who": "Cyprus Rugby Federation (the Mouflons)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from cyprus-rugby.com (research, 23 Oct 2026)",
+      "kind": "org",
+      "checked": "2026-10-23",
+      "national_team": {
+        "flag": "cy",
+        "sport": "rugby-union"
+      }
+    },
+    "cypruscricket": {
+      "who": "Cyprus Cricket",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "linked from cricket.cy (research, 23 Oct 2026)",
+      "kind": "org",
+      "checked": "2026-10-23",
+      "national_team": {
+        "flag": "cy",
+        "sport": "cricket"
+      }
     }
   },
   "unconfirmed_or_do_not_use": {

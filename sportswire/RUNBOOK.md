@@ -33,7 +33,7 @@ What each scheduled run does, step by step. The scheduled message only says whic
 6. **Gate.** `python3 tools/gate.py <spec>` must print `READY`. Never bypass it; if it can't pass, kill the story with `python3 tools/log.py kill <spec> --reason "…"`.
 7. **Publish.** `python3 tools/publish.py "<page> <date> <slug>" <images> <spec>` → commit-pinned URLs, all `OK`.
 8. **Schedule** in Metricool (`createScheduledPost`, the page's blogId, its timezone):
-   - Feed post: `providers: [{"network":"instagram"}]`, `media`: the pinned URLs in slide order, `mediaAltText`, `text`: the caption, `instagramData: {"type":"POST","collaborators":[…only for positive spotlights with a confirmed handle…],"showReelOnFeed":true,"isAiGenerated":false}`, `autoPublish: true`.
+   - Feed post: `providers: [{"network":"instagram"}]`, `media`: the pinned URLs in slide order, `mediaAltText`, `text`: the caption, `instagramData: {"type":"POST","collaborators":[{"username":"<handle>","deleted":false}, …],"showReelOnFeed":true,"isAiGenerated":false}` with the collaborators from `reshare.collaborators` (PLAYBOOK 7, Tags, mentions and collaborators: mention everyone in the story, invite the subjects where it fits, max 3, never AMBER or the losing side, max 2 invites per account per week), `autoPublish: true`.
    - Carousel: same as a feed post with every slide URL in `media`, in order.
    - Reel: `media`: [the pinned .mp4 URL], `instagramData: {"type":"REEL","showReelOnFeed":true,"collaborators":[…as above…],"isAiGenerated":false}`, `videoCoverMilliseconds`: `reel_meta.cover_ms`, caption as usual. The soundtrack is already in the video (every Reel has sound); don't add `audioConfiguration`. Trial Reels (`"TRIAL_REEL"`) only once the page has 1,000 followers, and never with collaborators.
    - Story: `instagramData.type = "STORY"`, no text. Daily on matchdays: a `fixtures` Story ("Today"), and the day's main post as a story-format card. **Stories on both pages** (`config.json` `rhythm.story_slots_lb` / `story_slots_cy`): Today across all sports 09:30 (one group per sport, every game of the top competitions listed); a `predict` Story for each A/B match; quiz pairs at 13:30 Mon/Wed/Sat (schedule the question, then the answer 2 minutes later, as two Stories); the day's main post 30 minutes after it goes out; tonight's results 22:45 on match nights. Stories need the same facts, fact-check and gate as posts.
@@ -42,7 +42,7 @@ What each scheduled run does, step by step. The scheduled message only says whic
    - Times: the plan's slot, or a free slot from `config.json` (`rhythm.slots`), never in the past, at least 90 minutes from any other feed post on that page. If the morning desk runs late, shift to the next free slot rather than stacking posts.
 9. **Mark the plan**: tick the item in `plans/<year>-W<week>.md` (done / swapped / dropped, one line why).
 10. **Log**: `python3 tools/log.py add <spec> --status scheduled|draft --when <ISO> --metricool-id <id> --planner-url <url> --urls <u1,u2>`, then `python3 tools/publish.py "log <date>" content-log.json`.
-11. **Brief** (PLAYBOOK section 9): `PushNotification` with the one-line version, and the full brief as the final message.
+11. **Brief** (PLAYBOOK section 9): `PushNotification` with the one-line version, and the full brief as the final message. Add a line "Handles for Geoffry to confirm" listing people and clubs in today's stories with no confirmed handle (best guess + where it was seen), so the tag list keeps growing.
 
 ## 1b. Afternoon desk (about 15:50)
 

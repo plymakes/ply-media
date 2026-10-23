@@ -539,14 +539,18 @@
         "https://www.the-afc.com/en/national/afc_asian_cup/news/troussier_2000_triumph_an_amazing_memory.html"
       ],
       "reshare": {
-        "mention": [],
-        "collaborators": []
+        "mention": [
+          "thelfadotcom"
+        ],
+        "collaborators": [
+          "thelfadotcom"
+        ]
       },
       "spec": "specs/2026-10-27/lb-archive-asian-cup-2000.json",
       "logged_at": "2026-10-23T08:32:54+00:00",
       "status": "scheduled",
       "scheduled_for": "2026-10-27T19:30+02:00",
-      "metricool_id": "404209514",
+      "metricool_id": "404255309",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=5686944859988708010",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-01.png",
@@ -557,7 +561,8 @@
       ],
       "sport": "football",
       "notes": [
-        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)"
+        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)",
+        "2026-10-23T17:56 collaborator invite and mention added (tagging rule); Metricool post updated (new id)"
       ]
     },
     {
@@ -624,13 +629,15 @@
         "mention": [
           "lebanonrl"
         ],
-        "collaborators": []
+        "collaborators": [
+          "lebanonrl"
+        ]
       },
       "spec": "specs/2026-10-29/lb-archive-lebanon-france-2017.json",
       "logged_at": "2026-10-23T08:36:47+00:00",
       "status": "scheduled",
       "scheduled_for": "2026-10-29T19:30+02:00",
-      "metricool_id": "404209540",
+      "metricool_id": "404255463",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-8016473318029440603",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-01.png",
@@ -641,7 +648,8 @@
       ],
       "sport": "rugby-league",
       "notes": [
-        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)"
+        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)",
+        "2026-10-23T17:56 collaborator invite and mention added (tagging rule); Metricool post updated (new id)"
       ]
     },
     {
@@ -665,13 +673,15 @@
         "mention": [
           "apoelfcofficial"
         ],
-        "collaborators": []
+        "collaborators": [
+          "apoelfcofficial"
+        ]
       },
       "spec": "specs/2026-10-29/cy-archive-apoel-porto-2011.json",
       "logged_at": "2026-10-23T08:38:29+00:00",
       "status": "scheduled",
       "scheduled_for": "2026-10-29T19:30+02:00",
-      "metricool_id": "404209621",
+      "metricool_id": "404255583",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-4654387398859338130",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-01.png",
@@ -682,7 +692,8 @@
       ],
       "sport": "football",
       "notes": [
-        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)"
+        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)",
+        "2026-10-23T17:56 collaborator invite and mention added (tagging rule); Metricool post updated (new id)"
       ]
     },
     {

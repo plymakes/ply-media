@@ -176,7 +176,9 @@
     "mention": [
       "lebanonrl"
     ],
-    "collaborators": []
+    "collaborators": [
+      "lebanonrl"
+    ]
   },
   "feature": true,
   "sensitive_override": null,
