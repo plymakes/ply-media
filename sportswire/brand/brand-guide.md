@@ -44,3 +44,7 @@ Alternate dark and light cards so the grid doesn't stack the same colour: result
 - In Reels the photo band is taller and slowly pushes in while the text builds underneath; the first frame is the photo alone, which makes a strong hook.
 - One photo per card; on carousels, the hook slide and at most one more. Never collage, filter, recolour or put stickers on a photo.
 - Never AI-generated images of real people.
+
+## From the Archive (history series)
+
+A deliberate exception to the clean look: aged newsprint, letterpress serif (Playfair Display), typewriter labels (Special Elite), body copy in Old Standard TT, sepia ink and the page colour dulled to an old print colour (LB oxblood #9E2A1F, CY ochre #9A6416). Photos appear as aged prints (sepia, grain, cream border, a slight tilt, photo corners) with a typewritten credit. Headlines in this series are sentence case. Everything else about the voice stays the same: short, factual, warm. Rules and slide recipe: `history/README.md`; builder: `tools/archive.py`.

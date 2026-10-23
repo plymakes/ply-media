@@ -10,7 +10,7 @@ What each scheduled run does, step by step. The scheduled message only says whic
 4. Metricool: `getBrandSettings`, find each page's brand by `networksData.instagramData` (`sportswire.lb`, `sportswire.cy`). Write the ids into `config.json` if they are missing. A page whose brand or Instagram isn't connected is skipped, and the brief says so in one line.
 5. `getScheduledPosts` for both brands, today and tomorrow (each brand's own timezone), so nothing collides with what is already queued.
 6. `TaskCreate` a short task list for the run.
-7. **Top up the schedule** (`schedule/README.md`). `list_triggers`, then make sure every desk in the next 48 hours (morning 08:51, afternoon 15:50, evening 22:15, Beirut/Cyprus time) and the next Sunday weekly desk (11:52) has an enabled one-off task named as in that file. Create each missing one with `send_later` (`at` in UTC, converted with `Asia/Nicosia`; `initiation: "human_schedule"`; message = the matching `schedule/<desk>.txt`, verbatim). Never create duplicates; never use `create_trigger`. Do this first, before the desk's own work, so a run that fails later can't break the chain.
+7. **Top up the schedule** (`schedule/README.md`). `list_triggers`, then make sure every desk in the next 48 hours (morning 08:51, afternoon 15:50, evening 22:15, Beirut/Cyprus time) and the next Sunday weekly desk (11:52) has an enabled one-off task named as in that file, plus the next monthly history desk (the 20th at 10:20, section 6). Create each missing one with `send_later` (`at` in UTC, converted with `Asia/Nicosia`; `initiation: "human_schedule"`; message = the matching `schedule/<desk>.txt`, verbatim). Never create duplicates; never use `create_trigger`. Do this first, before the desk's own work, so a run that fails later can't break the chain.
 
 ## 1. Morning desk (about 09:00)
 
@@ -61,7 +61,8 @@ Same as the morning desk, but only for results that are **final** today and **no
 3. **Lessons.** Add 2–4 dated lines to PLAYBOOK section 10 (what worked, what didn't, naming decisions), and adjust next week's format mix toward what worked (CAMPAIGN.md section 10).
 4. **Next week's plan.** Write `plans/<year>-W<next week>.md` in the same table format as the current one: for each page and day, the campaign items from the CAMPAIGN.md grid filled with real fixtures and tentpoles, each with the official source to verify and a confirmed reshare target. At least three spotlights, three Reels and two carousels per page.
 5. **Week-ahead content.** Build Monday's "weekend in 60 seconds" Reel and the "week ahead" fixtures carousel per page (verified like everything else) and schedule them for Monday 10:00 and 12:30.
-6. Refresh `sources/handles.json`: confirm any handle the week needed, mark dead ones. Fill missing crests: `python3 tools/crests.py seed` (it skips anything rate-limited; a later run catches up), plus any club that appeared this week, then `tools/crests.py sheet`, look, `tools/crests.py ok <slugs>` for the right ones and `tools/crests.py rm <slugs>` for wrong ones (kit pictures, old crests, wordmarks too small for a tile). When a page passes 1,000 followers, note in config that Trial Reels are on.
+6. Refresh `sources/handles.json`: confirm any handle the week needed, mark dead ones. Fill missing crests for any club that appeared this week from official logos (`tools/crests.py add <slug> --url … --source-page …`; Wikipedia lookups are off), then `tools/crests.py sheet`, look, `tools/crests.py ok <slugs>` for the right ones and `tools/crests.py rm <slugs>` for wrong ones (kit pictures, old crests, wordmarks too small for a tile). When a page passes 1,000 followers, note in config that Trial Reels are on.
+6b. **Archive TODOs.** If `history/<this month>.md` (or next month's) lists archive posts still marked TODO for the coming Tuesday or Thursday, build, check and schedule them now (section 6, steps 4–7).
 7. Check the connections still work (a push succeeded this week, both Metricool brands present with Instagram connected). Anything failing goes at the top of the brief.
 8. **Weekly brief** to Geoffry: per page followers (and change), top post, progress against the CAMPAIGN.md targets, lessons, next week's highlights, drafts waiting, any corrections.
 
@@ -93,6 +94,20 @@ A result desk is a one-off message into this session, queued with `send_later` b
   "result": {"status": "pending|posted|handover|cancelled", "spec": null, "metricool_id": null}
 }]}
 ```
+
+## 6. History desk ("From the Archive", monthly, the 20th about 10:20)
+
+The series rules, look and photo policy are in `history/README.md`; read it first. One run covers the whole of next month: every Tuesday and Thursday, 19:30, one archive carousel per page.
+
+1. **Slots.** List next month's Tuesdays and Thursdays. For each page that is the number of posts to make (8–10). Read `history/log.json` (no repeats; balance sports, eras, clubs, men's and women's sport) and `history/ideas.md`.
+2. **Research** (subagents may research in parallel, one per page): for each slot, find a story whose anniversary falls that week if possible, otherwise one that echoes current news, otherwise an evergreen classic. Collect every atomic fact with source URLs and tiers to the PLAYBOOK section 4 standard (organiser archives first; Wikipedia only as a lead), plus a rights-safe photo option or "none". Write it all into `history/<YYYY-MM>.md`: the candidates, what was confirmed and what wasn't, and the chosen calendar per page. Add good leads you didn't use to `history/ideas.md`.
+3. **Photos.** `python3 tools/archive_photo.py info "File:…"` then `pick` (Commons, licence read from the file page; refused unless PD/CC0/CC BY/CC BY-SA), or `tools/photos.py` for a club/federation archive photo plus `"series": "archive"` in its sidecar. Look at each photo before using it. No safe photo → cover without one.
+4. **Build** each post as a spec `specs/<publish date>/<page>-archive-<slug>.json` with `"series": "archive"`, `"archive": {"issue": <n>}` (running number per page, from the log), `"format": "post"`, `"light": "green"`, the `slides` (cover, story, ticket or ledger, thennow, end), caption (hook line, 2–3 short paragraphs, a question, "📸 …" if there is a photo, "Source: …", mentions, `#SportsWireLB`/`#SportsWireCY` and `#FromTheArchive`), alt text per slide, and the facts with sources (anniversary arithmetic written out). `python3 tools/render.py <spec>`; fix until `ok`; open every PNG and check it word by word; set `visual_check`.
+5. **Fact-check** each post with a fresh agent that sees only the slide text and caption (RUNBOOK 1, step 5 wording, plus: "these are historical facts; prefer the organiser's archive; Wikipedia alone is UNVERIFIED"). WRONG → fix, re-render, re-check. UNVERIFIED → cut it or swap the story. Then `python3 tools/gate.py <spec>` must print READY.
+6. **Publish and schedule**: `python3 tools/publish.py …` then `createScheduledPost` per post for its Tuesday/Thursday at 19:30, `autoPublish: true`, `draft: false` (GREEN). Check the day first with `getScheduledPosts`: keep 90 minutes from any other feed post (move to 20:00 if needed).
+7. **Track**: `python3 tools/log.py add …` per post, append each to `history/log.json` (key, page, publish date, event year, title, spec, Metricool id), and mark it in the month file (scheduled + id). Anything not finished stays `TODO` in the month file for the weekly desk.
+8. **Next run**: queue next month's history desk with `send_later` (the 20th at 10:20 Asia/Nicosia, converted to UTC; name `SportsWire history desk · <Mon YYYY>`; message `schedule/history.txt` verbatim), unless one already exists.
+9. **Brief** (under 120 words): per page the month's archive calendar (date, year, headline), anything dropped and why, TODOs left. PushNotification with the one-line version.
 
 ## If something breaks
 - Push fails → stop before scheduling anything; the brief says GitHub access needs fixing, with the error.

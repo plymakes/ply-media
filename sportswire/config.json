@@ -44,7 +44,8 @@
       "midday": "12:30",
       "evening": "18:00",
       "results_from": "21:00",
-      "results_latest": "23:15"
+      "results_latest": "23:15",
+      "archive": "19:30 Tuesday and Thursday (both pages)"
     },
     "slots_note": "From Metricool best-time data on 21 Oct 2026: weekday peak 10:00-12:00 and a second peak at 18:00; weekends about half the volume with peaks at 10:00 and 18:00-19:00. The weekly desk re-checks getBestTimeToPostByNetwork once each page has two weeks of its own data.",
     "min_minutes_between_feed_posts": 90,
@@ -56,5 +57,20 @@
     "name": "Season Kickoff",
     "start": "2026-10-21",
     "end": "2026-12-06"
+  },
+  "series": {
+    "archive": {
+      "name": "From the Archive",
+      "file": "history/README.md",
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "time": "19:30",
+      "per_page_per_week": 2,
+      "monthly_desk": "the 20th at 10:20",
+      "hashtag": "#FromTheArchive",
+      "started": "2026-10-27"
+    }
   }
 }

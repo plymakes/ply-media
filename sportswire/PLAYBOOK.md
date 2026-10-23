@@ -171,6 +171,9 @@ Athlete and community features reached 30–100 times more people than result ca
 
 ---
 
+
+**History series ("From the Archive") only:** besides official club/federation/organiser archive photos, Wikimedia Commons files under Public domain, CC0, CC BY or CC BY-SA may be used, picked with `tools/archive_photo.py` (it reads the licence and author from the Commons file page and refuses anything else). Credit them on the card and in the caption as "<Author> / Wikimedia Commons, <Licence>". Commons is never used for news posts. Agency/wire photos stay banned everywhere, even when someone has uploaded them to Commons.
+
 ## 8. Corrections
 
 If a published post turns out to be wrong:
