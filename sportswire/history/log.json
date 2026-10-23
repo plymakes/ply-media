@@ -1,4 +1,18 @@
 {
   "about": "Every From the Archive post: key, page, publish date, event year, title, spec, Metricool id. See history/README.md.",
-  "posts": []
+  "posts": [
+    {
+      "key": "cy-archive-2012-kontides-first-olympic-medal",
+      "page": "cy",
+      "issue": 1,
+      "publish": "2026-10-23T11:35+03:00",
+      "event_date": "2012-08-06",
+      "event_year": 2012,
+      "sport": "sailing",
+      "title": "Cyprus wins its first Olympic medal (Pavlos Kontides, London 2012; second silver at Paris 2024)",
+      "spec": "specs/2026-10-23/cy-archive-kontides-first-medal.json",
+      "metricool_id": 403923632,
+      "note": "test post at Geoffry's request (Fri 23 Oct)"
+    }
+  ]
 }

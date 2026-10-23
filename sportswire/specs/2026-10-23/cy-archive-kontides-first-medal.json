@@ -246,5 +246,10 @@
       }
     ],
     "notes": "12 text claims CONFIRMED. Photo credit marked UNVERIFIED by the checker only because WebFetch can't open Commons file pages; the licence and author were read from the file page itself (primary source) and are recorded in the sidecar."
+  },
+  "metricool": {
+    "id": 403923632,
+    "when": "2026-10-23T11:35:00+03:00",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=6542226339822913625"
   }
 }

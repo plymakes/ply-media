@@ -213,8 +213,8 @@
     "notes": "All 28 claims CONFIRMED against the CFA."
   },
   "metricool": {
-    "id": 403831856,
-    "when": "2026-10-23T12:30:00+03:00",
-    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=5720371008025022191"
+    "id": 403923754,
+    "when": "2026-10-23T13:15:00+03:00",
+    "note": "moved from 12:30 (id 403831856) to keep 90 min after the archive test post"
   }
 }

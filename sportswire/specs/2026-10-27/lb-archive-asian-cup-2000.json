@@ -1,0 +1,195 @@
+{
+  "page": "lb",
+  "format": "post",
+  "series": "archive",
+  "archive": {
+    "issue": 1
+  },
+  "theme": "light",
+  "date": "2026-10-27",
+  "event_date": "2000-10-29",
+  "slug": "archive-asian-cup-2000",
+  "story_key": "lb-archive-2000-asian-cup-hosts",
+  "light": "green",
+  "slides": [
+    {
+      "template": "cover",
+      "card": {
+        "kicker": "This month in 2000",
+        "year": "2000",
+        "headline": "When Asia came to *Beirut*",
+        "deck": "Lebanon hosted the AFC Asian Cup in October 2000: their first Asian Cup finals, as hosts.",
+        "stamp": "26 years ago"
+      }
+    },
+    {
+      "template": "story",
+      "card": {
+        "title": "The *story*",
+        "text": "In October 2000, Lebanon staged the AFC Asian Cup, with games in Beirut, Sidon and Tripoli. The hosts lost 4-0 to Iran, came back from 2-0 down to draw 2-2 with Iraq, then drew 1-1 with Thailand. Two points left them bottom of their group on goal difference, but the final still came to Beirut.",
+        "pull": {
+          "big": "2",
+          "label": "points for the hosts: *out on goal difference*"
+        }
+      }
+    },
+    {
+      "template": "ticket",
+      "card": {
+        "title": "The *final*",
+        "stub": "Final · 2000",
+        "competition": "AFC Asian Cup",
+        "round": "Final",
+        "home": "Japan",
+        "away": "Saudi Arabia",
+        "score": "1-0",
+        "rows": [
+          {
+            "label": "Date",
+            "value": "Sunday 29 October 2000"
+          },
+          {
+            "label": "Venue",
+            "value": "Sports City Stadium, Beirut"
+          },
+          {
+            "label": "Goal",
+            "value": "Mochizuki, from Nakamura's free kick"
+          }
+        ],
+        "note": "Japan's second Asian title, under coach Philippe Troussier."
+      }
+    },
+    {
+      "template": "thennow",
+      "card": {
+        "title": "Then and *now*",
+        "then": {
+          "label": "2000",
+          "text": "Lebanon play their first Asian Cup finals, as the host country."
+        },
+        "now": {
+          "label": "2019",
+          "text": "Lebanon reach the Asian Cup through qualifying for the first time."
+        }
+      }
+    },
+    {
+      "template": "end",
+      "card": {}
+    }
+  ],
+  "caption": "From the archive: October 2000, when the Asian Cup came to Lebanon. ⚽\n\nLebanon hosted the AFC Asian Cup 26 years ago this month, their first Asian Cup finals. The hosts lost to Iran, drew with Iraq and Thailand, and went out in the group.\n\nOn Sunday 29 October 2000, Japan beat Saudi Arabia 1-0 in the final at Beirut's Sports City Stadium.\n\nWere you there? 🇱🇧\n\nSource: AFC, Japan Football Association, RSSSF, Inside World Football\n#SportsWireLB #FromTheArchive #LebaneseFootball",
+  "alt": [
+    "Archive cover: 2000, When Asia came to Beirut. Lebanon hosted the AFC Asian Cup in October 2000, their first Asian Cup finals, as hosts. 26 years ago.",
+    "The story: Lebanon staged the 2000 Asian Cup with games in Beirut, Sidon and Tripoli; they lost 4-0 to Iran, drew 2-2 with Iraq after being 2-0 down and drew 1-1 with Thailand; 2 points, bottom of the group on goal difference and out.",
+    "The final: AFC Asian Cup final, Sunday 29 October 2000, Sports City Stadium, Beirut: Japan 1, Saudi Arabia 0, goal by Mochizuki from Nakamura's free kick. Japan's second Asian title, under coach Philippe Troussier.",
+    "Then and now: in 2000 Lebanon played their first Asian Cup finals as the host country; in 2019 they reached the Asian Cup through qualifying for the first time.",
+    "End card: more from the archive every Tuesday and Thursday."
+  ],
+  "facts": [
+    {
+      "claim": "Lebanon hosted the 2000 AFC Asian Cup, held in October 2000; they 'played in the 2000 edition as the host country' (their first Asian Cup finals); first qualification through qualifying in 2019; 2026 - 2000 = 26 years",
+      "sources": [
+        {
+          "url": "https://www.the-afc.com/en/national/afc_asian_cup/news/troussier_2000_triumph_an_amazing_memory.html",
+          "tier": 1,
+          "outlet": "AFC"
+        },
+        {
+          "url": "https://www.the-afc.com/en/national/afc_asian_cup/news/ones_to_watch_hassan_matouk_lebanon.html",
+          "tier": 1,
+          "outlet": "AFC"
+        },
+        {
+          "url": "http://www.jfa.jp/samuraiblue/asiancup_history/",
+          "tier": 1,
+          "outlet": "Japan Football Association (dates)"
+        }
+      ]
+    },
+    {
+      "claim": "Games in Beirut, Sidon and Tripoli (3 host cities)",
+      "sources": [
+        {
+          "url": "https://rsssf.org/tables/00asch-ext.html",
+          "tier": 2,
+          "outlet": "RSSSF"
+        },
+        {
+          "url": "https://www.insideworldfootball.com/2024/01/03/asian-cup-2000/",
+          "tier": 2,
+          "outlet": "Inside World Football"
+        }
+      ]
+    },
+    {
+      "claim": "Lebanon's group (Group A): Lebanon 0-4 Iran; Lebanon 2-2 Iraq after being 2-0 down; Lebanon 1-1 Thailand; table Iran 7, Iraq 4, Thailand 2, Lebanon 2: Lebanon 4th (bottom) on goal difference (-4 v -2), eliminated",
+      "sources": [
+        {
+          "url": "https://rsssf.org/tables/00asch-ext.html",
+          "tier": 2,
+          "outlet": "RSSSF"
+        },
+        {
+          "url": "https://www.insideworldfootball.com/2024/01/03/asian-cup-2000/",
+          "tier": 2,
+          "outlet": "Inside World Football"
+        }
+      ]
+    },
+    {
+      "claim": "Final: Sunday 29 October 2000, Japan 1-0 Saudi Arabia, Shigeyoshi Mochizuki from Shunsuke Nakamura's free kick, at the Sports City Stadium, Beirut; Japan's 2nd Asian Cup title; coach Philippe Troussier",
+      "sources": [
+        {
+          "url": "http://www.jfa.jp/samuraiblue/asiancup_history/",
+          "tier": 1,
+          "outlet": "Japan Football Association"
+        },
+        {
+          "url": "https://www.japantimes.co.jp/sports/2000/10/31/soccer/j-league/japan-edges-saudi-arabia-to-become-asian-champion/",
+          "tier": 2,
+          "outlet": "The Japan Times"
+        },
+        {
+          "url": "https://www.insideworldfootball.com/2024/01/03/asian-cup-2000/",
+          "tier": 2,
+          "outlet": "Inside World Football"
+        },
+        {
+          "url": "https://www.the-afc.com/en/national/afc_asian_cup/news/troussier_2000_triumph_an_amazing_memory.html",
+          "tier": 1,
+          "outlet": "AFC (Troussier)"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": []
+  },
+  "feature": true,
+  "sensitive_override": null,
+  "images": [
+    "posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-01.png",
+    "posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-02.png",
+    "posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-03.png",
+    "posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-04.png",
+    "posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-05.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "factcheck_history": [
+    {
+      "pass": 1,
+      "result": "FAIL",
+      "notes": "WRONG: 'third in the group' (Lebanon were 4th, bottom on goal difference); 'Beirut and Sidon' (also Tripoli). The Japan Times not found by the checker: replaced by Inside World Football in the source line. Lesson: the research agent's 'third' was wrong; the gate caught it."
+    }
+  ],
+  "visual_check": {
+    "done": true,
+    "notes": "Re-rendered after fixes: slide 2 now Beirut, Sidon and Tripoli and 'bottom of their group on goal difference', pull 'out on goal difference'; other slides unchanged; nothing clipped."
+  }
+}
