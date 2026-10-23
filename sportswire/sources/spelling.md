@@ -27,3 +27,5 @@ One spelling per name, everywhere (cards, captions, alt text). Basketball: FIBA'
 **Athletes:** Milan Trajkovic · Olivia Fotopoulou (200m) · Filippa Fotopoulou (long jump; not "Philippa", and don't confuse the sisters) · Elena Kulichenko (not "Elina") · Iosif Kesidis · Marios Georgiou · Neofytos Kyriakou (confirm) · Kalia Antoniou · Pavlos Kontides · Andreas Pontikis · Konstantina Nikolaou · Giannis Antoniou · Sofia Asvesta · Petros Christodoulides
 
 **Not Cypriot / not current:** Apostolos Christou is Greek. Andreas Chasikos has no ISSF results since 2023.
+
+**Olympians (Olympics.com spelling):** Zakaria Chihab · Khalil Taha · Kheir Mohamed Tarabulsi (not "Mohamed Kheir", Olympedia's order; 23 Oct) · Hassan Bchara (Olympedia: Bechara) · Pavlos Kontides
