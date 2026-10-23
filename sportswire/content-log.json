@@ -452,7 +452,8 @@
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=8247991587912959825",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/a9db0a08ff6d780c7041652a86186b8952cdcb53/sportswire/reels/lb/2026-10/2026-10-23-riyadi-two-titles.mp4"
-      ]
+      ],
+      "sport": "basketball"
     },
     {
       "page": "lb",
@@ -552,7 +553,8 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-03.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-05.png"
-      ]
+      ],
+      "sport": "football"
     },
     {
       "page": "cy",
@@ -628,7 +630,8 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-03.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-05.png"
-      ]
+      ],
+      "sport": "rugby-league"
     },
     {
       "page": "cy",
@@ -700,7 +703,8 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-03.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-05.png"
-      ]
+      ],
+      "sport": "wrestling"
     },
     {
       "page": "lb",
@@ -731,7 +735,8 @@
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-615851451346107094",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/ee8f2b8b1c059a696135cd4b420ba8f95e4e0373/sportswire/posts/lb/2026-10/2026-10-23-rlwc-tonga-lebanon-result.png"
-      ]
+      ],
+      "sport": "rugby-league"
     }
   ]
 }

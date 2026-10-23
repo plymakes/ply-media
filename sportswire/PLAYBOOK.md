@@ -31,7 +31,7 @@ Coverage first, not trophy-chasing (Geoffry, 26 Aug 2026). These are coverage pa
 - Quiet days: who plays today, who travels, fixtures and standings.
 - Global sport only if it is enormous or has a direct local thread.
 
-Priorities. Lebanon: basketball first, then football, then everything else (rugby league, athletics, swimming, skiing, combat sports, weightlifting, tennis/padel, motorsport, futsal, volleyball). Cyprus: football first (league, cup, national team, European ties), then athletics, sailing, shooting, basketball, volleyball, tennis, swimming, cycling, motorsport.
+Priorities. Lebanon: the **top 20 sports in `sources/lebanon-sports.md`**, in that order (basketball first, then football), with every league, cup and international competition we track for each, and the fast sources for schedules, scores, results and photos. Every run goes through all 20 with `python3 tools/sweep.py today`, and `python3 tools/sweep.py coverage` shows which sports are overdue (Geoffry, 23 Oct 2026: "for every sport check all the tournaments and league to keep track off. those should be listed to go over everytime"). Clubs and individual athletes, at home and abroad. Cyprus: football first (league, cup, national team, European ties), then athletics, sailing, shooting, basketball, volleyball, tennis, swimming, cycling, motorsport.
 
 Each page posts only its own country. A story with both a Lebanese and a Cypriot angle can run on both pages, written separately.
 
@@ -39,7 +39,7 @@ Each page posts only its own country. A story with both a Lebanese and a Cypriot
 
 ## 3. Sources
 
-Full source maps: `sources/lebanon.md`, `sources/cyprus.md`.
+Full source maps: `sources/lebanon-sports.md` (Lebanon: the top 20 sports, every competition we track and its fast sources), `sources/lebanon.md`, `sources/cyprus.md`.
 
 - **Tier 1, primary:** the federation, league or competition official site or verified official account (FIBA, AFC, UEFA, FIFA, CFA, FLBB, LFA, World Athletics, official results platforms), and the club's or athlete's own verified account for news about themselves (signings, injuries they announce, retirements, **and the final score of their own match**). "Account" means any of the club's verified channels: Instagram, X, Facebook, Threads, YouTube or website. Official live-stats pages (FIBA LiveStats, Genius Sports, the organiser's live centre) are tier 1 for a score once they show the game as final.
 - **Tier 2, established media:** named news outlets with editorial standards (e.g. Cyprus Mail, in-cyprus/Philenews, CNA, L'Orient Today, Annahar, elsport, MTV Lebanon sport, Arab News, NNA, Reuters, AP, AFP). Data services (Flashscore, Sofascore, Soccerway, Asia-Basket) count as tier 2 for scores and statistics only.
@@ -111,7 +111,7 @@ The current growth campaign, its formats, weekly grid, tentpoles and targets are
 - **Evening desk (daily, about 22:15):** the catch-all for final results not covered by a result desk, from 22:30, at least 30 minutes apart per page.
 - **Weekly desk (Sunday, about 11:50):** analytics into `growth-log.json`, lessons into section 10, next week's plan, week-ahead content.
 
-Volume per page: about 2 feed items a day (at most 4), at least 3 Reels and 2 carousels a week, Stories daily on matchdays. Never two feed posts on one page within 90 minutes (30 on results nights). Group several results of one competition into one `roundup` card. Quality beats volume every time: an empty slot is better than a weak or unverified post.
+Volume per page: about 2 feed items a day (at most 4), at least 3 Reels and 2 carousels a week, Stories daily on matchdays. **@sportswire.lb posts more** (from 24 Oct 2026, to cover all its sports): about 3 feed items a day (at most 5, with a 15:00 slot), 3–6 Stories a day (Today across all sports, predict-the-score, quizzes, the day's main post, tonight's results), at least 5 interactive items a week (PLAYBOOK 7, Interactive posts) and at least 8 different sports a week. Every game in the top competitions gets at least a line: in the Today Story before, and in a result card, roundup or the night's results Story after. Never two feed posts on one page within 90 minutes (30 on results nights). Group several results of one competition into one `roundup` card. Quality beats volume every time: an empty slot is better than a weak or unverified post.
 
 ### Timing: before and after every event (Geoffry, 21 Oct 2026)
 We are a news page, so timing is part of being right.
@@ -146,6 +146,14 @@ House voice (see `brand/brand-guide.md` and the captions in `brand/reference/`):
 - End most captions with one genuine, good-natured question ("who was your player of the night?"). Never engagement bait ("comment YES", "tag 3 friends") and never on sad news.
 - Partisan for the country ("we" for the national team), neutral between local clubs (never "we" for a club). Report defeats plainly and kindly. No opinions about referees, officials or players.
 - Language: English; a word of Lebanese Arabic or Greek only for warmth, never for facts. Names in their official English spelling.
+
+### Interactive posts (Geoffry, 23 Oct 2026: "interactive posts with images")
+Scheduled posts can't carry Instagram's poll, quiz or slider stickers (the publishing API has no stickers), so the interaction is built into the post and lives in the comments and replies. Templates in `tools/README.md`; examples in `tools/examples/lb-*-sample.json`.
+- **Quiz** (`quiz` then `answer`): a carousel (question, answer, `end`) or two Stories (question, then the answer 2 minutes later). 3–4 options; one clearly right answer. The right answer is a fact like any other, and the independent checker also confirms **every wrong option is wrong** (no trick questions, no "it depends"). With a photo or crests wherever possible.
+- **Vote** (`vote`): "player of the week", "best moment", "this or that": 2–4 candidates with a photo (or crest), name, club and one verified stat each. Votes are comments ("1", "2"…). We never announce a vote "winner" or a count, because runs can't count comments reliably.
+- **Predict the score** (`predict`): the morning of an A/B match (Story, and for the biggest games a feed post), crests, kick-off time and venue confirmed on the official schedule; "drop your score in the comments". Same timing rule as previews (never in the last 3 hours). No odds, prizes, betting or "tips" language, ever (the gate blocks it).
+- Stories end with a question people can answer by replying ("Who's your pick? Reply 👇").
+- Geoffry can add a real poll sticker in the app if he wants; the brief names the Story it would suit.
 
 ### Reshare targets
 For every post, identify the athlete, club or federation most likely to reshare it, with a handle confirmed in `sources/handles.json`. Mention them in the caption. For positive spotlight posts about one athlete or club, also add them as an Instagram collaborator (`instagramData.collaborators`); at most one collaborator per post, never on AMBER posts or defeats.

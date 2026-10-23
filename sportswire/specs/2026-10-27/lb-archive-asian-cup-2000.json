@@ -239,5 +239,6 @@
   "visual_check": {
     "done": true,
     "notes": "Re-rendered only to renumber the issue (masthead No.); content identical to the checked version. Re-rendered after fixes: slide 2 now Beirut, Sidon and Tripoli and 'bottom of their group on goal difference', pull 'out on goal difference'; other slides unchanged; nothing clipped."
-  }
+  },
+  "sport": "football"
 }

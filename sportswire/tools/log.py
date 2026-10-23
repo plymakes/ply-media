@@ -56,7 +56,8 @@ def main():
         spec = json.loads(pathlib.Path(a.target).read_text())
         entry = {
             'page': spec.get('page'), 'date': spec.get('date'), 'slug': spec.get('slug'),
-            'story_key': spec.get('story_key'), 'light': spec.get('light'),
+            'story_key': spec.get('story_key'), 'light': spec.get('light'), 'sport': spec.get('sport'),
+            'format': spec.get('format', 'post'), 'series': spec.get('series'),
             'template': spec.get('template') or ','.join(s['template'] for s in spec.get('slides', [])),
             'headline': (spec.get('card') or (spec.get('slides') or [{}])[0].get('card', {})).get('headline', ''),
             'caption_first_line': (spec.get('caption') or '').split('\n')[0][:160],

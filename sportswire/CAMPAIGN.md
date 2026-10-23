@@ -52,6 +52,13 @@ All built from `tools/render.py` templates; Reels with `"format": "reel"` (see `
 | **Countdown** | `preview` Story or reel | Before tentpoles (section 6) |
 | **Table** | `standings` | After each full round (PLAYBOOK 4.3: round must be complete) |
 | **Correction** | `correction` | Only if needed; always AMBER |
+| **Quiz** (interactive) | `quiz` → `answer` (carousel or two Stories) | LB: Wed 12:30 carousel; Stories Mon, Wed, Sat 13:30. A different sport each time, overdue sports first |
+| **Vote** (interactive) | `vote`, 2–4 candidates with photos | LB: Mon 18:00 "performance of the week" across all sports |
+| **Predict the score** (interactive) | `predict` Story (feed for the biggest games) | Morning of every A/B match, with the Today Story |
+| **Today, all sports** | `fixtures` Story, one group per sport | LB: 09:30 every day with an event in any top-20 sport |
+| **Tonight's results** | `fixtures`/`roundup` Story across sports | LB: 22:45 on match nights |
+| **Lebanese abroad** | `roundup`/`spotlight` carousel | LB: Fri 15:00 and Sun 15:00 (athletes from `sources/lebanon-sports.md`) |
+| **Other sports this weekend** | carousel, one slide per sport | LB: Mon 15:00 (volleyball, futsal, handball, women's leagues, individual sports) |
 
 **Every Reel has sound**: the renderer builds an original soundtrack into each one, and the gate blocks silent Reels (PLAYBOOK 7, Reels).
 
@@ -70,6 +77,20 @@ The weekly desk turns this into a concrete plan for the coming week in `plans/<y
 | Fri | Weekend preview (carousel) | Spotlight 3 | Today Story | Results |
 | Sat | Today Story + news | — | Result Reel if a big one | Results / roundups |
 | Sun | Today Story + news | — | Table after the round | Results / roundups |
+
+**@sportswire.lb from 24 Oct 2026** (more sports, more often: Geoffry, 23 Oct). Feed ~3 a day (max 5); Stories 3–6 a day; at least 5 interactive items and 8 different sports a week.
+
+| Day | Stories | 10:00 | 12:30 | 15:00 | 18:00 | 19:30 | Evening |
+|---|---|---|---|---|---|---|---|
+| Mon | Today · quiz pair 13:30 | Weekend in 60 s (Reel) | Week ahead, all sports (carousel) | Other sports this weekend (carousel) | Vote: performance of the week | — | Results |
+| Tue | Today · predict | News / results | Explainer or small-sport spotlight | News | Spotlight 1 | Archive | Results |
+| Wed | Today · quiz pair 13:30 | Spotlight 2 (Reel) | Quiz (carousel) | News | News / preview | — | Results |
+| Thu | Today · predict | News / preview | Numbers (card or Reel) | News | Spotlight 3 | Archive | Results |
+| Fri | Today · predict for every A/B game | Weekend preview, all sports (carousel) | News | Lebanese abroad | News / preview | — | Results · tonight's results Story |
+| Sat | Today · predict · quiz pair 13:30 · tonight's results | News | — | News | Result Reel if a big one | — | Results / roundups |
+| Sun | Today · predict · tonight's results | News | — | Lebanese abroad (weekend) | Table after the round | — | Results / roundups |
+
+Overdue sports (`python3 tools/sweep.py coverage`) take the next spotlight, quiz, vote, explainer or archive slot. The grid above is for LB; Cyprus keeps the grid before it.
 
 **Timing beats the grid.** On event days the grid gives way to the event: a preview that morning (or the evening before for early starts), and the result straight after the final whistle through a result desk (PLAYBOOK 6, Timing).
 
@@ -100,7 +121,7 @@ From the source maps (19 Oct). **These are leads, not facts**: each run re-verif
 3. **Underserved corners.** Women's basketball and football, futsal, volleyball, athletics, swimming, rally, rugby league, run clubs. Our August data: features on athletes and communities reached 30–100× more people than result cards.
 4. **Sendable posts.** "Did you know" facts, records, local pride moments, explainers people forward to a friend. A soft "send this to…" line is fine on explainers; never on news.
 5. **Keyword captions** and alt text on every image (PLAYBOOK 7).
-6. **Stories every day.** Today's fixtures and the day's main post as a Story card. (Polls and quizzes need stickers that tools can't add; Geoffry can add them by hand if he wants.)
+6. **Stories every day.** Today's fixtures and the day's main post as a Story card; on LB also predict-the-score, quiz pairs and tonight's results (PLAYBOOK 7, Interactive posts). Real poll stickers can't be added by the publishing tools; Geoffry can add one by hand if he wants.
 7. **Trial Reels** from 1,000 followers.
 
 ## 8. Editorial standards: the no-drama rules

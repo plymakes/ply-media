@@ -87,6 +87,15 @@ def check(path: str) -> list[str]:
     if spec['light'] not in ('green', 'amber'):
         probs.append('light must be green or amber (red stories are never specced)')
 
+    # 1b. LB specs name their sport from the Lebanon sports map, so coverage of all top-20 sports can be tracked
+    if spec['page'] == 'lb' and spec['date'] >= '2026-10-24':
+        mp = ROOT / 'sources/lebanon-sports.json'
+        ids = {x['id'] for x in json.loads(mp.read_text())['sports']} if mp.exists() else set()
+        if not spec.get('sport'):
+            probs.append('"sport" missing: use an id from sources/lebanon-sports.json (tools/sweep.py check lists them)')
+        elif ids and spec['sport'] not in ids:
+            probs.append(f'"sport": "{spec["sport"]}" is not an id in sources/lebanon-sports.json')
+
     # 2. sources per fact
     claims_text = ''
     for i, f in enumerate(spec['facts'], 1):

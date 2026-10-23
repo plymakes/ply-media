@@ -1,5 +1,7 @@
 # SportsWire LB: Source Map (checked 19 Oct 2026)
 
+> **Start with `sources/lebanon-sports.md`** (23 Oct 2026): the ranked top-20 sports map with every league, cup and international competition and 2–5 fast sources each. `python3 tools/sweep.py today` turns it into each run's checklist. This file keeps the older notes.
+
 > **Research snapshot, 19 Oct 2026.** Use this file to know *where to look*. Results, dates and names in it are leads, not verified facts: every fact on a post still has to pass PLAYBOOK section 4 on the day. Items marked UNCONFIRMED have not been checked at all. The weekly desk keeps this file current (dead sites, new handles, new season dates).
 >
 > Fetching note: some sites refuse automated fetching from the newsroom's environment (seen 19 Oct: philenews.com / in-cyprus, the961.com, lorientlejour.com/sport, Transfermarkt, Kathimerini Cyprus). Use web search snippets only to find the story, then confirm on a site that opens. Never try to get around a block.

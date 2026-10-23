@@ -31,13 +31,27 @@
   "rhythm": {
     "feed_items_per_page_per_day": {
       "target": 2,
-      "max": 4
+      "max": 4,
+      "lb": {
+        "target": 3,
+        "max": 5,
+        "since": "2026-10-24",
+        "why": "Geoffry, 23 Oct 2026: cover the top 20 Lebanese sports, post more often, Stories and posts"
+      }
     },
     "per_page_per_week": {
       "reels_min": 3,
       "carousels_min": 2,
       "spotlights_min": 3,
-      "stories_per_day": "1-3"
+      "stories_per_day": "1-3",
+      "lb": {
+        "reels_min": 3,
+        "carousels_min": 3,
+        "spotlights_min": 3,
+        "interactive_min": 5,
+        "stories_per_day": "3-6",
+        "sports_min": 8
+      }
     },
     "slots": {
       "morning": "10:00",
@@ -45,12 +59,20 @@
       "evening": "18:00",
       "results_from": "21:00",
       "results_latest": "23:15",
-      "archive": "19:30 Tuesday and Thursday (both pages)"
+      "archive": "19:30 Tuesday and Thursday (both pages)",
+      "afternoon_lb": "15:00 (LB only)"
     },
     "slots_note": "From Metricool best-time data on 21 Oct 2026: weekday peak 10:00-12:00 and a second peak at 18:00; weekends about half the volume with peaks at 10:00 and 18:00-19:00. The weekly desk re-checks getBestTimeToPostByNetwork once each page has two weeks of its own data.",
     "min_minutes_between_feed_posts": 90,
     "min_minutes_between_feed_posts_results_night": 30,
-    "trial_reels": "off until the page has 1,000 followers (Instagram requirement); then 2 a week to test hooks"
+    "trial_reels": "off until the page has 1,000 followers (Instagram requirement); then 2 a week to test hooks",
+    "story_slots_lb": {
+      "today": "09:30 (every day with an event in any top-20 sport)",
+      "predict": "with Today, for each A/B match (max 3 a day)",
+      "quiz": "13:30 Mon, Wed, Sat (question, then the answer 2 minutes later)",
+      "results": "22:45 on match nights (all sports)",
+      "main_post": "the day's main post as a Story card, 30 minutes after it goes out"
+    }
   },
   "campaign": {
     "file": "CAMPAIGN.md",
@@ -72,5 +94,11 @@
       "hashtag": "#FromTheArchive",
       "started": "2026-10-27"
     }
+  },
+  "lebanon_sports_map": {
+    "file": "sources/lebanon-sports.md",
+    "data": "sources/lebanon-sports.json",
+    "tool": "tools/sweep.py",
+    "every_run": "python3 tools/sweep.py today (all top-20 sports, in order) and python3 tools/sweep.py coverage"
   }
 }
