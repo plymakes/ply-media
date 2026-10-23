@@ -701,6 +701,37 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-05.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-23",
+      "slug": "rlwc-tonga-lebanon-result",
+      "story_key": "lb-rlwc-2026-tonga-lebanon-result",
+      "light": "green",
+      "template": "result",
+      "headline": "tonga too strong in *sydney*.",
+      "caption_first_line": "Tonga beat Lebanon 36-0 at the Rugby League World Cup in Sydney. 🏉",
+      "sources": [
+        "https://www.rlwc2026.com/draw/mens/2026/round-3/lebanon-v-france",
+        "https://www.rugbyleaguehub.com/tonga-36-lebanon-0-tonga-works-hard-to-chop-down-cedars/",
+        "https://www.seriousaboutrl.com/tui-lolohea-shines-as-seven-try-tonga-shut-out-lebanon-36-0-to-set-up-samoa-clash-119587",
+        "https://www.zerotackle.com/fulltime-tonga-lebanon-round-2-2026-mc10398218-238749"
+      ],
+      "reshare": {
+        "mention": [
+          "lebanonrl"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-23/lb-rlwc-tonga-lebanon-result.json",
+      "logged_at": "2026-10-23T11:30:50+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-23T14:34+03:00",
+      "metricool_id": "404072347",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-615851451346107094",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/ee8f2b8b1c059a696135cd4b420ba8f95e4e0373/sportswire/posts/lb/2026-10/2026-10-23-rlwc-tonga-lebanon-result.png"
+      ]
     }
   ]
 }
