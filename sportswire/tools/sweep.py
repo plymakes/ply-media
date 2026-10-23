@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
-"""Lebanon sports map: what to check on every run (Geoffry, 23 Oct 2026: "those should be listed to go over
-everytime ... the top 20 sports in lebanon").
+"""Sports maps for both pages: what to check on every run (Geoffry, 23 Oct 2026: "those should be listed to go
+over everytime ... the top 20 sports in lebanon"; then "let's do the same for cyprus").
+
+Every command takes --page lb (default) or --page cy.
 
     python3 tools/sweep.py today [--date YYYY-MM-DD]      checklist for this run: every top-20 sport in rank
                                                           order, its live competitions, today's usual match
                                                           days, dated events in the next 7 days, athletes to
                                                           look up today, and the fast sources to open
     python3 tools/sweep.py week [--date …] [--days 14]    every dated event in the coming days, all sports
-    python3 tools/sweep.py coverage [--days 21]           posts per sport on @sportswire.lb (content-log) against
+    python3 tools/sweep.py coverage [--days 21]           posts per sport on the page (content-log) against
                                                           each sport's "cover_every_days": overdue sports first
-    python3 tools/sweep.py check                          validates sources/lebanon-sports.json
+    python3 tools/sweep.py check                          validates the page's map
 
-The map itself: sources/lebanon-sports.json (data) and sources/lebanon-sports.md (the readable version with
-the reasons). Every spec for the LB page names its "sport" with an id from the map (the gate checks).
+The maps: sources/lebanon-sports.json and sources/cyprus-sports.json (data), with a readable .md next to each.
+Every spec names its "sport" with an id from its page's map (the gate checks).
 """
 from __future__ import annotations
 
@@ -25,12 +27,14 @@ import sys
 from urllib.parse import urlparse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-MAP = ROOT / 'sources/lebanon-sports.json'
+MAPS = {'lb': ROOT / 'sources/lebanon-sports.json', 'cy': ROOT / 'sources/cyprus-sports.json'}
+NAMES = {'lb': 'Lebanon', 'cy': 'Cyprus'}
+PAGE = 'lb'
 DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
 
 def load() -> dict:
-    return json.loads(MAP.read_text())
+    return json.loads(MAPS[PAGE].read_text())
 
 
 def d(s: str | None) -> dt.date | None:
@@ -80,7 +84,7 @@ def events_between(m: dict, a: dt.date, b: dt.date) -> list[dict]:
 
 def today(m: dict, day: dt.date) -> None:
     wd = DAYS[day.weekday()]
-    print(f'# Lebanon sports sweep: {wd} {day.isoformat()}  (map updated {m.get("updated")})\n')
+    print(f'# {NAMES[PAGE]} sports sweep: {wd} {day.isoformat()}  (map updated {m.get("updated")})\n')
     print('Go through every sport below, in order. For each live competition: today\'s games (time, venue), '
           'last night\'s results, news. Open the fast sources; confirm on tier 1 or two tier 2 (PLAYBOOK 4).\n')
     soon = events_between(m, day, day + dt.timedelta(days=7))
@@ -145,6 +149,12 @@ def week(m: dict, day: dt.date, days: int) -> None:
                     print(f"- {se[k]}  {sp['name']}: {c['name']} {k}s")
 
 
+KEYWORDS_CY = {  # for log entries written before "sport" was recorded
+    'football': r'cyprus-league|omonia|apoel|pafos|aek-larnaca|anorthosis|ael|apollon|aris|nations-league|uefa|cfa|riga|benfica|round-\d+-fixtures|table',
+    'basketball': r'basket|keravnos|petrolina|fiba|europe-cup',
+    'motorsport': r'tziortzis|nascar|rally',
+    'sailing': r'kontides|sailing',
+}
 KEYWORDS = {  # for log entries written before "sport" was recorded
     'basketball': r'basket|flbb|riyadi|sagesse|homenetmen|champville|antranik|beirut-club|dubai-final|division-a',
     'football': r'football|afc|lfa|nejmeh|ahed|ansar|safa|cedars-u|fifa|wafu|waff|premier-league',
@@ -156,7 +166,7 @@ def sport_of(e: dict) -> str | None:
     if e.get('sport'):
         return e['sport']
     text = ' '.join(str(e.get(k, '')) for k in ('slug', 'story_key', 'headline'))
-    for sid, pat in KEYWORDS.items():
+    for sid, pat in (KEYWORDS_CY if e.get('page') == 'cy' else KEYWORDS).items():
         if re.search(pat, text, re.I):
             return sid
     return None
@@ -169,7 +179,7 @@ def coverage(m: dict, days: int) -> None:
     count: dict[str, int] = {}
     cutoff = (today_ - dt.timedelta(days=days)).isoformat()
     for e in log:
-        if e.get('page') != 'lb' or e.get('status') not in ('scheduled', 'published', 'corrected'):
+        if e.get('page') != PAGE or e.get('status') not in ('scheduled', 'published', 'corrected'):
             continue
         sid = sport_of(e)
         if not sid:
@@ -186,7 +196,7 @@ def coverage(m: dict, days: int) -> None:
         since = dt.date.fromisoformat(m.get('tracking_since', '2026-10-23'))  # a sport never posted counts from when tracking began
         gap = (today_ - min(dt.date.fromisoformat(l), today_)).days if l else (today_ - since).days
         rows.append((gap - every, sp, l, gap, every))
-    print(f'# @sportswire.lb coverage, last {days} days (overdue first)\n')
+    print(f'# @sportswire.{PAGE} coverage, last {days} days (overdue first)\n')
     for over, sp, l, gap, every in sorted(rows, key=lambda r: -r[0]):
         state = 'OVERDUE' if over > 0 else 'ok'
         print(f"{state:8} #{sp['rank']:<2} {sp['name']:24} posts {count.get(sp['id'], 0):>2}  last {l or 'never':10}  every {every} d")
@@ -234,7 +244,13 @@ def main() -> int:
     ap.add_argument('cmd', choices=['today', 'week', 'coverage', 'check'])
     ap.add_argument('--date')
     ap.add_argument('--days', type=int)
+    ap.add_argument('--page', choices=['lb', 'cy'], default='lb')
     a = ap.parse_args()
+    global PAGE
+    PAGE = a.page
+    if not MAPS[PAGE].exists():
+        print(f'no map yet for {PAGE}: {MAPS[PAGE].relative_to(ROOT)}')
+        return 0
     m = load()
     day = dt.date.fromisoformat(a.date) if a.date else dt.date.today()
     if a.cmd == 'today':
