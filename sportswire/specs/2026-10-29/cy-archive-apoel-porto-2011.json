@@ -1,0 +1,171 @@
+{
+  "page": "cy",
+  "format": "post",
+  "series": "archive",
+  "archive": {
+    "issue": 3
+  },
+  "theme": "light",
+  "date": "2026-10-29",
+  "event_date": "2011-11-01",
+  "slug": "archive-apoel-porto-2011",
+  "story_key": "cy-archive-2011-apoel-porto",
+  "light": "green",
+  "slides": [
+    {
+      "template": "cover",
+      "card": {
+        "kicker": "From the archive · 1 November 2011",
+        "year": "2011",
+        "headline": "APOEL's *90th-minute* night",
+        "deck": "Gustavo Manduca's late winner against Porto kept APOEL top of their Champions League group.",
+        "stamp": "15 years ago"
+      }
+    },
+    {
+      "template": "story",
+      "card": {
+        "title": "The *story*",
+        "text": "On 1 November 2011 at the GSP Stadium, Aílton put APOEL ahead from the penalty spot in the first half. Hulk levelled from the spot a minute from time. Then, in the 90th minute, Gustavo Manduca met captain Constantinos Charalambides' cross: APOEL 2, Porto 1, and APOEL top of Group G on 8 points.",
+        "pull": {
+          "big": "90'",
+          "label": "Manduca's *winner*"
+        }
+      }
+    },
+    {
+      "template": "ticket",
+      "card": {
+        "title": "The *match*",
+        "stub": "Nicosia · 2011",
+        "competition": "UEFA Champions League",
+        "round": "Group G",
+        "home": "APOEL",
+        "away": "Porto",
+        "score": "2-1",
+        "rows": [
+          {
+            "label": "Date",
+            "value": "Tuesday 1 November 2011"
+          },
+          {
+            "label": "Venue",
+            "value": "GSP Stadium, Nicosia"
+          },
+          {
+            "label": "Goals",
+            "value": "Aílton (pen), Manduca / Hulk (pen)"
+          }
+        ]
+      }
+    },
+    {
+      "template": "ledger",
+      "card": {
+        "title": "What came *next*",
+        "rows": [
+          {
+            "label": "Zenit 0-0 APOEL: the first Cypriot club in the Champions League knockouts",
+            "value": "23 Nov"
+          },
+          {
+            "label": "Lyon beaten on penalties: the first Cypriot quarter-finalist",
+            "value": "7 Mar"
+          },
+          {
+            "label": "Quarter-final v Real Madrid, on aggregate",
+            "value": "2-8"
+          }
+        ],
+        "note": "SOURCES: UEFA, AP, REUTERS"
+      }
+    },
+    {
+      "template": "end",
+      "card": {}
+    }
+  ],
+  "caption": "From the archive: 1 November 2011, Nicosia. ⚽\n\n15 years ago this Sunday, Gustavo Manduca scored in the 90th minute to give APOEL a 2-1 win over Porto at the GSP Stadium and keep them top of their Champions League group.\n\nThree weeks later APOEL became the first Cypriot club to reach the Champions League knockout stage, and in March they beat Lyon on penalties to reach the quarter-finals.\n\nWere you at the GSP that night? 🇨🇾\n\nSource: UEFA, AP\n@apoelfcofficial\n#SportsWireCY #FromTheArchive #ChampionsLeague",
+  "alt": [
+    "Archive cover, 1 November 2011: APOEL's 90th-minute night. Gustavo Manduca's late winner against Porto kept APOEL top of their Champions League group. 15 years ago.",
+    "The story: on 1 November 2011 at the GSP Stadium, Aílton scored a first-half penalty for APOEL, Hulk equalised from the spot a minute from time, and Gustavo Manduca won it in the 90th minute from captain Constantinos Charalambides' cross: APOEL 2, Porto 1, top of Group G on 8 points.",
+    "The match: UEFA Champions League, Group G, Tuesday 1 November 2011, GSP Stadium, Nicosia: APOEL 2, Porto 1. Goals: Aílton (penalty) and Manduca for APOEL, Hulk (penalty) for Porto.",
+    "What came next: 23 November 2011, Zenit 0-0 APOEL, the first Cypriot club in the Champions League knockouts; 7 March 2012, Lyon beaten on penalties, the first Cypriot quarter-finalist; quarter-final against Real Madrid lost 8-2 on aggregate.",
+    "End card: more from the archive every Tuesday and Thursday."
+  ],
+  "facts": [
+    {
+      "claim": "Tuesday 1 November 2011, UEFA Champions League Group G, GSP Stadium, Nicosia: APOEL 2-1 Porto; Aílton first-half penalty; Hulk penalty a minute ('60 seconds') from time; Gustavo Manduca in the 90th minute from captain Constantinos Charalambides' cross; APOEL top of Group G on 8 points; 2026 - 2011 = 15 years, 1 Nov 2026 is the Sunday after the post",
+      "sources": [
+        {
+          "url": "https://uefa.com/uefachampionsleague/news/01f7-0ea3a5918065-7fb578fa1236-1000--apoel-s-manduca-floors-porto-late-on",
+          "tier": 1,
+          "outlet": "UEFA"
+        },
+        {
+          "url": "https://hurriyetdailynews.com/apoels-euro-fairytale-continues-6738",
+          "tier": 2,
+          "outlet": "AP via Hürriyet Daily News"
+        }
+      ]
+    },
+    {
+      "claim": "23 November 2011: Zenit 0-0 APOEL made APOEL the first Cypriot club to reach the Champions League knockout stage (three weeks after 1 Nov)",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/news/newsid=1721240.html",
+          "tier": 1,
+          "outlet": "UEFA"
+        }
+      ]
+    },
+    {
+      "claim": "7 March 2012: APOEL beat Lyon on penalties to become the first Cypriot side in a European Cup/Champions League quarter-final",
+      "sources": [
+        {
+          "url": "https://fr.uefa.com/uefachampionsleague/news/01fb-0e7c4364f0b4-d33095de1f71-1000--lyon-stunned-as-apoel-fairy-tale-continues",
+          "tier": 1,
+          "outlet": "UEFA"
+        }
+      ]
+    },
+    {
+      "claim": "Quarter-final v Real Madrid: 0-3 (27 Mar 2012) and 2-5 (4 Apr 2012), 2-8 on aggregate",
+      "sources": [
+        {
+          "url": "https://www.uefa.com/news/newsid=1770352.html",
+          "tier": 1,
+          "outlet": "UEFA"
+        },
+        {
+          "url": "https://english.ahram.org.eg/News/38510.aspx",
+          "tier": 2,
+          "outlet": "Reuters via Ahram Online"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "apoelfcofficial"
+    ],
+    "collaborators": []
+  },
+  "feature": true,
+  "sensitive_override": null,
+  "images": [
+    "posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-01.png",
+    "posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-02.png",
+    "posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-03.png",
+    "posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-04.png",
+    "posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-05.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Cover 2011 / 15 years ago / APOEL's 90th-minute night; story with 90' pull; ticket APOEL 2-1 Porto, Tuesday 1 November 2011, GSP Stadium; 'what came next' ledger 23 Nov / 7 Mar / 2-8; end. Accents render (Aílton). Nothing clipped."
+  }
+}

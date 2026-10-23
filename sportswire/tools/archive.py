@@ -55,7 +55,7 @@ def esc(s) -> str:
 def rich(s) -> str:
     out = esc(str(s or ''))
     out = re.sub(r'\*(.+?)\*', r'<em class="ac">\1</em>', out)
-    out = re.sub(r'(?<![\w-])(\d+-\d+)(?![\w-])', r'<span class="nb">\1</span>', out)  # never break a score across lines
+    out = re.sub(r'(?<![\w-])(\d+-\d+|\d+-year-old)(?![\w-])', r'<span class="nb">\1</span>', out)  # never break a score or an age across lines
     return out.replace('\n', '<br>')
 
 
@@ -101,8 +101,15 @@ def t_cover(c, acc, fmt):
     kick = f'<div class="kick">{esc(c.get("kicker", "")).upper()}</div>' if c.get('kicker') else ''
     dk = f'<div class="dk">{rich(c["deck"])}</div>' if c.get('deck') else ''
     if ph:
-        W = 936 if fmt == 'post' else 936
+        W = 936
         Hh = c.get('photo_height', 520 if fmt == 'post' else 760)
+        try:  # portrait photos become a narrower upright print so they aren't blown up
+            from PIL import Image
+            iw, ih = Image.open(ROOT / ph['file']).size
+            if ih > iw:
+                W, Hh = c.get('photo_width', 600), c.get('photo_height', 560 if fmt == 'post' else 800)
+        except Exception:  # noqa: BLE001
+            pass
         pb, probs = photo_block(ph, W - 36, Hh)
         top = (f'<div class="covtop">{kick}<div class="yrrow"><div class="year sm">{year}</div>{stamp}</div>'
                f'<div class="hl" data-size="{c.get("headline_size", 74)}" data-min="46" data-lines="{c.get("headline_lines", 3)}">{rich(c.get("headline", ""))}</div>{dk}</div>')
