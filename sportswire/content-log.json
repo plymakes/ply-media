@@ -419,6 +419,40 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/61f750ec2abf99a5810c00e2b948efc30dd14353/sportswire/posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-03.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/61f750ec2abf99a5810c00e2b948efc30dd14353/sportswire/posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-04.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-23",
+      "slug": "riyadi-two-titles",
+      "story_key": "lb-riyadi-2026-october-two-titles",
+      "light": "green",
+      "template": "preview,stats,stats,stats,end",
+      "headline": "two titles in *17 days*.",
+      "caption_first_line": "Two finals, two trophies for Al Riyadi this month. 🏆",
+      "sources": [
+        "https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news/al-riyadi-rule-fiba-wasl-for-third-straight-time",
+        "https://www.grandlb.com/sports-reports/162996/",
+        "https://www.imlebanon.org/2026/10/21/riyadi-champions/",
+        "https://www.riyadi.com/%d8%a7%d9%84%d8%b1%d9%8a%d8%a7%d8%b6%d9%8a-%d8%a8%d8%b7%d9%84%d8%a7%d9%8b-%d9%84%d8%af%d9%88%d9%84%d9%8a%d8%a9-%d8%b4%d8%a8%d8%a7%d8%a8-%d8%a7%d9%84%d8%a3%d9%87%d9%84%d9%8a-%d8%a8%d9%83%d8%b1%d8%a9/",
+        "https://www.riyadi.com/fiba-wasl-champions-once-again/"
+      ],
+      "reshare": {
+        "mention": [
+          "alriyadiclub"
+        ],
+        "collaborators": [
+          "alriyadiclub"
+        ]
+      },
+      "spec": "specs/2026-10-23/lb-riyadi-two-titles.json",
+      "logged_at": "2026-10-23T06:03:53+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-23T12:30+03:00",
+      "metricool_id": "403835077",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=8247991587912959825",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/a9db0a08ff6d780c7041652a86186b8952cdcb53/sportswire/reels/lb/2026-10/2026-10-23-riyadi-two-titles.mp4"
+      ]
     }
   ]
 }

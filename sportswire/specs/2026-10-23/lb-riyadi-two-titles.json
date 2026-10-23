@@ -235,5 +235,14 @@
       }
     ],
     "notes": "15 claims CONFIRMED. Photo credit checked internally against media/photos/2026-10/2026-10-23-riyadi-two-titles.json (riyadi.com lead image). End card is promo copy. Checker saw the earlier slide-2 wording (two tiles); the split into two single-tile slides adds no facts."
+  },
+  "metricool": {
+    "id": 403835077,
+    "when": "2026-10-23T12:30:00+03:00",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=8247991587912959825",
+    "type": "REEL",
+    "collaborators": [
+      "alriyadiclub"
+    ]
   }
 }
