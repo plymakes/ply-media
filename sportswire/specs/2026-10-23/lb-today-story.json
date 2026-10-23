@@ -27,27 +27,23 @@
         ]
       },
       {
-        "label": "AFC Challenge League",
+        "label": "AFC Challenge League, this afternoon",
         "items": [
           {
-            "home": "Al Arabi",
-            "away": "Nejmeh",
-            "time": "14:00",
-            "note": "Group B, Hisor"
+            "text": "Nejmeh face Al Arabi",
+            "note": "Group B, in Hisor"
           },
           {
-            "home": "Ahal FC",
-            "away": "Al Ansar",
-            "time": "15:00",
-            "note": "Group A, Thimphu"
+            "text": "Al Ansar face Ahal FC",
+            "note": "Group A, their last group game"
           }
         ]
       }
     ],
-    "footnote": "All times Beirut"
+    "footnote": "Rugby kick-off in Beirut time"
   },
   "caption": "",
-  "alt": "Story: three Lebanese teams in action today, Friday 23 October, Beirut time. Rugby League World Cup: Tonga v Lebanon 12:05 at CommBank Stadium, Sydney. AFC Challenge League: Al Arabi v Nejmeh 14:00 (Group B, Hisor) and Ahal FC v Al Ansar 15:00 (Group A, Thimphu).",
+  "alt": "Story: three Lebanese teams in action today, Friday 23 October. Rugby League World Cup: Tonga v Lebanon at 12:05 Beirut time at CommBank Stadium, Sydney. AFC Challenge League this afternoon: Nejmeh face Al Arabi in Group B in Hisor, and Al Ansar face Ahal FC in their last Group A game.",
   "facts": [
     {
       "claim": "Rugby League World Cup 2026 round 2: Tonga v Lebanon, Friday 23 October 2026, 8:05pm Sydney = 12:05 Beirut, CommBank Stadium, Sydney",
@@ -65,12 +61,22 @@
       ]
     },
     {
-      "claim": "AFC Challenge League matchday 3, Friday 23 October 2026: Al Arabi v Nejmeh 11:00 UTC = 14:00 Beirut, Group B, Hisor (Tajikistan); Ahal FC v Al Ansar 12:00 UTC = 15:00 Beirut, Group A, Thimphu (Bhutan); 3 Lebanese teams (Lebanon, Nejmeh, Al Ansar)",
+      "claim": "AFC Challenge League group games on Friday 23 October 2026 (afternoon Beirut time): Nejmeh v Al Arabi (Kuwait), Group B, Hisor; Al Ansar v Ahal FC (Turkmenistan), Al Ansar's last Group A game; 3 Lebanese teams in action (Lebanon, Nejmeh, Al Ansar)",
       "sources": [
         {
-          "url": "https://api.the-afc.com/sportdb-connector/api/v1/fixtures?competitionCodes=afc-challenge-league&season=20262027&locale=en",
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-homs-al-fidaa-sc-syr-x-x-nejmeh-sc-1",
           "tier": 1,
-          "outlet": "AFC fixtures API"
+          "outlet": "AFC match report (Hisor dateline; Friday games)"
+        },
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-paro-fc-bhu-1-2-al-ansar-fc-lbn",
+          "tier": 1,
+          "outlet": "AFC match report (concluding match v Ahal FC)"
+        },
+        {
+          "url": "https://www.grandlb.com/sports-reports/162390/",
+          "tier": 2,
+          "outlet": "Grand Lebanon (Al Ansar v Ahal, Friday 23 October)"
         }
       ]
     }
@@ -88,8 +94,10 @@
     "ok": true,
     "problems": []
   },
+  "factcheck": {},
+  "notes": "AFC kick-off times left off: the AFC data API (api.the-afc.com) disallows automated access in robots.txt, so it is no longer used (23 Oct).",
   "visual_check": {
     "done": true,
-    "notes": "Story: 3 fixtures with Beirut times, venues/groups, footnote; nothing clipped."
+    "notes": "Rugby fixture with 12:05; AFC lines without times; footnote; nothing clipped."
   }
 }

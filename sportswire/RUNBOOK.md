@@ -104,5 +104,6 @@ A result desk is a one-off message into this session, queued with `send_later` b
 - **Search first, then fetch.** Find the page with WebSearch and fetch the URL from the results. A URL typed from memory or edited by hand may be refused.
 - **Long URLs** (Arabic slugs are percent-encoded and can exceed the fetch limit): use the short form many sites accept (e.g. `https://www.annahar.com/sports/358828/` without the slug), a different link to the same article from search results, or another outlet reporting the same facts.
 - **Sites that refuse automated fetching** (seen so far: philenews.com / in-cyprus, the961.com, lorientlejour.com sport, Transfermarkt, Kathimerini Cyprus, some Arabic portals): these are refused by the network for everyone; never use another tool, a cache, a mirror or a proxy to get around it. Search snippets can point you to the story; confirm the facts on a site that opens.
+- **robots.txt counts.** A site or API whose robots.txt disallows automated access is refused, even if curl would get through: never curl it instead. Known: api.the-afc.com (AFC data API) is disallowed; www.the-afc.com is allowed; match.uefa.com is allowed.
 - Instagram itself can't be fetched: confirm handles through the organisation's own website or `sources/handles.json`.
 - Nothing verifiable → schedule nothing and say so. That's a good outcome, not a failure.
