@@ -67,9 +67,10 @@
    "result_desk": {
     "trigger_ids": [
      "trig_01VK21xzpXsW8gctFY2xqvqh",
-     "trig_014b9pA35ponV8AjfN3ZLnzG"
+     "trig_014b9pA35ponV8AjfN3ZLnzG",
+     "trig_01D841Aa64o9oawfgK9hCvNf"
     ],
-    "next_run": "2026-10-23T18:16+03:00",
+    "next_run": "2026-10-23T19:01+03:00",
     "created_by": "afternoon desk 22 Oct",
     "note": "One desk for both games (Al Arabi v Nejmeh 14:00, Ahal FC v Al Ansar 15:00); a roundup card if both are final."
    },
@@ -93,7 +94,8 @@
      },
      "ahal-ansar": {
       "status": "pending",
-      "next_desk": "trig_014b9pA35ponV8AjfN3ZLnzG 18:16"
+      "note": "18:20 attempt 2: no final anywhere (AFC news has only a photo gallery; ysscores/sportscafe stale; worldfootball robots-disallowed, not used). Attempt 3 at 19:01, then handover.",
+      "next_desk": "trig_01D841Aa64o9oawfgK9hCvNf"
      }
     }
    }
