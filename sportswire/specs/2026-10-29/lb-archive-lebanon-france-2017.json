@@ -3,7 +3,7 @@
   "format": "post",
   "series": "archive",
   "archive": {
-    "issue": 2
+    "issue": 3
   },
   "theme": "light",
   "date": "2026-10-29",
@@ -191,10 +191,6 @@
     "ok": true,
     "problems": []
   },
-  "visual_check": {
-    "done": true,
-    "notes": "Cover with upright sepia print (Doueihi, 2017) and note + credit; story with ages/scores kept whole; ticket France 18-29 Lebanon; then/now 2017/2026; end. Nothing clipped."
-  },
   "factcheck": {
     "status": "pass",
     "checked": "2026-10-23T11:45+03:00",
@@ -231,5 +227,9 @@
   "metricool": {
     "id": 403929563,
     "when": "2026-10-29T19:30:00+02:00"
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Re-rendered only to renumber the issue (masthead No.); content identical to the checked version. Cover with upright sepia print (Doueihi, 2017) and note + credit; story with ages/scores kept whole; ticket France 18-29 Lebanon; then/now 2017/2026; end. Nothing clipped."
   }
 }

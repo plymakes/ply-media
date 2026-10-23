@@ -53,7 +53,10 @@ def get(url: str) -> bytes:
 
 
 def strip_html(s: str) -> str:
-    s = re.sub(r'<[^>]+>', ' ', s or '')
+    s = re.sub(r'<style[^>]*>.*?</style>', ' ', s or '', flags=re.S)  # creator templates carry inline CSS
+    s = re.sub(r'\.mw-parser-output[^}]*\}|@media[^{]*\{[^{}]*(\{[^{}]*\}[^{}]*)*\}', ' ', s)
+    s = re.sub(r'\bQS:P\S+', ' ', s)
+    s = re.sub(r'<[^>]+>', ' ', s)
     return re.sub(r'\s+', ' ', html.unescape(s)).strip()
 
 
@@ -81,7 +84,10 @@ def info(title: str) -> dict:
     std = [s for s in (330, 500, 960, 1280, 1920) if s <= w]
     if orig and std and not orig.lower().endswith('.svg'):
         base = orig.split('/wikipedia/commons/', 1)[1]
-        img = f'https://upload.wikimedia.org/wikipedia/commons/thumb/{base}/{std[-1]}px-{base.rsplit("/", 1)[-1]}'
+        name = base.rsplit("/", 1)[-1]
+        if name.lower().endswith(('.tif', '.tiff')):
+            name += '.jpg'  # TIFF thumbnails are served as JPEG
+        img = f'https://upload.wikimedia.org/wikipedia/commons/thumb/{base}/{std[-1]}px-{name}'
     nonfree = 'licensetpl_nonfree' in t and span('licensetpl_nonfree').lower() == 'true'
     return {
         'title': title, 'source_page': page_url, 'original_url': orig, 'image_url': img, 'width': w, 'height': h,

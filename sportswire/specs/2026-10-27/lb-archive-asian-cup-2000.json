@@ -3,7 +3,7 @@
   "format": "post",
   "series": "archive",
   "archive": {
-    "issue": 1
+    "issue": 2
   },
   "theme": "light",
   "date": "2026-10-27",
@@ -188,10 +188,6 @@
       "notes": "WRONG: 'third in the group' (Lebanon were 4th, bottom on goal difference); 'Beirut and Sidon' (also Tripoli). The Japan Times not found by the checker: replaced by Inside World Football in the source line. Lesson: the research agent's 'third' was wrong; the gate caught it."
     }
   ],
-  "visual_check": {
-    "done": true,
-    "notes": "Re-rendered after fixes: slide 2 now Beirut, Sidon and Tripoli and 'bottom of their group on goal difference', pull 'out on goal difference'; other slides unchanged; nothing clipped."
-  },
   "factcheck": {
     "status": "pass",
     "checked": "2026-10-23T12:00+03:00",
@@ -238,5 +234,9 @@
   "metricool": {
     "id": 403926793,
     "when": "2026-10-27T19:30:00+02:00"
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Re-rendered only to renumber the issue (masthead No.); content identical to the checked version. Re-rendered after fixes: slide 2 now Beirut, Sidon and Tripoli and 'bottom of their group on goal difference', pull 'out on goal difference'; other slides unchanged; nothing clipped."
   }
 }
