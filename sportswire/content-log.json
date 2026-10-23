@@ -589,6 +589,46 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-05.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-29",
+      "slug": "archive-lebanon-france-2017",
+      "story_key": "lb-archive-2017-rlwc-lebanon-france-first-win",
+      "light": "green",
+      "template": "cover,story,ticket,thennow,end",
+      "headline": "The night the *Cedars* won",
+      "caption_first_line": "From the archive: on this day in 2017, the Cedars made history. 🏉",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Adam_Doueihi.jpg",
+        "https://rlwc2017.com/news/match-report-france-v-lebanon",
+        "https://www.loverugbyleague.com/post/2026-rugby-league-world-cup-schedule-revealed-in-full",
+        "https://www.nswrl.com.au/news/2017/10/29/moses-masterclass-makes-lebanon-history/",
+        "https://www.raiders.com.au/news/2017/10/29/rlwc-match-report-lebanon-v-france-",
+        "https://www.rlwc2026.com/draw/mens/2026/round-3/lebanon-v-france",
+        "https://www.skysports.com/rugby-league/france-vs-lebanon/46558",
+        "https://www.sydney.com/destinations/sydney/sydney-west/parramatta/events/rlwc26-m-tonga-v-samoa-lebanon-v-france-w-australia-v-wales",
+        "specs/2026-10-22/lb-rlwc-tonga-lebanon-preview.json"
+      ],
+      "reshare": {
+        "mention": [
+          "lebanonrl"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-29/lb-archive-lebanon-france-2017.json",
+      "logged_at": "2026-10-23T08:36:47+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-29T19:30+02:00",
+      "metricool_id": "403929563",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-8016473318029440603",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-02.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-03.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-04.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-05.png"
+      ]
     }
   ]
 }

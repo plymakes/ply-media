@@ -37,6 +37,18 @@
       "title": "Baghdatis ends the wait in Stockholm",
       "spec": "specs/2026-10-27/cy-archive-baghdatis-stockholm-2009.json",
       "metricool_id": 403926812
+    },
+    {
+      "key": "lb-archive-2017-rlwc-lebanon-france-first-win",
+      "page": "lb",
+      "issue": 2,
+      "publish": "2026-10-29T19:30+02:00",
+      "event_date": "2017-10-29",
+      "event_year": 2017,
+      "sport": "rugby league",
+      "title": "The night the Cedars won: Lebanon 29-18 France, first RLWC win",
+      "spec": "specs/2026-10-29/lb-archive-lebanon-france-2017.json",
+      "metricool_id": 403929563
     }
   ]
 }
