@@ -7,9 +7,9 @@
   "template": "correction",
   "card": {
     "label": "Quick correction",
-    "before": "morias races",
+    "before": "Morias races",
     "wrong": "today",
-    "right": "tomorrow",
+    "right": "Tomorrow",
     "rows": [
       {
         "label": "Heats",

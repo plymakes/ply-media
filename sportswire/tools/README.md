@@ -44,7 +44,7 @@ One JSON file per post in `specs/YYYY-MM-DD/<page>-<slug>.json`.
 }
 ```
 
-Text rules for every card field: `*word*` = accent colour (use once or twice per card), `\n` = line break. Headlines are lowercased automatically and get a final full stop. Quotes are never lowercased.
+Text rules for every card field: `*word*` = accent colour (use once or twice per card), `\n` = line break. Headlines are kept as written (sentence case, capitalised names: clubs, athletes, countries) and get a final full stop. "A v B" / "A vs B" anywhere on a card becomes "A vs. B" with "vs." in the accent. `"crest"` takes a club slug from `brand/crests/` or a flag `"flag:<iso code>"` from `brand/flags/` (e.g. `flag:lb`, `flag:cy`, `flag:gb-eng`); fixtures items take `home_crest`/`away_crest` (or `crest` with `text`). The first slide's photo gets the biggest band the photo allows. Word limits (gate): headline 8, deck 12, about 30 per card.
 
 Common card fields: `eyebrow` (string or list, joined with ·), `eyebrow_style` (`pill` | `outline`), `headline`, `deck`, `section` (top-right label), `footer` (bold line, bottom left) or `footnote` (muted line), `headline_lines` (max lines, default 4 post / 5 story), `photo`.
 
@@ -65,6 +65,7 @@ Common card fields: `eyebrow` (string or list, joined with ·), `eyebrow_style` 
 - **quiz** (interactive): `options`: `[{text, sub?, crest?, key?}]` (2–4, keys default A–D). Always followed in the same spec by its **answer** slide. Footer defaults to "Swipe for the answer →" (post) / "Tap for the answer →" (Story). Only the right option counts as a claim for the gate; the fact-checker still confirms every wrong option is wrong. Examples: `tools/examples/lb-quiz-sample.json` (carousel with a photo), `lb-quiz-story-sample.json` (two Stories).
 - **answer**: the quiz's `options` repeated exactly, `correct` (the key), `explain` (one or two sentences of why). Footnote defaults to "How did you do? Tell us in the comments."
 - **vote** (interactive): `options`: `[{name, meta?, text?, photo? | crest?, key?}]` (2–4 tiles; keys default 1–4), `photo_h?`. Footer defaults to "Vote in the comments: 1, 2, 3 or 4". Every stat on a tile is a fact. Example: `tools/examples/lb-vote-sample.json`.
+- **matchup**: announce a game with two big logos: `home`/`away`: `{name, crest, label?}`, `big` (kick-off time, e.g. "20:30"), `status` (day · venue). Preview: `brand/template-previews/house-style-matchup.png`.
 - **predict** (interactive): `home`/`away`: `{name, crest?, label?}` (scores show as "?"), `status` (day · time · venue). Footer defaults to "Drop your score in the comments". Example: `tools/examples/lb-predict-story-sample.json`.
 - **end**: closing slide for carousels and Reels: the page lockup, `headline` (e.g. "every lebanese result, *first*"), optional `deck` ("Follow @sportswire.lb").
 

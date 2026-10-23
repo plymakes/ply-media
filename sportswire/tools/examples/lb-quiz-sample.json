@@ -17,7 +17,7 @@
           "Quiz",
           "Lebanese basketball"
         ],
-        "headline": "who did riyadi beat in the *dubai final*?",
+        "headline": "Who did Riyadi beat in the *Dubai final*?",
         "options": [
           {
             "text": "Antonine"
@@ -42,7 +42,7 @@
         "eyebrow": [
           "Answer"
         ],
-        "headline": "it was *antonine*.",
+        "headline": "It was *Antonine*.",
         "correct": "A",
         "options": [
           {
@@ -66,7 +66,7 @@
     {
       "template": "end",
       "card": {
-        "headline": "a new quiz every *wednesday*."
+        "headline": "A new quiz every *Wednesday*."
       }
     }
   ],

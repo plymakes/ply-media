@@ -54,6 +54,7 @@ def esc(s) -> str:
 
 def rich(s) -> str:
     out = esc(str(s or ''))
+    out = re.sub(r'(?<=\S) (?:v|vs|V|VS)\.? (?=\S)', ' <em class="ac">vs.</em> ', out)  # "vs.", in the accent (Geoffry, 23 Oct 2026)
     out = re.sub(r'\*(.+?)\*', r'<em class="ac">\1</em>', out)
     out = re.sub(r'(?<![\w-])(\d+-\d+|\d+-year-old)(?![\w-])', r'<span class="nb">\1</span>', out)  # never break a score or an age across lines
     return out.replace('\n', '<br>')
@@ -140,7 +141,7 @@ def t_story(c, acc, fmt):
 def t_ticket(c, acc, fmt):
     rows = ''.join(f'<div class="trow"><span class="tl">{esc(r["label"]).upper()}</span><span class="tv">{rich(r["value"])}</span></div>'
                    for r in c.get('rows', []))
-    score = f'<div class="tscore">{esc(c["score"])}</div>' if c.get('score') else '<div class="tvs">v</div>'
+    score = f'<div class="tscore">{esc(c["score"])}</div>' if c.get('score') else '<div class="tvs ac">vs.</div>'
     rnd = f'<div class="tround">{esc(c["round"]).upper()}</div>' if c.get('round') else ''
     title = f'<div class="stt">{rich(c["title"])}</div>' if c.get('title') else ''
     return (f'<div class="bd tk">{title}<div class="ticket"><div class="stub"><span>{esc(c.get("stub", "")).upper()}</span></div>'

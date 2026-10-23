@@ -1841,7 +1841,7 @@
       "rank": 10,
       "id": "motorsport",
       "name": "Motorsport",
-      "why": "The Cyprus Rally (23–25 Oct) decides the FIA Middle East title; Vladimiros Tziortzis 3rd in NASCAR Euro.",
+      "why": "The Cyprus Rally (23–25 Oct) decides the FIA Middle East title; Vladimiros Tziortzis in the NASCAR Euro Series.",
       "cover_every_days": 14,
       "federation": {
         "name": "Cyprus Automobile Association (FIA member) and the Cyprus Motorsport Federation",
@@ -1947,7 +1947,7 @@
         },
         {
           "id": "euronascar",
-          "name": "NASCAR Euro Series (Vladimiros Tziortzis, 3rd in the 2026 European championship) and Cypriots in other series",
+          "name": "NASCAR Euro Series (Vladimiros Tziortzis: OPEN and V8GP) and Cypriots in other series",
           "level": "abroad",
           "priority": "B",
           "season": {
@@ -1982,7 +1982,7 @@
       "athletes": [
         {
           "name": "Vladimiros Tziortzis",
-          "where": "NASCAR Euro Series, 3rd overall 2026",
+          "where": "NASCAR Euro Series (OPEN and V8GP); his \"3rd overall\" claim comes only from his own release: not confirmed by the series (PLAYBOOK 10, 22 Oct)",
           "check": "weekly",
           "track": "euronascar.com"
         },

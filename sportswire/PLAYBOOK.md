@@ -135,9 +135,12 @@ The step-by-step for each run is in `RUNBOOK.md`.
 5. **Schedule** in Metricool with the commit-pinned URL `https://raw.githubusercontent.com/plymakes/ply-media/<commit-sha>/sportswire/<path>` (printed by `tools/publish.py`) (never `/main/`, so a later change can't swap the image). Check the URL returns the image before scheduling.
 6. **Log** in `content-log.json` and push again.
 
+### House style (Geoffry, 23 Oct 2026, both pages)
+Fewer words per image (headline ≤ 8 words, deck ≤ 12, about 30 per card; the caption carries the detail) · the first image photo-led and big whenever a credited photo exists, and more photos across the carousel · capital letters for clubs, athletes, countries and places · "vs." (never "v"), in the accent on cards and also in captions · logos everywhere: crests for clubs and flags for countries on every score, fixture, schedule and matchup. Details and previews: `brand/brand-guide.md`, House style. The gate enforces word counts, capitals and "vs."
+
 ### Captions
 House voice (see `brand/brand-guide.md` and the captions in `brand/reference/`): warm, confident, short sentences, facts first.
-- Line 1: the hook, with the key fact (score, name, number). No clickbait, no ALL CAPS, no "BREAKING" unless it truly is.
+- Line 1: the hook, with the key fact (score, name, number). No clickbait, no ALL CAPS, no "BREAKING" unless it truly is. Teams are "Omonia vs. Benfica", never "v".
 - Then two or three short paragraphs: what happened, the numbers, what's next (with local time).
 - One flag emoji as the sign-off (🇱🇧 / 🇨🇾); at most one or two other emojis; none on sad news.
 - A source line: `Source: <official body or outlet>` (gate checks for it).
@@ -219,3 +222,4 @@ Keep it under 150 words. If nothing was verifiable, say so in one line.
 - 22 Oct: An athlete's own press release, reprinted by several outlets, is still one source. The Tziortzis "third in the European Championship" line came only from his release; the series' standings didn't show it, so it was dropped. Count divisions and categories from the organiser (the NASCAR Euro Series has three: V8GP, OPEN, Rookie Challenge).
 - 23 Oct: A site whose robots.txt disallows automated access counts as a refusal, the same as a blocked fetch. The AFC's data API (api.the-afc.com) is `Disallow: /`, so it is no longer used, with curl or anything else. For AFC games use the www.the-afc.com match reports and news (allowed), then tier-2 outlets (Annahar, elsport, Grand Lebanon) for kick-off times. UEFA's match data (match.uefa.com) has no such rule and stays fine. Before relying on any data endpoint, check its robots.txt once and note it in `sources/`.
 - 23 Oct: First archive posts. The research agent wrote that Lebanon finished "third" in their 2000 Asian Cup group; the RSSSF table shows they were fourth (level on points with Thailand, worse goal difference). For any group position, work it out from the full table yourself, tie-breakers included. The independent check caught it, which is why archive posts go through the same gate as news.
+- 23 Oct: Geoffry's notes on the look, now house style on both pages: fewer words per image, a bigger photo-led first image and more photos, capitals for clubs, athletes and countries (headlines are no longer lowercase), "vs." in the accent instead of "v", and logos everywhere (club crests and country flags on every score, fixture and schedule). Built into the renderer and the gate (brand guide, House style).

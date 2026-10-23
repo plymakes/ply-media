@@ -44,6 +44,84 @@ def numbers(text: str) -> set[str]:
     return out
 
 
+# ---- house style (Geoffry, 23 Oct 2026): fewer words per image, capitals for clubs/athletes/countries, "vs." not "v"
+WORD_LIMITS = {'headline': 8, 'deck': 12, 'slide': 30, 'slide_archive_story': 40}
+LIST_TEMPLATES = {'standings', 'fixtures', 'roundup', 'end', 'correction'}
+WORD_SKIP = {'labels', 'columns', 'eyebrow_style', 'crest', 'home_crest', 'away_crest', 'headline_size', 'headline_lines', 'tone',
+             'theme', 'template', 'align', 'section', 'footer_rule', '_theme', 'dur', 'photo', 'photo_height', 'photo_width',
+             'photo_w', 'photo_h', 'eyebrow', 'footnote', 'footer', 'label', 'status', 'key', 'code', 'credit', 'alt', 'correct',
+             'answer_footnote', 'issue', 'stamp', 'year', 'kicker'}
+NOT_NAMES = {'central', 'jersey', 'chad', 'turkey', 'china', 'guinea', 'final', 'cup', 'league', 'club', 'national'}
+DEMONYMS = ['Lebanese', 'Cypriot', 'Cypriots', 'Lebanon', 'Cyprus', 'Arab', 'Asian', 'European', 'Olympic', 'Olympics', 'Paralympic',
+            'Paralympics', 'Mediterranean', 'Commonwealth', 'Greek', 'Turkish', 'Beirut', 'Nicosia', 'Limassol', 'Larnaca', 'Paphos', 'Pafos']
+
+
+def words_of(x, key=None) -> list[str]:
+    out: list[str] = []
+    if key in WORD_SKIP:
+        return out
+    if isinstance(x, dict):
+        for k, v in x.items():
+            out += words_of(v, k)
+    elif isinstance(x, list):
+        for v in x:
+            out += words_of(v, key)
+    elif isinstance(x, str):
+        out += [w for w in re.split(r'\s+', x.replace('*', ' ').replace('\n', ' ')) if re.search(r'[A-Za-z\u0600-\u06FF\u0370-\u03FF]', w)]
+    return out
+
+
+def word_problems(spec: dict) -> list[str]:
+    probs = []
+    slides = spec.get('slides') or [{'template': spec.get('template'), 'card': spec.get('card', {})}]
+    for i, sl in enumerate(slides, 1):
+        c, tpl = sl.get('card', {}), sl.get('template')
+        if tpl == 'end':
+            continue
+        for k in ('headline', 'deck'):
+            n = len(words_of(c.get(k, '')))
+            if n > WORD_LIMITS[k]:
+                probs.append(f'slide {i}: {k} has {n} words (max {WORD_LIMITS[k]}): fewer words per image (Geoffry, 23 Oct 2026)')
+        if tpl in LIST_TEMPLATES:
+            continue
+        limit = WORD_LIMITS['slide_archive_story'] if (spec.get('series') == 'archive' and tpl == 'story') else WORD_LIMITS['slide']
+        n = len(words_of(c))
+        if n > limit:
+            probs.append(f'slide {i} ({tpl}): {n} words on the image (max {limit}): cut text or split it across slides; the caption carries the detail')
+    return probs
+
+
+def known_names() -> list[str]:
+    names = set(DEMONYMS)
+    try:
+        for slug, v in json.loads((ROOT / 'brand/crests/index.json').read_text()).items():
+            names.add(v.get('name') or ''); names.add(slug.replace('-', ' '))
+    except Exception:
+        pass
+    try:
+        names.update(json.loads((ROOT / 'brand/flags/index.json').read_text())['flags'].values())
+    except Exception:
+        pass
+    for mp in ('sources/lebanon-sports.json', 'sources/cyprus-sports.json'):
+        try:
+            for sp in json.loads((ROOT / mp).read_text())['sports']:
+                for a in sp.get('athletes', []):
+                    names.update(n.strip() for n in re.split(r'/| and ', a.get('name', '')) if n.strip())
+        except Exception:
+            pass
+    return sorted({n for n in names if len(n) >= 3 and n.lower() not in NOT_NAMES}, key=len, reverse=True)
+
+
+def case_problems(text: str) -> list[str]:
+    text = re.sub(r'https?://\S+|[@#][\w.]+', ' ', text)
+    bad = set()
+    for n in known_names():
+        for m in re.finditer(r'(?<![\w-])' + re.escape(n.lower()) + r'(?![\w-])', text, re.I):
+            if m.group(0) == m.group(0).lower():
+                bad.add(m.group(0))
+    return sorted(bad)
+
+
 def card_text(spec: dict) -> str:
     skip = {'labels', 'columns', 'eyebrow_style', 'crest', 'home_crest', 'away_crest', 'headline_size', 'headline_lines',
             'tone', 'theme', 'template', 'align', 'section', 'footer_rule', '_theme', 'dur', 'photo',
@@ -95,6 +173,15 @@ def check(path: str) -> list[str]:
             probs.append(f'"sport" missing: use an id from {mp.relative_to(ROOT)} (tools/sweep.py check --page {spec["page"]})')
         elif spec['sport'] not in ids:
             probs.append(f'"sport": "{spec["sport"]}" is not an id in {mp.relative_to(ROOT)}')
+
+    # 1c. house style for new posts (Geoffry, 23 Oct 2026)
+    if spec['date'] >= '2026-10-24':
+        probs += word_problems(spec)
+        low = case_problems(card_text(spec) + '\n' + spec['caption'])
+        if low:
+            probs.append('capitalise clubs, athletes and countries: ' + ', '.join(f'"{w}"' for w in low))
+        if re.search(r'\b[A-Z][\w.\'-]* v\.? [A-Z]', spec['caption']):
+            probs.append('write "vs." between teams in the caption, not "v" (cards convert it automatically)')
 
     # 2. sources per fact
     claims_text = ''
@@ -206,6 +293,10 @@ def check(path: str) -> list[str]:
         if spec.get('light') == 'green' and re.search(r'injur|stretcher|blood|fight|brawl|tears', side.get('shows', ''), re.I):
             probs.append('photo looks sensitive (injury, fight, distress): drop it or make the post AMBER')
     for name in sorted(crest_names):
+        if name.startswith('flag:'):
+            if not (ROOT / 'brand/flags' / f'{name[5:]}.svg').exists():
+                probs.append(f'flag "{name}" is not in brand/flags (use the ISO code, e.g. flag:lb, flag:cy, flag:gb-eng)')
+            continue
         if not (ROOT / 'brand/crests' / f'{name}.png').exists():
             probs.append(f'crest "{name}" is not in brand/crests (add it with tools/crests.py, or remove it)')
         elif name in crest_idx and not crest_idx[name].get('checked'):

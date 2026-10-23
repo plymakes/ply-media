@@ -50,12 +50,21 @@ def esc(s) -> str:
     return html.escape(str(s if s is not None else ''), quote=True)
 
 
+VS_RE = re.compile(r'(?<=\S) (?:v|vs|V|VS|Vs)\.? (?=\S)')
+
+
+def vs(s: str) -> str:
+    """Escaped text with every "A v B" / "A vs B" written as "A vs. B", the "vs." in the accent colour (Geoffry, 23 Oct 2026)."""
+    return VS_RE.sub(' <span class="vsx">vs.</span> ', esc(s))
+
+
 def rich(s, lower=False) -> str:
-    """Escape, then *accent* -> accent span, newline -> <br>."""
+    """Escape, then *accent* -> accent span, "v"/"vs" -> accent "vs.", newline -> <br>.
+    Case is kept as written: clubs, athletes and countries always start with a capital (Geoffry, 23 Oct 2026)."""
     s = str(s or '')
     if lower:
         s = s.lower()
-    out = esc(s)
+    out = VS_RE.sub(' <span class="vsx">vs.</span> ', esc(s))
     out = re.sub(r'\*(.+?)\*', r'<span class="ac">\1</span>', out)
     return out.replace('\n', '<br>')
 
@@ -65,19 +74,28 @@ def headline(s) -> str:
     core = s.rstrip('*')
     if core and core[-1].isalnum():
         s += '.'
-    return rich(s, lower=True)
+    return rich(s)  # sentence case as written (was forced lowercase until 23 Oct 2026)
 
 
 def eyebrow(e) -> str:
     if not e:
         return ''
     parts = e if isinstance(e, list) else [e]
-    return ' &nbsp;·&nbsp; '.join(esc(p).upper() for p in parts)
+    return ' &nbsp;·&nbsp; '.join(VS_RE.sub(' VS. ', str(p)).upper().replace('&', '&amp;').replace('<', '&lt;') for p in parts)
 
 
 def crest(name, size=72, tile=True) -> str:
+    """Club crest from brand/crests/<name>.png, or a country flag with "flag:<code>" (brand/flags/<code>.svg, 4:3)."""
     if not name:
         return ''
+    if str(name).startswith('flag:'):
+        f = ROOT / 'brand/flags' / f'{str(name)[5:]}.svg'
+        if not f.exists():
+            print(f'  ! flag "{name}" not in brand/flags, left out', file=sys.stderr)
+            return ''
+        w = size * 0.86
+        return (f'<span class="crest{" tile" if tile else ""} flag" style="width:{size}px;height:{size}px">'
+                f'<img src="{f.as_uri()}" style="width:{w:.0f}px;height:{w * 0.75:.0f}px;object-fit:cover;border-radius:{max(4, size // 14)}px"></span>')
     f = ROOT / 'brand/crests' / f'{name}.png'
     if not f.exists():
         print(f'  ! crest "{name}" not in brand/crests, left out', file=sys.stderr)
@@ -104,7 +122,10 @@ PHOTO_MIN = {'post': 540, 'story': 760, 'reel': 760}
 MAX_UPSCALE = 1.25
 
 
-def photo_parts(ph: dict, fmt: str, W: int, pad_t: int, pad_r: int) -> tuple[str, str, list[str]]:
+COVER_BOX = {'post': 1350, 'story': 1920, 'reel': 1060}  # the first image of a post is photo-led: as big as the photo allows (Geoffry, 23 Oct 2026)
+
+
+def photo_parts(ph: dict, fmt: str, W: int, pad_t: int, pad_r: int, cover: bool = False) -> tuple[str, str, list[str]]:
     """-> (html placed first inside .cv, spacer html after the header, problems)"""
     probs = []
     f = ROOT / ph['file']
@@ -116,7 +137,7 @@ def photo_parts(ph: dict, fmt: str, W: int, pad_t: int, pad_r: int) -> tuple[str
     from PIL import Image
     iw, ih = Image.open(f).size
     # the band shrinks to what the photo can fill sharply (never below the minimum that still looks deliberate)
-    box = int(ph.get('height', min(PHOTO_BOX[fmt], int(ih * MAX_UPSCALE))))
+    box = int(ph.get('height', min((COVER_BOX if cover else PHOTO_BOX)[fmt], int(ih * MAX_UPSCALE))))
     box = max(box, PHOTO_MIN[fmt])
     scale = max(W / iw, box / ih)
     if scale > MAX_UPSCALE:
@@ -129,7 +150,8 @@ def photo_parts(ph: dict, fmt: str, W: int, pad_t: int, pad_r: int) -> tuple[str
              f'background-position:{fx}% {fy}%;transform-origin:{fx}% {fy}%"></div><div class="phg"></div></div>'
              f'<div class="phc" style="top:{pad_t + 66}px;right:{pad_r}px">PHOTO: {esc(credit).upper()}</div>')
     spacer = {'post': box - 395, 'story': box - 470, 'reel': 0}[fmt]
-    return html_, (f'<div class="phs" style="height:{max(0, spacer)}px"></div>' if spacer > 0 else ''), probs
+    smin = {'post': 150, 'story': 300, 'reel': 0}[fmt]  # the fit check may shrink the gap down to this, never further
+    return html_, (f'<div class="phs" data-min="{smin}" style="height:{max(0, spacer)}px"></div>' if spacer > 0 else ''), probs
 
 
 # ----------------------------------------------------------------- templates
@@ -138,8 +160,14 @@ def photo_parts(ph: dict, fmt: str, W: int, pad_t: int, pad_r: int) -> tuple[str
 def t_result(c, th, acc):
     ours = c.get('ours')
 
+    big = not c.get('_photo')  # without a photo the logos carry the card: big crests/flags above the names
+
     def side(s, key, default_label):
         hi = ours == key
+        if big and s.get('crest'):
+            return (f'<div class="sc big{" hi" if hi else ""}">{crest(s.get("crest"), 132)}<span class="nm nw">{esc(s["name"])}</span>'
+                    f'<div class="num{" ac" if hi else ""}">{esc(s["score"])}</div>'
+                    f'<div class="lbl">{esc(s.get("label", default_label)).upper()}</div></div>')
         return (f'<div class="sc{" hi" if hi else ""}"><div class="scn">{crest(s.get("crest"), 64)}<span class="nm nw">{esc(s["name"])}</span></div>'
                 f'<div class="num{" ac" if hi else ""}">{esc(s["score"])}</div>'
                 f'<div class="lbl">{esc(s.get("label", default_label)).upper()}</div></div>')
@@ -185,7 +213,7 @@ def t_news(c, th, acc):
     b = ''
     if c.get('entity'):
         e = c['entity']
-        b += (f'<div class="ent">{crest(e.get("crest"), 96)}<div><div class="entt nw">{esc(e["title"])}</div>'
+        b += (f'<div class="ent">{crest(e.get("crest"), 96)}<div><div class="entt nw">{vs(e["title"])}</div>'
               f'<div class="ents">{rich(e.get("sub", ""))}</div></div></div>')
     if c.get('rows'):
         b += kv_rows(c['rows'])
@@ -199,9 +227,14 @@ def t_fixtures(c, th, acc):
     for g in c['groups']:
         items = ''
         for it in g['items']:
-            text = it.get('text') or f'{it["home"]} v {it["away"]}'
             note = f'<div class="fxn">{rich(it["note"])}</div>' if it.get('note') else ''
-            items += f'<div class="fxi"><div class="fxl"><span class="fxt nw">{esc(text)}</span>{note}</div><span class="fxm">{esc(it.get("time", ""))}</span></div>'
+            if it.get('home') and not it.get('text'):  # crest Home vs. Away crest (logos on every game: Geoffry, 23 Oct 2026)
+                hc, ac_ = crest(it.get('home_crest'), 54), crest(it.get('away_crest'), 54)
+                line = (f'<span class="fxt fxg2 nw">{hc}<span class="fxtn">{esc(it["home"])}</span>'
+                        f'<span class="vsx">vs.</span><span class="fxtn">{esc(it["away"])}</span>{ac_}</span>')
+            else:
+                line = f'<span class="fxt nw">{crest(it.get("crest"), 54)}{vs(it.get("text") or "")}</span>'
+            items += f'<div class="fxi"><div class="fxl">{line}{note}</div><span class="fxm">{esc(it.get("time", ""))}</span></div>'
         out += f'<div class="fxg"><div class="fxd">{esc(g["label"]).upper()}</div>{items}</div>'
     return f'<div class="fx">{out}</div>', {'align': c.get('align', 'end')}
 
@@ -372,21 +405,29 @@ def t_vote(c, th, acc):
     return f'<div class="vg" style="grid-template-columns:repeat({cols},1fr)">{tiles_}</div>', {'align': 'end', 'hl': 88 if fmt == 'post' else 108}
 
 
-def t_predict(c, th, acc):
-    """Predict the score: two big crests, names and a "?" each, then the kick-off line."""
+def t_predict(c, th, acc, matchup=False):
+    """Predict the score: two big crests, names and a "?" each, then the kick-off line.
+    matchup=True (template "matchup"): the same big-logo layout to announce a game, with the time ("big") instead of "?"."""
     fmt = c.get('_fmt', 'post')
-    big = 150 if fmt == 'story' else 120
+    big = 150 if fmt == 'story' else 132
 
     def side(s):
-        return (f'<div class="pds">{crest(s.get("crest"), big)}<div class="pdn nw">{esc(s["name"])}</div>'
-                f'<div class="pdq ac">?</div>' + (f'<div class="lbl">{esc(s["label"]).upper()}</div>' if s.get('label') else '') + '</div>')
+        q = '' if matchup else '<div class="pdq ac">?</div>'
+        return (f'<div class="pds">{crest(s.get("crest"), big)}<div class="pdn nw">{esc(s["name"])}</div>{q}'
+                + (f'<div class="lbl">{esc(s["label"]).upper()}</div>' if s.get('label') else '') + '</div>')
     zoom = ' style="zoom:1.18"' if fmt == 'story' else ''
-    b = f'<div class="pd"{zoom}>{side(c["home"])}<div class="pdv">v</div>{side(c["away"])}</div>'
+    b = f'<div class="pd"{zoom}>{side(c["home"])}<div class="pdv vsx">vs.</div>{side(c["away"])}</div>'
+    if matchup and c.get('big'):
+        b += f'<div class="pdt">{esc(c["big"])}</div>'
     if c.get('status'):
         b += f'<div class="status" style="text-align:center;margin-top:6px">{eyebrow(c["status"])}</div>'
-    if not c.get('footer') and not c.get('footnote'):
+    if not matchup and not c.get('footer') and not c.get('footnote'):
         c['footer'] = 'Drop your score in the comments'
-    return b, {'align': 'center' if fmt == 'story' else 'end'}
+    return b, {'align': 'center' if (fmt == 'story' or matchup) else 'end'}
+
+
+def t_matchup(c, th, acc):
+    return t_predict(c, th, acc, matchup=True)
 
 
 def t_end(c, th, acc):
@@ -395,7 +436,7 @@ def t_end(c, th, acc):
 
 TEMPLATES = dict(end=t_end, result=t_result, roundup=t_roundup, news=t_news, fixtures=t_fixtures, spotlight=t_spotlight,
                  stats=t_stats, standings=t_standings, preview=t_preview, quote=t_quote, correction=t_correction,
-                 quiz=t_quiz, answer=t_answer, vote=t_vote, predict=t_predict)
+                 quiz=t_quiz, answer=t_answer, vote=t_vote, predict=t_predict, matchup=t_matchup)
 
 
 # ----------------------------------------------------------------- page
@@ -410,6 +451,9 @@ body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-web
 .cv{{position:relative;width:{W}px;height:{H}px;padding:{pad_t}px {pad_r}px {pad_b}px 72px;display:flex;flex-direction:column}}
 .glow{{position:absolute;inset:0;pointer-events:none;background:{glow}}}
 .ac{{color:{acc}}}
+.vsx{{color:{acc};font-weight:800;letter-spacing:0;margin:0 .05em}}
+.crest.flag{{background:transparent}}
+.crest.tile.flag{{background:{th['tile']}}}
 .nw{{white-space:nowrap;overflow:hidden;display:block}}
 .hd{{display:flex;align-items:center;justify-content:space-between;min-height:48px;position:relative}}
 .brand{{display:flex;align-items:center;gap:18px;font:500 25px Manrope;letter-spacing:.17em;color:{th['muted']}}}
@@ -437,6 +481,9 @@ body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-web
 .sc{{padding:28px 36px 26px;background:{th['panel']};min-width:0}}
 .sc+.sc{{border-left:1px solid {th['line']}}}
 .sc.hi{{background:color-mix(in srgb,{acc} 15%,{th['bg']})}}
+.sc.big{{display:flex;flex-direction:column;align-items:center;text-align:center;padding:38px 30px 30px}}
+.sc.big .crest{{margin-bottom:18px}}
+.sc.big .nm{{max-width:100%}}
 .scn{{display:flex;align-items:center;gap:16px;min-width:0}}
 .nm{{font:800 44px Rubik;letter-spacing:-.01em;min-width:0}}
 .num{{font:700 112px/1 'JetBrains Mono';margin-top:16px;letter-spacing:-.02em}}
@@ -479,6 +526,11 @@ body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-web
 .fxi{{display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding:7px 0}}
 .fxl{{min-width:0}}
 .fxt{{font:800 36px/1.2 Rubik;letter-spacing:-.01em}}
+.fxt .crest{{vertical-align:middle;margin-right:12px}}
+.fxg2{{display:flex!important;align-items:center;gap:14px}}
+.fxg2 .crest{{margin:0}}
+.fxg2 .vsx{{font-size:.8em}}
+.fxtn{{min-width:0;overflow:hidden;text-overflow:clip}}
 .fxn{{font:400 23px Manrope;color:{th['muted']};margin-top:2px}}
 .fxm{{font:500 31px 'JetBrains Mono';color:{th['faint']};white-space:nowrap}}
 /* spotlight */
@@ -568,7 +620,8 @@ body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-web
 .pds{{display:flex;flex-direction:column;align-items:center;gap:18px;min-width:0;text-align:center}}
 .pdn{{font:800 44px Rubik;letter-spacing:-.01em;max-width:100%}}
 .pdq{{font:700 150px/1 'JetBrains Mono'}}
-.pdv{{font:600 30px 'JetBrains Mono';color:{th['faint']};align-self:center;letter-spacing:.1em}}
+.pdv{{font:800 40px Rubik;align-self:center}}
+.pdt{{font:700 120px/1 'JetBrains Mono';text-align:center;letter-spacing:-.02em;margin-top:10px}}
 /* photo hero */
 .pho{{position:absolute;left:0;top:0;width:100%;overflow:hidden;background:#000}}
 .phi{{position:absolute;inset:0;background-size:cover;background-repeat:no-repeat;will-change:transform}}
@@ -577,6 +630,8 @@ body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-web
 .phs{{flex:none}}
 .cv.photo .hd .brand{{color:rgba(250,250,248,.92);text-shadow:0 1px 8px rgba(0,0,0,.5)}}
 .cv.photo .hl,.cv.photo .eb{{text-shadow:0 2px 18px rgba(0,0,0,.35)}}
+.cv.photo .sc,.cv.photo .hb,.cv.photo .ent,.cv.photo .periods,.cv.photo .tally,.cv.photo .qo,.cv.photo .pd,.cv.photo .ti{{background:rgba(22,23,27,.66);backdrop-filter:blur(6px)}}
+.cv.photo .sc.hi{{background:color-mix(in srgb,{acc} 22%,rgba(22,23,27,.7))}}
 .cv.reel.photo{{justify-content:flex-end}}
 /* reels: header pinned top, content centred in the safe area and a touch larger */
 .cv.reel{{justify-content:center}}
@@ -601,6 +656,10 @@ FIT_JS = r"""
     while (el.scrollWidth > el.clientWidth + 1 && fs > min) { fs -= 1; el.style.fontSize = fs + 'px'; }
     if (el.scrollWidth > el.clientWidth + 1) problems.push('text too long for one line: "' + el.textContent.trim().slice(0, 60) + '"');
   });
+  // big cover photo: give back photo space first (down to data-min), then shrink the headline
+  if (hl) hl.style.fontSize = hl.dataset.size + 'px';  // measure with the real headline size
+  const phs = document.querySelector('.phs');
+  if (phs) { let h = parseFloat(phs.style.height) || 0; const m = parseFloat(phs.dataset.min || 0); while (over() && h > m) { h = Math.max(m, h - 16); phs.style.height = h + 'px'; } }
   if (hl) {
     let fs = parseFloat(hl.dataset.size), min = parseFloat(hl.dataset.min), maxLines = parseInt(hl.dataset.lines);
     hl.style.fontSize = fs + 'px';
@@ -638,6 +697,7 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
     c = dict(slide.get('card', {}))
     c['_theme'] = th_name
     c['_fmt'] = fmt
+    c['_photo'] = bool(ph)
     TEMPLATE_PROBLEMS.clear()
     body, opt = TEMPLATES[tpl](c, th, acc)
 
@@ -657,8 +717,8 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
     lines = c.get('headline_lines', 4 if fmt == 'post' else 5)
     hl = ''
     if opt.get('correction'):
-        hl = (f'<div class="hl corr-hl" data-size="{hsize}" data-min="64" data-lines="6">{rich(c.get("before", ""), True)}<br>'
-              f'<s>{esc(str(c["wrong"]).lower())}</s><br>{headline(c["right"])}</div>')
+        hl = (f'<div class="hl corr-hl" data-size="{hsize}" data-min="64" data-lines="6">{rich(c.get("before", ""))}<br>'
+              f'<s>{esc(str(c["wrong"]))}</s><br>{headline(c["right"])}</div>')
     elif not opt.get('no_headline') and c.get('headline'):
         hl = f'<div class="hl" data-size="{hsize}" data-min="60" data-lines="{lines}">{headline(c["headline"])}</div>'
     dk = f'<div class="dk">{rich(c["deck"])}</div>' if c.get('deck') else ''
@@ -667,7 +727,7 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
         lock = (ROOT / 'brand/logos' / f'lockup-horizontal-{spec["page"]}-{th_name}.svg').as_uri()
         top = ''
         main = (f'<div class="bd mid" style="align-items:flex-start;gap:44px"><img src="{lock}" style="width:640px;max-width:100%">'
-                f'<div class="hl" data-size="{c.get("headline_size", 96)}" data-min="60" data-lines="4">{headline(c.get("headline", "follow for every result."))}</div>'
+                f'<div class="hl" data-size="{c.get("headline_size", 96)}" data-min="60" data-lines="4">{headline(c.get("headline", "Follow for every result."))}</div>'
                 + (f'<div class="dk">{rich(c["deck"])}</div>' if c.get('deck') else '') + '</div>')
     elif opt.get('pre_headline'):  # preview: big number sits between eyebrow and headline
         top = eb + body + hl + dk
@@ -699,7 +759,7 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
     if ph:
         pad_t = (60 if fmt == 'post' else 170 if fmt == 'story' else 200)
         pad_r = 150 if fmt == 'reel' else 72
-        photo_html, spacer, photo_probs = photo_parts(ph, fmt, W, pad_t, pad_r)
+        photo_html, spacer, photo_probs = photo_parts(ph, fmt, W, pad_t, pad_r, cover=(idx == 1))
         if photo_html:
             center += ' photo'
             glow = 'none'

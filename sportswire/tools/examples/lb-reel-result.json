@@ -16,7 +16,7 @@
         ],
         "eyebrow_style": "outline",
         "big": "93",
-        "headline": "lebanon ran *korea* off the floor"
+        "headline": "Lebanon ran *Korea* off the floor"
       }
     },
     {
@@ -27,7 +27,7 @@
           "Second round",
           "Group F"
         ],
-        "headline": "down at half. *won by 19*",
+        "headline": "Down at half. *Won by 19*",
         "home": {
           "name": "Lebanon",
           "score": 93
@@ -65,7 +65,7 @@
       "dur": 2.8,
       "card": {
         "eyebrow": "The numbers",
-        "headline": "the second half",
+        "headline": "The second half",
         "tiles": [
           {
             "value": "55",
@@ -83,7 +83,7 @@
       "template": "end",
       "dur": 2.0,
       "card": {
-        "headline": "every lebanese result, *first*",
+        "headline": "Every Lebanese result, *first*",
         "deck": "Follow @sportswire.lb"
       }
     }

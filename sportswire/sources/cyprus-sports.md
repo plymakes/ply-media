@@ -26,7 +26,7 @@ Following and media attention in Cyprus (outlet coverage volume, club and federa
 | 7 | Gymnastics (artistic and rhythmic) | 14 days | Marios Georgiou (European silver, two Taranto golds) and the first-ever Cyprus men's team at the Worlds (Rotterdam, finals 24–25 Oct). |
 | 8 | Judo | 14 days | Seven Commonwealth medals in 2026 and two ranked judoka (Asvesta 20, Antoniou 21); Cypriots entered in Zagreb, Tashkent and Tokyo in Nov–Dec. |
 | 9 | Handball | 14 days | League with six clubs in European cups; Anorthosis play AEK Athens on 25 Oct; the season is on hold after an attack on a referee (sensitive). |
-| 10 | Motorsport | 14 days | The Cyprus Rally (23–25 Oct) decides the FIA Middle East title; Vladimiros Tziortzis 3rd in NASCAR Euro. |
+| 10 | Motorsport | 14 days | The Cyprus Rally (23–25 Oct) decides the FIA Middle East title; Vladimiros Tziortzis in the NASCAR Euro Series. |
 | 11 | Swimming | 21 days | Kalia Antoniou's two Taranto golds and national records; the 25 m Worlds in Beijing (1–6 Dec). |
 | 12 | Water polo | 21 days | Allwyn league from 13–15 Nov with NO Keryneia back after 21 years. |
 | 13 | Tennis and padel | 21 days | Davis Cup v Puerto Rico (6–8 Feb 2027) and the first Mediterranean Games tennis medal (Neos / Efstathiou); padel growing. |
@@ -264,11 +264,11 @@ Following and media attention in Cyprus (outlet coverage volume, club and federa
   - **Cyprus Rally Championship, Pancyprian Hill Climb Championship, time attack, karting** (domestic, priority C; dates to confirm)
     - [Cyprus Mail other sport](https://cyprus-mail.com/category/sport/other-sport): news, result; same day; tier 2 (full text; often CNA copy; cover photos usually uncredited)
     - [EKO press releases (hill climb, time attack)](https://www.eko.com.cy/en/ta-nea-mas/deltia-typou/): news; fast; tier 3 (sponsor PR: tip only, confirm elsewhere)
-  - **NASCAR Euro Series (Vladimiros Tziortzis, 3rd in the 2026 European championship) and Cypriots in other series** (abroad, priority B; 2027-04 → 2027-10)
+  - **NASCAR Euro Series (Vladimiros Tziortzis: OPEN and V8GP) and Cypriots in other series** (abroad, priority B; 2027-04 → 2027-10)
     - [EuroNASCAR](https://www.euronascar.com): schedule, result; same day; tier 1
     - [Cyprus Mail](https://cyprus-mail.com/category/sport/other-sport): news; same day; tier 2
 - **Photos appear first at:** Cyprus Rally Facebook, Cyprus Mail, FIA MERC; Tziortzis via EuroNASCAR.
-- **People to follow:** Vladimiros Tziortzis (NASCAR Euro Series, 3rd overall 2026); Simos Galatariotis / Panayiotis Yiangou (rally (Rally2)).
+- **People to follow:** Vladimiros Tziortzis (NASCAR Euro Series (OPEN and V8GP); his "3rd overall" claim comes only from his own release: not confirmed by the series (PLAYBOOK 10, 22 Oct)); Simos Galatariotis / Panayiotis Yiangou (rally (Rally2)).
 - **Sport-wide sources:** [Cyprus Mail other sport](https://cyprus-mail.com/category/sport/other-sport).
 
 ## 11. Swimming

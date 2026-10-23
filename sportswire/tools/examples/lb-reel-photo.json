@@ -18,7 +18,7 @@
           "Semi-final"
         ],
         "big": "98",
-        "headline": "riyadi into the *final*."
+        "headline": "Riyadi into the *final*."
       }
     },
     {
@@ -32,7 +32,7 @@
           "Semi-final",
           "Full time"
         ],
-        "headline": "a *29-point* night.",
+        "headline": "A *29-point* night.",
         "home": {
           "name": "Al Riyadi",
           "score": 98,
@@ -51,7 +51,7 @@
       "template": "end",
       "dur": 2.0,
       "card": {
-        "headline": "every lebanese result, *first*.",
+        "headline": "Every Lebanese result, *first*.",
         "deck": "Sample layout. Follow @sportswire.lb"
       }
     }
