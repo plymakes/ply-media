@@ -1,0 +1,217 @@
+{
+  "page": "cy",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-10-23",
+  "event_date": "2026-10-23",
+  "slug": "apoel-achilleas-result",
+  "story_key": "cy-basket-league-2026-md3-apoel-achilleas",
+  "light": "green",
+  "sport": "basketball",
+  "template": "result",
+  "card": {
+    "photo": {
+      "file": "media/photos/2026-10/2026-10-23-apoel-achilleas-result.jpg"
+    },
+    "eyebrow": [
+      "ECOMMBX Basket League",
+      "Matchday 3"
+    ],
+    "headline": "A 22-point win for *APOEL*.",
+    "home": {
+      "name": "APOEL",
+      "score": 84,
+      "crest": "apoel-basketball"
+    },
+    "away": {
+      "name": "Achilleas Kaimakliou",
+      "score": 62,
+      "crest": "achilleas-kaimakliou"
+    },
+    "ours": null,
+    "status": [
+      "Final",
+      "Lefkotheo"
+    ],
+    "highlight": {
+      "big": "2-1",
+      "text": "APOEL's record after three games."
+    }
+  },
+  "caption": "APOEL beat Achilleas Kaimakliou 84-62 in the ECOMMBX Basket League on Friday night. 🏀\n\nThe home win at Lefkotheo takes APOEL to two wins and one defeat. Achilleas Kaimakliou are still looking for their first win after three games.\n\nAPOEL visit Apollon Limassol next, on Monday 2 November. Who impressed you? 🇨🇾\n\n📸 Kerkida\nSource: Cyprus Basketball Federation, Kerkida\n@basketcyprus\n#SportsWireCY #CyprusBasketball",
+  "alt": [
+    "Result card over a photo of an APOEL player driving past two Achilleas Kaimakliou defenders: ECOMMBX Basket League, matchday 3, final at Lefkotheo: APOEL 84, Achilleas Kaimakliou 62. A 22-point win; APOEL are 2-1 after three games."
+  ],
+  "facts": [
+    {
+      "claim": "ECOMMBX Basket League (Cyprus men's A division), 3rd matchday, Fri 23 Oct 2026, 19:30, Lefkotheo: APOEL 84-62 Achilleas Kaimakliou (APOEL at home); final (Kerkida reports the win: 'Οι Γαλαζοκίτρινοι κέρδισαν τον Αχιλλέα με 84-62', 3rd matchday of the first phase)",
+      "sources": [
+        {
+          "url": "http://cbfweb.org/eCBF/pubgames.aspx",
+          "tier": 1,
+          "outlet": "Cyprus Basketball Federation results system (eCBF)"
+        },
+        {
+          "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apoel/apoel-ahilleas-kaimaklioy",
+          "tier": 2,
+          "outlet": "Kerkida"
+        },
+        {
+          "url": "https://www.cbf.basketball/el/events/details/με-εντός-έδρας-νίκη-του-αποελ-επί-του-αχιλλέα-άνοιξε-η-αυλαία-της-3ης-αγωνιστικής-για-το-πρωτάθλημα-της-ecommbx-basket-league",
+          "tier": 1,
+          "outlet": "Cyprus Basketball Federation match report"
+        }
+      ]
+    },
+    {
+      "claim": "After the game APOEL have 2 wins and 1 defeat from 3 games (2-1); Achilleas Kaimakliou have 0 wins and 3 defeats from 3 games (0-3)",
+      "sources": [
+        {
+          "url": "http://cbfweb.org/eCBF/pubgames.aspx",
+          "tier": 1,
+          "outlet": "CBF eCBF standings (ΑΠΟΕΛ 3-2-1; ΑΧΙΛΛΕΑΣ Καϊμακλίου 3-0-3)"
+        },
+        {
+          "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apoel/apoel-ahilleas-kaimaklioy",
+          "tier": 2,
+          "outlet": "Kerkida ('δεύτερη φετινή του νίκη, σε σύνολο τριών αναμετρήσεων'; Achilleas '3η του ήττα')"
+        },
+        {
+          "url": "https://www.cbf.basketball/el/events/details/με-εντός-έδρας-νίκη-του-αποελ-επί-του-αχιλλέα-άνοιξε-η-αυλαία-της-3ης-αγωνιστικής-για-το-πρωτάθλημα-της-ecommbx-basket-league",
+          "tier": 1,
+          "outlet": "Cyprus Basketball Federation match report"
+        }
+      ]
+    },
+    {
+      "claim": "Winning margin 22 points (84 - 62 = 22)",
+      "sources": [
+        {
+          "url": "http://cbfweb.org/eCBF/pubgames.aspx",
+          "tier": 1,
+          "outlet": "CBF eCBF (arithmetic from the final score)"
+        }
+      ]
+    },
+    {
+      "claim": "APOEL's next league game: Apollon Limassol (DOMUS ΑΠΟΛΛΩΝ Λεμεσού) v APOEL, Monday 2 November 2026, Apollon hall",
+      "sources": [
+        {
+          "url": "http://cbfweb.org/eCBF/pubgames.aspx",
+          "tier": 1,
+          "outlet": "CBF eCBF fixtures"
+        }
+      ]
+    },
+    {
+      "claim": "Spelling: the CBF writes the clubs ΑΠΟΕΛ and ΑΧΙΛΛΕΑΣ Καϊμακλίου (Greek only); English 'APOEL' and 'Achilleas Kaimakliou' as used by Eurobasket and Cyprus Mail",
+      "sources": [
+        {
+          "url": "https://www.cbf.basketball",
+          "tier": 1,
+          "outlet": "Cyprus Basketball Federation"
+        },
+        {
+          "url": "https://www.eurobasket.com/Greece/news/1013058/Achilleas-Kaimakliou-signs-Nikolas-Papadatos-ex-Proteas-V",
+          "tier": 2,
+          "outlet": "Eurobasket"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "basketcyprus"
+    ],
+    "collaborators": [],
+    "no_collab_reason": "local league game; no confirmed Instagram handle for APOEL BC or Achilleas Kaimakliou yet (both listed for Geoffry to confirm); the federation is mentioned, not invited"
+  },
+  "images": [
+    "posts/cy/2026-10/2026-10-23-apoel-achilleas-result.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Read back word by word: SPORTSWIRE CYPRUS header, PHOTO: KERKIDA, ECOMMBX BASKET LEAGUE · MATCHDAY 3, 'A 22-point win for APOEL.' (84-62 = 22), APOEL crest (CBF logo) 84 HOME, Achilleas Kaimakliou crest (Spartan helmet, CBF logo) 62 AWAY, FINAL · LEFKOTHEO, 2-1 APOEL's record after three games. Photo: APOEL player in yellow (#12) driving at two Achilleas defenders in navy (ΑΧΙΛΛΕΑΣ shirt visible), CBF board behind: this game, nothing awkward. Photo slightly soft but fine. No clipping or overlap; the earlier '0-3' line break was removed."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-23T22:58+03:00",
+    "agent": "independent general-purpose agent, card text and caption only",
+    "claims": [
+      {
+        "claim": "Competition ECOMMBX Basket League",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cbf.basketball/el/events/details/με-εντός-έδρας-νίκη-του-αποελ-επί-του-αχιλλέα-άνοιξε-η-αυλαία-της-3ης-αγωνιστικής-για-το-πρωτάθλημα-της-ecommbx-basket-league"
+      },
+      {
+        "claim": "Matchday 3",
+        "verdict": "CONFIRMED",
+        "url": "https://cbfweb.org/eCBF/pubgames.aspx"
+      },
+      {
+        "claim": "Final score APOEL 84-62 Achilleas Kaimakliou (quarters 19-10, 47-32, 68-45, 84-62)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cbf.basketball/el/events/details/με-εντός-έδρας-νίκη-του-αποελ-επί-του-αχιλλέα-άνοιξε-η-αυλαία-της-3ης-αγωνιστικής-για-το-πρωτάθλημα-της-ecommbx-basket-league"
+      },
+      {
+        "claim": "22-point win",
+        "verdict": "CONFIRMED",
+        "url": "https://cbfweb.org/eCBF/pubgames.aspx"
+      },
+      {
+        "claim": "APOEL at home, Achilleas away",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cbf.basketball/el/events/details/με-εντός-έδρας-νίκη-του-αποελ-επί-του-αχιλλέα-άνοιξε-η-αυλαία-της-3ης-αγωνιστικής-για-το-πρωτάθλημα-της-ecommbx-basket-league"
+      },
+      {
+        "claim": "Played at Lefkotheo",
+        "verdict": "CONFIRMED",
+        "url": "https://cbfweb.org/eCBF/pubgames.aspx"
+      },
+      {
+        "claim": "Friday night (Fri 23 Oct 2026, 19:30)",
+        "verdict": "CONFIRMED",
+        "url": "https://cbfweb.org/eCBF/pubgames.aspx"
+      },
+      {
+        "claim": "APOEL 2-1 after three games",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cbf.basketball/el/events/details/με-εντός-έδρας-νίκη-του-αποελ-επί-του-αχιλλέα-άνοιξε-η-αυλαία-της-3ης-αγωνιστικής-για-το-πρωτάθλημα-της-ecommbx-basket-league"
+      },
+      {
+        "claim": "Achilleas Kaimakliou winless after three games (0-3)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cbf.basketball/el/events/details/με-εντός-έδρας-νίκη-του-αποελ-επί-του-αχιλλέα-άνοιξε-η-αυλαία-της-3ης-αγωνιστικής-για-το-πρωτάθλημα-της-ecommbx-basket-league"
+      },
+      {
+        "claim": "APOEL next: at Apollon Limassol, Monday 2 November",
+        "verdict": "CONFIRMED",
+        "url": "https://cbfweb.org/eCBF/pubgames.aspx"
+      },
+      {
+        "claim": "Spelling APOEL / Achilleas Kaimakliou / Apollon Limassol",
+        "verdict": "CONFIRMED",
+        "url": "https://cbfweb.org/eCBF/pubgames.aspx"
+      },
+      {
+        "claim": "@basketcyprus is the Cyprus Basketball Federation (linked from cbf.basketball)",
+        "verdict": "CONFIRMED",
+        "url": "https://cbf.basketball"
+      },
+      {
+        "claim": "Photo credit Kerkida (Kerkida gallery of this game, 21:11)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apoel/apoel-ahilleas-kaimaklioy"
+      },
+      {
+        "claim": "Sources CBF and Kerkida reported the game tonight",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057175/niki-ghia-ton-apoel-stin-aulaia-tis-3is-aghonistikis"
+      }
+    ]
+  }
+}
