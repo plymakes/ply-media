@@ -192,6 +192,59 @@
   },
   "visual_check": {
     "done": true,
-    "notes": "5 slides read word by word. Cover: 2012, stamp, headline; story with drop cap and 1st pull; ledger 22/2/2/2; 'Twelve years later' with the sepia print of the Commons photo (Kontides, CYP sail) and the credit line; end card. Nothing clipped."
+    "notes": "Re-rendered after the score no-break fix; all 5 slides re-read, unchanged text, nothing clipped."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T12:05+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "Cyprus's first Olympic medal in any sport: Kontides, Laser silver, London 2012, Weymouth",
+        "verdict": "CONFIRMED",
+        "url": "https://www.bostonglobe.com/sports/2012/08/06/olympic-medal-events-roundup/shK0JOZuzjjWeWhXSn8kdI/story.html"
+      },
+      {
+        "claim": "Monday 6 August 2012",
+        "verdict": "CONFIRMED",
+        "url": "https://www.yachtingworld.com/news/laser-medal-race-result-2336"
+      },
+      {
+        "claim": "Age 22; at least silver before the medal race",
+        "verdict": "CONFIRMED",
+        "url": "https://www.khaleejtimes.com/sports/medal-for-cyprus"
+      },
+      {
+        "claim": "Slingsby gold, Myrgren bronze; spellings",
+        "verdict": "CONFIRMED",
+        "url": "https://www.sailing.org/2012/08/03/slingsby-slides-past-kontides/"
+      },
+      {
+        "claim": "2 Olympic silvers, 2012 and 2024",
+        "verdict": "CONFIRMED",
+        "url": "https://www.olympedia.org/athletes/117873"
+      },
+      {
+        "claim": "World titles 2017 and 2018; flag bearer Rio 2016 and Tokyo 2020",
+        "verdict": "CONFIRMED",
+        "url": "https://www.sailing.org/2024/04/30/cypriot-olympic-pioneer-eyes-repeat-success-at-fifth-olympics"
+      },
+      {
+        "claim": "Marseille, 7 August 2024, second in the ILCA 7 (Laser)",
+        "verdict": "CONFIRMED",
+        "url": "https://paris2024.sailing.org/2024/08/07/olympic-sailing-2024-wearn-defends-olympic-crown-in-mens-dinghy/"
+      },
+      {
+        "claim": "Cyprus's first medal of the Paris Games",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cna.org.cy/en/article/7120773/cypriot-sailor-pavlos-kontides-secures-silver-medal-at-the-paris-olympics"
+      },
+      {
+        "claim": "Photo credit ERIC SALARD / Wikimedia Commons, CC BY-SA 2.0: checked internally on the Commons file page (licence and author fields) by tools/archive_photo.py; the checker's fetch tool cannot open Commons pages",
+        "verdict": "CONFIRMED",
+        "url": "https://commons.wikimedia.org/wiki/File:SAILING_JO_PARIS_2024_MARSEILLE_MARINA_ILCA_7_SILVER_MEDAL_Pavlos_Kontides_Cyprus.jpg"
+      }
+    ],
+    "notes": "12 text claims CONFIRMED. Photo credit marked UNVERIFIED by the checker only because WebFetch can't open Commons file pages; the licence and author were read from the file page itself (primary source) and are recorded in the sidecar."
   }
 }

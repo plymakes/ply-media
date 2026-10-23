@@ -111,6 +111,9 @@ def credit_of(i: dict) -> str:
     if i.get('attribution'):  # the attribution the author asked for, when Commons gives one
         return f"{i['attribution']} / Wikimedia Commons"
     author = i['author'] or 'Unknown author'
+    m = re.search(r'User:([^\s)|\]]+)', author)  # "me ( w:User:Akademan )" -> "Akademan"
+    if m:
+        author = m.group(1).replace('_', ' ')
     author = re.sub(r'\s*\(talk\)|\s*Own work', '', author).strip(' ,;') or 'Unknown author'
     if len(author) > 60:
         author = author[:57].rsplit(' ', 1)[0] + '…'

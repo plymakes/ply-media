@@ -55,6 +55,7 @@ def esc(s) -> str:
 def rich(s) -> str:
     out = esc(str(s or ''))
     out = re.sub(r'\*(.+?)\*', r'<em class="ac">\1</em>', out)
+    out = re.sub(r'(?<![\w-])(\d+-\d+)(?![\w-])', r'<span class="nb">\1</span>', out)  # never break a score across lines
     return out.replace('\n', '<br>')
 
 
@@ -79,7 +80,7 @@ def photo_block(ph: dict, w: int, h: int, tilt: float = -1.4) -> tuple[str, list
              f'<div class="pimg" style="height:{h}px;background-image:url({f.as_uri()});background-position:{fx}% {fy}%"></div>'
              f'<div class="pgrain"></div><span class="corner tl"></span><span class="corner tr"></span>'
              f'<span class="corner bl"></span><span class="corner br"></span></figure>'
-             f'<div class="pcap">{esc(("PHOTO: " + credit).upper()) if credit else ""}</div>')
+             f'<div class="pcap">{esc((ph["note"] + " · ").upper()) if ph.get("note") else ""}{esc(("PHOTO: " + credit).upper()) if credit else ""}</div>')
     return html_, probs
 
 
@@ -255,6 +256,7 @@ body{{background:{PAPER};color:{INK};font-family:'Old Standard TT',serif;-webkit
 .fl{{font:400 22px 'Special Elite';letter-spacing:.08em;color:{INK2}}}
 .fr{{font:400 22px 'Special Elite';letter-spacing:.1em;color:{INK}}}
 .nw{{white-space:nowrap}}
+.nb{{white-space:nowrap}}
 """
 
 
