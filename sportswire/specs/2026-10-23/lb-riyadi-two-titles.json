@@ -192,5 +192,48 @@
     "done": true,
     "frames_checked": true,
     "notes": "Cover: official Al Riyadi photo (team with the trophy, Dubai), credit PHOTO: AL RIYADI, hook '2 / two titles in 17 days'. Slides 2-3 single tiles 75-67 v Sagesse SC (Sun 4 Oct) and 95-76 v Antonin (Wed 21 Oct) fit; slide 4 '3 straight WASL titles, MVP Donovan Williams'; end card. Earlier two-tile layout overflowed and was replaced."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T10:05+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "Al Riyadi 75-67 Sagesse SC, FIBA WASL final, Sunday 4 October, Zouk Mikael",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news/al-riyadi-rule-fiba-wasl-for-third-straight-time"
+      },
+      {
+        "claim": "Third straight WASL title; Final 8 MVP Donovan Williams; FIBA spellings",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news/al-riyadi-rule-fiba-wasl-for-third-straight-time"
+      },
+      {
+        "claim": "WASL final date 4 October 2026",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news/schedule-set-for-fiba-wasl-final-8-2026"
+      },
+      {
+        "claim": "Al Riyadi 95-76 Antonin, Shabab Al Ahli final, Wednesday 21 October, Dubai",
+        "verdict": "CONFIRMED",
+        "url": "https://www.riyadi.com/%d8%a7%d9%84%d8%b1%d9%8a%d8%a7%d8%b6%d9%8a-%d8%a8%d8%b7%d9%84%d8%a7%d9%8b-%d9%84%d8%af%d9%88%d9%84%d9%8a%d8%a9-%d8%b4%d8%a8%d8%a7%d8%a8-%d8%a7%d9%84%d8%a3%d9%87%d9%84%d9%8a-%d8%a8%d9%83%d8%b1%d8%a9/"
+      },
+      {
+        "claim": "Antonin spelling (FLBB)",
+        "verdict": "CONFIRMED",
+        "url": "https://lebanon.basketball/team/antonin-2/"
+      },
+      {
+        "claim": "17 days between 4 and 21 October; both in October 2026",
+        "verdict": "CONFIRMED",
+        "url": "https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news/schedule-set-for-fiba-wasl-final-8-2026"
+      },
+      {
+        "claim": "Photo credit Al Riyadi: internal check, file sidecar shows the lead image of riyadi.com's own report (media.riyadi.com)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.riyadi.com/%d8%a7%d9%84%d8%b1%d9%8a%d8%a7%d8%b6%d9%8a-%d8%a8%d8%b7%d9%84%d8%a7%d9%8b-%d9%84%d8%af%d9%88%d9%84%d9%8a%d8%a9-%d8%b4%d8%a8%d8%a7%d8%a8-%d8%a7%d9%84%d8%a3%d9%87%d9%84%d9%8a-%d8%a8%d9%83%d8%b1%d8%a9/"
+      }
+    ],
+    "notes": "15 claims CONFIRMED. Photo credit checked internally against media/photos/2026-10/2026-10-23-riyadi-two-titles.json (riyadi.com lead image). End card is promo copy. Checker saw the earlier slide-2 wording (two tiles); the split into two single-tile slides adds no facts."
   }
 }
