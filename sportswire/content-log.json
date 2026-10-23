@@ -666,6 +666,41 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-05.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-23",
+      "slug": "archive-lebanon-first-olympic-medals",
+      "story_key": "lb-archive-1952-first-olympic-medals",
+      "light": "green",
+      "template": "cover,story,ledger,thennow,end",
+      "headline": "Lebanon's first *Olympic medals*",
+      "caption_first_line": "From the archive: Helsinki, 1952. 🤼",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Helsinki_Olympic_Games_1952_(Numeroimaton;_JOKAHBL3D_C01-223).tif",
+        "https://stacy.olympics.com/tokyo-2020/olympic-games/en/results/all-sports/noc-profile-lebanon.htm",
+        "https://www.olympedia.org/athletes/59257",
+        "https://www.olympedia.org/athletes/59269",
+        "https://www.olympedia.org/countries/LBN",
+        "https://www.olympedia.org/countries/LBN/editions/13"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-23/lb-archive-lebanon-first-olympic-medals.json",
+      "logged_at": "2026-10-23T08:58:48+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-23T16:00+03:00",
+      "metricool_id": "403944824",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=2611033865717238115",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-02.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-03.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-04.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/9ac6c0cd6893f0c49c362c25b3bc81e8f4016e9a/sportswire/posts/lb/2026-10/2026-10-23-archive-lebanon-first-olympic-medals-05.png"
+      ]
     }
   ]
 }
