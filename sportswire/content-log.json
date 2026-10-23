@@ -546,7 +546,7 @@
       "logged_at": "2026-10-23T08:32:54+00:00",
       "status": "scheduled",
       "scheduled_for": "2026-10-27T19:30+02:00",
-      "metricool_id": "403926793",
+      "metricool_id": "404209514",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=5686944859988708010",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-01.png",
@@ -555,7 +555,10 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-05.png"
       ],
-      "sport": "football"
+      "sport": "football",
+      "notes": [
+        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)"
+      ]
     },
     {
       "page": "cy",
@@ -583,7 +586,7 @@
       "logged_at": "2026-10-23T08:32:54+00:00",
       "status": "scheduled",
       "scheduled_for": "2026-10-27T19:30+02:00",
-      "metricool_id": "403926812",
+      "metricool_id": "404209566",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-4680472886952833447",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-01.png",
@@ -592,7 +595,10 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-05.png"
       ],
-      "sport": "tennis"
+      "sport": "tennis",
+      "notes": [
+        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)"
+      ]
     },
     {
       "page": "lb",
@@ -624,7 +630,7 @@
       "logged_at": "2026-10-23T08:36:47+00:00",
       "status": "scheduled",
       "scheduled_for": "2026-10-29T19:30+02:00",
-      "metricool_id": "403929563",
+      "metricool_id": "404209540",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-8016473318029440603",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-01.png",
@@ -633,7 +639,10 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-05.png"
       ],
-      "sport": "rugby-league"
+      "sport": "rugby-league",
+      "notes": [
+        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)"
+      ]
     },
     {
       "page": "cy",
@@ -662,7 +671,7 @@
       "logged_at": "2026-10-23T08:38:29+00:00",
       "status": "scheduled",
       "scheduled_for": "2026-10-29T19:30+02:00",
-      "metricool_id": "403930715",
+      "metricool_id": "404209621",
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-4654387398859338130",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-01.png",
@@ -671,7 +680,10 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-05.png"
       ],
-      "sport": "football"
+      "sport": "football",
+      "notes": [
+        "2026-10-23T17:06 images re-rendered to the house style (fewer words) and the Metricool post updated (new id)"
+      ]
     },
     {
       "page": "lb",
