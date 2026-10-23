@@ -12,7 +12,8 @@
       "title": "Cyprus wins its first Olympic medal (Pavlos Kontides, London 2012; second silver at Paris 2024)",
       "spec": "specs/2026-10-23/cy-archive-kontides-first-medal.json",
       "metricool_id": 403923632,
-      "note": "test post at Geoffry's request (Fri 23 Oct)"
+      "note": "test post at Geoffry's request (Fri 23 Oct)",
+      "instagram": "https://www.instagram.com/p/De1JJFjiMC5/"
     },
     {
       "key": "lb-archive-2000-asian-cup-hosts",
@@ -49,6 +50,18 @@
       "title": "The night the Cedars won: Lebanon 29-18 France, first RLWC win",
       "spec": "specs/2026-10-29/lb-archive-lebanon-france-2017.json",
       "metricool_id": 403929563
+    },
+    {
+      "key": "cy-archive-2011-apoel-porto",
+      "page": "cy",
+      "issue": 3,
+      "publish": "2026-10-29T19:30+02:00",
+      "event_date": "2011-11-01",
+      "event_year": 2011,
+      "sport": "football",
+      "title": "APOEL's 90th-minute night: APOEL 2-1 Porto",
+      "spec": "specs/2026-10-29/cy-archive-apoel-porto-2011.json",
+      "metricool_id": 403930715
     }
   ]
 }

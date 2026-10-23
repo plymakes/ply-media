@@ -629,6 +629,43 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/3e49385e3081d0ba4ee016c946f6bb57ce756a8b/sportswire/posts/lb/2026-10/2026-10-29-archive-lebanon-france-2017-05.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-29",
+      "slug": "archive-apoel-porto-2011",
+      "story_key": "cy-archive-2011-apoel-porto",
+      "light": "green",
+      "template": "cover,story,ticket,ledger,end",
+      "headline": "APOEL's *90th-minute* night",
+      "caption_first_line": "From the archive: 1 November 2011, Nicosia. ⚽",
+      "sources": [
+        "https://english.ahram.org.eg/News/38510.aspx",
+        "https://fr.uefa.com/uefachampionsleague/news/01fb-0e7c4364f0b4-d33095de1f71-1000--lyon-stunned-as-apoel-fairy-tale-continues",
+        "https://hurriyetdailynews.com/apoels-euro-fairytale-continues-6738",
+        "https://uefa.com/uefachampionsleague/news/01f7-0ea3a5918065-7fb578fa1236-1000--apoel-s-manduca-floors-porto-late-on",
+        "https://www.uefa.com/news/newsid=1721240.html",
+        "https://www.uefa.com/news/newsid=1770352.html"
+      ],
+      "reshare": {
+        "mention": [
+          "apoelfcofficial"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-29/cy-archive-apoel-porto-2011.json",
+      "logged_at": "2026-10-23T08:38:29+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-29T19:30+02:00",
+      "metricool_id": "403930715",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-4654387398859338130",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-02.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-03.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-04.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/8732b4ba0ec6148632646ad0cdbc6d3132aa5f1a/sportswire/posts/cy/2026-10/2026-10-29-archive-apoel-porto-2011-05.png"
+      ]
     }
   ]
 }
