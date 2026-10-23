@@ -1,0 +1,197 @@
+{
+  "page": "cy",
+  "format": "post",
+  "series": "archive",
+  "archive": {
+    "issue": 1
+  },
+  "theme": "light",
+  "date": "2026-10-23",
+  "event_date": "2012-08-06",
+  "slug": "archive-kontides-first-medal",
+  "story_key": "cy-archive-2012-kontides-first-olympic-medal",
+  "light": "green",
+  "slides": [
+    {
+      "template": "cover",
+      "card": {
+        "kicker": "From the archive · August 2012",
+        "year": "2012",
+        "headline": "Cyprus wins its *first Olympic medal*",
+        "deck": "Pavlos Kontides takes silver in the Laser at London 2012, sailing at Weymouth.",
+        "stamp": "A first for Cyprus"
+      }
+    },
+    {
+      "template": "story",
+      "card": {
+        "title": "The *story*",
+        "text": "On Monday 6 August 2012, Pavlos Kontides sailed into Olympic history at Weymouth. The 22-year-old had made sure of at least silver before the final race of the Laser class. Australia's Tom Slingsby took gold and Sweden's Rasmus Myrgren bronze, and Cyprus had the first Olympic medal in its history, in any sport.",
+        "pull": {
+          "big": "1st",
+          "label": "Olympic medal for Cyprus, *in any sport*"
+        }
+      }
+    },
+    {
+      "template": "ledger",
+      "card": {
+        "title": "By the *numbers*",
+        "rows": [
+          {
+            "label": "Age at London 2012",
+            "value": "22"
+          },
+          {
+            "label": "Olympic silver medals, 2012 and 2024",
+            "value": "2"
+          },
+          {
+            "label": "World titles, 2017 and 2018",
+            "value": "2"
+          },
+          {
+            "label": "Opening ceremonies as Cyprus flag bearer, Rio 2016 and Tokyo 2020",
+            "value": "2"
+          }
+        ],
+        "note": "SOURCES: WORLD SAILING, THE BOSTON GLOBE, KHALEEJ TIMES, CNA"
+      }
+    },
+    {
+      "template": "story",
+      "card": {
+        "title": "Twelve years *later*",
+        "text": "In Marseille on 7 August 2024, Kontides finished second again, this time in the ILCA 7 (Laser), and won Cyprus's first medal of the Paris Games. Two Olympic silvers, twelve years apart.",
+        "photo": {
+          "file": "media/archive/2026-10/2026-10-23-archive-kontides-first-medal.jpg"
+        }
+      }
+    },
+    {
+      "template": "end",
+      "card": {}
+    }
+  ],
+  "caption": "From the archive: August 2012, Weymouth. ⛵\n\nPavlos Kontides won silver in the Laser class at London 2012, the first Olympic medal in Cyprus's history, in any sport. He was 22.\n\nTwelve years later he did it again, finishing second in the ILCA 7 (Laser) at Paris 2024 in Marseille.\n\nWhere were you when Cyprus won its first Olympic medal? 🇨🇾\n\n📸 ERIC SALARD / Wikimedia Commons, CC BY-SA 2.0\nSource: World Sailing, The Boston Globe, Khaleej Times, CNA\n#SportsWireCY #FromTheArchive #Sailing",
+  "alt": [
+    "Archive cover, August 2012: Cyprus wins its first Olympic medal. Pavlos Kontides takes silver in the Laser at London 2012, sailing at Weymouth.",
+    "The story: on Monday 6 August 2012 at Weymouth, 22-year-old Pavlos Kontides won silver in the Laser class behind Australia's Tom Slingsby, with Sweden's Rasmus Myrgren third: Cyprus's first Olympic medal in any sport.",
+    "By the numbers: age 22 at London 2012; 2 Olympic silver medals, 2012 and 2024; 2 world titles, 2017 and 2018; Cyprus flag bearer at the Rio 2016 and Tokyo 2020 opening ceremonies.",
+    "Twelve years later: in Marseille on 7 August 2024, Kontides finished second in the ILCA 7 (Laser) for Cyprus's first medal of the Paris Games. Photo: Kontides coming ashore at the Marseille Marina, by Eric Salard, Wikimedia Commons, CC BY-SA 2.0.",
+    "End card: more from the archive every Tuesday and Thursday."
+  ],
+  "facts": [
+    {
+      "claim": "London 2012 Olympic sailing, Laser class, at Weymouth: Pavlos Kontides (Cyprus) won silver; the medal race was on Monday 6 August 2012; Tom Slingsby (Australia) gold, Rasmus Myrgren (Sweden) bronze",
+      "sources": [
+        {
+          "url": "https://www.bostonglobe.com/sports/2012/08/06/olympic-medal-events-roundup/shK0JOZuzjjWeWhXSn8kdI/story.html",
+          "tier": 2,
+          "outlet": "The Boston Globe (6 Aug 2012)"
+        },
+        {
+          "url": "https://www.sailing.org/2024/04/30/cypriot-olympic-pioneer-eyes-repeat-success-at-fifth-olympics",
+          "tier": 1,
+          "outlet": "World Sailing (Weymouth, silver, Slingsby)"
+        },
+        {
+          "url": "https://www.khaleejtimes.com/sports/medal-for-cyprus",
+          "tier": 2,
+          "outlet": "Khaleej Times (5 Aug 2012: at least silver in the Laser before the final race)"
+        }
+      ]
+    },
+    {
+      "claim": "It was Cyprus's first Olympic medal, in any sport ('the first athlete to win an Olympic medal for the island of Cyprus in any sport'; 'first-ever Olympic medal for Cyprus'); the 1st",
+      "sources": [
+        {
+          "url": "https://www.sailing.org/2024/04/30/cypriot-olympic-pioneer-eyes-repeat-success-at-fifth-olympics",
+          "tier": 1,
+          "outlet": "World Sailing"
+        },
+        {
+          "url": "https://www.bostonglobe.com/sports/2012/08/06/olympic-medal-events-roundup/shK0JOZuzjjWeWhXSn8kdI/story.html",
+          "tier": 2,
+          "outlet": "The Boston Globe"
+        },
+        {
+          "url": "https://www.khaleejtimes.com/sports/medal-for-cyprus",
+          "tier": 2,
+          "outlet": "Khaleej Times"
+        }
+      ]
+    },
+    {
+      "claim": "Kontides was 22 at London 2012",
+      "sources": [
+        {
+          "url": "https://www.sailing.org/2024/04/30/cypriot-olympic-pioneer-eyes-repeat-success-at-fifth-olympics",
+          "tier": 1,
+          "outlet": "World Sailing ('the 22-year-old')"
+        },
+        {
+          "url": "https://www.khaleejtimes.com/sports/medal-for-cyprus",
+          "tier": 2,
+          "outlet": "Khaleej Times ('The 22-year-old Kontides')"
+        }
+      ]
+    },
+    {
+      "claim": "World champion in 2017 and 2018 = 2 world titles; Cyprus flag bearer at the Rio 2016 and Tokyo 2020 opening ceremonies = 2",
+      "sources": [
+        {
+          "url": "https://www.sailing.org/2024/04/30/cypriot-olympic-pioneer-eyes-repeat-success-at-fifth-olympics",
+          "tier": 1,
+          "outlet": "World Sailing"
+        }
+      ]
+    },
+    {
+      "claim": "Paris 2024: Kontides finished second (silver) in the ILCA 7 (Laser) on Wednesday 7 August 2024, in Marseille; Cyprus's first medal of the Paris Games; 2 Olympic silvers (2012, 2024); 2024 - 2012 = 12 years apart",
+      "sources": [
+        {
+          "url": "https://www.cna.org.cy/en/article/7120773/cypriot-sailor-pavlos-kontides-secures-silver-medal-at-the-paris-olympics",
+          "tier": 2,
+          "outlet": "CNA (7 Aug 2024: silver, ILCA 7 (Laser), Cyprus' first medal at these Games)"
+        },
+        {
+          "url": "https://www.sailing.org/2024/08/07/matt-wearn-the-first-to-win-back-to-back-golds-in-mens-dinghy",
+          "tier": 1,
+          "outlet": "World Sailing (7 Aug 2024: second, Marseille)"
+        }
+      ]
+    },
+    {
+      "claim": "Photo: Kontides coming ashore at the Marseille Marina, 7 August 2024, by Eric Salard, CC BY-SA 2.0 (Wikimedia Commons)",
+      "sources": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:SAILING_JO_PARIS_2024_MARSEILLE_MARINA_ILCA_7_SILVER_MEDAL_Pavlos_Kontides_Cyprus.jpg",
+          "tier": 1,
+          "outlet": "Wikimedia Commons file page"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": []
+  },
+  "feature": true,
+  "sensitive_override": null,
+  "images": [
+    "posts/cy/2026-10/2026-10-23-archive-kontides-first-medal-01.png",
+    "posts/cy/2026-10/2026-10-23-archive-kontides-first-medal-02.png",
+    "posts/cy/2026-10/2026-10-23-archive-kontides-first-medal-03.png",
+    "posts/cy/2026-10/2026-10-23-archive-kontides-first-medal-04.png",
+    "posts/cy/2026-10/2026-10-23-archive-kontides-first-medal-05.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "5 slides read word by word. Cover: 2012, stamp, headline; story with drop cap and 1st pull; ledger 22/2/2/2; 'Twelve years later' with the sepia print of the Commons photo (Kontides, CYP sail) and the credit line; end card. Nothing clipped."
+  }
+}

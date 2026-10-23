@@ -77,9 +77,11 @@ def info(title: str) -> dict:
     w, h = (int(size.group(1).replace(',', '')), int(size.group(2).replace(',', ''))) if size else (0, 0)
     orig = full.group(1) if full else ''
     img = orig
-    if orig and w > 2000 and not orig.lower().endswith('.svg'):
+    # Wikimedia rate-limits originals and asks for standard thumbnail widths (w.wiki/GHai): take the largest one that fits.
+    std = [s for s in (330, 500, 960, 1280, 1920) if s <= w]
+    if orig and std and not orig.lower().endswith('.svg'):
         base = orig.split('/wikipedia/commons/', 1)[1]
-        img = f'https://upload.wikimedia.org/wikipedia/commons/thumb/{base}/2000px-{base.rsplit("/", 1)[-1]}'
+        img = f'https://upload.wikimedia.org/wikipedia/commons/thumb/{base}/{std[-1]}px-{base.rsplit("/", 1)[-1]}'
     nonfree = 'licensetpl_nonfree' in t and span('licensetpl_nonfree').lower() == 'true'
     return {
         'title': title, 'source_page': page_url, 'original_url': orig, 'image_url': img, 'width': w, 'height': h,
@@ -122,8 +124,7 @@ def pick(title, slug, date, page, shows, focus):
         sys.exit('REFUSED: ' + '; '.join(pr))
     out = ROOT / 'media/archive' / date[:7] / f'{date}-{slug}.jpg'
     out.parent.mkdir(parents=True, exist_ok=True)
-    req = urllib.request.Request(i['image_url'], headers={'User-Agent': UA})
-    raw = urllib.request.urlopen(req, timeout=60).read()
+    raw = get(i['image_url'])
     from PIL import Image
     import io
     im = Image.open(io.BytesIO(raw)).convert('RGB')

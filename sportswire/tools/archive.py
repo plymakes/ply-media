@@ -122,7 +122,7 @@ def t_story(c, acc, fmt):
     ph = ''
     probs = []
     if c.get('photo'):
-        ph, probs = photo_block(c['photo'], 520, 380, tilt=1.6)
+        ph, probs = photo_block(c['photo'], c.get('photo_w', 760), c.get('photo_h', 470), tilt=1.6)
         ph = f'<div class="sph">{ph}</div>'
     return (f'<div class="bd story">{title}<div class="cols"><p class="txt"><span class="drop">{esc(first)}</span>{rich(rest)}</p></div>'
             f'{ph}{pull}</div>'), probs
