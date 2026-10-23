@@ -74,10 +74,28 @@
     "note": "One desk for both games (Al Arabi v Nejmeh 14:00, Ahal FC v Al Ansar 15:00); a roundup card if both are final."
    },
    "result": {
-    "status": "pending",
+    "status": "partial",
     "spec": null,
     "metricool_id": null,
-    "note": "17:35 attempt 1: Al Arabi 1-3 Nejmeh final (AFC report + FotMob), card built; Ahal FC v Al Ansar not yet reported anywhere, follow-up desk 18:16."
+    "note": "17:35 attempt 1: Al Arabi 1-3 Nejmeh final (AFC report + FotMob), card built; Ahal FC v Al Ansar not yet reported anywhere, follow-up desk 18:16.",
+    "parts": {
+     "al-arabi-nejmeh": {
+      "status": "posted",
+      "spec": "specs/2026-10-23/lb-afccl-al-arabi-nejmeh-result.json",
+      "metricool_id": 404238681,
+      "when": "2026-10-23T17:42+03:00",
+      "first_source": {
+       "name": "AFC match report (www.the-afc.com)",
+       "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-al-arabi-sc-kuw-1-3-nejmeh-sc-lbn",
+       "seen_final_by": "2026-10-23T17:32+03:00"
+      },
+      "final_at": "about 15:55 Beirut (11:00 UTC kick-off)"
+     },
+     "ahal-ansar": {
+      "status": "pending",
+      "next_desk": "trig_014b9pA35ponV8AjfN3ZLnzG 18:16"
+     }
+    }
    }
   }
  ]
