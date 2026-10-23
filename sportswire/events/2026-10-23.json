@@ -70,7 +70,7 @@
      "trig_014b9pA35ponV8AjfN3ZLnzG",
      "trig_01D841Aa64o9oawfgK9hCvNf"
     ],
-    "next_run": "2026-10-23T19:01+03:00",
+    "next_run": null,
     "created_by": "afternoon desk 22 Oct",
     "note": "One desk for both games (Al Arabi v Nejmeh 14:00, Ahal FC v Al Ansar 15:00); a roundup card if both are final."
    },
@@ -93,9 +93,8 @@
       "final_at": "about 15:55 Beirut (11:00 UTC kick-off)"
      },
      "ahal-ansar": {
-      "status": "pending",
-      "note": "18:20 attempt 2: no final anywhere (AFC news has only a photo gallery; ysscores/sportscafe stale; worldfootball robots-disallowed, not used). Attempt 3 at 19:01, then handover.",
-      "next_desk": "trig_01D841Aa64o9oawfgK9hCvNf"
+      "status": "handover",
+      "note": "19:02 attempt 3 (last): still no final in any reliable source (AFC news has only a photo gallery; data pages stale; only stream/spam pages in search). Handed to the evening desk 22:15: check www.the-afc.com news, Annahar, elsport, Lebanon24 (it reported Ansar's second win)."
      }
     }
    }
