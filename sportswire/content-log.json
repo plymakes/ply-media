@@ -387,6 +387,38 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/a694fe34d386302b9e69c4f99a94be72224b91a7/sportswire/posts/cy/2026-10/2026-10-22-omonia-benfica-result.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-23",
+      "slug": "cyprus-league-round-7-fixtures",
+      "story_key": "cy-league-2026-round-7-fixtures",
+      "light": "green",
+      "template": "fixtures,news,news,end",
+      "headline": "a *limassol derby*, then 2nd v 3rd.",
+      "caption_first_line": "Round 7 of the Cyprus League runs from Saturday to Monday. ⚽",
+      "sources": [
+        "https://www.cfa.com.cy/Gr/competitions/68124755",
+        "https://www.cfa.com.cy/Gr/fixtures/68153713"
+      ],
+      "reshare": {
+        "mention": [
+          "cyprusfa_official"
+        ],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-23/cy-cyprus-league-round-7-fixtures.json",
+      "logged_at": "2026-10-23T05:58:30+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-23T12:30+03:00",
+      "metricool_id": "403831856",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=5720371008025022191",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/61f750ec2abf99a5810c00e2b948efc30dd14353/sportswire/posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/61f750ec2abf99a5810c00e2b948efc30dd14353/sportswire/posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-02.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/61f750ec2abf99a5810c00e2b948efc30dd14353/sportswire/posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-03.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/61f750ec2abf99a5810c00e2b948efc30dd14353/sportswire/posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-04.png"
+      ]
     }
   ]
 }

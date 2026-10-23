@@ -1,0 +1,95 @@
+{
+  "page": "lb",
+  "format": "story",
+  "theme": "light",
+  "date": "2026-10-23",
+  "event_date": "2026-10-23",
+  "slug": "today-story",
+  "story_key": "lb-2026-10-23-today-story",
+  "light": "green",
+  "template": "fixtures",
+  "card": {
+    "eyebrow": [
+      "Today",
+      "Friday 23 October"
+    ],
+    "headline": "three lebanese teams in action *today*.",
+    "groups": [
+      {
+        "label": "Rugby League World Cup",
+        "items": [
+          {
+            "home": "Tonga",
+            "away": "Lebanon",
+            "time": "12:05",
+            "note": "CommBank Stadium, Sydney"
+          }
+        ]
+      },
+      {
+        "label": "AFC Challenge League",
+        "items": [
+          {
+            "home": "Al Arabi",
+            "away": "Nejmeh",
+            "time": "14:00",
+            "note": "Group B, Hisor"
+          },
+          {
+            "home": "Ahal FC",
+            "away": "Al Ansar",
+            "time": "15:00",
+            "note": "Group A, Thimphu"
+          }
+        ]
+      }
+    ],
+    "footnote": "All times Beirut"
+  },
+  "caption": "",
+  "alt": "Story: three Lebanese teams in action today, Friday 23 October, Beirut time. Rugby League World Cup: Tonga v Lebanon 12:05 at CommBank Stadium, Sydney. AFC Challenge League: Al Arabi v Nejmeh 14:00 (Group B, Hisor) and Ahal FC v Al Ansar 15:00 (Group A, Thimphu).",
+  "facts": [
+    {
+      "claim": "Rugby League World Cup 2026 round 2: Tonga v Lebanon, Friday 23 October 2026, 8:05pm Sydney = 12:05 Beirut, CommBank Stadium, Sydney",
+      "sources": [
+        {
+          "url": "https://www.rlwc2026.com/draw/mens/2026/round-2/tonga-v-lebanon",
+          "tier": 1,
+          "outlet": "RLWC 2026"
+        },
+        {
+          "url": "https://www.commbankstadium.com.au/events/rugby_league_world_cup_2026__tonga_v_lebanon",
+          "tier": 1,
+          "outlet": "CommBank Stadium"
+        }
+      ]
+    },
+    {
+      "claim": "AFC Challenge League matchday 3, Friday 23 October 2026: Al Arabi v Nejmeh 11:00 UTC = 14:00 Beirut, Group B, Hisor (Tajikistan); Ahal FC v Al Ansar 12:00 UTC = 15:00 Beirut, Group A, Thimphu (Bhutan); 3 Lebanese teams (Lebanon, Nejmeh, Al Ansar)",
+      "sources": [
+        {
+          "url": "https://api.the-afc.com/sportdb-connector/api/v1/fixtures?competitionCodes=afc-challenge-league&season=20262027&locale=en",
+          "tier": 1,
+          "outlet": "AFC fixtures API"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": []
+  },
+  "feature": false,
+  "sensitive_override": null,
+  "images": [
+    "stories/lb/2026-10/2026-10-23-today-story.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Story: 3 fixtures with Beirut times, venues/groups, footnote; nothing clipped."
+  }
+}
