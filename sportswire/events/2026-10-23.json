@@ -94,9 +94,38 @@
      },
      "ahal-ansar": {
       "status": "handover",
-      "note": "19:02 attempt 3 (last): still no final in any reliable source (AFC news has only a photo gallery; data pages stale; only stream/spam pages in search). Handed to the evening desk 22:15: check www.the-afc.com news, Annahar, elsport, Lebanon24 (it reported Ansar's second win)."
+      "note": "19:02 attempt 3 (last): still no final in any reliable source (AFC news has only a photo gallery; data pages stale; only stream/spam pages in search). Handed to the evening desk 22:15: check www.the-afc.com news, Annahar, elsport, Lebanon24 (it reported Ansar's second win). | 22:25 evening desk: still no score in any source that opens. Leads only: a Lebanon24 homepage headline 'فوز للنجمة وخسارة للأنصار' (Al Ansar lost; article URL too long to fetch, short form returns the homepage) and a twaslnews headline that Al Ansar 'snatch the qualification card' (site failed to load). Enab Baladi (21:19 Syria) confirms the other Group A game: Al-Ittihad Ahli of Aleppo 2-1 Paro. AFC www news has only the Ahal v Al Ansar photo gallery, no report. Handed to the Sat morning desk: AFC report first ('Group A: Ahal FC (TKM) x-x Al Ansar FC (LBN)'), then Lebanon24/Annahar/elsport; if Al Ansar top Group A on head-to-head, that needs the AFC's own wording before any 'qualified' line."
      }
     }
+   }
+  },
+  {
+   "id": "cy-basket-league-md3-apoel-achilleas",
+   "page": "cy",
+   "priority": "B",
+   "sport": "basketball",
+   "title": "APOEL v Achilleas Kaimakliou, ECOMMBX Basket League matchday 3",
+   "start_local": "2026-10-23T19:30+03:00",
+   "start_confirmed": true,
+   "venue": "Lefkotheo, Nicosia",
+   "result_sources": [
+    "http://cbfweb.org/eCBF/pubgames.aspx",
+    "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apoel/apoel-ahilleas-kaimaklioy"
+   ],
+   "note": "Not on the morning calendar; found by the evening desk on the CBF results system.",
+   "preview": {
+    "status": "none"
+   },
+   "result": {
+    "status": "building",
+    "score": "APOEL 84-62 Achilleas Kaimakliou",
+    "spec": "specs/2026-10-23/cy-apoel-achilleas-result.json",
+    "first_source": {
+     "name": "Kerkida basketball",
+     "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apoel/apoel-ahilleas-kaimaklioy",
+     "seen_final_by": "2026-10-23T21:11+03:00 (published time)"
+    },
+    "final_at": "about 21:05 Cyprus (19:30 tip-off)"
    }
   }
  ]
