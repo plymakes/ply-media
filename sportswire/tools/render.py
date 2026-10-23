@@ -696,6 +696,19 @@ def render_reel(spec: dict, sp: str, browser) -> tuple[list[str], list[str]]:
                          'cover': str(cover.relative_to(ROOT)), 'frames_sheet': f'build/{sheet.name}'}
     return [str(out.relative_to(ROOT)), str(cover.relative_to(ROOT))], problems
 
+_ARCH = None
+
+
+def archive_mod():
+    global _ARCH
+    if _ARCH is None:
+        import importlib.util
+        spec_ = importlib.util.spec_from_file_location('sw_archive', ROOT / 'tools/archive.py')
+        _ARCH = importlib.util.module_from_spec(spec_)
+        spec_.loader.exec_module(_ARCH)
+    return _ARCH
+
+
 def render(spec_paths: list[str]) -> int:
     from playwright.sync_api import sync_playwright
     worst = 0
@@ -717,7 +730,11 @@ def render(spec_paths: list[str]) -> int:
             slides = spec.get('slides') or [{'template': spec['template'], 'card': spec['card'], **({'theme': spec['theme']} if 'theme' in spec else {})}]
             outputs, problems = [], []
             for i, slide in enumerate(slides, 1):
-                doc, W, H = build(slide, spec, i, len(slides))
+                if spec.get('series') == 'archive':  # "From the Archive" history series: vintage builder in tools/archive.py
+                    doc, W, H, aprobs = archive_mod().build(slide, spec, i, len(slides), FONTS_CSS)
+                    LAST_PROBLEMS[:] = aprobs
+                else:
+                    doc, W, H = build(slide, spec, i, len(slides))
                 pg = b.new_page(viewport={'width': W, 'height': H})
                 tmp = ROOT / 'build' / f'{spec["page"]}-{spec["slug"]}-{i}.html'
                 tmp.parent.mkdir(exist_ok=True)

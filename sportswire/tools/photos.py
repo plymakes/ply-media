@@ -206,8 +206,18 @@ def check(photo: pathlib.Path) -> list[str]:
     if BLOCKED.search(' '.join(str(s.get(k, '')) for k in ('credit', 'meta_credit'))):
         probs.append('agency/wire credit (Getty, AFP, Reuters, AP...)')
     w, h = Image.open(photo).size
-    if min(w, h) < MIN_SHORT or max(w, h) < MIN_LONG:
-        probs.append(f'photo too small ({w}x{h}; needs at least {MIN_SHORT} px short side and {MIN_LONG} px long side)')
+    archive = s.get('series') == 'archive'  # "From the Archive": framed prints, smaller and older files are fine
+    ms, ml = (500, 700) if archive else (MIN_SHORT, MIN_LONG)
+    if min(w, h) < ms or max(w, h) < ml:
+        probs.append(f'photo too small ({w}x{h}; needs at least {ms} px short side and {ml} px long side)')
+    if 'commons.wikimedia.org' in s.get('source_page', '') or 'upload.wikimedia.org' in s.get('image_url', ''):
+        if not archive:
+            probs.append('Wikimedia Commons photos are only for the archive series (news photos come from the club/federation)')
+        lic = s.get('licence', '')
+        if not re.match(r'^(public domain|pd\b|cc0|cc by(-sa)? ?[0-9.]*$|cc by(-sa)?$)', lic.strip().lower()):
+            probs.append(f'licence "{lic}" is not allowed (Public domain, CC0, CC BY, CC BY-SA only)')
+        if not s.get('author'):
+            probs.append('Commons photo has no author recorded')
     return probs
 
 

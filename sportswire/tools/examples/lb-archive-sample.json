@@ -1,0 +1,119 @@
+{
+  "page": "lb",
+  "format": "post",
+  "series": "archive",
+  "date": "2026-10-23",
+  "slug": "archive-sample",
+  "note": "SAMPLE ONLY: layout test, not for scheduling",
+  "archive": {
+    "issue": 1
+  },
+  "slides": [
+    {
+      "template": "cover",
+      "card": {
+        "kicker": "On this day · 29 October 2000",
+        "year": "2000",
+        "headline": "Beirut hosts the *Asian Cup* final",
+        "deck": "Sample deck line for the layout test, two lines long at most on the cover.",
+        "stamp": "26 years ago",
+        "photo": {
+          "file": "media/photos/2026-10/2026-10-21-sample-riyadi-semi.jpg"
+        }
+      }
+    },
+    {
+      "template": "cover",
+      "card": {
+        "kicker": "This week · October 2000",
+        "year": "2000",
+        "headline": "Sample headline without a photo, *set in serif*",
+        "deck": "A second line of context goes here in the old newspaper face.",
+        "stamp": "Sample"
+      }
+    },
+    {
+      "template": "story",
+      "card": {
+        "title": "The *story*",
+        "text": "Lorem ipsum layout test. Fifty to seventy words of plain storytelling go here, set like an old newspaper column, with a drop cap on the first letter. It has to read at a glance on a phone, so the size stays generous and the paragraph stays short.",
+        "pull": {
+          "big": "1-0",
+          "label": "The *final score* in a sample pull box"
+        }
+      }
+    },
+    {
+      "template": "ticket",
+      "card": {
+        "title": "The *match*",
+        "stub": "Final · 2000",
+        "competition": "Sample Cup",
+        "round": "Final",
+        "home": "Home Team",
+        "away": "Away Team",
+        "score": "1-0",
+        "rows": [
+          {
+            "label": "Date",
+            "value": "Sunday 29 October 2000"
+          },
+          {
+            "label": "Venue",
+            "value": "Sample Stadium, Beirut"
+          },
+          {
+            "label": "Crowd",
+            "value": "00,000"
+          }
+        ],
+        "note": "A one-line note under the ticket."
+      }
+    },
+    {
+      "template": "ledger",
+      "card": {
+        "title": "By the *numbers*",
+        "rows": [
+          {
+            "label": "Teams",
+            "value": "12"
+          },
+          {
+            "label": "Matches",
+            "value": "26"
+          },
+          {
+            "label": "Goals",
+            "value": "77"
+          },
+          {
+            "label": "Host cities",
+            "value": "3"
+          }
+        ],
+        "note": "SOURCE: SAMPLE"
+      }
+    },
+    {
+      "template": "thennow",
+      "card": {
+        "title": "Then and *now*",
+        "then": {
+          "label": "2000",
+          "text": "Sample text about then, two or three short sentences."
+        },
+        "now": {
+          "label": "2026",
+          "text": "Sample text about now, two or three short sentences."
+        }
+      }
+    },
+    {
+      "template": "end",
+      "card": {}
+    }
+  ],
+  "caption": "SAMPLE",
+  "facts": []
+}

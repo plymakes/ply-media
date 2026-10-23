@@ -283,6 +283,10 @@ def main() -> None:
     ap.add_argument('--source-page')
     ap.add_argument('--name')
     a = ap.parse_args()
+    if a.cmd in ('find', 'seed') or a.wiki:
+        # Wikipedia's API lives under /w/, which robots.txt disallows for automated clients (rule added 23 Oct 2026).
+        sys.exit('Wikipedia API lookups are switched off (robots.txt). Use --url with the club\'s own logo, '
+                 'the UEFA logo (img.uefa.com/imgml/TP/teams/logos/240x240/<uefa id>.png) or the FIBA logo, plus --source-page.')
     if a.cmd == 'find':
         q = ' '.join(a.args)
         d = wiki_query(generator='search', gsrsearch=q, gsrlimit='5', prop='pageimages', piprop='name')
