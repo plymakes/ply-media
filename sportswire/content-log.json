@@ -796,6 +796,42 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/ede1c6a5ef8a4da0f557172c964454da640f3ce5/sportswire/posts/lb/2026-10/2026-10-23-afccl-al-arabi-nejmeh-result.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-23",
+      "slug": "apoel-achilleas-result",
+      "story_key": "cy-basket-league-2026-md3-apoel-achilleas",
+      "light": "green",
+      "sport": "basketball",
+      "format": "post",
+      "series": null,
+      "template": "result",
+      "headline": "A 22-point win for *APOEL*.",
+      "caption_first_line": "APOEL beat Achilleas Kaimakliou 84-62 in the ECOMMBX Basket League on Friday night. 🏀",
+      "sources": [
+        "http://cbfweb.org/eCBF/pubgames.aspx",
+        "https://www.cbf.basketball",
+        "https://www.cbf.basketball/el/events/details/με-εντός-έδρας-νίκη-του-αποελ-επί-του-αχιλλέα-άνοιξε-η-αυλαία-της-3ης-αγωνιστικής-για-το-πρωτάθλημα-της-ecommbx-basket-league",
+        "https://www.eurobasket.com/Greece/news/1013058/Achilleas-Kaimakliou-signs-Nikolas-Papadatos-ex-Proteas-V",
+        "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apoel/apoel-ahilleas-kaimaklioy"
+      ],
+      "reshare": {
+        "mention": [
+          "basketcyprus"
+        ],
+        "collaborators": [],
+        "no_collab_reason": "local league game; no confirmed Instagram handle for APOEL BC or Achilleas Kaimakliou yet (both listed for Geoffry to confirm); the federation is mentioned, not invited"
+      },
+      "spec": "specs/2026-10-23/cy-apoel-achilleas-result.json",
+      "logged_at": "2026-10-23T19:29:55+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-23T22:35",
+      "metricool_id": "404494153",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-234058589336286339",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/c0e8d383b6ffbf23a0b6e6f3e9963ec7bc65dacc/sportswire/posts/cy/2026-10/2026-10-23-apoel-achilleas-result.png"
+      ]
     }
   ]
 }
