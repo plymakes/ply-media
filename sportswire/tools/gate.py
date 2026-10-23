@@ -46,7 +46,8 @@ def numbers(text: str) -> set[str]:
 
 def card_text(spec: dict) -> str:
     skip = {'labels', 'columns', 'eyebrow_style', 'crest', 'home_crest', 'away_crest', 'headline_size', 'headline_lines',
-            'tone', 'theme', 'template', 'align', 'section', 'footer_rule', '_theme', 'dur', 'photo'}
+            'tone', 'theme', 'template', 'align', 'section', 'footer_rule', '_theme', 'dur', 'photo',
+            'photo_height', 'photo_width', 'photo_w', 'photo_h'}  # layout sizes, not facts
     parts: list[str] = []
 
     def walk(x, key=None):

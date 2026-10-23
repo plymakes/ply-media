@@ -184,5 +184,48 @@
   "visual_check": {
     "done": true,
     "notes": "Re-rendered after the name fix: slide 3 reads 'Kheir Mohamed Tarabulsi'; cover, story, then/now and end unchanged; nothing clipped."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T12:15+03:00",
+    "by": "independent agent (pass 2)",
+    "claims": [
+      {
+        "claim": "Helsinki 1952 (24-27 July); 74 years",
+        "verdict": "CONFIRMED",
+        "url": "https://www.olympedia.org/results/123502"
+      },
+      {
+        "claim": "First Olympics 1948",
+        "verdict": "CONFIRMED",
+        "url": "https://www.olympedia.org/countries/LBN"
+      },
+      {
+        "claim": "Chihab silver, Greco-Roman bantamweight 57 kg",
+        "verdict": "CONFIRMED",
+        "url": "https://olympics.com/en/athletes/zakaria-chihab"
+      },
+      {
+        "claim": "Taha bronze, Greco-Roman welterweight 73 kg",
+        "verdict": "CONFIRMED",
+        "url": "https://olympics.com/en/athletes/khalil-taha"
+      },
+      {
+        "claim": "Both medals on the same day (27 July 1952); Lebanon's first",
+        "verdict": "CONFIRMED",
+        "url": "https://oca.asia/news/1006-lebanons-first-olympic-medallist-khalil-taha-passes-away.html"
+      },
+      {
+        "claim": "Kheir Mohamed Tarabulsi silver, weightlifting, Munich 1972",
+        "verdict": "CONFIRMED",
+        "url": "https://olympics.com/en/athletes/kheir-mohamed-tarabulsi"
+      },
+      {
+        "claim": "Hassan Bchara bronze, Moscow 1980; 4 medals; 1980 the most recent",
+        "verdict": "CONFIRMED",
+        "url": "https://olympics.com/en/athletes/hassan-bchara"
+      }
+    ],
+    "notes": "Pass 1 FAIL on the Tarabulsi name order only; fixed. Pass 2: all claims CONFIRMED."
   }
 }
