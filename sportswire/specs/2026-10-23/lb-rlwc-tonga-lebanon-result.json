@@ -110,5 +110,33 @@
   "visual_check": {
     "done": true,
     "notes": "Tonga 36 Lebanon 0, Lebanon panel highlighted (ours away), full time CommBank Stadium; 7-tries highlight; next v France footnote; nothing clipped. No crests (no national rugby league logos in the crest set)."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T14:50+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "RLWC round 2, full time Tonga 36-0 Lebanon, Fri 23 Oct, CommBank Stadium, Sydney",
+        "verdict": "CONFIRMED",
+        "url": "https://www.zerotackle.com/tonga-lebanon-round-2-2026-mc10398218-238749/"
+      },
+      {
+        "claim": "Score cross-check",
+        "verdict": "CONFIRMED",
+        "url": "https://www.rugbyleaguehub.com/tonga-36-lebanon-0-tonga-works-hard-to-chop-down-cedars/"
+      },
+      {
+        "claim": "7 tries (3 first half, 4 second), 14-0 at half-time; Katoa and Fifita 2 each",
+        "verdict": "CONFIRMED",
+        "url": "https://www.zerotackle.com/tonga-lebanon-round-2-2026-mc10398218-238749/"
+      },
+      {
+        "claim": "Lebanon v France next, Sunday 1 November, CommBank Stadium",
+        "verdict": "CONFIRMED",
+        "url": "https://zerotackle.com/lebanon-france-round-3-2026-mc10398227-238765"
+      }
+    ],
+    "notes": "All 15 claims CONFIRMED."
   }
 }
