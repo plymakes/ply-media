@@ -453,6 +453,36 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/a9db0a08ff6d780c7041652a86186b8952cdcb53/sportswire/reels/lb/2026-10/2026-10-23-riyadi-two-titles.mp4"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-23",
+      "slug": "today-story",
+      "story_key": "lb-2026-10-23-today-story",
+      "light": "green",
+      "template": "fixtures",
+      "headline": "three lebanese teams in action *today*.",
+      "caption_first_line": "(Story: no caption)",
+      "sources": [
+        "https://www.commbankstadium.com.au/events/rugby_league_world_cup_2026__tonga_v_lebanon",
+        "https://www.grandlb.com/sports-reports/162390/",
+        "https://www.rlwc2026.com/draw/mens/2026/round-2/tonga-v-lebanon",
+        "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-paro-fc-bhu-1-2-al-ansar-fc-lbn",
+        "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-homs-al-fidaa-sc-syr-x-x-nejmeh-sc-1"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-23/lb-today-story.json",
+      "logged_at": "2026-10-23T06:10:29+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-23T10:00+03:00",
+      "metricool_id": "403838026",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=6939075872193465276",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/1488066aec1e5992c9b5dcd4544ac5f965444fc3/sportswire/stories/lb/2026-10/2026-10-23-today-story.png"
+      ]
     }
   ]
 }
