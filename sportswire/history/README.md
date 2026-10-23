@@ -42,6 +42,7 @@ Old photos are hard to clear, so the rule is narrow:
 - **Wikimedia Commons** files under Public domain, CC0, CC BY or CC BY-SA, through `tools/archive_photo.py pick` (it reads the licence and author from the Commons file page itself and refuses anything else). Credit on the card ("PHOTO: <Author> / Wikimedia Commons, <Licence>", added automatically) and in the caption ("📸 <Author> / Wikimedia Commons, <Licence>").
 - The **club's, federation's or organiser's own archive** photo, as for news (`tools/photos.py`), with `"series": "archive"` added to its sidecar.
 - Never agency or wire photos, never screenshots of TV, never "found on Google".
+- Size: at least 450 px on the short side and 600 px on the long side, and the renderer refuses any print it would have to enlarge more than 1.6x. Wikimedia rate-limits original files, so `archive_photo.py` downloads its standard thumbnail widths (500, 960, 1280, 1920 px): a file under 960 px wide comes down at 500 px. Portrait photos get an upright print on the cover.
 - No photo is fine: the cover then runs the big year, stamp and headline, which is designed to stand alone.
 
 ## Notes kept here

@@ -207,7 +207,7 @@ def check(photo: pathlib.Path) -> list[str]:
         probs.append('agency/wire credit (Getty, AFP, Reuters, AP...)')
     w, h = Image.open(photo).size
     archive = s.get('series') == 'archive'  # "From the Archive": framed prints, smaller and older files are fine
-    ms, ml = (500, 700) if archive else (MIN_SHORT, MIN_LONG)
+    ms, ml = (450, 600) if archive else (MIN_SHORT, MIN_LONG)  # archive prints sit in a 560-900 px frame; the renderer also refuses >1.6x enlargement
     if min(w, h) < ms or max(w, h) < ml:
         probs.append(f'photo too small ({w}x{h}; needs at least {ms} px short side and {ml} px long side)')
     if 'commons.wikimedia.org' in s.get('source_page', '') or 'upload.wikimedia.org' in s.get('image_url', ''):

@@ -140,6 +140,11 @@
       "claim": "2026 Rugby League World Cup: Lebanon v France, Sunday 1 November 2026, CommBank Stadium, Sydney",
       "sources": [
         {
+          "url": "https://www.rlwc2026.com/draw/mens/2026/round-3/lebanon-v-france",
+          "tier": 1,
+          "outlet": "RLWC 2026 (organiser)"
+        },
+        {
           "url": "https://www.sydney.com/destinations/sydney/sydney-west/parramatta/events/rlwc26-m-tonga-v-samoa-lebanon-v-france-w-australia-v-wales",
           "tier": 2,
           "outlet": "Destination NSW"
@@ -189,5 +194,38 @@
   "visual_check": {
     "done": true,
     "notes": "Cover with upright sepia print (Doueihi, 2017) and note + credit; story with ages/scores kept whole; ticket France 18-29 Lebanon; then/now 2017/2026; end. Nothing clipped."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T11:45+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "Sunday 29 October 2017, Canberra Stadium; France 18-29 Lebanon; first ever RLWC win; first World Cup since 2000",
+        "verdict": "CONFIRMED",
+        "url": "https://rlwc2017.com/news/match-report-france-v-lebanon"
+      },
+      {
+        "claim": "Robinson 2, Layoun, Doueihi (19), Moses; Moses 4 goals and a field goal; 'Cedars'",
+        "verdict": "CONFIRMED",
+        "url": "https://www.skysports.com/rugby-league/france-vs-lebanon/46558"
+      },
+      {
+        "claim": "Doueihi 19-year-old",
+        "verdict": "CONFIRMED",
+        "url": "https://www.nswrl.com.au/news/2017/10/31/doueihi-celebrates-unexpected-cedars-debut-with-crucial-try"
+      },
+      {
+        "claim": "9 years ago today (2026 - 2017)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.skysports.com/rugby-league/france-vs-lebanon/46558"
+      },
+      {
+        "claim": "Lebanon v France, Sunday 1 November 2026, CommBank Stadium, Sydney",
+        "verdict": "CONFIRMED",
+        "url": "https://www.rlwc2026.com/draw/mens/2026/round-3/lebanon-v-france"
+      }
+    ],
+    "notes": "All 15 claims CONFIRMED. Photo credit checked internally (Commons file page)."
   }
 }
