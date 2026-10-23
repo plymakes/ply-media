@@ -230,5 +230,9 @@
   "visual_check": {
     "done": true,
     "notes": "Re-rendered with the exact date kicker; all 5 slides re-read (story, ticket, career unchanged); nothing clipped."
+  },
+  "metricool": {
+    "id": 403926812,
+    "when": "2026-10-27T19:30:00+02:00"
   }
 }

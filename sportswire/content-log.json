@@ -518,6 +518,77 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/5b44927ad06159b437363bd2fb7ffe296463550e/sportswire/posts/cy/2026-10/2026-10-23-archive-kontides-first-medal-04.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/5b44927ad06159b437363bd2fb7ffe296463550e/sportswire/posts/cy/2026-10/2026-10-23-archive-kontides-first-medal-05.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-27",
+      "slug": "archive-asian-cup-2000",
+      "story_key": "lb-archive-2000-asian-cup-hosts",
+      "light": "green",
+      "template": "cover,story,ticket,thennow,end",
+      "headline": "When Asia came to *Beirut*",
+      "caption_first_line": "From the archive: October 2000, when the Asian Cup came to Lebanon. ⚽",
+      "sources": [
+        "http://www.jfa.jp/samuraiblue/asiancup_history/",
+        "https://rsssf.org/tables/00asch-ext.html",
+        "https://www.insideworldfootball.com/2024/01/03/asian-cup-2000/",
+        "https://www.japantimes.co.jp/sports/2000/10/31/soccer/j-league/japan-edges-saudi-arabia-to-become-asian-champion/",
+        "https://www.the-afc.com/en/national/afc_asian_cup/news/ones_to_watch_hassan_matouk_lebanon.html",
+        "https://www.the-afc.com/en/national/afc_asian_cup/news/troussier_2000_triumph_an_amazing_memory.html"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-27/lb-archive-asian-cup-2000.json",
+      "logged_at": "2026-10-23T08:32:54+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-27T19:30+02:00",
+      "metricool_id": "403926793",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=5686944859988708010",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-02.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-03.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-04.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/e21ff4123346d7bbddcdb4dc2e338493059cbdbc/sportswire/posts/lb/2026-10/2026-10-27-archive-asian-cup-2000-05.png"
+      ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-27",
+      "slug": "archive-baghdatis-stockholm-2009",
+      "story_key": "cy-archive-2009-baghdatis-stockholm",
+      "light": "green",
+      "template": "cover,story,ticket,ledger,end",
+      "headline": "Baghdatis ends the wait in *Stockholm*",
+      "caption_first_line": "From the archive: October 2009, Stockholm. 🎾",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Marcos_Baghdatis_2006.jpg",
+        "https://english.stadiumastro.com/news-sports/baghdatis-bow-out-after-wimbledon-139360",
+        "https://greekherald.com.au/sports/baghdatis-to-retire-after-wimbledon",
+        "https://www.stockholmopen.se/en/event-info/2000-2009",
+        "https://www.theglobeandmail.com/sports/more-sports/baghdatis-reaches-final-on-default/article4290173",
+        "https://www.thelocal.se/20091025/22870",
+        "https://www.upi.com/Sports_News/2009/10/25/Baghdatis-wins-Stockholm-Open/42901256509050/"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": []
+      },
+      "spec": "specs/2026-10-27/cy-archive-baghdatis-stockholm-2009.json",
+      "logged_at": "2026-10-23T08:32:54+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-27T19:30+02:00",
+      "metricool_id": "403926812",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-4680472886952833447",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-02.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-03.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-04.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/eada456747c90de20739a094417eddbc7af9f719/sportswire/posts/cy/2026-10/2026-10-27-archive-baghdatis-stockholm-2009-05.png"
+      ]
     }
   ]
 }

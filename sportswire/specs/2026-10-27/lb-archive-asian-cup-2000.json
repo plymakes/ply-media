@@ -234,5 +234,9 @@
       }
     ],
     "notes": "Pass 1 FAIL (third in group; two cities; Japan Times). Fixed. Pass 2: all 18 claims CONFIRMED."
+  },
+  "metricool": {
+    "id": 403926793,
+    "when": "2026-10-27T19:30:00+02:00"
   }
 }
