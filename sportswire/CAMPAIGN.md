@@ -90,7 +90,19 @@ The weekly desk turns this into a concrete plan for the coming week in `plans/<y
 | Sat | Today · predict · quiz pair 13:30 · tonight's results | News | — | News | Result Reel if a big one | — | Results / roundups |
 | Sun | Today · predict · tonight's results | News | — | Lebanese abroad (weekend) | Table after the round | — | Results / roundups |
 
-Overdue sports (`python3 tools/sweep.py coverage`) take the next spotlight, quiz, vote, explainer or archive slot. The grid above is for LB; Cyprus keeps the grid before it.
+**@sportswire.cy from 24 Oct 2026** (Geoffry: "let's do the same for cyprus"). Same volume; built around Thursday European nights and Friday–Monday league rounds; at least 6 different sports a week.
+
+| Day | Stories | 10:00 | 12:30 | 15:00 | 18:00 | 19:30 | Evening |
+|---|---|---|---|---|---|---|---|
+| Mon | Today · quiz pair 13:30 | Weekend in 60 s (Reel) | Week ahead, all sports (carousel) | Other sports this weekend (carousel) | Vote: performance of the week | — | Monday league games |
+| Tue | Today · predict (basketball in Europe) | News / results | Explainer or small-sport spotlight | News | Spotlight 1 | Archive | Results |
+| Wed | Today · quiz pair 13:30 · predict | Spotlight 2 (Reel) | Quiz (carousel) | News | European night preview | — | Basketball in Europe |
+| Thu | Today · predict for Omonia and Pafos | Preview (European night) | Numbers | News | Spotlight 3 | Archive | European results |
+| Fri | Today · predict | Weekend preview, all sports (carousel) | News | Cypriots abroad | News / preview | — | Results · tonight's results Story |
+| Sat | Today · predict · quiz pair 13:30 · tonight's results | News | — | News | Result Reel if a big one | — | League results / roundups |
+| Sun | Today · predict · tonight's results | News | — | Cypriots abroad (weekend) | Table after the round (if complete) | — | Results / roundups |
+
+Overdue sports (`python3 tools/sweep.py coverage --page lb|cy`) take the next spotlight, quiz, vote, explainer or archive slot. The two grids above replace the generic grid for both pages from 24 Oct.
 
 **Timing beats the grid.** On event days the grid gives way to the event: a preview that morning (or the evening before for early starts), and the result straight after the final whistle through a result desk (PLAYBOOK 6, Timing).
 

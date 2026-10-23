@@ -1,0 +1,3565 @@
+{
+  "updated": "2026-10-23",
+  "tracking_since": "2026-10-23",
+  "page": "cy",
+  "help": "Read by tools/sweep.py --page cy; the readable version is sources/cyprus-sports.md. Ranks 1-20 are swept on every run; 21+ only when one of their dated events is on. A source here is where to look, not proof (PLAYBOOK 4).",
+  "sports": [
+    {
+      "rank": 1,
+      "id": "football",
+      "name": "Football (incl. futsal and women's)",
+      "why": "By far the biggest following and coverage (Pafos ~176K, APOEL ~84K, Omonia ~65K on Instagram), league every weekend, Omonia and Pafos in Europe every other Thursday, Nations League decider on 15 Nov.",
+      "cover_every_days": 2,
+      "federation": {
+        "name": "Cyprus Football Association (CFA)",
+        "site": "https://www.cfa.com.cy (Greek /Gr/, English /En/; updated daily)",
+        "handles": "@cyprusfa_official (Instagram), @CyprusFA (X), facebook.com/cyprusfaofficial (linked from cfa.com.cy)"
+      },
+      "images": "club Instagram/X at full time; Kerkida galleries the same evening; CFA galleries the next day (no credit lines). UEFA photos are agency: never use",
+      "competitions": [
+        {
+          "id": "cy-league",
+          "name": "Cyprus League by Stoiximan (14 teams; 26 rounds, then top 6 / bottom 8)",
+          "level": "domestic",
+          "priority": "B",
+          "season": {
+            "start": "2026-08-28",
+            "end": "2027-05-23"
+          },
+          "end_estimated": true,
+          "match_days": [
+            "Fri",
+            "Sat",
+            "Sun",
+            "Mon"
+          ],
+          "sources": [
+            {
+              "name": "CFA First Division page",
+              "url": "https://www.cfa.com.cy/Gr/competitions/68124755",
+              "use": [
+                "schedule",
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "same night or next morning",
+              "fetch": "ok",
+              "note": "robots.txt disallows /images/: never take photos from there"
+            },
+            {
+              "name": "CFA news (dates, venues, referees per matchday)",
+              "url": "https://www.cfa.com.cy/Gr/news",
+              "use": [
+                "schedule",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "2–3 days ahead",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida.net",
+              "url": "https://www.kerkida.net",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "live threads, minutes",
+              "fetch": "ok",
+              "note": "fastest outlet; Greek; standings at /vathmologies"
+            },
+            {
+              "name": "Omada (Reporter)",
+              "url": "https://omada.reporter.com.cy",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 2,
+              "speed": "fast, timestamped",
+              "fetch": "ok"
+            },
+            {
+              "name": "Politis Gipedo",
+              "url": "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria",
+              "use": [
+                "schedule",
+                "result",
+                "news"
+              ],
+              "tier": 2,
+              "speed": "hourly",
+              "fetch": "ok"
+            },
+            {
+              "name": "FotMob",
+              "url": "https://www.fotmob.com/teams/5793/overview/sip",
+              "use": [
+                "schedule",
+                "live",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "data service; shows UTC times: convert"
+            },
+            {
+              "name": "Sofascore Cyprus League",
+              "url": "https://www.sofascore.com/tournament/football/cyprus/1st-division/171",
+              "use": [
+                "live",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "cross-check only (its table counted live games on 19 Oct); robots.txt disallows /standings/"
+            },
+            {
+              "name": "Cyprus Mail local football",
+              "url": "https://cyprus-mail.com/category/sport/football-2/local-football",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 2,
+              "speed": "slow: 1 hour to next morning",
+              "fetch": "ok",
+              "note": "English; patchy"
+            }
+          ],
+          "notes": "Kick-offs 15:00–20:00 local, mostly 17:00–19:00; dates published to matchday 16 (2–4 Jan); winter break 22 Dec–1 Jan. Derbies and top-of-table games are priority A."
+        },
+        {
+          "id": "uefa-clubs",
+          "name": "Omonia (Europa League) and Pafos (Conference League) league phase; knockouts from Feb 2027",
+          "level": "international",
+          "priority": "A",
+          "season": {
+            "start": "2026-09-16",
+            "end": "2027-06-02"
+          },
+          "match_days": [
+            "Thu"
+          ],
+          "sources": [
+            {
+              "name": "UEFA match centre and fixture articles",
+              "url": "https://www.uefa.com",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "UEFA times are CET; photos are agency (Getty etc.): not usable"
+            },
+            {
+              "name": "Omonia @omonoiafootball / Pafos @pafosfc",
+              "url": "https://www.uefa.com/uefaeuropaleague/clubs/50077--omonia/",
+              "use": [
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "blocked",
+              "note": "club full-time posts are tier 1 for their own score"
+            },
+            {
+              "name": "Kerkida.net",
+              "url": "https://www.kerkida.net",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "live threads, minutes",
+              "fetch": "ok",
+              "note": "fastest outlet; Greek; standings at /vathmologies"
+            },
+            {
+              "name": "FotMob",
+              "url": "https://www.fotmob.com/teams/5793/overview/sip",
+              "use": [
+                "schedule",
+                "live",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "data service; shows UTC times: convert"
+            }
+          ]
+        },
+        {
+          "id": "cy-national-team",
+          "name": "Men's national team: Nations League C2 (Armenia v Cyprus 12 Nov 19:00; Cyprus v Montenegro 15 Nov 16:00), EURO 2028 qualifying draw 6 Dec",
+          "level": "international",
+          "priority": "A",
+          "season": {
+            "start": "2026-09-25",
+            "end": "2027-11"
+          },
+          "sources": [
+            {
+              "name": "CFA news (dates, venues, referees per matchday)",
+              "url": "https://www.cfa.com.cy/Gr/news",
+              "use": [
+                "schedule",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "2–3 days ahead",
+              "fetch": "ok"
+            },
+            {
+              "name": "CFA national team page",
+              "url": "https://www.cfa.com.cy/Gr/nationalteams/1",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "UEFA match centre and fixture articles",
+              "url": "https://www.uefa.com",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "UEFA times are CET; photos are agency (Getty etc.): not usable"
+            },
+            {
+              "name": "FotMob",
+              "url": "https://www.fotmob.com/teams/5793/overview/sip",
+              "use": [
+                "schedule",
+                "live",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "data service; shows UTC times: convert"
+            }
+          ],
+          "notes": "UEFA still shows coach Apostolos Mantzios \"Suspended until further notice\": unexplained, verify before naming a coach."
+        },
+        {
+          "id": "cy-cup",
+          "name": "Coca-Cola Cup (First and Second Division clubs)",
+          "level": "domestic",
+          "priority": "B",
+          "season": {
+            "start": "2026-10-14",
+            "end": "2027-05"
+          },
+          "end_estimated": true,
+          "sources": [
+            {
+              "name": "CFA Cup page",
+              "url": "https://www.cfa.com.cy/Gr/competitions/68536042",
+              "use": [
+                "schedule",
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "same night or next morning",
+              "fetch": "ok",
+              "note": "robots.txt disallows /images/: never take photos from there"
+            },
+            {
+              "name": "CFA news (dates, venues, referees per matchday)",
+              "url": "https://www.cfa.com.cy/Gr/news",
+              "use": [
+                "schedule",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "2–3 days ahead",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida.net",
+              "url": "https://www.kerkida.net",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "live threads, minutes",
+              "fetch": "ok",
+              "note": "fastest outlet; Greek; standings at /vathmologies"
+            }
+          ]
+        },
+        {
+          "id": "cy-second-third",
+          "name": "Second Division (16), Third Division (16), STOK Elite (16)",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": "2026-09",
+            "end": "2027-05"
+          },
+          "end_estimated": true,
+          "match_days": [
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "sources": [
+            {
+              "name": "CFA Second Division",
+              "url": "https://www.cfa.com.cy/Gr/competitions/68156043",
+              "use": [
+                "schedule",
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "same night or next morning",
+              "fetch": "ok",
+              "note": "robots.txt disallows /images/: never take photos from there"
+            },
+            {
+              "name": "CFA Third Division",
+              "url": "https://www.cfa.com.cy/Gr/competitions/68156107",
+              "use": [
+                "schedule",
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "same night or next morning",
+              "fetch": "ok",
+              "note": "robots.txt disallows /images/: never take photos from there"
+            },
+            {
+              "name": "CFA STOK Elite",
+              "url": "https://www.cfa.com.cy/Gr/competitions/68160192",
+              "use": [
+                "schedule",
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "same night or next morning",
+              "fetch": "ok",
+              "note": "robots.txt disallows /images/: never take photos from there"
+            },
+            {
+              "name": "Kerkida.net",
+              "url": "https://www.kerkida.net",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "live threads, minutes",
+              "fetch": "ok",
+              "note": "fastest outlet; Greek; standings at /vathmologies"
+            }
+          ]
+        },
+        {
+          "id": "cy-women",
+          "name": "Women's Championship (7 teams, Sundays 11:00; Apollon Ladies won the Super Cup) and women's national team (Nations League draw 3 Nov)",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": "2026-10-03",
+            "end": "2027-05"
+          },
+          "end_estimated": true,
+          "match_days": [
+            "Sun"
+          ],
+          "sources": [
+            {
+              "name": "CFA Women's Championship",
+              "url": "https://www.cfa.com.cy/Gr/competitions/68354866",
+              "use": [
+                "schedule",
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "same night or next morning",
+              "fetch": "ok",
+              "note": "robots.txt disallows /images/: never take photos from there"
+            },
+            {
+              "name": "CFA women's national team",
+              "url": "https://www.cfa.com.cy/Gr/nationalteams/9",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            }
+          ]
+        },
+        {
+          "id": "cy-futsal",
+          "name": "Futsal Championship (10 teams, Thu/Fri evenings)",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": "2026-10-08",
+            "end": "2027-05"
+          },
+          "end_estimated": true,
+          "match_days": [
+            "Thu",
+            "Fri"
+          ],
+          "sources": [
+            {
+              "name": "CFA futsal page",
+              "url": "https://www.cfa.com.cy/Gr/competitions/68497373",
+              "use": [
+                "schedule",
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "same night or next morning",
+              "fetch": "ok",
+              "note": "robots.txt disallows /images/: never take photos from there"
+            },
+            {
+              "name": "AEK Larnaca site (futsal reports)",
+              "url": "https://www.aek.com.cy",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same night",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida.net",
+              "url": "https://www.kerkida.net",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "live threads, minutes",
+              "fetch": "ok",
+              "note": "fastest outlet; Greek; standings at /vathmologies"
+            }
+          ]
+        },
+        {
+          "id": "cy-youth-nt",
+          "name": "Youth national teams: U17 EURO qualifiers hosted in Cyprus (Japan friendly 27 Oct; Faroe Islands 30 Oct; Romania 2 Nov, all 15:00, Achna); U19 Round 2 hosted 11–17 Nov (Armenia, Albania)",
+          "level": "international",
+          "priority": "B",
+          "season": {
+            "start": "2026-10-27",
+            "end": "2026-11-17"
+          },
+          "sources": [
+            {
+              "name": "CFA news (dates, venues, referees per matchday)",
+              "url": "https://www.cfa.com.cy/Gr/news",
+              "use": [
+                "schedule",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "2–3 days ahead",
+              "fetch": "ok"
+            },
+            {
+              "name": "UEFA match centre and fixture articles",
+              "url": "https://www.uefa.com",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "UEFA times are CET; photos are agency (Getty etc.): not usable"
+            },
+            {
+              "name": "Kerkida.net",
+              "url": "https://www.kerkida.net",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "live threads, minutes",
+              "fetch": "ok",
+              "note": "fastest outlet; Greek; standings at /vathmologies"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Marcus Edwards",
+          "where": "Burnley",
+          "check": "weekly",
+          "track": "fotmob.com"
+        },
+        {
+          "name": "Hector Kyprianou",
+          "where": "Watford",
+          "check": "weekly",
+          "track": "fotmob.com"
+        },
+        {
+          "name": "Nikolaos Panagiotou",
+          "where": "FC Utrecht",
+          "check": "weekly",
+          "track": "fotmob.com"
+        },
+        {
+          "name": "Loizos Loizou",
+          "where": "Crvena Zvezda",
+          "check": "weekly",
+          "track": "fotmob.com"
+        },
+        {
+          "name": "Ioannis Pittas",
+          "where": "CSKA Sofia",
+          "check": "weekly",
+          "track": "fotmob.com"
+        },
+        {
+          "name": "Joel Mall",
+          "where": "Young Boys",
+          "check": "weekly",
+          "track": "fotmob.com"
+        },
+        {
+          "name": "Stelios Andreou",
+          "where": "Estoril",
+          "check": "weekly",
+          "track": "fotmob.com"
+        },
+        {
+          "name": "Nicholas Tsaroulla",
+          "where": "Notts County",
+          "check": "weekly",
+          "track": "fotmob.com"
+        }
+      ],
+      "notes": [
+        "Clubs abroad are from FotMob: confirm on the club's own site before posting.",
+        "Spelling: UEFA's current squad page says \"Andronikos Kakoullis\" (sources/spelling.md said Kakoulli): use the UEFA match page of the day."
+      ],
+      "sources": [
+        {
+          "name": "CFA news (dates, venues, referees per matchday)",
+          "url": "https://www.cfa.com.cy/Gr/news",
+          "use": [
+            "schedule",
+            "news"
+          ],
+          "tier": 1,
+          "speed": "2–3 days ahead",
+          "fetch": "ok"
+        },
+        {
+          "name": "Kerkida.net",
+          "url": "https://www.kerkida.net",
+          "use": [
+            "schedule",
+            "live",
+            "result",
+            "photos"
+          ],
+          "tier": 2,
+          "speed": "live threads, minutes",
+          "fetch": "ok",
+          "note": "fastest outlet; Greek; standings at /vathmologies"
+        },
+        {
+          "name": "UEFA match centre and fixture articles",
+          "url": "https://www.uefa.com",
+          "use": [
+            "schedule",
+            "live",
+            "result",
+            "photos"
+          ],
+          "tier": 1,
+          "speed": "live",
+          "fetch": "ok",
+          "note": "UEFA times are CET; photos are agency (Getty etc.): not usable"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "basketball",
+      "name": "Basketball",
+      "why": "Second team sport by coverage: 10-team league with a TV deal, Keravnos and Petrolina AEK in the FIBA Europe Cup, AEL in two European competitions, both national teams playing in November.",
+      "cover_every_days": 2,
+      "federation": {
+        "name": "Cyprus Basketball Federation (CBF/KOK)",
+        "site": "https://www.cbf.basketball (updated) + results system cbfweb.org",
+        "handles": "@basketcyprus (Instagram), facebook.com/basketcyprus, @BasketCyprus (X), YouTube basketFed (linked from cbf.basketball); streams on cbftv.net"
+      },
+      "images": "CBF news photos (uncredited: credit \"Cyprus Basketball Federation\"), FIBA galleries, Kerkida, club sites (keravnosbc.com, aek.com.cy)",
+      "competitions": [
+        {
+          "id": "cy-basket-league",
+          "name": "ECOMMBX Basket League (10 teams, 18 rounds, then play-offs; champions Petrolina AEK)",
+          "level": "domestic",
+          "priority": "B",
+          "season": {
+            "start": "2026-10-09",
+            "end": "2027-05"
+          },
+          "end_estimated": true,
+          "match_days": [
+            "Fri",
+            "Sat",
+            "Sun",
+            "Mon"
+          ],
+          "sources": [
+            {
+              "name": "CBF results system (eCBF)",
+              "url": "http://cbfweb.org/eCBF/pubgames.aspx",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "after the game",
+              "fetch": "ok",
+              "note": "http only; competition, round and season dropdowns; current club names"
+            },
+            {
+              "name": "Cyprus Basketball Federation news",
+              "url": "https://www.cbf.basketball",
+              "use": [
+                "result",
+                "news",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "same night or next day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida basketball",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket",
+              "use": [
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "10–15 minutes after the buzzer",
+              "fetch": "ok"
+            },
+            {
+              "name": "Politis Gipedo basketball",
+              "url": "https://gipedo.politis.com.cy/kalathosfaira",
+              "use": [
+                "result"
+              ],
+              "tier": 2,
+              "speed": "hours",
+              "fetch": "ok"
+            },
+            {
+              "name": "Omada (Reporter)",
+              "url": "https://omada.reporter.com.cy",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 2,
+              "speed": "fast, timestamped",
+              "fetch": "ok"
+            }
+          ],
+          "notes": "Clubs: Petrolina AEK, TRIA EKA AEL, Keravnos, APOEL, DOMUS Apollon, ETHA Engomis, Anorthosis, Achilleas Kaimakliou, ACRO4U Digenis Morphou, Fabbrica EN Paralimniou. Games 17:00–19:30 local."
+        },
+        {
+          "id": "cy-basket-europe",
+          "name": "FIBA Europe Cup (Keravnos Group D, Petrolina AEK Group E), EuroCup Women (AEL), ENBL (TRIA EKA AEL)",
+          "level": "international",
+          "priority": "B",
+          "season": {
+            "start": "2026-10-07",
+            "end": "2027-04"
+          },
+          "end_estimated": true,
+          "match_days": [
+            "Tue",
+            "Wed"
+          ],
+          "sources": [
+            {
+              "name": "FIBA event pages (Europe Cup, EuroCup Women, national teams)",
+              "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "live box scores; times shown in UTC: convert"
+            },
+            {
+              "name": "FIBA EuroCup Women",
+              "url": "https://www.fiba.basketball/en/events/eurocup-women-26-27",
+              "use": [
+                "schedule",
+                "live",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Basketball Federation news",
+              "url": "https://www.cbf.basketball",
+              "use": [
+                "result",
+                "news",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "same night or next day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida basketball",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket",
+              "use": [
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "10–15 minutes after the buzzer",
+              "fetch": "ok"
+            }
+          ]
+        },
+        {
+          "id": "cy-basket-nt",
+          "name": "National teams: men's EuroBasket 2029 pre-qualifiers (North Macedonia away 26 Nov, Austria away 29 Nov, North Macedonia home 28 Feb); women's (BIH away 11 Nov, Norway home 14 Nov, Limassol)",
+          "level": "international",
+          "priority": "A",
+          "season": {
+            "start": "2026-11-11",
+            "end": "2027-02-28"
+          },
+          "sources": [
+            {
+              "name": "FIBA event pages (Europe Cup, EuroCup Women, national teams)",
+              "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "live box scores; times shown in UTC: convert"
+            },
+            {
+              "name": "Cyprus Basketball Federation news",
+              "url": "https://www.cbf.basketball",
+              "use": [
+                "result",
+                "news",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "same night or next day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida basketball",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket",
+              "use": [
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "10–15 minutes after the buzzer",
+              "fetch": "ok"
+            }
+          ]
+        },
+        {
+          "id": "cy-basket-women-cup",
+          "name": "Women's Division A (AEL four-time champions), men's and women's cups and super cups",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": null,
+            "end": null
+          },
+          "sources": [
+            {
+              "name": "CBF results system (eCBF)",
+              "url": "http://cbfweb.org/eCBF/pubgames.aspx",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "after the game",
+              "fetch": "ok",
+              "note": "http only; competition, round and season dropdowns; current club names"
+            },
+            {
+              "name": "CBF women's championship",
+              "url": "https://www.cbf.basketball/el/womens-championship",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida basketball",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket",
+              "use": [
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "10–15 minutes after the buzzer",
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Aeneas Jung",
+          "where": "VfL Kirchheim Knights (Germany)",
+          "check": "weekly"
+        }
+      ],
+      "notes": [
+        "FIBA and FotMob show UTC times: a FIBA \"16:30\" is 19:30 in Cyprus until 25 Oct and 18:30 after.",
+        "Omada (23 Oct) reports a Greek-led basketball match-fixing inquiry with a Cyprus angle: AMBER at best, verify before any mention."
+      ],
+      "sources": [
+        {
+          "name": "Cyprus Basketball Federation news",
+          "url": "https://www.cbf.basketball",
+          "use": [
+            "result",
+            "news",
+            "photos"
+          ],
+          "tier": 1,
+          "speed": "same night or next day",
+          "fetch": "ok"
+        },
+        {
+          "name": "Kerkida basketball",
+          "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket",
+          "use": [
+            "result",
+            "photos"
+          ],
+          "tier": 2,
+          "speed": "10–15 minutes after the buzzer",
+          "fetch": "ok"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "volleyball",
+      "name": "Volleyball (indoor and beach)",
+      "why": "Live TV on RIK and AlfaSports.TV, Allwyn title sponsor, big multi-sport clubs, Pafiakos and Olympiada Neapolis in CEV cups; leagues start 6 and 10 Nov.",
+      "cover_every_days": 7,
+      "federation": {
+        "name": "Cyprus Volleyball Federation (CVF)",
+        "site": "https://volleyball.org.cy (updated daily; today, next games, results and tables pages)",
+        "handles": "@cyprus.volleyball.federation (Instagram), facebook.com/cyprusvolleyballfederation, @CyprusVolley (X), YouTube (linked from volleyball.org.cy)"
+      },
+      "images": "Kerkida galleries the same night; CVF Instagram/Facebook; CEV for European ties",
+      "competitions": [
+        {
+          "id": "cy-volley-men",
+          "name": "Allwyn A Division men (8 teams; starts Fri 6 Nov 2026, Fridays 20:00) and League Cup \"Giorgos Dimitriou\"",
+          "level": "domestic",
+          "priority": "B",
+          "season": {
+            "start": "2026-11-06",
+            "end": "2027-05"
+          },
+          "end_estimated": true,
+          "match_days": [
+            "Fri",
+            "Mon"
+          ],
+          "sources": [
+            {
+              "name": "CVF results",
+              "url": "https://volleyball.org.cy/archives/calendar/recent-results",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same night",
+              "fetch": "ok"
+            },
+            {
+              "name": "CVF next games",
+              "url": "https://volleyball.org.cy/next-games",
+              "use": [
+                "schedule"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "CVF live scores (DataProject)",
+              "url": "https://kop-web.dataproject.com/MainLiveScore.aspx",
+              "use": [
+                "live"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "JavaScript-heavy"
+            },
+            {
+              "name": "Kerkida volleyball",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor/petosfaira",
+              "use": [
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "within about 2 hours",
+              "fetch": "ok",
+              "note": "same-night photo galleries"
+            }
+          ],
+          "notes": "Teams: Anorthosis, APOEL, Anagennisi Derynia, AE Karava, Nea Salamina, Omonia, Pafiakos, Foinikas Pylas. Omonia won the Super Cup 3-1 v Pafiakos (16 Oct). Live on RIK and AlfaSports.TV."
+        },
+        {
+          "id": "cy-volley-women",
+          "name": "Allwyn A Division women (8 teams; starts Tue 10 Nov 2026, Tuesdays 20:00); AEL won the Super Cup 3-2 (19 Oct)",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": "2026-11-10",
+            "end": "2027-05"
+          },
+          "end_estimated": true,
+          "match_days": [
+            "Tue",
+            "Sat"
+          ],
+          "sources": [
+            {
+              "name": "CVF results",
+              "url": "https://volleyball.org.cy/archives/calendar/recent-results",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same night",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida volleyball",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor/petosfaira",
+              "use": [
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "within about 2 hours",
+              "fetch": "ok",
+              "note": "same-night photo galleries"
+            }
+          ]
+        },
+        {
+          "id": "cy-volley-europe",
+          "name": "CEV: Pafiakos (men's Champions League early rounds; lost the home leg 1-3 to Mladost Zagreb), Olympiada Neapolis (women's Challenge Cup, at Dinamo Zagreb 3 Nov)",
+          "level": "international",
+          "priority": "B",
+          "season": {
+            "start": "2026-10-20",
+            "end": "2027-03"
+          },
+          "sources": [
+            {
+              "name": "CEV competition pages (old site)",
+              "url": "https://www-old.cev.eu/Competition-Area/competition.aspx?ID=1947&PID=3533",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "the new cev.eu pages return no data when fetched"
+            },
+            {
+              "name": "CEV live scores",
+              "url": "https://livescores.cev.eu",
+              "use": [
+                "live"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida volleyball",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor/petosfaira",
+              "use": [
+                "result",
+                "photos"
+              ],
+              "tier": 2,
+              "speed": "within about 2 hours",
+              "fetch": "ok",
+              "note": "same-night photo galleries"
+            }
+          ]
+        },
+        {
+          "id": "cy-beach-volley",
+          "name": "Beach volleyball: national tour (summer, Limassol), CEV and FIVB events",
+          "level": "mixed",
+          "priority": "C",
+          "season": {
+            "start": "2027-05",
+            "end": "2027-08"
+          },
+          "sources": [
+            {
+              "name": "CVF beach events",
+              "url": "https://volleyball.org.cy/bvb-events",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "CEV beach rankings",
+              "url": "https://www.cev.eu/beach/rankings/",
+              "use": [
+                "ranking"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Manolina Konstantinou",
+          "where": "outside hitter; Olympiacos Piraeus per Wikipedia (confirm with the club)",
+          "check": "weekly"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Super Sport 104 (ex Sport FM)",
+          "url": "https://supersport104.com/category/alla-athlhmata/",
+          "use": [
+            "news",
+            "result"
+          ],
+          "tier": 2,
+          "speed": "not measured",
+          "fetch": "ok"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "athletics",
+      "name": "Athletics and running",
+      "why": "The most decorated sport this year (Kesidis world No. 12, Kulichenko, the Fotopoulou sisters, Trajkovic), an active federation, and a full running calendar (Larnaka Marathon 15 Nov).",
+      "cover_every_days": 7,
+      "federation": {
+        "name": "KOEAS (Cyprus Amateur Athletic Association)",
+        "site": "https://www.koeas.org.cy (very active, dated news)",
+        "handles": "@koeas (Instagram) and facebook.com/koeas.cy (linked from koeas.org.cy)"
+      },
+      "images": "@koeas first; World Athletics and European Athletics galleries",
+      "competitions": [
+        {
+          "id": "cy-athletics-domestic",
+          "name": "KOEAS road-race series, national championships (track Apr–Jul), Larnaca Marathon (Nov), XM Limassol Marathon (3–4 Apr 2027)",
+          "level": "domestic",
+          "priority": "C",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "KOEAS results 2026",
+              "url": "https://www.koeas.org.cy",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same or next day",
+              "fetch": "ok"
+            },
+            {
+              "name": "World Athletics",
+              "url": "https://worldathletics.org/competition/calendar-results",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "hours",
+              "fetch": "ok"
+            },
+            {
+              "name": "Politis Gipedo athletics",
+              "url": "https://gipedo.politis.com.cy/alla-sport/stivos",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok"
+            }
+          ]
+        },
+        {
+          "id": "athletics-international",
+          "name": "European Athletics Indoors (Valencia, 4–7 Mar 2027), Balkan championships, European Games (Istanbul, 16–27 Jun 2027), Diamond League and World Indoor Tour",
+          "level": "international",
+          "priority": "B",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "World Athletics",
+              "url": "https://worldathletics.org/competition/calendar-results",
+              "use": [
+                "schedule",
+                "live",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "European Athletics",
+              "url": "https://www.european-athletics.com",
+              "use": [
+                "schedule",
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail athletics",
+              "url": "https://cyprus-mail.com/category/sport/athletics",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "KOEAS",
+              "url": "https://www.koeas.org.cy",
+              "use": [
+                "news"
+              ],
+              "tier": 1,
+              "speed": "same or next day",
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Iosif Kesidis",
+          "where": "hammer, world No. 12, Taranto gold",
+          "check": "weekly",
+          "track": "worldathletics.org"
+        },
+        {
+          "name": "Elena Kulichenko",
+          "where": "high jump, world No. 22",
+          "check": "weekly",
+          "track": "worldathletics.org"
+        },
+        {
+          "name": "Filippa Fotopoulou",
+          "where": "long jump, Taranto gold (not Olivia)",
+          "check": "weekly",
+          "track": "worldathletics.org"
+        },
+        {
+          "name": "Milan Trajkovic",
+          "where": "110 m / 60 m hurdles",
+          "check": "weekly",
+          "track": "worldathletics.org"
+        },
+        {
+          "name": "Marina Hadjicosta",
+          "where": "discus, born 2009, World U20 bronze",
+          "check": "weekly",
+          "track": "koeas.org.cy"
+        },
+        {
+          "name": "Olivia Fotopoulou",
+          "where": "200 m",
+          "check": "weekly",
+          "track": "worldathletics.org"
+        }
+      ],
+      "sources": [
+        {
+          "name": "KOEAS",
+          "url": "https://www.koeas.org.cy",
+          "use": [
+            "news",
+            "result"
+          ],
+          "tier": 1,
+          "speed": "same or next day",
+          "fetch": "ok",
+          "note": "posts World Athletics ranking digests and season medal summaries: good for story ideas"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "shooting",
+      "name": "Shooting (shotgun)",
+      "why": "Konstantia Nikolaou is world No. 9 in skeet; the Doha World Championship (1–14 Nov) opens LA28 qualifying; Larnaca hosts the junior shotgun Worlds in May.",
+      "cover_every_days": 14,
+      "federation": {
+        "name": "Shooting Sport Federation of Cyprus",
+        "site": "cssf-shooting.org (robots.txt refuses fetching: do not fetch)",
+        "handles": "UNCONFIRMED"
+      },
+      "images": "ISSF competition galleries (issf-sports.org/competitions/<id>/galleries)",
+      "competitions": [
+        {
+          "id": "issf",
+          "name": "ISSF World Championship (Doha, 1–14 Nov 2026), World Cup Final (Rome, 3–8 Dec), World Cups, European Shotgun Championships; Junior Worlds Shotgun in Larnaca (7–16 May 2027)",
+          "level": "international",
+          "priority": "B",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "ISSF competitions",
+              "url": "https://www.issf-sports.org/competitions",
+              "use": [
+                "schedule",
+                "live",
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "ISSF athlete pages",
+              "url": "https://www.issf-sports.org/athletes/SHCYPW1904198401",
+              "use": [
+                "ranking"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "CNA (Cyprus News Agency)",
+              "url": "https://www.cna.org.cy/en",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "headline and lede only (paywall); no sport category"
+            },
+            {
+              "name": "Politis English sport",
+              "url": "https://en.politis.com.cy/news/sports/",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "name errors seen (Taranto list): cross-check names"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Konstantia Nikolaou",
+          "where": "skeet, ISSF world ranking 9 (ISSF spelling; not \"Konstantina\")",
+          "check": "weekly",
+          "track": "issf-sports.org"
+        },
+        {
+          "name": "Nicolas Vasiliou",
+          "where": "skeet, Taranto bronze",
+          "check": "weekly",
+          "track": "issf-sports.org"
+        },
+        {
+          "name": "Andreas Pontikis",
+          "where": "skeet, European U23 champion 2026",
+          "check": "weekly",
+          "track": "issf-sports.org"
+        }
+      ],
+      "sources": [
+        {
+          "name": "ISSF",
+          "url": "https://www.issf-sports.org",
+          "use": [
+            "result"
+          ],
+          "tier": 1,
+          "speed": "live",
+          "fetch": "ok"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "sailing",
+      "name": "Sailing",
+      "why": "Pavlos Kontides (2x Olympic silver, 2026 European champion) is the most covered Cypriot athlete.",
+      "cover_every_days": 14,
+      "federation": {
+        "name": "Cyprus Sailing Federation (CYSAF)",
+        "site": "https://www.cysaf.org.cy (poorly maintained, undated news)",
+        "handles": "@cyprus_sailing_federation (Instagram), facebook.com/CyprusSailingFederation (linked from cysaf.org.cy)"
+      },
+      "images": "event photographers on the regatta sites, World Sailing, CYSAF Instagram",
+      "competitions": [
+        {
+          "id": "ilca-circuit",
+          "name": "ILCA 7 circuit: Grand Slams (Palma, Hyères, Los Angeles), European and World Championships",
+          "level": "international",
+          "priority": "B",
+          "season": {
+            "start": "2027-03",
+            "end": "2027-08"
+          },
+          "sources": [
+            {
+              "name": "Regatta results sites (e.g. ilca-worlds.org)",
+              "url": "https://www.ilca-worlds.org",
+              "use": [
+                "live",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "World Sailing",
+              "url": "https://www.sailing.org",
+              "use": [
+                "news",
+                "ranking",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail: Kontides tag",
+              "url": "https://cyprus-mail.com/tag/pavlos-kontides/",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "tag page lags"
+            },
+            {
+              "name": "Politis English sport",
+              "url": "https://en.politis.com.cy/news/sports/",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "name errors seen (Taranto list): cross-check names"
+            }
+          ]
+        },
+        {
+          "id": "cy-sailing-domestic",
+          "name": "National championship series and regattas in Cyprus",
+          "level": "domestic",
+          "priority": "C",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "CYSAF results",
+              "url": "https://www.cysaf.org.cy/championships/national-championships/results/",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "slow",
+              "fetch": "ok"
+            },
+            {
+              "name": "CYSAF calendar",
+              "url": "https://www.cysaf.org.cy/championships/national-championships/calendar/",
+              "use": [
+                "schedule"
+              ],
+              "tier": 1,
+              "speed": "slow",
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Pavlos Kontides",
+          "where": "ILCA 7; 2026 European champion; 2x Olympic silver",
+          "check": "daily",
+          "track": "regatta results sites, World Sailing"
+        }
+      ],
+      "sources": [
+        {
+          "name": "World Sailing",
+          "url": "https://www.sailing.org",
+          "use": [
+            "ranking"
+          ],
+          "tier": 1,
+          "fetch": "ok"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "gymnastics",
+      "name": "Gymnastics (artistic and rhythmic)",
+      "why": "Marios Georgiou (European silver, two Taranto golds) and the first-ever Cyprus men's team at the Worlds (Rotterdam, finals 24–25 Oct).",
+      "cover_every_days": 14,
+      "federation": {
+        "name": "Cyprus Gymnastics Federation",
+        "site": null,
+        "handles": "UNCONFIRMED (no website found)"
+      },
+      "images": "FIG and European Gymnastics galleries; CNA",
+      "competitions": [
+        {
+          "id": "fig",
+          "name": "FIG World Championships (Rotterdam, 17–25 Oct 2026; finals 24–25 Oct), World Cups and World Challenge Cups, European Championships, European Games 2027",
+          "level": "international",
+          "priority": "B",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "FIG events and results",
+              "url": "https://www.gymnastics.sport/site/events/searchresults.php",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "FIG live scoring (live.gymnastics.sport) is robots-disallowed: never read it"
+            },
+            {
+              "name": "European Gymnastics",
+              "url": "https://www.europeangymnastics.com",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "CNA (Cyprus News Agency)",
+              "url": "https://www.cna.org.cy/en",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "headline and lede only (paywall); no sport category"
+            },
+            {
+              "name": "Sigmalive English",
+              "url": "https://en.sigmalive.com/category/sports/",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "sometimes first in English; some items undated"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Marios Georgiou",
+          "where": "artistic; European horizontal bar silver 2026; Taranto all-around gold",
+          "check": "daily",
+          "track": "gymnastics.sport"
+        },
+        {
+          "name": "Neofytos Kyriakou",
+          "where": "artistic",
+          "check": "weekly",
+          "track": "gymnastics.sport"
+        },
+        {
+          "name": "Vera Tugolukova",
+          "where": "rhythmic",
+          "check": "weekly",
+          "track": "gymnastics.sport"
+        }
+      ],
+      "sources": [
+        {
+          "name": "CNA (Cyprus News Agency)",
+          "url": "https://www.cna.org.cy/en",
+          "use": [
+            "news",
+            "result"
+          ],
+          "tier": 2,
+          "speed": "same day",
+          "fetch": "ok",
+          "note": "headline and lede only (paywall); no sport category"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "judo",
+      "name": "Judo",
+      "why": "Seven Commonwealth medals in 2026 and two ranked judoka (Asvesta 20, Antoniou 21); Cypriots entered in Zagreb, Tashkent and Tokyo in Nov–Dec.",
+      "cover_every_days": 14,
+      "federation": {
+        "name": "Pancyprian Judo Federation",
+        "site": null,
+        "handles": "UNCONFIRMED (no website found)"
+      },
+      "images": "IJF media gallery",
+      "competitions": [
+        {
+          "id": "ijf",
+          "name": "IJF World Tour (Zagreb GP 13–15 Nov, Tokyo GS 5–6 Dec), Junior Worlds (Tashkent 19–21 Nov), Masters, European Championships 2027 (Apeldoorn), European Games",
+          "level": "international",
+          "priority": "B",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "IJF country page (entries, rankings)",
+              "url": "https://www.ijf.org/index.php/country/cyp",
+              "use": [
+                "schedule",
+                "result",
+                "ranking"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "JudoBase",
+              "url": "https://judobase.ijf.org",
+              "use": [
+                "live",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "EJU",
+              "url": "https://www.eju.net",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "CNA (Cyprus News Agency)",
+              "url": "https://www.cna.org.cy/en",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "headline and lede only (paywall); no sport category"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Sofia Asvesta",
+          "where": "−52 kg, IJF 20, Taranto gold",
+          "check": "weekly",
+          "track": "ijf.org"
+        },
+        {
+          "name": "Giannis Antoniou",
+          "where": "+100 kg, IJF 21, Commonwealth gold",
+          "check": "weekly",
+          "track": "ijf.org"
+        },
+        {
+          "name": "Petros Christodoulides",
+          "where": "−66 kg, Taranto silver",
+          "check": "weekly",
+          "track": "ijf.org"
+        }
+      ],
+      "sources": [
+        {
+          "name": "IJF",
+          "url": "https://www.ijf.org",
+          "use": [
+            "result",
+            "photos"
+          ],
+          "tier": 1,
+          "fetch": "ok"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "handball",
+      "name": "Handball",
+      "why": "League with six clubs in European cups; Anorthosis play AEK Athens on 25 Oct; the season is on hold after an attack on a referee (sensitive).",
+      "cover_every_days": 14,
+      "federation": {
+        "name": "Cyprus Handball Federation (CHF)",
+        "site": "https://chf.com.cy (active; standings on the homepage)",
+        "handles": "instagram.com/cyprushandballfederation, facebook.com/cyprushandballfederation, YouTube (linked from chf.com.cy)"
+      },
+      "images": "CHF site and social accounts; Politis (copies CHF releases)",
+      "competitions": [
+        {
+          "id": "cy-handball-a",
+          "name": "Allwyn A Division men and women (round 1 postponed on 19 Oct after an arson attack on a referee; new date not set); men's B from 10 Nov",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": "2026-10-24",
+            "end": "2027-07"
+          },
+          "end_estimated": true,
+          "sources": [
+            {
+              "name": "CHF",
+              "url": "https://chf.com.cy",
+              "use": [
+                "schedule",
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Politis handball",
+              "url": "https://gipedo.politis.com.cy/alla-sport/handball",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Super Sport 104 (ex Sport FM)",
+              "url": "https://supersport104.com/category/alla-athlhmata/",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "not measured",
+              "fetch": "ok"
+            }
+          ],
+          "notes": "The arson attack on referee Giorgos Panayides is a violence story: AMBER only (PLAYBOOK 5)."
+        },
+        {
+          "id": "ehf-european-cup",
+          "name": "EHF European Cup: Sabbianco Anorthosis (lost 21-37 at AEK Athens; return leg Sun 25 Oct, Kition, Larnaca: time to confirm)",
+          "level": "international",
+          "priority": "B",
+          "season": {
+            "start": "2026-09-12",
+            "end": "2027-05-30"
+          },
+          "sources": [
+            {
+              "name": "EHF European Cup news",
+              "url": "https://ehfec.eurohandball.com/men/2026-27/",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "match pages are JavaScript templates"
+            },
+            {
+              "name": "CHF",
+              "url": "https://chf.com.cy",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Politis handball",
+              "url": "https://gipedo.politis.com.cy/alla-sport/handball",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [],
+      "sources": [
+        {
+          "name": "Politis handball",
+          "url": "https://gipedo.politis.com.cy/alla-sport/handball",
+          "use": [
+            "result",
+            "news"
+          ],
+          "tier": 2,
+          "speed": "same day",
+          "fetch": "ok"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "motorsport",
+      "name": "Motorsport",
+      "why": "The Cyprus Rally (23–25 Oct) decides the FIA Middle East title; Vladimiros Tziortzis 3rd in NASCAR Euro.",
+      "cover_every_days": 14,
+      "federation": {
+        "name": "Cyprus Automobile Association (FIA member) and the Cyprus Motorsport Federation",
+        "site": "cyprusaa.org (robots.txt refuses fetching: do not fetch); federation site not found",
+        "handles": "UNCONFIRMED"
+      },
+      "images": "Cyprus Rally Facebook, Cyprus Mail, FIA MERC; Tziortzis via EuroNASCAR",
+      "competitions": [
+        {
+          "id": "cyprus-rally",
+          "name": "52nd Petrolina Cyprus Rally (23–25 Oct 2026, Larnaca; final round of the FIA Middle East Rally Championship)",
+          "level": "international",
+          "priority": "A",
+          "season": {
+            "start": "2026-10-23",
+            "end": "2026-10-25"
+          },
+          "sources": [
+            {
+              "name": "Speed & Rally live results",
+              "url": "https://www.cyprusspeedrallyresults.com/rally/d9f1d263-c54a-4774-b91f-c813ad85aa0b",
+              "use": [
+                "live",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok",
+              "note": "official timing; MERC and local classifications"
+            },
+            {
+              "name": "Cyprus Rally",
+              "url": "https://www.cyprusrally.com.cy/en/results-2026",
+              "use": [
+                "schedule",
+                "result",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "event week",
+              "fetch": "ok"
+            },
+            {
+              "name": "FIA MERC",
+              "url": "https://www.fia.com/championship/middle-east-rally-championship",
+              "use": [
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "its calendar dates for Cyprus are stale"
+            },
+            {
+              "name": "Cyprus Mail other sport",
+              "url": "https://cyprus-mail.com/category/sport/other-sport",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok"
+            }
+          ],
+          "notes": "The 2025 rally was cancelled after the FIA declared Cypriot competitions unrecognised (licence dispute): handle history with care."
+        },
+        {
+          "id": "cy-motorsport-domestic",
+          "name": "Cyprus Rally Championship, Pancyprian Hill Climb Championship, time attack, karting",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": null,
+            "end": null
+          },
+          "sources": [
+            {
+              "name": "Cyprus Mail other sport",
+              "url": "https://cyprus-mail.com/category/sport/other-sport",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "full text; often CNA copy; cover photos usually uncredited"
+            },
+            {
+              "name": "EKO press releases (hill climb, time attack)",
+              "url": "https://www.eko.com.cy/en/ta-nea-mas/deltia-typou/",
+              "use": [
+                "news"
+              ],
+              "tier": 3,
+              "speed": "fast",
+              "fetch": "ok",
+              "note": "sponsor PR: tip only, confirm elsewhere"
+            }
+          ]
+        },
+        {
+          "id": "euronascar",
+          "name": "NASCAR Euro Series (Vladimiros Tziortzis, 3rd in the 2026 European championship) and Cypriots in other series",
+          "level": "abroad",
+          "priority": "B",
+          "season": {
+            "start": "2027-04",
+            "end": "2027-10"
+          },
+          "sources": [
+            {
+              "name": "EuroNASCAR",
+              "url": "https://www.euronascar.com",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail",
+              "url": "https://cyprus-mail.com/category/sport/other-sport",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Vladimiros Tziortzis",
+          "where": "NASCAR Euro Series, 3rd overall 2026",
+          "check": "weekly",
+          "track": "euronascar.com"
+        },
+        {
+          "name": "Simos Galatariotis / Panayiotis Yiangou",
+          "where": "rally (Rally2)",
+          "check": "weekly",
+          "track": "cyprusspeedrallyresults.com"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cyprus Mail other sport",
+          "url": "https://cyprus-mail.com/category/sport/other-sport",
+          "use": [
+            "news",
+            "result"
+          ],
+          "tier": 2,
+          "speed": "same day",
+          "fetch": "ok",
+          "note": "full text; often CNA copy; cover photos usually uncredited"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "id": "swimming",
+      "name": "Swimming",
+      "why": "Kalia Antoniou's two Taranto golds and national records; the 25 m Worlds in Beijing (1–6 Dec).",
+      "cover_every_days": 21,
+      "federation": {
+        "name": "KOEK (Cyprus Swimming Federation)",
+        "site": "https://koek.org.cy (very active)",
+        "handles": "@koekfed (Instagram) and a Flickr photo account (linked from koek.org.cy)"
+      },
+      "images": "KOEK Flickr and Instagram; World Aquatics",
+      "competitions": [
+        {
+          "id": "swim-international",
+          "name": "World Aquatics Swimming Championships 25 m (Beijing, 1–6 Dec 2026), European championships, European Games 2027",
+          "level": "international",
+          "priority": "B",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "World Aquatics",
+              "url": "https://www.worldaquatics.com",
+              "use": [
+                "schedule",
+                "live",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "KOEK",
+              "url": "https://koek.org.cy",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same or next day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail other sport",
+              "url": "https://cyprus-mail.com/category/sport/other-sport",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "full text; often CNA copy; cover photos usually uncredited"
+            }
+          ]
+        },
+        {
+          "id": "cy-swim-domestic",
+          "name": "National championships, open-water cups (Protaras, 24 Oct), masters meets",
+          "level": "domestic",
+          "priority": "C",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "KOEK results",
+              "url": "https://koek.org.cy",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same or next day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida other sports",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "hours",
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Kalia Antoniou",
+          "where": "sprint free/fly, two Taranto golds",
+          "check": "weekly",
+          "track": "worldaquatics.com/athletes/1036253"
+        }
+      ],
+      "sources": [
+        {
+          "name": "KOEK",
+          "url": "https://koek.org.cy",
+          "use": [
+            "news"
+          ],
+          "tier": 1,
+          "fetch": "ok"
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "id": "water-polo",
+      "name": "Water polo",
+      "why": "Allwyn league from 13–15 Nov with NO Keryneia back after 21 years.",
+      "cover_every_days": 21,
+      "federation": {
+        "name": "KOEK (Cyprus Swimming Federation)",
+        "site": "https://koek.org.cy",
+        "handles": "@koekfed (Instagram), Flickr (linked from koek.org.cy)"
+      },
+      "images": "KOEK Flickr and Instagram",
+      "competitions": [
+        {
+          "id": "cy-water-polo",
+          "name": "Allwyn men's championship (8 teams; NO Keryneia back after 21 years): Super Cup APOEL v Larnaca Fri 13 Nov, matchday 1 Sun 15 Nov",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": "2026-11-13",
+            "end": "2027-05"
+          },
+          "end_estimated": true,
+          "match_days": [
+            "Sat",
+            "Sun"
+          ],
+          "sources": [
+            {
+              "name": "KOEK news",
+              "url": "https://koek.org.cy",
+              "use": [
+                "schedule",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "days",
+              "fetch": "ok"
+            },
+            {
+              "name": "KOEK water polo results",
+              "url": "https://koek.org.cy/archiki-selida/idatosferisi/apotelesmata-agonon-vathmologies/",
+              "use": [
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "slow",
+              "fetch": "ok"
+            },
+            {
+              "name": "Super Sport 104 (ex Sport FM)",
+              "url": "https://supersport104.com/category/alla-athlhmata/",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "not measured",
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [],
+      "sources": []
+    },
+    {
+      "rank": 13,
+      "id": "tennis",
+      "name": "Tennis and padel",
+      "why": "Davis Cup v Puerto Rico (6–8 Feb 2027) and the first Mediterranean Games tennis medal (Neos / Efstathiou); padel growing.",
+      "cover_every_days": 21,
+      "federation": {
+        "name": "Cyprus Tennis Federation (also runs padel)",
+        "site": "https://www.tennis.com.cy (weak: undated, no results)",
+        "handles": "UNCONFIRMED"
+      },
+      "competitions": [
+        {
+          "id": "davis-cup-cy",
+          "name": "Davis Cup World Group II, Round 1: Cyprus v Puerto Rico (6–8 Feb 2027); Billie Jean King Cup",
+          "level": "international",
+          "priority": "A",
+          "season": {
+            "start": "2027-02-06",
+            "end": "2027-02-08"
+          },
+          "sources": [
+            {
+              "name": "Davis Cup",
+              "url": "https://www.daviscup.com",
+              "use": [
+                "schedule",
+                "live",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida tennis",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor/tennis",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail other sport",
+              "url": "https://cyprus-mail.com/category/sport/other-sport",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "full text; often CNA copy; cover photos usually uncredited"
+            }
+          ]
+        },
+        {
+          "id": "itf-atp-cy",
+          "name": "ITF / ATP / WTA events with Cypriot players; padel tour",
+          "level": "international",
+          "priority": "C",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "ITF",
+              "url": "https://www.itftennis.com",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "next day",
+              "fetch": "ok",
+              "note": "ranking fields need JavaScript"
+            },
+            {
+              "name": "Politis Gipedo tennis",
+              "url": "https://gipedo.politis.com.cy/alla-sport/tenis",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Petros Chrysochos",
+          "where": "ITF career-high 354; also padel",
+          "check": "weekly",
+          "track": "atptour.com"
+        },
+        {
+          "name": "Lefteris Neos / Melios Efstathiou",
+          "where": "Taranto doubles bronze",
+          "check": "weekly",
+          "track": "itftennis.com"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "rank": 14,
+      "id": "cycling",
+      "name": "Cycling",
+      "why": "Bogdan Zabelinskiy (8th in the U23 time trial at the Worlds), an active federation with the 2027 calendar out (international MTB in Feb).",
+      "cover_every_days": 21,
+      "federation": {
+        "name": "Cyprus Cycling Federation (KOP)",
+        "site": "https://www.cypruscycling.org (very active; 2027 calendar published)",
+        "handles": "facebook.com/cypruscyclingfederation and YouTube (linked from its site); no Instagram listed"
+      },
+      "images": "KOP site albums and Facebook",
+      "competitions": [
+        {
+          "id": "cy-cycling-domestic",
+          "name": "Cyprus Mediterranean Challenge MTB Cups (31 Jan–7 Feb 2027), road cups, national championships (ITT 23 Jun, road 27 Jun 2027), Troodos MTB (17–18 Jul)",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": "2027-01-31",
+            "end": "2027-07-18"
+          },
+          "sources": [
+            {
+              "name": "KOP news and results PDFs",
+              "url": "https://www.cypruscycling.org",
+              "use": [
+                "schedule",
+                "result",
+                "photos"
+              ],
+              "tier": 1,
+              "speed": "1–5 days",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail other sport",
+              "url": "https://cyprus-mail.com/category/sport/other-sport",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "full text; often CNA copy; cover photos usually uncredited"
+            }
+          ]
+        },
+        {
+          "id": "uci",
+          "name": "UCI World and European championships, U23 road racing",
+          "level": "international",
+          "priority": "C",
+          "season": {
+            "start": null,
+            "end": null
+          },
+          "sources": [
+            {
+              "name": "UCI",
+              "url": "https://www.uci.org",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "KOP",
+              "url": "https://www.cypruscycling.org",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "1–5 days",
+              "fetch": "ok"
+            },
+            {
+              "name": "CNA (Cyprus News Agency)",
+              "url": "https://www.cna.org.cy/en",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "headline and lede only (paywall); no sport category"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Bogdan Zabelinskiy",
+          "where": "U23 ITT 8th at the 2026 Worlds; Taranto silver (UCI spelling to check)",
+          "check": "weekly",
+          "track": "cypruscycling.org"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "rank": 15,
+      "id": "rugby-union",
+      "name": "Rugby union",
+      "why": "The Mouflons in the Rugby Europe Conference (won 48-17 in Gibraltar), regular English coverage, world-record history.",
+      "cover_every_days": 21,
+      "federation": {
+        "name": "Cyprus Rugby Federation (the Mouflons)",
+        "site": "https://www.cyprus-rugby.com (English, active)",
+        "handles": "@cyprus_rugby (Instagram), @Cyprus_Rugby (X), facebook.com/CyprusRugby (linked from its site)"
+      },
+      "images": "CRF Instagram/Facebook and WhatsApp channel; Cyprus Mail",
+      "competitions": [
+        {
+          "id": "rugby-europe-conference",
+          "name": "Rugby Europe Men's Conference Pool D (won 48-17 in Gibraltar, 17 Oct; next Cyprus v Israel 3 Apr 2027, Andorra v Cyprus 17 Apr)",
+          "level": "international",
+          "priority": "B",
+          "season": {
+            "start": "2026-10-17",
+            "end": "2027-04-17"
+          },
+          "sources": [
+            {
+              "name": "Rugby Europe",
+              "url": "https://www.rugbyeurope.eu/competitions/season-2627/xv-competitions/mens-xv-competitions/mens-conference-202627/",
+              "use": [
+                "schedule",
+                "result",
+                "table"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "CRF news",
+              "url": "https://www.cyprus-rugby.com/updates",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "1–3 days",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail rugby",
+              "url": "https://cyprus-mail.com/category/sport/rugby",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "speed": "about 2 days",
+              "fetch": "ok"
+            }
+          ]
+        },
+        {
+          "id": "cy-rugby-domestic",
+          "name": "Cyprus Rugby Championship (5 teams incl. British Forces sides), Rugby Cup, 7s and beach championships; men's 7s (2026 Conference 1 bronze)",
+          "level": "domestic",
+          "priority": "C",
+          "season": {
+            "start": null,
+            "end": null
+          },
+          "sources": [
+            {
+              "name": "CRF club rugby",
+              "url": "https://www.cyprus-rugby.com/club-rugby/cyprus-rugby-championship",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail rugby",
+              "url": "https://cyprus-mail.com/category/sport/rugby",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [],
+      "notes": [
+        "Cyprus held the world record of 24 straight Test wins (ended Nov 2014): archive material."
+      ],
+      "sources": []
+    },
+    {
+      "rank": 16,
+      "id": "combat-sports",
+      "name": "Karate, taekwondo, boxing, MMA and wrestling",
+      "why": "Karate (Taranto bronze; Cyprus hosted the 2026 EKF youth Europeans), taekwondo, wrestling, boxing, MMA: thin coverage, cover when results come.",
+      "cover_every_days": 35,
+      "federation": {
+        "name": "Cyprus Karate Federation (cypruskarate.org, undated posts); taekwondo, wrestling and boxing federations have no websites",
+        "site": "http://www.cypruskarate.org",
+        "handles": "UNCONFIRMED"
+      },
+      "competitions": [
+        {
+          "id": "combat-intl",
+          "name": "EKF/WKF karate, World Taekwondo, UWW events; European Games 2027 (karate, taekwondo, wrestling, boxing, kickboxing, muaythai)",
+          "level": "international",
+          "priority": "C",
+          "season": {
+            "start": null,
+            "end": null
+          },
+          "sources": [
+            {
+              "name": "European Karate Federation",
+              "url": "https://2022.europeankaratefederation.net",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "World Taekwondo",
+              "url": "https://www.worldtaekwondo.org",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "CNA (Cyprus News Agency)",
+              "url": "https://www.cna.org.cy/en",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "headline and lede only (paywall); no sport category"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Sissy Yamouki",
+          "where": "karate +68 kg, Taranto bronze (WKF spelling to check)",
+          "check": "weekly"
+        }
+      ],
+      "notes": [
+        "Charalampos Grigoriou (UFC) is listed \"Not Fighting\" since Aug 2024: never present him as active.",
+        "\"Wrestling\" in Cyprus Mail is often Pro Wrestling Cyprus (entertainment), not Olympic wrestling."
+      ],
+      "sources": []
+    },
+    {
+      "rank": 17,
+      "id": "fencing",
+      "name": "Fencing",
+      "why": "Alexandros Tofalides, Commonwealth Fencing champion and Cyprus's first Olympic fencer.",
+      "cover_every_days": 35,
+      "federation": {
+        "name": "Cyprus Fencing Federation",
+        "site": "http://www.fencing.org.cy (updated Sep 2026; results and rankings pages)",
+        "handles": "X @CYFencing (linked from its site)"
+      },
+      "competitions": [
+        {
+          "id": "fie-cy",
+          "name": "FIE World Cups (Nov 2026–Jun 2027), European championships, Commonwealth Fencing Championships",
+          "level": "international",
+          "priority": "C",
+          "season": {
+            "start": "2026-11",
+            "end": "2027-07"
+          },
+          "sources": [
+            {
+              "name": "FIE",
+              "url": "https://fie.org",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Fencing Federation",
+              "url": "http://www.fencing.org.cy",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "days",
+              "fetch": "ok"
+            },
+            {
+              "name": "Sigmalive English",
+              "url": "https://en.sigmalive.com/category/sports/",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "sometimes first in English; some items undated"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Alexandros Tofalides",
+          "where": "foil; Commonwealth Fencing champion 2026; Paris 2024 Olympian",
+          "check": "weekly",
+          "track": "fie.org"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "rank": 18,
+      "id": "archery",
+      "name": "Archery and para archery",
+      "why": "Christos Misos is world para archery champion and No. 1; Cyprus hosts the Aphrodite Cup (28–31 Oct).",
+      "cover_every_days": 35,
+      "federation": {
+        "name": "Cyprus Archery Federation",
+        "site": "http://www.archery.org.cy (active, Oct 2026)",
+        "handles": "UNCONFIRMED (footer icons are placeholders)"
+      },
+      "competitions": [
+        {
+          "id": "archery-cy",
+          "name": "Aphrodite Mediterranean Archery & Para Cup (Pyla/Larnaca, 28–31 Oct 2026); World Archery and Para Series",
+          "level": "mixed",
+          "priority": "C",
+          "season": {
+            "start": "2026-10-28",
+            "end": "2026-10-31"
+          },
+          "sources": [
+            {
+              "name": "Cyprus Archery Federation",
+              "url": "http://www.archery.org.cy",
+              "use": [
+                "schedule",
+                "news"
+              ],
+              "tier": 1,
+              "speed": "days",
+              "fetch": "ok"
+            },
+            {
+              "name": "World Archery",
+              "url": "https://www.worldarchery.sport",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "Kerkida other sports",
+              "url": "https://www.kerkida.net/eidiseis/alla-spor",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "hours",
+              "fetch": "ok"
+            },
+            {
+              "name": "CNA (Cyprus News Agency)",
+              "url": "https://www.cna.org.cy/en",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "headline and lede only (paywall); no sport category"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Christos Misos",
+          "where": "para archery VI1, world champion and No. 1",
+          "check": "weekly",
+          "track": "worldarchery.sport"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "rank": 19,
+      "id": "cricket",
+      "name": "Cricket",
+      "why": "An active expatriate league and a women's team on the rise (37th in the ICC T20I rankings); season Apr–Oct.",
+      "cover_every_days": 35,
+      "seasonal": "Apr–Oct",
+      "federation": {
+        "name": "Cyprus Cricket (calls itself the Cyprus Cricket Federation; ICC Associate per Wikipedia)",
+        "site": "https://www.cricket.cy (few posts)",
+        "handles": "@cypruscricket on Instagram, X, Facebook, TikTok and Threads (linked from cricket.cy)"
+      },
+      "competitions": [
+        {
+          "id": "cy-cricket",
+          "name": "T20, 40-over and T10 cups at Happy Valley, Episkopi; men's and women's internationals (women 37th in the ICC T20I rankings)",
+          "level": "mixed",
+          "priority": "C",
+          "season": {
+            "start": "2027-04",
+            "end": "2027-10"
+          },
+          "sources": [
+            {
+              "name": "Cyprus Mail cricket",
+              "url": "https://cyprus-mail.com/category/sport/cricket",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 2,
+              "speed": "weekly (Mondays)",
+              "fetch": "ok"
+            },
+            {
+              "name": "cricket.cy",
+              "url": "https://www.cricket.cy/category/news/",
+              "use": [
+                "news"
+              ],
+              "tier": 1,
+              "speed": "slow",
+              "fetch": "ok"
+            },
+            {
+              "name": "ICC media releases",
+              "url": "https://www.icc-cricket.com/media-releases",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [],
+      "sources": []
+    },
+    {
+      "rank": 20,
+      "id": "para-sport",
+      "name": "Para sport",
+      "why": "Paralympic medallist Karolina Pelendritou, para powerlifter Maria Markou; inclusion matters for a page that covers everyone.",
+      "cover_every_days": 35,
+      "federation": {
+        "name": "Cyprus National Paralympic Committee",
+        "site": null,
+        "handles": "UNCONFIRMED"
+      },
+      "competitions": [
+        {
+          "id": "para-cy",
+          "name": "World Para championships and series (archery, swimming, athletics, powerlifting)",
+          "level": "international",
+          "priority": "C",
+          "season": {
+            "start": null,
+            "end": null
+          },
+          "sources": [
+            {
+              "name": "IPC",
+              "url": "https://www.paralympic.org",
+              "use": [
+                "result",
+                "news"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "Sigmalive English Paralympics tag",
+              "url": "https://en.sigmalive.com/tag/paralympics",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok"
+            },
+            {
+              "name": "CNA (Cyprus News Agency)",
+              "url": "https://www.cna.org.cy/en",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "headline and lede only (paywall); no sport category"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Karolina Pelendritou",
+          "where": "para swimming, Paris 2024 medallist",
+          "check": "weekly"
+        },
+        {
+          "name": "Maria Markou",
+          "where": "para powerlifting",
+          "check": "weekly"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "rank": 21,
+      "id": "weightlifting",
+      "name": "Weightlifting",
+      "why": "Active federation, small international profile.",
+      "cover_every_days": 42,
+      "federation": {
+        "name": "Cyprus Weightlifting Federation",
+        "site": "http://www.weightlifting.org.cy (active)",
+        "handles": "Facebook and YouTube linked from its site"
+      },
+      "competitions": [
+        {
+          "id": "iwf-cy",
+          "name": "IWF and European championships, Pancyprian championships",
+          "level": "mixed",
+          "priority": "C",
+          "season": {
+            "start": null,
+            "end": null
+          },
+          "sources": [
+            {
+              "name": "Weightlifting federation",
+              "url": "http://www.weightlifting.org.cy",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "days",
+              "fetch": "ok"
+            },
+            {
+              "name": "IWF",
+              "url": "https://iwf.sport",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail other sport",
+              "url": "https://cyprus-mail.com/category/sport/other-sport",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "full text; often CNA copy; cover photos usually uncredited"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Dimitris Minasidis",
+          "where": "weightlifting",
+          "check": "weekly"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "rank": 22,
+      "id": "skiing",
+      "name": "Skiing",
+      "why": "Troodos season Jan–Mar; Olympian Yianno Kouyoumdjian.",
+      "cover_every_days": 42,
+      "seasonal": "Jan–Mar on Troodos",
+      "federation": {
+        "name": "Cyprus Ski Federation",
+        "site": "http://www.cyprusski.com (undated)",
+        "handles": "UNCONFIRMED"
+      },
+      "competitions": [
+        {
+          "id": "ski-cy",
+          "name": "FIS race on Troodos (Zeus piste) and FIS races abroad",
+          "level": "mixed",
+          "priority": "C",
+          "season": {
+            "start": "2027-01",
+            "end": "2027-03"
+          },
+          "sources": [
+            {
+              "name": "FIS",
+              "url": "https://www.fis-ski.com",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Ski Federation",
+              "url": "http://www.cyprusski.com",
+              "use": [
+                "news"
+              ],
+              "tier": 1,
+              "speed": "slow",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail other sport",
+              "url": "https://cyprus-mail.com/category/sport/other-sport",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "full text; often CNA copy; cover photos usually uncredited"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Yianno Kouyoumdjian",
+          "where": "alpine, Milano Cortina slalom 34th",
+          "check": "weekly",
+          "track": "fis-ski.com"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "rank": 23,
+      "id": "canoe-rowing",
+      "name": "Canoe and rowing",
+      "why": "Savvia Hadjicharalambous, Taranto K1 500 m silver.",
+      "cover_every_days": 42,
+      "federation": {
+        "name": "Canoe (no website); Cyprus Rowing Federation (site stale since 2018)",
+        "site": null,
+        "handles": "UNCONFIRMED"
+      },
+      "competitions": [
+        {
+          "id": "icf-cy",
+          "name": "ICF World Cups, European and World championships",
+          "level": "international",
+          "priority": "C",
+          "season": {
+            "start": null,
+            "end": null
+          },
+          "sources": [
+            {
+              "name": "ICF rankings and results",
+              "url": "https://rankings.canoeicf.com/athlete/87038/competitions",
+              "use": [
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "Canoe ICF",
+              "url": "https://www.canoeicf.com",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail other sport",
+              "url": "https://cyprus-mail.com/category/sport/other-sport",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "full text; often CNA copy; cover photos usually uncredited"
+            }
+          ]
+        }
+      ],
+      "athletes": [
+        {
+          "name": "Savvia Hadjicharalambous",
+          "where": "canoe K1 500 m, Taranto silver (ICF spelling)",
+          "check": "weekly"
+        }
+      ],
+      "sources": []
+    },
+    {
+      "rank": 24,
+      "id": "chess",
+      "name": "Chess",
+      "why": "Cyprus hosted the 2026 Candidates; women's Olympiad Category D prize.",
+      "cover_every_days": 42,
+      "federation": {
+        "name": "Cyprus Chess Federation",
+        "site": null,
+        "handles": "UNCONFIRMED"
+      },
+      "competitions": [
+        {
+          "id": "chess-cy",
+          "name": "Cyprus Open, Olympiad, youth world championships",
+          "level": "mixed",
+          "priority": "C",
+          "year_round": true,
+          "sources": [
+            {
+              "name": "FIDE",
+              "url": "https://www.fide.com",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 1,
+              "fetch": "ok"
+            },
+            {
+              "name": "chess-results.com",
+              "url": "https://chess-results.com",
+              "use": [
+                "live",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "Cyprus Mail chess",
+              "url": "https://cyprus-mail.com",
+              "use": [
+                "news"
+              ],
+              "tier": 2,
+              "speed": "weekly",
+              "fetch": "ok"
+            }
+          ]
+        }
+      ],
+      "athletes": [],
+      "notes": [
+        "The 2026 Olympiad \"silver\" was a Category D prize (91st of 189 overall): always say so."
+      ],
+      "sources": []
+    },
+    {
+      "rank": 25,
+      "id": "multi-sport",
+      "name": "Multi-sport Games and the Olympic movement",
+      "why": "Dakar Youth Olympics (7 Cypriots), Small States Games Monaco (May 2027), European Games (participation unconfirmed, sensitive), LA28 qualifying.",
+      "cover_every_days": 60,
+      "federation": {
+        "name": "Cyprus Olympic Committee (KOE); Cyprus National Paralympic Committee; Cyprus Sport Organisation (KOA)",
+        "site": "https://www.olympic.org.cy (Greek, updated); paralympic.org.cy refuses fetching (robots.txt); cyprussports.org errors",
+        "handles": "@cyprusolympic on Instagram, X, Facebook and YouTube (linked from olympic.org.cy)"
+      },
+      "competitions": [
+        {
+          "id": "cy-games",
+          "name": "Youth Olympic Games Dakar (31 Oct–13 Nov 2026; 7 Cypriots in 6 sports), Games of the Small States of Europe (Monaco, 17–22 May 2027), European Games (Istanbul, 16–27 Jun 2027: Cyprus participation UNCONFIRMED and politically sensitive), LA28 qualifying",
+          "level": "international",
+          "priority": "B",
+          "season": {
+            "start": null,
+            "end": null
+          },
+          "sources": [
+            {
+              "name": "Cyprus Olympic Committee news",
+              "url": "https://www.olympic.org.cy/index.php/gr/news",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "1–3 days",
+              "fetch": "ok"
+            },
+            {
+              "name": "Olympics.com",
+              "url": "https://www.olympics.com",
+              "use": [
+                "schedule",
+                "result"
+              ],
+              "tier": 1,
+              "speed": "live",
+              "fetch": "ok"
+            },
+            {
+              "name": "CNA (Cyprus News Agency)",
+              "url": "https://www.cna.org.cy/en",
+              "use": [
+                "news",
+                "result"
+              ],
+              "tier": 2,
+              "speed": "same day",
+              "fetch": "ok",
+              "note": "headline and lede only (paywall); no sport category"
+            }
+          ]
+        }
+      ],
+      "athletes": [],
+      "sources": []
+    }
+  ],
+  "general_sources": [
+    {
+      "name": "Kerkida.net",
+      "url": "https://www.kerkida.net",
+      "use": [
+        "live",
+        "result",
+        "schedule",
+        "photos"
+      ],
+      "tier": 2,
+      "speed": "live, minutes",
+      "fetch": "ok",
+      "note": "fastest outlet seen; Greek; live match threads; transfers there are rumour until a club confirms; IG @kerkida.net_cy"
+    },
+    {
+      "name": "Omada (Reporter)",
+      "url": "https://omada.reporter.com.cy",
+      "use": [
+        "result",
+        "news",
+        "photos"
+      ],
+      "tier": 2,
+      "speed": "very fast, timestamped",
+      "fetch": "ok",
+      "note": "use this subdomain (omada.com.cy is robots-blocked); IG @omada_cy"
+    },
+    {
+      "name": "Cyprus Times Protathlima",
+      "url": "https://protathlima.cyprustimes.com",
+      "use": [
+        "result",
+        "news",
+        "photos"
+      ],
+      "tier": 2,
+      "speed": "very fast",
+      "fetch": "ok",
+      "note": "Pafos 1-1 Riga up at 20:41"
+    },
+    {
+      "name": "Ant1 Live sport",
+      "url": "https://www.ant1live.com/athlitika",
+      "use": [
+        "news",
+        "result"
+      ],
+      "tier": 2,
+      "speed": "fast, timestamped",
+      "fetch": "ok",
+      "note": "RSS ant1live.com/rss.xml"
+    },
+    {
+      "name": "Omega Live sport",
+      "url": "https://omegalive.com.cy/athlhtika/",
+      "use": [
+        "news",
+        "result"
+      ],
+      "tier": 2,
+      "speed": "same day",
+      "fetch": "ok"
+    },
+    {
+      "name": "RIK (CyBC) sport",
+      "url": "https://sports.rik.cy",
+      "use": [
+        "news",
+        "result"
+      ],
+      "tier": 2,
+      "speed": "same day",
+      "fetch": "ok",
+      "note": "public broadcaster"
+    },
+    {
+      "name": "Politis Gipedo",
+      "url": "https://gipedo.politis.com.cy",
+      "use": [
+        "result",
+        "news",
+        "schedule"
+      ],
+      "tier": 2,
+      "speed": "fast",
+      "fetch": "ok",
+      "note": "RSS gipedo.politis.com.cy/feed; the English edition has name errors"
+    },
+    {
+      "name": "CNA (Cyprus News Agency)",
+      "url": "https://www.cna.org.cy/en",
+      "use": [
+        "news",
+        "result"
+      ],
+      "tier": 2,
+      "speed": "fast",
+      "fetch": "ok",
+      "note": "authoritative wire; body paywalled; robots crawl-delay 60 s"
+    },
+    {
+      "name": "Cyprus Mail sport",
+      "url": "https://cyprus-mail.com/category/sport",
+      "use": [
+        "news",
+        "result"
+      ],
+      "tier": 2,
+      "speed": "medium",
+      "fetch": "ok",
+      "note": "best English coverage of individual sports, rally and multi-sport; football reports often next morning"
+    },
+    {
+      "name": "Alphanews sport",
+      "url": "https://www.alphanews.live/category/sports/",
+      "use": [
+        "news"
+      ],
+      "tier": 2,
+      "speed": "medium",
+      "fetch": "ok"
+    },
+    {
+      "name": "FotMob Cyprus",
+      "url": "https://www.fotmob.com/teams/5793/overview/sip",
+      "use": [
+        "schedule",
+        "live",
+        "result"
+      ],
+      "tier": 2,
+      "speed": "live",
+      "fetch": "ok",
+      "note": "data service; UTC times; has shown conflicting scores: cross-check"
+    }
+  ],
+  "avoid": [
+    "philenews.com / in-cyprus.philenews.com and Kathimerini Cyprus (refuse automated fetching)",
+    "omada.com.cy (robots-blocked: use omada.reporter.com.cy)",
+    "cyprusaa.org and paralympic.org.cy (robots.txt disallows)",
+    "cssf-shooting.org (robots-blocked)",
+    "live.gymnastics.sport (FIG live scoring, robots-disallowed)",
+    "badmintoncyprus.com (hijacked by spam: never link)",
+    "Flashscore /standings/, /live/, /finished/, /scheduled/ and Sofascore /standings/ paths (robots.txt)",
+    "Sigmalive English (stale since Aug 2026; Greek site fails to load)",
+    "Transfermarkt (blocked; never proof of a transfer)"
+  ],
+  "calendar": [
+    {
+      "date": "2026-10-23",
+      "end": "2026-10-25",
+      "sport": "motorsport",
+      "event": "52nd Petrolina Cyprus Rally, Larnaca (MERC title decider; finish Sun 25 Oct 17:00)",
+      "who": "Yiangou, Galatariotis",
+      "source": "https://www.cyprusrally.com.cy/en/results-2026"
+    },
+    {
+      "date": "2026-10-24",
+      "end": "2026-10-25",
+      "sport": "gymnastics",
+      "event": "Artistic Gymnastics World Championships, apparatus finals, Rotterdam",
+      "who": "Marios Georgiou if qualified",
+      "source": "https://www.gymnastics.sport/site/events/detail.php?id=17247"
+    },
+    {
+      "date": "2026-10-25",
+      "sport": "handball",
+      "event": "EHF European Cup R2 return leg: Sabbianco Anorthosis v AEK Athens, Kition, Larnaca (first leg 21-37; time 19:00 or 20:15: confirm)",
+      "who": "",
+      "source": "https://chf.com.cy"
+    },
+    {
+      "date": "2026-10-27",
+      "end": "2026-11-02",
+      "sport": "football",
+      "event": "U17: Cyprus v Japan (friendly), then EURO qualifiers v Faroe Islands (30 Oct) and Romania (2 Nov), 15:00, Achna",
+      "who": "",
+      "source": "https://www.cfa.com.cy/Gr/news/53961"
+    },
+    {
+      "date": "2026-10-28",
+      "end": "2026-10-31",
+      "sport": "archery",
+      "event": "Aphrodite Mediterranean Archery & Para Cup, Pyla/Larnaca",
+      "who": "Christos Misos",
+      "source": "http://www.archery.org.cy"
+    },
+    {
+      "date": "2026-10-31",
+      "end": "2026-11-13",
+      "sport": "multi-sport",
+      "event": "Youth Olympic Games, Dakar (7 Cypriots in 6 sports)",
+      "who": "",
+      "source": "https://www.olympic.org.cy/index.php/gr/news"
+    },
+    {
+      "date": "2026-11-01",
+      "end": "2026-11-14",
+      "sport": "shooting",
+      "event": "ISSF World Championship, Doha (first LA28 quota event)",
+      "who": "Nikolaou, Vasiliou, Pontikis if selected",
+      "source": "https://www.issf-sports.org"
+    },
+    {
+      "date": "2026-11-03",
+      "sport": "volleyball",
+      "event": "CEV women's Challenge Cup: Dinamo Zagreb v Olympiada Neapolis, 18:00",
+      "who": "",
+      "source": "https://www-old.cev.eu/Competition-Area/Competition.aspx?ID=1952&PID=3558"
+    },
+    {
+      "date": "2026-11-05",
+      "sport": "football",
+      "event": "Europa League: N.E.C. v Omonia; Conference League: Twente v Pafos",
+      "who": "",
+      "source": "https://www.uefa.com"
+    },
+    {
+      "date": "2026-11-06",
+      "sport": "volleyball",
+      "event": "Allwyn A Division men starts (women Tue 10 Nov)",
+      "who": "",
+      "source": "https://volleyball.org.cy/archives/151016"
+    },
+    {
+      "date": "2026-11-11",
+      "end": "2026-11-14",
+      "sport": "basketball",
+      "event": "Women's EuroBasket pre-qualifiers: Bosnia and Herzegovina v Cyprus (Sarajevo); Cyprus v Norway Sat 14 Nov, Limassol",
+      "who": "",
+      "source": "https://www.fiba.basketball"
+    },
+    {
+      "date": "2026-11-11",
+      "end": "2026-11-17",
+      "sport": "football",
+      "event": "U19 EURO qualifying Round 2 hosted in Cyprus (v Armenia, Albania): dates to confirm",
+      "who": "",
+      "source": "https://www.uefa.com",
+      "confirmed": false
+    },
+    {
+      "date": "2026-11-12",
+      "sport": "football",
+      "event": "Nations League: Armenia v Cyprus, 19:00 Cyprus time (a point secures 2nd)",
+      "who": "national team",
+      "source": "https://www.cfa.com.cy/Gr/news/53863"
+    },
+    {
+      "date": "2026-11-13",
+      "end": "2026-11-15",
+      "sport": "water-polo",
+      "event": "Super Cup APOEL v NO Larnaca; league matchday 1 on Sun 15 Nov",
+      "who": "",
+      "source": "https://koek.org.cy"
+    },
+    {
+      "date": "2026-11-13",
+      "end": "2026-11-15",
+      "sport": "judo",
+      "event": "Zagreb Grand Prix (6 Cypriots entered)",
+      "who": "",
+      "source": "https://www.ijf.org/index.php/country/cyp"
+    },
+    {
+      "date": "2026-11-15",
+      "sport": "football",
+      "event": "Nations League: Cyprus v Montenegro, 16:00 (decides 1st/2nd place)",
+      "who": "national team",
+      "source": "https://www.cfa.com.cy/Gr/news/53863"
+    },
+    {
+      "date": "2026-11-15",
+      "sport": "athletics",
+      "event": "Radisson Hotels Larnaka Marathon",
+      "who": "",
+      "source": "https://www.larnakamarathon.com"
+    },
+    {
+      "date": "2026-11-26",
+      "end": "2026-11-29",
+      "sport": "basketball",
+      "event": "Men's EuroBasket 2029 pre-qualifiers: North Macedonia v Cyprus (Skopje); Austria v Cyprus Sun 29 Nov (Vienna)",
+      "who": "",
+      "source": "https://www.fiba.basketball"
+    },
+    {
+      "date": "2026-11-26",
+      "sport": "football",
+      "event": "Europa League: Juventus v Omonia; Conference League: Pafos v Midtjylland",
+      "who": "",
+      "source": "https://www.uefa.com"
+    },
+    {
+      "date": "2026-12-01",
+      "end": "2026-12-06",
+      "sport": "swimming",
+      "event": "World Aquatics Swimming Championships (25 m), Beijing",
+      "who": "Kalia Antoniou if selected",
+      "source": "https://www.worldaquatics.com/competitions/5052/world-aquatics-swimming-championships-25m-2026"
+    },
+    {
+      "date": "2026-12-05",
+      "end": "2026-12-06",
+      "sport": "judo",
+      "event": "Tokyo Grand Slam (5 Cypriots entered)",
+      "who": "",
+      "source": "https://www.ijf.org/index.php/country/cyp"
+    },
+    {
+      "date": "2026-12-06",
+      "sport": "football",
+      "event": "EURO 2028 qualifying draw, Belfast",
+      "who": "",
+      "source": "https://www.uefa.com"
+    },
+    {
+      "date": "2026-12-10",
+      "sport": "football",
+      "event": "Europa League: Omonia v Celtic; Conference League: Mjällby v Pafos (Pafos v Hearts 17 Dec)",
+      "who": "",
+      "source": "https://www.uefa.com"
+    },
+    {
+      "date": "2027-01-24",
+      "sport": "athletics",
+      "event": "Bank of Cyprus Nicosia Marathon",
+      "who": "",
+      "source": "https://www.nicosiamarathon.com"
+    },
+    {
+      "date": "2027-01-31",
+      "end": "2027-02-07",
+      "sport": "cycling",
+      "event": "Cyprus Mediterranean Challenge MTB (UCI), Tochni and Pyrga",
+      "who": "",
+      "source": "https://cypruscycling.org"
+    },
+    {
+      "date": "2027-02-06",
+      "end": "2027-02-08",
+      "sport": "tennis",
+      "event": "Davis Cup World Group II R1: Cyprus v Puerto Rico (venue to confirm)",
+      "who": "",
+      "source": "https://www.daviscup.com"
+    },
+    {
+      "date": "2027-02-18",
+      "end": "2027-02-25",
+      "sport": "football",
+      "event": "Conference League knockout play-offs (if Pafos finish 9th–24th)",
+      "who": "",
+      "source": "https://www.uefa.com"
+    },
+    {
+      "date": "2027-02-28",
+      "sport": "basketball",
+      "event": "Men's EuroBasket pre-qualifiers: Cyprus v North Macedonia",
+      "who": "",
+      "source": "https://www.fiba.basketball"
+    },
+    {
+      "date": "2027-03-04",
+      "end": "2027-03-07",
+      "sport": "athletics",
+      "event": "European Athletics Indoor Championships, Valencia (confirm dates with European Athletics)",
+      "who": "Kulichenko, F. Fotopoulou, Trajkovic",
+      "source": "https://www.european-athletics.com",
+      "confirmed": false
+    },
+    {
+      "date": "2027-04-03",
+      "end": "2027-04-04",
+      "sport": "athletics",
+      "event": "XM Limassol Marathon",
+      "who": "",
+      "source": "https://www.limassolmarathon.com"
+    },
+    {
+      "date": "2027-05-07",
+      "end": "2027-05-16",
+      "sport": "shooting",
+      "event": "ISSF Junior World Championship Shotgun, Larnaca",
+      "who": "",
+      "source": "https://www.issf-sports.org/competitions/3467"
+    },
+    {
+      "date": "2027-05-17",
+      "end": "2027-05-22",
+      "sport": "multi-sport",
+      "event": "Games of the Small States of Europe, Monaco",
+      "who": "",
+      "source": "https://www.olympic.org.cy"
+    }
+  ],
+  "gaps": [
+    "Instagram handles for most clubs (basketball clubs except Keravnos; Omonia 29M, Nea Salamina, Krasava, Karmiotissa in football; all volleyball, handball, water polo and cricket clubs) and for every athlete except Vladimiros Tziortzis.",
+    "Football: Cup second phase and final; Second/Third Division formats; First Division matchday 17–26 dates; venue of Cyprus v Montenegro; women's national team November friendlies; U19 Round 2 dates; why UEFA lists coach Mantzios as suspended.",
+    "Basketball: cup formats and dates; women's league start; ENBL schedule; FIBA Europe Cup second round; men's head coach.",
+    "Volleyball: 2025-26 champions; Pafiakos return-leg date; national-team calendar. Handball: new date for A Division round 1; 2026-27 team lists. Water polo: women's league, cup, European entry.",
+    "Motorsport: the federation's site and the domestic rally, hill-climb and karting calendars (cyprusaa.org refuses fetching).",
+    "Individual sports: websites for the judo, taekwondo, gymnastics, wrestling and boxing federations and the Paralympic Committee (its site refuses fetching); most 2027 international calendars; ATP/WTA rankings need a manual check.",
+    "Names of the 7 Cypriots at the Dakar Youth Olympics; whether Cyprus attends the 2027 European Games (sensitive).",
+    "Fan pages that break news fast (tips only, tier 3) and follower counts beyond the football clubs."
+  ]
+}
