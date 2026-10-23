@@ -27,7 +27,7 @@
         ]
       },
       {
-        "label": "AFC Challenge League, this afternoon",
+        "label": "AFC Challenge League",
         "items": [
           {
             "text": "Nejmeh face Al Arabi",
@@ -42,8 +42,8 @@
     ],
     "footnote": "Rugby kick-off in Beirut time"
   },
-  "caption": "",
-  "alt": "Story: three Lebanese teams in action today, Friday 23 October. Rugby League World Cup: Tonga v Lebanon at 12:05 Beirut time at CommBank Stadium, Sydney. AFC Challenge League this afternoon: Nejmeh face Al Arabi in Group B in Hisor, and Al Ansar face Ahal FC in their last Group A game.",
+  "caption": "(Story: no caption)\n\nSource: RLWC 2026, NRL.com, AFC",
+  "alt": "Story: three Lebanese teams in action today, Friday 23 October. Rugby League World Cup: Tonga v Lebanon at 12:05 Beirut time at CommBank Stadium, Sydney. AFC Challenge League: Nejmeh face Al Arabi in Group B in Hisor, and Al Ansar face Ahal FC in their last Group A game.",
   "facts": [
     {
       "claim": "Rugby League World Cup 2026 round 2: Tonga v Lebanon, Friday 23 October 2026, 8:05pm Sydney = 12:05 Beirut, CommBank Stadium, Sydney",
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "claim": "AFC Challenge League group games on Friday 23 October 2026 (afternoon Beirut time): Nejmeh v Al Arabi (Kuwait), Group B, Hisor; Al Ansar v Ahal FC (Turkmenistan), Al Ansar's last Group A game; 3 Lebanese teams in action (Lebanon, Nejmeh, Al Ansar)",
+      "claim": "AFC Challenge League group games on Friday 23 October 2026: Nejmeh v Al Arabi (Kuwait), Group B, Hisor; Al Ansar v Ahal FC (Turkmenistan), Al Ansar's last Group A game; 3 Lebanese teams in action (Lebanon, Nejmeh, Al Ansar)",
       "sources": [
         {
           "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-homs-al-fidaa-sc-syr-x-x-nejmeh-sc-1",
@@ -94,10 +94,42 @@
     "ok": true,
     "problems": []
   },
-  "factcheck": {},
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T10:50+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "Friday 23 October; Tonga v Lebanon, RLWC men's round 2",
+        "verdict": "CONFIRMED",
+        "url": "https://www.rlwc2026.com/draw/mens/2026/round-2/tonga-v-lebanon"
+      },
+      {
+        "claim": "Kick-off 8.05pm AEDT = 12:05 Beirut; CommBank Stadium, Sydney",
+        "verdict": "CONFIRMED",
+        "url": "https://www.nrl.com/news/2026/10/20/world-cup-team-lists-mens-round-2/"
+      },
+      {
+        "claim": "Nejmeh face Al Arabi on Friday, Group B, Hisor",
+        "verdict": "CONFIRMED",
+        "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-homs-al-fidaa-sc-syr-x-x-nejmeh-sc-1"
+      },
+      {
+        "claim": "Al Ansar face Ahal FC, Group A, concluding group game",
+        "verdict": "CONFIRMED",
+        "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-paro-fc-bhu-1-2-al-ansar-fc-lbn"
+      },
+      {
+        "claim": "3 Lebanese teams in action; AFC spellings",
+        "verdict": "CONFIRMED",
+        "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-al-ansar-fc-lbn-2-0-al-ittihad-ahli-of-aleppo-sc-syr"
+      }
+    ],
+    "notes": "13 CONFIRMED, 1 UNVERIFIED ('this afternoon', aggregator only): removed from the card, per PLAYBOOK 4.4."
+  },
   "notes": "AFC kick-off times left off: the AFC data API (api.the-afc.com) disallows automated access in robots.txt, so it is no longer used (23 Oct).",
   "visual_check": {
     "done": true,
-    "notes": "Rugby fixture with 12:05; AFC lines without times; footnote; nothing clipped."
+    "notes": "Rugby fixture 12:05; AFC label without 'this afternoon'; AFC lines without times; nothing clipped."
   }
 }
