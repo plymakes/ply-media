@@ -1,0 +1,215 @@
+{
+  "page": "cy",
+  "format": "post",
+  "theme": "light",
+  "date": "2026-10-23",
+  "event_date": "2026-10-24",
+  "slug": "cyprus-league-round-7-fixtures",
+  "story_key": "cy-league-2026-round-7-fixtures",
+  "light": "green",
+  "slides": [
+    {
+      "template": "fixtures",
+      "card": {
+        "eyebrow": [
+          "Cyprus League",
+          "Round 7"
+        ],
+        "headline": "a *limassol derby*, then 2nd v 3rd.",
+        "groups": [
+          {
+            "label": "Saturday 24 October",
+            "items": [
+              {
+                "home": "Olympiakos Nicosia",
+                "away": "Krasava",
+                "time": "18:00"
+              },
+              {
+                "home": "Anorthosis",
+                "away": "Omonia Aradippou",
+                "time": "19:00"
+              }
+            ]
+          },
+          {
+            "label": "Sunday 25 October",
+            "items": [
+              {
+                "home": "Karmiotissa",
+                "away": "Apollon Limassol",
+                "time": "17:00"
+              },
+              {
+                "home": "APOEL",
+                "away": "Omonia 29 M",
+                "time": "18:00"
+              },
+              {
+                "home": "AEL Limassol",
+                "away": "Aris Limassol",
+                "time": "19:00"
+              }
+            ]
+          },
+          {
+            "label": "Monday 26 October",
+            "items": [
+              {
+                "home": "Nea Salamis",
+                "away": "Pafos FC",
+                "time": "18:00"
+              },
+              {
+                "home": "AEK Larnaca",
+                "away": "Omonia",
+                "time": "19:00"
+              }
+            ]
+          }
+        ],
+        "footnote": "All times Cyprus"
+      }
+    },
+    {
+      "template": "news",
+      "card": {
+        "eyebrow": [
+          "Round 7",
+          "Sunday"
+        ],
+        "headline": "the leaders host *aris*.",
+        "deck": "AEL Limassol go into the Limassol derby top of the table.",
+        "entity": {
+          "crest": "ael",
+          "title": "AEL Limassol v Aris Limassol",
+          "sub": "Sunday 25 October · 19:00 · Alphamega Stadium"
+        },
+        "rows": [
+          {
+            "label": "AEL Limassol",
+            "value": "1st, 15 points"
+          },
+          {
+            "label": "Aris Limassol",
+            "value": "6th, 9 points"
+          }
+        ]
+      }
+    },
+    {
+      "template": "news",
+      "card": {
+        "eyebrow": [
+          "Round 7",
+          "Monday"
+        ],
+        "headline": "*2nd* v *3rd* in larnaca.",
+        "deck": "Omonia are unbeaten in the league and 1 point behind AEK Larnaca.",
+        "entity": {
+          "crest": "aek-larnaca",
+          "title": "AEK Larnaca v Omonia",
+          "sub": "Monday 26 October · 19:00 · AEK Arena"
+        },
+        "rows": [
+          {
+            "label": "AEK Larnaca",
+            "value": "2nd, 13 points"
+          },
+          {
+            "label": "Omonia",
+            "value": "3rd, 12 points"
+          }
+        ]
+      }
+    },
+    {
+      "template": "end",
+      "card": {
+        "headline": "cypriot sport, in *english*.",
+        "deck": "Every result this weekend. Follow @sportswire.cy"
+      }
+    }
+  ],
+  "caption": "Round 7 of the Cyprus League runs from Saturday to Monday. ⚽\n\nOlympiakos Nicosia host Krasava and Anorthosis host Omonia Aradippou on Saturday. On Sunday, leaders AEL Limassol host Aris Limassol in a Limassol derby at 19:00. On Monday, second-placed AEK Larnaca host third-placed Omonia.\n\nWhich game are you watching? 🇨🇾\n\nSource: Cyprus Football Association\n@cyprusfa_official\n#SportsWireCY #CyprusLeague",
+  "alt": [
+    "Fixtures card: Cyprus League round 7, Cyprus time. Saturday 24 October: Olympiakos Nicosia v Krasava 18:00, Anorthosis v Omonia Aradippou 19:00. Sunday 25 October: Karmiotissa v Apollon Limassol 17:00, APOEL v Omonia 29 M 18:00, AEL Limassol v Aris Limassol 19:00. Monday 26 October: Nea Salamis v Pafos FC 18:00, AEK Larnaca v Omonia 19:00.",
+    "AEL Limassol v Aris Limassol, Sunday 25 October at 19:00, Alphamega Stadium. AEL are 1st with 15 points, Aris 6th with 9.",
+    "AEK Larnaca v Omonia, Monday 26 October at 19:00, AEK Arena. AEK are 2nd with 13 points, Omonia 3rd with 12 and unbeaten in the league.",
+    "SportsWire Cyprus end card: cypriot sport, in English. Follow @sportswire.cy"
+  ],
+  "facts": [
+    {
+      "claim": "Round 7 (7η Αγωνιστική) of the Cyprus League by Stoiximan 2026/27 has 7 games from Saturday 24 to Monday 26 October 2026: Sat 24 Olympiakos Nicosia v Krasava 18:00 (GSP), Anorthosis v Omonia Aradippou 19:00 (Antonis Papadopoulos); Sun 25 Karmiotissa v Apollon Limassol 17:00 (Stelios Kyriakides), APOEL v Omonia 29 M 18:00 (GSP), AEL Limassol v Aris Limassol 19:00 (Alphamega Stadium); Mon 26 Nea Salamis (CFA: Nea Salamina) v Pafos FC 18:00 (Ammochostos Epistrofi), AEK Larnaca v Omonia 19:00 (AEK Arena); times are Cyprus local",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/Gr/fixtures/68153713",
+          "tier": 1,
+          "outlet": "Cyprus Football Association fixtures",
+          "seen": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "claim": "Table after round 6 (all 14 clubs P6): AEL Limassol 1st 15 points; AEK Larnaca 2nd 13 points; Omonia 3rd 12 points (W3 D3 L0, unbeaten); Aris Limassol 6th 9 points; Omonia 1 point behind AEK; both AEL and Aris are Limassol clubs",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/Gr/competitions/68124755",
+          "tier": 1,
+          "outlet": "Cyprus Football Association standings",
+          "seen": "2026-10-23"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "cyprusfa_official"
+    ],
+    "collaborators": []
+  },
+  "feature": false,
+  "sensitive_override": null,
+  "images": [
+    "posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-01.png",
+    "posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-02.png",
+    "posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-03.png",
+    "posts/cy/2026-10/2026-10-23-cyprus-league-round-7-fixtures-04.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "4 slides read word by word: 7 fixtures with CFA times by day; AEL crest on the AEL v Aris card, AEK Larnaca crest on the AEK v Omonia card; positions/points match CFA; end slide fine; nothing clipped."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T09:25+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "7 round 7 fixtures, dates, times, home/away order (Sat 24 to Mon 26 Oct, Cyprus time)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/fixtures/68153713"
+      },
+      {
+        "claim": "AEL Limassol 1st 15 points; Aris Limassol 6th 9 points; Limassol derby at Alphamega Stadium, Sun 19:00",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/competitions/68124755"
+      },
+      {
+        "claim": "AEK Larnaca 2nd 13 points; Omonia 3rd 12 points, unbeaten, 1 point behind; AEK Arena, Mon 19:00",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/competitions/68124755"
+      },
+      {
+        "claim": "Club names consistent with house style",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/fixtures/68153713"
+      }
+    ],
+    "notes": "All 28 claims CONFIRMED against the CFA."
+  }
+}

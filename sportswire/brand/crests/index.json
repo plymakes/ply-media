@@ -21,6 +21,19 @@
     "checked": "2026-10-21",
     "use": "editorial identification only"
   },
+  "aek-larnaca": {
+    "name": "AEK Larnaca",
+    "source_page": "https://www.uefa.com/uefaconferenceleague/clubs/54191--aek-larnaca/",
+    "image_url": "https://img.uefa.com/imgml/TP/teams/logos/240x240/54191.png",
+    "original_px": [
+      186,
+      238
+    ],
+    "via": "official site",
+    "fetched": "2026-10-23",
+    "checked": "2026-10-23",
+    "use": "editorial identification only"
+  },
   "ael": {
     "name": "AEL Limassol",
     "source_page": "https://en.wikipedia.org/wiki/AEL_Limassol",
@@ -85,6 +98,19 @@
     "via": "wikipedia infobox",
     "fetched": "2026-10-21",
     "checked": "2026-10-21",
+    "use": "editorial identification only"
+  },
+  "aris": {
+    "name": "Aris Limassol",
+    "source_page": "https://www.uefa.com/uefaconferenceleague/clubs/69529--aris-limassol/",
+    "image_url": "https://img.uefa.com/imgml/TP/teams/logos/240x240/69529.png",
+    "original_px": [
+      216,
+      240
+    ],
+    "via": "official site",
+    "fetched": "2026-10-23",
+    "checked": "2026-10-23",
     "use": "editorial identification only"
   },
   "barcelona": {
