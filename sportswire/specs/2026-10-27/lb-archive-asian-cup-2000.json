@@ -191,5 +191,48 @@
   "visual_check": {
     "done": true,
     "notes": "Re-rendered after fixes: slide 2 now Beirut, Sidon and Tripoli and 'bottom of their group on goal difference', pull 'out on goal difference'; other slides unchanged; nothing clipped."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T12:00+03:00",
+    "by": "independent agent (pass 2)",
+    "claims": [
+      {
+        "claim": "Hosted in October 2000 (12-29 Oct); 26 years",
+        "verdict": "CONFIRMED",
+        "url": "https://rsssf.org/tables/00asch-ext.html"
+      },
+      {
+        "claim": "First Asian Cup finals, as hosts; first qualification 2019",
+        "verdict": "CONFIRMED",
+        "url": "https://www.the-afc.com/en/national/afc_asian_cup/news/ones_to_watch_hassan_matouk_lebanon.html"
+      },
+      {
+        "claim": "Games in Beirut, Sidon and Tripoli",
+        "verdict": "CONFIRMED",
+        "url": "https://www.insideworldfootball.com/2024/01/03/asian-cup-2000/"
+      },
+      {
+        "claim": "0-4 Iran, 2-2 Iraq from 2-0 down, 1-1 Thailand",
+        "verdict": "CONFIRMED",
+        "url": "https://rsssf.org/tables/00asch-ext.html"
+      },
+      {
+        "claim": "Bottom of the group on goal difference with 2 points (Thailand -2, Lebanon -4)",
+        "verdict": "CONFIRMED",
+        "url": "https://rsssf.org/tables/00asch.html"
+      },
+      {
+        "claim": "Final Sunday 29 October 2000, Japan 1-0 Saudi Arabia, Mochizuki from Nakamura's free kick; Japan's 2nd title; Troussier",
+        "verdict": "CONFIRMED",
+        "url": "https://www.jfa.jp/samuraiblue/asiancup_history/"
+      },
+      {
+        "claim": "Sports City Stadium, Beirut",
+        "verdict": "CONFIRMED",
+        "url": "https://www.insideworldfootball.com/2024/01/03/asian-cup-2000/"
+      }
+    ],
+    "notes": "Pass 1 FAIL (third in group; two cities; Japan Times). Fixed. Pass 2: all 18 claims CONFIRMED."
   }
 }
