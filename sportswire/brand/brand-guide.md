@@ -40,7 +40,7 @@ Alternate dark and light cards so the grid doesn't stack the same colour: result
 
 ## Images
 - Club crests (`brand/crests/`) on score panels, rows, fixtures and entity blocks, always on their white tile.
-- Official event photos (PLAYBOOK, Images and rights) sit in a **hero band** across the top of the card that fades into ink; the eyebrow becomes a solid accent pill and the headline overlaps the foot of the photo. Photo cards are always dark. The credit runs small, top right, in mono caps ("PHOTO: SAGESSE SC").
+- Event photos (any source, always credited: PLAYBOOK, Images and rights) sit in a **hero band** across the top of the card that fades into ink; the eyebrow becomes a solid accent pill and the headline overlaps the foot of the photo. Photo cards are always dark. The credit runs small, top right, in mono caps ("PHOTO: SAGESSE SC").
 - In Reels the photo band is taller and slowly pushes in while the text builds underneath; the first frame is the photo alone, which makes a strong hook.
 - One photo per card; on carousels, the hook slide and at most one more. Never collage, filter, recolour or put stickers on a photo.
 - Never AI-generated images of real people.

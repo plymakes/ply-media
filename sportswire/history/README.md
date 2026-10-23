@@ -38,10 +38,10 @@ Sample: `tools/examples/lb-archive-sample.json` (layout only).
 
 ## Photos
 
-Old photos are hard to clear, so the rule is narrow:
-- **Wikimedia Commons** files under Public domain, CC0, CC BY or CC BY-SA, through `tools/archive_photo.py pick` (it reads the licence and author from the Commons file page itself and refuses anything else). Credit on the card ("PHOTO: <Author> / Wikimedia Commons, <Licence>", added automatically) and in the caption ("📸 <Author> / Wikimedia Commons, <Licence>").
-- The **club's, federation's or organiser's own archive** photo, as for news (`tools/photos.py`), with `"series": "archive"` added to its sidecar.
-- Never agency or wire photos, never screenshots of TV, never "found on Google".
+Any source, always credited, as for news (PLAYBOOK, Images and rights; Geoffry, 23 Oct 2026); no agency/wire photos.
+- **Wikimedia Commons** through `tools/archive_photo.py pick` (it reads the licence and author from the Commons file page and writes the credit): "PHOTO: <Author> / Wikimedia Commons, <Licence>" on the card (automatic) and "📸 <Author> / Wikimedia Commons, <Licence>" in the caption.
+- The **club's, federation's or organiser's own archive**, or an outlet's archive article, through `tools/photos.py scan/pick` as for news, with `"series": "archive"` added to its sidecar. Credit the page we took it from.
+- The photo must show what the card says (the source page says so); never a picture from another match or year presented as this one. No screenshots of TV.
 - Size: at least 450 px on the short side and 600 px on the long side, and the renderer refuses any print it would have to enlarge more than 1.6x. Wikimedia rate-limits original files, so `archive_photo.py` downloads its standard thumbnail widths (500, 960, 1280, 1920 px): a file under 960 px wide comes down at 500 px. Portrait photos get an upright print on the cover.
 - No photo is fine: the cover then runs the big year, stamp and headline, which is designed to stand alone.
 

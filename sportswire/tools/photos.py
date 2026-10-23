@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Official event photos for SportsWire cards and Reels (policy: PLAYBOOK, Images and rights).
+"""Event photos for SportsWire cards, quiz/vote tiles and Reels (policy: PLAYBOOK, Images and rights).
 
-    python3 tools/photos.py scan <official page URL> [--min 1080]
+    python3 tools/photos.py scan <page URL: club/federation report, outlet article, gallery> [--min 1080]
         Lists every image on the page (og:image, <img>, srcset, galleries) with its size,
         downloads the usable ones to build/photos/candidates/ and writes a numbered contact
         sheet (build/photos/candidates-sheet.jpg) to LOOK AT before choosing.
@@ -14,9 +14,12 @@
     python3 tools/photos.py check <photo.jpg>
         Re-runs the checks (size, blocked agencies in URL and metadata, sidecar complete).
 
-Only official club, federation, league or competition pages. The source page itself must say what
-the photo shows (event and people). Never agency/wire photos (Getty, AFP, Reuters, AP, EPA, Imago,
-Shutterstock, Alamy, Sportsfile...), never watermarked or text-burned images, never fan pages.
+Any source is fine as long as it is credited (Geoffry, 23 Oct 2026: "post anything but credit the
+source"): club, federation, league, athlete, organiser, news outlet, data service, Wikimedia Commons.
+The credit is the source we took it from (and the photographer when the page names one). The source
+page must say what the photo shows (event and people): the photo is part of the facts. One exception
+stays: photos credited to agencies (Getty, AFP, Reuters, AP, EPA, Imago...) are refused, because they
+send takedowns and repeated strikes can get the Instagram account disabled.
 """
 from __future__ import annotations
 
@@ -179,7 +182,7 @@ def pick(n: int, slug: str, date: str, page_id: str, credit: str, shows: str, fo
     fx, fy = (int(v) for v in (focus or '50,40').split(','))
     side = {'source_page': meta['page'], 'image_url': row['url'], 'credit': credit, 'shows': shows,
             'meta_credit': row['meta_credit'], 'width': row['w'], 'height': row['h'], 'focus': [fx, fy],
-            'page': page_id, 'licence_basis': 'official club/federation/league media, credited (Geoffry, 21 Oct 2026)',
+            'page': page_id, 'licence_basis': 'credited to its source (Geoffry, 23 Oct 2026: post anything, credit the source)',
             'sha1': hashlib.sha1(out.read_bytes()).hexdigest(), 'picked': dt.datetime.now().isoformat(timespec='seconds')}
     out.with_suffix('.json').write_text(json.dumps(side, ensure_ascii=False, indent=2) + '\n')
     print(out.relative_to(ROOT))
@@ -211,13 +214,8 @@ def check(photo: pathlib.Path) -> list[str]:
     if min(w, h) < ms or max(w, h) < ml:
         probs.append(f'photo too small ({w}x{h}; needs at least {ms} px short side and {ml} px long side)')
     if 'commons.wikimedia.org' in s.get('source_page', '') or 'upload.wikimedia.org' in s.get('image_url', ''):
-        if not archive:
-            probs.append('Wikimedia Commons photos are only for the archive series (news photos come from the club/federation)')
-        lic = s.get('licence', '')
-        if not re.match(r'^(public domain|pd\b|cc0|cc by(-sa)? ?[0-9.]*$|cc by(-sa)?$)', lic.strip().lower()):
-            probs.append(f'licence "{lic}" is not allowed (Public domain, CC0, CC BY, CC BY-SA only)')
         if not s.get('author'):
-            probs.append('Commons photo has no author recorded')
+            probs.append('Commons photo has no author recorded (the credit needs one)')
     return probs
 
 

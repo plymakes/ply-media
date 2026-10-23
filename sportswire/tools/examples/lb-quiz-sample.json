@@ -1,0 +1,80 @@
+{
+  "page": "lb",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-10-23",
+  "slug": "sample-quiz",
+  "light": "green",
+  "_note": "SAMPLE ONLY (layout of the interactive templates): never schedule. Names, stats and the explain line are placeholders.",
+  "slides": [
+    {
+      "template": "quiz",
+      "card": {
+        "photo": {
+          "file": "media/photos/2026-10/2026-10-23-riyadi-two-titles.jpg"
+        },
+        "eyebrow": [
+          "Quiz",
+          "Lebanese basketball"
+        ],
+        "headline": "who did riyadi beat in the *dubai final*?",
+        "options": [
+          {
+            "text": "Antonine"
+          },
+          {
+            "text": "Sagesse",
+            "crest": "sagesse"
+          },
+          {
+            "text": "Homenetmen Beirut",
+            "crest": "homenetmen-beirut"
+          },
+          {
+            "text": "Shabab Al Ahli"
+          }
+        ]
+      }
+    },
+    {
+      "template": "answer",
+      "card": {
+        "eyebrow": [
+          "Answer"
+        ],
+        "headline": "it was *antonine*.",
+        "correct": "A",
+        "options": [
+          {
+            "text": "Antonine"
+          },
+          {
+            "text": "Sagesse",
+            "crest": "sagesse"
+          },
+          {
+            "text": "Homenetmen Beirut",
+            "crest": "homenetmen-beirut"
+          },
+          {
+            "text": "Shabab Al Ahli"
+          }
+        ],
+        "explain": "Sample text: the explain line says why, in one or two short sentences."
+      }
+    },
+    {
+      "template": "end",
+      "card": {
+        "headline": "a new quiz every *wednesday*."
+      }
+    }
+  ],
+  "caption": "sample",
+  "facts": [],
+  "images": [
+    "brand/template-previews/interactive-quiz-01.png",
+    "brand/template-previews/interactive-quiz-02.png",
+    "brand/template-previews/interactive-quiz-03.png"
+  ]
+}

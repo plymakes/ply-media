@@ -7,7 +7,7 @@
 | `python3 tools/publish.py "msg" <paths…>` | Commits, pushes, prints commit-pinned image URLs and checks they load. |
 | `python3 tools/log.py add <spec> --status scheduled --when <ISO> --metricool-id <id> --urls <u1,u2>` | Adds the post to `content-log.json`. Also `log.py kill <spec> --reason "…"` and `log.py recent`. |
 | `python3 tools/crests.py add <slug> --url … --source-page … --name …` / `--wiki "<Article>"` | Adds a club crest (512 px PNG) to `brand/crests/`, origin in `index.json`. Then `crests.py sheet <slug>`, look, `crests.py ok <slug>`. `crests.py seed` fills the starter list; `crests.py list`. |
-| `python3 tools/photos.py scan <official page>` then `pick <n> --slug … --date … --page … --credit … --shows … --focus x,y` | Official event photo: numbered candidate sheet in `build/photos/`, then the chosen one into `media/photos/<YYYY-MM>/` with a sidecar `.json` (source, credit, what it shows). `photos.py check <file>`. |
+| `python3 tools/photos.py scan <page>` then `pick <n> --slug … --date … --page … --credit … --shows … --focus x,y` | Event photo from any source, credited (no agency photos): numbered candidate sheet in `build/photos/`, then the chosen one into `media/photos/<YYYY-MM>/` with a sidecar `.json` (source, credit, what it shows). `photos.py check <file>`. |
 
 Setup in a fresh session: `pip install playwright --break-system-packages` is only needed if `import playwright` fails (Chromium is preinstalled at `/opt/pw-browsers`). Fonts ship in `tools/fonts/`, nothing to download.
 
@@ -61,6 +61,10 @@ Common card fields: `eyebrow` (string or list, joined with ·), `eyebrow_style` 
 - **preview**: countdown / next up. `big` (outlined number), `rows`: `[{label, value}]`.
 - **quote**: always AMBER. `quote` (verbatim), `speaker`, `role`, `translated_from?`.
 - **correction**: `label`, `before`, `wrong`, `right`, `rows`, `text`.
+- **quiz** (interactive): `options`: `[{text, sub?, crest?, key?}]` (2–4, keys default A–D). Always followed in the same spec by its **answer** slide. Footer defaults to "Swipe for the answer →" (post) / "Tap for the answer →" (Story). Only the right option counts as a claim for the gate; the fact-checker still confirms every wrong option is wrong. Examples: `tools/examples/lb-quiz-sample.json` (carousel with a photo), `lb-quiz-story-sample.json` (two Stories).
+- **answer**: the quiz's `options` repeated exactly, `correct` (the key), `explain` (one or two sentences of why). Footnote defaults to "How did you do? Tell us in the comments."
+- **vote** (interactive): `options`: `[{name, meta?, text?, photo? | crest?, key?}]` (2–4 tiles; keys default 1–4), `photo_h?`. Footer defaults to "Vote in the comments: 1, 2, 3 or 4". Every stat on a tile is a fact. Example: `tools/examples/lb-vote-sample.json`.
+- **predict** (interactive): `home`/`away`: `{name, crest?, label?}` (scores show as "?"), `status` (day · time · venue). Footer defaults to "Drop your score in the comments". Example: `tools/examples/lb-predict-story-sample.json`.
 - **end**: closing slide for carousels and Reels: the page lockup, `headline` (e.g. "every lebanese result, *first*"), optional `deck` ("Follow @sportswire.lb").
 
 ### Carousels

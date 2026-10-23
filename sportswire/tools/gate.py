@@ -54,6 +54,9 @@ def card_text(spec: dict) -> str:
         if key in skip:
             return
         if isinstance(x, dict):
+            if 'options' in x and x.get('correct'):  # quiz answer: the wrong options are not claims, only the right one is
+                keys = [str(o.get('key') or 'ABCD'[i]).upper() for i, o in enumerate(x['options'])]
+                x = {**x, 'options': [o for k, o in zip(keys, x['options']) if k == str(x['correct']).upper()]}
             for k, v in x.items():
                 walk(v, k)
         elif isinstance(x, list):
@@ -61,9 +64,12 @@ def card_text(spec: dict) -> str:
                 walk(v, key)
         elif isinstance(x, (str, int, float)) and not isinstance(x, bool):
             parts.append(str(x))
-    slides = spec.get('slides') or [{'card': spec.get('card', {})}]
+    slides = spec.get('slides') or [{'card': spec.get('card', {}), 'template': spec.get('template')}]
     for s in slides:
-        walk(s.get('card', {}))
+        card = s.get('card', {})
+        if s.get('template') == 'quiz':  # the question's options are checked on the answer slide (only the right one is a claim)
+            card = {k: v for k, v in card.items() if k != 'options'}
+        walk(card)
     return '\n'.join(parts)
 
 
@@ -97,6 +103,18 @@ def check(path: str) -> list[str]:
     missing = sorted(n for n in shown - verified if not (len(n) == 4 and n == spec['date'][:4] and n in claims_text))
     if missing:
         probs.append('numbers on the card/caption not found in any verified fact: ' + ', '.join(missing))
+
+    # 3b. a quiz always carries its answer, and the answer slide repeats the same options
+    sl = spec.get('slides') or [{'template': spec.get('template'), 'card': spec.get('card', {})}]
+    quizzes = [x for x in sl if x.get('template') == 'quiz']
+    answers = [x for x in sl if x.get('template') == 'answer']
+    if quizzes and not answers:
+        probs.append('a quiz needs its "answer" slide in the same spec (next carousel slide, or the next Story)')
+    for q, a in zip(quizzes, answers):
+        qo = [o.get('text') for o in q['card'].get('options', [])]
+        ao = [o.get('text') for o in a['card'].get('options', [])]
+        if qo != ao:
+            probs.append('the answer slide must repeat the quiz options exactly, in the same order')
 
     # 4. independent fact-check
     fc = spec.get('factcheck') or {}
@@ -149,11 +167,23 @@ def check(path: str) -> list[str]:
             for v in x:
                 crests_in(v)
     photo_check = None
+
+    def photos_in(x, out):  # card photo plus photos on quiz/vote options
+        if isinstance(x, dict):
+            if isinstance(x.get('photo'), dict) and x['photo'].get('file'):
+                out.append(x['photo'])
+            for k, v in x.items():
+                if k != 'photo':
+                    photos_in(v, out)
+        elif isinstance(x, list):
+            for v in x:
+                photos_in(v, out)
+        return out
+    all_photos = []
     for c in cards:
         crests_in(c)
-        ph = c.get('photo')
-        if not ph:
-            continue
+        photos_in(c, all_photos)
+    for ph in all_photos:
         if photo_check is None:
             import runpy
             photo_check = runpy.run_path(str(ROOT / 'tools/photos.py'), run_name='photos')['check']

@@ -284,12 +284,118 @@ def t_correction(c, th, acc):
     return '', {'correction': True}
 
 
+# ----------------------------------------------------------------- interactive (PLAYBOOK §7, Interactive posts)
+# Scheduled posts can't carry Instagram poll/quiz stickers, so the interaction is built into the card:
+#   quiz    question + 2-4 options (A-D); the next slide/Story is the `answer` (same card + "correct" + "explain")
+#   answer  the quiz again with the right option lit and one line of why
+#   vote    2-4 candidates with photo (or crest), name, meta and a verified stat; "vote in the comments: 1-4"
+#   predict a match with "?" for the scores, kick-off line; "drop your score in the comments"
+# Option photos: {"photo": {"file": "media/photos/…jpg"}} with the usual sidecar (credit shown on the tile).
+TEMPLATE_PROBLEMS: list[str] = []
+
+
+def thumb(ph: dict, w: int, h: int) -> str:
+    f = ROOT / ph.get('file', '')
+    if not f.exists():
+        TEMPLATE_PROBLEMS.append(f'photo file missing: {ph.get("file")}')
+        return ''
+    side = json.loads(f.with_suffix('.json').read_text()) if f.with_suffix('.json').exists() else {}
+    from PIL import Image
+    iw, ih = Image.open(f).size
+    scale = max(w / iw, h / ih)
+    if scale > MAX_UPSCALE:
+        TEMPLATE_PROBLEMS.append(f'photo {ph["file"]} is too small for its tile ({iw}x{ih} enlarged {scale:.2f}x)')
+    fx, fy = ph.get('focus') or side.get('focus') or [50, 35]
+    credit = ph.get('credit') or side.get('credit') or ''
+    if not credit:
+        TEMPLATE_PROBLEMS.append(f'photo {ph["file"]} has no credit')
+    return (f'<div class="vph" style="height:{h}px;background-image:url({f.as_uri()});background-position:{fx}% {fy}%">'
+            f'<span class="vpc">PHOTO: {esc(credit).upper()}</span></div>')
+
+
+def t_quiz(c, th, acc, reveal=False):
+    fmt = c.get('_fmt', 'post')
+    opts = c['options']
+    if not 2 <= len(opts) <= 4:
+        TEMPLATE_PROBLEMS.append('a quiz needs 2-4 options')
+    correct = str(c.get('correct', '')).upper()
+    if reveal and correct not in [str(o.get('key') or 'ABCD'[i]).upper() for i, o in enumerate(opts)]:
+        TEMPLATE_PROBLEMS.append('answer slide: "correct" must be one of the option keys')
+    rows = ''
+    for i, o in enumerate(opts):
+        key = str(o.get('key') or 'ABCD'[i]).upper()
+        state = (' ok' if key == correct else ' off') if reveal else ''
+        mark = '✓' if reveal and key == correct else key
+        media = crest(o['crest'], 76) if o.get('crest') else ''
+        sub = f'<div class="qsb">{rich(o["sub"])}</div>' if o.get('sub') else ''
+        rows += f'<div class="qo{state}"><span class="qk">{mark}</span>{media}<div class="qx"><span class="qtx nw">{esc(o["text"])}</span>{sub}</div></div>'
+    b = f'<div class="qopts">{rows}</div>'
+    if reveal and c.get('explain'):
+        b += f'<div class="qexp">{rich(c["explain"])}</div>'
+    if not c.get('footer') and not c.get('footnote'):
+        if reveal:
+            c['footnote'] = c.get('answer_footnote', 'How did you do? Tell us in the comments.')
+        else:
+            c['footer'] = 'Tap for the answer →' if fmt == 'story' else 'Swipe for the answer →'
+    return b, {'align': 'center' if fmt == 'story' else 'end'}
+
+
+def t_answer(c, th, acc):
+    return t_quiz(c, th, acc, reveal=True)
+
+
+def t_vote(c, th, acc):
+    fmt = c.get('_fmt', 'post')
+    opts = c['options']
+    n = len(opts)
+    if not 2 <= n <= 4:
+        TEMPLATE_PROBLEMS.append('a vote needs 2-4 options')
+    cols = 2 if n in (2, 4) else 3
+    inner = 1080 - 144
+    w = int((inner - 22 * (cols - 1)) / cols)
+    default_h = {'post': {2: 440, 3: 320, 4: 196}, 'story': {2: 620, 3: 470, 4: 380}}[fmt if fmt in ('post', 'story') else 'story']
+    h = int(c.get('photo_h', default_h.get(n, 300)))
+    tiles_ = ''
+    for i, o in enumerate(opts, 1):
+        key = esc(o.get('key', i))
+        if o.get('photo'):
+            pic = thumb(o['photo'], w, h)
+        else:
+            pic = f'<div class="vph vnoph" style="height:{h}px">{crest(o.get("crest"), min(h - 60, 220), tile=True)}</div>'
+        pic = pic.replace('</div>', f'<span class="vk">{key}</span></div>', 1) if pic else ''
+        meta = f'<div class="vm nw">{esc(o.get("meta", "")).upper()}</div>' if o.get('meta') else ''
+        stat = f'<div class="vs">{rich(o["text"])}</div>' if o.get('text') else ''
+        tiles_ += f'<div class="vt">{pic}<div class="vtx"><div class="vn nw">{esc(o["name"])}</div>{meta}{stat}</div></div>'
+    if not c.get('footer') and not c.get('footnote'):
+        keys = [str(o.get('key', i)) for i, o in enumerate(opts, 1)]
+        c['footer'] = 'Vote in the comments: ' + ', '.join(keys[:-1]) + ' or ' + keys[-1]
+    return f'<div class="vg" style="grid-template-columns:repeat({cols},1fr)">{tiles_}</div>', {'align': 'end', 'hl': 88 if fmt == 'post' else 108}
+
+
+def t_predict(c, th, acc):
+    """Predict the score: two big crests, names and a "?" each, then the kick-off line."""
+    fmt = c.get('_fmt', 'post')
+    big = 150 if fmt == 'story' else 120
+
+    def side(s):
+        return (f'<div class="pds">{crest(s.get("crest"), big)}<div class="pdn nw">{esc(s["name"])}</div>'
+                f'<div class="pdq ac">?</div>' + (f'<div class="lbl">{esc(s["label"]).upper()}</div>' if s.get('label') else '') + '</div>')
+    zoom = ' style="zoom:1.18"' if fmt == 'story' else ''
+    b = f'<div class="pd"{zoom}>{side(c["home"])}<div class="pdv">v</div>{side(c["away"])}</div>'
+    if c.get('status'):
+        b += f'<div class="status" style="text-align:center;margin-top:6px">{eyebrow(c["status"])}</div>'
+    if not c.get('footer') and not c.get('footnote'):
+        c['footer'] = 'Drop your score in the comments'
+    return b, {'align': 'center' if fmt == 'story' else 'end'}
+
+
 def t_end(c, th, acc):
     return '', {'end': True}
 
 
 TEMPLATES = dict(end=t_end, result=t_result, roundup=t_roundup, news=t_news, fixtures=t_fixtures, spotlight=t_spotlight,
-                 stats=t_stats, standings=t_standings, preview=t_preview, quote=t_quote, correction=t_correction)
+                 stats=t_stats, standings=t_standings, preview=t_preview, quote=t_quote, correction=t_correction,
+                 quiz=t_quiz, answer=t_answer, vote=t_vote, predict=t_predict)
 
 
 # ----------------------------------------------------------------- page
@@ -435,6 +541,34 @@ body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-web
 .corr-hl s{{color:{th['faint']};text-decoration:none;position:relative;display:inline-block}}
 .corr-hl s::after{{content:'';position:absolute;left:-4%;right:-4%;top:52%;height:9px;border-radius:5px;background:{acc};transform:rotate(-2deg)}}
 .center .kv{{width:640px}}
+/* interactive: quiz / answer */
+.qopts{{display:flex;flex-direction:column;gap:18px}}
+.qo{{display:flex;align-items:center;gap:26px;padding:22px 28px;border:2px solid {th['line']};border-radius:24px;background:{th['panel']};min-width:0}}
+.qk{{width:70px;height:70px;border-radius:50%;border:3px solid {acc};color:{acc};font:700 32px 'JetBrains Mono';display:flex;align-items:center;justify-content:center;flex:none}}
+.qx{{min-width:0;flex:1}}
+.qtx{{font:800 42px Rubik;letter-spacing:-.01em}}
+.qsb{{font:400 24px/1.3 Manrope;color:{th['muted']};margin-top:4px}}
+.qo.ok{{border-color:{acc};background:color-mix(in srgb,{acc} 16%,{th['bg']})}}
+.qo.ok .qk{{background:{acc};color:#16171B}}
+.qo.off{{opacity:.36}}
+.qexp{{font:400 29px/1.4 Manrope;color:{th['muted']};padding:24px 30px;border-left:6px solid {acc};background:{th['panel']};border-radius:0 20px 20px 0}}
+/* interactive: vote */
+.vg{{display:grid;gap:22px}}
+.vt{{border:1px solid {th['line']};border-radius:26px;overflow:hidden;background:{th['panel']};display:flex;flex-direction:column;min-width:0}}
+.vph{{position:relative;background-size:cover;background-repeat:no-repeat;background-color:#000;flex:none}}
+.vnoph{{display:flex;align-items:center;justify-content:center;background:{th['panel2']}}}
+.vk{{position:absolute;top:18px;left:18px;width:66px;height:66px;border-radius:50%;background:{acc};color:#16171B;font:700 32px 'JetBrains Mono';display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,.35)}}
+.vpc{{position:absolute;right:14px;bottom:12px;left:14px;text-align:right;font:600 14px 'JetBrains Mono';letter-spacing:.12em;color:rgba(250,250,248,.88);text-shadow:0 1px 6px rgba(0,0,0,.8);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.vtx{{padding:20px 24px 24px;min-width:0}}
+.vn{{font:800 36px Rubik;letter-spacing:-.01em}}
+.vm{{font:600 19px 'JetBrains Mono';letter-spacing:.15em;color:{th['faint']};margin-top:8px}}
+.vs{{font:400 24px/1.3 Manrope;color:{th['muted']};margin-top:10px}}
+/* interactive: predict */
+.pd{{display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:20px;padding:40px 30px 34px;border:1px solid {th['line']};border-radius:28px;background:{th['panel']}}}
+.pds{{display:flex;flex-direction:column;align-items:center;gap:18px;min-width:0;text-align:center}}
+.pdn{{font:800 44px Rubik;letter-spacing:-.01em;max-width:100%}}
+.pdq{{font:700 150px/1 'JetBrains Mono'}}
+.pdv{{font:600 30px 'JetBrains Mono';color:{th['faint']};align-self:center;letter-spacing:.1em}}
 /* photo hero */
 .pho{{position:absolute;left:0;top:0;width:100%;overflow:hidden;background:#000}}
 .phi{{position:absolute;inset:0;background-size:cover;background-repeat:no-repeat;will-change:transform}}
@@ -458,7 +592,9 @@ FIT_JS = r"""
   const W = document.body.clientWidth, H = document.body.clientHeight;
   const problems = [];
   const cv = document.querySelector('.cv'), bd = document.querySelector('.bd'), hl = document.querySelector('.hl');
-  const over = () => cv.scrollHeight > H + 1 || (bd && bd.scrollHeight > bd.clientHeight + 1);
+  // bottom-aligned bodies overflow upwards (over the headline), which scrollHeight can't see: compare the first child's top too
+  const upward = () => { if (!bd || !bd.children.length) return false; const t = Math.min(...[...bd.children].map(k => k.getBoundingClientRect().top)); return t < bd.getBoundingClientRect().top - 1; };
+  const over = () => cv.scrollHeight > H + 1 || (bd && bd.scrollHeight > bd.clientHeight + 1) || upward();
   // single-line items: shrink until they fit (down to 70%)
   document.querySelectorAll('.nw').forEach(el => {
     let fs = parseFloat(getComputedStyle(el).fontSize), min = fs * 0.7;
@@ -501,6 +637,8 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
     tpl = slide['template']
     c = dict(slide.get('card', {}))
     c['_theme'] = th_name
+    c['_fmt'] = fmt
+    TEMPLATE_PROBLEMS.clear()
     body, opt = TEMPLATES[tpl](c, th, acc)
 
     mark = (ROOT / 'brand/logos' / f'mark-{spec["page"]}-on-{th_name}.svg').as_uri()
@@ -565,7 +703,7 @@ def build(slide: dict, spec: dict, idx: int, total: int) -> tuple[str, int, int]
         if photo_html:
             center += ' photo'
             glow = 'none'
-    LAST_PROBLEMS[:] = photo_probs
+    LAST_PROBLEMS[:] = photo_probs + TEMPLATE_PROBLEMS
     doc = (f'<!doctype html><html><head><meta charset="utf-8"><style>{css(W, H, fmt, th, acc, glow)}</style></head>'
            f'<body><div class="cv{center}">{photo_html}<div class="glow"></div>{hd}{spacer}{top}{main}{ft}</div></body></html>')
     return doc, W, H
@@ -588,7 +726,7 @@ def out_path(spec: dict, idx: int, total: int) -> pathlib.Path:
 
 ANIM_JS = r"""
 () => {
-  const rowSel = '.str,.kvr,.fxg,.rr,.sp,.ti,.ent,.score,.periods,.hb,.tally,.nxt,.quote';
+  const rowSel = '.str,.kvr,.fxg,.rr,.sp,.ti,.ent,.score,.periods,.hb,.tally,.nxt,.quote,.qo,.qexp,.vt';
   const els = [];
   const push = e => { if (e && !els.includes(e)) els.push(e); };
   ['.hd','.eb','.bignum','.hl','.dk'].forEach(s => document.querySelectorAll(s).forEach(push));
