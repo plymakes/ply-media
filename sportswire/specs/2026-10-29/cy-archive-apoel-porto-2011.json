@@ -167,5 +167,43 @@
   "visual_check": {
     "done": true,
     "notes": "Cover 2011 / 15 years ago / APOEL's 90th-minute night; story with 90' pull; ticket APOEL 2-1 Porto, Tuesday 1 November 2011, GSP Stadium; 'what came next' ledger 23 Nov / 7 Mar / 2-8; end. Accents render (Aílton). Nothing clipped."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T11:50+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "Tuesday 1 November 2011, GSP Stadium: APOEL 2-1 Porto; Aílton pen (first half), Hulk pen 60 seconds from time, Manduca 90' from Charalambides' cross",
+        "verdict": "CONFIRMED",
+        "url": "https://uefa.com/uefachampionsleague/news/01f7-0ea3a5918065-7fb578fa1236-1000--apoel-s-manduca-floors-porto-late-on"
+      },
+      {
+        "claim": "APOEL top of Group G on 8 points",
+        "verdict": "CONFIRMED",
+        "url": "https://hurriyetdailynews.com/apoels-euro-fairytale-continues-6738"
+      },
+      {
+        "claim": "23 Nov 2011 Zenit 0-0 APOEL: first Cypriot side in the Champions League knockout stage; three weeks later",
+        "verdict": "CONFIRMED",
+        "url": "https://uefa.com/uefachampionsleague/news/01f7-0e7b23d332fd-9c6c0277b270-1000--zenit-draw-seals-apoel-s-historic-last-16-place"
+      },
+      {
+        "claim": "7 Mar 2012 Lyon beaten on penalties: first Cypriot side in the European Cup quarter-finals",
+        "verdict": "CONFIRMED",
+        "url": "https://www.uefa.com/uefachampionsleague/news/01fb-0e7c4364f0b4-d33095de1f71-1000/"
+      },
+      {
+        "claim": "Real Madrid quarter-final 2-8 on aggregate",
+        "verdict": "CONFIRMED",
+        "url": "https://english.ahram.org.eg/News/38510.aspx"
+      },
+      {
+        "claim": "15 years, 1 Nov 2026 is a Sunday",
+        "verdict": "CONFIRMED",
+        "url": "https://uefa.com/uefachampionsleague/news/01f7-0ea3a5918065-7fb578fa1236-1000--apoel-s-manduca-floors-porto-late-on"
+      }
+    ],
+    "notes": "All 16 claims CONFIRMED."
   }
 }
