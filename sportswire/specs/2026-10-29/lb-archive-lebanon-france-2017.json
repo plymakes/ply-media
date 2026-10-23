@@ -18,7 +18,7 @@
         "kicker": "On this day · 29 October 2017",
         "year": "2017",
         "headline": "The night the *Cedars* won",
-        "deck": "Lebanon beat France 29-18 in Canberra: their first ever Rugby League World Cup win.",
+        "deck": "Lebanon beat France 29-18: their first Rugby League World Cup win.",
         "stamp": "9 years ago today",
         "photo": {
           "file": "media/archive/2026-10/2026-10-29-archive-lebanon-france-2017.jpg",
@@ -30,7 +30,7 @@
       "template": "story",
       "card": {
         "title": "The *story*",
-        "text": "On Sunday 29 October 2017 in Canberra, Lebanon beat France 29-18 for their first ever win at a Rugby League World Cup, at their first World Cup since 2000. Travis Robinson scored twice, Anthony Layoun and 19-year-old Adam Doueihi crossed, and Mitchell Moses added a try, four goals and a field goal.",
+        "text": "On 29 October 2017 in Canberra, Lebanon beat France 29-18 for their first ever Rugby League World Cup win. Travis Robinson scored twice; Mitchell Moses added a try, four goals and a field goal.",
         "pull": {
           "big": "1st",
           "label": "Rugby League World Cup win for Lebanon"
@@ -229,9 +229,12 @@
     "when": "2026-10-29T19:30:00+02:00",
     "note": "updated 23 Oct to renumber the issue"
   },
+  "sport": "rugby-league",
+  "notes": [
+    "23 Oct 2026: story and deck trimmed to the new word limits (house style); no facts added, only removed."
+  ],
   "visual_check": {
     "done": true,
-    "notes": "Re-rendered only to renumber the issue (masthead No.); content identical to the checked version. Cover with upright sepia print (Doueihi, 2017) and note + credit; story with ages/scores kept whole; ticket France 18-29 Lebanon; then/now 2017/2026; end. Nothing clipped."
-  },
-  "sport": "rugby-league"
+    "notes": "23 Oct 17:15: all 5 slides re-checked after the house-style trim: story text matches the spec word for word, larger type, no clipping; cover deck shorter; ticket \"vs.\" where used; photos and credits unchanged."
+  }
 }

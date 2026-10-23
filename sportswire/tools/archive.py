@@ -12,7 +12,7 @@ tilt) with a typewritten credit. It must look old and still read instantly on a 
 
 Slide templates (slides: [{"template": ..., "card": {...}}]):
 - cover:   kicker, year, headline, deck?, stamp?, photo?
-- story:   title?, text (60-90 words, first letter becomes a drop cap), pull? {big, label}
+- story:   title?, text (at most 40 words since 23 Oct 2026; short text is set larger; first letter becomes a drop cap), pull? {big, label}
 - ticket:  competition, round?, home, away, score?, rows [{label, value}] (date, venue, crowd)
 - ledger:  title, rows [{label, value}] (max 6), note?
 - thennow: title?, then {label, text}, now {label, text}
@@ -134,7 +134,9 @@ def t_story(c, acc, fmt):
     if c.get('photo'):
         ph, probs = photo_block(c['photo'], c.get('photo_w', 760), c.get('photo_h', 470), tilt=1.6)
         ph = f'<div class="sph">{ph}</div>'
-    return (f'<div class="bd story">{title}<div class="cols"><p class="txt"><span class="drop">{esc(first)}</span>{rich(rest)}</p></div>'
+    nwords = len(text.split())
+    size = '' if c.get('photo') else (' style="font-size:54px"' if nwords <= 32 else ' style="font-size:50px"' if nwords <= 40 else '')  # fewer words, bigger type
+    return (f'<div class="bd story">{title}<div class="cols"><p class="txt"{size}><span class="drop">{esc(first)}</span>{rich(rest)}</p></div>'
             f'{ph}{pull}</div>'), probs
 
 

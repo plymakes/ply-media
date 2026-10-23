@@ -29,7 +29,7 @@ Every fact on the card and in the caption needs one tier-1 source (governing bod
 
 Carousel, 4–6 slides, `end` last:
 1. `cover`: kicker ("On this day · 29 October 2000" / "This week in 2000"), the year, headline, short deck, a stamp ("26 years ago"), and the photo if there is a rights-safe one.
-2. `story`: 50–75 words with a pull number (up to 90 words without), first letter as a drop cap.
+2. `story`: at most 40 words on the image including the pull number (Geoffry, 23 Oct 2026: fewer words per image; the caption carries the rest); short text is set larger; first letter as a drop cap.
 3. `ticket` (a match: competition, teams, score, date, venue, crowd) or `ledger` (by the numbers, max 6 rows).
 4. `thennow`: what happened next / where it stands today.
 5. `end`: "More from the archive every Tuesday and Thursday."

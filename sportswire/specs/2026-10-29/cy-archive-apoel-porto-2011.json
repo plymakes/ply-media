@@ -18,7 +18,7 @@
         "kicker": "From the archive · 1 November 2011",
         "year": "2011",
         "headline": "APOEL's *90th-minute* night",
-        "deck": "Gustavo Manduca's late winner against Porto kept APOEL top of their Champions League group.",
+        "deck": "Gustavo Manduca's late winner kept APOEL top of their Champions League group.",
         "stamp": "15 years ago"
       }
     },
@@ -26,7 +26,7 @@
       "template": "story",
       "card": {
         "title": "The *story*",
-        "text": "On 1 November 2011 at the GSP Stadium, Aílton put APOEL ahead from the penalty spot in the first half. Hulk levelled from the spot a minute from time. Then, in the 90th minute, Gustavo Manduca met captain Constantinos Charalambides' cross: APOEL 2, Porto 1, and APOEL top of Group G on 8 points.",
+        "text": "Aílton's first-half penalty put APOEL ahead. Hulk levelled from the spot a minute from time. Then, in the 90th minute, Gustavo Manduca scored: APOEL 2, Porto 1, and top of Group G.",
         "pull": {
           "big": "90'",
           "label": "Manduca's *winner*"
@@ -164,10 +164,6 @@
     "ok": true,
     "problems": []
   },
-  "visual_check": {
-    "done": true,
-    "notes": "Cover 2011 / 15 years ago / APOEL's 90th-minute night; story with 90' pull; ticket APOEL 2-1 Porto, Tuesday 1 November 2011, GSP Stadium; 'what came next' ledger 23 Nov / 7 Mar / 2-8; end. Accents render (Aílton). Nothing clipped."
-  },
   "factcheck": {
     "status": "pass",
     "checked": "2026-10-23T11:50+03:00",
@@ -210,5 +206,12 @@
     "id": 403930715,
     "when": "2026-10-29T19:30:00+02:00"
   },
-  "sport": "football"
+  "sport": "football",
+  "notes": [
+    "23 Oct 2026: story and deck trimmed to the new word limits (house style); no facts added, only removed."
+  ],
+  "visual_check": {
+    "done": true,
+    "notes": "23 Oct 17:15: all 5 slides re-checked after the house-style trim: story text matches the spec word for word, larger type, no clipping; cover deck shorter; ticket \"vs.\" where used; photos and credits unchanged."
+  }
 }

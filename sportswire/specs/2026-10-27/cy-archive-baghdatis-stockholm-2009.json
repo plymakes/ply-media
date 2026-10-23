@@ -30,7 +30,7 @@
       "template": "story",
       "card": {
         "title": "The *story*",
-        "text": "On Sunday 25 October 2009, Marcos Baghdatis beat Olivier Rochus 6-1, 7-5 in the Stockholm Open final. The Cypriot, 24 and playing Stockholm for the first time, reached the final when top seed Robin Söderling gave a walkover in the semi-finals. It was his third ATP title, and his first since Zagreb in February 2007.",
+        "text": "On Sunday 25 October 2009, Marcos Baghdatis beat Olivier Rochus 6-1, 7-5 in the Stockholm Open final. The Cypriot was 24 and playing Stockholm for the first time.",
         "pull": {
           "big": "15",
           "label": "aces in the final"
@@ -227,13 +227,16 @@
     ],
     "notes": "All claims CONFIRMED. Took the checker's advice: 'this week' replaced by the exact date (the anniversary was the Sunday before the post)."
   },
-  "visual_check": {
-    "done": true,
-    "notes": "Re-rendered with the exact date kicker; all 5 slides re-read (story, ticket, career unchanged); nothing clipped."
-  },
   "metricool": {
     "id": 403926812,
     "when": "2026-10-27T19:30:00+02:00"
   },
-  "sport": "tennis"
+  "sport": "tennis",
+  "notes": [
+    "23 Oct 2026: story and deck trimmed to the new word limits (house style); no facts added, only removed."
+  ],
+  "visual_check": {
+    "done": true,
+    "notes": "23 Oct 17:15: all 5 slides re-checked after the house-style trim: story text matches the spec word for word, larger type, no clipping; cover deck shorter; ticket \"vs.\" where used; photos and credits unchanged."
+  }
 }

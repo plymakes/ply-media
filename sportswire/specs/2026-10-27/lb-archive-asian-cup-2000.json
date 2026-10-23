@@ -18,7 +18,7 @@
         "kicker": "This month in 2000",
         "year": "2000",
         "headline": "When Asia came to *Beirut*",
-        "deck": "Lebanon hosted the AFC Asian Cup in October 2000: their first Asian Cup finals, as hosts.",
+        "deck": "Lebanon hosted the AFC Asian Cup in October 2000.",
         "stamp": "26 years ago"
       }
     },
@@ -26,7 +26,7 @@
       "template": "story",
       "card": {
         "title": "The *story*",
-        "text": "In October 2000, Lebanon staged the AFC Asian Cup, with games in Beirut, Sidon and Tripoli. The hosts lost 4-0 to Iran, came back from 2-0 down to draw 2-2 with Iraq, then drew 1-1 with Thailand. Two points left them bottom of their group on goal difference, but the final still came to Beirut.",
+        "text": "In October 2000, Lebanon hosted the Asian Cup in Beirut, Sidon and Tripoli. They lost 4-0 to Iran, drew 2-2 with Iraq after trailing 2-0, then 1-1 with Thailand. The final came to Beirut.",
         "pull": {
           "big": "2",
           "label": "points for the hosts: *out on goal difference*"
@@ -236,9 +236,12 @@
     "when": "2026-10-27T19:30:00+02:00",
     "note": "updated 23 Oct to renumber the issue"
   },
+  "sport": "football",
+  "notes": [
+    "23 Oct 2026: story and deck trimmed to the new word limits (house style); no facts added, only removed."
+  ],
   "visual_check": {
     "done": true,
-    "notes": "Re-rendered only to renumber the issue (masthead No.); content identical to the checked version. Re-rendered after fixes: slide 2 now Beirut, Sidon and Tripoli and 'bottom of their group on goal difference', pull 'out on goal difference'; other slides unchanged; nothing clipped."
-  },
-  "sport": "football"
+    "notes": "23 Oct 17:15: all 5 slides re-checked after the house-style trim: story text matches the spec word for word, larger type, no clipping; cover deck shorter; ticket \"vs.\" where used; photos and credits unchanged."
+  }
 }
