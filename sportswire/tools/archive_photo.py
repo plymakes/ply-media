@@ -111,6 +111,9 @@ def credit_of(i: dict) -> str:
     if i.get('attribution'):  # the attribution the author asked for, when Commons gives one
         return f"{i['attribution']} / Wikimedia Commons"
     author = i['author'] or 'Unknown author'
+    u = re.match(r'https?://(?:www\.)?flickr\.com/(?:photos|people)/([^/\s]+)', author)  # Flickr profile URL -> username
+    if u:
+        author = u.group(1)
     m = re.search(r'User:([^\s)|\]]+)', author)  # "me ( w:User:Akademan )" -> "Akademan"
     if m:
         author = m.group(1).replace('_', ' ')

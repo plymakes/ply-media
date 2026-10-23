@@ -80,7 +80,8 @@ def photo_block(ph: dict, w: int, h: int, tilt: float = -1.4) -> tuple[str, list
              f'<div class="pimg" style="height:{h}px;background-image:url({f.as_uri()});background-position:{fx}% {fy}%"></div>'
              f'<div class="pgrain"></div><span class="corner tl"></span><span class="corner tr"></span>'
              f'<span class="corner bl"></span><span class="corner br"></span></figure>'
-             f'<div class="pcap">{esc((ph["note"] + " · ").upper()) if ph.get("note") else ""}{esc(("PHOTO: " + credit).upper()) if credit else ""}</div>')
+             f'<div class="pcap" style="font-size:{17 if len(credit) + len(ph.get("note", "")) > 60 else 19}px">'
+             f'{esc((ph["note"] + " · ").upper()) if ph.get("note") else ""}{esc(("PHOTO: " + credit).upper()) if credit else ""}</div>')
     return html_, probs
 
 
