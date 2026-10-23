@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Event photos for SportsWire cards, quiz/vote tiles and Reels (policy: PLAYBOOK, Images and rights).
 
-    python3 tools/photos.py scan <page URL: club/federation report, outlet article, gallery> [--min 1080]
+    python3 tools/photos.py scan <page URL: club/federation report, outlet article, gallery, or a direct image URL> [--min 1080]
         Lists every image on the page (og:image, <img>, srcset, galleries) with its size,
         downloads the usable ones to build/photos/candidates/ and writes a numbered contact
         sheet (build/photos/candidates-sheet.jpg) to LOOK AT before choosing.
@@ -114,9 +114,12 @@ def scan(page: str, min_short: int) -> None:
     from PIL import Image, ImageDraw
     if BLOCKED_HOSTS.search(urllib.parse.urlparse(page).netloc):
         sys.exit(f'blocked source: {page}')
-    raw = http(page).decode('utf-8', 'ignore')
     p = Imgs(page)
-    p.feed(raw)
+    if re.search(r'\.(jpe?g|png|webp)(\?|$)', page, re.I):  # a direct image URL (e.g. an article's lead image when the page itself is JavaScript)
+        p.found.append((page, 'direct'))
+    else:
+        raw = http(page).decode('utf-8', 'ignore')
+        p.feed(raw)
     shutil.rmtree(CAND, ignore_errors=True)
     CAND.mkdir(parents=True)
     rows, thumbs = [], []
