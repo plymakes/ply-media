@@ -15,7 +15,7 @@
     {
       "template": "cover",
       "card": {
-        "kicker": "This week in 2009",
+        "kicker": "From the archive · 25 October 2009",
         "year": "2009",
         "headline": "Baghdatis ends the wait in *Stockholm*",
         "deck": "His third ATP title, and his first since February 2007.",
@@ -97,9 +97,9 @@
       "card": {}
     }
   ],
-  "caption": "From the archive: October 2009, Stockholm. 🎾\n\n17 years ago this week, Marcos Baghdatis beat Olivier Rochus 6-1, 7-5 to win the Stockholm Open. It was his third ATP title, and his first since Zagreb in February 2007.\n\nThree years earlier he had reached the Australian Open final. He finished his career with four ATP titles and a career-high ranking of No. 8.\n\nWhat's your favourite Baghdatis moment? 🇨🇾\n\n📸 Akademan / Wikimedia Commons, CC BY-SA 2.5 (Baghdatis at Indian Wells, 2006)\nSource: Stockholm Open, UPI, AFP\n#SportsWireCY #FromTheArchive #Tennis",
+  "caption": "From the archive: October 2009, Stockholm. 🎾\n\n17 years ago, on 25 October 2009, Marcos Baghdatis beat Olivier Rochus 6-1, 7-5 to win the Stockholm Open. It was his third ATP title, and his first since Zagreb in February 2007.\n\nThree years earlier he had reached the Australian Open final. He finished his career with four ATP titles and a career-high ranking of No. 8.\n\nWhat's your favourite Baghdatis moment? 🇨🇾\n\n📸 Akademan / Wikimedia Commons, CC BY-SA 2.5 (Baghdatis at Indian Wells, 2006)\nSource: Stockholm Open, UPI, AFP\n#SportsWireCY #FromTheArchive #Tennis",
   "alt": [
-    "Archive cover: 2009, Baghdatis ends the wait in Stockholm: his third ATP title and his first since February 2007. 17 years ago. Sepia photo of Marcos Baghdatis at Indian Wells in 2006.",
+    "Archive cover, 25 October 2009: Baghdatis ends the wait in Stockholm: his third ATP title and his first since February 2007. 17 years ago. Sepia photo of Marcos Baghdatis at Indian Wells in 2006.",
     "The story: on Sunday 25 October 2009 Marcos Baghdatis, 24, beat Olivier Rochus 6-1, 7-5 in the Stockholm Open final, after top seed Robin Söderling gave a walkover in the semi-finals; 15 aces in the final.",
     "The final: Stockholm Open final, Sunday 25 October 2009, Royal Tennis Hall, Stockholm: Marcos Baghdatis beat Olivier Rochus 6-1, 7-5, his third ATP title.",
     "The career: 4 ATP titles; Australian Open final 2006; Wimbledon semi-final 2006; highest ranking No. 8; retired after Wimbledon 2019.",
@@ -189,8 +189,46 @@
     "ok": true,
     "problems": []
   },
+  "factcheck": {
+    "status": "pass",
+    "checked": "2026-10-23T12:10+03:00",
+    "by": "independent agent",
+    "claims": [
+      {
+        "claim": "Final Sunday 25 October 2009, beat Olivier Rochus 6-1, 7-5",
+        "verdict": "CONFIRMED",
+        "url": "https://www.upi.com/Sports_News/2009/10/25/Baghdatis-wins-Stockholm-Open/42901256509050/"
+      },
+      {
+        "claim": "24, first Stockholm tournament, Royal Tennis Hall; Söderling walkover",
+        "verdict": "CONFIRMED",
+        "url": "https://www.stockholmopen.se/en/event-info/2000-2009"
+      },
+      {
+        "claim": "Third ATP title, first since Zagreb in February 2007; 15 aces",
+        "verdict": "CONFIRMED",
+        "url": "https://www.thelocal.se/20091025/22870"
+      },
+      {
+        "claim": "4 ATP titles; 2006 Australian Open final; 2006 Wimbledon semi; No. 8; retired after Wimbledon 2019",
+        "verdict": "CONFIRMED",
+        "url": "https://www.tennis.com/baseline/articles/former-world-no-8-baghdatis-to-retire-at-wimbledon"
+      },
+      {
+        "claim": "17 years (2026 - 2009)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.stockholmopen.se/en/event-info/2000-2009"
+      },
+      {
+        "claim": "Photo: Baghdatis at Indian Wells, 12 March 2006 (Commons description and date; internal check)",
+        "verdict": "CONFIRMED",
+        "url": "https://commons.wikimedia.org/wiki/File:Marcos_Baghdatis_2006.jpg"
+      }
+    ],
+    "notes": "All claims CONFIRMED. Took the checker's advice: 'this week' replaced by the exact date (the anniversary was the Sunday before the post)."
+  },
   "visual_check": {
     "done": true,
-    "notes": "Cover: 2009 / 17 years ago / photo of Baghdatis at Indian Wells 2006 with note and credit on one line; story with drop cap, 15 aces pull; ticket 6-1, 7-5, Sunday 25 October 2009, Royal Tennis Hall; career ledger 4 / 2006 / 2006 / No. 8 / 2019; end. Nothing clipped."
+    "notes": "Re-rendered with the exact date kicker; all 5 slides re-read (story, ticket, career unchanged); nothing clipped."
   }
 }
