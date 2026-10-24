@@ -508,14 +508,15 @@
       "crest": "keravnos"
     },
     "aek_larnaca_petrolina_bc": {
-      "who": "Petrolina AEK Larnaca (basketball)",
+      "who": "Petrolina AEK Larnaca BC",
       "page": "cy",
       "confirmed": true,
-      "confidence": "medium",
-      "how": "listed on the FIBA Basketball Champions League team page (organiser listing), not on aek.com.cy",
-      "kind": "org",
-      "checked": "2026-10-23",
-      "crest": "aek-basketball"
+      "confidence": "high",
+      "how": "Upgraded from medium: FIBA Europe Cup 2026-27 team page lists it under club Links (aek.com.cy itself only links football @aeklarnacafc) (https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/teams/petrolina-aek)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "crest": "aek-basketball",
+      "sport": "basketball"
     },
     "cyprushandballfederation": {
       "who": "Cyprus Handball Federation",
@@ -589,10 +590,204 @@
           "cricket"
         ]
       }
+    },
+    "neasalamis_ammochostos_a.c": {
+      "who": "Nea Salamis Famagusta (club; football posts dominate feed)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "Official club site header, footer and 'Follow on Instagram' button link it; embedded feed shows Oct 2026 Cyprus League/Cup posts (https://www.neasalamina.com)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "sport": "football"
+    },
+    "enp1936": {
+      "who": "Enosis Neon Paralimni FC (relegated to 2nd div for 2026-27)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "Official ENP FC site links instagram.com/enp1936 (twice); TikTok there is @enpfc_official (https://www.enpfc.cy/squad-2025)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "sport": "football"
+    },
+    "anorthosisfamagustavolley": {
+      "who": "Anorthosis Famagusta volleyball (men's and women's teams share it)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "Official Anorthosis Volley site links it; no separate men/women IG (http://www.anorthosisvolley.com/)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "sport": "volleyball"
+    },
+    "apoelnicosiaofficial": {
+      "who": "APOEL multi-sport club (covers basketball, futsal, swimming, volleyball etc.; NOT the football company @apoelfcofficial)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "apoel.com.cy (multi-sport club site) embeds its feed incl. #apoelbasketball posts; no separate basketball account found (https://www.apoel.com.cy)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "sport": "multi-sport (use for APOEL basketball)",
+      "crest": "apoel-basketball"
+    },
+    "aelbc_cy": {
+      "who": "AEL Limassol BC (TRIA EKA AEL)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "Official AEL BC site links it (https://ael-bc.com)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "sport": "basketball"
+    },
+    "uefa": {
+      "who": "UEFA",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "uefa.com 'Follow us on' section (https://www.uefa.com/nationalassociations/teams/2612091--als-omonia-29is-maiou/squad)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "football"
+    },
+    "europaleague": {
+      "who": "UEFA Europa League",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "uefa.com Europa League pages 'Follow us on' section (https://www.uefa.com/uefaeuropaleague/news/02a8-217364fd42e6-7e49801d8daf-1000--2026-27-europa-league-who-has-qualified-for-the-league-phase/)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "football"
+    },
+    "fibaeuropecup": {
+      "who": "FIBA Europe Cup",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "FIBA's 2026-27 Europe Cup article text and footer link it (https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/news/everything-you-need-to-know-about-fiba-europe-cup-2026-27)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "basketball"
+    },
+    "thehomeofhandball": {
+      "who": "EHF (European Handball Federation) main account; EHF has no separate European Cup IG",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "Footer of EHF European Cup site; EHF article says it is the cross-competition hub for club comps (https://ehfec.eurohandball.com/news/en/ehf-european-cup-men-202627-clubs-look-forward-to-upcoming-draw/)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "handball"
+    },
+    "cevolleyball": {
+      "who": "CEV (European Volleyball)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "inside.cev.eu footer 'Social' section (https://inside.cev.eu)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "volleyball"
+    },
+    "cevbeachvolleyball": {
+      "who": "CEV Beach Volleyball",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "CEV announcement of dedicated beach accounts on inside.cev.eu (https://inside.cev.eu/articles/cev/cev-launches-dedicated-social-media-accounts-for-beach-volleyball)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "beach volleyball"
+    },
+    "worldathletics": {
+      "who": "World Athletics",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "worldathletics.org footer (https://www.worldathletics.org/athletes/_/14480568)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "athletics"
+    },
+    "worldarchery": {
+      "who": "World Archery",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "worldarchery.sport navigation/footer (https://www.worldarchery.sport/news/201426/)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "archery"
+    },
+    "issf_official": {
+      "who": "ISSF (shooting world federation; Nicosia hosts Shotgun World Cups)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "issf-sports.org footer (https://www.issf-sports.org/athletes/SHCYPM2806198801)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "shooting"
+    },
+    "glasgow_2026": {
+      "who": "Glasgow 2026 Commonwealth Games",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "glasgow2026.com footer (https://www.glasgow2026.com/news/4383967/marios-georgiou-gymnastics-goals-and-pretending-to-be-ed-sheeran-)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "multi-sport"
+    },
+    "cyprus.olympians": {
+      "who": "Cyprus Olympians Association",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "cyprusolympians.org footer 'Follow on Instagram' (https://cyprusolympians.org/en/?p=3006)",
+      "kind": "org",
+      "checked": "2026-10-24",
+      "sport": "multi-sport"
+    },
+    "limassolnauticalclub": {
+      "who": "Limassol Nautical Club (Pavlos Kontides' club)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "Club's own site links it (https://www.limassolnauticalclub.com/en/pavlos-kontides)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "sport": "sailing"
+    },
+    "pavloskontides": {
+      "who": "Pavlos Kontides (sailor, ILCA 7)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "World Sailing official athlete profile lists it (https://www.sailing.org/sailor/pavlos-kontides?ref=CYPPK1)",
+      "kind": "athlete",
+      "checked": "2026-10-24",
+      "sport": "sailing"
+    },
+    "marios_georgiou_gym": {
+      "who": "Marios Georgiou (artistic gymnast)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "FIG (gymnastics.sport) official athlete bio lists it (https://www.gymnastics.sport/site/athletes/bio_detail.php?id=36888)",
+      "kind": "athlete",
+      "checked": "2026-10-24",
+      "sport": "gymnastics"
     }
   },
   "unconfirmed_or_do_not_use": {
     "anorthosisfc.official / anorthosisfc_official": "Anorthosis: club site links two different handles; check which is live",
-    "homenetmenbeirut": "This is the Homenetmen scouting/community organisation, NOT the basketball team; do not tag as the team"
+    "homenetmenbeirut": "This is the Homenetmen scouting/community organisation, NOT the basketball team; do not tag as the team",
+    "anorthosisfc.official": "Anorthosis Famagusta FC (candidate 1): CONFLICT: official site header links this handle, footer links anorthosisfc_official (checked /, /en/). Could not resolve which is live; check in-app (verified tick/followers) before tagging (https://www.anorthosisfc.com.cy/)",
+    "anorthosisfc_official": "Anorthosis Famagusta FC (candidate 2): CONFLICT: official site footer 'SOCIAL MEDIA' block links this handle, header links anorthosisfc.official. Verify in-app before tagging (https://www.anorthosisfc.com.cy/)",
+    "anorthosis": "Anorthosis FC: club site links both anorthosisfc.official (header) and anorthosisfc_official (footer); Geoffry to check which is verified in the app (24 Oct)"
   }
 }
