@@ -34,9 +34,10 @@
     "created_by": "morning desk 24 Oct"
    },
    "result": {
-    "status": "pending",
-    "spec": null,
-    "metricool_id": null
+    "status": "held",
+    "score": "Central 86-78 NSA (final per Geoffry, 23:33; FLBB app screenshot at Q4 0:41 showed 83-76)",
+    "spec": "specs/2026-10-24/lb-central-nsa-result.json",
+    "note": "HOLD: Geoffry asked to see the card before it's posted (23:33). Built, NOT scheduled. Result desk: don't schedule it; only finish verification (FLBB final screen/post or two outlets with 86-78) and wait for Geoffry's OK."
    }
   },
   {
