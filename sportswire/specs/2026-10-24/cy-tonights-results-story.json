@@ -137,5 +137,37 @@
   "visual_check": {
     "done": true,
     "notes": "Read back: TONIGHT'S RESULTS · SATURDAY 24 OCTOBER, 'Saturday in Cypriot sport.', FINAL; Olympiakos Nicosia 1-1 Krasava (Cyprus League), Anorthosis 2-0 Omonia Aradippou (Cyprus League), Apollon Limassol 75-90 Keravnos (Basket League), ENP 74-85 Petrolina AEK (Basket League); crests where we have them; footer 'Reply with your team of the day'. No clipping."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-24T22:40+03:00",
+    "agent": "independent general-purpose agent, Story text only",
+    "claims": [
+      {
+        "claim": "Saturday 24 October, all final",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria/1057468/bathmologia-54"
+      },
+      {
+        "claim": "Olympiakos Nicosia 1-1 Krasava",
+        "verdict": "CONFIRMED",
+        "url": "https://www.kerkida.net/eidiseis/a-katigoria/olympiakos-leykosias/mporoysan-kai-oi-dyo-symbibasmos-sto-gsp"
+      },
+      {
+        "claim": "Anorthosis 2-0 Omonia Aradippou",
+        "verdict": "CONFIRMED",
+        "url": "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki"
+      },
+      {
+        "claim": "Apollon Limassol 75-90 Keravnos",
+        "verdict": "CONFIRMED",
+        "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apollonas/diplo-stin-lemeso-o-keraynos"
+      },
+      {
+        "claim": "ENP 74-85 Petrolina AEK",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057484/tria-sta-tria-ghia-tin-aek-me-diplo-epi-tis-enosis"
+      }
+    ]
   }
 }

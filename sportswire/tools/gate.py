@@ -215,10 +215,12 @@ def tag_problems(spec: dict, cap: str, handles: dict, cards: list, high: set) ->
         nt = v.get('national_team') or {}
         if nt and f'flag:{nt.get("flag")}' in logos and nt.get('sport') == sport:
             need.add(h.lower())
+    is_story = spec.get('format') == 'story' or cap.startswith('(Story')
     for h in sorted(need - mentioned):
+        if is_story:
+            break  # Stories have no caption; tags there are added by hand (PLAYBOOK 7, Tags)
         probs.append(f'tag @{h} in the caption: its logo is on the card (always tag the people in the story)')
     # the sport's federation (and other accounts that cover the whole sport) on every feed post (Geoffry, 24 Oct 2026)
-    is_story = spec.get('format') == 'story' or cap.startswith('(Story')
     if not is_story and spec['date'] >= '2026-10-24':
         for h, v in handles.items():
             cov = v.get('covers') or {}

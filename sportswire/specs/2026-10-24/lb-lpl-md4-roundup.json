@@ -103,5 +103,53 @@
   "visual_check": {
     "done": true,
     "notes": "Read back: LEBANESE PREMIER LEAGUE · MATCHDAY 4, 'Wins for Tadamon Sour and Jwaya.', FULL TIME, Tripoli 1 – 2 Tadamon Sour (Friday), Jwaya 2 – 0 Shabab Al Sahel (Saturday). No crests (only Tadamon Sour has one; left off for balance). Light card. No clipping."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-24T22:40+03:00",
+    "agent": "independent general-purpose agent, card text and caption only; re-checked after one fix",
+    "arabic_checked": true,
+    "claims": [
+      {
+        "claim": "Lebanese Premier League matchday 4",
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/news/show/844927/"
+      },
+      {
+        "claim": "Tripoli 1-2 Tadamon Sour, full time (Tripoli at home)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1751313"
+      },
+      {
+        "claim": "Played Friday 23 Oct",
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/news/show/844927/"
+      },
+      {
+        "claim": "Jwaya 2-0 Shabab Al Sahel, full time (Jwaya at home, Said Saad Stadium)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1751586"
+      },
+      {
+        "claim": "Played Saturday 24 Oct (today)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1751557"
+      },
+      {
+        "claim": "Club names",
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/news/show/845049/"
+      },
+      {
+        "claim": "'Two results from matchday 4' (was WRONG as 'matchday 4 so far': Safa also won; reworded and re-checked)",
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/news/show/845060/"
+      },
+      {
+        "claim": "Arabic says the same as the English; names and numbers right",
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/news/show/845049/"
+      }
+    ]
   }
 }
