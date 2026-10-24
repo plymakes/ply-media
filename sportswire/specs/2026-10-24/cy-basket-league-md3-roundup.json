@@ -72,6 +72,11 @@
           "url": "https://cyprusbasket.net/portal/2026/10/perase-apo-to-palataki-i-petrolina-aek-me-charaktira-lygise-tin-enp/",
           "tier": 2,
           "outlet": "Cyprus Basket (19:11)"
+        },
+        {
+          "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057484/tria-sta-tria-ghia-tin-aek-me-diplo-epi-tis-enosis",
+          "tier": 2,
+          "outlet": "Politis Gipedo"
         }
       ]
     }
@@ -97,5 +102,47 @@
   "visual_check": {
     "done": true,
     "notes": "Read back: ECOMMBX BASKET LEAGUE · MATCHDAY 3, 'Keravnos and AEK stay perfect.', FINAL · SATURDAY 24 OCTOBER; Apollon Limassol (Apollon crest) 75 – 90 Keravnos (Keravnos 100-years crest), note Keravnos 3-0; ENP (ENP crest) 74 – 85 Petrolina AEK (AEK basketball crest), note AEK 3-0. Crests on the right clubs. No photo: Kerkida's only picture shows Keravnos at their own arena, not this game."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-24T20:05+03:00",
+    "agent": "independent general-purpose agent, card text and caption only",
+    "claims": [
+      {
+        "claim": "ECOMMBX Basket League matchday 3, Sat 24 Oct, 17:00",
+        "verdict": "CONFIRMED",
+        "url": "https://balla.com.cy/2026/10/dyo-agones-gia-tin-3i-agonistiki-stin-basket-league-programma/"
+      },
+      {
+        "claim": "Apollon 75-90 Keravnos, final",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057473/triti-sinekhomeni-niki-ghia-ton-kerauno-epikratise-kai-toy-apollona"
+      },
+      {
+        "claim": "Keravnos 3-0",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057473/triti-sinekhomeni-niki-ghia-ton-kerauno-epikratise-kai-toy-apollona"
+      },
+      {
+        "claim": "ENP 74-85 Petrolina AEK, final",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057484/tria-sta-tria-ghia-tin-aek-me-diplo-epi-tis-enosis"
+      },
+      {
+        "claim": "AEK 3-0",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057484/tria-sta-tria-ghia-tin-aek-me-diplo-epi-tis-enosis"
+      },
+      {
+        "claim": "Two away wins",
+        "verdict": "CONFIRMED",
+        "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apollonas/diplo-stin-lemeso-o-keraynos"
+      },
+      {
+        "claim": "Club names",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057484/tria-sta-tria-ghia-tin-aek-me-diplo-epi-tis-enosis"
+      }
+    ]
   }
 }
