@@ -63,7 +63,7 @@
    "result_desk": {
     "trigger_ids": [
      "trig_019X5cVrGRQbcKXnaSNu8gm4",
-     "trig_018S67eumjSRYsJSpgVvgx21 (cancelled)"
+     "trig_018S67eumjSRYsJSpgVvgx21 (attempt 2: will stop, already posted)"
     ],
     "next_run": "2026-10-24T19:40+03:00",
     "created_by": "morning desk 24 Oct",
@@ -82,7 +82,7 @@
      "seen_final_by": "2026-10-24T18:52+03:00"
     },
     "final_at": "about 18:50 Cyprus (17:00 tip-offs)",
-    "note": "CBF results system needed a permission this run (not available unattended); Kerkida + Politis used. Attempt-2 desk cancelled."
+    "note": "CBF results system needed a permission this run (not available unattended); Kerkida + Politis used. The attempt-2 desk (20:34) will find it posted and stop."
    }
   },
   {
