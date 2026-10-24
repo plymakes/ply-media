@@ -34,21 +34,26 @@
         "created_by": "morning desk 24 Oct"
       },
       "result": {
-        "status": "held",
+        "status": "posted",
         "score": "Central 86-78 NSA",
         "spec": "specs/2026-10-24/lb-central-nsa-result.json",
-        "note": "Score conflict: Geoffry 86-78 vs AiScore 86-76. Draft in Metricool, not published. Result desk 00:25: do not schedule; check the FLBB box score / MTV / elsport and tell Geoffry.",
+        "note": "Released 00:30 25 Oct: conflict with AiScore (86-76) resolved by MTV Lebanon Sports' verified final (screenshot from Geoffry) and Sofascore Finished, both 86-78, plus Geoffry's FLBB app viewing.",
         "source": "FLBB app, confirmed by Geoffry in chat 23:45",
-        "metricool_id": 405262355,
-        "when": "2026-10-25T00:00+03:00",
-        "draft": true,
+        "metricool_id": 405280365,
+        "when": "2026-10-25T00:40+03:00",
+        "draft": false,
         "attempts": [
           {
             "at": "2026-10-25T00:25+03:00",
             "n": 1,
             "outcome": "still held: no official or tier-2 final yet (MTV, elsport, Sofascore searched); AiScore 86-76 vs Geoffry 86-78. Draft 405262355 stays a draft. Morning desk: check MTV/elsport/FLBB box score, fix the card to the confirmed score and ask Geoffry before scheduling."
           }
-        ]
+        ],
+        "first_source": {
+          "name": "MTV Lebanon Sports (Instagram)",
+          "url": "https://www.instagram.com/mtvlebsports/",
+          "at": "2026-10-24T23:33+03:00"
+        }
       }
     },
     {

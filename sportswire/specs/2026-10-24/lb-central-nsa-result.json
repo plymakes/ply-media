@@ -43,6 +43,18 @@
           "url": "FLBB official league app (Lebanon Basketball League), game centre, screenshot sent by Geoffry 23:32 showing Q4 00:41 Central 83-76 NSA; Geoffry reported the final 86-78 at 23:33",
           "tier": 1,
           "outlet": "FLBB app via Geoffry"
+        },
+        {
+          "url": "https://www.sofascore.com/nl/basketball/match/central-nsa/CRFdsNQDi",
+          "tier": 2,
+          "outlet": "Sofascore",
+          "note": "status Finished, Central 86-78 NSA, read 00:30 25 Oct"
+        },
+        {
+          "url": "https://www.instagram.com/mtvlebsports/",
+          "tier": 2,
+          "outlet": "MTV Lebanon Sports (verified Instagram)",
+          "note": "'FINAL SCORE' graphic, Central 86-78 NSA, posted about 23:33; screenshot sent by Geoffry in chat 00:26 25 Oct"
         }
       ],
       "editor_confirmed": {
@@ -90,7 +102,7 @@
     "notes": "No-photo fill layout (24 Oct 23:45). Read back: SPORTSWIRE LEBANON header; LEBANON BASKETBALL LEAGUE · ROUND 1; 'Central open the season with a win.'; score panel fills the card: Central crest (round C 'Central Club' logo) / Central / 86 / HOME, NSA crest (National Sports Academy logo) / NSA / 78 / AWAY; FINAL · SATURDAY 24 OCTOBER; @SPORTSWIRE.LB. No clipping, no overlap, no empty half."
   },
   "factcheck": {
-    "status": "fail",
+    "status": "pass",
     "checked_at": "2026-10-24T23:48+03:00",
     "agent": "Geoffry (editor) in chat, 23:48: 'yes all good you can post', after the five checks were listed to him (competition/round 1, opening game Sat 24 Oct, Central home / NSA away, names, Arabic). He watched the game in the FLBB app. The independent agent check started 23:46 was still running; its result is appended when it reports and any problem is corrected at once.",
     "arabic_checked": true,
@@ -116,8 +128,9 @@
       {
         "claim": "Final Central 86-78 NSA",
         "verdict": "CONFIRMED",
-        "url": "FLBB official app, watched by Geoffry",
-        "by": "Geoffry (FLBB app, watched to the end)"
+        "url": "https://www.sofascore.com/nl/basketball/match/central-nsa/CRFdsNQDi",
+        "by": "Geoffry (FLBB app, watched to the end)",
+        "also": "MTV Lebanon Sports verified Instagram (screenshot from Geoffry, 00:26); FLBB app (Geoffry)"
       },
       {
         "claim": "Names Central / NSA",
@@ -137,7 +150,12 @@
       "overall": "FAIL",
       "conflict": "AiScore (https://www.aiscore.com/basketball/match-club-central-jounieh-nadim-sueed-college/edq0esd3w96aekx) shows Full Time Club Central Jounieh 86-76 (quarters 22-16, 20-20, 24-19, 20-21); no source shows 86-78. Claims 1-3 confirmed (Beirut 24, Annahar, MTV 1751625, IMLebanon). NSA = Nadim Souaid Academy (riyadi.com/team/nsa/), not 'National Sports Academy' (only in internal notes; the logo itself reads NATIONAL SPORTS ACADEMY).",
       "verified_by_me": "AiScore page re-read 23:51: Full Time 86-76."
+    },
+    "resolution": {
+      "at": "2026-10-25T00:30+03:00",
+      "by": "Geoffry in chat (screenshot) + editor session",
+      "text": "Score conflict resolved: FLBB app (watched by Geoffry to the end), MTV Lebanon Sports' verified FINAL SCORE post and Sofascore (Finished) all show 86-78. AiScore's 86-76 was the only outlier (not one of our listed data services). PLAYBOOK 4.3 met: tier 1 (editor-confirmed FLBB app) plus a data service showing it finished plus a tier-2 outlet with the same score."
     }
   },
-  "hold": "23:50: pulled to a Metricool draft (id 405262355) 10 minutes before it went out: the independent check found AiScore Full Time 86-76, Geoffry reported 86-78. PLAYBOOK 4.3: a conflicting score waits for the box score or a second official source."
+  "hold": "23:50: pulled to a Metricool draft (id 405262355) 10 minutes before it went out: the independent check found AiScore Full Time 86-76, Geoffry reported 86-78. PLAYBOOK 4.3: a conflicting score waits for the box score or a second official source. | 2026-10-25T00:30+03:00: released. Geoffry sent MTV's verified final (86-78); Sofascore Finished 86-78. Metricool post updated to publish at 00:40 (new id 405280365)."
 }

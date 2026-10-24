@@ -1229,12 +1229,13 @@
       "spec": "specs/2026-10-24/lb-central-nsa-result.json",
       "logged_at": "2026-10-24T20:49:35+00:00",
       "status": "scheduled",
-      "scheduled_for": "2026-10-25T00:00:00+03:00",
-      "metricool_id": "405262056",
+      "scheduled_for": "2026-10-25T00:40:00+03:00",
+      "metricool_id": 405280365,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-1861248648169697689",
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/46a567f0fc19465965ac0eaac0463c7f72eeb72f/sportswire/posts/lb/2026-10/2026-10-24-central-nsa-result.png"
-      ]
+      ],
+      "note": "Held 23:50 for a score conflict (AiScore 86-76); released 00:30 after MTV and Sofascore confirmed 86-78."
     },
     {
       "page": "lb",
@@ -1265,11 +1266,12 @@
       },
       "spec": "specs/2026-10-24/lb-central-nsa-result.json",
       "logged_at": "2026-10-24T20:50:29+00:00",
-      "status": "draft",
-      "scheduled_for": "2026-10-25T00:00:00+03:00",
-      "metricool_id": "405262355",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-25T00:40:00+03:00",
+      "metricool_id": 405280365,
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-1861248648169697689",
-      "image_urls": []
+      "image_urls": [],
+      "note": "Held 23:50 for a score conflict (AiScore 86-76); released 00:30 after MTV and Sofascore confirmed 86-78."
     }
   ]
 }
