@@ -935,6 +935,39 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/52917f4305403cfce154af57f568b4b248ac964e/sportswire/posts/lb/2026-10/2026-10-24-afccl-ahal-ansar-result.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-24",
+      "slug": "predict-central-nsa",
+      "story_key": "lb-basket-2026-27-opener-central-nsa-predict",
+      "light": "green",
+      "sport": "basketball",
+      "format": "story",
+      "series": null,
+      "template": "predict",
+      "headline": "The new season opens tonight. *Your score?*",
+      "caption_first_line": "(Story: no caption)",
+      "sources": [
+        "https://elsport.com/basketball/844944/",
+        "https://www.al-akhbar.com/NewspaperArticles/sports/908180/",
+        "https://www.annahar.com/sports/358096/"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": [],
+        "no_tag_reason": "Story: no caption",
+        "no_collab_reason": "Story"
+      },
+      "spec": "specs/2026-10-24/lb-predict-central-nsa.json",
+      "logged_at": "2026-10-24T06:14:38+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T10:15",
+      "metricool_id": "404796394",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=3144469527762586729",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/3e509da6e4f0edb347f2976afe45b3e51ee1ef21/sportswire/stories/lb/2026-10/2026-10-24-predict-central-nsa.png"
+      ]
     }
   ]
 }

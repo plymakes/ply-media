@@ -7,10 +7,10 @@
    "page": "lb",
    "priority": "B",
    "sport": "basketball",
-   "title": "Central Club vs NSA, Lebanese basketball first division 2026-27, round 1 (season opener)",
+   "title": "Central vs NSA, Lebanese basketball first division 2026-27, round 1 (season opener)",
    "start_local": "2026-10-24T21:45+03:00",
    "start_confirmed": true,
-   "start_note": "elsport 23 Oct 19:45 (schedule re-issued after Tadamon Hrajel's withdrawal) and Al Akhbar 24 Oct. Venue not stated in either (an 18 Oct elsport piece said Jounieh, before the change).",
+   "start_note": "elsport 23 Oct 19:45 (schedule re-issued after Tadamon Hrajel's withdrawal) and Al Akhbar 24 Oct. Venue not stated in either (an 18 Oct elsport piece said Jounieh, before the change). Fact-check: home side and the English form 'Central Club' unconfirmed; write 'Central' (المركزية) and don't say who is at home.",
    "expected_end_local": "2026-10-24T23:50+03:00",
    "venue": null,
    "result_sources": [
@@ -22,7 +22,9 @@
    "preview": {
     "status": "scheduled",
     "spec": "specs/2026-10-24/lb-predict-central-nsa.json",
-    "format": "predict Story"
+    "format": "predict Story",
+    "metricool_id": 404796394,
+    "when": "2026-10-24T10:15+03:00"
    },
    "result_desk": {
     "trigger_ids": [
