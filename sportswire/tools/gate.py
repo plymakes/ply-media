@@ -337,6 +337,11 @@ def check(path: str) -> list[str]:
         srcs = f.get('sources') or []
         claims_text += ' ' + f.get('claim', '')
         t1 = [s for s in srcs if s.get('tier') == 1 and s.get('url', '').startswith('http')]
+        # Geoffry's own word in chat (he watched it on an official app/stream) counts as the official source,
+        # but only when he gave it himself in this conversation: never in an unattended run (PLAYBOOK 4.3).
+        ed = f.get('editor_confirmed') or {}
+        if ed.get('by') == 'Geoffry' and ed.get('at') and ed.get('quote') and ed.get('how'):
+            t1 = t1 or [ed]
         t2_sites = {urlparse(s['url']).netloc.replace('www.', '') for s in srcs if s.get('tier') == 2 and s.get('url', '').startswith('http')}
         if not t1 and len(t2_sites) < 2:
             probs.append(f'fact {i} "{f.get("claim", "")[:60]}" needs a tier-1 source or two tier-2 sources on different sites')

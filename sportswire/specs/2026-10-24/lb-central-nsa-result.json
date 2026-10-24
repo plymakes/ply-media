@@ -45,7 +45,12 @@
           "outlet": "FLBB app via Geoffry"
         }
       ],
-      "status": "pending: needs the app's FINAL screen or the FLBB/club post, or two outlets with 86-78"
+      "editor_confirmed": {
+        "by": "Geoffry",
+        "at": "2026-10-24T23:45+03:00",
+        "how": "watched the game to the end in the FLBB's official league app (game centre); screenshot at Q4 00:41 showed Central 83-76 NSA; final 86-78 reported 23:33",
+        "quote": "86-78 final score ... trust me i watched it"
+      }
     },
     {
       "claim": "It was the opening game of the 2026-27 season",
@@ -73,7 +78,6 @@
     ],
     "note": "NSA: no confirmed handle (candidate @nsaclubofficial, low) and no crest yet"
   },
-  "hold": "Geoffry wants to see it before it's scheduled (24 Oct 23:33)",
   "images": [
     "posts/lb/2026-10/2026-10-24-central-nsa-result.png"
   ],
