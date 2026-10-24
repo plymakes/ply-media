@@ -29,12 +29,9 @@
     "status": [
       "Final",
       "Saturday 24 October"
-    ],
-    "photo": {
-      "file": "media/photos/2026-10/2026-10-24-central-nsa-result.jpg"
-    }
+    ]
   },
-  "caption": "Central start the new season with a win. 🏀\n86-78 over NSA in the opening game of the Lebanese basketball league.\n\nالمركزية بلّش الموسم بفوز 🏀\n86-78 على NSA بافتتاح الدوري اللبناني لكرة السلة.\n\n📸 Annahar (file photo)\nSource: Lebanese Basketball Federation\n@clubcentraljounieh @flb_official\n#SportsWireLB #LebaneseBasketball",
+  "caption": "Central start the new season with a win. 🏀\n86-78 over NSA in the opening game of the Lebanese basketball league.\n\nالمركزية بلّش الموسم بفوز 🏀\n86-78 على NSA بافتتاح الدوري اللبناني لكرة السلة.\n\nSource: Lebanese Basketball Federation\n@clubcentraljounieh @flb_official\n#SportsWireLB #LebaneseBasketball",
   "alt": [
     "Result card: Lebanon Basketball League, round 1, final, Saturday 24 October: Central 86, NSA 78. Central open the season with a win."
   ],
@@ -83,5 +80,9 @@
   "render": {
     "ok": true,
     "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "No-photo fill layout (24 Oct 23:45). Read back: SPORTSWIRE LEBANON header; LEBANON BASKETBALL LEAGUE · ROUND 1; 'Central open the season with a win.'; score panel fills the card: Central crest (round C 'Central Club' logo) / Central / 86 / HOME, NSA crest (National Sports Academy logo) / NSA / 78 / AWAY; FINAL · SATURDAY 24 OCTOBER; @SPORTSWIRE.LB. No clipping, no overlap, no empty half."
   }
 }

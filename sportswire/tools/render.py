@@ -162,16 +162,19 @@ def t_result(c, th, acc):
 
     big = not c.get('_photo')  # without a photo the logos carry the card: big crests/flags above the names
 
+    # no photo and both logos: the score panel fills the card (Geoffry, 24 Oct 2026: "better layout for the post to cover")
+    fill = big and c['home'].get('crest') and c['away'].get('crest')
+
     def side(s, key, default_label):
         hi = ours == key
         if big and s.get('crest'):
-            return (f'<div class="sc big{" hi" if hi else ""}">{crest(s.get("crest"), 132)}<span class="nm nw">{esc(s["name"])}</span>'
-                    f'<div class="num{" ac" if hi else ""}">{esc(s["score"])}</div>'
+            return (f'<div class="sc big{" hi" if hi else ""}">{crest(s.get("crest"), 200 if fill else 132)}<span class="nm nw">{esc(s["name"])}</span>'
+                    f'<div class="num{" xl" if fill else ""}{" ac" if hi else ""}">{esc(s["score"])}</div>'
                     f'<div class="lbl">{esc(s.get("label", default_label)).upper()}</div></div>')
         return (f'<div class="sc{" hi" if hi else ""}"><div class="scn">{crest(s.get("crest"), 64)}<span class="nm nw">{esc(s["name"])}</span></div>'
                 f'<div class="num{" ac" if hi else ""}">{esc(s["score"])}</div>'
                 f'<div class="lbl">{esc(s.get("label", default_label)).upper()}</div></div>')
-    b = f'<div class="score">{side(c["home"], "home", "HOME")}{side(c["away"], "away", "AWAY")}</div>'
+    b = f'<div class="score{" fill" if fill else ""}">{side(c["home"], "home", "HOME")}{side(c["away"], "away", "AWAY")}</div>'
     if c.get('status'):
         b += f'<div class="status">{eyebrow(c["status"])}</div>'
     p = c.get('periods')
@@ -484,6 +487,10 @@ body{{background:{th['bg']};color:{th['fg']};font-family:Manrope,sans-serif;-web
 .sc.big{{display:flex;flex-direction:column;align-items:center;text-align:center;padding:38px 30px 30px}}
 .sc.big .crest{{margin-bottom:18px}}
 .sc.big .nm{{max-width:100%}}
+.score.fill{{flex:1 1 auto;min-height:0}}
+.score.fill .sc.big{{justify-content:center;padding:30px 24px}}
+.score.fill .nm{{font-size:52px}}
+.num.xl{{font-size:150px}}
 .scn{{display:flex;align-items:center;gap:16px;min-width:0}}
 .nm{{font:800 44px Rubik;letter-spacing:-.01em;min-width:0}}
 .num{{font:700 112px/1 'JetBrains Mono';margin-top:16px;letter-spacing:-.02em}}
