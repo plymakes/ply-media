@@ -1,0 +1,84 @@
+{
+  "page": "lb",
+  "format": "story",
+  "theme": "dark",
+  "date": "2026-10-24",
+  "event_date": "2026-10-24",
+  "slug": "predict-central-nsa",
+  "story_key": "lb-basket-2026-27-opener-central-nsa-predict",
+  "light": "green",
+  "sport": "basketball",
+  "template": "predict",
+  "card": {
+    "eyebrow": [
+      "Predict the score",
+      "Division A"
+    ],
+    "headline": "The new season opens tonight. *Your score?*",
+    "home": {
+      "name": "Central Club",
+      "label": "Home"
+    },
+    "away": {
+      "name": "NSA",
+      "label": "Away"
+    },
+    "status": [
+      "Saturday · 21:45 Beirut time"
+    ],
+    "footer": "Reply with your score"
+  },
+  "caption": "(Story: no caption)\n\nSource: elsport, Al Akhbar",
+  "alt": [
+    "Predict-the-score Story: the Lebanese basketball first division 2026-27 opens tonight, Saturday 24 October, with Central Club vs. NSA at 21:45 Beirut time. Drop your score."
+  ],
+  "facts": [
+    {
+      "claim": "The Lebanese men's basketball first division (Division A) 2026-27 opens on Saturday 24 October 2026 with Central (Jounieh, home) vs NSA at 21:45 Beirut time (schedule re-issued 23 Oct after Tadamon Hrajel's withdrawal)",
+      "sources": [
+        {
+          "url": "https://elsport.com/basketball/844944/",
+          "tier": 2,
+          "outlet": "elsport (23 Oct 19:45)"
+        },
+        {
+          "url": "https://www.al-akhbar.com/NewspaperArticles/sports/908180/",
+          "tier": 2,
+          "outlet": "Al Akhbar (24 Oct)"
+        }
+      ]
+    },
+    {
+      "claim": "Season label 2026-27 (2026-2027 Lebanese men's first division)",
+      "sources": [
+        {
+          "url": "https://elsport.com/basketball/844944/",
+          "tier": 2,
+          "outlet": "elsport"
+        },
+        {
+          "url": "https://www.annahar.com/sports/358096/",
+          "tier": 2,
+          "outlet": "Annahar (18 Oct: season starts 24 Oct)"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": [],
+    "no_tag_reason": "Story: no caption",
+    "no_collab_reason": "Story"
+  },
+  "images": [
+    "stories/lb/2026-10/2026-10-24-predict-central-nsa.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Read back: PREDICT THE SCORE · DIVISION A, 'The new season opens tonight. Your score?', Central Club ? HOME vs. NSA ? AWAY, SATURDAY · 21:45 BEIRUT TIME, 'Reply with your score'. Crests left off both sides (no NSA crest; one-sided layout looked broken). Nothing clipped."
+  }
+}

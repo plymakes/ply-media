@@ -1,0 +1,141 @@
+{
+  "page": "lb",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-10-24",
+  "event_date": "2026-10-23",
+  "slug": "afccl-ahal-ansar-result",
+  "story_key": "lb-afccl-2026-md3-ahal-ansar-result",
+  "light": "green",
+  "sport": "football",
+  "template": "result",
+  "card": {
+    "photo": {
+      "file": "media/photos/2026-10/2026-10-24-afccl-ahal-ansar-result.jpg"
+    },
+    "eyebrow": [
+      "AFC Challenge League",
+      "Group A"
+    ],
+    "headline": "Al Ansar lose, but *top the group*.",
+    "home": {
+      "name": "Ahal FC",
+      "score": 2,
+      "label": "Turkmenistan"
+    },
+    "away": {
+      "name": "Al Ansar",
+      "score": 1,
+      "crest": "al-ansar",
+      "label": "Lebanon"
+    },
+    "ours": "away",
+    "status": [
+      "Full time",
+      "Matchday 3"
+    ],
+    "highlight": {
+      "big": "QF",
+      "text": "Al Ansar are into the quarter-finals as Group A winners."
+    }
+  },
+  "caption": "Al Ansar are into the AFC Challenge League quarter-finals as Group A winners, despite a 2-1 defeat to Ahal FC in Thimphu on Friday. ⚽\n\nWins over Paro FC and Al Ittihad Ahli of Aleppo had already put them top, and they stayed there.\n\nNejmeh's 3-1 win over Al Arabi wasn't enough in Group B: they finished second on six points, behind Homs Al Fidaa, and the West Zone's one best-runner-up place went to Al Ittihad Ahli of Aleppo.\n\nHow far can Al Ansar go? 🇱🇧\n\n📸 AFC\nSource: AFC\n@nejmeh_sc\n#SportsWireLB #LebaneseFootball",
+  "alt": [
+    "Result card over a photo of the two captains with the match officials before kick-off in Thimphu: AFC Challenge League Group A, matchday 3, full time: Ahal FC (Turkmenistan) 2, Al Ansar (Lebanon) 1. Al Ansar lose but top the group and are into the quarter-finals as Group A winners."
+  ],
+  "facts": [
+    {
+      "claim": "AFC Challenge League Group A, matchday 3, Friday 23 Oct 2026, Thimphu (Bhutan): Ahal FC (TKM) 2-1 Al Ansar FC (LBN), full time",
+      "sources": [
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-ahal-fc-tkm-2-1-al-ansar-fc-lbn",
+          "tier": 1,
+          "outlet": "AFC match report"
+        },
+        {
+          "url": "https://www.lebanon24.com/news/sports/1586248",
+          "tier": 2,
+          "outlet": "Lebanon24 (Ahal 2-1, Mamiyev pen 45', Osman 63')"
+        }
+      ]
+    },
+    {
+      "claim": "Al Ansar won their first two Group A games, against Paro FC (2-1) and Al Ittihad Ahli of Aleppo (2-0), and were Group A leaders before matchday 3",
+      "sources": [
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-ahal-fc-tkm-2-1-al-ansar-fc-lbn",
+          "tier": 1,
+          "outlet": "AFC ('Group A leaders', two wins)"
+        },
+        {
+          "url": "https://www.the-afc.com/ar/club/afc_challenge_league.html/news/group-a-al-ansar-fc-lbn-2-0-al-ittihad-ahli-of-aleppo-sc-syr-1",
+          "tier": 1,
+          "outlet": "AFC (Al Ansar 2-0 Al-Ittihad Ahli)"
+        },
+        {
+          "url": "https://www.the-afc.com/ar/club/afc_challenge_league.html/news/group-a-paro-fc-bhu-1-2-al-ansar-fc-lbn-1",
+          "tier": 1,
+          "outlet": "AFC (Paro 1-2 Al Ansar)"
+        }
+      ]
+    },
+    {
+      "claim": "Al Ansar finished top of Group A (Al Ittihad Ahli of Aleppo 'finished behind Lebanon's Al Ansar FC') and qualify for the quarter-finals as group winners (West Zone: three group winners plus the best runner-up)",
+      "sources": [
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-al-ittihad-ahli-of-aleppo-syr-2-1-paro-fc-bhu",
+          "tier": 1,
+          "outlet": "AFC (Ittihad finished behind Al Ansar; Ittihad through as best second-placed side of the three West Zone groups)"
+        },
+        {
+          "url": "https://www.lebanon24.com/news/sports/1586248",
+          "tier": 2,
+          "outlet": "Lebanon24 ('حافظ الأنصار على صدارة المجموعة برصيد 6 نقاط، ليضمن تأهله إلى الدور ربع النهائي')"
+        }
+      ]
+    },
+    {
+      "claim": "Nejmeh beat Al Arabi 3-1 in Group B on matchday 3, finished second with six (6) points, three behind Homs Al Fidaa, and did not qualify for the quarter-finals",
+      "sources": [
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-fc-istiklol-tjk-0-2-homs-al-fidaa-sc-syr",
+          "tier": 1,
+          "outlet": "AFC ('Nejmeh finished second in the group with six points - three behind Syria's Homs Al Fidaa SC - but the win was not enough')"
+        },
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-al-arabi-sc-kuw-1-3-nejmeh-sc-lbn",
+          "tier": 1,
+          "outlet": "AFC (Al Arabi 1-3 Nejmeh)"
+        }
+      ]
+    },
+    {
+      "claim": "The West Zone's best-runner-up quarter-final place went to Al Ittihad Ahli of Aleppo",
+      "sources": [
+        {
+          "url": "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-al-ittihad-ahli-of-aleppo-syr-2-1-paro-fc-bhu",
+          "tier": 1,
+          "outlet": "AFC ('best second-placed side from the three West Zone groups')"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "nejmeh_sc"
+    ],
+    "collaborators": [],
+    "no_collab_reason": "Al Ansar lost the game (no invite on a defeat) and have no confirmed handle yet; Nejmeh are out (mention only)"
+  },
+  "images": [
+    "posts/lb/2026-10/2026-10-24-afccl-ahal-ansar-result.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Read back: SPORTSWIRE LEBANON, PHOTO: AFC, eyebrow AFC CHALLENGE LEAGUE · GROUP A, 'Al Ansar lose, but top the group.', Ahal FC 2 TURKMENISTAN (no crest available), Al Ansar crest 1 LEBANON (our side highlighted), FULL TIME · MATCHDAY 3, QF 'Al Ansar are into the quarter-finals as Group A winners.' Photo: AFC gallery picture of the two captains (Al Ansar #10 in green) with the match officials in Thimphu before kick-off; nothing awkward. No clipping."
+  }
+}
