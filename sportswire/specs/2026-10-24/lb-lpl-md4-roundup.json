@@ -1,0 +1,107 @@
+{
+  "page": "lb",
+  "format": "post",
+  "theme": "light",
+  "date": "2026-10-24",
+  "event_date": "2026-10-24",
+  "slug": "lpl-md4-roundup",
+  "story_key": "lb-lpl-2026-md4-fri-sat-roundup",
+  "light": "green",
+  "sport": "football",
+  "template": "roundup",
+  "card": {
+    "eyebrow": [
+      "Lebanese Premier League",
+      "Matchday 4"
+    ],
+    "headline": "Wins for *Tadamon Sour* and *Jwaya*.",
+    "status": [
+      "Full time"
+    ],
+    "rows": [
+      {
+        "home": "Tripoli",
+        "home_score": 1,
+        "away": "Tadamon Sour",
+        "away_score": 2,
+        "note": "Friday"
+      },
+      {
+        "home": "Jwaya",
+        "home_score": 2,
+        "away": "Shabab Al Sahel",
+        "away_score": 0,
+        "note": "Saturday"
+      }
+    ]
+  },
+  "caption": "Matchday 4 so far in the Lebanese Premier League. ⚽\nTadamon Sour won 2-1 at Tripoli on Friday. Jwaya beat Shabab Al Sahel 2-0 today.\n\nالمرحلة الرابعة من الدوري اللبناني لحد هلّق ⚽\nالتضامن صور ربح 2-1 بطرابلس يوم الجمعة، وجويا غلب شباب الساحل 2-0 اليوم.\n\nSource: elsport, MTV Lebanon\n@thelfadotcom\n#SportsWireLB #LebaneseFootball",
+  "alt": [
+    "Results card, Lebanese Premier League matchday 4, full time: Tripoli 1, Tadamon Sour 2 (Friday); Jwaya 2, Shabab Al Sahel 0 (Saturday)."
+  ],
+  "facts": [
+    {
+      "claim": "Lebanese Premier League matchday 4, Fri 23 Oct 2026, in Tripoli: Tripoli 1-2 Tadamon Sour (Tadamon away), full time",
+      "sources": [
+        {
+          "url": "https://elsport.com/news/show/844927/",
+          "tier": 2,
+          "outlet": "elsport (Fri 17:18)"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1751313",
+          "tier": 2,
+          "outlet": "MTV Lebanon (Fri 17:22)"
+        }
+      ]
+    },
+    {
+      "claim": "Lebanese Premier League matchday 4, Sat 24 Oct 2026: Jwaya 2-0 Shabab Al Sahel, full time (elsport lists Jwaya first; home side not stated by MTV)",
+      "sources": [
+        {
+          "url": "https://elsport.com/news/show/845049/",
+          "tier": 2,
+          "outlet": "elsport (Sat 18:28)"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1751586",
+          "tier": 2,
+          "outlet": "MTV Lebanon (Sat 18:27)"
+        }
+      ]
+    },
+    {
+      "claim": "Matchday 4 (round 4)",
+      "sources": [
+        {
+          "url": "https://elsport.com/news/show/844927/",
+          "tier": 2,
+          "outlet": "elsport"
+        },
+        {
+          "url": "https://www.mtv.com.lb/news/1751313",
+          "tier": 2,
+          "outlet": "MTV Lebanon"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "thelfadotcom"
+    ],
+    "collaborators": [],
+    "note": "No confirmed handles for Tadamon Sour, Jwaya, Tripoli or Shabab Al Sahel (candidates listed for Geoffry). Safa 2-1 at Akhaa Ahli Aley and Al Ahed 1-0 Riyadi Abbasiya left out: only elsport among our sources."
+  },
+  "images": [
+    "posts/lb/2026-10/2026-10-24-lpl-md4-roundup.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Read back: LEBANESE PREMIER LEAGUE · MATCHDAY 4, 'Wins for Tadamon Sour and Jwaya.', FULL TIME, Tripoli 1 – 2 Tadamon Sour (Friday), Jwaya 2 – 0 Shabab Al Sahel (Saturday). No crests (only Tadamon Sour has one; left off for balance). Light card. No clipping."
+  }
+}

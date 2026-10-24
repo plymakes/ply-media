@@ -1,0 +1,141 @@
+{
+  "page": "cy",
+  "format": "story",
+  "theme": "dark",
+  "date": "2026-10-24",
+  "event_date": "2026-10-24",
+  "slug": "tonights-results-story",
+  "story_key": "cy-2026-10-24-tonights-results",
+  "light": "green",
+  "sport": "football",
+  "template": "roundup",
+  "card": {
+    "eyebrow": [
+      "Tonight's results",
+      "Saturday 24 October"
+    ],
+    "headline": "Saturday in *Cypriot sport*.",
+    "status": [
+      "Final"
+    ],
+    "rows": [
+      {
+        "home": "Olympiakos Nicosia",
+        "home_score": 1,
+        "away": "Krasava",
+        "away_score": 1,
+        "away_crest": "krasava",
+        "note": "Cyprus League"
+      },
+      {
+        "home": "Anorthosis",
+        "home_score": 2,
+        "away": "Omonia Aradippou",
+        "away_score": 0,
+        "note": "Cyprus League"
+      },
+      {
+        "home": "Apollon Limassol",
+        "home_score": 75,
+        "away": "Keravnos",
+        "away_score": 90,
+        "home_crest": "apollon-basketball",
+        "away_crest": "keravnos",
+        "note": "Basket League"
+      },
+      {
+        "home": "ENP",
+        "home_score": 74,
+        "away": "Petrolina AEK",
+        "away_score": 85,
+        "home_crest": "enp-basketball",
+        "away_crest": "aek-basketball",
+        "note": "Basket League"
+      }
+    ],
+    "footnote": "Reply with your team of the day"
+  },
+  "caption": "(Story: no caption)\n\nSource: Kerkida, Politis, Cyprus Times",
+  "alt": [
+    "Tonight's results Story, Saturday 24 October: Cyprus League: Olympiakos Nicosia 1, Krasava 1; Anorthosis 2, Omonia Aradippou 0. ECOMMBX Basket League: Apollon Limassol 75, Keravnos 90; ENP 74, Petrolina AEK 85."
+  ],
+  "facts": [
+    {
+      "claim": "Olympiakos Nicosia 1-1 Krasava, Cyprus League round 7, Sat 24 Oct 2026, full time",
+      "sources": [
+        {
+          "url": "https://www.kerkida.net/eidiseis/a-katigoria/olympiakos-leykosias/mporoysan-kai-oi-dyo-symbibasmos-sto-gsp",
+          "tier": 2,
+          "outlet": "Kerkida"
+        },
+        {
+          "url": "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria/1057396/oli-krasava",
+          "tier": 2,
+          "outlet": "Politis"
+        }
+      ]
+    },
+    {
+      "claim": "Anorthosis 2-0 Omonia Aradippou, Cyprus League round 7, Sat 24 Oct 2026, full time",
+      "sources": [
+        {
+          "url": "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki",
+          "tier": 2,
+          "outlet": "Kerkida"
+        },
+        {
+          "url": "https://shootandgoal.cyprustimes.com/podosfairo-kyprou/a-katigoria/me-to-dexi-i-anorthosi-stin-epochi-intzchaki/",
+          "tier": 2,
+          "outlet": "Cyprus Times"
+        }
+      ]
+    },
+    {
+      "claim": "Apollon Limassol 75-90 Keravnos, ECOMMBX Basket League, Sat 24 Oct 2026, final",
+      "sources": [
+        {
+          "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apollonas/diplo-stin-lemeso-o-keraynos",
+          "tier": 2,
+          "outlet": "Kerkida"
+        },
+        {
+          "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057473/triti-sinekhomeni-niki-ghia-ton-kerauno-epikratise-kai-toy-apollona",
+          "tier": 2,
+          "outlet": "Politis"
+        }
+      ]
+    },
+    {
+      "claim": "ENP 74-85 Petrolina AEK, ECOMMBX Basket League, Sat 24 Oct 2026, final",
+      "sources": [
+        {
+          "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/aek/perase-dyskola-ap-paralimni-i-aek",
+          "tier": 2,
+          "outlet": "Kerkida"
+        },
+        {
+          "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057484/tria-sta-tria-ghia-tin-aek-me-diplo-epi-tis-enosis",
+          "tier": 2,
+          "outlet": "Politis"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": [],
+    "no_tag_reason": "Story: no caption",
+    "no_collab_reason": "Story"
+  },
+  "images": [
+    "stories/cy/2026-10/2026-10-24-tonights-results-story.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Read back: TONIGHT'S RESULTS · SATURDAY 24 OCTOBER, 'Saturday in Cypriot sport.', FINAL; Olympiakos Nicosia 1-1 Krasava (Cyprus League), Anorthosis 2-0 Omonia Aradippou (Cyprus League), Apollon Limassol 75-90 Keravnos (Basket League), ENP 74-85 Petrolina AEK (Basket League); crests where we have them; footer 'Reply with your team of the day'. No clipping."
+  }
+}
