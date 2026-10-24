@@ -832,6 +832,109 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/c0e8d383b6ffbf23a0b6e6f3e9963ec7bc65dacc/sportswire/posts/cy/2026-10/2026-10-23-apoel-achilleas-result.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-24",
+      "slug": "quiz-fiba-world-cups",
+      "story_key": "lb-quiz-2026-10-24-fiba-world-cups",
+      "light": "green",
+      "sport": "basketball",
+      "format": "story",
+      "series": null,
+      "template": "quiz,answer",
+      "headline": "How many FIBA *World Cups* have Lebanon played?",
+      "caption_first_line": "(Story: no caption)",
+      "sources": [
+        "https://lbcgroup.tv/news/news-bulletin-reports/719833/lebanese-basketball-team-prepares-for-a-tough-world-cup-run-after-a-13/en",
+        "https://www.fiba.basketball/en/events/fiba-olympic-qualifying-tournament-2024-valencia-spain/news/oqt-spain-2024-news-qualified-team-focus-lebanon-arakji-and-co-hungry-for-first-ever-olympics-ticket"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": [],
+        "no_tag_reason": "Story: no caption to tag in",
+        "no_collab_reason": "Story"
+      },
+      "spec": "specs/2026-10-24/lb-quiz-fiba-world-cups.json",
+      "logged_at": "2026-10-24T06:09:55+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T13:30",
+      "metricool_id": "404791151",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=8982820289193394189",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/529e506bcfa7f2a5a3eb68e83413129703ee26cd/sportswire/stories/lb/2026-10/2026-10-24-quiz-fiba-world-cups-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/529e506bcfa7f2a5a3eb68e83413129703ee26cd/sportswire/stories/lb/2026-10/2026-10-24-quiz-fiba-world-cups-02.png"
+      ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-24",
+      "slug": "quiz-georgiou-european-champion",
+      "story_key": "cy-quiz-2026-10-24-georgiou-european-all-around",
+      "light": "green",
+      "sport": "gymnastics",
+      "format": "story",
+      "series": null,
+      "template": "quiz,answer",
+      "headline": "Which Cypriot became European all-around champion in 2024?",
+      "caption_first_line": "(Story: no caption)",
+      "sources": [
+        "https://www.europeangymnastics.com/news/marios-georgiou-cyp-crowned-european-all-around-champion",
+        "https://www.europeangymnastics.com/news/next-stop-leipzig-catching-defending-european-all-around-champion-marios-georgiou-cyp"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": [],
+        "no_tag_reason": "Story: no caption to tag in",
+        "no_collab_reason": "Story"
+      },
+      "spec": "specs/2026-10-24/cy-quiz-georgiou-european-champion.json",
+      "logged_at": "2026-10-24T06:09:55+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T13:30",
+      "metricool_id": "404791176",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-151892530188891181",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/529e506bcfa7f2a5a3eb68e83413129703ee26cd/sportswire/stories/cy/2026-10/2026-10-24-quiz-georgiou-european-champion-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/529e506bcfa7f2a5a3eb68e83413129703ee26cd/sportswire/stories/cy/2026-10/2026-10-24-quiz-georgiou-european-champion-02.png"
+      ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-24",
+      "slug": "afccl-ahal-ansar-result",
+      "story_key": "lb-afccl-2026-md3-ahal-ansar-result",
+      "light": "green",
+      "sport": "football",
+      "format": "post",
+      "series": null,
+      "template": "result",
+      "headline": "Al Ansar lose, but *top the group*.",
+      "caption_first_line": "Al Ansar are into the AFC Challenge League quarter-finals as Group A winners, despite a 2-1 defeat to Ahal FC in Thimphu on Friday. ⚽",
+      "sources": [
+        "https://www.lebanon24.com/news/sports/1586248",
+        "https://www.the-afc.com/ar/club/afc_challenge_league.html/news/group-a-al-ansar-fc-lbn-2-0-al-ittihad-ahli-of-aleppo-sc-syr-1",
+        "https://www.the-afc.com/ar/club/afc_challenge_league.html/news/group-a-paro-fc-bhu-1-2-al-ansar-fc-lbn-1",
+        "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-ahal-fc-tkm-2-1-al-ansar-fc-lbn",
+        "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-a-al-ittihad-ahli-of-aleppo-syr-2-1-paro-fc-bhu",
+        "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-al-arabi-sc-kuw-1-3-nejmeh-sc-lbn",
+        "https://www.the-afc.com/en/club/afc_challenge_league.html/news/group-b-fc-istiklol-tjk-0-2-homs-al-fidaa-sc-syr"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": [],
+        "no_tag_reason": "Al Ansar have no confirmed handle yet; @nejmeh_sc is medium-confidence (third-party directory) and the fact-checker could not confirm it on an official source, so it's left out and listed for Geoffry to confirm",
+        "no_collab_reason": "Al Ansar lost the game (no invite on a defeat) and have no confirmed handle; Nejmeh are out"
+      },
+      "spec": "specs/2026-10-24/lb-afccl-ahal-ansar-result.json",
+      "logged_at": "2026-10-24T06:09:55+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T10:00",
+      "metricool_id": "404794514",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-5040223041245526487",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/52917f4305403cfce154af57f568b4b248ac964e/sportswire/posts/lb/2026-10/2026-10-24-afccl-ahal-ansar-result.png"
+      ]
     }
   ]
 }

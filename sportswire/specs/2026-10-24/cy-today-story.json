@@ -1,0 +1,168 @@
+{
+  "page": "cy",
+  "format": "story",
+  "theme": "dark",
+  "date": "2026-10-24",
+  "event_date": "2026-10-24",
+  "slug": "today-story",
+  "story_key": "cy-2026-10-24-today-story",
+  "light": "green",
+  "sport": "football",
+  "slides": [
+    {
+      "template": "fixtures",
+      "card": {
+        "eyebrow": [
+          "Today",
+          "Saturday 24 October"
+        ],
+        "headline": "Football, basketball and the *Cyprus Rally*.",
+        "groups": [
+          {
+            "label": "Cyprus League · Round 7",
+            "items": [
+              {
+                "home": "Olympiakos Nicosia",
+                "away": "Krasava",
+                "time": "18:00",
+                "note": "GSP"
+              },
+              {
+                "home": "Anorthosis",
+                "away": "Omonia Aradippou",
+                "time": "19:00",
+                "note": "Antonis Papadopoulos"
+              }
+            ]
+          },
+          {
+            "label": "ECOMMBX Basket League",
+            "items": [
+              {
+                "home": "ENP",
+                "away": "Petrolina AEK",
+                "time": "17:00",
+                "note": "Paralimni"
+              },
+              {
+                "home": "Apollon Limassol",
+                "away": "Keravnos",
+                "time": "17:00",
+                "note": "Limassol"
+              }
+            ]
+          },
+          {
+            "label": "Cyprus Rally",
+            "items": [
+              {
+                "text": "Leg 1: six stages",
+                "time": "09:33",
+                "note": "Last stage starts 16:38"
+              }
+            ]
+          }
+        ],
+        "footnote": "All times Cyprus"
+      }
+    },
+    {
+      "template": "predict",
+      "card": {
+        "eyebrow": [
+          "Predict the score",
+          "Cyprus League"
+        ],
+        "headline": "Anorthosis vs. Omonia Aradippou. *Your score?*",
+        "home": {
+          "name": "Anorthosis",
+          "label": "Home"
+        },
+        "away": {
+          "name": "Omonia Aradippou",
+          "label": "Away"
+        },
+        "status": [
+          "Saturday · 19:00 · Antonis Papadopoulos"
+        ],
+        "footer": "Reply with your score"
+      }
+    }
+  ],
+  "caption": "(Story: no caption)\n\nSource: Kerkida, Ant1 Live, Cyprus Times, Cyprus Basketball Federation, Cyprus Rally",
+  "alt": [
+    "Today Story, Saturday 24 October, all times Cyprus. Cyprus League round 7: Olympiakos Nicosia vs. Krasava 18:00 at GSP; Anorthosis vs. Omonia Aradippou 19:00 at Antonis Papadopoulos. ECOMMBX Basket League: ENP vs. Petrolina AEK 17:00 in Paralimni; Apollon Limassol vs. Keravnos 17:00 in Limassol. Cyprus Rally leg 1: six stages from 09:33, the last starting at 16:38.",
+    "Predict-the-score Story: Anorthosis vs. Omonia Aradippou, Cyprus League, Saturday 19:00 at Antonis Papadopoulos. Reply with your score."
+  ],
+  "facts": [
+    {
+      "claim": "Cyprus League round 7, Sat 24 Oct 2026: Olympiakos Nicosia vs Krasava 18:00 at GSP; Anorthosis vs Omonia Aradippou 19:00 at Antonis Papadopoulos (Cyprus time)",
+      "sources": [
+        {
+          "url": "https://www.kerkida.net/eidiseis/alles-stiles/refinio/aek/oi-ref-tis-7is-agonistikis",
+          "tier": 2,
+          "outlet": "Kerkida"
+        },
+        {
+          "url": "https://ant1live.com/athlitika/701646_cyprus-league-stoiximan-oi-diaitites-tis-7is-agonistikis-xenoi-varistes-sta-dyo",
+          "tier": 2,
+          "outlet": "Ant1 Live"
+        },
+        {
+          "url": "https://shootandgoal.cyprustimes.com/podosfairo-kyprou/a-katigoria/me-dyo-souper-paichnidia-i-7i-agonistiki-deite-analytika-to-programma/",
+          "tier": 2,
+          "outlet": "Cyprus Times"
+        }
+      ]
+    },
+    {
+      "claim": "ECOMMBX Basket League, Sat 24 Oct 2026, 17:00: Fabricca ENP (Paralimni) vs Petrolina AEK at Paralimni Municipal Hall; DOMUS Apollon Limassol vs Keravnos at the Apollon hall, Limassol",
+      "sources": [
+        {
+          "url": "https://cbfweb.org/eCBF/pubgames.aspx",
+          "tier": 1,
+          "outlet": "Cyprus Basketball Federation eCBF"
+        }
+      ]
+    },
+    {
+      "claim": "52nd Cyprus Rally, Leg 1 on Sat 24 Oct 2026: six special stages (6), SS1 at 09:33, SS6 at 16:38",
+      "sources": [
+        {
+          "url": "https://www.cyprusrally.com.cy/uploads/2026/docs/a7c2ad4225.pdf",
+          "tier": 1,
+          "outlet": "Cyprus Rally programme (organiser)"
+        }
+      ]
+    },
+    {
+      "claim": "Round 7 is the seventh (7) round",
+      "sources": [
+        {
+          "url": "https://www.kerkida.net/eidiseis/alles-stiles/refinio/aek/oi-ref-tis-7is-agonistikis",
+          "tier": 2,
+          "outlet": "Kerkida"
+        },
+        {
+          "url": "https://ant1live.com/athlitika/701646_cyprus-league-stoiximan-oi-diaitites-tis-7is-agonistikis-xenoi-varistes-sta-dyo",
+          "tier": 2,
+          "outlet": "Ant1 Live"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": [],
+    "no_tag_reason": "Story: no caption",
+    "no_collab_reason": "Story"
+  },
+  "images": [
+    "stories/cy/2026-10/2026-10-24-today-story-01.png",
+    "stories/cy/2026-10/2026-10-24-today-story-02.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  }
+}

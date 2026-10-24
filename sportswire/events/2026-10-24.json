@@ -36,6 +36,130 @@
     "spec": null,
     "metricool_id": null
    }
+  },
+  {
+   "id": "cy-basket-md3-sat",
+   "page": "cy",
+   "priority": "B",
+   "sport": "basketball",
+   "title": "ECOMMBX Basket League matchday 3: Fabricca ENP vs Petrolina AEK (Paralimni) and DOMUS Apollon Limassol vs Keravnos (Apollon hall), both 17:00",
+   "start_local": "2026-10-24T17:00+03:00",
+   "start_confirmed": true,
+   "expected_end_local": "2026-10-24T19:05+03:00",
+   "result_sources": [
+    "https://cbfweb.org/eCBF/pubgames.aspx",
+    "https://www.kerkida.net/eidiseis/alla-spor/mpasket",
+    "https://gipedo.politis.com.cy/kalathosfaira"
+   ],
+   "preview": {
+    "status": "scheduled",
+    "spec": "specs/2026-10-24/cy-today-story.json",
+    "format": "Today Story"
+   },
+   "result_desk": {
+    "trigger_ids": [
+     "trig_019X5cVrGRQbcKXnaSNu8gm4"
+    ],
+    "next_run": "2026-10-24T19:40+03:00",
+    "created_by": "morning desk 24 Oct",
+    "note": "one roundup card if both are final"
+   },
+   "result": {
+    "status": "pending",
+    "spec": null,
+    "metricool_id": null
+   }
+  },
+  {
+   "id": "cy-league-r7-olympiakos-krasava",
+   "page": "cy",
+   "priority": "B",
+   "sport": "football",
+   "title": "Olympiakos Nicosia vs Krasava, Cyprus League round 7",
+   "start_local": "2026-10-24T18:00+03:00",
+   "start_confirmed": true,
+   "start_note": "Kerkida + Ant1 Live + Cyprus Times; CFA pages refused by permission this morning",
+   "expected_end_local": "2026-10-24T19:55+03:00",
+   "venue": "GSP, Nicosia",
+   "result_sources": [
+    "https://www.cfa.com.cy/Gr/competitions/68124755",
+    "https://www.kerkida.net",
+    "https://omada.reporter.com.cy",
+    "https://www.kerkida.net/eidiseis/alles-stiles/refinio/aek/oi-ref-tis-7is-agonistikis"
+   ],
+   "preview": {
+    "status": "scheduled",
+    "spec": "specs/2026-10-24/cy-today-story.json",
+    "format": "Today Story"
+   },
+   "result_desk": {
+    "trigger_ids": [
+     "trig_01KZJRqf5Cxmq9r2Vt7bRnXg"
+    ],
+    "next_run": "2026-10-24T20:30+03:00",
+    "created_by": "morning desk 24 Oct"
+   },
+   "result": {
+    "status": "pending",
+    "spec": null,
+    "metricool_id": null
+   }
+  },
+  {
+   "id": "cy-league-r7-anorthosis-omonia-aradippou",
+   "page": "cy",
+   "priority": "B",
+   "sport": "football",
+   "title": "Anorthosis vs Omonia Aradippou, Cyprus League round 7",
+   "start_local": "2026-10-24T19:00+03:00",
+   "start_confirmed": true,
+   "start_note": "Kerkida + Ant1 Live + Cyprus Times",
+   "expected_end_local": "2026-10-24T20:55+03:00",
+   "venue": "Antonis Papadopoulos, Larnaca",
+   "result_sources": [
+    "https://www.cfa.com.cy/Gr/competitions/68124755",
+    "https://www.kerkida.net",
+    "https://omada.reporter.com.cy",
+    "https://ant1live.com/athlitika/701646_cyprus-league-stoiximan-oi-diaitites-tis-7is-agonistikis-xenoi-varistes-sta-dyo"
+   ],
+   "preview": {
+    "status": "scheduled",
+    "spec": "specs/2026-10-24/cy-today-story.json",
+    "format": "Today Story + predict Story"
+   },
+   "result_desk": {
+    "trigger_ids": [
+     "trig_01F49e2cdn7fhcxHB7uQuTQf"
+    ],
+    "next_run": "2026-10-24T21:30+03:00",
+    "created_by": "morning desk 24 Oct",
+    "note": "if the 18:00 game wasn't posted yet, make one roundup of both"
+   },
+   "result": {
+    "status": "pending",
+    "spec": null,
+    "metricool_id": null
+   }
+  },
+  {
+   "id": "cy-rally-2026",
+   "page": "cy",
+   "priority": "B",
+   "sport": "motorsport",
+   "title": "52nd Cyprus Rally, Leg 1 (Sat, SS1 09:33–SS6 16:38) and Leg 2 (Sun); finish Sun 25 Oct 16:30 Larnaca (UTC+2 by then)",
+   "start_local": "2026-10-24T09:33+03:00",
+   "start_confirmed": true,
+   "expected_end_local": "2026-10-25T16:30+02:00",
+   "result_sources": [
+    "https://www.cyprusspeedrallyresults.com",
+    "https://www.cyprusrally.com.cy",
+    "https://www.fia.com/championship/middle-east-rally-championship",
+    "https://cyprus-mail.com/category/sport/other-sport"
+   ],
+   "note": "Result on Sunday (Sunday desks). Don't call it the MERC title decider: the FIA calendar still lists Saudi Arabia 12-15 Nov. Best Cypriot crew in qualifying (Galatariotis/Ioannou 2nd) only from sites outside our list.",
+   "result": {
+    "status": "pending"
+   }
   }
  ]
 }
