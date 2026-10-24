@@ -1125,6 +1125,79 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/f96ea45e354339b2ac95e143463a811ecdd2859b/sportswire/posts/cy/2026-10/2026-10-24-anorthosis-omonia-aradippou-result.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-24",
+      "slug": "lpl-md4-roundup",
+      "story_key": "lb-lpl-2026-md4-fri-sat-roundup",
+      "light": "green",
+      "sport": "football",
+      "format": "post",
+      "series": null,
+      "template": "roundup",
+      "headline": "Wins for *Tadamon Sour* and *Jwaya*.",
+      "caption_first_line": "Two results from matchday 4 of the Lebanese Premier League. ⚽",
+      "sources": [
+        "https://elsport.com/news/show/844927/",
+        "https://elsport.com/news/show/845049/",
+        "https://www.mtv.com.lb/news/1751313",
+        "https://www.mtv.com.lb/news/1751586"
+      ],
+      "reshare": {
+        "mention": [
+          "thelfadotcom"
+        ],
+        "collaborators": [],
+        "note": "No confirmed handles for Tadamon Sour, Jwaya, Tripoli or Shabab Al Sahel (candidates listed for Geoffry). Safa 2-1 at Akhaa Ahli Aley and Al Ahed 1-0 Riyadi Abbasiya left out: only elsport among our sources."
+      },
+      "spec": "specs/2026-10-24/lb-lpl-md4-roundup.json",
+      "logged_at": "2026-10-24T19:22:01+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T22:30",
+      "metricool_id": "405212082",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=4709429078742092473",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/4ebbd3ddab633293f5fb77c1a1d3267335ca4d81/sportswire/posts/lb/2026-10/2026-10-24-lpl-md4-roundup.png"
+      ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-24",
+      "slug": "tonights-results-story",
+      "story_key": "cy-2026-10-24-tonights-results",
+      "light": "green",
+      "sport": "football",
+      "format": "story",
+      "series": null,
+      "template": "roundup",
+      "headline": "Saturday in *Cypriot sport*.",
+      "caption_first_line": "(Story: no caption)",
+      "sources": [
+        "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057473/triti-sinekhomeni-niki-ghia-ton-kerauno-epikratise-kai-toy-apollona",
+        "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057484/tria-sta-tria-ghia-tin-aek-me-diplo-epi-tis-enosis",
+        "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria/1057396/oli-krasava",
+        "https://shootandgoal.cyprustimes.com/podosfairo-kyprou/a-katigoria/me-to-dexi-i-anorthosi-stin-epochi-intzchaki/",
+        "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki",
+        "https://www.kerkida.net/eidiseis/a-katigoria/olympiakos-leykosias/mporoysan-kai-oi-dyo-symbibasmos-sto-gsp",
+        "https://www.kerkida.net/eidiseis/alla-spor/mpasket/aek/perase-dyskola-ap-paralimni-i-aek",
+        "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apollonas/diplo-stin-lemeso-o-keraynos"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": [],
+        "no_tag_reason": "Story: no caption",
+        "no_collab_reason": "Story"
+      },
+      "spec": "specs/2026-10-24/cy-tonights-results-story.json",
+      "logged_at": "2026-10-24T19:22:01+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T22:45",
+      "metricool_id": "405212109",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=7939811075055829303",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/4ebbd3ddab633293f5fb77c1a1d3267335ca4d81/sportswire/stories/cy/2026-10/2026-10-24-tonights-results-story.png"
+      ]
     }
   ]
 }
