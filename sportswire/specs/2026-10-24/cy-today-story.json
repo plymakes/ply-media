@@ -99,6 +99,11 @@
       "claim": "Cyprus League round 7, Sat 24 Oct 2026: Olympiakos Nicosia vs Krasava 18:00 at GSP; Anorthosis vs Omonia Aradippou 19:00 at Antonis Papadopoulos (Cyprus time)",
       "sources": [
         {
+          "url": "https://www.cfa.com.cy/Gr/news/53760",
+          "tier": 1,
+          "outlet": "CFA"
+        },
+        {
           "url": "https://www.kerkida.net/eidiseis/alles-stiles/refinio/aek/oi-ref-tis-7is-agonistikis",
           "tier": 2,
           "outlet": "Kerkida"
@@ -164,5 +169,47 @@
   "render": {
     "ok": true,
     "problems": []
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-24T09:30+03:00",
+    "agent": "independent general-purpose agent, Story text only",
+    "claims": [
+      {
+        "claim": "Saturday 24 October 2026, Cyprus League round 7",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/news/53760"
+      },
+      {
+        "claim": "Olympiakos Nicosia vs. Krasava 18:00 GSP",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/news/53760"
+      },
+      {
+        "claim": "Anorthosis vs. Omonia Aradippou 19:00 Antonis Papadopoulos (Anorthosis at home)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/news/53760"
+      },
+      {
+        "claim": "ENP vs. Petrolina AEK 17:00 Paralimni",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cbf.basketball/el/events/details/synexizetai-drasi-3h-ecommbx-basket-league"
+      },
+      {
+        "claim": "Apollon Limassol vs. Keravnos 17:00 Limassol",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cbf.basketball/el/events/details/synexizetai-drasi-3h-ecommbx-basket-league"
+      },
+      {
+        "claim": "Cyprus Rally Leg 1: six stages, SS1 09:33, last stage (SS6) 16:38",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cyprusrally.com.cy/uploads/2026/docs/7f78193722.pdf"
+      },
+      {
+        "claim": "All times Cyprus; club names spelled correctly",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/news/53760"
+      }
+    ]
   }
 }
