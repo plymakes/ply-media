@@ -62,16 +62,27 @@
    },
    "result_desk": {
     "trigger_ids": [
-     "trig_019X5cVrGRQbcKXnaSNu8gm4"
+     "trig_019X5cVrGRQbcKXnaSNu8gm4",
+     "trig_018S67eumjSRYsJSpgVvgx21 (cancelled)"
     ],
     "next_run": "2026-10-24T19:40+03:00",
     "created_by": "morning desk 24 Oct",
     "note": "one roundup card if both are final"
    },
    "result": {
-    "status": "pending",
-    "spec": null,
-    "metricool_id": null
+    "status": "posted",
+    "score": "Apollon 75-90 Keravnos; ENP 74-85 Petrolina AEK",
+    "spec": "specs/2026-10-24/cy-basket-league-md3-roundup.json",
+    "metricool_id": 405126808,
+    "when": "2026-10-24T19:59+03:00",
+    "attempts": 1,
+    "first_source": {
+     "name": "Kerkida basketball",
+     "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apollonas/diplo-stin-lemeso-o-keraynos",
+     "seen_final_by": "2026-10-24T18:52+03:00"
+    },
+    "final_at": "about 18:50 Cyprus (17:00 tip-offs)",
+    "note": "CBF results system needed a permission this run (not available unattended); Kerkida + Politis used. Attempt-2 desk cancelled."
    }
   },
   {

@@ -1009,6 +1009,46 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/96c7b35e9a772f8f137f654b5dff3460dc5f1f57/sportswire/stories/cy/2026-10/2026-10-24-today-story-01.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/96c7b35e9a772f8f137f654b5dff3460dc5f1f57/sportswire/stories/cy/2026-10/2026-10-24-today-story-02.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-24",
+      "slug": "basket-league-md3-roundup",
+      "story_key": "cy-basket-league-2026-md3-sat-roundup",
+      "light": "green",
+      "sport": "basketball",
+      "format": "post",
+      "series": null,
+      "template": "roundup",
+      "headline": "*Keravnos* and *AEK* stay perfect.",
+      "caption_first_line": "Two away wins, two perfect starts. 🏀",
+      "sources": [
+        "https://cyprusbasket.net/portal/2026/10/perase-apo-to-palataki-i-petrolina-aek-me-charaktira-lygise-tin-enp/",
+        "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057473/triti-sinekhomeni-niki-ghia-ton-kerauno-epikratise-kai-toy-apollona",
+        "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057484/tria-sta-tria-ghia-tin-aek-me-diplo-epi-tis-enosis",
+        "https://www.kerkida.net/eidiseis/alla-spor/mpasket/aek/perase-dyskola-ap-paralimni-i-aek",
+        "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apollonas/diplo-stin-lemeso-o-keraynos"
+      ],
+      "reshare": {
+        "mention": [
+          "keravnosbc",
+          "aek_larnaca_petrolina_bc",
+          "basketcyprus"
+        ],
+        "collaborators": [
+          "keravnosbc",
+          "aek_larnaca_petrolina_bc"
+        ]
+      },
+      "spec": "specs/2026-10-24/cy-basket-league-md3-roundup.json",
+      "logged_at": "2026-10-24T16:56:00+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T19:59",
+      "metricool_id": "405126808",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=1629594486812327957",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/61f1f9c2a7e98356ef7709440ed6ad7e43645e8d/sportswire/posts/cy/2026-10/2026-10-24-basket-league-md3-roundup.png"
+      ]
     }
   ]
 }
