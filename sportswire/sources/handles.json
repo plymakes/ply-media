@@ -781,6 +781,16 @@
       "kind": "athlete",
       "checked": "2026-10-24",
       "sport": "gymnastics"
+    },
+    "atptour": {
+      "who": "ATP Tour (organiser of ATP events)",
+      "page": "cy",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "atptour.com footer links instagram.com/atptour (https://www.atptour.com/en/players/-/B837/bio)",
+      "kind": "organiser",
+      "sport": "tennis",
+      "checked": "2026-10-24"
     }
   },
   "unconfirmed_or_do_not_use": {

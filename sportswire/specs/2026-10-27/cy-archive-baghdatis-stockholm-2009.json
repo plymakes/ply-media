@@ -97,7 +97,7 @@
       "card": {}
     }
   ],
-  "caption": "From the archive: October 2009, Stockholm. 🎾\n\n17 years ago, on 25 October 2009, Marcos Baghdatis beat Olivier Rochus 6-1, 7-5 to win the Stockholm Open. It was his third ATP title, and his first since Zagreb in February 2007.\n\nThree years earlier he had reached the Australian Open final. He finished his career with four ATP titles and a career-high ranking of No. 8.\n\nWhat's your favourite Baghdatis moment? 🇨🇾\n\n📸 Akademan / Wikimedia Commons, CC BY-SA 2.5 (Baghdatis at Indian Wells, 2006)\nSource: Stockholm Open, UPI, AFP\n#SportsWireCY #FromTheArchive #Tennis",
+  "caption": "25 October 2009: Marcos Baghdatis wins the Stockholm Open. 🎾\n6-1, 7-5 over Olivier Rochus. His third ATP title.\nYour favourite Baghdatis moment? 🇨🇾\n\n📸 Akademan / Wikimedia Commons, CC BY-SA 2.5 (Baghdatis at Indian Wells, 2006)\nSource: Stockholm Open, UPI, AFP\n@atptour\n#SportsWireCY #FromTheArchive #Tennis",
   "alt": [
     "Archive cover, 25 October 2009: Baghdatis ends the wait in Stockholm: his third ATP title and his first since February 2007. 17 years ago. Sepia photo of Marcos Baghdatis at Indian Wells in 2006.",
     "The story: on Sunday 25 October 2009 Marcos Baghdatis, 24, beat Olivier Rochus 6-1, 7-5 in the Stockholm Open final, after top seed Robin Söderling gave a walkover in the semi-finals; 15 aces in the final.",
@@ -173,9 +173,14 @@
     }
   ],
   "reshare": {
-    "mention": [],
+    "mention": [
+      "atptour"
+    ],
     "collaborators": [],
-    "no_tag_reason": "No confirmed handle yet for Marcos Baghdatis or the Cyprus Tennis Federation (listed for Geoffry to confirm)."
+    "not_invited": {
+      "atptour": "global tour account, organiser not subject"
+    },
+    "note": "No handle found for Marcos Baghdatis or the Cyprus Tennis Federation (listed for Geoffry)"
   },
   "feature": true,
   "sensitive_override": null,

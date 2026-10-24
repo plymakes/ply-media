@@ -85,7 +85,7 @@
       "card": {}
     }
   ],
-  "caption": "From the archive: 1 November 2011, Nicosia. ⚽\n\n15 years ago this Sunday, Gustavo Manduca scored in the 90th minute to give APOEL a 2-1 win over Porto at the GSP Stadium and keep them top of their Champions League group.\n\nThree weeks later APOEL became the first Cypriot club to reach the Champions League knockout stage, and in March they beat Lyon on penalties to reach the quarter-finals.\n\nWere you at the GSP that night? 🇨🇾\n\nSource: UEFA, AP\n@apoelfcofficial\n#SportsWireCY #FromTheArchive #ChampionsLeague",
+  "caption": "1 November 2011: Gustavo Manduca, 90th minute. ⚽\nAPOEL 2-1 Porto at GSP, and top of their Champions League group.\nThree weeks later they were the first Cypriot club into the knockouts.\nWere you there? 🇨🇾\n\nSource: UEFA, AP\n@apoelfcofficial @uefa @cyprusfa_official\n#SportsWireCY #FromTheArchive #ChampionsLeague",
   "alt": [
     "Archive cover, 1 November 2011: APOEL's 90th-minute night. Gustavo Manduca's late winner against Porto kept APOEL top of their Champions League group. 15 years ago.",
     "The story: on 1 November 2011 at the GSP Stadium, Aílton scored a first-half penalty for APOEL, Hulk equalised from the spot a minute from time, and Gustavo Manduca won it in the 90th minute from captain Constantinos Charalambides' cross: APOEL 2, Porto 1, top of Group G on 8 points.",
@@ -147,11 +147,16 @@
   ],
   "reshare": {
     "mention": [
-      "apoelfcofficial"
+      "apoelfcofficial",
+      "uefa",
+      "cyprusfa_official"
     ],
     "collaborators": [
       "apoelfcofficial"
-    ]
+    ],
+    "not_invited": {
+      "uefa": "global organiser account, not the subject"
+    }
   },
   "feature": true,
   "sensitive_override": null,
