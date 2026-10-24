@@ -968,6 +968,43 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/3e509da6e4f0edb347f2976afe45b3e51ee1ef21/sportswire/stories/lb/2026-10/2026-10-24-predict-central-nsa.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-24",
+      "slug": "today-story",
+      "story_key": "cy-2026-10-24-today-story",
+      "light": "green",
+      "sport": "football",
+      "format": "story",
+      "series": null,
+      "template": "fixtures,predict",
+      "headline": "Football, basketball and the *Cyprus Rally*.",
+      "caption_first_line": "(Story: no caption)",
+      "sources": [
+        "https://ant1live.com/athlitika/701646_cyprus-league-stoiximan-oi-diaitites-tis-7is-agonistikis-xenoi-varistes-sta-dyo",
+        "https://cbfweb.org/eCBF/pubgames.aspx",
+        "https://shootandgoal.cyprustimes.com/podosfairo-kyprou/a-katigoria/me-dyo-souper-paichnidia-i-7i-agonistiki-deite-analytika-to-programma/",
+        "https://www.cfa.com.cy/Gr/news/53760",
+        "https://www.cyprusrally.com.cy/uploads/2026/docs/a7c2ad4225.pdf",
+        "https://www.kerkida.net/eidiseis/alles-stiles/refinio/aek/oi-ref-tis-7is-agonistikis"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": [],
+        "no_tag_reason": "Story: no caption",
+        "no_collab_reason": "Story"
+      },
+      "spec": "specs/2026-10-24/cy-today-story.json",
+      "logged_at": "2026-10-24T06:16:35+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T10:00",
+      "metricool_id": "404797102",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=6604576411791934121",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/96c7b35e9a772f8f137f654b5dff3460dc5f1f57/sportswire/stories/cy/2026-10/2026-10-24-today-story-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/96c7b35e9a772f8f137f654b5dff3460dc5f1f57/sportswire/stories/cy/2026-10/2026-10-24-today-story-02.png"
+      ]
     }
   ]
 }

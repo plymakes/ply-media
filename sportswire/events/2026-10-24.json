@@ -56,7 +56,9 @@
    "preview": {
     "status": "scheduled",
     "spec": "specs/2026-10-24/cy-today-story.json",
-    "format": "Today Story"
+    "format": "Today Story",
+    "metricool_id": 404797102,
+    "when": "2026-10-24T10:00+03:00"
    },
    "result_desk": {
     "trigger_ids": [
@@ -92,7 +94,9 @@
    "preview": {
     "status": "scheduled",
     "spec": "specs/2026-10-24/cy-today-story.json",
-    "format": "Today Story"
+    "format": "Today Story",
+    "metricool_id": 404797102,
+    "when": "2026-10-24T10:00+03:00"
    },
    "result_desk": {
     "trigger_ids": [
@@ -127,7 +131,9 @@
    "preview": {
     "status": "scheduled",
     "spec": "specs/2026-10-24/cy-today-story.json",
-    "format": "Today Story + predict Story"
+    "format": "Today Story + predict Story",
+    "metricool_id": 404797102,
+    "when": "2026-10-24T10:00+03:00"
    },
    "result_desk": {
     "trigger_ids": [
