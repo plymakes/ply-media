@@ -94,5 +94,38 @@
   "visual_check": {
     "done": true,
     "notes": "Read back: CYPRUS LEAGUE · ROUND 7, 'A point each at GSP.', Olympiakos Nicosia 1 HOME (no crest yet), Krasava crest 1 AWAY, FULL TIME · SATURDAY 24 OCTOBER, PHOTO: KERKIDA. Photo: Krasava player in yellow (club crest on shirt) and an Olympiakos player in black and green at GSP, from Kerkida's report on this game; nothing awkward. No clipping."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-24T20:45+03:00",
+    "agent": "independent general-purpose agent, card text and caption only",
+    "claims": [
+      {
+        "claim": "Olympiakos Nicosia 1-1 Krasava, full time",
+        "verdict": "CONFIRMED",
+        "url": "https://kerkida.net/eidiseis/a-katigoria/olympiakos-leykosias/mporoysan-kai-oi-dyo-symbibasmos-sto-gsp"
+      },
+      {
+        "claim": "At GSP",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria/1057396/oli-krasava"
+      },
+      {
+        "claim": "Round 7",
+        "verdict": "CONFIRMED",
+        "url": "https://www.ant1live.com/athlitika/701810_aylaia-ayrio-stin-7i-agonistiki-me-dyo-agones-programma-bathmologia"
+      },
+      {
+        "claim": "Saturday 24 October",
+        "verdict": "CONFIRMED",
+        "url": "https://www.ant1live.com/athlitika/701810_aylaia-ayrio-stin-7i-agonistiki-me-dyo-agones-programma-bathmologia"
+      },
+      {
+        "claim": "Cyprus League; club names",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria/1057396/oli-krasava"
+      }
+    ],
+    "note": "The checker couldn't see a photographer credit on Kerkida's page. The credit names where we took the photo (Kerkida's own report on this game, recorded in the photo sidecar), which is the house rule, so it stands."
   }
 }
