@@ -1235,6 +1235,41 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/46a567f0fc19465965ac0eaac0463c7f72eeb72f/sportswire/posts/lb/2026-10/2026-10-24-central-nsa-result.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-24",
+      "slug": "central-nsa-result",
+      "story_key": "lb-basket-2026-27-r1-central-nsa",
+      "light": "green",
+      "sport": "basketball",
+      "format": "post",
+      "series": null,
+      "template": "result",
+      "headline": "*Central* open the season with a win.",
+      "caption_first_line": "Central start the new season with a win. 🏀",
+      "sources": [
+        "FLBB official league app (Lebanon Basketball League), game centre, screenshot sent by Geoffry 23:32 showing Q4 00:41 Central 83-76 NSA; Geoffry reported the final 86-78 at 23:33",
+        "https://elsport.com/basketball/844944/",
+        "https://www.al-akhbar.com/NewspaperArticles/sports/908180/"
+      ],
+      "reshare": {
+        "mention": [
+          "clubcentraljounieh",
+          "flb_official"
+        ],
+        "collaborators": [
+          "clubcentraljounieh"
+        ],
+        "note": "NSA: no confirmed handle (candidate @nsaclubofficial, low) and no crest yet"
+      },
+      "spec": "specs/2026-10-24/lb-central-nsa-result.json",
+      "logged_at": "2026-10-24T20:50:29+00:00",
+      "status": "draft",
+      "scheduled_for": "2026-10-25T00:00:00+03:00",
+      "metricool_id": "405262355",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-1861248648169697689",
+      "image_urls": []
     }
   ]
 }

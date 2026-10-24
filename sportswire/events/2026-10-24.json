@@ -34,13 +34,14 @@
         "created_by": "morning desk 24 Oct"
       },
       "result": {
-        "status": "scheduled",
+        "status": "held",
         "score": "Central 86-78 NSA",
         "spec": "specs/2026-10-24/lb-central-nsa-result.json",
-        "note": "Geoffry approved the no-photo card 23:48. Result desk 00:25: already posted, do nothing.",
+        "note": "Score conflict: Geoffry 86-78 vs AiScore 86-76. Draft in Metricool, not published. Result desk 00:25: do not schedule; check the FLBB box score / MTV / elsport and tell Geoffry.",
         "source": "FLBB app, confirmed by Geoffry in chat 23:45",
-        "metricool_id": 405262056,
-        "when": "2026-10-25T00:00+03:00"
+        "metricool_id": 405262355,
+        "when": "2026-10-25T00:00+03:00",
+        "draft": true
       }
     },
     {

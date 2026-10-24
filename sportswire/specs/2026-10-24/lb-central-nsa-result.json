@@ -90,7 +90,7 @@
     "notes": "No-photo fill layout (24 Oct 23:45). Read back: SPORTSWIRE LEBANON header; LEBANON BASKETBALL LEAGUE · ROUND 1; 'Central open the season with a win.'; score panel fills the card: Central crest (round C 'Central Club' logo) / Central / 86 / HOME, NSA crest (National Sports Academy logo) / NSA / 78 / AWAY; FINAL · SATURDAY 24 OCTOBER; @SPORTSWIRE.LB. No clipping, no overlap, no empty half."
   },
   "factcheck": {
-    "status": "pass",
+    "status": "fail",
     "checked_at": "2026-10-24T23:48+03:00",
     "agent": "Geoffry (editor) in chat, 23:48: 'yes all good you can post', after the five checks were listed to him (competition/round 1, opening game Sat 24 Oct, Central home / NSA away, names, Arabic). He watched the game in the FLBB app. The independent agent check started 23:46 was still running; its result is appended when it reports and any problem is corrected at once.",
     "arabic_checked": true,
@@ -130,6 +130,14 @@
         "url": "chat 23:48",
         "by": "Geoffry"
       }
-    ]
-  }
+    ],
+    "independent": {
+      "checked_at": "2026-10-24T23:50+03:00",
+      "agent": "independent general-purpose agent, card text and caption only",
+      "overall": "FAIL",
+      "conflict": "AiScore (https://www.aiscore.com/basketball/match-club-central-jounieh-nadim-sueed-college/edq0esd3w96aekx) shows Full Time Club Central Jounieh 86-76 (quarters 22-16, 20-20, 24-19, 20-21); no source shows 86-78. Claims 1-3 confirmed (Beirut 24, Annahar, MTV 1751625, IMLebanon). NSA = Nadim Souaid Academy (riyadi.com/team/nsa/), not 'National Sports Academy' (only in internal notes; the logo itself reads NATIONAL SPORTS ACADEMY).",
+      "verified_by_me": "AiScore page re-read 23:51: Full Time 86-76."
+    }
+  },
+  "hold": "23:50: pulled to a Metricool draft (id 405262355) 10 minutes before it went out: the independent check found AiScore Full Time 86-76, Geoffry reported 86-78. PLAYBOOK 4.3: a conflicting score waits for the box score or a second official source."
 }
