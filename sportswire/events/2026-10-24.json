@@ -41,7 +41,14 @@
         "source": "FLBB app, confirmed by Geoffry in chat 23:45",
         "metricool_id": 405262355,
         "when": "2026-10-25T00:00+03:00",
-        "draft": true
+        "draft": true,
+        "attempts": [
+          {
+            "at": "2026-10-25T00:25+03:00",
+            "n": 1,
+            "outcome": "still held: no official or tier-2 final yet (MTV, elsport, Sofascore searched); AiScore 86-76 vs Geoffry 86-78. Draft 405262355 stays a draft. Morning desk: check MTV/elsport/FLBB box score, fix the card to the confirmed score and ask Geoffry before scheduling."
+          }
+        ]
       }
     },
     {
