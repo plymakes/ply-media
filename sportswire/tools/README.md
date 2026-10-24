@@ -38,7 +38,7 @@ One JSON file per post in `specs/YYYY-MM-DD/<page>-<slug>.json`.
   ],
   "factcheck": {"status": "pass", "checked_at": "…", "claims": [{"claim": "…", "verdict": "CONFIRMED", "url": "https://…"}]},
   "visual_check": {"done": true, "notes": "read back every name and number"},
-  "reshare": {"mention": ["riyadi_club"], "collaborators": []},
+  "reshare": {"mention": ["alriyadiclub"], "collaborators": ["alriyadiclub"], "not_invited": {"handle": "reason"}, "invite_reason": null},
   "feature": false,                  // true for evergreen features (spotlights, explainers) about older events
   "sensitive_override": null         // one-line reason only when gate flags a word that is plainly not sensitive
 }

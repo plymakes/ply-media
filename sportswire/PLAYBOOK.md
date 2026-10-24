@@ -138,17 +138,38 @@ The step-by-step for each run is in `RUNBOOK.md`.
 ### House style (Geoffry, 23 Oct 2026, both pages)
 Fewer words per image (headline ≤ 8 words, deck ≤ 12, about 30 per card; the caption carries the detail) · the first image photo-led and big whenever a credited photo exists, and more photos across the carousel · capital letters for clubs, athletes, countries and places · "vs." (never "v"), in the accent on cards and also in captions · logos everywhere: crests for clubs and flags for countries on every score, fixture, schedule and matchup. Details and previews: `brand/brand-guide.md`, House style. The gate enforces word counts, capitals and "vs."
 
-### Captions
-House voice (see `brand/brand-guide.md` and the captions in `brand/reference/`): warm, confident, short sentences, facts first.
-- Line 1: the hook, with the key fact (score, name, number). No clickbait, no ALL CAPS, no "BREAKING" unless it truly is. Teams are "Omonia vs. Benfica", never "v".
-- Then two or three short paragraphs: what happened, the numbers, what's next (with local time).
-- One flag emoji as the sign-off (🇱🇧 / 🇨🇾); at most one or two other emojis; none on sad news.
-- A source line: `Source: <official body or outlet>` (gate checks for it).
-- Mention the club or athlete with their confirmed handle from `sources/handles.json` (only confirmed handles; never guess a handle).
-- Write the words people search into the caption itself ("Lebanese basketball", "Cyprus League", full club and athlete names). Then at most 3 hashtags (the page tag plus one or two topic tags, e.g. `#SportsWireLB #LebaneseBasketball`); hashtags no longer add reach.
-- End most captions with one genuine, good-natured question ("who was your player of the night?"). Never engagement bait ("comment YES", "tag 3 friends") and never on sad news.
-- Partisan for the country ("we" for the national team), neutral between local clubs (never "we" for a club). Report defeats plainly and kindly. No opinions about referees, officials or players.
-- Language: English; a word of Lebanese Arabic or Greek only for warmth, never for facts. Names in their official English spelling.
+### Captions (rewritten 24 Oct 2026, Geoffry: "it's very AI… more human-like… less words")
+Write like a person who follows the game, telling a friend. Not a report, not a press release. If a line isn't needed, it isn't there.
+
+**English (always first)**
+- Line 1: the news, in plain words, at most about 12. Often that's the whole caption.
+- At most two more short lines, only if they add something the card doesn't show (the scorer, what it means, when they play next). Never repeat the card.
+- 40 words at most (archive posts 60); no sentence over 20 words. The gate counts.
+- Say it the way people talk: "Lost in Bhutan, still top of the group." not "Al Ansar are into the quarter-finals as Group A winners, despite a 2-1 defeat."
+- No AI tells: showcasing, testament, underscores, highlighting, cementing, solidifying, remarkable, thrilling, clash, battle, secured, dominant, stellar, journey, "set the stage", "had already", "it's worth noting", "not only… but also", em dashes (—). The gate flags them.
+- Name the club and competition once, the way people search them ("Al Ansar", "AFC Challenge League"); that's the keyword work done.
+- A question only when it's natural, and short ("Your man of the match?"). Not on every post, never on sad news.
+- "vs." between teams, capitals for names, one or two emojis at most, the flag (🇱🇧 / 🇨🇾) to sign off.
+- Partisan for the country ("we" for the national team), neutral between local clubs. Defeats plainly and kindly. No opinions on referees, officials or players.
+
+**Arabic (Lebanon page, under the English)**
+- One to three short lines of simple, everyday Arabic: how a Lebanese fan would write it, light and natural (a word like بس or يلّا is fine), not formal news Arabic and not a word-for-word translation.
+- Same facts as the English, nothing extra. Numbers in Western digits (2-1). Club and athlete names as the club, the federation or the competition write them in Arabic (AFC Arabic pages, FLBB, LFA); the fact-checker checks the Arabic too (`factcheck.arabic_checked`).
+- At most 45 words. The gate requires it on every Lebanon feed post from 24 Oct 2026.
+- Cyprus captions stay English for now.
+
+**Then, short:** "📸 credit · Source: …" on one or two lines, then the @tags, then up to 3 hashtags (page tag plus one or two topic tags; an Arabic one is fine on Lebanon posts).
+
+Example (Lebanon result):
+> Lost in Bhutan, still top of the group. 💚
+> Al Ansar are into the AFC Challenge League quarter-finals. Nejmeh go out on 6 points.
+>
+> الأنصار خسر 2-1 بس تصدّر المجموعة وتأهّل لربع النهائي 💚
+> النجمة برّا رغم الـ6 نقاط.
+>
+> 📸 AFC · Source: AFC
+> @theafchub @thelfadotcom @nejmeh_sc
+> #SportsWireLB #LebaneseFootball
 
 ### Interactive posts (Geoffry, 23 Oct 2026: "interactive posts with images")
 Scheduled posts can't carry Instagram's poll, quiz or slider stickers (the publishing API has no stickers), so the interaction is built into the post and lives in the comments and replies. Templates in `tools/README.md`; examples in `tools/examples/lb-*-sample.json`.
@@ -158,14 +179,16 @@ Scheduled posts can't carry Instagram's poll, quiz or slider stickers (the publi
 - Stories end with a question people can answer by replying ("Who's your pick? Reply 👇").
 - Geoffry can add a real poll sticker in the app if he wants; the brief names the Story it would suit.
 
-### Tags, mentions and collaborators (Geoffry, 23 Oct 2026: "very important")
-"Always tag the people affected, mention and invite collaborators where applicable … tag as much as possible to increase reach without spamming people."
-- **Mention everyone in the story** who has a confirmed handle in `sources/handles.json`: each club, athlete and coach, the national federation for a national team, the league or organiser when it is part of the story, and the source of the photo when it is an account ("📸 @…"). Usually 2–5, at most 6. Only accounts that are actually in the story: never a celebrity, brand or unrelated big account for reach. The gate requires a mention for every club or national team whose logo is on the card.
-- **Invite collaborators wherever it fits:** the post's main subject(s) on every GREEN post where they come out well or neutral: wins, previews, fixtures and schedules (the league or federation), spotlights, milestones, archive posts, quizzes and votes about them. Up to 3 per post; high-confidence handles only. In a local derby invite both clubs or neither (neutral between local clubs).
-- **No invites** on AMBER posts, corrections, or to the side that lost (mention them plainly instead). If no invite fits, write why in `reshare.no_collab_reason`; the gate asks.
-- **No spamming:** the same account is invited at most twice in 7 days across both pages (the gate counts from `content-log.json`); after that, mention only. One mention per account per post, no tag lists in the first comment, no tagging in replies.
-- **Grow the list every run:** when someone in a story has no confirmed handle, look for the Instagram link on their own website or their federation's/club's site and add it (`confidence: high`, with how). Third-party directories give `medium` (mention only). Anything still unconfirmed goes in the brief as "handles for Geoffry to confirm", so he can check them in the app.
-- Metricool: `instagramData.collaborators: [{"username": "<handle>", "deleted": false}]`, and the same handles in `reshare.collaborators` in the spec.
+### Tags, mentions and collaborators (Geoffry, 23 and 24 Oct 2026: "very important… everyone possible")
+"Always tag the people affected, mention and invite collaborators where applicable … tag as much as possible to increase reach without spamming people." On 24 Oct the morning posts went out with no tags at all; that must not happen again.
+- **Every feed post tags someone. Always.** At minimum the sport's federation (handles with `covers` in `sources/handles.json`: FLBB on every Lebanese basketball post, LFA on every Lebanese football post, CFA, CBF…). The gate enforces it; `no_tag_reason` only works on Stories.
+- **Then everyone in the story** with a handle in `sources/handles.json` (high or medium confidence): each club, athlete and coach, the competition organiser (AFC, FIBA, UEFA, RLWC…), and the photo source when it's an account ("📸 @…"). Up to 6 mentions; only accounts that are actually in the story, never a big unrelated account for reach.
+- **A missing handle is a job, not a reason.** If a club or athlete in the story has no handle yet, look for it before posting (their own site, their federation's or league's site, the organiser's team page, their verified X/Facebook) and add it to `sources/handles.json` with how you found it. Only if it can't be found: post without it and list it under "Handles for Geoffry to confirm".
+- **Handles are not facts for the fact-checker.** Don't ask the independent checker to verify @handles; they come from `sources/handles.json` and its proof. Never drop a listed handle because a checker couldn't confirm it.
+- **Invite collaborators: everyone possible.** Every high-confidence club, athlete or organiser in the story, up to 3 per post, on every GREEN feed post. Exceptions, written in `reshare.not_invited` with a reason: a post that is about their defeat (but a post that is good news for them despite a loss, e.g. "lost but qualified", can invite them: set `reshare.invite_reason`); a local derby (both or neither); an account already invited 3 times in the last 7 days (the gate counts across both pages). No invites on AMBER posts or corrections.
+- **Stories** can't carry tags through Metricool (no mention stickers in the API): say so in the brief when a Story would deserve one, so Geoffry can add it by hand.
+- **Grow the list every run:** new handles go into `sources/handles.json` (`confidence: high` when the account's own site or its federation/organiser links it; `medium` for its verified X/Facebook, Wikidata, or two reputable outlets). Anything unconfirmed goes in the brief as "handles for Geoffry to confirm".
+- Metricool: `instagramData.collaborators: [{"username": "<handle>", "deleted": false}]`, and the same handles in `reshare.collaborators`.
 
 ### Images and rights
 Posts and Reels carry **club crests** and, wherever one exists, a **photo of the event or the people in it** (Geoffry, 21 Oct 2026: "they look more professional"; 23 Oct 2026: post anything, credit the source, "dont worry alot about it"). Runs find, choose and place them on their own, and most posts should now have one.
@@ -230,3 +253,4 @@ Keep it under 150 words. If nothing was verifiable, say so in one line.
 - 23 Oct: First archive posts. The research agent wrote that Lebanon finished "third" in their 2000 Asian Cup group; the RSSSF table shows they were fourth (level on points with Thailand, worse goal difference). For any group position, work it out from the full table yourself, tie-breakers included. The independent check caught it, which is why archive posts go through the same gate as news.
 - 23 Oct: Geoffry's notes on the look, now house style on both pages: fewer words per image, a bigger photo-led first image and more photos, capitals for clubs, athletes and countries (headlines are no longer lowercase), "vs." in the accent instead of "v", and logos everywhere (club crests and country flags on every score, fixture and schedule). Built into the renderer and the gate (brand guide, House style).
 - 23 Oct: Geoffry: tagging is very important. Every post now @mentions everyone in the story with a confirmed handle (the gate checks every logo on the card), invites the subjects as collaborators wherever it fits (up to 3; not on AMBER posts or to the side that lost), and caps invites at two per account per week so nobody is spammed (PLAYBOOK 7, Tags, mentions and collaborators). The queued archive posts were updated with @thelfadotcom, @lebanonrl and @apoelfcofficial as collaborators.
+- 24 Oct: Geoffry: the morning posts went out with no tags, and the captions "sound very AI". Now every feed post tags at least the sport's federation (gate), every high-confidence subject is invited unless there's a written reason, handles are no longer sent to the fact-checker, captions are short and plain (40 words, 20-word sentences, a list of AI phrases the gate flags), and Lebanon captions carry simple Arabic under the English (PLAYBOOK 7).

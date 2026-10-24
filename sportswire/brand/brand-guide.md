@@ -42,9 +42,9 @@ Alternate dark and light cards so the grid doesn't stack the same colour: result
 
 ## Voice
 - Warm, confident, partisan for the country, neutral between local clubs. "We" for the national team; never "we" for a club.
-- Short sentences. Facts first, then the feeling. Numbers do the talking.
+- Short sentences, plain words. Facts first. Numbers do the talking. If a sentence isn't needed, leave it out.
 - Defeats reported plainly and kindly ("a hard one", "nothing to be sorry about"). Never mock a team, player or referee.
-- Captions: a hook line, two or three short paragraphs of facts, one line on what's next, a source line, then @mentions and 3–5 hashtags. One flag emoji at the end is the house sign-off. Arabic (Lebanese dialect) or Greek words only where they add warmth, never for facts.
+- Captions (24 Oct 2026): sound like a person, not a press release. One line of news, two more at most, 40 words max, nothing the card already says. Lebanon captions add one to three lines of simple, everyday Arabic under the English (same facts). Then credit and source on one line, the @tags, up to 3 hashtags. Full rules and an example: PLAYBOOK 7, Captions.
 
 ## Images
 - Club crests (`brand/crests/`) and country flags (`brand/flags/`, `"crest": "flag:<code>"`) on score panels, rows, fixtures, matchups and entity blocks, always on their white tile. As many logos as the card holds.

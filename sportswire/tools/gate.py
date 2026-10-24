@@ -122,8 +122,66 @@ def case_problems(text: str) -> list[str]:
     return sorted(bad)
 
 
+
+# Captions that read like a person, not a press release (Geoffry, 24 Oct 2026: "it's very AI ... less words").
+VOICE_FROM = '2026-10-24'
+CAPTION_WORDS = {'default': 40, 'archive': 60}
+SENTENCE_WORDS = 20
+AI_TELLS = [r'showcas', r'testament', r'underscor', r'highlighting', r'\bcement', r'solidif', r'remarkable',
+            r'thrilling', r'\bclash\b', r'set the stage', r'worth noting', r'a reminder', r'not only\b', r'\bjourney\b',
+            r'\bdelve', r'\bboast', r'in the world of', r'when it comes to', r'proved to be', r'—', r'\bunwavering',
+            r'\bpivotal\b', r'\bnail-biting\b', r'\bspectacular\b', r'\bfierce\b', r'\bbattle(d)?\b', r'\bsecured?\b',
+            r'\bhad already\b', r'\bin a (\w+ )?(game|match|contest) (that|which)\b', r'\bbring(s)? the curtain',
+            r'\bwhat a (night|game|performance)\b', r'\bcap(ped)? off\b', r'\bdominant\b', r'\bstellar\b']
+ARABIC_FROM = '2026-10-24'   # LB captions: simple Arabic under the English (Geoffry, 24 Oct 2026)
+ARABIC_RE = re.compile(r'[؀-ۿ]')
+
+
+def caption_parts(cap: str) -> tuple[str, str]:
+    """English body (before the Arabic, credit, source, tags) and the Arabic block."""
+    eng, ar = [], []
+    for line in cap.split('\n'):
+        t = line.strip()
+        if not t:
+            continue
+        if t.startswith(('📸', 'Source', '@', '#', '(Story')):
+            continue
+        if ARABIC_RE.search(t) and len(ARABIC_RE.findall(t)) > len(re.findall(r'[A-Za-z]', t)):
+            ar.append(t)
+        elif not ar:
+            eng.append(t)
+    return '\n'.join(eng), '\n'.join(ar)
+
+
+def voice_problems(spec: dict, cap: str) -> list[str]:
+    probs = []
+    if spec.get('format') == 'story' or cap.startswith('(Story'):
+        return probs
+    eng, ar = caption_parts(cap)
+    n = len(re.findall(r"[A-Za-z0-9][\w'’.-]*", eng))
+    limit = CAPTION_WORDS['archive'] if spec.get('series') == 'archive' else CAPTION_WORDS['default']
+    if n > limit:
+        probs.append(f'English caption is {n} words (max {limit}): say it like a person would, cut every line the card already says (PLAYBOOK 7, Captions)')
+    for sent in re.split(r'(?<=[.!?])\s+|\n', eng):
+        w = len(re.findall(r"[A-Za-z0-9][\w'’.-]*", sent))
+        if w > SENTENCE_WORDS:
+            probs.append(f'sentence of {w} words (max {SENTENCE_WORDS}): split it or cut it: "{sent[:60]}…"')
+    low = eng.lower()
+    tells = sorted({re.search(t, low).group(0) for t in AI_TELLS if re.search(t, low)})
+    if tells:
+        probs.append('sounds like AI, rewrite plainly: ' + ', '.join(f'"{t}"' for t in tells))
+    if spec['page'] == 'lb' and spec['date'] >= ARABIC_FROM:
+        aw = len(re.findall(r'[؀-ۿ]+', ar))
+        if aw < 4:
+            probs.append('Lebanon captions carry a short, simple Arabic version under the English (Geoffry, 24 Oct 2026)')
+        elif aw > 45:
+            probs.append(f'Arabic part is {aw} words (max 45): keep it short and simple, like a person would write it')
+        if ar and spec.get('factcheck', {}).get('arabic_checked') is not True:
+            probs.append('the fact-checker must also check the Arabic (same facts as the English, names and numbers right): set factcheck.arabic_checked true')
+    return probs
+
 MAX_COLLABORATORS = 3       # Instagram's own limit is higher; three keeps invites meaningful
-MAX_INVITES_PER_WEEK = 2    # per account, across both pages: nobody gets spammed with invites
+MAX_INVITES_PER_WEEK = 3    # per account, across both pages: nobody gets spammed with invites (raised from 2, 24 Oct 2026)
 MAX_MENTIONS = 6
 
 
@@ -159,8 +217,16 @@ def tag_problems(spec: dict, cap: str, handles: dict, cards: list, high: set) ->
             need.add(h.lower())
     for h in sorted(need - mentioned):
         probs.append(f'tag @{h} in the caption: its logo is on the card (always tag the people in the story)')
-    if not mentioned and not rs.get('no_tag_reason'):
-        probs.append('no @mention in the caption: tag every club, athlete or federation in the story that has a confirmed handle (or set reshare.no_tag_reason)')
+    # the sport's federation (and other accounts that cover the whole sport) on every feed post (Geoffry, 24 Oct 2026)
+    is_story = spec.get('format') == 'story' or cap.startswith('(Story')
+    if not is_story and spec['date'] >= '2026-10-24':
+        for h, v in handles.items():
+            cov = v.get('covers') or {}
+            if v.get('confirmed') and cov and v.get('page') == spec['page'] and sport in cov.get('sports', []) \
+                    and h.lower() not in mentioned:
+                probs.append(f'tag @{h} ({v.get("who")}): it covers {sport} on this page, so it goes on every {sport} post')
+    if not mentioned and not (is_story and rs.get('no_tag_reason')):
+        probs.append('no @mention in the caption: tag the federation and every club, athlete and organiser in the story (feed posts always tag someone; find the handle or add it to sources/handles.json)')
     if len(mentioned) > MAX_MENTIONS:
         probs.append(f'{len(mentioned)} @mentions: max {MAX_MENTIONS}, only accounts that are part of the story (no tagging for reach alone)')
     # collaborators: where applicable, within limits
@@ -178,13 +244,15 @@ def tag_problems(spec: dict, cap: str, handles: dict, cards: list, high: set) ->
                 except (TypeError, ValueError, KeyError):
                     continue
                 loser = c['home'] if hs < as_ else c['away'] if as_ < hs else None
-                if loser and loser.get('crest'):
+                if loser and loser.get('crest') and not rs.get('invite_reason'):
                     for h, v in handles.items():
                         if v.get('crest') == loser['crest'] and h.lower() in cols:
-                            probs.append(f'@{h} lost this game: mention them, but no collaborator invite on their defeat')
-    if spec['light'] == 'green' and not cols and not rs.get('no_collab_reason'):
-        if any(h in high for h in mentioned - {'sportswire.lb', 'sportswire.cy'}):
-            probs.append('invite the story\'s main subject as a collaborator (high-confidence handle, max 3), or set reshare.no_collab_reason (e.g. "defeat", "invited twice this week", "neutral local derby")')
+                            probs.append(f'@{h} lost this game: no invite on a defeat, unless the post is good news for them (set reshare.invite_reason, e.g. "qualified despite the defeat")')
+    if spec['light'] == 'green' and not is_story and len(cols) < MAX_COLLABORATORS:
+        skip = {k.lower() for k in (rs.get('not_invited') or {})}
+        fed = {h.lower() for h, v in handles.items() if v.get('covers')}
+        for h in sorted((mentioned & high) - set(cols) - skip - fed - {'sportswire.lb', 'sportswire.cy'}):
+            probs.append(f'invite @{h} as a collaborator (everyone possible, max {MAX_COLLABORATORS}), or put it in reshare.not_invited with a reason (e.g. "lost and the post is about the defeat", "invited 3 times this week", "neutral derby: both or neither")')
     try:
         log = json.loads((ROOT / 'content-log.json').read_text()).get('posts', [])
         since = (dt.date.fromisoformat(spec['date']) - dt.timedelta(days=6)).isoformat()
@@ -258,6 +326,8 @@ def check(path: str) -> list[str]:
             probs.append('capitalise clubs, athletes and countries: ' + ', '.join(f'"{w}"' for w in low))
         if re.search(r'\b[A-Z][\w.\'-]* v\.? [A-Z]', spec['caption']):
             probs.append('write "vs." between teams in the caption, not "v" (cards convert it automatically)')
+    if spec['date'] >= VOICE_FROM:
+        probs += voice_problems(spec, spec['caption'])
 
     # 2. sources per fact
     claims_text = ''

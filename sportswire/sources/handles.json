@@ -1,5 +1,5 @@
 {
-  "help": "Instagram handles the newsroom may @mention or invite as collaborator. Only confirmed: true may be used. confidence high = linked from the organisation's own website, our own account, or chosen by Geoffry on a published post; medium = third-party directory only. @mentions may use high or medium; collaborator invites only high. Add how and when each handle was confirmed. Optional \"crest\" (a brand/crests slug) and \"national_team\" ({flag, sport}) link a handle to the logos on a card: the gate then requires the caption to @mention every account whose crest or national team appears (Geoffry, 23 Oct 2026: always tag the people affected).",
+  "help": "Instagram handles the newsroom may @mention or invite as collaborator. Only confirmed: true may be used. confidence high = linked from the organisation's own website, our own account, or chosen by Geoffry on a published post; medium = third-party directory only. @mentions may use high or medium; collaborator invites only high. Add how and when each handle was confirmed. Optional \"crest\" (a brand/crests slug) and \"national_team\" ({flag, sport}) link a handle to the logos on a card: the gate then requires the caption to @mention every account whose crest or national team appears (Geoffry, 23 Oct 2026: always tag the people affected). \"covers\": {\"sports\": [...]} marks a federation (or committee) that is tagged on every feed post of those sports on its page (gate.py, Geoffry 24 Oct 2026).",
   "handles": {
     "sportswire.lb": {
       "who": "SportsWire Lebanon (own page)",
@@ -31,6 +31,11 @@
       "national_team": {
         "flag": "lb",
         "sport": "basketball"
+      },
+      "covers": {
+        "sports": [
+          "basketball"
+        ]
       }
     },
     "thelfadotcom": {
@@ -44,6 +49,11 @@
       "national_team": {
         "flag": "lb",
         "sport": "football"
+      },
+      "covers": {
+        "sports": [
+          "football"
+        ]
       }
     },
     "alriyadiclub": {
@@ -67,6 +77,11 @@
       "national_team": {
         "flag": "lb",
         "sport": "rugby-league"
+      },
+      "covers": {
+        "sports": [
+          "rugby-league"
+        ]
       }
     },
     "lebanesecedars": {
@@ -94,7 +109,12 @@
       "confidence": "high",
       "how": "collaborator on published post 7 Sep 2026 (chosen by Geoffry)",
       "kind": "org",
-      "checked": "2026-10-19"
+      "checked": "2026-10-19",
+      "covers": {
+        "sports": [
+          "motorsport"
+        ]
+      }
     },
     "roger_feghali": {
       "who": "Roger Feghali, rally driver",
@@ -274,6 +294,11 @@
       "national_team": {
         "flag": "cy",
         "sport": "football"
+      },
+      "covers": {
+        "sports": [
+          "football"
+        ]
       }
     },
     "omonoiafootball": {
@@ -375,6 +400,11 @@
       "national_team": {
         "flag": "cy",
         "sport": "basketball"
+      },
+      "covers": {
+        "sports": [
+          "basketball"
+        ]
       }
     },
     "cyprus.volleyball.federation": {
@@ -388,6 +418,11 @@
       "national_team": {
         "flag": "cy",
         "sport": "volleyball"
+      },
+      "covers": {
+        "sports": [
+          "volleyball"
+        ]
       }
     },
     "koeas": {
@@ -401,6 +436,11 @@
       "national_team": {
         "flag": "cy",
         "sport": "athletics"
+      },
+      "covers": {
+        "sports": [
+          "athletics"
+        ]
       }
     },
     "cyprusolympic": {
@@ -423,6 +463,11 @@
       "national_team": {
         "flag": "cy",
         "sport": "sailing"
+      },
+      "covers": {
+        "sports": [
+          "sailing"
+        ]
       }
     },
     "kaliaantoniou": {
@@ -483,6 +528,11 @@
       "national_team": {
         "flag": "cy",
         "sport": "handball"
+      },
+      "covers": {
+        "sports": [
+          "handball"
+        ]
       }
     },
     "koekfed": {
@@ -496,6 +546,12 @@
       "national_team": {
         "flag": "cy",
         "sport": "swimming"
+      },
+      "covers": {
+        "sports": [
+          "swimming",
+          "water-polo"
+        ]
       }
     },
     "cyprus_rugby": {
@@ -509,6 +565,11 @@
       "national_team": {
         "flag": "cy",
         "sport": "rugby-union"
+      },
+      "covers": {
+        "sports": [
+          "rugby-union"
+        ]
       }
     },
     "cypruscricket": {
@@ -522,6 +583,11 @@
       "national_team": {
         "flag": "cy",
         "sport": "cricket"
+      },
+      "covers": {
+        "sports": [
+          "cricket"
+        ]
       }
     }
   },
