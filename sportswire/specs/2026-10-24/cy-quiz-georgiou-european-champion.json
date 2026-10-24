@@ -1,0 +1,155 @@
+{
+  "page": "cy",
+  "format": "story",
+  "theme": "dark",
+  "date": "2026-10-24",
+  "event_date": "2026-10-24",
+  "slug": "quiz-georgiou-european-champion",
+  "story_key": "cy-quiz-2026-10-24-georgiou-european-all-around",
+  "light": "green",
+  "sport": "gymnastics",
+  "slides": [
+    {
+      "template": "quiz",
+      "card": {
+        "eyebrow": [
+          "Quiz",
+          "Gymnastics"
+        ],
+        "headline": "Which Cypriot became European all-around champion in 2024?",
+        "options": [
+          {
+            "text": "Marios Georgiou"
+          },
+          {
+            "text": "Pavlos Kontides"
+          },
+          {
+            "text": "Milan Trajkovic"
+          },
+          {
+            "text": "Kalia Antoniou"
+          }
+        ]
+      }
+    },
+    {
+      "template": "answer",
+      "card": {
+        "eyebrow": [
+          "Answer"
+        ],
+        "headline": "*Marios Georgiou*, in Rimini.",
+        "correct": "A",
+        "options": [
+          {
+            "text": "Marios Georgiou"
+          },
+          {
+            "text": "Pavlos Kontides"
+          },
+          {
+            "text": "Milan Trajkovic"
+          },
+          {
+            "text": "Kalia Antoniou"
+          }
+        ],
+        "explain": "The first Cypriot to win the European all-around title, with 84.265 points.",
+        "footnote": "How did you do? Reply to this Story."
+      }
+    }
+  ],
+  "caption": "(Story: no caption)\n\nSource: European Gymnastics",
+  "alt": [
+    "Quiz Story: Which Cypriot became European all-around champion in gymnastics in 2024? Options: Marios Georgiou, Pavlos Kontides, Milan Trajkovic, Kalia Antoniou.",
+    "Answer Story: Marios Georgiou, in Rimini in 2024, the first Cypriot to win the European all-around title, with 84.265 points."
+  ],
+  "facts": [
+    {
+      "claim": "Marios Georgiou (Cyprus) won the men's all-around title at the 2024 European Championships in Rimini with 84.265 points",
+      "sources": [
+        {
+          "url": "https://www.europeangymnastics.com/news/marios-georgiou-cyp-crowned-european-all-around-champion",
+          "tier": 1,
+          "outlet": "European Gymnastics"
+        }
+      ]
+    },
+    {
+      "claim": "Georgiou was the first Cypriot to win the European all-around title",
+      "sources": [
+        {
+          "url": "https://www.europeangymnastics.com/news/next-stop-leipzig-catching-defending-european-all-around-champion-marios-georgiou-cyp",
+          "tier": 1,
+          "outlet": "European Gymnastics ('the first Cypriot to win the European All-Around title')"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": [],
+    "no_tag_reason": "Story: no caption to tag in",
+    "no_collab_reason": "Story"
+  },
+  "images": [
+    "stories/cy/2026-10/2026-10-24-quiz-georgiou-european-champion-01.png",
+    "stories/cy/2026-10/2026-10-24-quiz-georgiou-european-champion-02.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Read back both Stories: QUIZ · GYMNASTICS, 'Which Cypriot became European all-around champion in 2024?', options Marios Georgiou, Pavlos Kontides, Milan Trajkovic, Kalia Antoniou. Answer: 'Marios Georgiou, in Rimini.', A ticked, explain 'The first Cypriot to win the European all-around title, with 84.265 points.' Names spelled as in spelling.md. Nothing clipped."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-24T09:20+03:00",
+    "agent": "independent general-purpose agent, Story text only",
+    "claims": [
+      {
+        "claim": "Marios Georgiou European all-around champion 2024",
+        "verdict": "CONFIRMED",
+        "url": "https://www.europeangymnastics.com/news/marios-georgiou-cyp-crowned-european-all-around-champion"
+      },
+      {
+        "claim": "In Rimini",
+        "verdict": "CONFIRMED",
+        "url": "https://www.europeangymnastics.com/news/marios-georgiou-cyp-crowned-european-all-around-champion"
+      },
+      {
+        "claim": "84.265 points",
+        "verdict": "CONFIRMED",
+        "url": "https://www.europeangymnastics.com/news/marios-georgiou-cyp-crowned-european-all-around-champion"
+      },
+      {
+        "claim": "First Cypriot to win the European all-around title",
+        "verdict": "CONFIRMED",
+        "url": "https://www.europeangymnastics.com/news/next-stop-leipzig-catching-defending-european-all-around-champion-marios-georgiou-cyp"
+      },
+      {
+        "claim": "Name spelling GEORGIOU Marios (FIG)",
+        "verdict": "CONFIRMED",
+        "url": "https://gymnastics.sport/site/athletes/bio_detail.php?id=36888"
+      },
+      {
+        "claim": "B Pavlos Kontides is a sailor (wrong option)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.sailing.org/2024/04/30/cypriot-olympic-pioneer-eyes-repeat-success-at-fifth-olympics"
+      },
+      {
+        "claim": "C Milan Trajkovic is a hurdler (wrong option)",
+        "verdict": "CONFIRMED",
+        "url": "https://worldathletics.org/athletes/cyprus/milan-trajkovic-14480568"
+      },
+      {
+        "claim": "D Kalia Antoniou is a swimmer (wrong option)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.worldaquatics.com/athletes/1036253/kalia-antoniou"
+      }
+    ]
+  }
+}
