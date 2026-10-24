@@ -205,9 +205,15 @@
         "claim": "15 years, 1 Nov 2026 is a Sunday",
         "verdict": "CONFIRMED",
         "url": "https://uefa.com/uefachampionsleague/news/01f7-0ea3a5918065-7fb578fa1236-1000--apoel-s-manduca-floors-porto-late-on"
+      },
+      {
+        "claim": "[caption rewrite 24 Oct] 1 Nov 2011 Manduca 90th minute, APOEL 2-1 Porto at GSP, top of group, first Cypriot club into the knockouts three weeks later",
+        "verdict": "CONFIRMED",
+        "url": "https://uefa.com/uefachampionsleague/news/01f7-0ea3a5918065-7fb578fa1236-1000--apoel-s-manduca-floors-porto-late-on"
       }
     ],
-    "notes": "All 16 claims CONFIRMED."
+    "notes": "All 16 claims CONFIRMED.",
+    "recheck_24oct": "caption rewritten in the plain style (and Arabic on LB); independent re-check: all CONFIRMED"
   },
   "metricool": {
     "id": 403930715,

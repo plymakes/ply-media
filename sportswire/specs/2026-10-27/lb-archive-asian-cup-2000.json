@@ -79,7 +79,7 @@
       "card": {}
     }
   ],
-  "caption": "October 2000: the Asian Cup came to Lebanon. ⚽\nOur first finals. We lost to Iran, drew with Iraq and Thailand, and went out in the group.\nJapan won the final, 1-0 against Saudi Arabia at the Sports City Stadium.\nWere you there? 🇱🇧\n\nتشرين الأول 2000: كأس آسيا بلبنان ⚽\nأول مرة منلعب النهائيات. خسرنا قدّام إيران، تعادلنا مع العراق وتايلاند، وطلعنا من دور المجموعات.\nوالنهائي بالمدينة الرياضية ربحته اليابان 1-0 على السعودية.\nكنتو هونيك؟\n\nSource: AFC, Japan Football Association, RSSSF, Inside World Football\n@thelfadotcom\n#SportsWireLB #FromTheArchive #LebaneseFootball",
+  "caption": "October 2000: the Asian Cup came to Lebanon. ⚽\nOur first finals. We lost to Iran, drew with Iraq and Thailand, and went out in the group.\nJapan won the final, 1-0 against Saudi Arabia at the Sports City Stadium.\nWere you there? 🇱🇧\n\nتشرين الأول 2000: كأس آسيا بلبنان ⚽\nأول مرة منوصل عالنهائيات. خسرنا قدّام إيران، تعادلنا مع العراق وتايلاند، وطلعنا من دور المجموعات.\nوالنهائي بالمدينة الرياضية ربحته اليابان 1-0 على السعودية.\nكنتو هونيك؟\n\nSource: AFC, Japan Football Association, RSSSF, Inside World Football\n@thelfadotcom\n#SportsWireLB #FromTheArchive #LebaneseFootball",
   "alt": [
     "Archive cover: 2000, When Asia came to Beirut. Lebanon hosted the AFC Asian Cup in October 2000, their first Asian Cup finals, as hosts. 26 years ago.",
     "The story: Lebanon staged the 2000 Asian Cup with games in Beirut, Sidon and Tripoli; they lost 4-0 to Iran, drew 2-2 with Iraq after being 2-0 down and drew 1-1 with Thailand; 2 points, bottom of the group on goal difference and out.",
@@ -232,9 +232,16 @@
         "claim": "Sports City Stadium, Beirut",
         "verdict": "CONFIRMED",
         "url": "https://www.insideworldfootball.com/2024/01/03/asian-cup-2000/"
+      },
+      {
+        "claim": "[caption rewrite 24 Oct] Hosted Oct 2000; first finals; lost to Iran, drew Iraq and Thailand, out in the group; Japan 1-0 Saudi Arabia final at the Sports City Stadium",
+        "verdict": "CONFIRMED",
+        "url": "https://rsssf.org/tables/00asch-ext.html"
       }
     ],
-    "notes": "Pass 1 FAIL (third in group; two cities; Japan Times). Fixed. Pass 2: all 18 claims CONFIRMED."
+    "notes": "Pass 1 FAIL (third in group; two cities; Japan Times). Fixed. Pass 2: all 18 claims CONFIRMED.",
+    "recheck_24oct": "caption rewritten in the plain style (and Arabic on LB); independent re-check: all CONFIRMED",
+    "arabic_checked": true
   },
   "metricool": {
     "id": 403941712,

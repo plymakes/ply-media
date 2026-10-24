@@ -229,9 +229,15 @@
         "claim": "Photo: Baghdatis at Indian Wells, 12 March 2006 (Commons description and date; internal check)",
         "verdict": "CONFIRMED",
         "url": "https://commons.wikimedia.org/wiki/File:Marcos_Baghdatis_2006.jpg"
+      },
+      {
+        "claim": "[caption rewrite 24 Oct] 25 Oct 2009 Stockholm Open, 6-1 7-5 over Olivier Rochus, third ATP title",
+        "verdict": "CONFIRMED",
+        "url": "https://www.upi.com/Sports_News/2009/10/25/Baghdatis-wins-Stockholm-Open/42901256509050/"
       }
     ],
-    "notes": "All claims CONFIRMED. Took the checker's advice: 'this week' replaced by the exact date (the anniversary was the Sunday before the post)."
+    "notes": "All claims CONFIRMED. Took the checker's advice: 'this week' replaced by the exact date (the anniversary was the Sunday before the post).",
+    "recheck_24oct": "caption rewritten in the plain style (and Arabic on LB); independent re-check: all CONFIRMED"
   },
   "metricool": {
     "id": 403926812,

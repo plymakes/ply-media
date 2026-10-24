@@ -224,9 +224,16 @@
         "claim": "Lebanon v France, Sunday 1 November 2026, CommBank Stadium, Sydney",
         "verdict": "CONFIRMED",
         "url": "https://www.rlwc2026.com/draw/mens/2026/round-3/lebanon-v-france"
+      },
+      {
+        "claim": "[caption rewrite 24 Oct] Nine years ago today, first RLWC win, Lebanon 29-18 France in Canberra, Robinson 2 tries, Moses try + 4 goals + field goal, France again Sun 1 Nov 2026",
+        "verdict": "CONFIRMED",
+        "url": "https://www.skysports.com/rugby-league/france-vs-lebanon/46558"
       }
     ],
-    "notes": "All 15 claims CONFIRMED. Photo credit checked internally (Commons file page)."
+    "notes": "All 15 claims CONFIRMED. Photo credit checked internally (Commons file page).",
+    "recheck_24oct": "caption rewritten in the plain style (and Arabic on LB); independent re-check: all CONFIRMED",
+    "arabic_checked": true
   },
   "metricool": {
     "id": 403941741,

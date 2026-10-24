@@ -1,80 +1,84 @@
 {
-  "about": "Every From the Archive post: key, page, publish date, event year, title, spec, Metricool id. See history/README.md.",
-  "posts": [
-    {
-      "key": "cy-archive-2012-kontides-first-olympic-medal",
-      "page": "cy",
-      "issue": 1,
-      "publish": "2026-10-23T11:35+03:00",
-      "event_date": "2012-08-06",
-      "event_year": 2012,
-      "sport": "sailing",
-      "title": "Cyprus wins its first Olympic medal (Pavlos Kontides, London 2012; second silver at Paris 2024)",
-      "spec": "specs/2026-10-23/cy-archive-kontides-first-medal.json",
-      "metricool_id": 403923632,
-      "note": "test post at Geoffry's request (Fri 23 Oct)",
-      "instagram": "https://www.instagram.com/p/De1JJFjiMC5/"
-    },
-    {
-      "key": "lb-archive-2000-asian-cup-hosts",
-      "page": "lb",
-      "issue": 2,
-      "publish": "2026-10-27T19:30+02:00",
-      "event_date": "2000-10-29",
-      "event_year": 2000,
-      "sport": "football",
-      "title": "When Asia came to Beirut: Lebanon host the 2000 Asian Cup",
-      "spec": "specs/2026-10-27/lb-archive-asian-cup-2000.json",
-      "metricool_id": 404255309
-    },
-    {
-      "key": "cy-archive-2009-baghdatis-stockholm",
-      "page": "cy",
-      "issue": 2,
-      "publish": "2026-10-27T19:30+02:00",
-      "event_date": "2009-10-25",
-      "event_year": 2009,
-      "sport": "tennis",
-      "title": "Baghdatis ends the wait in Stockholm",
-      "spec": "specs/2026-10-27/cy-archive-baghdatis-stockholm-2009.json",
-      "metricool_id": 404209566
-    },
-    {
-      "key": "lb-archive-2017-rlwc-lebanon-france-first-win",
-      "page": "lb",
-      "issue": 3,
-      "publish": "2026-10-29T19:30+02:00",
-      "event_date": "2017-10-29",
-      "event_year": 2017,
-      "sport": "rugby league",
-      "title": "The night the Cedars won: Lebanon 29-18 France, first RLWC win",
-      "spec": "specs/2026-10-29/lb-archive-lebanon-france-2017.json",
-      "metricool_id": 404255463
-    },
-    {
-      "key": "cy-archive-2011-apoel-porto",
-      "page": "cy",
-      "issue": 3,
-      "publish": "2026-10-29T19:30+02:00",
-      "event_date": "2011-11-01",
-      "event_year": 2011,
-      "sport": "football",
-      "title": "APOEL's 90th-minute night: APOEL 2-1 Porto",
-      "spec": "specs/2026-10-29/cy-archive-apoel-porto-2011.json",
-      "metricool_id": 404255583
-    },
-    {
-      "key": "lb-archive-1952-first-olympic-medals",
-      "page": "lb",
-      "issue": 1,
-      "publish": "2026-10-23T16:05+03:00",
-      "event_date": "1952-07-27",
-      "event_year": 1952,
-      "sport": "wrestling",
-      "title": "Lebanon's first Olympic medals: Chihab silver, Taha bronze, Helsinki 1952",
-      "spec": "specs/2026-10-23/lb-archive-lebanon-first-olympic-medals.json",
-      "metricool_id": 404072366,
-      "note": "test post at Geoffry's request (Fri 23 Oct)"
-    }
-  ]
+ "about": "Every From the Archive post: key, page, publish date, event year, title, spec, Metricool id. See history/README.md.",
+ "posts": [
+  {
+   "key": "cy-archive-2012-kontides-first-olympic-medal",
+   "page": "cy",
+   "issue": 1,
+   "publish": "2026-10-23T11:35+03:00",
+   "event_date": "2012-08-06",
+   "event_year": 2012,
+   "sport": "sailing",
+   "title": "Cyprus wins its first Olympic medal (Pavlos Kontides, London 2012; second silver at Paris 2024)",
+   "spec": "specs/2026-10-23/cy-archive-kontides-first-medal.json",
+   "metricool_id": 403923632,
+   "note": "test post at Geoffry's request (Fri 23 Oct)",
+   "instagram": "https://www.instagram.com/p/De1JJFjiMC5/"
+  },
+  {
+   "key": "lb-archive-2000-asian-cup-hosts",
+   "page": "lb",
+   "issue": 2,
+   "publish": "2026-10-27T19:30+02:00",
+   "event_date": "2000-10-29",
+   "event_year": 2000,
+   "sport": "football",
+   "title": "When Asia came to Beirut: Lebanon host the 2000 Asian Cup",
+   "spec": "specs/2026-10-27/lb-archive-asian-cup-2000.json",
+   "metricool_id": 405023285,
+   "note": "caption rewritten 24 Oct (plain style, Arabic on LB, more tags)"
+  },
+  {
+   "key": "cy-archive-2009-baghdatis-stockholm",
+   "page": "cy",
+   "issue": 2,
+   "publish": "2026-10-27T19:30+02:00",
+   "event_date": "2009-10-25",
+   "event_year": 2009,
+   "sport": "tennis",
+   "title": "Baghdatis ends the wait in Stockholm",
+   "spec": "specs/2026-10-27/cy-archive-baghdatis-stockholm-2009.json",
+   "metricool_id": 405023422,
+   "note": "caption rewritten 24 Oct (plain style, Arabic on LB, more tags)"
+  },
+  {
+   "key": "lb-archive-2017-rlwc-lebanon-france-first-win",
+   "page": "lb",
+   "issue": 3,
+   "publish": "2026-10-29T19:30+02:00",
+   "event_date": "2017-10-29",
+   "event_year": 2017,
+   "sport": "rugby league",
+   "title": "The night the Cedars won: Lebanon 29-18 France, first RLWC win",
+   "spec": "specs/2026-10-29/lb-archive-lebanon-france-2017.json",
+   "metricool_id": 405023364,
+   "note": "caption rewritten 24 Oct (plain style, Arabic on LB, more tags)"
+  },
+  {
+   "key": "cy-archive-2011-apoel-porto",
+   "page": "cy",
+   "issue": 3,
+   "publish": "2026-10-29T19:30+02:00",
+   "event_date": "2011-11-01",
+   "event_year": 2011,
+   "sport": "football",
+   "title": "APOEL's 90th-minute night: APOEL 2-1 Porto",
+   "spec": "specs/2026-10-29/cy-archive-apoel-porto-2011.json",
+   "metricool_id": 405023482,
+   "note": "caption rewritten 24 Oct (plain style, Arabic on LB, more tags)"
+  },
+  {
+   "key": "lb-archive-1952-first-olympic-medals",
+   "page": "lb",
+   "issue": 1,
+   "publish": "2026-10-23T16:05+03:00",
+   "event_date": "1952-07-27",
+   "event_year": 1952,
+   "sport": "wrestling",
+   "title": "Lebanon's first Olympic medals: Chihab silver, Taha bronze, Helsinki 1952",
+   "spec": "specs/2026-10-23/lb-archive-lebanon-first-olympic-medals.json",
+   "metricool_id": 404072366,
+   "note": "test post at Geoffry's request (Fri 23 Oct)"
+  }
+ ]
 }
