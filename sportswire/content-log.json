@@ -1049,6 +1049,43 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/61f1f9c2a7e98356ef7709440ed6ad7e43645e8d/sportswire/posts/cy/2026-10/2026-10-24-basket-league-md3-roundup.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-24",
+      "slug": "olympiakos-krasava-result",
+      "story_key": "cy-league-2026-r7-olympiakos-krasava",
+      "light": "green",
+      "sport": "football",
+      "format": "post",
+      "series": null,
+      "template": "result",
+      "headline": "A point each at *GSP*.",
+      "caption_first_line": "A point each at GSP. ⚽",
+      "sources": [
+        "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria/1057396/oli-krasava",
+        "https://www.ant1live.com/athlitika/701943_olympiakos-krasava-eny-piran-apo-enan-bathmo-kai-synehizoyn-stigmiotypa-diloseis",
+        "https://www.kerkida.net/eidiseis/a-katigoria/olympiakos-leykosias/mporoysan-kai-oi-dyo-symbibasmos-sto-gsp"
+      ],
+      "reshare": {
+        "mention": [
+          "olympiakosnicosiafc",
+          "cyprusfa_official"
+        ],
+        "collaborators": [
+          "olympiakosnicosiafc"
+        ],
+        "note": "No handle for Krasava yet (listed for Geoffry). Scorers left out: Ant1 credits Felipe to Krasava, Kerkida and Politis to Olympiakos."
+      },
+      "spec": "specs/2026-10-24/cy-olympiakos-krasava-result.json",
+      "logged_at": "2026-10-24T17:33:53+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T20:36",
+      "metricool_id": "405150874",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-2894567862408427800",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/0ce260d23e106a041001a490b0e169cf58ce457f/sportswire/posts/cy/2026-10/2026-10-24-olympiakos-krasava-result.png"
+      ]
     }
   ]
 }

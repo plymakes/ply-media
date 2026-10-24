@@ -117,9 +117,19 @@
     "created_by": "morning desk 24 Oct"
    },
    "result": {
-    "status": "pending",
-    "spec": null,
-    "metricool_id": null
+    "status": "posted",
+    "score": "Olympiakos Nicosia 1-1 Krasava",
+    "spec": "specs/2026-10-24/cy-olympiakos-krasava-result.json",
+    "metricool_id": 405150874,
+    "when": "2026-10-24T20:36+03:00",
+    "attempts": 1,
+    "first_source": {
+     "name": "Politis Gipedo",
+     "url": "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria/1057396/oli-krasava",
+     "seen_final_by": "2026-10-24T19:59+03:00"
+    },
+    "final_at": "about 19:52 Cyprus",
+    "note": "Scorers left out: Ant1 credited Felipe to Krasava; Kerkida and Politis credit Felipe (27') to Olympiakos and Tabekou (44') to Krasava."
    }
   },
   {
