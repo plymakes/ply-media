@@ -1,205 +1,208 @@
 {
- "date": "2026-10-24",
- "note": "Written by the morning desk 24 Oct. Clocks go back at 04:00 on Sun 25 Oct (UTC+3 → UTC+2).",
- "events": [
-  {
-   "id": "lb-basket-opener-central-nsa",
-   "page": "lb",
-   "priority": "B",
-   "sport": "basketball",
-   "title": "Central vs NSA, Lebanese basketball first division 2026-27, round 1 (season opener)",
-   "start_local": "2026-10-24T21:45+03:00",
-   "start_confirmed": true,
-   "start_note": "elsport 23 Oct 19:45 (schedule re-issued after Tadamon Hrajel's withdrawal) and Al Akhbar 24 Oct. Venue not stated in either (an 18 Oct elsport piece said Jounieh, before the change). Fact-check: home side and the English form 'Central Club' unconfirmed; write 'Central' (المركزية) and don't say who is at home.",
-   "expected_end_local": "2026-10-24T23:50+03:00",
-   "venue": null,
-   "result_sources": [
-    "https://www.asia-basket.com/Lebanon/basketball.aspx",
-    "https://elsport.com",
-    "https://www.annahar.com/sports/basketball",
-    "https://www.al-akhbar.com"
-   ],
-   "preview": {
-    "status": "scheduled",
-    "spec": "specs/2026-10-24/lb-predict-central-nsa.json",
-    "format": "predict Story",
-    "metricool_id": 404796394,
-    "when": "2026-10-24T10:15+03:00"
-   },
-   "result_desk": {
-    "trigger_ids": [
-     "trig_01TRFA4CSr1Bk9b9mWx1nZbM"
-    ],
-    "next_run": "2026-10-25T00:25+03:00",
-    "created_by": "morning desk 24 Oct"
-   },
-   "result": {
-    "status": "held",
-    "score": "Central 86-78 NSA (final per Geoffry, 23:33; FLBB app screenshot at Q4 0:41 showed 83-76)",
-    "spec": "specs/2026-10-24/lb-central-nsa-result.json",
-    "note": "HOLD: Geoffry asked to see the card before it's posted (23:33). Built, NOT scheduled. Result desk: don't schedule it; only finish verification (FLBB final screen/post or two outlets with 86-78) and wait for Geoffry's OK."
-   }
-  },
-  {
-   "id": "cy-basket-md3-sat",
-   "page": "cy",
-   "priority": "B",
-   "sport": "basketball",
-   "title": "ECOMMBX Basket League matchday 3: Fabricca ENP vs Petrolina AEK (Paralimni) and DOMUS Apollon Limassol vs Keravnos (Apollon hall), both 17:00",
-   "start_local": "2026-10-24T17:00+03:00",
-   "start_confirmed": true,
-   "expected_end_local": "2026-10-24T19:05+03:00",
-   "result_sources": [
-    "https://cbfweb.org/eCBF/pubgames.aspx",
-    "https://www.kerkida.net/eidiseis/alla-spor/mpasket",
-    "https://gipedo.politis.com.cy/kalathosfaira"
-   ],
-   "preview": {
-    "status": "scheduled",
-    "spec": "specs/2026-10-24/cy-today-story.json",
-    "format": "Today Story",
-    "metricool_id": 404797102,
-    "when": "2026-10-24T10:00+03:00"
-   },
-   "result_desk": {
-    "trigger_ids": [
-     "trig_019X5cVrGRQbcKXnaSNu8gm4",
-     "trig_018S67eumjSRYsJSpgVvgx21 (attempt 2: will stop, already posted)"
-    ],
-    "next_run": "2026-10-24T19:40+03:00",
-    "created_by": "morning desk 24 Oct",
-    "note": "one roundup card if both are final"
-   },
-   "result": {
-    "status": "posted",
-    "score": "Apollon 75-90 Keravnos; ENP 74-85 Petrolina AEK",
-    "spec": "specs/2026-10-24/cy-basket-league-md3-roundup.json",
-    "metricool_id": 405126808,
-    "when": "2026-10-24T19:59+03:00",
-    "attempts": 1,
-    "first_source": {
-     "name": "Kerkida basketball",
-     "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apollonas/diplo-stin-lemeso-o-keraynos",
-     "seen_final_by": "2026-10-24T18:52+03:00"
+  "date": "2026-10-24",
+  "note": "Written by the morning desk 24 Oct. Clocks go back at 04:00 on Sun 25 Oct (UTC+3 → UTC+2).",
+  "events": [
+    {
+      "id": "lb-basket-opener-central-nsa",
+      "page": "lb",
+      "priority": "B",
+      "sport": "basketball",
+      "title": "Central vs NSA, Lebanese basketball first division 2026-27, round 1 (season opener)",
+      "start_local": "2026-10-24T21:45+03:00",
+      "start_confirmed": true,
+      "start_note": "elsport 23 Oct 19:45 (schedule re-issued after Tadamon Hrajel's withdrawal) and Al Akhbar 24 Oct. Venue not stated in either (an 18 Oct elsport piece said Jounieh, before the change). Fact-check: home side and the English form 'Central Club' unconfirmed; write 'Central' (المركزية) and don't say who is at home.",
+      "expected_end_local": "2026-10-24T23:50+03:00",
+      "venue": null,
+      "result_sources": [
+        "https://www.asia-basket.com/Lebanon/basketball.aspx",
+        "https://elsport.com",
+        "https://www.annahar.com/sports/basketball",
+        "https://www.al-akhbar.com"
+      ],
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-24/lb-predict-central-nsa.json",
+        "format": "predict Story",
+        "metricool_id": 404796394,
+        "when": "2026-10-24T10:15+03:00"
+      },
+      "result_desk": {
+        "trigger_ids": [
+          "trig_01TRFA4CSr1Bk9b9mWx1nZbM"
+        ],
+        "next_run": "2026-10-25T00:25+03:00",
+        "created_by": "morning desk 24 Oct"
+      },
+      "result": {
+        "status": "scheduled",
+        "score": "Central 86-78 NSA",
+        "spec": "specs/2026-10-24/lb-central-nsa-result.json",
+        "note": "Geoffry approved the no-photo card 23:48. Result desk 00:25: already posted, do nothing.",
+        "source": "FLBB app, confirmed by Geoffry in chat 23:45",
+        "metricool_id": 405262056,
+        "when": "2026-10-25T00:00+03:00"
+      }
     },
-    "final_at": "about 18:50 Cyprus (17:00 tip-offs)",
-    "note": "CBF results system needed a permission this run (not available unattended); Kerkida + Politis used. The attempt-2 desk (20:34) will find it posted and stop."
-   }
-  },
-  {
-   "id": "cy-league-r7-olympiakos-krasava",
-   "page": "cy",
-   "priority": "B",
-   "sport": "football",
-   "title": "Olympiakos Nicosia vs Krasava, Cyprus League round 7",
-   "start_local": "2026-10-24T18:00+03:00",
-   "start_confirmed": true,
-   "start_note": "Kerkida + Ant1 Live + Cyprus Times; CFA pages refused by permission this morning",
-   "expected_end_local": "2026-10-24T19:55+03:00",
-   "venue": "GSP, Nicosia",
-   "result_sources": [
-    "https://www.cfa.com.cy/Gr/competitions/68124755",
-    "https://www.kerkida.net",
-    "https://omada.reporter.com.cy",
-    "https://www.kerkida.net/eidiseis/alles-stiles/refinio/aek/oi-ref-tis-7is-agonistikis"
-   ],
-   "preview": {
-    "status": "scheduled",
-    "spec": "specs/2026-10-24/cy-today-story.json",
-    "format": "Today Story",
-    "metricool_id": 404797102,
-    "when": "2026-10-24T10:00+03:00"
-   },
-   "result_desk": {
-    "trigger_ids": [
-     "trig_01KZJRqf5Cxmq9r2Vt7bRnXg"
-    ],
-    "next_run": "2026-10-24T20:30+03:00",
-    "created_by": "morning desk 24 Oct"
-   },
-   "result": {
-    "status": "posted",
-    "score": "Olympiakos Nicosia 1-1 Krasava",
-    "spec": "specs/2026-10-24/cy-olympiakos-krasava-result.json",
-    "metricool_id": 405150874,
-    "when": "2026-10-24T20:36+03:00",
-    "attempts": 1,
-    "first_source": {
-     "name": "Politis Gipedo",
-     "url": "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria/1057396/oli-krasava",
-     "seen_final_by": "2026-10-24T19:59+03:00"
+    {
+      "id": "cy-basket-md3-sat",
+      "page": "cy",
+      "priority": "B",
+      "sport": "basketball",
+      "title": "ECOMMBX Basket League matchday 3: Fabricca ENP vs Petrolina AEK (Paralimni) and DOMUS Apollon Limassol vs Keravnos (Apollon hall), both 17:00",
+      "start_local": "2026-10-24T17:00+03:00",
+      "start_confirmed": true,
+      "expected_end_local": "2026-10-24T19:05+03:00",
+      "result_sources": [
+        "https://cbfweb.org/eCBF/pubgames.aspx",
+        "https://www.kerkida.net/eidiseis/alla-spor/mpasket",
+        "https://gipedo.politis.com.cy/kalathosfaira"
+      ],
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-24/cy-today-story.json",
+        "format": "Today Story",
+        "metricool_id": 404797102,
+        "when": "2026-10-24T10:00+03:00"
+      },
+      "result_desk": {
+        "trigger_ids": [
+          "trig_019X5cVrGRQbcKXnaSNu8gm4",
+          "trig_018S67eumjSRYsJSpgVvgx21 (attempt 2: will stop, already posted)"
+        ],
+        "next_run": "2026-10-24T19:40+03:00",
+        "created_by": "morning desk 24 Oct",
+        "note": "one roundup card if both are final"
+      },
+      "result": {
+        "status": "posted",
+        "score": "Apollon 75-90 Keravnos; ENP 74-85 Petrolina AEK",
+        "spec": "specs/2026-10-24/cy-basket-league-md3-roundup.json",
+        "metricool_id": 405126808,
+        "when": "2026-10-24T19:59+03:00",
+        "attempts": 1,
+        "first_source": {
+          "name": "Kerkida basketball",
+          "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apollonas/diplo-stin-lemeso-o-keraynos",
+          "seen_final_by": "2026-10-24T18:52+03:00"
+        },
+        "final_at": "about 18:50 Cyprus (17:00 tip-offs)",
+        "note": "CBF results system needed a permission this run (not available unattended); Kerkida + Politis used. The attempt-2 desk (20:34) will find it posted and stop."
+      }
     },
-    "final_at": "about 19:52 Cyprus",
-    "note": "Scorers left out: Ant1 credited Felipe to Krasava; Kerkida and Politis credit Felipe (27') to Olympiakos and Tabekou (44') to Krasava."
-   }
-  },
-  {
-   "id": "cy-league-r7-anorthosis-omonia-aradippou",
-   "page": "cy",
-   "priority": "B",
-   "sport": "football",
-   "title": "Anorthosis vs Omonia Aradippou, Cyprus League round 7",
-   "start_local": "2026-10-24T19:00+03:00",
-   "start_confirmed": true,
-   "start_note": "Kerkida + Ant1 Live + Cyprus Times",
-   "expected_end_local": "2026-10-24T20:55+03:00",
-   "venue": "Antonis Papadopoulos, Larnaca",
-   "result_sources": [
-    "https://www.cfa.com.cy/Gr/competitions/68124755",
-    "https://www.kerkida.net",
-    "https://omada.reporter.com.cy",
-    "https://ant1live.com/athlitika/701646_cyprus-league-stoiximan-oi-diaitites-tis-7is-agonistikis-xenoi-varistes-sta-dyo"
-   ],
-   "preview": {
-    "status": "scheduled",
-    "spec": "specs/2026-10-24/cy-today-story.json",
-    "format": "Today Story + predict Story",
-    "metricool_id": 404797102,
-    "when": "2026-10-24T10:00+03:00"
-   },
-   "result_desk": {
-    "trigger_ids": [
-     "trig_01F49e2cdn7fhcxHB7uQuTQf"
-    ],
-    "next_run": "2026-10-24T21:30+03:00",
-    "created_by": "morning desk 24 Oct",
-    "note": "if the 18:00 game wasn't posted yet, make one roundup of both"
-   },
-   "result": {
-    "status": "posted",
-    "score": "Anorthosis 2-0 Omonia Aradippou",
-    "spec": "specs/2026-10-24/cy-anorthosis-omonia-aradippou-result.json",
-    "metricool_id": 405185904,
-    "when": "2026-10-24T21:39+03:00",
-    "attempts": 1,
-    "first_source": {
-     "name": "Kerkida",
-     "url": "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki",
-     "seen_final_by": "2026-10-24T20:55+03:00"
+    {
+      "id": "cy-league-r7-olympiakos-krasava",
+      "page": "cy",
+      "priority": "B",
+      "sport": "football",
+      "title": "Olympiakos Nicosia vs Krasava, Cyprus League round 7",
+      "start_local": "2026-10-24T18:00+03:00",
+      "start_confirmed": true,
+      "start_note": "Kerkida + Ant1 Live + Cyprus Times; CFA pages refused by permission this morning",
+      "expected_end_local": "2026-10-24T19:55+03:00",
+      "venue": "GSP, Nicosia",
+      "result_sources": [
+        "https://www.cfa.com.cy/Gr/competitions/68124755",
+        "https://www.kerkida.net",
+        "https://omada.reporter.com.cy",
+        "https://www.kerkida.net/eidiseis/alles-stiles/refinio/aek/oi-ref-tis-7is-agonistikis"
+      ],
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-24/cy-today-story.json",
+        "format": "Today Story",
+        "metricool_id": 404797102,
+        "when": "2026-10-24T10:00+03:00"
+      },
+      "result_desk": {
+        "trigger_ids": [
+          "trig_01KZJRqf5Cxmq9r2Vt7bRnXg"
+        ],
+        "next_run": "2026-10-24T20:30+03:00",
+        "created_by": "morning desk 24 Oct"
+      },
+      "result": {
+        "status": "posted",
+        "score": "Olympiakos Nicosia 1-1 Krasava",
+        "spec": "specs/2026-10-24/cy-olympiakos-krasava-result.json",
+        "metricool_id": 405150874,
+        "when": "2026-10-24T20:36+03:00",
+        "attempts": 1,
+        "first_source": {
+          "name": "Politis Gipedo",
+          "url": "https://gipedo.politis.com.cy/podosfairo/kypros/a-katigoria/1057396/oli-krasava",
+          "seen_final_by": "2026-10-24T19:59+03:00"
+        },
+        "final_at": "about 19:52 Cyprus",
+        "note": "Scorers left out: Ant1 credited Felipe to Krasava; Kerkida and Politis credit Felipe (27') to Olympiakos and Tabekou (44') to Krasava."
+      }
     },
-    "final_at": "about 20:52 Cyprus",
-    "note": "Anorthosis not tagged (two candidate handles, Geoffry to confirm)."
-   }
-  },
-  {
-   "id": "cy-rally-2026",
-   "page": "cy",
-   "priority": "B",
-   "sport": "motorsport",
-   "title": "52nd Cyprus Rally, Leg 1 (Sat, SS1 09:33–SS6 16:38) and Leg 2 (Sun); finish Sun 25 Oct 16:30 Larnaca (UTC+2 by then)",
-   "start_local": "2026-10-24T09:33+03:00",
-   "start_confirmed": true,
-   "expected_end_local": "2026-10-25T16:30+02:00",
-   "result_sources": [
-    "https://www.cyprusspeedrallyresults.com",
-    "https://www.cyprusrally.com.cy",
-    "https://www.fia.com/championship/middle-east-rally-championship",
-    "https://cyprus-mail.com/category/sport/other-sport"
-   ],
-   "note": "Result on Sunday (Sunday desks). Don't call it the MERC title decider: the FIA calendar still lists Saudi Arabia 12-15 Nov. Best Cypriot crew in qualifying (Galatariotis/Ioannou 2nd) only from sites outside our list.",
-   "result": {
-    "status": "pending"
-   }
-  }
- ]
+    {
+      "id": "cy-league-r7-anorthosis-omonia-aradippou",
+      "page": "cy",
+      "priority": "B",
+      "sport": "football",
+      "title": "Anorthosis vs Omonia Aradippou, Cyprus League round 7",
+      "start_local": "2026-10-24T19:00+03:00",
+      "start_confirmed": true,
+      "start_note": "Kerkida + Ant1 Live + Cyprus Times",
+      "expected_end_local": "2026-10-24T20:55+03:00",
+      "venue": "Antonis Papadopoulos, Larnaca",
+      "result_sources": [
+        "https://www.cfa.com.cy/Gr/competitions/68124755",
+        "https://www.kerkida.net",
+        "https://omada.reporter.com.cy",
+        "https://ant1live.com/athlitika/701646_cyprus-league-stoiximan-oi-diaitites-tis-7is-agonistikis-xenoi-varistes-sta-dyo"
+      ],
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-24/cy-today-story.json",
+        "format": "Today Story + predict Story",
+        "metricool_id": 404797102,
+        "when": "2026-10-24T10:00+03:00"
+      },
+      "result_desk": {
+        "trigger_ids": [
+          "trig_01F49e2cdn7fhcxHB7uQuTQf"
+        ],
+        "next_run": "2026-10-24T21:30+03:00",
+        "created_by": "morning desk 24 Oct",
+        "note": "if the 18:00 game wasn't posted yet, make one roundup of both"
+      },
+      "result": {
+        "status": "posted",
+        "score": "Anorthosis 2-0 Omonia Aradippou",
+        "spec": "specs/2026-10-24/cy-anorthosis-omonia-aradippou-result.json",
+        "metricool_id": 405185904,
+        "when": "2026-10-24T21:39+03:00",
+        "attempts": 1,
+        "first_source": {
+          "name": "Kerkida",
+          "url": "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki",
+          "seen_final_by": "2026-10-24T20:55+03:00"
+        },
+        "final_at": "about 20:52 Cyprus",
+        "note": "Anorthosis not tagged (two candidate handles, Geoffry to confirm)."
+      }
+    },
+    {
+      "id": "cy-rally-2026",
+      "page": "cy",
+      "priority": "B",
+      "sport": "motorsport",
+      "title": "52nd Cyprus Rally, Leg 1 (Sat, SS1 09:33–SS6 16:38) and Leg 2 (Sun); finish Sun 25 Oct 16:30 Larnaca (UTC+2 by then)",
+      "start_local": "2026-10-24T09:33+03:00",
+      "start_confirmed": true,
+      "expected_end_local": "2026-10-25T16:30+02:00",
+      "result_sources": [
+        "https://www.cyprusspeedrallyresults.com",
+        "https://www.cyprusrally.com.cy",
+        "https://www.fia.com/championship/middle-east-rally-championship",
+        "https://cyprus-mail.com/category/sport/other-sport"
+      ],
+      "note": "Result on Sunday (Sunday desks). Don't call it the MERC title decider: the FIA calendar still lists Saudi Arabia 12-15 Nov. Best Cypriot crew in qualifying (Galatariotis/Ioannou 2nd) only from sites outside our list.",
+      "result": {
+        "status": "pending"
+      }
+    }
+  ]
 }

@@ -97,23 +97,27 @@
     "claims": [
       {
         "claim": "Lebanon Basketball League 2026-27, round 1",
-        "verdict": "CONFIRMED by Geoffry",
-        "url": "https://elsport.com/basketball/844944/"
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/basketball/844944/",
+        "by": "Geoffry"
       },
       {
         "claim": "Opening game of the season, Saturday 24 October",
-        "verdict": "CONFIRMED by Geoffry",
-        "url": "https://www.al-akhbar.com/NewspaperArticles/sports/908180/"
+        "verdict": "CONFIRMED",
+        "url": "https://www.al-akhbar.com/NewspaperArticles/sports/908180/",
+        "by": "Geoffry"
       },
       {
         "claim": "Central home, NSA away",
-        "verdict": "CONFIRMED by Geoffry (FLBB app)",
-        "url": "FLBB official app, watched by Geoffry"
+        "verdict": "CONFIRMED",
+        "url": "FLBB official app, watched by Geoffry",
+        "by": "Geoffry (FLBB app)"
       },
       {
         "claim": "Final Central 86-78 NSA",
-        "verdict": "CONFIRMED by Geoffry (FLBB app, watched to the end)",
-        "url": "FLBB official app, watched by Geoffry"
+        "verdict": "CONFIRMED",
+        "url": "FLBB official app, watched by Geoffry",
+        "by": "Geoffry (FLBB app, watched to the end)"
       },
       {
         "claim": "Names Central / NSA",
@@ -122,8 +126,9 @@
       },
       {
         "claim": "Arabic says the same as the English",
-        "verdict": "CONFIRMED by Geoffry",
-        "url": "chat 23:48"
+        "verdict": "CONFIRMED",
+        "url": "chat 23:48",
+        "by": "Geoffry"
       }
     ]
   }
