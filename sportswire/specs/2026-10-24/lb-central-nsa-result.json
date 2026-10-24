@@ -17,11 +17,13 @@
     "headline": "*Central* open the season with a win.",
     "home": {
       "name": "Central",
-      "score": 86
+      "score": 86,
+      "crest": "central"
     },
     "away": {
       "name": "NSA",
-      "score": 78
+      "score": 78,
+      "crest": "nsa"
     },
     "ours": null,
     "status": [

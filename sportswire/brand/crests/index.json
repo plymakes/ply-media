@@ -422,6 +422,19 @@
     "checked": "2026-10-21",
     "use": "editorial identification only"
   },
+  "nsa": {
+    "name": "NSA (National Sports Academy)",
+    "source_page": "https://www.riyadi.com/team/nsa/",
+    "image_url": "https://media.riyadi.com/uploads/2023/09/24162922/NSA-Club.png",
+    "original_px": [
+      524,
+      189
+    ],
+    "via": "official site",
+    "fetched": "2026-10-24",
+    "checked": "2026-10-24",
+    "use": "editorial identification only"
+  },
   "omonia": {
     "name": "Omonia",
     "source_page": null,
