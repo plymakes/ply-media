@@ -40,9 +40,12 @@ One JSON file per post in `specs/YYYY-MM-DD/<page>-<slug>.json`.
   "visual_check": {"done": true, "notes": "read back every name and number"},
   "reshare": {"mention": ["alriyadiclub"], "collaborators": ["alriyadiclub"], "not_invited": {"handle": "reason"}, "invite_reason": null},
   "feature": false,                  // true for evergreen features (spotlights, explainers) about older events
+  "series": null,                    // "spotlight" | "explained" | "archive" (series/README.md, history/README.md): 60-word captions
   "sensitive_override": null         // one-line reason only when gate flags a word that is plainly not sensitive
 }
 ```
+
+A quote from our own Spotlight DM is a fact with `"interview": {"with", "via", "received_by": "Geoffry", "at", "answer", "file"}` instead of a URL; the gate accepts it only on an AMBER post (series/README.md).
 
 Text rules for every card field: `*word*` = accent colour (use once or twice per card), `\n` = line break. Headlines are kept as written (sentence case, capitalised names: clubs, athletes, countries) and get a final full stop. "A v B" / "A vs B" anywhere on a card becomes "A vs. B" with "vs." in the accent. `"crest"` takes a club slug from `brand/crests/` or a flag `"flag:<iso code>"` from `brand/flags/` (e.g. `flag:lb`, `flag:cy`, `flag:gb-eng`); fixtures items take `home_crest`/`away_crest` (or `crest` with `text`). The first slide's photo gets the biggest band the photo allows. Word limits (gate): headline 8, deck 12, about 30 per card.
 

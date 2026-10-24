@@ -74,7 +74,11 @@
       "results_from": "21:00",
       "results_latest": "23:15",
       "archive": "19:30 Tuesday and Thursday (both pages)",
-      "afternoon": "15:00 (both pages since 24 Oct)"
+      "afternoon": "15:00 (both pages since 24 Oct)",
+      "spotlight": "10:00 Wednesday (both pages)",
+      "explained": "12:30 the day before an A event (both pages, max 2 a week); evergreen on Tuesday 12:30",
+      "features": "18:00 Tuesday and Thursday (both pages): people and community stories",
+      "round_wrap": "from 22:30 the evening the round completes (last game ending by about 21:30), otherwise the first free slot from 10:00 the next morning"
     },
     "slots_note": "From Metricool best-time data on 21 Oct 2026: weekday peak 10:00-12:00 and a second peak at 18:00; weekends about half the volume with peaks at 10:00 and 18:00-19:00. The weekly desk re-checks getBestTimeToPostByNetwork once each page has two weeks of its own data.",
     "min_minutes_between_feed_posts": 90,
@@ -82,17 +86,23 @@
     "trial_reels": "off until the page has 1,000 followers (Instagram requirement); then 2 a week to test hooks",
     "story_slots_lb": {
       "today": "09:30 (every day with an event in any top-20 sport)",
-      "predict": "with Today, for each A/B match (max 3 a day)",
+      "predict": "with Today, for each A match, plus one per league round for its biggest game (max 3 a day)",
       "quiz": "13:30 Mon, Wed, Sat (question, then the answer 2 minutes later)",
       "results": "22:45 on match nights (all sports)",
-      "main_post": "the day's main post as a Story card, 30 minutes after it goes out"
+      "main_post": "the day's main post as a Story card, 30 minutes after it goes out",
+      "round_card": "09:30 on the first day of each round, one per league (top two leagues; PLAYBOOK 6, League rounds)",
+      "score_updates": "after each league game or group of games, posted by its result desk (the round card again with the finals filled in)",
+      "highlights": "one per league; Geoffry adds the round's Stories by hand (the brief lists them)"
     },
     "story_slots_cy": {
       "today": "09:30 (every day with an event in any top-20 sport)",
-      "predict": "with Today, for each A/B match (max 3 a day)",
+      "predict": "with Today, for each A match, plus one per league round for its biggest game (max 3 a day)",
       "quiz": "13:30 Mon, Wed, Sat (question, then the answer 2 minutes later)",
       "results": "22:45 on match nights (all sports)",
-      "main_post": "the day's main post as a Story card, 30 minutes after it goes out"
+      "main_post": "the day's main post as a Story card, 30 minutes after it goes out",
+      "round_card": "09:30 on the first day of each round, one per league (top two leagues; PLAYBOOK 6, League rounds)",
+      "score_updates": "after each league game or group of games, posted by its result desk (the round card again with the finals filled in)",
+      "highlights": "one per league; Geoffry adds the round's Stories by hand (the brief lists them)"
     }
   },
   "campaign": {
@@ -114,6 +124,30 @@
       "monthly_desk": "the 20th at 10:20",
       "hashtag": "#FromTheArchive",
       "started": "2026-10-27"
+    },
+    "spotlight": {
+      "name": "Spotlight",
+      "file": "series/README.md",
+      "queue": "series/queue.md",
+      "log": "series/log.json",
+      "days": [
+        "Wednesday"
+      ],
+      "time": "10:00",
+      "per_page_per_week": 1,
+      "hashtag": "#SportsWireSpotlight",
+      "dm": "the weekly desk picks the subjects for the week after next and writes three questions; Geoffry sends the DMs; answers go in series/answers/ (verbatim) and make the post AMBER",
+      "started": "2026-10-28"
+    },
+    "explained": {
+      "name": "Explained",
+      "file": "series/README.md",
+      "queue": "series/queue.md",
+      "log": "series/log.json",
+      "when": "12:30 the day before an A event; evergreen on Tuesday 12:30 in a week without one",
+      "max_per_page_per_week": 2,
+      "hashtag": "#SportsWireExplained",
+      "started": "2026-10-30"
     }
   },
   "sports_maps": {
@@ -127,5 +161,27 @@
     },
     "tool": "tools/sweep.py",
     "every_run": "python3 tools/sweep.py today --page <lb|cy> (all top-20 sports, in order) and python3 tools/sweep.py coverage --page <lb|cy>"
-  }
+  },
+  "league_rounds": {
+    "help": "Domestic league games go in Stories (round card, score updates, predict) and one round wrap carousel per league after the round; only A games (derbies, etc.) get their own feed result. Geoffry, 24 Oct 2026. PLAYBOOK 6, League rounds.",
+    "full_treatment": {
+      "lb": [
+        "Division A basketball",
+        "Lebanese Premier League"
+      ],
+      "cy": [
+        "Cyprus League",
+        "ECOMMBX Basket League"
+      ]
+    },
+    "other_leagues": "round results in the Stories and the Monday 'other sports this weekend' carousel",
+    "round_wrap": [
+      "standings (two slides above 8 clubs)",
+      "roundup (5 rows a slide)",
+      "standout player or moment",
+      "end"
+    ]
+  },
+  "global_sport": "off: no global sport without a Lebanese or Cypriot athlete, coach or club in the story (Geoffry, 24 Oct 2026; PLAYBOOK 2)",
+  "money": "on hold until further notice: no sponsorship, sponsorship platform, media kit or paid-deal work (Geoffry, 24 Oct 2026; CAMPAIGN 9)"
 }

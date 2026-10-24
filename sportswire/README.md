@@ -8,6 +8,7 @@ The newsroom behind @sportswire.lb and @sportswire.cy: Lebanese and Cypriot spor
 
 - `PLAYBOOK.md`: editorial rules, verification standard, what auto-publishes and what waits for review
 - `RUNBOOK.md`: what the morning, evening and weekly runs do
+- `series/`: the Spotlight and Explained series (rules, forward queue, DM answers, log); the archive series is in `history/`
 - `brand/`: brand guide, logos, crests, reference posts, template previews
 - `sources/`: source maps per country, confirmed Instagram handles, name spellings
 - `tools/`: card renderer, pre-publish gate, publishing and log helpers

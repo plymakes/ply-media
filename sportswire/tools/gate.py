@@ -125,7 +125,7 @@ def case_problems(text: str) -> list[str]:
 
 # Captions that read like a person, not a press release (Geoffry, 24 Oct 2026: "it's very AI ... less words").
 VOICE_FROM = '2026-10-24'
-CAPTION_WORDS = {'default': 40, 'archive': 60}
+CAPTION_WORDS = {'default': 40, 'archive': 60, 'spotlight': 60, 'explained': 60}  # series/README.md (25 Oct 2026)
 SENTENCE_WORDS = 20
 AI_TELLS = [r'showcas', r'testament', r'underscor', r'highlighting', r'\bcement', r'solidif', r'remarkable',
             r'thrilling', r'\bclash\b', r'set the stage', r'worth noting', r'a reminder', r'not only\b', r'\bjourney\b',
@@ -159,7 +159,7 @@ def voice_problems(spec: dict, cap: str) -> list[str]:
         return probs
     eng, ar = caption_parts(cap)
     n = len(re.findall(r"[A-Za-z0-9][\w'’.-]*", eng))
-    limit = CAPTION_WORDS['archive'] if spec.get('series') == 'archive' else CAPTION_WORDS['default']
+    limit = CAPTION_WORDS.get(spec.get('series') or 'default', CAPTION_WORDS['default'])
     if n > limit:
         probs.append(f'English caption is {n} words (max {limit}): say it like a person would, cut every line the card already says (PLAYBOOK 7, Captions)')
     for sent in re.split(r'(?<=[.!?])\s+|\n', eng):
@@ -342,6 +342,11 @@ def check(path: str) -> list[str]:
         ed = f.get('editor_confirmed') or {}
         if ed.get('by') == 'Geoffry' and ed.get('at') and ed.get('quote') and ed.get('how'):
             t1 = t1 or [ed]
+        # A Spotlight subject's own words from our DM (series/README.md): the source for that quote, never for other facts.
+        # Any post that carries one is AMBER (section 7 below), so Geoffry publishes it himself.
+        iv = f.get('interview') or {}
+        if iv.get('with') and iv.get('via') and iv.get('received_by') == 'Geoffry' and iv.get('at') and iv.get('answer'):
+            t1 = t1 or [iv]
         t2_sites = {urlparse(s['url']).netloc.replace('www.', '') for s in srcs if s.get('tier') == 2 and s.get('url', '').startswith('http')}
         if not t1 and len(t2_sites) < 2:
             probs.append(f'fact {i} "{f.get("claim", "")[:60]}" needs a tier-1 source or two tier-2 sources on different sites')
@@ -494,6 +499,8 @@ def check(path: str) -> list[str]:
         is_quote = spec.get('template') == 'quote' or any(s.get('template') == 'quote' for s in spec.get('slides', []))
         if is_quote:
             probs.append('quote cards are always AMBER')
+        if any((f.get('interview') or {}).get('answer') for f in spec['facts']):
+            probs.append('a post with Spotlight DM answers is always AMBER (series/README.md): Geoffry publishes it')
 
     # 8. duplicates and freshness
     log = json.loads((ROOT / 'content-log.json').read_text())
