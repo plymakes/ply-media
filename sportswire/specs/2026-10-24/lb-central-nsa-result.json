@@ -88,5 +88,43 @@
   "visual_check": {
     "done": true,
     "notes": "No-photo fill layout (24 Oct 23:45). Read back: SPORTSWIRE LEBANON header; LEBANON BASKETBALL LEAGUE · ROUND 1; 'Central open the season with a win.'; score panel fills the card: Central crest (round C 'Central Club' logo) / Central / 86 / HOME, NSA crest (National Sports Academy logo) / NSA / 78 / AWAY; FINAL · SATURDAY 24 OCTOBER; @SPORTSWIRE.LB. No clipping, no overlap, no empty half."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-24T23:48+03:00",
+    "agent": "Geoffry (editor) in chat, 23:48: 'yes all good you can post', after the five checks were listed to him (competition/round 1, opening game Sat 24 Oct, Central home / NSA away, names, Arabic). He watched the game in the FLBB app. The independent agent check started 23:46 was still running; its result is appended when it reports and any problem is corrected at once.",
+    "arabic_checked": true,
+    "claims": [
+      {
+        "claim": "Lebanon Basketball League 2026-27, round 1",
+        "verdict": "CONFIRMED by Geoffry",
+        "url": "https://elsport.com/basketball/844944/"
+      },
+      {
+        "claim": "Opening game of the season, Saturday 24 October",
+        "verdict": "CONFIRMED by Geoffry",
+        "url": "https://www.al-akhbar.com/NewspaperArticles/sports/908180/"
+      },
+      {
+        "claim": "Central home, NSA away",
+        "verdict": "CONFIRMED by Geoffry (FLBB app)",
+        "url": "FLBB official app, watched by Geoffry"
+      },
+      {
+        "claim": "Final Central 86-78 NSA",
+        "verdict": "CONFIRMED by Geoffry (FLBB app, watched to the end)",
+        "url": "FLBB official app, watched by Geoffry"
+      },
+      {
+        "claim": "Names Central / NSA",
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/basketball/844944/"
+      },
+      {
+        "claim": "Arabic says the same as the English",
+        "verdict": "CONFIRMED by Geoffry",
+        "url": "chat 23:48"
+      }
+    ]
   }
 }
