@@ -49,6 +49,11 @@
           "url": "https://shootandgoal.cyprustimes.com/podosfairo-kyprou/a-katigoria/me-to-dexi-i-anorthosi-stin-epochi-intzchaki/",
           "tier": 2,
           "outlet": "Cyprus Times (20:57)"
+        },
+        {
+          "url": "https://www.ant1live.com/athlitika/701911_anorthosi-omonoia-aradippoy-2-0-epistrofi-stis-nikes-kai-bathmologiko-alma-trion",
+          "tier": 2,
+          "outlet": "Ant1 Live"
         }
       ]
     },
@@ -104,5 +109,43 @@
   "visual_check": {
     "done": true,
     "notes": "Read back: CYPRUS LEAGUE · ROUND 7, 'A winning start for the new coach.', Anorthosis 2 HOME, Omonia Aradippou 0 AWAY (no crests for either yet), FULL TIME · SATURDAY 24 OCTOBER, PHOTO: KERKIDA. Photo: three Anorthosis players celebrating (club badge on shirts) from Kerkida's report on this game. No clipping."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-24T21:45+03:00",
+    "agent": "independent general-purpose agent, card text and caption only",
+    "claims": [
+      {
+        "claim": "Anorthosis 2-0 Omonia Aradippou, full time",
+        "verdict": "CONFIRMED",
+        "url": "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki"
+      },
+      {
+        "claim": "Saturday 24 October",
+        "verdict": "CONFIRMED",
+        "url": "https://www.ant1live.com/athlitika/701810_aylaia-ayrio-stin-7i-agonistiki-me-dyo-agones-programma-bathmologia"
+      },
+      {
+        "claim": "Cyprus League, Round 7",
+        "verdict": "CONFIRMED",
+        "url": "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki"
+      },
+      {
+        "claim": "New coach's first game",
+        "verdict": "CONFIRMED",
+        "url": "https://protathlima.cyprustimes.com/podosfairo-kyprou/a-katigoria/niki-sto-ntebouto-tou-barak-itzchaki-i-anorthosi-me-2-0-skorare-me-tosits-kai-lopes/"
+      },
+      {
+        "claim": "Omonia Aradippou the visitors at Antonis Papadopoulos",
+        "verdict": "CONFIRMED",
+        "url": "https://www.ant1live.com/athlitika/701911_anorthosi-omonoia-aradippoy-2-0-epistrofi-stis-nikes-kai-bathmologiko-alma-trion"
+      },
+      {
+        "claim": "Club names",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/competitions/68124755"
+      }
+    ],
+    "note": "Photo credit: the checker found no photographer named on Kerkida's page; the credit names where we took the photo (Kerkida's report on this game, in the sidecar), per the house rule."
   }
 }
