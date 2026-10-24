@@ -165,9 +165,19 @@
     "note": "if the 18:00 game wasn't posted yet, make one roundup of both"
    },
    "result": {
-    "status": "pending",
-    "spec": null,
-    "metricool_id": null
+    "status": "posted",
+    "score": "Anorthosis 2-0 Omonia Aradippou",
+    "spec": "specs/2026-10-24/cy-anorthosis-omonia-aradippou-result.json",
+    "metricool_id": 405185904,
+    "when": "2026-10-24T21:39+03:00",
+    "attempts": 1,
+    "first_source": {
+     "name": "Kerkida",
+     "url": "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki",
+     "seen_final_by": "2026-10-24T20:55+03:00"
+    },
+    "final_at": "about 20:52 Cyprus",
+    "note": "Anorthosis not tagged (two candidate handles, Geoffry to confirm)."
    }
   },
   {

@@ -1086,6 +1086,45 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/0ce260d23e106a041001a490b0e169cf58ce457f/sportswire/posts/cy/2026-10/2026-10-24-olympiakos-krasava-result.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-24",
+      "slug": "anorthosis-omonia-aradippou-result",
+      "story_key": "cy-league-2026-r7-anorthosis-omonia-aradippou",
+      "light": "green",
+      "sport": "football",
+      "format": "post",
+      "series": null,
+      "template": "result",
+      "headline": "A winning start for the *new coach*.",
+      "caption_first_line": "Anorthosis win 2-0 in the new coach's first game. ⚽",
+      "sources": [
+        "https://shootandgoal.cyprustimes.com/podosfairo-kyprou/a-katigoria/me-to-dexi-i-anorthosi-stin-epochi-intzchaki/",
+        "https://www.ant1live.com/athlitika/701810_aylaia-ayrio-stin-7i-agonistiki-me-dyo-agones-programma-bathmologia",
+        "https://www.ant1live.com/athlitika/701911_anorthosi-omonoia-aradippoy-2-0-epistrofi-stis-nikes-kai-bathmologiko-alma-trion",
+        "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki"
+      ],
+      "reshare": {
+        "mention": [
+          "omonoiaaradippou_media",
+          "cyprusfa_official"
+        ],
+        "collaborators": [],
+        "not_invited": {
+          "omonoiaaradippou_media": "lost; the post is about their defeat"
+        },
+        "note": "Anorthosis not tagged: the club site links two different handles (anorthosisfc.official / anorthosisfc_official), Geoffry to confirm. Scorers left out: the outlets differ on the second goal's minute (90+3 / 90+4) and the English spellings aren't confirmed."
+      },
+      "spec": "specs/2026-10-24/cy-anorthosis-omonia-aradippou-result.json",
+      "logged_at": "2026-10-24T18:36:41+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-24T21:39",
+      "metricool_id": "405185904",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-8754496844503299011",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/f96ea45e354339b2ac95e143463a811ecdd2859b/sportswire/posts/cy/2026-10/2026-10-24-anorthosis-omonia-aradippou-result.png"
+      ]
     }
   ]
 }
