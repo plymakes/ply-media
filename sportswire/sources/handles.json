@@ -24,9 +24,9 @@
       "page": "lb",
       "confirmed": true,
       "confidence": "high",
-      "how": "linked from lebanon.basketball; used as collaborator on published posts Aug 2026",
-      "kind": "org",
-      "checked": "2026-10-19",
+      "how": "Federation site lebanon.basketball links instagram.com/flb_official (header and contact footer) (https://lebanon.basketball/)",
+      "kind": "federation",
+      "checked": "2026-10-24",
       "crest": "flbb",
       "national_team": {
         "flag": "lb",
@@ -36,16 +36,17 @@
         "sports": [
           "basketball"
         ]
-      }
+      },
+      "sport": "basketball"
     },
     "thelfadotcom": {
-      "who": "Lebanese Football Association (also national team)",
+      "who": "Lebanese Football Association (LFA)",
       "page": "lb",
       "confirmed": true,
       "confidence": "high",
-      "how": "linked from the-lfa.com.lb",
-      "kind": "org",
-      "checked": "2026-10-19",
+      "how": "LFA official site the-lfa.com.lb links instagram.com/thelfadotcom (https://www.the-lfa.com.lb/)",
+      "kind": "federation",
+      "checked": "2026-10-24",
       "national_team": {
         "flag": "lb",
         "sport": "football"
@@ -54,17 +55,19 @@
         "sports": [
           "football"
         ]
-      }
+      },
+      "sport": "football"
     },
     "alriyadiclub": {
-      "who": "Al Riyadi Club (basketball)",
+      "who": "Al Riyadi Club Beirut",
       "page": "lb",
       "confirmed": true,
       "confidence": "high",
-      "how": "linked from riyadi.com",
-      "kind": "org",
-      "checked": "2026-10-19",
-      "crest": "riyadi"
+      "how": "Club official site riyadi.com header and footer link instagram.com/AlRiyadiClub (https://www.riyadi.com/player/hayk-gyokchyan/)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "crest": "riyadi",
+      "sport": "basketball"
     },
     "lebanonrl": {
       "who": "Lebanon Rugby League (the Cedars)",
@@ -98,9 +101,10 @@
       "page": "lb",
       "confirmed": true,
       "confidence": "high",
-      "how": "collaborator on published post 28 Aug 2026 (chosen by Geoffry)",
-      "kind": "org",
-      "checked": "2026-10-19"
+      "how": "ANOC official NOC directory lists instagram.com/lebolympiccommittee for the Lebanese Olympic Committee (https://www.anocolympic.org/nocs-directory/lebanese-olympic-committee/16437)",
+      "kind": "federation",
+      "checked": "2026-10-24",
+      "sport": "multi-sport"
     },
     "atclmotorsports": {
       "who": "ATCL Motorsports (Lebanon motorsport committee)",
@@ -136,44 +140,48 @@
       "crest": "hoops"
     },
     "sagesseclubofcl": {
-      "who": "Sagesse SC",
+      "who": "Sagesse SC (multi-sport club: basketball and football)",
       "page": "lb",
       "confirmed": true,
       "confidence": "medium",
-      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
-      "kind": "org",
-      "checked": "2026-10-19",
-      "crest": "sagesse"
+      "how": "Kept at medium: club's X account is 'Sagesse Sports Club (@SagesseClubOfcl)', the same name; sagesseclub.com blocks fetching so could not upgrade. Same account covers the football section. (https://x.com/SagesseClubOfcl)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "crest": "sagesse",
+      "sport": "basketball"
     },
     "beirutclub": {
-      "who": "Beirut Club (basketball)",
+      "who": "Beirut Club / Beirut First Basketball Club",
       "page": "lb",
       "confirmed": true,
       "confidence": "medium",
-      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
-      "kind": "org",
-      "checked": "2026-10-19",
-      "crest": "beirut-club"
+      "how": "Kept at medium: search listing titled 'Beirut First Basketball Club (@beirutclub)', which matches; club X is @BeirutClubLB. No club website found. (https://www.instagram.com/beirutclub/)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "crest": "beirut-club",
+      "sport": "basketball"
     },
     "nejmeh_sc": {
       "who": "Nejmeh SC",
       "page": "lb",
       "confirmed": true,
-      "confidence": "medium",
-      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
-      "kind": "org",
-      "checked": "2026-10-19",
-      "crest": "nejmeh"
+      "confidence": "high",
+      "how": "Club official site nejmehsc.com links instagram.com/nejmeh_sc (upgraded from medium) (https://nejmehsc.com/)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "crest": "nejmeh",
+      "sport": "football"
     },
     "alahedfc": {
       "who": "Al Ahed FC",
       "page": "lb",
       "confirmed": true,
       "confidence": "medium",
-      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
-      "kind": "org",
-      "checked": "2026-10-19",
-      "crest": "al-ahed"
+      "how": "Kept at medium: search listing shows @alahedfc with Arabic name 'Lebanese Al Ahed Club'. Club site alahedfc.com has no social links, so could not upgrade. Note X is @ALAHED_FC. (https://www.instagram.com/alahedfc/)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "crest": "al-ahed",
+      "sport": "football"
     },
     "mtvlebsports": {
       "who": "MTV Lebanon sports (broadcaster)",
@@ -188,10 +196,11 @@
       "who": "Wael Arakji",
       "page": "lb",
       "confirmed": true,
-      "confidence": "medium",
-      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
+      "confidence": "high",
+      "how": "FIBA's official article embeds his post credited '(@waelarakji)'; Yung MEA profile links the same. @arakji16 is a different account; avoid it. (https://www.fiba.basketball/en/news/asiacup-2021-news-q-a-wael-arakji-x-fibaasiacup-instagram)",
       "kind": "athlete",
-      "checked": "2026-10-19"
+      "checked": "2026-10-24",
+      "sport": "basketball"
     },
     "youssefkhayat": {
       "who": "Youssef Khayat",
@@ -269,10 +278,11 @@
       "who": "FIBA Asia Cup",
       "page": "lb",
       "confirmed": true,
-      "confidence": "medium",
-      "how": "HypeAuditor public profile (third-party directory), follower count consistent with the official account",
-      "kind": "org",
-      "checked": "2026-10-19"
+      "confidence": "high",
+      "how": "FIBA Asia Cup 2025 event page on fiba.basketball lists instagram.com/asiacup as the event account (https://www.fiba.basketball/en/events/fiba-asia-cup-2025)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "basketball"
     },
     "bclasia": {
       "who": "Basketball Champions League Asia",
@@ -791,6 +801,102 @@
       "kind": "organiser",
       "sport": "tennis",
       "checked": "2026-10-24"
+    },
+    "fiba": {
+      "who": "FIBA (International Basketball Federation)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "FIBA official site footer links instagram.com/fiba (https://www.fiba.basketball/en)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "basketball"
+    },
+    "officialwasl": {
+      "who": "FIBA West Asia Super League (WASL)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "FIBA WASL Final 8 2026 event pages list instagram.com/officialwasl as the competition account (https://www.fiba.basketball/en/events/fiba-wasl-west-asia-league-final8-26/news)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "basketball"
+    },
+    "intlrugbyleague": {
+      "who": "International Rugby League (IRL)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "IRL official site footer links instagram.com/intlrugbyleague (https://www.intrl.sport/)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "rugby league"
+    },
+    "rugbyleagueworldcup": {
+      "who": "Rugby League World Cup 2026",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "Official RLWC2026 site (rlwc2026.com) links instagram.com/rugbyleagueworldcup (https://www.rlwc2026.com/)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "rugby league"
+    },
+    "waffootball": {
+      "who": "West Asian Football Federation (WAFF)",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "WAFF official site footer links instagram.com/waffootball (https://www.the-waff.com/)",
+      "kind": "organiser",
+      "checked": "2026-10-24",
+      "sport": "football"
+    },
+    "lebanesetaekwondofederation": {
+      "who": "Lebanese Taekwondo Federation",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "Federation site lebanesetaekwondo.org links instagram.com/lebanesetaekwondofederation (https://lebanesetaekwondo.org/)",
+      "kind": "federation",
+      "checked": "2026-10-24",
+      "sport": "taekwondo",
+      "covers": {
+        "sports": [
+          "taekwondo"
+        ]
+      }
+    },
+    "clubcentraljounieh": {
+      "who": "Club Central Jounieh",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "Club site clubccj.com (linked to Central College Jounieh) links instagram.com/clubcentraljounieh (https://clubccj.com/about-us/)",
+      "kind": "club",
+      "checked": "2026-10-24",
+      "sport": "basketball",
+      "crest": "central"
+    },
+    "christopherfeghali": {
+      "who": "Christopher (El) Feghali, racing driver",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "high",
+      "how": "His own site christopherfeghali.racing/contact links instagram.com/christopherfeghali; L'Orient Today credits a photo to the same account (https://christopherfeghali.racing/contact)",
+      "kind": "athlete",
+      "checked": "2026-10-24",
+      "sport": "motorsport"
+    },
+    "gabybitar9": {
+      "who": "Gabriel Bitar, footballer",
+      "page": "lb",
+      "confirmed": true,
+      "confidence": "medium",
+      "how": "His agency (OPSM) client page links instagram.com/gabybitar9. @gabriel_bitar is a different person; avoid it. (https://www.opsmpro.com/client/gabriel-bitar/)",
+      "kind": "athlete",
+      "checked": "2026-10-24",
+      "sport": "football"
     }
   },
   "unconfirmed_or_do_not_use": {
@@ -798,6 +904,34 @@
     "homenetmenbeirut": "This is the Homenetmen scouting/community organisation, NOT the basketball team; do not tag as the team",
     "anorthosisfc.official": "Anorthosis Famagusta FC (candidate 1): CONFLICT: official site header links this handle, footer links anorthosisfc_official (checked /, /en/). Could not resolve which is live; check in-app (verified tick/followers) before tagging (https://www.anorthosisfc.com.cy/)",
     "anorthosisfc_official": "Anorthosis Famagusta FC (candidate 2): CONFLICT: official site footer 'SOCIAL MEDIA' block links this handle, header links anorthosisfc.official. Verify in-app before tagging (https://www.anorthosisfc.com.cy/)",
-    "anorthosis": "Anorthosis FC: club site links both anorthosisfc.official (header) and anorthosisfc_official (footer); Geoffry to check which is verified in the app (24 Oct)"
+    "anorthosis": "Anorthosis FC: club site links both anorthosisfc.official (header) and anorthosisfc_official (footer); Geoffry to check which is verified in the app (24 Oct)",
+    "theafcdotcom": "Asian Football Confederation (AFC): AFC's X and LinkedIn both use 'theafcdotcom' (search listings); the-afc.com renders no social links to the fetcher, so the Instagram handle is unproven. Do NOT  (https://x.com/theafcdotcom)",
+    "volley_lebanon": "Lebanese Volleyball Federation (candidate): Only a search listing titled 'Lebanese Volleyball Federation (@volley_lebanon)'. Competing account @lebvolley exists; federation site volleylebanon.com lists no (https://www.instagram.com/volley_lebanon/)",
+    "lebvolley": "Lebanese Volleyball (candidate federation/league account): Search listing 'Lebanese Volleyball (@lebvolley)'; lebvolley.com calls itself 'Lebanese Volleyball Official Website' and links facebook.com/lebvolley but no Ins (https://www.lebvolley.com/)",
+    "lebanesetennis": "Lebanese Tennis Federation (candidate): Search listing titled 'Lebanese Tennis Federation (@lebanesetennis)'. A second account @lebanesetennis.federation also claims to be LTF; the federation's site ( (https://www.instagram.com/lebanesetennis/)",
+    "lebanesetennis.federation": "Lebanese Tennis Federation (second candidate): Search listing titled 'LTF Lebanese Tennis Federation (Arabic)'. Competes with @lebanesetennis. Ambiguous. (https://www.instagram.com/lebanesetennis.federation/)",
+    "judo_lebanon": "Lebanese Judo Federation (candidate): Only a search listing titled 'Lebanese Judo Federation (@judo_lebanon)'; IJF country page lists no socials; federation Facebook is facebook.com/judolebanon. (https://www.instagram.com/judo_lebanon/)",
+    "lebaneseskifederation": "Lebanese Ski & Biathlon Federation (candidate): Search listing titled 'Lebanese Ski & Biathlon Federation (@lebaneseskifederation)'; same name as its Facebook page (facebook.com/lebaneseskifederation). Federa (https://www.instagram.com/lebaneseskifederation/)",
+    "alansarfc_official": "Al Ansar FC (candidate 1 of 3): Search listing 'Al Ansar Fc (@alansarfc_official)'. Two look-alikes exist: @alansarfc.official and @alansarfc. Club Facebook is AlAnsarFC.Official; club website (https://www.instagram.com/alansarfc_official/)",
+    "alansarfc.official": "Al Ansar FC (candidate 2 of 3): Search listing 'Al Ansar Fc (@alansarfc.official)'. Ambiguous vs @alansarfc_official and @alansarfc. (https://www.instagram.com/alansarfc.official/)",
+    "alansarfc": "Al Ansar FC (candidate 3 of 3): Search listing 'Al Ansar FC (@alansarfc)'. Ambiguous; may be a fan or old account. (https://www.instagram.com/alansarfc/)",
+    "tadamonsoursc": "Tadamon Sour SC: Search listing 'Tadamon Sour (@tadamonsoursc)' plus Global Sports Archive (directory) lists the same; X handle is also @tadamonsoursc. Club site blocks fetching (https://globalsportsarchive.com/en/soccer/team/tadamon-sc-sour/16374/overview)",
+    "akhaa_fc": "Akhaa Ahli Aley FC: Only a search listing titled 'Akhaa Ahli Aley FC (@akhaa_fc)'. (https://www.instagram.com/akhaa_fc/)",
+    "jwaya_sc": "Jwaya SC: English Wikipedia's Jwaya SC article cites an Instagram post from instagram.com/jwaya_sc (not an official source). (https://en.wikipedia.org/wiki/Jwaya_SC)",
+    "racingbeirut": "Racing Club Beirut (candidate 1 of 3): TheSportsDB (directory) lists instagram.com/racingbeirut. Search also shows @racingclubbeirutofficial and @racingclubofcl, both titled 'Racing Club Beirut'. Amb (https://www.thesportsdb.com/team/147426-racing-club-beirut)",
+    "racingclubbeirutofficial": "Racing Club Beirut (candidate 2 of 3): Search listing 'Racing Club Beirut (@racingclubbeirutofficial)'. Ambiguous. (https://www.instagram.com/racingclubbeirutofficial/)",
+    "racingclubofcl": "Racing Club Beirut (candidate 3 of 3): Search listing 'Racing Club Beirut (@racingclubofcl)'. Ambiguous. (https://www.instagram.com/racingclubofcl/)",
+    "nsaclubofficial": "NSA (basketball): Only a search listing titled 'NSA Official (@nsaclubofficial)'. (https://www.instagram.com/nsaclubofficial/)",
+    "antranikbasketballofficial": "Antranik (basketball): Search listing 'Antranik Basketball Official'. The parent club is @antranik_youth_association (also low). AGBU site blocks fetching. (https://www.instagram.com/antranikbasketballofficial/)",
+    "homenetmenofficial": "Homenetmen Beirut basketball (candidate 1 of 2): Search listing titled 'Homenetmen Beirut Basketball (@homenetmenofficial)'. A second account @homenetmen.bc ('Homenetmen Basketball Club') also exists. Not @hom (https://www.instagram.com/homenetmenofficial/)",
+    "homenetmen.bc": "Homenetmen Beirut basketball (candidate 2 of 2): Search listing titled 'Homenetmen Basketball Club (@homenetmen.bc)'. Ambiguous vs @homenetmenofficial. (https://www.instagram.com/homenetmen.bc/)",
+    "cjs_batroun": "Club Jeunesse Sportif Batroun (Chabab Batroun): Only a search listing titled 'Club Jeunesse Sportif Batroun (@cjs_batroun)'. Basketball site cjs-batroun.com is a placeholder with no links. (https://www.instagram.com/cjs_batroun/)",
+    "clubantoninsportif": "Club Antonin Sportif (Antonine basketball): Search listing 'Club Antonin Sportif (@clubantoninsportif)'. Antonine University confirms the team's name is Club Antonin Sportif (CAS) but does not link the ac (https://www.instagram.com/clubantoninsportif/)",
+    "sergioeld3": "Sergio El Darwich: Only a search listing titled 'Sergio El Darwich (@sergioeld3)'. (https://www.instagram.com/sergioeld3/)",
+    "azizasbaity": "Aziza Sbaity, sprinter: One magazine profile (Yung MEA) links instagram.com/azizasbaity; no second source found. (https://thisisyungmea.com/on-track-with-aziza-sbaity/)",
+    "youssefkhayat": "Youssef Khayat: Only a search listing 'Youssef Khayat (@youssefkhayat)'; note his X is @youssefkhayat24. (https://www.instagram.com/youssefkhayat/)",
+    "jacobkiraz": "Jacob Kiraz (Lebanon RLWC 2026 squad, Bulldogs): Only a search listing titled 'JACOB KIRAZ (@jacobkiraz)'; NRL profile has no socials. (https://www.instagram.com/jacobkiraz/)",
+    "arakji16": "NOT Wael Arakji (his handle is @waelarakji)",
+    "gabriel_bitar": "NOT the footballer Gabriel Bitar (his is @gabybitar9, medium)"
   }
 }

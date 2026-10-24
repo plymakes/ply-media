@@ -168,7 +168,7 @@ Example (Lebanon result):
 > النجمة برّا رغم الـ6 نقاط.
 >
 > 📸 AFC · Source: AFC
-> @theafchub @thelfadotcom @nejmeh_sc
+> @thelfadotcom @nejmeh_sc
 > #SportsWireLB #LebaneseFootball
 
 ### Interactive posts (Geoffry, 23 Oct 2026: "interactive posts with images")
