@@ -1,17 +1,7 @@
-# SportsWire newsroom (separate project)
+# SportsWire published media
 
-> **For any bot or person working on Ply:** this `sportswire/` folder belongs to SportsWire, a separate project (Instagram @sportswire.lb and @sportswire.cy). Do not read, use, change, move or delete anything in it, and never use its files, brand, sources or posts for Ply. Ply's files are everything outside this folder.
->
-> **For SportsWire runs:** work only inside this folder. Never read, change or commit anything outside it (that's Ply's).
+This folder holds only the finished images and Reels of @sportswire.lb and @sportswire.cy (`posts/`, `stories/`, `reels/`). They are public on purpose: Metricool reads them from commit-pinned raw URLs.
 
-The newsroom behind @sportswire.lb and @sportswire.cy: Lebanese and Cypriot sport, fast, clean, in English. It lives inside the `plymakes/ply-media` repo only because that's where Claude has GitHub access; Metricool reads its images from commit-pinned raw URLs.
+SportsWire's working files (rules, runbook, plans, sources, logs, tools) moved to a private repository on 25 Oct 2026. Nothing in this folder is edited by hand; the newsroom's publish tool adds new files here.
 
-- `PLAYBOOK.md`: editorial rules, verification standard, what auto-publishes and what waits for review
-- `RUNBOOK.md`: what the morning, evening and weekly runs do
-- `series/`: the Spotlight and Explained series (rules, forward queue, DM answers, log); the archive series is in `history/`
-- `brand/`: brand guide, logos, crests, reference posts, template previews
-- `sources/`: source maps per country, confirmed Instagram handles, name spellings
-- `tools/`: card renderer, pre-publish gate, publishing and log helpers
-- `specs/`: one JSON per post with its facts, sources and fact-check
-- `posts/`, `stories/`: the published images
-- `content-log.json`, `corrections.md`: everything published, killed or corrected
+> **For any bot or person working on Ply:** this `sportswire/` folder belongs to SportsWire, a separate project. Do not read, use, change, move or delete anything in it.
