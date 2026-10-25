@@ -1312,6 +1312,47 @@
       "image_urls": [
         "https://raw.githubusercontent.com/plymakes/ply-media/7c532704f6bf49d7b4c972e9af294324b0bfc604/sportswire/posts/cy/2026-10/2026-10-25-ael-aris-preview.png"
       ]
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-25",
+      "slug": "today-story-25",
+      "story_key": "cy-2026-10-25-today-story",
+      "light": "green",
+      "sport": "football",
+      "format": "story",
+      "series": null,
+      "template": "fixtures,predict",
+      "headline": "The *Limassol derby*, Europe and the rally.",
+      "caption_first_line": "(Story: no caption)",
+      "sources": [
+        "https://ael.com.cy/match/ael-aris/",
+        "https://balla.com.cy/2026/10/xechorizei-to-ael-aris-simantikes-maches-gia-apoel-kai-apollona-programma-vathmologia/",
+        "https://cyprus-mail.com/2026/10/24/al-attiyah-leads-the-cyprus-rally-after-the-first-day",
+        "https://sportime.sigmalive.com/ecommbx-basket-league-to-programma-tis-3is-agonistikis/",
+        "https://www.alphanews.live/sports/to-programma-gia-ti-3i-agonistiki-tis-ecommbx-basket-league/",
+        "https://www.ant1live.com/athlitika/701883_nea-eyropaiki-bradia-gia-ti-sabbianco-anorthosi-apenanti-stin-aek-athinon",
+        "https://www.cfa.com.cy/En/news/51350",
+        "https://www.cfa.com.cy/Gr/news/53956",
+        "https://www.cyprusrally.com.cy/uploads/2026/docs/a7c2ad4225.pdf",
+        "https://www.kerkida.net/eidiseis/alla-spor/anorthosi/ypodehetai-tin-aek-athinon-i-sabbianco-anorthosi"
+      ],
+      "reshare": {
+        "mention": [],
+        "collaborators": [],
+        "no_tag_reason": "Story: no caption",
+        "no_collab_reason": "Story"
+      },
+      "spec": "specs/2026-10-25/cy-today-story.json",
+      "logged_at": "2026-10-25T07:34:53+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-25T09:40:00+02:00",
+      "metricool_id": "405496385",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-5088407198145426959",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/179539ca934fd4b2ae109a16ab9cfa06d3d3f046/sportswire/stories/cy/2026-10/2026-10-25-today-story-25-01.png",
+        "https://raw.githubusercontent.com/plymakes/ply-media/179539ca934fd4b2ae109a16ab9cfa06d3d3f046/sportswire/stories/cy/2026-10/2026-10-25-today-story-25-02.png"
+      ]
     }
   ]
 }

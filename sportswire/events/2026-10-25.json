@@ -32,6 +32,13 @@
         ],
         "next_run": "2026-10-25T17:35+02:00",
         "created_by": "morning desk 25 Oct"
+      },
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-25/cy-today-story.json",
+        "format": "Today Story",
+        "metricool_id": 405496385,
+        "when": "2026-10-25T09:40+02:00"
       }
     },
     {
@@ -64,7 +71,14 @@
         "next_run": "2026-10-25T19:30+02:00",
         "created_by": "morning desk 25 Oct"
       },
-      "round_card_spec": "specs/2026-10-25/cy-round-cyprus-league-r7.json"
+      "round_card_spec": "specs/2026-10-25/cy-round-cyprus-league-r7.json",
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-25/cy-today-story.json",
+        "format": "Today Story",
+        "metricool_id": 405496385,
+        "when": "2026-10-25T09:40+02:00"
+      }
     },
     {
       "id": "cy-basket-md3-digenis-anorthosis",
@@ -96,7 +110,14 @@
         "next_run": "2026-10-25T19:40+02:00",
         "created_by": "morning desk 25 Oct"
       },
-      "round_card_spec": "specs/2026-10-25/cy-round-basket-league-md3.json"
+      "round_card_spec": "specs/2026-10-25/cy-round-basket-league-md3.json",
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-25/cy-today-story.json",
+        "format": "Today Story",
+        "metricool_id": 405496385,
+        "when": "2026-10-25T09:40+02:00"
+      }
     },
     {
       "id": "cy-league-r7-apoel-omonia29m",
@@ -128,7 +149,14 @@
         "next_run": "2026-10-25T20:30+02:00",
         "created_by": "morning desk 25 Oct"
       },
-      "round_card_spec": "specs/2026-10-25/cy-round-cyprus-league-r7.json"
+      "round_card_spec": "specs/2026-10-25/cy-round-cyprus-league-r7.json",
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-25/cy-today-story.json",
+        "format": "Today Story",
+        "metricool_id": 405496385,
+        "when": "2026-10-25T09:40+02:00"
+      }
     },
     {
       "id": "cy-league-r7-ael-aris",
@@ -154,7 +182,12 @@
         "spec": "specs/2026-10-25/cy-ael-aris-preview.json",
         "format": "matchup card",
         "metricool_id": 405484955,
-        "when": "2026-10-25T12:30+02:00"
+        "when": "2026-10-25T12:30+02:00",
+        "also": {
+          "format": "predict Story",
+          "metricool_id": 405496401,
+          "when": "2026-10-25T09:42+02:00"
+        }
       },
       "result": {
         "status": "pending",
@@ -199,6 +232,13 @@
         ],
         "next_run": "2026-10-25T22:20+02:00",
         "created_by": "morning desk 25 Oct"
+      },
+      "preview": {
+        "status": "scheduled",
+        "spec": "specs/2026-10-25/cy-today-story.json",
+        "format": "Today Story",
+        "metricool_id": 405496385,
+        "when": "2026-10-25T09:40+02:00"
       }
     },
     {
