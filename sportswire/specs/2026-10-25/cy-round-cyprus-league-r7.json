@@ -153,5 +153,37 @@
   "visual_check": {
     "done": true,
     "notes": "Read back: CYPRUS LEAGUE · ROUND 7; 'Round 7, so far.'; Sat: Olympiakos Nicosia vs. Krasava 1-1 Full time; Anorthosis vs. Omonia Aradippou 2-0 Full time; Sun: Karmiotissa vs. Apollon Limassol 17:00 Stelios Kyriakides; APOEL vs. Omonia 29 M 18:00 GSP; AEL Limassol vs. Aris Limassol 19:00 Alphamega Stadium; Mon: Nea Salamis vs. Pafos FC 18:00 Ammochostos–Epistrofi; AEK Larnaca vs. Omonia 19:00 AEK Arena. No clipping."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-25T09:50+02:00",
+    "agent": "independent general-purpose agent, card text only",
+    "claims": [
+      {
+        "claim": "Olympiakos Nicosia 1-1 Krasava, full time",
+        "verdict": "CONFIRMED",
+        "url": "https://sportime.sigmalive.com/olympiakos-krasaba-1-1-den-(x)arike-kaneisand/"
+      },
+      {
+        "claim": "Anorthosis 2-0 Omonia Aradippou, full time",
+        "verdict": "CONFIRMED",
+        "url": "https://www.kerkida.net/eidiseis/a-katigoria/anorthosi/anorthosi-omonoia-aradippoy-epistrofi-stis-nikes-sto-proto-toy-itzhaki"
+      },
+      {
+        "claim": "Sunday fixtures, times and venues",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/fixtures/68153713"
+      },
+      {
+        "claim": "Nea Salamis v Pafos FC Mon 18:00 Ammochostos–Epistrofi",
+        "verdict": "CONFIRMED",
+        "url": "https://www.ant1live.com/athlitika/701646_cyprus-league-stoiximan-oi-diaitites-tis-7is-agonistikis-xenoi-varistes-sta-dyo"
+      },
+      {
+        "claim": "AEK Larnaca v Omonia Mon 19:00 AEK Arena",
+        "verdict": "CONFIRMED",
+        "url": "https://aek.com.cy/article/podosfairo/ta-eisitiria-gia-ton-agona-protathlimatos-me-tin-omonoia-12"
+      }
+    ]
   }
 }

@@ -201,5 +201,57 @@
   "visual_check": {
     "done": true,
     "notes": "Slide 1 read back: TODAY · SUNDAY 25 OCTOBER; 'The Limassol derby, Europe and the rally.'; Cyprus League round 7: Karmiotissa vs. Apollon Limassol 17:00 Stelios Kyriakides; APOEL vs. Omonia 29 M 18:00 GSP; AEL Limassol vs. Aris Limassol 19:00 Alphamega Stadium; ECOMMBX Basket League: Digenis Morfou vs. Anorthosis 17:00 Lefkotheo; Handball EHF European Cup: Anorthosis vs. AEK Athens 20:15, Kition · 1st leg 21-37; Cyprus Rally final day: Galatariotis 2nd overnight, 15:13 Power Stage; All times Cyprus. Slide 2 (same render as checked before the slug change): predict AEL Limassol (HOME) vs. Aris Limassol (AWAY) with both crests, '?' each, SUNDAY · 19:00 · ALPHAMEGA STADIUM, 'Reply with your score'. No clipping."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-25T09:50+02:00",
+    "agent": "independent general-purpose agent, card text only",
+    "claims": [
+      {
+        "claim": "Sunday 25 October; Cyprus League round 7",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/fixtures/68153713"
+      },
+      {
+        "claim": "Karmiotissa v Apollon Limassol 17:00 Stelios Kyriakides",
+        "verdict": "CONFIRMED",
+        "url": "https://www.ant1live.com/athlitika/701953_syneheia-me-tria-paihnidia"
+      },
+      {
+        "claim": "APOEL v Omonia 29 M 18:00 GSP",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/fixtures/68153713"
+      },
+      {
+        "claim": "AEL Limassol v Aris Limassol 19:00 Alphamega Stadium; the derby",
+        "verdict": "CONFIRMED",
+        "url": "https://www.alphanews.live/sports/cyprus-league-by-stoiximan-triimeri-drasi-me-dyo-souper-nterbi-sto-menou/"
+      },
+      {
+        "claim": "Digenis Morfou v Anorthosis 17:00 Lefkotheo",
+        "verdict": "CONFIRMED",
+        "url": "https://sportime.sigmalive.com/ecommbx-basket-league-to-programma-tis-3is-agonistikis/"
+      },
+      {
+        "claim": "Handball EHF European Cup Anorthosis v AEK Athens 20:15 Kition; 1st leg 21-37",
+        "verdict": "CONFIRMED",
+        "url": "https://sportime.sigmalive.com/nea-eyropaiki-bradia-gia-ti-sabbianco-anorthosi-apenanti-stin-aek-athinon/"
+      },
+      {
+        "claim": "Rally: Galatariotis 2nd overnight",
+        "verdict": "CONFIRMED",
+        "url": "https://cyprus-mail.com/2026/10/24/al-attiyah-leads-the-cyprus-rally-after-the-first-day"
+      },
+      {
+        "claim": "Power Stage 15:13; today is the final day",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/alla-sport/auto-moto/1057477/o-termatismos-kai-i-stepsi-toy-neoy-protathliti-mesis-anatolis-tha-ghinei-stis-1700-tin-kiriaki-stin-platia-efrwpis-sti-larnaka"
+      },
+      {
+        "claim": "Predict: AEL home, Aris away, Sunday 19:00 Alphamega Stadium",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/fixtures/68153713"
+      }
+    ]
   }
 }

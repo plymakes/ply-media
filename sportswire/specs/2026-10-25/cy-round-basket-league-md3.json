@@ -126,5 +126,37 @@
   "visual_check": {
     "done": true,
     "notes": "Read back: ECOMMBX BASKET LEAGUE · MATCHDAY 3; 'Matchday 3, so far.'; Fri APOEL vs. Achilleas Kaimakliou 84-62 Final; Sat ENP vs. Petrolina AEK 74-85 Final; Apollon Limassol vs. Keravnos 75-90 Final; Sun Digenis Morfou vs. Anorthosis 17:00 Lefkotheo; Mon ETHA vs. AEL 19:30 Eleftheria. No clipping."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-25T09:50+02:00",
+    "agent": "independent general-purpose agent, card text only",
+    "claims": [
+      {
+        "claim": "APOEL 84-62 Achilleas Kaimakliou, final",
+        "verdict": "CONFIRMED",
+        "url": "https://www.kerkida.net/eidiseis/alla-spor/mpasket/apoel/apoel-ahilleas-kaimaklioy"
+      },
+      {
+        "claim": "ENP 74-85 Petrolina AEK, final",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057484/tria-sta-tria-ghia-tin-aek-me-diplo-epi-tis-enosis"
+      },
+      {
+        "claim": "Apollon Limassol 75-90 Keravnos, final",
+        "verdict": "CONFIRMED",
+        "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057473/triti-sinekhomeni-niki-ghia-ton-kerauno-epikratise-kai-toy-apollona"
+      },
+      {
+        "claim": "Digenis Morfou v Anorthosis Sun 17:00 Lefkotheo",
+        "verdict": "CONFIRMED",
+        "url": "https://sportime.sigmalive.com/ecommbx-basket-league-to-programma-tis-3is-agonistikis/"
+      },
+      {
+        "claim": "ETHA v AEL Mon 19:30 Eleftheria",
+        "verdict": "CONFIRMED",
+        "url": "https://balla.com.cy/2026/10/dyo-agones-gia-tin-3i-agonistiki-stin-basket-league-programma/"
+      }
+    ]
   }
 }
