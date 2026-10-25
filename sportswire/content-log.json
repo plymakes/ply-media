@@ -1353,6 +1353,42 @@
         "https://raw.githubusercontent.com/plymakes/ply-media/179539ca934fd4b2ae109a16ab9cfa06d3d3f046/sportswire/stories/cy/2026-10/2026-10-25-today-story-25-01.png",
         "https://raw.githubusercontent.com/plymakes/ply-media/179539ca934fd4b2ae109a16ab9cfa06d3d3f046/sportswire/stories/cy/2026-10/2026-10-25-today-story-25-02.png"
       ]
+    },
+    {
+      "page": "lb",
+      "date": "2026-10-25",
+      "slug": "division-a-11-clubs",
+      "story_key": "lb-basket-2026-27-eleven-clubs",
+      "light": "green",
+      "sport": "basketball",
+      "format": "post",
+      "series": null,
+      "template": "news",
+      "headline": "*11 clubs* this season.",
+      "caption_first_line": "The new Lebanese basketball season has 11 clubs. 🏀",
+      "sources": [
+        "https://elsport.com/basketball/844944/",
+        "https://www.beirut24.org/2026/10/24/11-%D9%81%D8%B1%D9%8A%D9%82%D9%8B%D8%A7-%D8%B9%D9%84%D9%89-%D8%AE%D8%B7-%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7/",
+        "https://www.beirut24.org/2026/10/25/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82%D8%A9-%D9%82%D9%88%D9%8A%D8%A9-%D9%84%D9%84%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A/",
+        "https://www.mtv.com.lb/news/1751634"
+      ],
+      "reshare": {
+        "mention": [
+          "flb_official"
+        ],
+        "collaborators": [
+          "flb_official"
+        ]
+      },
+      "spec": "specs/2026-10-25/lb-division-a-11-clubs.json",
+      "logged_at": "2026-10-25T07:39:25+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-25T18:00:00+02:00",
+      "metricool_id": "405498040",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-4353371109648938581",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/8ab1cec6e11f5435e42edb22c403341ce2b069b1/sportswire/posts/lb/2026-10/2026-10-25-division-a-11-clubs.png"
+      ]
     }
   ]
 }
