@@ -1,0 +1,130 @@
+{
+  "page": "cy",
+  "format": "story",
+  "theme": "dark",
+  "date": "2026-10-25",
+  "event_date": "2026-10-25",
+  "slug": "round-basket-league-md3",
+  "story_key": "cy-basket-league-2026-md3-round-card-sun",
+  "light": "green",
+  "sport": "basketball",
+  "template": "fixtures",
+  "card": {
+    "eyebrow": [
+      "ECOMMBX Basket League",
+      "Matchday 3"
+    ],
+    "headline": "Matchday 3, *so far*.",
+    "groups": [
+      {
+        "label": "Friday 23 October",
+        "items": [
+          {
+            "home": "APOEL",
+            "away": "Achilleas Kaimakliou",
+            "time": "84-62",
+            "note": "Final"
+          }
+        ]
+      },
+      {
+        "label": "Saturday 24 October",
+        "items": [
+          {
+            "home": "ENP",
+            "away": "Petrolina AEK",
+            "time": "74-85",
+            "note": "Final"
+          },
+          {
+            "home": "Apollon Limassol",
+            "away": "Keravnos",
+            "time": "75-90",
+            "note": "Final"
+          }
+        ]
+      },
+      {
+        "label": "Sunday 25 October",
+        "items": [
+          {
+            "home": "Digenis Morfou",
+            "away": "Anorthosis",
+            "time": "17:00",
+            "note": "Lefkotheo"
+          }
+        ]
+      },
+      {
+        "label": "Monday 26 October",
+        "items": [
+          {
+            "home": "ETHA",
+            "away": "AEL",
+            "time": "19:30",
+            "note": "Eleftheria"
+          }
+        ]
+      }
+    ],
+    "footnote": "All times Cyprus"
+  },
+  "caption": "(Story: no caption)\n\nSource: Cyprus Basketball Federation, Sportime, Alphanews",
+  "alt": [
+    "ECOMMBX Basket League matchday 3 so far, all times Cyprus. Friday, final: APOEL 84, Achilleas Kaimakliou 62. Saturday, finals: ENP 74, Petrolina AEK 85; Apollon Limassol 75, Keravnos 90. Sunday: Digenis Morfou vs. Anorthosis 17:00 at Lefkotheo. Monday: ETHA vs. AEL 19:30 at Eleftheria."
+  ],
+  "facts": [
+    {
+      "claim": "ECOMMBX Basket League matchday 3 finals: Fri 23 Oct APOEL 84-62 Achilleas Kaimakliou; Sat 24 Oct Fabricca ENP 74-85 Petrolina AEK; DOMUS Apollon Limassol 75-90 Keravnos",
+      "sources": [
+        {
+          "url": "https://www.cbf.basketball",
+          "tier": 1,
+          "outlet": "Cyprus Basketball Federation"
+        },
+        {
+          "url": "https://gipedo.politis.com.cy/kalathosfaira/kypriako-protathlima-kalathosfairas/1057473/triti-sinekhomeni-niki-ghia-ton-kerauno-epikratise-kai-toy-apollona",
+          "tier": 2,
+          "outlet": "Politis Gipedo (Apollon 75-90 Keravnos)"
+        },
+        {
+          "url": "https://cyprusbasket.net/portal/2026/10/perase-apo-to-palataki-i-petrolina-aek-me-charaktira-lygise-tin-enp/",
+          "tier": 2,
+          "outlet": "Cyprus Basket (ENP 74-85 Petrolina AEK)"
+        }
+      ]
+    },
+    {
+      "claim": "Matchday 3 remaining games: Sun 25 Oct 17:00 ACRO4U Digenis Akritas Morphou v Anorthosis, Lefkotheo; Mon 26 Oct 19:30 ETHA Engomis v TRIA EKA AEL BC, Tassos Papadopoulos-Eleftheria hall",
+      "sources": [
+        {
+          "url": "https://sportime.sigmalive.com/ecommbx-basket-league-to-programma-tis-3is-agonistikis/",
+          "tier": 2,
+          "outlet": "Sportime (Sigmalive)"
+        },
+        {
+          "url": "https://www.alphanews.live/sports/to-programma-gia-ti-3i-agonistiki-tis-ecommbx-basket-league/",
+          "tier": 2,
+          "outlet": "Alphanews"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": [],
+    "no_tag_reason": "Story: no caption",
+    "no_collab_reason": "Story"
+  },
+  "images": [
+    "stories/cy/2026-10/2026-10-25-round-basket-league-md3.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Read back: ECOMMBX BASKET LEAGUE · MATCHDAY 3; 'Matchday 3, so far.'; Fri APOEL vs. Achilleas Kaimakliou 84-62 Final; Sat ENP vs. Petrolina AEK 74-85 Final; Apollon Limassol vs. Keravnos 75-90 Final; Sun Digenis Morfou vs. Anorthosis 17:00 Lefkotheo; Mon ETHA vs. AEL 19:30 Eleftheria. No clipping."
+  }
+}

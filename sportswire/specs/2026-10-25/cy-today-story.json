@@ -1,0 +1,205 @@
+{
+  "page": "cy",
+  "format": "story",
+  "theme": "dark",
+  "date": "2026-10-25",
+  "event_date": "2026-10-25",
+  "slug": "today-story-25",
+  "story_key": "cy-2026-10-25-today-story",
+  "light": "green",
+  "sport": "football",
+  "slides": [
+    {
+      "template": "fixtures",
+      "card": {
+        "eyebrow": [
+          "Today",
+          "Sunday 25 October"
+        ],
+        "headline": "The *Limassol derby*, Europe and the rally.",
+        "groups": [
+          {
+            "label": "Cyprus League · Round 7",
+            "items": [
+              {
+                "home": "Karmiotissa",
+                "away": "Apollon Limassol",
+                "time": "17:00",
+                "note": "Stelios Kyriakides"
+              },
+              {
+                "home": "APOEL",
+                "away": "Omonia 29 M",
+                "time": "18:00",
+                "note": "GSP"
+              },
+              {
+                "home": "AEL Limassol",
+                "away": "Aris Limassol",
+                "time": "19:00",
+                "note": "Alphamega Stadium"
+              }
+            ]
+          },
+          {
+            "label": "ECOMMBX Basket League",
+            "items": [
+              {
+                "home": "Digenis Morfou",
+                "away": "Anorthosis",
+                "time": "17:00",
+                "note": "Lefkotheo"
+              }
+            ]
+          },
+          {
+            "label": "Handball · EHF European Cup",
+            "items": [
+              {
+                "home": "Anorthosis",
+                "away": "AEK Athens",
+                "time": "20:15",
+                "note": "Kition · 1st leg 21-37"
+              }
+            ]
+          },
+          {
+            "label": "Cyprus Rally · Final day",
+            "items": [
+              {
+                "text": "Galatariotis 2nd overnight",
+                "time": "15:13",
+                "note": "Power Stage"
+              }
+            ]
+          }
+        ],
+        "footnote": "All times Cyprus"
+      }
+    },
+    {
+      "template": "predict",
+      "card": {
+        "eyebrow": [
+          "Predict the score",
+          "Cyprus League"
+        ],
+        "headline": "AEL vs. Aris. *Your score?*",
+        "home": {
+          "name": "AEL Limassol",
+          "crest": "ael",
+          "label": "Home"
+        },
+        "away": {
+          "name": "Aris Limassol",
+          "crest": "aris",
+          "label": "Away"
+        },
+        "status": [
+          "Sunday · 19:00 · Alphamega Stadium"
+        ],
+        "footer": "Reply with your score"
+      }
+    }
+  ],
+  "caption": "(Story: no caption)\n\nSource: CFA, AEL Limassol, Aris Limassol, Sportime, Alphanews, Kerkida, Ant1 Live, Cyprus Mail",
+  "alt": [
+    "Today Story, Sunday 25 October, all times Cyprus. Cyprus League round 7: Karmiotissa vs. Apollon Limassol 17:00 at Stelios Kyriakides; APOEL vs. Omonia 29 M 18:00 at GSP; AEL Limassol vs. Aris Limassol 19:00 at Alphamega Stadium. ECOMMBX Basket League: Digenis Morfou vs. Anorthosis 17:00 at Lefkotheo. Handball, EHF European Cup: Anorthosis vs. AEK Athens 20:15 at Kition, first leg 21-37. Cyprus Rally final day: Galatariotis 2nd overnight, Power Stage 15:13.",
+    "Predict-the-score Story: AEL Limassol vs. Aris Limassol, Cyprus League, Sunday 19:00 at Alphamega Stadium. Reply with your score."
+  ],
+  "facts": [
+    {
+      "claim": "Cyprus League round 7 on Sunday 25 Oct 2026 (Cyprus local time): Karmiotissa v Apollon Limassol 17:00 at Stelios Kyriakides (Paphos); APOEL v Omonia 29 M 18:00 at GSP; AEL Limassol v Aris Limassol 19:00 at Alphamega Stadium",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/Gr/news/53956",
+          "tier": 1,
+          "outlet": "CFA round 7 programme (22 Oct)"
+        },
+        {
+          "url": "https://ael.com.cy/match/ael-aris/",
+          "tier": 1,
+          "outlet": "AEL Limassol match page"
+        },
+        {
+          "url": "https://balla.com.cy/2026/10/xechorizei-to-ael-aris-simantikes-maches-gia-apoel-kai-apollona-programma-vathmologia/",
+          "tier": 2,
+          "outlet": "Balla (17:00 Καρμιώτισσα-Απόλλων, 18:00 ΑΠΟΕΛ-Ομόνοια 29Μ, 19:00 ΑΕΛ-Άρης), 25 Oct"
+        }
+      ]
+    },
+    {
+      "claim": "ECOMMBX Basket League matchday 3: ACRO4U Digenis Akritas Morphou v Anorthosis Famagusta, Sunday 25 Oct 2026, 17:00, Lefkotheo",
+      "sources": [
+        {
+          "url": "https://sportime.sigmalive.com/ecommbx-basket-league-to-programma-tis-3is-agonistikis/",
+          "tier": 2,
+          "outlet": "Sportime (Sigmalive)"
+        },
+        {
+          "url": "https://www.alphanews.live/sports/to-programma-gia-ti-3i-agonistiki-tis-ecommbx-basket-league/",
+          "tier": 2,
+          "outlet": "Alphanews"
+        }
+      ]
+    },
+    {
+      "claim": "Handball, EHF European Cup 2026-27 round 2 return leg: Sabbianco Anorthosis v AEK Athens, Sunday 25 Oct, 20:15, Kition hall, Larnaca; first (1st) leg in Athens AEK Athens 37-21 Anorthosis (shown from Anorthosis' side as 21-37)",
+      "sources": [
+        {
+          "url": "https://www.kerkida.net/eidiseis/alla-spor/anorthosi/ypodehetai-tin-aek-athinon-i-sabbianco-anorthosi",
+          "tier": 2,
+          "outlet": "Kerkida"
+        },
+        {
+          "url": "https://www.ant1live.com/athlitika/701883_nea-eyropaiki-bradia-gia-ti-sabbianco-anorthosi-apenanti-stin-aek-athinon",
+          "tier": 2,
+          "outlet": "Ant1 Live"
+        }
+      ]
+    },
+    {
+      "claim": "Cyprus Rally: after Saturday's first leg Simos Galatariotis is 2nd overall (53 seconds behind Nasser Al-Attiyah); Sunday is the final day; the Power Stage (second run of Stavrovouni) is at 15:13 (3.13pm)",
+      "sources": [
+        {
+          "url": "https://cyprus-mail.com/2026/10/24/al-attiyah-leads-the-cyprus-rally-after-the-first-day",
+          "tier": 2,
+          "outlet": "Cyprus Mail (rally press release)"
+        },
+        {
+          "url": "https://www.cyprusrally.com.cy/uploads/2026/docs/a7c2ad4225.pdf",
+          "tier": 1,
+          "outlet": "Cyprus Rally official programme"
+        }
+      ]
+    },
+    {
+      "claim": "Spellings: Karmiotissa, Apollon Limassol, APOEL, Omonia 29 M, AEL Limassol, Aris Limassol (sources/spelling.md, UEFA/CFA); Digenis Morfou (spelling.md: Digenis Akritas Morfou); Anorthosis; AEK Athens",
+      "sources": [
+        {
+          "url": "https://www.cfa.com.cy/En/news/51350",
+          "tier": 1,
+          "outlet": "CFA English"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [],
+    "collaborators": [],
+    "no_tag_reason": "Story: no caption",
+    "no_collab_reason": "Story"
+  },
+  "images": [
+    "stories/cy/2026-10/2026-10-25-today-story-25-01.png",
+    "stories/cy/2026-10/2026-10-25-today-story-25-02.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Slide 1 read back: TODAY · SUNDAY 25 OCTOBER; 'The Limassol derby, Europe and the rally.'; Cyprus League round 7: Karmiotissa vs. Apollon Limassol 17:00 Stelios Kyriakides; APOEL vs. Omonia 29 M 18:00 GSP; AEL Limassol vs. Aris Limassol 19:00 Alphamega Stadium; ECOMMBX Basket League: Digenis Morfou vs. Anorthosis 17:00 Lefkotheo; Handball EHF European Cup: Anorthosis vs. AEK Athens 20:15, Kition · 1st leg 21-37; Cyprus Rally final day: Galatariotis 2nd overnight, 15:13 Power Stage; All times Cyprus. Slide 2 (same render as checked before the slug change): predict AEL Limassol (HOME) vs. Aris Limassol (AWAY) with both crests, '?' each, SUNDAY · 19:00 · ALPHAMEGA STADIUM, 'Reply with your score'. No clipping."
+  }
+}
