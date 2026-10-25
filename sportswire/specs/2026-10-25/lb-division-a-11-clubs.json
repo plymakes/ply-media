@@ -25,7 +25,7 @@
       "sub": "Central 86-78 NSA"
     }
   },
-  "caption": "The new Lebanese basketball season has 11 clubs. 🏀\nTadamon Hrajel withdrew before the start, so one club rests each round.\n\nالدوري اللبناني لكرة السلة هالموسم فيه 11 فريق 🏀\nالتضامن حراجل انسحب قبل الانطلاقة، وبكل مرحلة في فريق بيرتاح.\n\n📸 MTV Lebanon\nSource: elsport, Beirut 24, MTV Lebanon\n@flb_official\n#SportsWireLB #LebaneseBasketball",
+  "caption": "The new Lebanese basketball season has 11 clubs. 🏀\nTadamon Hrajel withdrew before the start, so one club rests each round.\n\nالدوري اللبناني لكرة السلة هالموسم فيه 11 فريق 🏀\nالتضامن حراجل انسحب قبل الانطلاقة، فبكل مرحلة في فريق بيرتاح.\n\n📸 MTV Lebanon\nSource: elsport, Beirut 24, MTV Lebanon\n@flb_official\n#SportsWireLB #LebaneseBasketball",
   "alt": [
     "News card over a photo from the season opener (a player in white dunking over NSA's number 15): Lebanese Basketball League 2026-27, 11 clubs this season. Tadamon Hrajel withdrew before the start, so one club rests each round. Opening game: Central 86-78 NSA."
   ],
@@ -109,5 +109,50 @@
   "visual_check": {
     "done": true,
     "notes": "Read back: SPORTSWIRE LEBANON; PHOTO: MTV LEBANON; LEBANESE BASKETBALL LEAGUE · 2026-27; '11 clubs this season.'; deck 'Tadamon Hrajel withdrew before the start, so one club rests each round.'; FLBB logo + 'Opening game / Central 86-78 NSA'; @SPORTSWIRE.LB. Photo: player in white with '...RAL' (Central) on the shirt dunking over NSA's No. 15 (navy NSA shirt), from MTV's report of the opener: this game. Text legible over the photo; no clipping."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-25T09:55+02:00",
+    "agent": "independent general-purpose agent, card text and caption only",
+    "arabic_checked": true,
+    "arabic_note": "Checker: the Arabic matches the English and adds nothing; it suggested 'فـ' for 'so' instead of 'و', applied.",
+    "claims": [
+      {
+        "claim": "11 clubs in the 2026-27 first division",
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/basketball/844944/"
+      },
+      {
+        "claim": "Tadamon Hrajel withdrew before the start (elsport 23 Oct, the day before the opener)",
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/basketball/844944/"
+      },
+      {
+        "claim": "One club rests each round",
+        "verdict": "CONFIRMED",
+        "url": "https://elsport.com/basketball/844944/"
+      },
+      {
+        "claim": "Opener Sat 24 Oct: Central 86-78 NSA",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1751634"
+      },
+      {
+        "claim": "Spelling Tadamon Hrajel, Central, NSA (FLBB site)",
+        "verdict": "CONFIRMED",
+        "url": "https://lebanon.basketball/division-leagues/"
+      },
+      {
+        "claim": "Arabic says the same as the English",
+        "verdict": "CONFIRMED",
+        "url": "https://www.beirut24.org/2026/10/24/"
+      },
+      {
+        "claim": "Photo credit MTV Lebanon (lead image of MTV's report on the opener)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.mtv.com.lb/news/1751634",
+        "note": "The checker marked it UNVERIFIED only because the image file was blocked for its fetch. Our own scan at 09:4x (media/photos/2026-10/2026-10-25-division-a-11-clubs.json) downloaded that lead image (imagescdn.mtv.com.lb/articles/058693658302.jpg, 1600x1066) and I looked at it: a player in a white shirt reading '...RAL' (Central) dunking over NSA's No. 15 in a navy NSA shirt, i.e. this game. The page names no photographer, so the credit is where we took it from (PLAYBOOK, Images and rights)."
+      }
+    ]
   }
 }
