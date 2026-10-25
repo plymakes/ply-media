@@ -1272,6 +1272,46 @@
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=7526383&openWithPostUuid=-1861248648169697689",
       "image_urls": [],
       "note": "Held 23:50 for a score conflict (AiScore 86-76); released 00:30 after MTV and Sofascore confirmed 86-78."
+    },
+    {
+      "page": "cy",
+      "date": "2026-10-25",
+      "slug": "ael-aris-preview",
+      "story_key": "cy-league-2026-r7-ael-aris-preview",
+      "light": "green",
+      "sport": "football",
+      "format": "post",
+      "series": null,
+      "template": "matchup",
+      "headline": "The *Limassol derby* is tonight.",
+      "caption_first_line": "The Limassol derby is on tonight. ⚽",
+      "sources": [
+        "https://ael.com.cy/match/ael-aris/",
+        "https://arisfc.com/en",
+        "https://arisfc.com/en/news/tickets-for-md7-away-derby-vs-ael-2026-10-21/",
+        "https://balla.com.cy/2026/10/xechorizei-to-ael-aris-simantikes-maches-gia-apoel-kai-apollona-programma-vathmologia/",
+        "https://shootandgoal.cyprustimes.com/podosfairo-kyprou/nterbi-lemesou-me-vathmologiki-kai-agonistiki-simasia/"
+      ],
+      "reshare": {
+        "mention": [
+          "ael_fc_official",
+          "arislimassolfc",
+          "cyprusfa_official"
+        ],
+        "collaborators": [
+          "ael_fc_official",
+          "arislimassolfc"
+        ]
+      },
+      "spec": "specs/2026-10-25/cy-ael-aris-preview.json",
+      "logged_at": "2026-10-25T07:01:50+00:00",
+      "status": "scheduled",
+      "scheduled_for": "2026-10-25T12:30:00+02:00",
+      "metricool_id": "405484955",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7556882&openWithPostUuid=-6287419857733006216",
+      "image_urls": [
+        "https://raw.githubusercontent.com/plymakes/ply-media/7c532704f6bf49d7b4c972e9af294324b0bfc604/sportswire/posts/cy/2026-10/2026-10-25-ael-aris-preview.png"
+      ]
     }
   ]
 }
