@@ -160,7 +160,7 @@ window.setT=t=>{ ''' + HOOK_JS + '''
 # ---------- 26: Ivory or Charcoal? (Sat 7 Nov, this-or-that vote, the format with the best 3-second hold so far) ----------
 pairs = [('quilt-planter-small-ivory.jpg', 'quilt-planter-small-charcoal.jpg', 'Quilt planter'),
          ('tile-vase-ivory.jpg', 'tile-vase-charcoal.jpg', 'Tile vase'),
-         ('pleat-pot-ivory.jpg', 'pleat-pot-charcoal.jpg', 'Pleat pot')]
+         ('loom-soap-rest-ivory.jpg', 'loom-soap-rest-charcoal.jpg', 'Loom soap rest')]
 pc = ''
 for k, (a, b, n) in enumerate(pairs):
     pc += card(f'a{k}', img(a), 100, 600, 430, 640) + card(f'b{k}', img(b), 550, 600, 430, 640)
