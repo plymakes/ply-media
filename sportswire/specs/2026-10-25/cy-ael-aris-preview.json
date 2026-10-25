@@ -96,5 +96,53 @@
   "visual_check": {
     "done": true,
     "notes": "Read back: SPORTSWIRE CYPRUS; PHOTO: CYPRUS TIMES; CYPRUS LEAGUE · ROUND 7; 'The Limassol derby is tonight.'; AEL crest (yellow/blue AEL 1930) AEL Limassol HOME vs. Aris crest (green ΑΡΗΣ ΛΕΜΕΣΟΣ) Aris Limassol AWAY; 19:00; SUNDAY · ALPHAMEGA STADIUM; @SPORTSWIRE.CY. Photo: aerial of Alphamega Stadium at night, the 'alphamega STADIUM' sign visible at the left edge: the venue, no players, no other game. No clipping or overlap."
+  },
+  "factcheck": {
+    "status": "pass",
+    "checked_at": "2026-10-25T09:30+02:00",
+    "agent": "independent general-purpose agent, card text and caption only",
+    "claims": [
+      {
+        "claim": "Cyprus League (by Stoiximan), round 7",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/Gr/news/53562"
+      },
+      {
+        "claim": "Today, Sunday 25 October 2026",
+        "verdict": "CONFIRMED",
+        "url": "https://ael.com.cy/match/ael-aris/"
+      },
+      {
+        "claim": "AEL Limassol home, Aris Limassol away",
+        "verdict": "CONFIRMED",
+        "url": "https://ael.com.cy/en/fixtures/"
+      },
+      {
+        "claim": "Kick-off 19:00 Cyprus time (after the clock change; fotmob 17:00Z cross-check)",
+        "verdict": "CONFIRMED",
+        "url": "https://arisfc.com/en/matches/"
+      },
+      {
+        "claim": "Alphamega Stadium",
+        "verdict": "CONFIRMED",
+        "url": "https://ael.com.cy/match/ael-aris/"
+      },
+      {
+        "claim": "Both Limassol clubs: the Limassol derby",
+        "verdict": "CONFIRMED",
+        "url": "https://athlitiki.com/2026/10/25/"
+      },
+      {
+        "claim": "Spelling AEL Limassol / Aris Limassol (CFA English site, UEFA)",
+        "verdict": "CONFIRMED",
+        "url": "https://www.cfa.com.cy/En/news/51350"
+      },
+      {
+        "claim": "Photo credit Cyprus Times",
+        "verdict": "CONFIRMED",
+        "url": "https://shootandgoal.cyprustimes.com/podosfairo-kyprou/nterbi-lemesou-me-vathmologiki-kai-agonistiki-simasia/",
+        "note": "The checker marked it UNVERIFIED only because the site returned HTTP 403 to its fetch. Provenance from our own scan at 08:56 (media/photos/2026-10/2026-10-25-ael-aris-preview.json): the full-size image is linked from that article and the article's og:image is the same aerial with the ShootandGoal bar; no photographer named on the page (meta credit empty). Credited to where we took it from (PLAYBOOK, Images and rights). The card doesn't say it shows this game: it's the venue."
+      }
+    ]
   }
 }
