@@ -126,6 +126,19 @@
     "checked": "2026-10-23",
     "use": "editorial identification only"
   },
+  "apollon": {
+    "name": "Apollon Limassol",
+    "source_page": "https://www.uefa.com/uefaeuropaleague/clubs/52741--apollon",
+    "image_url": "https://img.uefa.com/imgml/TP/teams/logos/240x240/52741.png",
+    "original_px": [
+      230,
+      240
+    ],
+    "via": "official site",
+    "fetched": "2026-10-25",
+    "checked": "2026-10-25",
+    "use": "editorial identification only"
+  },
   "apollon-basketball": {
     "name": "Apollon Limassol (basketball)",
     "source_page": "https://www.cbf.basketball/el/team-statistics?teamId=4638729&seasonId=131022",

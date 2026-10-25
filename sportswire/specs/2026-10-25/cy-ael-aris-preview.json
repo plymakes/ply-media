@@ -1,0 +1,100 @@
+{
+  "page": "cy",
+  "format": "post",
+  "theme": "dark",
+  "date": "2026-10-25",
+  "event_date": "2026-10-25",
+  "slug": "ael-aris-preview",
+  "story_key": "cy-league-2026-r7-ael-aris-preview",
+  "light": "green",
+  "sport": "football",
+  "template": "matchup",
+  "card": {
+    "photo": {
+      "file": "media/photos/2026-10/2026-10-25-ael-aris-preview.jpg"
+    },
+    "eyebrow": [
+      "Cyprus League",
+      "Round 7"
+    ],
+    "headline": "The *Limassol derby* is tonight.",
+    "home": {
+      "name": "AEL Limassol",
+      "crest": "ael",
+      "label": "Home"
+    },
+    "away": {
+      "name": "Aris Limassol",
+      "crest": "aris",
+      "label": "Away"
+    },
+    "big": "19:00",
+    "status": [
+      "Sunday",
+      "Alphamega Stadium"
+    ]
+  },
+  "caption": "The Limassol derby is on tonight. ⚽\nAEL host Aris at Alphamega Stadium, 19:00.\n\n📸 Cyprus Times\nSource: AEL Limassol, Aris Limassol\n@ael_fc_official @arislimassolfc @cyprusfa_official\n#SportsWireCY #CyprusLeague",
+  "alt": [
+    "Match card over an aerial photo of Alphamega Stadium at night: Cyprus League round 7, the Limassol derby, AEL Limassol (home) vs. Aris Limassol (away), Sunday at 19:00, Alphamega Stadium."
+  ],
+  "facts": [
+    {
+      "claim": "Cyprus League round 7 (7η Αγωνιστική): AEL Limassol (home) v Aris Limassol, Sunday 25 October 2026, 19:00 local Cyprus time, Alphamega Stadium (Στάδιο Άλφαμεγα), Limassol",
+      "sources": [
+        {
+          "url": "https://ael.com.cy/match/ael-aris/",
+          "tier": 1,
+          "outlet": "AEL Limassol match page (Cyprus League, 7η Αγωνιστική, 25/10/2026, 7:00 μμ, Στάδιο Άλφαμεγα)"
+        },
+        {
+          "url": "https://arisfc.com/en",
+          "tier": 1,
+          "outlet": "Aris Limassol fixtures (AEL Limassol vs Aris Limassol, 25 October, 19:00, Alphamega Stadium, matchday 7)"
+        },
+        {
+          "url": "https://balla.com.cy/2026/10/xechorizei-to-ael-aris-simantikes-maches-gia-apoel-kai-apollona-programma-vathmologia/",
+          "tier": 2,
+          "outlet": "Balla (19:00 ΑΕΛ-Άρης, στάδιο Αλφαμέγα), 25 Oct 08:03"
+        }
+      ]
+    },
+    {
+      "claim": "AEL and Aris are both Limassol clubs, so the game is the Limassol derby (ντέρμπι Λεμεσού)",
+      "sources": [
+        {
+          "url": "https://shootandgoal.cyprustimes.com/podosfairo-kyprou/nterbi-lemesou-me-vathmologiki-kai-agonistiki-simasia/",
+          "tier": 2,
+          "outlet": "Cyprus Times ShootandGoal ('Ντέρμπι Λεμεσού')"
+        },
+        {
+          "url": "https://arisfc.com/en/news/tickets-for-md7-away-derby-vs-ael-2026-10-21/",
+          "tier": 1,
+          "outlet": "Aris Limassol ('MD7 away derby vs AEL')"
+        }
+      ]
+    }
+  ],
+  "reshare": {
+    "mention": [
+      "ael_fc_official",
+      "arislimassolfc",
+      "cyprusfa_official"
+    ],
+    "collaborators": [
+      "ael_fc_official",
+      "arislimassolfc"
+    ]
+  },
+  "images": [
+    "posts/cy/2026-10/2026-10-25-ael-aris-preview.png"
+  ],
+  "render": {
+    "ok": true,
+    "problems": []
+  },
+  "visual_check": {
+    "done": true,
+    "notes": "Read back: SPORTSWIRE CYPRUS; PHOTO: CYPRUS TIMES; CYPRUS LEAGUE · ROUND 7; 'The Limassol derby is tonight.'; AEL crest (yellow/blue AEL 1930) AEL Limassol HOME vs. Aris crest (green ΑΡΗΣ ΛΕΜΕΣΟΣ) Aris Limassol AWAY; 19:00; SUNDAY · ALPHAMEGA STADIUM; @SPORTSWIRE.CY. Photo: aerial of Alphamega Stadium at night, the 'alphamega STADIUM' sign visible at the left edge: the venue, no players, no other game. No clipping or overlap."
+  }
+}
