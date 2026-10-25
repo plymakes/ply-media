@@ -47,6 +47,12 @@ REELS = {
     'colours': ('reels/ply-reel-11-four-colours-v3.mp4', 'clay', 11.5, [(0.9, 'pop'), (2.05, 'pop'), (3.2, 'pop'), (4.35, 'pop'), (5.8, 'tick'), (5.95, 'tick'), (6.1, 'tick'), (6.25, 'tick'), (8.8, 'chime')], False),
     'tray':    ('reels/ply-reel-12-hidden-tray-v3.mp4', 'linen', 12.0, [(1.0, 'swoosh'), (2.2, 'pop'), (3.6, 'pop'), (5.0, 'drip'), (5.4, 'drip'), (8.6, 'chime')], False),
     'tiles':   ('reels/ply-reel-13-why-tiles-v3.mp4', 'morning', 11.5, [(1.0, 'cascade:2.1'), (3.6, 'swoosh'), (4.0, 'pop'), (5.0, 'soft'), (8.6, 'chime')], False),
+    # weekly plan 25 Oct (tools/reels_growth_2026_10_25.py)
+    'gift':    ('reels/ply-reel-23-friend-who-moved.mp4', 'clay', 11.0, [(3.3, 'pop'), (3.6, 'soft'), (5.3, 'pop'), (5.6, 'soft'), (7.9, 'swoosh'), (8.2, 'chime')], False),
+    'howlong': ('reels/ply-reel-24-how-long.mp4', 'morning', 11.0, [(4.3, 'ting'), (5.6, 'pop'), (8.0, 'swoosh'), (8.4, 'chime')], False),
+    'mint':    ('reels/ply-reel-25-mint-in-a-tin.mp4', 'linen', 11.0, [(2.4, 'soft'), (4.4, 'swoosh'), (4.7, 'pop'), (5.4, 'soft'), (8.0, 'swoosh'), (8.4, 'chime')], False),
+    'ivch':    ('reels/ply-reel-26-ivory-or-charcoal.mp4', 'warm', 11.0, [(3.3, 'pop'), (3.5, 'pop'), (5.6, 'pop'), (5.8, 'pop'), (7.9, 'swoosh'), (8.3, 'chime')], False),
+    'zoomp':   ('reels/ply-reel-27-zoom-pleat.mp4', 'morning', 8.0, [(0.9, 'riser:4.7'), (5.4, 'chime')], True),
 }
 
 
