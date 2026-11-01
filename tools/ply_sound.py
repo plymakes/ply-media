@@ -53,6 +53,14 @@ REELS = {
     'mint':    ('reels/ply-reel-25-mint-in-a-tin.mp4', 'linen', 11.0, [(2.4, 'soft'), (4.4, 'swoosh'), (4.7, 'pop'), (5.4, 'soft'), (8.0, 'swoosh'), (8.4, 'chime')], False),
     'ivch':    ('reels/ply-reel-26-ivory-or-charcoal.mp4', 'warm', 11.0, [(3.3, 'pop'), (3.5, 'pop'), (5.6, 'pop'), (5.8, 'pop'), (7.9, 'swoosh'), (8.3, 'chime')], False),
     'zoomp':   ('reels/ply-reel-27-zoom-pleat.mp4', 'morning', 8.0, [(0.9, 'riser:4.7'), (5.4, 'chime')], True),
+    # weekly plan 1 Nov (tools/reels_growth_2026_11_01.py)
+    'puddle':  ('reels/ply-reel-28-soap-puddle-tag.mp4', 'clay', 10.0, [(2.0, 'soft'), (2.4, 'drip'), (2.8, 'drip'), (3.2, 'drip'), (4.3, 'soft'), (6.6, 'swoosh'), (7.0, 'chime')], False),
+    'ep4':     ('reels/ply-reel-29-building-ply-ep4.mp4', 'warm', 11.0, [(2.4, 'swoosh'), (2.6, 'soft'), (3.0, 'pop'), (3.9, 'pop'), (4.8, 'pop'), (5.7, 'pop'), (7.6, 'swoosh'), (7.9, 'chime')], False),
+    'august':  ('reels/ply-reel-30-car-in-august.mp4', 'morning', 11.0, [(1.7, 'pop'), (2.8, 'pop'), (3.9, 'pop'), (5.4, 'swoosh'), (5.6, 'pop'), (6.2, 'soft'), (8.2, 'swoosh'), (8.6, 'chime')], False),
+    'teta':    ('reels/ply-reel-31-teta-floor.mp4', 'linen', 11.0, [(1.0, 'cascade:2.0'), (3.8, 'swoosh'), (4.0, 'pop'), (4.6, 'soft'), (8.0, 'swoosh'), (8.4, 'chime')], False),
+    'santa':   ('reels/ply-reel-32-secret-santa.mp4', 'clay', 11.0, [(0.6, 'soft'), (3.3, 'pop'), (3.6, 'soft'), (5.3, 'pop'), (5.6, 'soft'), (7.6, 'swoosh'), (7.9, 'chime')], False),
+    'water':   ('reels/ply-reel-33-where-water-goes.mp4', 'warm', 11.0, [(2.2, 'swoosh'), (2.6, 'drip'), (2.9, 'drip'), (4.4, 'soft'), (6.2, 'soft'), (8.0, 'swoosh'), (8.4, 'chime')], False),
+    'qort':    ('reels/ply-reel-34-quilt-or-tile.mp4', 'morning', 9.5, [(3.2, 'swoosh'), (3.4, 'pop'), (3.6, 'pop'), (6.4, 'swoosh'), (6.8, 'chime')], False),
 }
 
 
