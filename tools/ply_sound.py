@@ -61,6 +61,14 @@ REELS = {
     'santa':   ('reels/ply-reel-32-secret-santa.mp4', 'clay', 11.0, [(0.6, 'soft'), (3.3, 'pop'), (3.6, 'soft'), (5.3, 'pop'), (5.6, 'soft'), (7.6, 'swoosh'), (7.9, 'chime')], False),
     'water':   ('reels/ply-reel-33-where-water-goes.mp4', 'warm', 11.0, [(2.2, 'swoosh'), (2.6, 'drip'), (2.9, 'drip'), (4.4, 'soft'), (6.2, 'soft'), (8.0, 'swoosh'), (8.4, 'chime')], False),
     'qort':    ('reels/ply-reel-34-quilt-or-tile.mp4', 'morning', 9.5, [(3.2, 'swoosh'), (3.4, 'pop'), (3.6, 'pop'), (6.4, 'swoosh'), (6.8, 'chime')], False),
+    # weekly plan 8 Nov (tools/reels_growth_2026_11_08.py)
+    'layers500': ('reels/ply-reel-35-how-many-layers.mp4', 'morning', 11.0, [(1.0, 'layers:5.0'), (6.0, 'soft'), (8.2, 'swoosh'), (8.6, 'chime')], False),
+    'ep5':     ('reels/ply-reel-36-building-ply-ep5.mp4', 'warm', 11.0, [(0.3, 'pop'), (0.65, 'pop'), (1.0, 'pop'), (1.35, 'pop'), (2.2, 'drip'), (2.6, 'drip'), (3.0, 'drip'), (5.0, 'soft'), (8.1, 'swoosh'), (8.5, 'chime')], False),
+    'zooml':   ('reels/ply-reel-37-zoom-loom.mp4', 'linen', 8.0, [(0.9, 'riser:4.7'), (5.4, 'chime')], True),
+    'tin':     ('reels/ply-reel-38-teta-tin.mp4', 'clay', 11.0, [(1.2, 'pop'), (2.0, 'pop'), (2.8, 'pop'), (3.6, 'ting'), (5.0, 'swoosh'), (5.2, 'soft'), (8.2, 'swoosh'), (8.6, 'chime')], False),
+    'whyply':  ('reels/ply-reel-39-why-ply.mp4', 'morning', 10.5, [(1.2, 'soft'), (2.0, 'pop'), (3.0, 'layers:2.4'), (5.6, 'soft'), (7.6, 'swoosh'), (7.9, 'chime')], False),
+    'hardest': ('reels/ply-reel-40-hardest-to-buy-for.mp4', 'warm', 11.0, [(0.4, 'soft'), (3.2, 'pop'), (3.5, 'soft'), (5.4, 'pop'), (5.7, 'soft'), (7.8, 'swoosh'), (8.1, 'chime')], False),
+    'gort':    ('reels/ply-reel-41-green-or-tan.mp4', 'linen', 9.5, [(0.3, 'pop'), (1.8, 'soft'), (6.2, 'swoosh'), (6.6, 'chime')], False),
 }
 
 
