@@ -1,6 +1,6 @@
 # Ply social media playbook
 
-> **Not Ply:** the `sportswire/` folder is a separate project (SportsWire sports news pages) that shares this repo only for image hosting. Ply runs never read, use, change, move or delete anything inside `sportswire/`, and never count its posts, logs or brand as Ply's. Ply's files are everything outside that folder.
+> **Not Ply:** the `sportswire/` folder (SportsWire sports news pages) and the `irongeo/` folder (GEO, Instagram @iron.geo, since 11 Nov 2026) are separate projects that share this repo only for image hosting. Ply runs never read, use, change, move or delete anything inside `sportswire/` or `irongeo/`, and never count their posts, logs or brand as Ply's. Ply's files are everything outside those two folders.
 
 This repository is the working folder for Ply's Instagram. Images in `posts/` are public on purpose: Metricool reads them from
 `https://raw.githubusercontent.com/plymakes/ply-media/main/posts/<file>.png`.
