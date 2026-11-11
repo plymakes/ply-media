@@ -4,15 +4,15 @@
       "type": "hero",
       "settings": {
         "eyebrow": "Ply Makes · 3D-printed in Lebanon",
-        "heading": "Textured planters with a hidden drip tray, <em>printed</em> in Lebanon.",
-        "text": "Quilt and Tile planters with matching vases, in four calm colours. Seven drainage holes, no saucer on show. From $14.",
+        "heading": "Ribbed pieces for the bathroom, the bedside and the bag, <em>printed</em> in Lebanon.",
+        "text": "A soap dish, a jewellery pot, a travel box and a toothbrush case, in three calm colours. Every lid screws on. From $12.",
         "button_label": "Shop the pieces",
         "button_link": "/#shop",
         "show_whatsapp": true,
         "note": "Cash on delivery · Free delivery from $35",
         "arabic_line": "",
-        "image": "shopify://shop_images/quilt-planter-small-green.jpg",
-        "image_product": "quilt-planter",
+        "image": "shopify://shop_images/ply-hero-four-pieces.jpg",
+        "image_product": "loom-soap-dish",
         "image_caption": "3D render · photos coming soon"
       }
     },
@@ -29,8 +29,8 @@
         "trust-2": {
           "type": "item",
           "settings": {
-            "title": "Hidden drip tray",
-            "text": "Seven drainage holes, no saucer"
+            "title": "Lids that screw on",
+            "text": "They stay shut and don’t crack"
           }
         },
         "trust-3": {
@@ -60,51 +60,49 @@
       "settings": {
         "eyebrow": "The first collection",
         "heading": "Our first pieces.",
-        "text": "Quilt and Tile planters and vases, plus the Loom soap rest and the Pleat pot, in Ivory White, Charcoal, Dark Green or Desert Tan. Pick a colour and add it straight to your cart.",
+        "text": "The Loom Soap Dish, the Pleat Jewellery Pot, the Tuck Travel Box and the Shuttle Toothbrush Case, in Ivory White, Charcoal or Desert Tan. Pick a colour and add it straight to your cart.",
         "products": [
-          "quilt-planter",
-          "tile-planter",
-          "quilt-vase",
-          "tile-vase",
-          "loom-soap-rest",
-          "pleat-pot"
+          "loom-soap-dish",
+          "pleat-jewellery-pot",
+          "tuck-travel-box",
+          "shuttle-toothbrush-case"
         ],
-        "limit": 6
+        "limit": 4
       }
     },
     "drainage": {
       "type": "image-points",
       "settings": {
-        "image": "shopify://shop_images/ply-drainage-markers-v2.jpg",
-        "eyebrow": "Inside every planter",
-        "heading": "How the water drains.",
-        "text": "Most decorative pots have no hole, so roots sit in water. Ours drain properly and still look clean on a shelf.",
-        "note": "Shown cut in half. Images are 3D renders; photos of the first prints are coming soon.",
-        "button_label": "Shop planters",
+        "image": "shopify://shop_images/ply-tuck-floor.jpg",
+        "eyebrow": "Small details",
+        "heading": "Made to close properly.",
+        "text": "Travel pieces should stay shut in a bag and still let things dry. So every lid screws on, and the insides drain or breathe.",
+        "note": "The Tuck Travel Box, open. Images are 3D renders; photos of the first prints are coming soon.",
+        "button_label": "Shop the pieces",
         "button_link": "/#shop",
         "band": "raised",
-        "anchor": "drainage"
+        "anchor": "details"
       },
       "blocks": {
         "p1": {
           "type": "point",
           "settings": {
-            "title": "Seven drainage holes",
-            "text": "A raised floor with seven holes lets extra water run straight through, so roots never sit wet."
+            "title": "Lids that screw on",
+            "text": "About two turns and the lid stays shut, in a bag or on a shelf. No click to wear out or crack."
           }
         },
         "p2": {
           "type": "point",
           "settings": {
-            "title": "A hidden drip tray",
-            "text": "The water lands in a tray tucked under the skirt that holds about 45 ml."
+            "title": "A floor that drains",
+            "text": "Slim slats lift a wet bar off the bottom of the Tuck Travel Box, so it isn’t sitting in water."
           }
         },
         "p3": {
           "type": "point",
           "settings": {
-            "title": "Twist off, empty, click back",
-            "text": "Twist the tray off to empty it after watering, then click it back on. No saucer, no puddles."
+            "title": "A cap that breathes",
+            "text": "Four small vents in the Shuttle’s cap let your toothbrush dry on the way."
           }
         }
       },
@@ -124,28 +122,28 @@
         "link": "shopify://pages/about"
       },
       "blocks": {
-        "motif-quilt": {
+        "motif-rib": {
           "type": "motif",
           "settings": {
-            "drawing": "quilt",
+            "drawing": "rib",
             "style": "light",
-            "title": "Quilt",
-            "text": "Soft diamond pillows that catch the light. Our most elegant texture."
+            "title": "Ribs",
+            "text": "Soft ribs all the way round, on every piece. They catch the light and hide the print lines."
           }
         },
-        "motif-tile": {
+        "motif-arch": {
           "type": "motif",
           "settings": {
-            "drawing": "grid",
+            "drawing": "arch",
             "style": "dark",
-            "title": "Tile",
-            "text": "A grid of soft squares, a nod to the cement-tile floors of old Beirut homes."
+            "title": "Made in Lebanon",
+            "text": "Drawn, printed, checked and packed by one family, a few pieces at a time."
           }
         }
       },
       "block_order": [
-        "motif-quilt",
-        "motif-tile"
+        "motif-rib",
+        "motif-arch"
       ]
     },
     "steps": {
@@ -207,22 +205,22 @@
         "q3": {
           "type": "question",
           "settings": {
-            "question": "Is the planter good for real plants?",
-            "answer": "<p>Yes. Seven holes in a raised floor drain into a drip tray hidden under the pot. Twist the tray off to empty it after watering.</p>"
+            "question": "Do the lids screw on?",
+            "answer": "<p>Yes. Every lid screws on in about two turns, so it stays shut in a bag and doesn’t wear out like a click lid.</p>"
           }
         },
         "q4": {
           "type": "question",
           "settings": {
-            "question": "Will my plant fit?",
-            "answer": "<p>The planter takes a nursery pot up to about 8 cm: succulents, small cacti and herbs fit well. You can also plant straight in.</p>"
+            "question": "Is the Tuck Travel Box watertight?",
+            "answer": "<p>Not fully. The lid keeps the soap in, but let a wet bar drip for a minute before you close it.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "Can the vase hold water?",
-            "answer": "<p>It is made for dried or faux stems, because a printed vase isn't reliably watertight.</p>"
+            "question": "Which toothbrush fits the Shuttle?",
+            "answer": "<p>A manual toothbrush up to about 20 cm long and 2.4 cm wide. Electric toothbrushes don’t fit.</p>"
           }
         },
         "q6": {

@@ -6,9 +6,9 @@
     "delivery_max_days": 4,
     "payment_note": "Cash on delivery",
     "cart_upsell_products": [
-      "quilt-vase",
-      "tile-vase",
-      "quilt-planter"
+      "loom-soap-dish",
+      "shuttle-toothbrush-case",
+      "tuck-travel-box"
     ],
     "whatsapp_number": "",
     "whatsapp_greeting": "Hello Ply, I'd like to order",

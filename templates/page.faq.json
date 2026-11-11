@@ -36,29 +36,29 @@
         "q4": {
           "type": "question",
           "settings": {
-            "question": "Is the planter good for real plants?",
-            "answer": "<p>Yes. Seven holes in a raised floor let extra water drain into a drip tray hidden under the pot. Twist the tray off to empty it after watering, then click it back on.</p>"
+            "question": "Do the lids screw on?",
+            "answer": "<p>Yes. The Pleat Jewellery Pot, the Tuck Travel Box and the Shuttle Toothbrush Case all have lids that screw on in about two turns. They stay shut in a bag and don’t wear out like a click lid.</p>"
           }
         },
         "q5": {
           "type": "question",
           "settings": {
-            "question": "Can the vase hold water?",
-            "answer": "<p>It is made for dried or faux stems, because a printed vase isn't reliably watertight.</p>"
+            "question": "Is the Tuck Travel Box watertight?",
+            "answer": "<p>Not fully. The lid keeps the soap in, but let a wet bar drip for a minute before you close it. Its slatted floor keeps the bar off the bottom.</p>"
           }
         },
         "q6": {
           "type": "question",
           "settings": {
-            "question": "Will my plant fit?",
-            "answer": "<p>The planter is about 10 cm wide and takes a nursery pot up to about 8 cm: succulents, small cacti and herbs fit well. You can also plant straight in.</p>"
+            "question": "Which toothbrush fits the Shuttle?",
+            "answer": "<p>A manual toothbrush up to about 20 cm long and 2.4 cm wide. Electric toothbrushes don’t fit. The cap has four small vents so the brush can dry.</p>"
           }
         },
         "q7": {
           "type": "question",
           "settings": {
             "question": "What is 3D printing, and is it safe at home?",
-            "answer": "<p>Our printer builds each piece from thin layers of matte PLA, a plant-based plastic, 0.2 mm at a time. The pieces are safe to use around the home. Keep them out of hot cars and strong summer sun, where the plastic can soften.</p>"
+            "answer": "<p>Our printer builds each piece from thin layers of matte PLA, a plant-based plastic, a fraction of a millimetre at a time. The pieces are safe to use around the home. Keep them out of hot cars, strong summer sun and the dishwasher, where the plastic can soften.</p>"
           }
         },
         "q8": {

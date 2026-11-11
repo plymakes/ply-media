@@ -6,7 +6,7 @@
     "language": "Language",
     "go": "Go",
     "search": "Search",
-    "search_placeholder": "Planter, vase…",
+    "search_placeholder": "Soap dish, travel box…",
     "search_results": "{{ count }} results for “{{ terms }}”",
     "menu": "Menu",
     "close": "Close",
@@ -18,7 +18,7 @@
     "next": "Next",
     "collections": "Collections",
     "not_found_title": "This page isn't here.",
-    "not_found_text": "The link may be old or mistyped. Our three pieces are one tap away.",
+    "not_found_text": "The link may be old or mistyped. Our four pieces are one tap away.",
     "password_enter": "Store owner? Enter with the password",
     "password": "Password",
     "password_submit": "Enter"
